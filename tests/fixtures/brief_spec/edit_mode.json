@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "project_mode": "EDIT",
+  "project_type": "BANNER",
+  "user_request": "Envio esta imagem de banner pronta (asset_base_banner). Quero alterar apenas a tipografia da headline mantendo todo o restante da imagem original intacto.",
+  "commercial_objective": "Atualizar a mensagem promocional de um banner existente sem recriar o design visual.",
+  "communication_goal": "Atualizar o texto da oferta mantendo identidade visual prévia.",
+  "target_context": "E-commerce banner update.",
+  "format": {
+    "aspect_ratio": "16:9",
+    "orientation": "LANDSCAPE",
+    "width": 1920,
+    "height": 1080,
+    "platform": "Web",
+    "usage": "Banner Update",
+    "text_overlay_expected": true
+  },
+  "copy": {
+    "headline": {
+      "content": "NOVA COLEÇÃO OUTONO 2026",
+      "exact_text_lock": true,
+      "priority": "CRITICAL",
+      "required": true,
+      "language": "pt-BR"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "asset_base_banner",
+      "asset_type": "IMAGE",
+      "role": "EDIT_TARGET",
+      "origin": "USER_UPLOAD",
+      "authority": "TARGET_IMAGE_STRUCTURE",
+      "required": true,
+      "description": "Imagem de banner original a ser editada.",
+      "user_instruction": "Preservar fundo, iluminação e sujeito integralmente.",
+      "preservation_level": "STRICT"
+    }
+  ],
+  "subject": {
+    "present": false,
+    "identity_asset_id": null,
+    "identity_preservation": "NONE",
+    "pose_preservation": "NONE",
+    "expression_preservation": "NONE",
+    "wardrobe_preservation": "NONE",
+    "body_orientation_preservation": "NONE",
+    "age_preservation": "NONE",
+    "recognizability_required": false,
+    "user_subject_instructions": ""
+  },
+  "references": [],
+  "hard_constraints": [
+    {
+      "constraint_id": "hc_edit_target",
+      "description": "Preservação estrutural absoluta da imagem base (asset_base_banner).",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    },
+    {
+      "constraint_id": "hc_new_headline",
+      "description": "Substituição exata do texto da headline.",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    }
+  ],
+  "soft_preferences": [],
+  "emotional_intent": {
+    "primary": "premium",
+    "secondary": ["exclusivity"],
+    "avoid": ["chaos"]
+  },
+  "creative_freedom": {
+    "overall": "LOW",
+    "composition": "LOW",
+    "environment": "LOW",
+    "subject_pose": "NONE",
+    "wardrobe": "NONE",
+    "typography": "LOW",
+    "color": "LOW",
+    "narrative_objects": "LOW"
+  },
+  "preservation_requirements": [
+    {
+      "element": "entire base image structure except text",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "allowed_transformations": [
+    {
+      "transformation": "typography text replacement area",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "forbidden_transformations": [
+    {
+      "transformation": "do not alter background, subject, or lighting",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "ambiguities": [],
+  "blocking_questions": [],
+  "pipeline_hints": {
+    "has_reference": false,
+    "requires_reference_translator": false,
+    "requires_subject_identity_preservation": false,
+    "edit_mode": true,
+    "text_generation_required": true,
+    "human_clarification_required": false
+  },
+  "provenance": {
+    "interpreter_version": "1.0.0",
+    "created_at": "2026-08-09T12:00:00Z",
+    "notes": "Edit mode brief parsed."
+  },
+  "status": "READY"
+}

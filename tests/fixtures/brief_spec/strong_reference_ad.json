@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "project_mode": "REFERENCE",
+  "project_type": "AD_CREATIVE",
+  "user_request": "Quero criar um anúncio de relógio de luxo usando a minha foto de produto e aplicando rigorosamente a atmosfera, iluminação e direção de arte da imagem de referência enviada.",
+  "commercial_objective": "Campanha de conversão e branding para relógio masculino de alta gama.",
+  "communication_goal": "Posicionar o produto como símbolo de sofisticação e exatidão.",
+  "target_context": "Meta Ads feed e Instagram Stories.",
+  "format": {
+    "aspect_ratio": "1:1",
+    "orientation": "SQUARE",
+    "width": 1080,
+    "height": 1080,
+    "platform": "Instagram",
+    "usage": "Feed Ad",
+    "text_overlay_expected": false
+  },
+  "assets": [
+    {
+      "asset_id": "asset_watch_product",
+      "asset_type": "PRODUCT",
+      "role": "PRODUCT",
+      "origin": "USER_UPLOAD",
+      "authority": "SUBJECT_IDENTITY",
+      "required": true,
+      "description": "Foto isolada do relógio de luxo.",
+      "user_instruction": "Preservar cada detalhe do mostrador e pulseira.",
+      "preservation_level": "STRICT"
+    },
+    {
+      "asset_id": "asset_cyber_ref",
+      "asset_type": "IMAGE",
+      "role": "PRIMARY_REFERENCE",
+      "origin": "USER_UPLOAD",
+      "authority": "PRIMARY_REFERENCE",
+      "required": true,
+      "description": "Referência visual de campanha publicitária com luz lateral ciano e magenta sobre fundo escuro.",
+      "user_instruction": "Aplicar esta exata direção de luz e atmosfera.",
+      "preservation_level": "HIGH"
+    }
+  ],
+  "subject": {
+    "present": false,
+    "identity_asset_id": null,
+    "identity_preservation": "NONE",
+    "pose_preservation": "NONE",
+    "expression_preservation": "NONE",
+    "wardrobe_preservation": "NONE",
+    "body_orientation_preservation": "NONE",
+    "age_preservation": "NONE",
+    "recognizability_required": false,
+    "user_subject_instructions": ""
+  },
+  "references": [
+    {
+      "reference_asset_id": "asset_cyber_ref",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "PRIMARY_REFERENCE",
+      "transfer_intent": "Transferir iluminação rim ciano/magenta, textura de fundo fosco e contraste dramático.",
+      "transfer_intensity": "HIGH",
+      "user_instruction": "Quero essa referência bem aplicada.",
+      "protected_from_reference": ["product_appearance"],
+      "do_not_transfer": ["product_shape"]
+    }
+  ],
+  "hard_constraints": [
+    {
+      "constraint_id": "hc_product_integrity",
+      "description": "Preservação absoluta do produto fornecido (asset_watch_product).",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    },
+    {
+      "constraint_id": "hc_format",
+      "description": "Formato quadrado 1:1 (1080x1080).",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    }
+  ],
+  "soft_preferences": [
+    {
+      "preference_id": "sp_luxury",
+      "description": "Estética minimalista com foco em reflexos metálicos precisos.",
+      "provenance": "MODEL_INFERENCE",
+      "confidence": "HIGH"
+    }
+  ],
+  "emotional_intent": {
+    "primary": "premium",
+    "secondary": ["exclusivity", "authority"],
+    "avoid": ["playful", "casual"]
+  },
+  "creative_freedom": {
+    "overall": "LOW",
+    "composition": "LOW",
+    "environment": "LOW",
+    "subject_pose": "NONE",
+    "wardrobe": "NONE",
+    "typography": "LOW",
+    "color": "LOW",
+    "narrative_objects": "LOW"
+  },
+  "preservation_requirements": [
+    {
+      "element": "product",
+      "provenance": "USER_EXPLICIT"
+    },
+    {
+      "element": "reference lighting style",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "allowed_transformations": [
+    {
+      "transformation": "shadows and reflections on product base",
+      "provenance": "SYSTEM_DERIVED"
+    }
+  ],
+  "forbidden_transformations": [
+    {
+      "transformation": "do not alter product dial or physical features",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "ambiguities": [],
+  "blocking_questions": [],
+  "pipeline_hints": {
+    "has_reference": true,
+    "requires_reference_translator": true,
+    "requires_subject_identity_preservation": false,
+    "edit_mode": false,
+    "text_generation_required": false,
+    "human_clarification_required": false
+  },
+  "provenance": {
+    "interpreter_version": "1.0.0",
+    "created_at": "2026-08-09T12:00:00Z",
+    "notes": "Reference mode parsed successfully."
+  },
+  "status": "READY"
+}

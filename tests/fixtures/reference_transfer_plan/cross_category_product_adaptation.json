@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.1.0",
+  "plan_id": "plan_cross_category_perfume",
+  "project_id": "project_cross_category_perfume",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "REFERENCE_REINTERPRETATION",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "USER_EXPLICIT",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": "asset_perfume",
+    "semantic_identity": "Warm woody amber perfume",
+    "protected_elements": ["perfume bottle identity", "perfume label"],
+    "required_copy": [],
+    "subject_identity_requirements": "Preserve exact supplied product identity.",
+    "existing_composition_constraints": ["portrait 4:5"],
+    "elements_allowed_to_change": ["support surface", "environment", "motivated lighting"],
+    "elements_forbidden_to_change": ["bottle shape", "cap", "label", "liquid color"]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "asset_skincare_reference",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_handbag_support",
+          "category": "NARRATIVE_OBJECT",
+          "description": "A soft neutral handbag is placed close to the skincare product as a support prop.",
+          "region": "midground beside product",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_soft_material",
+          "category": "MATERIAL",
+          "description": "The support prop contributes supple matte texture and warm tonal continuity.",
+          "region": "product support area",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "object_function": "Fashion-adjacent support creates soft luxury without competing with the hero product",
+        "material_language": "Supple matte tactile richness",
+        "emotional_effect": "Intimate editorial sophistication",
+        "tonal_relationship": "Warm low-contrast harmony around the product"
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_reinvent_handbag",
+      "source_reference_asset_id": "asset_skincare_reference",
+      "observation_ids": ["obs_handbag_support", "obs_soft_material"],
+      "action": "REINVENT",
+      "target_in_new_composition": "Use a restrained cognac-leather or dark-suede support surface around the perfume, preserving clear bottle dominance.",
+      "rationale": "The source handbag works through tactile fashion luxury and warm tonal support; a leather or suede surface preserves that function while belonging naturally to warm woody fragrance styling.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": ["perfume bottle identity", "perfume label"],
+      "cross_category_adaptation": {
+        "reference_product_category": "skincare",
+        "target_product_category": "fragrance",
+        "literal_object": "handbag",
+        "visual_function": "Support the hero product with a soft fashion-luxury cue and controlled secondary mass.",
+        "material_language": "Supple matte texture with warm tonal continuity and tactile richness.",
+        "emotional_effect": "Intimate editorial sophistication, softness, and premium warmth.",
+        "equivalent_adaptation": "Cognac leather, dark suede, or an amber-toned tactile support surface scaled beneath the perfume.",
+        "literal_transfer_allowed": false,
+        "target_category_coherence": "Leather and suede reinforce the perfume's woody amber character and established fragrance luxury codes without introducing skincare narrative."
+      },
+      "confidence": "HIGH",
+      "provenance": "INFERRED"
+    }
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "conflict_category_prop",
+      "type": "REFERENCE_VS_BASE",
+      "description": "The handbag is category-native fashion support in the skincare reference but is not intrinsically meaningful beside this fragrance.",
+      "severity": "MEDIUM",
+      "blocking": false,
+      "involved_assets": ["asset_perfume", "asset_skincare_reference"],
+      "involved_constraints": ["perfume bottle identity"],
+      "translator_position": "Preserve material sophistication and soft-luxury function while changing the literal prop.",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "INFERRED"
+    }
+  ],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anchor_tactile_soft_luxury",
+      "description": "Warm tactile support language subordinate to the perfume hero",
+      "source_reference_asset_id": "asset_skincare_reference",
+      "function": "Material richness, tone harmony, and premium editorial support",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "This is the transferable design intelligence behind the source prop.",
+      "provenance": "MODEL_INFERENCE"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "exact target-native support material",
+      "freedom_level": "HIGH",
+      "rationale": "The future Creative Director may choose leather, suede, or another fragrance-coherent tactile equivalent."
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_literal_handbag_copy",
+      "description": "A literal handbag would import unrelated category narrative and make the campaign feel imitative.",
+      "severity": "HIGH",
+      "mitigation": "Preserve tactile, tonal, and emotional functions through a fragrance-native material support."
+    }
+  ],
+  "open_questions": [],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-15T12:00:00Z",
+    "notes": "Synthetic deterministic cross-category fixture; structured rationale only."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "The source prop function and target product character provide a coherent material substitution."
+  },
+  "director_handoff": {
+    "what_must_survive": ["perfume bottle identity", "perfume label"],
+    "what_should_survive": ["warm tactile support", "soft fashion-luxury energy", "tonal harmony"],
+    "what_can_change": ["literal prop identity", "exact leather or suede choice", "surface geometry"],
+    "key_conflicts": ["Do not retain the handbag as a literal skincare/fashion prop."],
+    "recommended_anchors": ["anchor_tactile_soft_luxury"],
+    "creative_opportunities": ["Express woody amber character through a restrained cognac-leather or dark-suede support surface."],
+    "warnings": ["Keep the adapted support subordinate to bottle silhouette and label legibility."]
+  }
+}

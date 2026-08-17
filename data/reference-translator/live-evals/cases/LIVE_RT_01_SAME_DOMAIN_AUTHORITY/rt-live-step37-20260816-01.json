@@ -1,0 +1,201 @@
+{
+  "artifact_classification": "EVALUATION_ARTIFACT",
+  "suite_run_id": "rt-live-step37-20260816-01",
+  "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+  "reference_path": "data/my_eyes/approved/14.jpeg",
+  "target_type": "executive strategy keynote banner",
+  "candidates": [
+    {
+      "candidate_status": "REJECTED_CANDIDATE",
+      "visible_candidate": "\n{\n  \"schema_version\": \"1.0.0\",\n  \"plan_id\": \"plan_live_rt_01_same_domain_authority-rt-live-step37-20260816-01\",\n  \"project_id\": \"project_live_rt_01_same_domain_authority\",\n  \"brief_spec_version\": \"1.0.0\",\n  \"status\": \"READY_FOR_DIRECTOR\",\n  \"transfer_mode\": \"STANDARD_REFERENCE_TRANSFER\",\n  \"transfer_intensity\": {\n    \"value\": \"HIGH\",\n    \"source\": \"USER_EXPLICIT\",\n    \"confidence\": \"HIGH\"\n  },\n  \"base_analysis\": {\n    \"base_asset_id\": \"target_live_rt_01_same_domain_authority\",\n    \"semantic_identity\": \"executive strategy keynote banner\",\n    \"protected_elements\": [\n      \"target professional context\",\n      \"target communication goal\",\n      \"executive authority and strategic clarity\"\n    ],\n    \"required_copy\": [],\n    \"subject_identity_requirements\": \"Do not reuse reference person identity; target executive identity is not specified and must be created.\",\n    \"existing_composition_constraints\": [\n      \"16:9 landscape format\",\n      \"LinkedIn platform\",\n      \"Text overlay expected\",\n      \"Keynote announcement context\"\n    ],\n    \"elements_allowed_to_change\": [\n      \"subject identity\",\n      \"environment specifics\",\n      \"wardrobe\",\n      \"exact gesture\",\n      \"color palette exact values\",\n      \"typography content and placement\"\n    ],\n    \"elements_forbidden_to_change\": [\n      \"professional context\",\n      \"authority tone\",\n      \"clarity of hierarchy\"\n    ]\n  },\n  \"reference_analyses\": [\n    {\n      \"reference_asset_id\": \"live_ref_authority_speaker\",\n      \"role\": \"PRIMARY_REFERENCE\",\n      \"scope\": \"GLOBAL_VISUAL_DIRECTION\",\n      \"authority\": \"USER_PRIMARY_REFERENCE\",\n      \"observations\": [\n        {\n          \"observation_id\": \"obs_01_composition_offset\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Subject positioned in right third, gesturing toward left open space with left hand extended.\",\n          \"region\": \"right third to center\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"obs_02_subject_treatment\",\n          \"category\": \"SUBJECT_TREATMENT\",\n          \"description\": \"Male speaker in dark business suit, white shirt, dark tie, holding presentation clicker in right hand, left hand gesturing.\",\n          \"region\": \"center-right\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"obs_03_lighting_dramatic\",\n          \"category\": \"LIGHTING\",\n          \"description\": \"Warm key light illuminates subject from front-right; blue environmental light fills background; rim light separates subject from background.\",\n          \"region\": \"full frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"obs_04_depth_system\",\n          \"category\": \"DEPTH\",\n          \"description\": \"Shallow depth of field keeps subject sharp; audience and ceiling architecture blurred in background; atmospheric blue haze separates planes.\",\n          \"region\": \"full frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"obs_05_environment_auditorium\",\n          \"category\": \"ENVIRONMENT\",\n          \"description\": \"Large auditorium with tiered seating, geometric ceiling structures, and stage lighting rigs; audience visible as dark mass in background.\",\n          \"region\": \"background\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"obs_06_color_temperature\",\n          \"category\": \"COLOR\",\n          \"description\": \"Cool blue environmental cast contrasts with warm key light on skin and suit; dark suit provides value anchor; white shirt creates highlight.\",\n          \"region\": \"full frame\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"obs_07_material_contrast\",\n          \"category\": \"MATERIAL\",\n          \"description\": \"Wool suit texture, polished leather shoe, smooth plastic/metal clicker, skin texture.\",\n          \"region\": \"subject and foreground\",\n          \"salience\": \"LOW\",\n          \"confidence\": \"MEDIUM\",\n          \"provenance\": \"OBSERVED\"\n        }\n      ],\n      \"reference_dna\": {\n        \"authority_pose\": \"Low-angle perspective with confident upright stance and gesturing hand\",\n        \"hierarchy\": \"Subject dominates frame with audience as secondary depth mass\",\n        \"lighting_system\": \"Warm key light with cool environmental fill and rim separation\",\n        \"depth_logic\": \"Sharp subject against blurred environmental planes\",\n        \"color_logic\": \"Cool-warm temperature contrast with dark value anchor\",\n        \"narrative_function\": \"Presentation moment implying strategic communication\"\n      },\n      \"transfer_relevance\": \"VERY_HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"design_decision_map\": [\n    {\n      \"mapping_id\": \"map_01_authority_pose\",\n      \"source_reference_asset_id\": \"live_ref_authority_speaker\",\n      \"observation_ids\": [\"obs_01_composition_offset\", \"obs_02_subject_treatment\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Executive subject positioned with authoritative stance, gesturing toward message territory or audience connection; avoid copying specific person identity.\",\n      \"rationale\": \"The offset subject with gesturing hand creates engagement and directional energy suitable for keynote announcement. The pose communicates confidence and explanation without requiring the reference individual.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"",
+      "provider_metadata": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-cf6ff0e8-ae37-4e08-9c92-3e179cc30fec",
+        "finish_reason": "length",
+        "transport_attempt_count": 2,
+        "latency_ms": 99059,
+        "final_attempt_latency_ms": 87282,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_authority_speaker",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 98544,
+            "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4324,
+          "reference_context_characters": 817,
+          "my_eyes_advisory_characters": 1262,
+          "vkb_advisory_characters": 1230,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32590,
+          "total_textual_characters": 519408,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 131392,
+          "serialized_http_body_characters": 660285,
+          "input_tokens": 96808,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 8192,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 157144,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96808,
+          "output_tokens": 8192,
+          "total_tokens": 105000,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "evaluation": {
+    "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+    "status": "PROVIDER_BLOCKED",
+    "quality_class": "PROVIDER_BLOCKED",
+    "creative_approval": "NOT_PERFORMED",
+    "error": {
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED",
+      "message": "Reference Translator exhausted its correction attempts.",
+      "provider_error_code": "MODEL_MALFORMED_RESPONSE"
+    },
+    "checks": [
+      {
+        "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+        "outcome": "FAIL",
+        "evidence": "No accepted multimodal model response was produced."
+      },
+      {
+        "category": "MECHANISM_IDENTIFICATION",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "FUNCTION_BEFORE_APPEARANCE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "REFERENCE_DNA_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "TARGET_SEMANTICS_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "TARGET_NATIVE_ADAPTATION",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "LITERAL_COPY_AVOIDED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SURFACE_COPY_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "UNDERTRANSFER_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "OVERTRANSFER_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "IDENTITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "MY_EYES_AUTHORITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "VKB_AUTHORITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SCHEMA_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      },
+      {
+        "category": "SEMANTIC_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      },
+      {
+        "category": "QUALITY_GATE_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      }
+    ],
+    "cognitive_audit": {
+      "what_the_model_thought_was_important": [],
+      "what_it_wanted_to_transfer": [],
+      "what_it_wanted_to_adapt": [],
+      "what_it_wanted_to_reinvent": [],
+      "what_it_discarded": [],
+      "what_it_protected": [],
+      "what_risks_it_identified": []
+    },
+    "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\runs\\run_live_rt_01_same_domain_authority-rt-live-step37-20260816-01.trace.json",
+    "failed_attempts": [
+      {
+        "attempt": 1,
+        "validator_error_code": "MODEL_OUTPUT_INVALID_JSON",
+        "diagnostic_codes": [
+          "MODEL_OUTPUT_INVALID_JSON"
+        ],
+        "raw_json": false,
+        "schema_valid": false,
+        "schema_errors": [
+          {
+            "message": "Candidate was not raw JSON."
+          }
+        ],
+        "candidate_project_id": null,
+        "candidate_status_field": null,
+        "observation_count": 0,
+        "visible_observations": [],
+        "decisions": [],
+        "declared_risks": []
+      }
+    ]
+  }
+}

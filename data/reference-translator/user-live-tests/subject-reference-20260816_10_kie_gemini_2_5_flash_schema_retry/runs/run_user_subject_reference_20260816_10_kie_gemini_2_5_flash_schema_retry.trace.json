@@ -1,0 +1,433 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_user_subject_reference_20260816_10_kie_gemini_2_5_flash_schema_retry",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "schema_contract": {
+    "schema_name": "reference_transfer_plan",
+    "schema_id": "https://design-builder.io/schemas/reference_transfer_plan.schema.json",
+    "sha256": "0a9c1cde9a1f9511a4359cab77d101b1c948391269bed5ccd1e95f148dde05b2"
+  },
+  "schema_correction_protocol_version": "1.0.0",
+  "input_mode": "MULTIMODAL",
+  "status": "FAILED",
+  "started_at": "2026-08-16T22:08:57.804Z",
+  "completed_at": "2026-08-16T22:09:37.883Z",
+  "input_hash": "1c608bbee756abdb9c1ae9104c0293fce2068ee77f2d74145bc242755fc69304",
+  "input_artifacts": {
+    "context_id": "ctx_user_subject_reference_20260816_10_kie_gemini_2_5_flash_schema_retry",
+    "brief_ref": {
+      "artifact_id": "brief_user_subject_reference_20260816_10_kie_gemini_2_5_flash_schema_retry",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "primary_tech_reference",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": []
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "KIE_AI",
+    "model": "gemini-2.5-flash"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "SCHEMA_ENUM_MISMATCH"
+      ],
+      "diagnostic_summaries": [
+        {
+          "stage": "SCHEMA",
+          "path": "/reference_analyses/0/authority",
+          "keyword": "enum",
+          "diagnostic_code": "SCHEMA_ENUM_MISMATCH",
+          "schema_path": "#/properties/reference_analyses/items/properties/authority/enum",
+          "allowed_values": [
+            "USER_PRIMARY_REFERENCE",
+            "USER_SECONDARY_REFERENCE",
+            "SUPPORTING_REFERENCE"
+          ],
+          "allowed_values_count": 3,
+          "received_value": "PRIMARY_REFERENCE",
+          "received_type": "string"
+        }
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 12075,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32428,
+        "total_textual_characters": 524441,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1567756,
+        "input_tokens": 131111,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 1048576,
+        "headroom_tokens": 901081,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "KIE_AI",
+        "model": "gemini-2.5-flash",
+        "provider_response_id": "chatcmpl-20260817061125595668865nncqsNSM",
+        "finish_reason": "stop",
+        "transport_attempt_count": 1,
+        "latency_ms": 13964,
+        "final_attempt_latency_ms": 13964,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 12075,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32428,
+          "total_textual_characters": 524441,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1567756,
+          "input_tokens": 101487,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 1048576,
+          "headroom_tokens": 930705,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 101487,
+          "output_tokens": 2147,
+          "total_tokens": 103634,
+          "cached_tokens": null,
+          "reasoning_tokens": 0
+        },
+        "provider_reported_credits": 2.15,
+        "structured_output_mode": "NONE",
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "SCHEMA_ENUM_MISMATCH"
+      ],
+      "diagnostic_summaries": [
+        {
+          "stage": "SCHEMA",
+          "path": "/non_negotiable_anchors/0/provenance",
+          "keyword": "enum",
+          "diagnostic_code": "SCHEMA_ENUM_MISMATCH",
+          "schema_path": "#/properties/non_negotiable_anchors/items/properties/provenance/enum",
+          "allowed_values": [
+            "OBSERVED",
+            "INFERRED",
+            "USER_EXPLICIT",
+            "MODEL_INFERENCE"
+          ],
+          "allowed_values_count": 4,
+          "received_value": "USER_ASSET",
+          "received_type": "string"
+        }
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 12075,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 595,
+        "provider_user_text_characters": 33534,
+        "total_textual_characters": 525547,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1568953,
+        "input_tokens": 131387,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 1048576,
+        "headroom_tokens": 900805,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "KIE_AI",
+        "model": "gemini-2.5-flash",
+        "provider_response_id": "chatcmpl-20260817061139160289538dfnC8NCJ",
+        "finish_reason": "stop",
+        "transport_attempt_count": 1,
+        "latency_ms": 13742,
+        "final_attempt_latency_ms": 13742,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 12075,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 595,
+          "provider_user_text_characters": 33534,
+          "total_textual_characters": 525547,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1568953,
+          "input_tokens": 101786,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 1048576,
+          "headroom_tokens": 930406,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 101786,
+          "output_tokens": 2147,
+          "total_tokens": 103933,
+          "cached_tokens": null,
+          "reasoning_tokens": 0
+        },
+        "provider_reported_credits": 2.15,
+        "structured_output_mode": "NONE",
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 3,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "SCHEMA_ENUM_MISMATCH"
+      ],
+      "diagnostic_summaries": [
+        {
+          "stage": "SCHEMA",
+          "path": "/reference_analyses/0/authority",
+          "keyword": "enum",
+          "diagnostic_code": "SCHEMA_ENUM_MISMATCH",
+          "schema_path": "#/properties/reference_analyses/items/properties/authority/enum",
+          "allowed_values": [
+            "USER_PRIMARY_REFERENCE",
+            "USER_SECONDARY_REFERENCE",
+            "SUPPORTING_REFERENCE"
+          ],
+          "allowed_values_count": 3,
+          "received_value": "PRIMARY_REFERENCE",
+          "received_type": "string"
+        }
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 12075,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 662,
+        "provider_user_text_characters": 33612,
+        "total_textual_characters": 525625,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1569034,
+        "input_tokens": 131407,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 1048576,
+        "headroom_tokens": 900785,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "KIE_AI",
+        "model": "gemini-2.5-flash",
+        "provider_response_id": "chatcmpl-20260817061152188029452AQ6EQgnl",
+        "finish_reason": "stop",
+        "transport_attempt_count": 1,
+        "latency_ms": 12257,
+        "final_attempt_latency_ms": 12257,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 12075,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 662,
+          "provider_user_text_characters": 33612,
+          "total_textual_characters": 525625,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1569034,
+          "input_tokens": 101820,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 1048576,
+          "headroom_tokens": 930372,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 101820,
+          "output_tokens": 2158,
+          "total_tokens": 103978,
+          "cached_tokens": null,
+          "reasoning_tokens": 0
+        },
+        "provider_reported_credits": 2.16,
+        "structured_output_mode": "NONE",
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T22:08:57.805Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T22:08:57.819Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T22:08:57.819Z",
+      "attempt": 1
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T22:09:11.804Z",
+      "attempt": 1
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T22:09:11.810Z",
+      "attempt": 1,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T22:09:11.824Z",
+      "attempt": 2
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T22:09:11.824Z",
+      "attempt": 2
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T22:09:25.587Z",
+      "attempt": 2
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T22:09:25.588Z",
+      "attempt": 2,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T22:09:25.602Z",
+      "attempt": 3
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T22:09:25.602Z",
+      "attempt": 3
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T22:09:37.880Z",
+      "attempt": 3
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T22:09:37.883Z",
+      "attempt": 3,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T22:09:37.883Z",
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED"
+    }
+  ],
+  "validation_outcomes": [],
+  "output_plan_id": null,
+  "structured_decision_summary": [],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

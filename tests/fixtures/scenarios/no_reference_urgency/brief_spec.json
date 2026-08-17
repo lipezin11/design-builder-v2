@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "project_mode": "NO_REFERENCE",
+  "project_type": "THUMBNAIL",
+  "user_request": "Crie uma thumbnail 16:9 de ÃƒÂºltima chance com a headline exata ENCERRAMENTO DO CARRINHO, autoridade humana e urgÃƒÂªncia sem clichÃƒÂª promocional barato.",
+  "commercial_objective": "Aumentar a taxa de cliques (CTR) no YouTube em vídeos educacionais de tecnologia avançada.",
+  "communication_goal": "Transmitir o impacto revolucionário e a complexidade acessível da computação quântica.",
+  "target_context": "YouTube video thumbnail em alta resolução.",
+  "format": {
+    "aspect_ratio": "16:9",
+    "orientation": "LANDSCAPE",
+    "width": 1280,
+    "height": 720,
+    "platform": "YouTube",
+    "usage": "Video Thumbnail",
+    "text_overlay_expected": true
+  },
+  "copy": {
+    "headline": {
+      "content": "O FIM DOS COMPUTADORES?",
+      "exact_text_lock": true,
+      "priority": "CRITICAL",
+      "required": true,
+      "language": "pt-BR"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "asset-presenter-001",
+      "asset_type": "IMAGE",
+      "role": "SUBJECT_IDENTITY",
+      "origin": "USER_UPLOAD",
+      "authority": "SUBJECT_IDENTITY",
+      "required": true,
+      "description": "Identidade fictÃƒÂ­cia do apresentador para o cenÃƒÂ¡rio canÃƒÂ´nico.",
+      "user_instruction": "Preservar identidade e autoridade.",
+      "preservation_level": "STRICT"
+    }
+  ],
+  "subject": {
+    "present": true,
+    "identity_asset_id": "asset_scientist_ref",
+    "identity_preservation": "MEDIUM",
+    "pose_preservation": "LOW",
+    "expression_preservation": "HIGH",
+    "wardrobe_preservation": "LOW",
+    "body_orientation_preservation": "LOW",
+    "age_preservation": "MEDIUM",
+    "recognizability_required": false,
+    "user_subject_instructions": "Cientista homem, meia-idade, expressão de fascínio."
+  },
+  "references": [],
+  "hard_constraints": [
+    {
+      "constraint_id": "hc_headline",
+      "description": "Headline exata deve estar presente na imagem.",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    },
+    {
+      "constraint_id": "hc_aspect",
+      "description": "Formato estrito 16:9 (1280x720).",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    }
+  ],
+  "soft_preferences": [
+    {
+      "preference_id": "sp_mood",
+      "description": "Preferência por iluminação futurista e misteriosa.",
+      "provenance": "MODEL_INFERENCE",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "emotional_intent": {
+    "primary": "urgency",
+    "secondary": [
+      "last chance",
+      "speed",
+      "authority"
+    ],
+    "avoid": [
+      "cheap promotion",
+      "panic"
+    ]
+  },
+  "creative_freedom": {
+    "overall": "HIGH",
+    "composition": "HIGH",
+    "environment": "HIGH",
+    "subject_pose": "HIGH",
+    "wardrobe": "HIGH",
+    "typography": "MEDIUM",
+    "color": "HIGH",
+    "narrative_objects": "HIGH"
+  },
+  "preservation_requirements": [
+    {
+      "element": "headline",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "allowed_transformations": [
+    {
+      "transformation": "environment may be fully synthesized as a quantum laboratory",
+      "provenance": "SYSTEM_DERIVED"
+    }
+  ],
+  "forbidden_transformations": [
+    {
+      "transformation": "do not alter headline text",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "ambiguities": [],
+  "blocking_questions": [],
+  "pipeline_hints": {
+    "has_reference": false,
+    "requires_reference_translator": false,
+    "requires_subject_identity_preservation": true,
+    "edit_mode": false,
+    "text_generation_required": true,
+    "human_clarification_required": false
+  },
+  "provenance": {
+    "interpreter_version": "1.0.0",
+    "created_at": "2026-08-09T12:00:00Z",
+    "notes": "Parsed from user chat request."
+  },
+  "status": "READY"
+}

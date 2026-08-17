@@ -1,0 +1,459 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_live_rt_06_card_information_artifact-rt-live-step37-20260816-final",
+  "project_id": "project_live_rt_06_card_information_artifact",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "REFERENCE_REINTERPRETATION",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "USER_EXPLICIT",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": "target_live_rt_06_card_information_artifact",
+    "semantic_identity": "Online language curriculum hero showing a coherent path from lessons to confident communication",
+    "protected_elements": [
+      "target professional context",
+      "target communication goal",
+      "progress with confidence and energy"
+    ],
+    "required_copy": [],
+    "subject_identity_requirements": "NONE - no specific person identity required; reference person identity must not transfer",
+    "existing_composition_constraints": [
+      "16:9 landscape format",
+      "web platform",
+      "text overlay expected",
+      "avoid dashboard overload",
+      "avoid generic technology"
+    ],
+    "elements_allowed_to_change": [
+      "composition",
+      "environment",
+      "lighting",
+      "color relationships",
+      "material language",
+      "typography",
+      "narrative objects",
+      "subject identity and wardrobe"
+    ],
+    "elements_forbidden_to_change": [
+      "target professional context",
+      "target communication goal"
+    ]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "live_ref_card_carousel",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_001",
+          "category": "SUBJECT_TREATMENT",
+          "description": "A man in a black suit faces forward with his right hand extended in a presenting gesture toward a floating interface",
+          "region": "center",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_002",
+          "category": "COMPOSITION",
+          "description": "A curved carousel of five framed panels floats across the lower third, creating a horizontal progression with slight arc",
+          "region": "lower third",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_003",
+          "category": "NARRATIVE_OBJECT",
+          "description": "Each panel contains distinct product imagery: a fashion portrait, a burger, a perfume bottle in a forest setting, a skincare serum, and a dark cosmetic bottle",
+          "region": "lower third",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_004",
+          "category": "LIGHTING",
+          "description": "Green neon light outlines the carousel panels and technical UI elements; rim lighting separates the subject from the dark background",
+          "region": "throughout",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_005",
+          "category": "ENVIRONMENT",
+          "description": "Dark background with green grid lines, technical markings, barcode elements, and floating geometric shapes",
+          "region": "background and edges",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_006",
+          "category": "DEPTH",
+          "description": "Layered depth created by the foreground carousel plane, midground subject, and background technical environment with atmospheric haze",
+          "region": "throughout",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_007",
+          "category": "TYPOGRAPHY",
+          "description": "Minimal text in upper left corner; technical markings and barcode-like elements on right edge",
+          "region": "upper left and right edge",
+          "salience": "LOW",
+          "confidence": "MEDIUM",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "primary": "modular carousel progression with presenting human guide",
+        "secondary": "layered depth structure and controlled rim lighting",
+        "supporting": "precise information spacing, atmospheric haze, neon framing",
+        "incidental": "green sci-fi color palette, technical UI decorations, specific product identities"
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_001",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_002",
+        "obs_003"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "A curved or modular progression of specific language lesson artifacts (e.g., vocabulary cards, grammar modules, conversation scenarios) arranged to show the learning journey from beginner to confident communication",
+      "rationale": "The curved carousel creates a visual path and modular progression that maps to curriculum stages. Cards must be specific to language learning content and grouped by skill level or topic to avoid generic dashboard interchangeability.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "card_content_specificity",
+        "grouping_logic",
+        "progression_narrative"
+      ],
+      "cross_category_adaptation": {
+        "reference_product_category": "consumer_product_retail",
+        "target_product_category": "online_education",
+        "literal_object": "holographic product carousel with five framed panels",
+        "visual_function": "modular progression display presenting a curated sequence of items",
+        "material_language": "glowing neon borders, transparent glass panels, floating holographic interface",
+        "emotional_effect": "sophisticated, futuristic, progressive, curated selection",
+        "equivalent_adaptation": "modular lesson artifact cards arranged in a curved or linear progression, framed by clean borders or subtle depth, representing the journey from lessons to confident communication; content includes specific vocabulary sets, grammar modules, or conversation scenarios",
+        "literal_transfer_allowed": false,
+        "target_category_coherence": "Language curricula are inherently modular and progressive; showing specific lesson artifacts in a sequence directly communicates the learning path. This avoids generic dashboard decoration by ensuring each card has specific curriculum content and logical grouping."
+      },
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_002",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_001"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "A learner or instructor figure with a presenting/guiding gesture toward the curriculum path, creating human connection and narrative invitation",
+      "rationale": "The presenting gesture establishes a guide role and directs viewer attention into the learning journey. The specific person identity is discarded; the gesture role is adapted to an education-appropriate figure.",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "gesture_direction",
+        "human_presence"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_003",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_004",
+        "obs_005"
+      ],
+      "action": "DISCARD",
+      "target_in_new_composition": "N/A",
+      "rationale": "The green neon sci-fi aesthetic and technical UI decorations (barcodes, satellites, grid lines) conflict with the professional educational context and risk generic technology appearance. These are replaced with target-native learning environment cues.",
+      "strength": "NONE",
+      "flexibility": "LOCKED",
+      "protected_dependencies": [],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_004",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_006"
+      ],
+      "action": "TRANSFER",
+      "target_in_new_composition": "Layered depth structure with foreground learning artifacts, midground hero/subject, and background learning environment",
+      "rationale": "The three-plane depth system creates spatial hierarchy and immersion. This relational structure transfers directly to the educational context.",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "foreground_midground_background_roles"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_005",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_004"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Controlled portrait or environmental lighting that separates the subject and highlights key learning artifacts without sci-fi connotations",
+      "rationale": "The rim lighting and contrast create hierarchy and focus. This lighting logic is adapted to a professional educational setting with warm or neutral light appropriate to learning.",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "lighting_hierarchy",
+        "subject_separation"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_006",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_007"
+      ],
+      "action": "DISCARD",
+      "target_in_new_composition": "N/A",
+      "rationale": "Source text and technical markings are not transferred. Typography will be target-owned and specific to the curriculum message.",
+      "strength": "NONE",
+      "flexibility": "LOCKED",
+      "protected_dependencies": [],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "conf_001",
+      "type": "REFERENCE_VS_USER_CONSTRAINT",
+      "description": "Reference displays specific product cards (fragrance, skincare, food, fashion) and green energy treatment, which are explicitly forbidden by user constraints.",
+      "severity": "HIGH",
+      "blocking": true,
+      "involved_assets": [
+        "live_ref_card_carousel"
+      ],
+      "involved_constraints": [
+        "do_not_transfer: source product cards",
+        "do_not_transfer: source green energy treatment",
+        "reference person identity must not become target identity"
+      ],
+      "translator_position": "Discard all product-specific cards and green sci-fi aesthetic; adapt only the modular carousel structure and presenting gesture mechanism.",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    },
+    {
+      "conflict_id": "conf_002",
+      "type": "REFERENCE_VS_BRIEF",
+      "description": "Reference uses a sci-fi/cyberpunk aesthetic with green neon and technical UI that conflicts with the professional educational context and risks generic technology appearance.",
+      "severity": "MEDIUM",
+      "blocking": false,
+      "involved_assets": [
+        "live_ref_card_carousel"
+      ],
+      "involved_constraints": [
+        "target professional context",
+        "avoid: generic technology"
+      ],
+      "translator_position": "Discard the sci-fi aesthetic and replace with target-native educational environment cues while preserving the modular information structure.",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    },
+    {
+      "conflict_id": "conf_003",
+      "type": "REFERENCE_VS_SUBJECT_IDENTITY",
+      "description": "Reference contains a recognizable person whose identity must not transfer to the target.",
+      "severity": "HIGH",
+      "blocking": true,
+      "involved_assets": [
+        "live_ref_card_carousel"
+      ],
+      "involved_constraints": [
+        "reference person identity must not become target identity"
+      ],
+      "translator_position": "Discard the specific person; retain only the presenting gesture role and adapt to an education-appropriate figure.",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    }
+  ],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anchor_001",
+      "description": "Curved modular carousel progression",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "function": "Visualize a learning journey with distinct stages or modules",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "This is the primary signature mechanism showing progression and modular content organization",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_002",
+      "description": "Human guide presenting gesture",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "function": "Create human connection and direct viewer attention into the learning path",
+      "importance": "MEDIUM",
+      "flexibility": "HIGH",
+      "reason": "Establishes narrative invitation and authority without requiring the specific reference person",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_003",
+      "description": "Specific card grouping and hierarchy",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "function": "Organize information into specific, non-interchangeable learning artifacts",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Cards must remain specific to language learning content to avoid dashboard overload and generic interchangeability",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_004",
+      "description": "Layered depth structure",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "function": "Create spatial hierarchy between learning artifacts, subject, and environment",
+      "importance": "MEDIUM",
+      "flexibility": "HIGH",
+      "reason": "Depth planes organize complexity and guide attention",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "Color palette and lighting temperature",
+      "freedom_level": "HIGH",
+      "rationale": "The green sci-fi palette is discarded; target may use warm, cool, or neutral educational lighting appropriate to the learning context"
+    },
+    {
+      "area": "Environment and background",
+      "freedom_level": "HIGH",
+      "rationale": "The technical sci-fi background is replaced with target-native learning environments (classroom, study, travel, professional settings)"
+    },
+    {
+      "area": "Subject identity and wardrobe",
+      "freedom_level": "HIGH",
+      "rationale": "The reference person is excluded; any appropriate learner, instructor, or abstract hero may be used"
+    },
+    {
+      "area": "Specific card content and count",
+      "freedom_level": "HIGH",
+      "rationale": "The five product cards become language lesson artifacts; count and specific content are target decisions as long as they remain specific and grouped"
+    },
+    {
+      "area": "Technical UI decorations",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "All sci-fi UI elements (barcodes, satellites, geometric shapes) are discarded; target may use minimal interface cues only if they serve the curriculum narrative"
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_001",
+      "description": "Cards become generic dashboard decoration rather than specific learning artifacts",
+      "severity": "HIGH",
+      "mitigation": "Ensure each card contains specific, verified curriculum content (e.g., actual lesson titles, skill levels, or language scenarios) with clear grouping logic; avoid fake metrics or interchangeable panels."
+    },
+    {
+      "risk_id": "risk_002",
+      "description": "Generic technology aesthetic persists despite discard of sci-fi elements",
+      "severity": "MEDIUM",
+      "mitigation": "Replace green neon and technical UI with target-native educational environment cues; use motivated lighting from windows, screens, or environmental sources rather than automatic glow."
+    },
+    {
+      "risk_id": "risk_003",
+      "description": "Subject identity leakage from reference person",
+      "severity": "HIGH",
+      "mitigation": "Use a different person or abstract hero; do not replicate the reference subject's likeness, styling, or pose exactly."
+    },
+    {
+      "risk_id": "risk_004",
+      "description": "Over-transfer of reference composition leads to target blindness",
+      "severity": "MEDIUM",
+      "mitigation": "Prioritize the target's communication goal (progress from lessons to confident communication) over preserving the reference's exact carousel shape or sci-fi atmosphere."
+    }
+  ],
+  "open_questions": [
+    {
+      "question_id": "q_001",
+      "question": "Should the curriculum hero feature a specific learner/instructor persona, or an abstract product/interface hero?",
+      "target_audience": "CREATIVE_DIRECTOR"
+    }
+  ],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-16T00:00:00Z",
+    "notes": "Analysis of live_ref_card_carousel for online language curriculum hero. Cross-category translation from product carousel to educational artifacts."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Reference image is clear and multimodal access is confirmed. Functional mechanisms (modular progression, presenting gesture, layered depth) are identifiable and transferable with clear adaptation paths. Cross-category translation is well-defined."
+  },
+  "director_handoff": {
+    "what_must_survive": [
+      "Modular progression logic showing a learning journey",
+      "Specific non-interchangeable information cards/artifacts",
+      "Human guide or presenter figure creating narrative invitation",
+      "Layered depth structure (foreground artifacts, midground hero, background environment)"
+    ],
+    "what_should_survive": [
+      "Controlled lighting hierarchy separating subject and artifacts",
+      "Curved or modular composition creating visual flow",
+      "Precise information spacing and hierarchy",
+      "Atmospheric depth through haze or environmental separation"
+    ],
+    "what_can_change": [
+      "Color palette (avoid green sci-fi)",
+      "Environment (replace with learning context)",
+      "Subject identity and wardrobe",
+      "Specific card content (language lessons)",
+      "Technical UI decorations (discard)",
+      "Carousel exact shape (may adapt to target format)"
+    ],
+    "key_conflicts": [
+      "Reference sci-fi/tech aesthetic vs professional educational context",
+      "Reference product cards vs target learning artifacts",
+      "Reference person identity vs target identity protection"
+    ],
+    "recommended_anchors": [
+      "Curved modular carousel as learning path",
+      "Presenting gesture as guidance",
+      "Specific lesson artifact cards",
+      "Layered depth planes"
+    ],
+    "creative_opportunities": [
+      "Use real language lesson content on cards (vocabulary sets, grammar modules, cultural notes)",
+      "Adapt the presenting gesture to a diverse learner or instructor population",
+      "Replace sci-fi environment with authentic learning spaces (classroom, travel, professional settings)",
+      "Use the carousel concept to show progression from beginner to advanced levels"
+    ],
+    "warnings": [
+      "Avoid generic dashboard styling; cards must be specific and narrative",
+      "Avoid green neon and sci-fi UI elements that signal generic technology",
+      "Do not replicate the reference person's identity",
+      "Ensure cards are grouped by meaningful curriculum logic, not just arranged for aesthetics"
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.local/schemas/external_visual_analysis_batch.schema.json",
+  "title": "External Visual Analysis Batch",
+  "description": "Independent external multimodal evidence. Human labels, AI observations, descriptive contrasts, and candidate signals remain separate; no preference is inferred.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "batch_id", "batch_version", "source", "semantic_boundaries", "mappings", "records", "human_label_attachments", "raw_aggregate_output", "recalculated_aggregates", "candidate_signals", "normalization_report", "warnings", "import_report"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "batch_id": { "type": "string", "pattern": "^MYE_EXT_BATCH_[0-9]{6}$" },
+    "batch_version": { "type": "integer", "minimum": 1 },
+    "source": { "$ref": "#/$defs/source" },
+    "semantic_boundaries": { "$ref": "#/$defs/boundaries" },
+    "mappings": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/mapping" } },
+    "records": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/record" } },
+    "human_label_attachments": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/label" } },
+    "raw_aggregate_output": { "$ref": "#/$defs/raw_aggregate" },
+    "recalculated_aggregates": { "type": "array", "items": { "$ref": "#/$defs/aggregate" } },
+    "candidate_signals": { "type": "array", "items": { "$ref": "#/$defs/signal" } },
+    "normalization_report": { "$ref": "#/$defs/normalization_report" },
+    "warnings": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "import_report": { "$ref": "#/$defs/import_report" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "image_id": { "type": "string", "pattern": "^MYE_IMG_[0-9]{6}$" },
+    "token": { "type": "string", "pattern": "^IMG_[1-9][0-9]*_[A-Za-z0-9_]+$" },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["asserted_by", "recorded_by", "source_type", "source_ref", "recorded_at", "data_classification"],
+      "properties": {
+        "asserted_by": { "enum": ["HUMAN", "MULTIMODAL_ANALYZER"] },
+        "recorded_by": { "const": "EXTERNAL_VISUAL_ANALYSIS_IMPORTER" },
+        "source_type": { "enum": ["HUMAN_EXPLICIT_DATASET_LABEL", "EXTERNAL_BLIND_VISUAL_ANALYSIS", "EXTERNAL_DESCRIPTIVE_CONTRAST", "EXTERNAL_CANDIDATE_SIGNAL"] },
+        "source_ref": { "type": "string", "minLength": 1 },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "data_classification": { "enum": ["REAL_HUMAN_EVIDENCE", "REAL_AI_ANALYSIS", "SYNTHETIC_TEST_DATA"] }
+      }
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_id", "original_filename", "raw_path", "sha256", "imported_at", "analyzer_type", "analysis_protocol", "data_classification"],
+      "properties": {
+        "source_id": { "type": "string", "pattern": "^MYE_EXT_SRC_[0-9]{6}$" },
+        "original_filename": { "type": "string", "minLength": 1 },
+        "raw_path": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "imported_at": { "type": "string", "format": "date-time" },
+        "analyzer_type": { "const": "EXTERNAL_MULTIMODAL_ANALYZER" },
+        "analysis_protocol": { "const": "BLIND_ANALYSIS_THEN_HUMAN_LABEL_ATTACHMENT" },
+        "data_classification": { "enum": ["REAL_AI_ANALYSIS", "SYNTHETIC_TEST_DATA"] }
+      }
+    },
+    "boundaries": {
+      "type": "object", "additionalProperties": false,
+      "required": ["external_evidence_is_not_internal_analysis", "candidate_signal_is_not_human_reason", "candidate_signal_is_not_preference", "correlation_is_not_causation", "pairwise_created", "preference_inference_performed", "consensus_computed"],
+      "properties": {
+        "external_evidence_is_not_internal_analysis": { "const": true },
+        "candidate_signal_is_not_human_reason": { "const": true },
+        "candidate_signal_is_not_preference": { "const": true },
+        "correlation_is_not_causation": { "const": true },
+        "pairwise_created": { "const": false },
+        "preference_inference_performed": { "const": false },
+        "consensus_computed": { "const": false }
+      }
+    },
+    "mapping": {
+      "type": "object", "additionalProperties": false,
+      "required": ["external_token", "image_id", "image_sha256", "possible_filename", "mapping_status", "evidence_basis", "human_decision_evidence_id"],
+      "properties": {
+        "external_token": { "$ref": "#/$defs/token" },
+        "image_id": { "$ref": "#/$defs/image_id" },
+        "image_sha256": { "$ref": "#/$defs/sha256" },
+        "possible_filename": { "type": "string", "minLength": 1 },
+        "mapping_status": { "const": "CONFIRMED_DETERMINISTIC" },
+        "evidence_basis": { "type": "string", "minLength": 1 },
+        "human_decision_evidence_id": { "type": "string", "pattern": "^MYE_DEC_[0-9]{6}$" }
+      }
+    },
+    "normalization": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "raw_value", "canonical_value", "range", "normalization_confidence", "strategy"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "raw_value": { "type": "string", "minLength": 1 },
+        "canonical_value": { "oneOf": [{ "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] }, { "type": "null" }] },
+        "range": { "type": "array", "maxItems": 2, "uniqueItems": true, "items": { "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] } },
+        "normalization_confidence": { "enum": ["LOW", "MEDIUM", "HIGH"] },
+        "strategy": { "enum": ["EXACT_SCALE_TRANSLATION", "RANGE_PRESERVING_TRANSLATION"] }
+      }
+    },
+    "internal_ref": {
+      "type": "object", "additionalProperties": false,
+      "required": ["analysis_id", "analysis_version", "record_path", "analyzer_source"],
+      "properties": {
+        "analysis_id": { "type": "string", "pattern": "^MYE_ANA_[0-9]{6}$" },
+        "analysis_version": { "type": "integer", "minimum": 1 },
+        "record_path": { "type": "string", "minLength": 1 },
+        "analyzer_source": { "const": "INTERNAL_MULTIMODAL_ANALYZER" }
+      }
+    },
+    "record": {
+      "type": "object", "additionalProperties": false,
+      "required": ["external_analysis_id", "external_token", "image_id", "image_sha256", "analysis_version", "blind_analysis", "label_visible_during_analysis", "human_decision_context_used", "observation_dimensions", "general_quality_assessment", "normalized_values", "internal_analysis_refs", "agreement_status", "provenance"],
+      "properties": {
+        "external_analysis_id": { "type": "string", "pattern": "^MYE_EXT_ANA_[0-9]{6}$" },
+        "external_token": { "$ref": "#/$defs/token" },
+        "image_id": { "$ref": "#/$defs/image_id" },
+        "image_sha256": { "$ref": "#/$defs/sha256" },
+        "analysis_version": { "type": "integer", "minimum": 1 },
+        "blind_analysis": { "const": true },
+        "label_visible_during_analysis": { "const": false },
+        "human_decision_context_used": { "const": false },
+        "observation_dimensions": { "type": "object", "minProperties": 1, "additionalProperties": true },
+        "general_quality_assessment": { "type": "object", "additionalProperties": true },
+        "normalized_values": { "type": "array", "items": { "$ref": "#/$defs/normalization" } },
+        "internal_analysis_refs": { "type": "array", "items": { "$ref": "#/$defs/internal_ref" } },
+        "agreement_status": { "const": "NOT_COMPUTED" },
+        "provenance": { "allOf": [{ "$ref": "#/$defs/provenance" }, { "properties": { "asserted_by": { "const": "MULTIMODAL_ANALYZER" }, "source_type": { "const": "EXTERNAL_BLIND_VISUAL_ANALYSIS" } } }] }
+      }
+    },
+    "label": {
+      "type": "object", "additionalProperties": false,
+      "required": ["external_token", "image_id", "human_decision", "source", "linked_decision_evidence_id", "attached_after_blind_analysis", "provenance"],
+      "properties": {
+        "external_token": { "$ref": "#/$defs/token" },
+        "image_id": { "$ref": "#/$defs/image_id" },
+        "human_decision": { "enum": ["APPROVED", "REJECTED"] },
+        "source": { "const": "HUMAN_EXPLICIT_DATASET_LABEL" },
+        "linked_decision_evidence_id": { "type": "string", "pattern": "^MYE_DEC_[0-9]{6}$" },
+        "attached_after_blind_analysis": { "const": true },
+        "provenance": { "allOf": [{ "$ref": "#/$defs/provenance" }, { "properties": { "asserted_by": { "const": "HUMAN" }, "source_type": { "const": "HUMAN_EXPLICIT_DATASET_LABEL" } } }] }
+      }
+    },
+    "raw_aggregate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["blind_statistics_section", "descriptive_contrast_section", "limitations_section", "source_of_truth", "provenance"],
+      "properties": {
+        "blind_statistics_section": { "type": "string", "minLength": 1 },
+        "descriptive_contrast_section": { "type": "string", "minLength": 1 },
+        "limitations_section": { "type": "string", "minLength": 1 },
+        "source_of_truth": { "const": false },
+        "provenance": { "allOf": [{ "$ref": "#/$defs/provenance" }, { "properties": { "asserted_by": { "const": "MULTIMODAL_ANALYZER" }, "source_type": { "const": "EXTERNAL_DESCRIPTIVE_CONTRAST" } } }] }
+      }
+    },
+    "aggregate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["metric", "blind_count", "approved_count", "rejected_count", "sample_size", "source", "small_sample_warning"],
+      "properties": {
+        "metric": { "type": "string", "minLength": 1 },
+        "blind_count": { "type": "integer", "minimum": 0 },
+        "approved_count": { "type": "integer", "minimum": 0 },
+        "rejected_count": { "type": "integer", "minimum": 0 },
+        "sample_size": { "const": 8 },
+        "source": { "const": "RECALCULATED_FROM_INDIVIDUAL_RECORDS" },
+        "small_sample_warning": { "const": true }
+      }
+    },
+    "signal": {
+      "type": "object", "additionalProperties": false,
+      "required": ["signal_id", "status", "statement", "source_batch_id", "supporting_image_refs", "approved_count", "rejected_count", "sample_size", "small_sample_warning", "human_confirmed", "preference_status", "correlation_status", "causality_status", "designer_preference_status", "provenance"],
+      "properties": {
+        "signal_id": { "type": "string", "pattern": "^MYE_EXT_SIG_[0-9]{6}$" },
+        "status": { "const": "CANDIDATE_SIGNAL" },
+        "statement": { "type": "string", "minLength": 1 },
+        "source_batch_id": { "type": "string", "pattern": "^MYE_EXT_BATCH_[0-9]{6}$" },
+        "supporting_image_refs": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/image_id" } },
+        "approved_count": { "type": "integer", "minimum": 0 },
+        "rejected_count": { "type": "integer", "minimum": 0 },
+        "sample_size": { "const": 8 },
+        "small_sample_warning": { "const": true },
+        "human_confirmed": { "const": false },
+        "preference_status": { "const": "NOT_INFERRED" },
+        "correlation_status": { "const": "OBSERVED" },
+        "causality_status": { "const": "UNKNOWN" },
+        "designer_preference_status": { "const": "UNKNOWN" },
+        "provenance": { "allOf": [{ "$ref": "#/$defs/provenance" }, { "properties": { "asserted_by": { "const": "MULTIMODAL_ANALYZER" }, "source_type": { "const": "EXTERNAL_CANDIDATE_SIGNAL" } } }] }
+      }
+    },
+    "normalization_report": {
+      "type": "object", "additionalProperties": false,
+      "required": ["strategy", "raw_values_preserved", "normalized_value_count", "range_preserved_count", "reversible"],
+      "properties": {
+        "strategy": { "const": "EXPLICIT_RANGE_PRESERVING" },
+        "raw_values_preserved": { "const": true },
+        "normalized_value_count": { "type": "integer", "minimum": 0 },
+        "range_preserved_count": { "type": "integer", "minimum": 0 },
+        "reversible": { "const": true }
+      }
+    },
+    "import_report": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "source_id", "images_found", "images_mapped", "observations_imported", "human_labels_imported", "candidate_signals_imported", "human_reasons_created", "pairs_created", "preferences_created", "warnings"],
+      "properties": {
+        "status": { "enum": ["PASS", "WARNING", "BLOCK"] },
+        "source_id": { "type": "string", "pattern": "^MYE_EXT_SRC_[0-9]{6}$" },
+        "images_found": { "type": "integer", "minimum": 0 },
+        "images_mapped": { "type": "integer", "minimum": 0 },
+        "observations_imported": { "type": "integer", "minimum": 0 },
+        "human_labels_imported": { "type": "integer", "minimum": 0 },
+        "candidate_signals_imported": { "type": "integer", "minimum": 0 },
+        "human_reasons_created": { "const": 0 },
+        "pairs_created": { "const": 0 },
+        "preferences_created": { "const": 0 },
+        "warnings": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    }
+  }
+}

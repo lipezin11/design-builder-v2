@@ -1,0 +1,523 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.io/schemas/creative_direction_spec.schema.json",
+  "title": "Design Builder Creative Direction Spec",
+  "description": "Frozen high-level creative decision produced by the Creative Direction Room. It defines what the design should become and why, while leaving pixel-level implementation to the Technical Design Room.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "direction_id",
+    "project_id",
+    "status",
+    "input_refs",
+    "creative_thesis",
+    "commercial_psychology",
+    "narrative_tension",
+    "subject_strategy",
+    "emotional_strategy",
+    "visual_hierarchy",
+    "creative_concept",
+    "ideation",
+    "visual_mechanisms",
+    "reference_integration",
+    "vkb_usage",
+    "approved_direction_memory",
+    "protected_elements",
+    "creative_constraints",
+    "banned_tropes",
+    "technical_room_freedom",
+    "unresolved_questions",
+    "provenance",
+    "confidence",
+    "approval"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "direction_id": { "type": "string", "minLength": 1 },
+    "project_id": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "UNDER_REVIEW", "BLOCKED", "HUMAN_REVIEW_REQUIRED", "READY_FOR_TECHNICAL_DESIGN", "APPROVED"]
+    },
+    "input_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["brief_spec_id", "brief_spec_version", "reference_mode_active", "human_instructions_incorporated"],
+      "properties": {
+        "brief_spec_id": { "type": "string" },
+        "brief_spec_version": { "type": "string" },
+        "reference_mode_active": { "type": "boolean" },
+        "reference_transfer_plan_id": { "type": "string" },
+        "reference_transfer_plan_version": { "type": "string" },
+        "human_instructions_incorporated": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["instruction_id", "summary", "provenance"],
+            "properties": {
+              "instruction_id": { "type": "string" },
+              "summary": { "type": "string" },
+              "provenance": { "$ref": "#/$defs/provenance_source" }
+            }
+          }
+        }
+      }
+    },
+    "creative_thesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["thesis_statement", "communication_problem", "creative_answer", "desired_viewer_perception", "rationale", "confidence"],
+      "properties": {
+        "thesis_statement": { "type": "string", "minLength": 1 },
+        "communication_problem": { "type": "string", "minLength": 1 },
+        "creative_answer": { "type": "string", "minLength": 1 },
+        "desired_viewer_perception": { "type": "string", "minLength": 1 },
+        "rationale": { "type": "string", "minLength": 1 },
+        "confidence": { "$ref": "#/$defs/confidence_level" }
+      }
+    },
+    "commercial_psychology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_objective", "desired_responses", "responses_to_avoid", "basis", "rationale"],
+      "properties": {
+        "primary_objective": { "type": "string" },
+        "desired_responses": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "responses_to_avoid": { "type": "array", "items": { "type": "string" } },
+        "basis": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenance_source" } },
+        "rationale": { "type": "string" }
+      }
+    },
+    "narrative_tension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["central_tension", "subject_role", "environment_role", "relationship", "narrative_progression", "rationale"],
+      "properties": {
+        "central_tension": { "type": "string" },
+        "subject_role": { "type": "string" },
+        "environment_role": { "type": "string" },
+        "relationship": { "type": "string" },
+        "narrative_progression": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "rationale": { "type": "string" }
+      }
+    },
+    "subject_strategy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "perceived_character", "expression_intent", "presence", "relationship_to_environment", "relationship_to_viewer", "authority_level", "energy_level", "identity_requirements"],
+      "properties": {
+        "role": { "type": "string" },
+        "perceived_character": { "type": "string" },
+        "expression_intent": { "type": "string" },
+        "presence": { "type": "string" },
+        "relationship_to_environment": { "type": "string" },
+        "relationship_to_viewer": { "type": "string" },
+        "authority_level": { "$ref": "#/$defs/intensity_level" },
+        "energy_level": { "$ref": "#/$defs/intensity_level" },
+        "identity_requirements": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "emotional_strategy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_emotion", "secondary_emotions", "emotions_to_avoid", "emotional_progression", "intensity", "rationale"],
+      "properties": {
+        "primary_emotion": { "type": "string" },
+        "secondary_emotions": { "type": "array", "items": { "type": "string" } },
+        "emotions_to_avoid": { "type": "array", "items": { "type": "string" } },
+        "emotional_progression": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "intensity": { "$ref": "#/$defs/intensity_level" },
+        "rationale": { "type": "string" }
+      }
+    },
+    "visual_hierarchy": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/hierarchy_item" }
+    },
+    "creative_concept": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["concept_statement", "visual_world", "narrative_function", "composition_logic", "depth_logic", "environment_logic", "typography_role"],
+      "properties": {
+        "concept_statement": { "type": "string" },
+        "visual_world": { "type": "string" },
+        "narrative_function": { "type": "string" },
+        "composition_logic": { "type": "string" },
+        "depth_logic": { "type": "string" },
+        "environment_logic": { "type": "string" },
+        "typography_role": { "type": "string" }
+      }
+    },
+    "ideation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidates", "convergence_summary"],
+      "properties": {
+        "candidates": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["candidate_id", "concept_name", "concept_summary", "core_mechanism", "strengths", "risks", "decision", "decision_reason"],
+            "properties": {
+              "candidate_id": { "type": "string" },
+              "concept_name": { "type": "string" },
+              "concept_summary": { "type": "string" },
+              "core_mechanism": { "type": "string" },
+              "strengths": { "type": "array", "items": { "type": "string" } },
+              "risks": { "type": "array", "items": { "type": "string" } },
+              "decision": { "type": "string", "enum": ["SELECTED", "REJECTED", "MERGED", "RESERVE"] },
+              "decision_reason": { "type": "string" }
+            }
+          }
+        },
+        "convergence_summary": { "type": "string" }
+      }
+    },
+    "selected_direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_id", "name", "concept", "why_it_won", "core_visual_idea", "required_perception", "creative_risk", "originality_strategy", "confidence"],
+      "properties": {
+        "candidate_id": { "type": "string" },
+        "name": { "type": "string" },
+        "concept": { "type": "string" },
+        "why_it_won": { "type": "string" },
+        "core_visual_idea": { "type": "string" },
+        "required_perception": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "creative_risk": { "type": "string" },
+        "originality_strategy": { "type": "string" },
+        "confidence": { "$ref": "#/$defs/confidence_level" }
+      }
+    },
+    "visual_mechanisms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["mechanism_id", "name", "category", "function", "target_effect", "priority", "source", "flexibility", "rationale"],
+        "properties": {
+          "mechanism_id": { "type": "string" },
+          "name": { "type": "string", "description": "Free mechanism name; intentionally not a closed enum." },
+          "category": { "$ref": "#/$defs/mechanism_category" },
+          "function": { "type": "string" },
+          "target_effect": { "type": "string" },
+          "priority": { "type": "string", "enum": ["SUPPORTING", "IMPORTANT", "CRITICAL"] },
+          "source": { "$ref": "#/$defs/provenance_source" },
+          "source_reference": { "type": "string" },
+          "flexibility": { "type": "string", "enum": ["LOCKED", "LOW", "MEDIUM", "HIGH"] },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "reference_integration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["active", "transfer_intensity", "accepted_anchors", "modified_anchors", "rejected_anchors", "director_overrides", "remaining_reference_constraints", "confidence"],
+      "properties": {
+        "active": { "type": "boolean" },
+        "transfer_plan_id": { "type": "string" },
+        "transfer_intensity": { "$ref": "#/$defs/transfer_intensity" },
+        "accepted_anchors": { "type": "array", "items": { "$ref": "#/$defs/reference_anchor_decision" } },
+        "modified_anchors": { "type": "array", "items": { "$ref": "#/$defs/reference_anchor_decision" } },
+        "rejected_anchors": { "type": "array", "items": { "$ref": "#/$defs/reference_anchor_decision" } },
+        "director_overrides": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["override_id", "anchor_id", "translator_recommendation", "director_decision", "rationale", "final_mechanism_ids", "provenance"],
+            "properties": {
+              "override_id": { "type": "string" },
+              "anchor_id": { "type": "string" },
+              "translator_recommendation": { "type": "string" },
+              "director_decision": { "type": "string" },
+              "rationale": { "type": "string" },
+              "final_mechanism_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+              "provenance": { "$ref": "#/$defs/provenance_source" }
+            }
+          }
+        },
+        "remaining_reference_constraints": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "$ref": "#/$defs/confidence_level" }
+      }
+    },
+    "vkb_usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["consulted", "queries", "retrieved_mechanisms", "selected_mechanisms", "rejected_mechanisms", "adaptation_notes"],
+      "properties": {
+        "consulted": { "type": "boolean" },
+        "queries": { "type": "array", "items": { "type": "string" } },
+        "retrieved_mechanisms": { "type": "array", "items": { "$ref": "#/$defs/vkb_mechanism" } },
+        "selected_mechanisms": { "type": "array", "items": { "$ref": "#/$defs/vkb_mechanism" } },
+        "rejected_mechanisms": { "type": "array", "items": { "$ref": "#/$defs/rejected_vkb_mechanism" } },
+        "adaptation_notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "approved_direction_memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["consulted", "relevant_evidence_found", "evidence"],
+      "properties": {
+        "consulted": { "type": "boolean" },
+        "relevant_evidence_found": { "type": "boolean" },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["evidence_id", "source_project", "approved_pattern", "relevance_to_current_problem", "confidence", "how_it_influenced_direction"],
+            "properties": {
+              "evidence_id": { "type": "string" },
+              "source_project": { "type": "string" },
+              "approved_pattern": { "type": "string" },
+              "relevance_to_current_problem": { "type": "string" },
+              "confidence": { "$ref": "#/$defs/confidence_level" },
+              "how_it_influenced_direction": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "protected_elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["element_id", "type", "description", "source", "protection_level", "reason", "provenance"],
+        "properties": {
+          "element_id": { "type": "string" },
+          "type": { "type": "string", "enum": ["SUBJECT_IDENTITY", "COPY", "LOGO", "PRODUCT_IDENTITY", "SEMANTIC_PREMISE", "REQUIRED_OBJECT", "BRAND_ELEMENT", "OTHER"] },
+          "description": { "type": "string" },
+          "source": { "type": "string" },
+          "protection_level": { "type": "string", "enum": ["HARD", "STRONG", "SOFT"] },
+          "reason": { "type": "string" },
+          "provenance": { "$ref": "#/$defs/provenance_source" }
+        }
+      }
+    },
+    "creative_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["constraint_id", "level", "statement", "source", "rationale", "provenance"],
+        "properties": {
+          "constraint_id": { "type": "string" },
+          "level": { "type": "string", "enum": ["HARD", "STRONG", "SOFT"] },
+          "statement": { "type": "string" },
+          "source": { "type": "string" },
+          "rationale": { "type": "string" },
+          "provenance": { "$ref": "#/$defs/provenance_source" }
+        }
+      }
+    },
+    "banned_tropes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "description", "reason", "severity", "source"],
+        "properties": {
+          "name": { "type": "string", "description": "Free trope name; intentionally extensible." },
+          "description": { "type": "string" },
+          "reason": { "type": "string" },
+          "severity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] },
+          "source": { "$ref": "#/$defs/provenance_source" }
+        }
+      }
+    },
+    "technical_room_freedom": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frozen_decisions", "strong_guidelines", "open_decisions", "technical_freedom_level"],
+      "properties": {
+        "frozen_decisions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/decision_boundary_item" } },
+        "strong_guidelines": { "type": "array", "items": { "$ref": "#/$defs/decision_boundary_item" } },
+        "open_decisions": { "type": "array", "items": { "$ref": "#/$defs/decision_boundary_item" } },
+        "technical_freedom_level": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] }
+      }
+    },
+    "unresolved_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question_id", "description", "severity", "blocking", "owner", "resolution_requirement"],
+        "properties": {
+          "question_id": { "type": "string" },
+          "description": { "type": "string" },
+          "severity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] },
+          "blocking": { "type": "boolean" },
+          "owner": { "type": "string", "enum": ["CREATIVE_DIRECTOR", "REFERENCE_TRANSLATOR", "TECHNICAL_DESIGN_ROOM", "USER", "HUMAN_REVIEWER"] },
+          "resolution_requirement": { "type": "string" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["producer", "producer_version", "created_at", "decision_sources"],
+      "properties": {
+        "producer": { "const": "PRINCIPAL_CREATIVE_DIRECTOR_AGENT" },
+        "producer_version": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "decision_sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenance_source" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overall", "rationale"],
+      "properties": {
+        "overall": { "$ref": "#/$defs/confidence_level" },
+        "rationale": { "type": "string" }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approval_status", "human_override"],
+      "properties": {
+        "approval_status": { "type": "string", "enum": ["NOT_REVIEWED", "SYSTEM_APPROVED", "HUMAN_APPROVED", "REJECTED", "REVISION_REQUESTED"] },
+        "approved_by": { "type": "string", "enum": ["SYSTEM", "HUMAN"] },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" },
+        "human_override": { "type": "boolean" },
+        "override_reason": { "type": "string" }
+      }
+    },
+    "technical_handoff": {
+      "type": "object",
+      "description": "Derived projection of the frozen direction for the Visual Systems Agent and Layout & Typography Agent; not a competing source of truth.",
+      "additionalProperties": false,
+      "required": ["target_agents", "creative_goal", "selected_direction_summary", "must_preserve", "must_achieve", "must_avoid", "required_mechanism_ids", "hierarchy", "reference_anchors", "technical_freedoms", "known_risks"],
+      "properties": {
+        "target_agents": { "type": "array", "minItems": 2, "uniqueItems": true, "items": { "type": "string", "enum": ["VISUAL_SYSTEMS_AGENT", "LAYOUT_TYPOGRAPHY_AGENT"] } },
+        "creative_goal": { "type": "string" },
+        "selected_direction_summary": { "type": "string" },
+        "must_preserve": { "type": "array", "items": { "type": "string" } },
+        "must_achieve": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "must_avoid": { "type": "array", "items": { "type": "string" } },
+        "required_mechanism_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "hierarchy": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/hierarchy_item" } },
+        "reference_anchors": { "type": "array", "items": { "type": "string" } },
+        "technical_freedoms": { "type": "array", "items": { "type": "string" } },
+        "known_risks": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "$defs": {
+    "confidence_level": { "type": "string", "enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"] },
+    "intensity_level": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] },
+    "transfer_intensity": { "type": "string", "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH", "TO_BE_RESOLVED"] },
+    "provenance_source": {
+      "type": "string",
+      "enum": ["USER_EXPLICIT", "BRIEF_SPEC", "REFERENCE_TRANSFER_PLAN", "CREATIVE_DIRECTOR", "VKB", "APPROVED_DIRECTION_MEMORY", "HUMAN_FEEDBACK", "SYSTEM_DERIVED"]
+    },
+    "mechanism_category": {
+      "type": "string",
+      "enum": ["COMPOSITION", "DEPTH", "HIERARCHY", "ATTENTION", "MOTION", "LIGHTING_BEHAVIOR", "SUBJECT_TREATMENT", "ENVIRONMENT", "TYPOGRAPHY", "COLOR_BEHAVIOR", "NARRATIVE", "MATERIAL", "OTHER"]
+    },
+    "hierarchy_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rank", "element", "reason", "required_strength", "relationship_to_previous"],
+      "properties": {
+        "rank": { "type": "integer", "minimum": 1 },
+        "element": { "type": "string" },
+        "reason": { "type": "string" },
+        "required_strength": { "type": "string", "enum": ["SUPPORTING", "STRONG", "DOMINANT"] },
+        "relationship_to_previous": { "type": ["string", "null"] }
+      }
+    },
+    "reference_anchor_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["anchor_id", "translator_recommendation", "director_decision", "rationale"],
+      "properties": {
+        "anchor_id": { "type": "string" },
+        "translator_recommendation": { "type": "string" },
+        "director_decision": { "type": "string" },
+        "rationale": { "type": "string" },
+        "mechanism_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "vkb_mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vkb_id", "mechanism_name", "why_relevant", "how_adapted", "authority", "confidence"],
+      "properties": {
+        "vkb_id": { "type": "string" },
+        "mechanism_name": { "type": "string" },
+        "why_relevant": { "type": "string" },
+        "how_adapted": { "type": "string" },
+        "authority": { "const": "ADVISORY" },
+        "confidence": { "$ref": "#/$defs/confidence_level" }
+      }
+    },
+    "rejected_vkb_mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vkb_id", "mechanism_name", "rejection_reason", "authority"],
+      "properties": {
+        "vkb_id": { "type": "string" },
+        "mechanism_name": { "type": "string" },
+        "rejection_reason": { "type": "string" },
+        "authority": { "const": "ADVISORY" }
+      }
+    },
+    "decision_boundary_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "rationale"],
+      "properties": {
+        "decision": { "type": "string" },
+        "rationale": { "type": "string" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "input_refs": { "properties": { "reference_mode_active": { "const": true } }, "required": ["reference_mode_active"] } }, "required": ["input_refs"] },
+      "then": { "properties": { "input_refs": { "required": ["reference_transfer_plan_id", "reference_transfer_plan_version"] }, "reference_integration": { "properties": { "active": { "const": true } } } } }
+    },
+    {
+      "if": { "properties": { "reference_integration": { "properties": { "active": { "const": true } }, "required": ["active"] } }, "required": ["reference_integration"] },
+      "then": { "properties": { "reference_integration": { "required": ["transfer_plan_id"] } } },
+      "else": { "properties": { "reference_integration": { "properties": { "transfer_intensity": { "const": "NONE" }, "accepted_anchors": { "maxItems": 0 }, "modified_anchors": { "maxItems": 0 }, "rejected_anchors": { "maxItems": 0 }, "director_overrides": { "maxItems": 0 }, "remaining_reference_constraints": { "maxItems": 0 } } } } }
+    },
+    {
+      "if": { "properties": { "approved_direction_memory": { "properties": { "consulted": { "const": true }, "relevant_evidence_found": { "const": true } }, "required": ["consulted", "relevant_evidence_found"] } }, "required": ["approved_direction_memory"] },
+      "then": { "properties": { "approved_direction_memory": { "properties": { "evidence": { "minItems": 1 } } } } }
+    },
+    {
+      "if": { "properties": { "approved_direction_memory": { "properties": { "relevant_evidence_found": { "const": false } }, "required": ["relevant_evidence_found"] } }, "required": ["approved_direction_memory"] },
+      "then": { "properties": { "approved_direction_memory": { "properties": { "evidence": { "maxItems": 0 } } } } }
+    },
+    {
+      "if": { "properties": { "approval": { "properties": { "approval_status": { "const": "HUMAN_APPROVED" } }, "required": ["approval_status"] } }, "required": ["approval"] },
+      "then": { "properties": { "approval": { "required": ["approved_by", "timestamp"], "properties": { "approved_by": { "const": "HUMAN" } } } } }
+    },
+    {
+      "if": { "properties": { "approval": { "properties": { "human_override": { "const": true } }, "required": ["human_override"] } }, "required": ["approval"] },
+      "then": { "properties": { "approval": { "required": ["override_reason"] } } }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["READY_FOR_TECHNICAL_DESIGN", "APPROVED"] } }, "required": ["status"] },
+      "then": {
+        "required": ["selected_direction", "technical_handoff"],
+        "properties": {
+          "visual_hierarchy": { "minItems": 1 },
+          "unresolved_questions": { "not": { "contains": { "type": "object", "properties": { "blocking": { "const": true } }, "required": ["blocking"] } } }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_live_rt_02_personal_brand_context_shift_attempt2",
+  "project_id": "project_live_rt_02_personal_brand_context_shift",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "REFERENCE_REINTERPRETATION",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "USER_ASSET",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": null,
+    "semantic_identity": "climate-tech founder editorial portrait",
+    "protected_elements": [
+      "target professional context",
+      "target communication goal",
+      "subject identity protection"
+    ],
+    "required_copy": [],
+    "subject_identity_requirements": "Do not reuse reference person identity; create new founder identity with no recognizable borrowing from source subject.",
+    "existing_composition_constraints": [
+      "4:5 portrait aspect ratio",
+      "editorial platform usage",
+      "founder profile format",
+      "no text overlay"
+    ],
+    "elements_allowed_to_change": [
+      "wardrobe",
+      "jewelry and accessories",
+      "background environment",
+      "color palette accents",
+      "pose details and gesture",
+      "narrative props and objects"
+    ],
+    "elements_forbidden_to_change": [
+      "target professional context",
+      "target communication goal",
+      "subject identity protection"
+    ]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "live_ref_editorial_founder",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "OBS_01",
+          "category": "SUBJECT_TREATMENT",
+          "description": "Centered female subject with direct camera gaze and warm smile.",
+          "region": "center frame",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_02",
+          "category": "MATERIAL",
+          "description": "White tailored blazer over white top, double gold choker necklace, ring on left hand.",
+          "region": "subject torso and hands",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_03",
+          "category": "SUBJECT_TREATMENT",
+          "description": "Hands clasped in front at waist level, composed stance.",
+          "region": "subject lower torso",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_04",
+          "category": "LIGHTING",
+          "description": "Warm directional key light from upper left modeling face and shoulder with soft highlight.",
+          "region": "subject face and right shoulder",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_05",
+          "category": "LIGHTING",
+          "description": "Rim or back light creating subject separation and edge glow.",
+          "region": "subject hair and shoulder edges",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_06",
+          "category": "ENVIRONMENT",
+          "description": "Dark background with out-of-focus secondary figure and visible flag imagery.",
+          "region": "background",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_07",
+          "category": "ENVIRONMENT",
+          "description": "Abstract golden curved shapes floating in background.",
+          "region": "background right and upper",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_08",
+          "category": "ENVIRONMENT",
+          "description": "Halftone dot pattern on left side of frame.",
+          "region": "left midground",
+          "salience": "LOW",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_09",
+          "category": "DEPTH",
+          "description": "Shallow depth of field with background planes blurred.",
+          "region": "overall",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_10",
+          "category": "COLOR",
+          "description": "Warm gold and white color palette with dark brown or black anchors.",
+          "region": "overall",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_11",
+          "category": "COMPOSITION",
+          "description": "Medium shot crop at waist, centered composition.",
+          "region": "overall",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "OBS_12",
+          "category": "DEPTH",
+          "description": "Reflective surface below subject creating mirror reflection.",
+          "region": "bottom foreground",
+          "salience": "LOW",
+          "confidence": "MEDIUM",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "primary": "Centered authority with warm approachability through direct gaze and composed stance",
+        "secondary": "Warm directional lighting with rim separation creating editorial focus",
+        "supporting": "Material precision in accessories, abstract background depth, shallow depth isolation",
+        "incidental": "Specific political symbols, exact fashion wardrobe, recognizable person identity"
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "MAP_01",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "observation_ids": [
+        "OBS_01",
+        "OBS_03"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Climate-tech founder with direct camera gaze and composed stance; adapt gesture to feel innovative and approachable rather than formal.",
+      "rationale": "Direct gaze creates trust and human connection essential for founder credibility. Composed stance communicates confidence. Adapt specific gesture to match climate-tech innovation energy while maintaining approachability.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "target communication goal: credibility with warmth"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "MAP_02",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "observation_ids": [
+        "OBS_04",
+        "OBS_05",
+        "OBS_10"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Warm directional key light with rim separation; shift color palette from gold to climate-tech appropriate accents (warm amber, soft green, or clean cool-warm mix) while maintaining dark anchors.",
+      "rationale": "Warm key light creates optimism and human warmth; rim light provides authority and focus. Color must shift from fashion-luxury gold to climate-tech brand territory while preserving the warm, optimistic tone.",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "target emotional intent: warmth, optimism"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "MAP_03",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "observation_ids": [
+        "OBS_02"
+      ],
+      "action": "REINVENT",
+      "target_in_new_composition": "Tailored jacket in sustainable fabric (organic cotton, linen, recycled polyester) in neutral tone; replace gold choker with minimal precision metal (titanium, recycled aluminum) or technical pendant.",
+      "rationale": "White fashion blazer and gold jewelry signal celebrity/fashion luxury. Must translate to climate-tech professional authority through sustainable materials and precision technical accessories that communicate innovation and responsibility.",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "target professional context: climate-tech founder"
+      ],
+      "cross_category_adaptation": {
+        "reference_product_category": "FASHION_EDITORIAL",
+        "target_product_category": "CLIMATE_TECH_FOUNDER_PORTRAIT",
+        "literal_object": "White tailored blazer, white top, double gold choker necklace, ring",
+        "visual_function": "Professional authority, tactile luxury, warm accent, composed confidence",
+        "material_language": "Tailored woven fabric, polished gold metal, skin",
+        "emotional_effect": "Fashion-luxury authority, celebratory warmth, approachable elegance",
+        "equivalent_adaptation": "Tailored jacket in sustainable fabric (organic cotton, linen, recycled polyester) in neutral tone; minimal precision metal accessory (titanium, recycled aluminum) or technical pendant",
+        "literal_transfer_allowed": false,
+        "target_category_coherence": "Sustainable fabrics and precision metals signal innovation, responsibility, and technical competence appropriate for climate-tech founder; avoids fashion-luxury association that conflicts with target context."
+      },
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "MAP_04",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "observation_ids": [
+        "OBS_06",
+        "OBS_07",
+        "OBS_08",
+        "OBS_09"
+      ],
+      "action": "REINVENT",
+      "target_in_new_composition": "Abstract climate-tech environment with layered depth: renewable energy infrastructure, lab equipment, urban green space, or data visualization layers. Maintain shallow depth of field for subject isolation.",
+      "rationale": "Background provides narrative context and depth. Must replace political symbols and fashion-editorial background with climate-tech specific environment that communicates innovation and environmental mission.",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "target professional context",
+        "subject isolation"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "MAP_05",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "observation_ids": [
+        "OBS_11"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Maintain centered composition and medium shot crop for editorial clarity, optimized for 4:5 portrait format.",
+      "rationale": "Centered composition creates stability, clarity, and monumentality appropriate for founder profile. Medium shot provides enough context while keeping subject dominant.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "format: 4:5 portrait",
+        "editorial platform"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "MAP_06",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "observation_ids": [
+        "OBS_12"
+      ],
+      "action": "DISCARD",
+      "target_in_new_composition": "Remove literal reflection or replace with climate-tech appropriate reflective surface (polished concrete, glass, water feature) if depth enhancement is needed.",
+      "rationale": "Current reflection is generic and adds no climate-tech narrative value. If depth is needed, use target-native reflective surface that supports the innovation context.",
+      "strength": "LOW",
+      "flexibility": "HIGH",
+      "protected_dependencies": [],
+      "confidence": "MEDIUM",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "CONFLICT_01",
+      "type": "REFERENCE_VS_SUBJECT_IDENTITY",
+      "description": "Reference subject appears to be a recognizable public figure. Target requires a new climate-tech founder identity with no borrowing from reference person.",
+      "severity": "CRITICAL",
+      "blocking": true,
+      "involved_assets": [
+        "live_ref_editorial_founder",
+        "target_live_rt_02_personal_brand_context_shift"
+      ],
+      "involved_constraints": [
+        "reference person identity must not become target identity",
+        "do not reuse reference person's identity"
+      ],
+      "translator_position": "Complete subject replacement required. No facial feature, styling, or identity borrowing permitted.",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    },
+    {
+      "conflict_id": "CONFLICT_02",
+      "type": "REFERENCE_VS_BRIEF",
+      "description": "Reference background contains Israeli flag and political symbolism incompatible with climate-tech founder context.",
+      "severity": "CRITICAL",
+      "blocking": true,
+      "involved_assets": [
+        "live_ref_editorial_founder"
+      ],
+      "involved_constraints": [
+        "target professional context: climate-tech founder",
+        "do not copy source symbols"
+      ],
+      "translator_position": "All political and religious symbols must be completely excluded from target composition.",
+      "resolution_status": "RESOLVED_BY_DISCARD",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    },
+    {
+      "conflict_id": "CONFLICT_03",
+      "type": "REFERENCE_VS_BRIEF",
+      "description": "Source wardrobe (white fashion blazer, gold jewelry) signals fashion-luxury and celebrity, not climate-tech innovation.",
+      "severity": "HIGH",
+      "blocking": false,
+      "involved_assets": [
+        "live_ref_editorial_founder"
+      ],
+      "involved_constraints": [
+        "target professional context",
+        "target communication goal: credible innovation"
+      ],
+      "translator_position": "Wardrobe and accessories must be reinvented for climate-tech professional context while preserving the authority and warmth functions.",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": true,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    }
+  ],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "ANCHOR_01",
+      "description": "Direct camera gaze with warm confidence creating trust and human connection.",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "function": "Establish immediate credibility and approachability with viewer.",
+      "importance": "CRITICAL",
+      "flexibility": "LOW",
+      "reason": "Core to founder editorial portrait; creates essential trust and warmth.",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "ANCHOR_02",
+      "description": "Warm directional key light with rim separation for approachable authority.",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "function": "Model subject with optimism while maintaining professional authority through separation.",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Lighting logic is highly transferable; color temperature can shift to climate-tech palette.",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "ANCHOR_03",
+      "description": "Centered composition with clear subject hierarchy and medium shot crop.",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "function": "Provide editorial stability, clarity, and founder prominence.",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Centered stability suits founder profile; crop can adjust slightly for format.",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "ANCHOR_04",
+      "description": "Shallow depth of field isolating subject from background.",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "function": "Create focus, premium feel, and narrative separation.",
+      "importance": "MEDIUM",
+      "flexibility": "HIGH",
+      "reason": "Depth logic is useful but can be achieved through various environmental means.",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "ANCHOR_05",
+      "description": "Composed body language with hands in front.",
+      "source_reference_asset_id": "live_ref_editorial_founder",
+      "function": "Communicate confidence, composure, and approachability.",
+      "importance": "MEDIUM",
+      "flexibility": "HIGH",
+      "reason": "Pose function transfers; specific hand gesture can adapt to climate-tech context.",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "Wardrobe",
+      "freedom_level": "HIGH",
+      "rationale": "Must shift from fashion-luxury to climate-tech professional; multiple sustainable fabric and tailoring options available."
+    },
+    {
+      "area": "Jewelry and Accessories",
+      "freedom_level": "HIGH",
+      "rationale": "Must shift from gold fashion luxury to precision technical materials; many target-native options exist."
+    },
+    {
+      "area": "Background Environment",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "Complete reinvention required; climate-tech offers diverse environments from labs to renewable sites to urban green spaces."
+    },
+    {
+      "area": "Color Palette Accents",
+      "freedom_level": "HIGH",
+      "rationale": "Warm gold must shift to climate-tech appropriate accents while preserving warm light temperature."
+    },
+    {
+      "area": "Pose Details and Gesture",
+      "freedom_level": "MEDIUM",
+      "rationale": "Maintain composed confidence but adapt specific gesture to feel more innovative and less formal."
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "RISK_01",
+      "description": "Identity leakage: Reference subject is recognizable public figure; target must not borrow facial features, styling cues, or identity markers.",
+      "severity": "CRITICAL",
+      "mitigation": "Complete subject replacement with new person; audit all styling, hair, and makeup decisions against reference to ensure no recognizable borrowing."
+    },
+    {
+      "risk_id": "RISK_02",
+      "description": "Political symbol contamination: Israeli flag and associated imagery in reference background must not transfer.",
+      "severity": "CRITICAL",
+      "mitigation": "Complete background replacement; no symbolic, color, or pattern carryover from political/religious imagery."
+    },
+    {
+      "risk_id": "RISK_03",
+      "description": "Fashion-luxury mismatch: White blazer and gold jewelry signal fashion/celebrity rather than climate-tech innovation.",
+      "severity": "HIGH",
+      "mitigation": "Translate wardrobe to sustainable tailoring and accessories to precision technical materials; avoid any fashion-editorial styling cues."
+    },
+    {
+      "risk_id": "RISK_04",
+      "description": "Generic warm palette: Over-transfer of gold/warm tones could feel like generic warm professional without climate-tech specificity.",
+      "severity": "MEDIUM",
+      "mitigation": "Introduce climate-tech specific color accents (verified green, blue, or amber) while maintaining warm light temperature; ensure palette feels owned by target brand."
+    }
+  ],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-16T02:00:00Z",
+    "notes": "Reference reinterpretation for climate-tech founder. Identity and political symbols excluded. Fashion-luxury elements adapted to climate-tech professional context."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Reference provides strong editorial portrait mechanisms (lighting, composition, gaze, depth) that transfer well to target. Main challenges are identity protection and category translation, which are manageable through adaptation and reinvention."
+  },
+  "director_handoff": {
+    "what_must_survive": [
+      "Direct camera gaze creating trust and human connection",
+      "Warm directional key light with rim separation for approachable authority",
+      "Centered composition providing editorial stability and clarity",
+      "Shallow depth of field isolating subject",
+      "Composed body language communicating confidence"
+    ],
+    "what_should_survive": [
+      "Editorial portrait hierarchy with subject dominance",
+      "Material precision in accessories (translate gold to technical metal)",
+      "Abstract background depth concept (translate to climate-tech environment)",
+      "Warm color temperature (shift from gold to climate-tech accents)"
+    ],
+    "what_can_change": [
+      "Wardrobe (adapt to sustainable climate-tech professional attire)",
+      "Jewelry (adapt to precision technical materials)",
+      "Background environment (complete reinvention for climate-tech context)",
+      "Color palette (introduce climate-tech specific accents)",
+      "Pose details (adapt gesture while maintaining composure)",
+      "Props and narrative objects (climate-tech specific)"
+    ],
+    "key_conflicts": [
+      "Reference person identity must not transfer",
+      "Political/religious symbols (Israeli flag) must be excluded",
+      "Fashion-luxury wardrobe and jewelry must adapt to climate-tech professional context"
+    ],
+    "recommended_anchors": [
+      "Warm key light with rim separation",
+      "Centered medium-shot composition",
+      "Direct connection gaze",
+      "Shallow depth isolation",
+      "Composed stance"
+    ],
+    "creative_opportunities": [
+      "Use renewable energy infrastructure or lab environment as background",
+      "Incorporate sustainable material wardrobe (organic cotton, linen, recycled fabrics)",
+      "Add climate-tech data visualization or natural pattern elements",
+      "Use precision metal or recycled material accessories instead of gold",
+      "Incorporate team member or equipment in background for narrative depth"
+    ],
+    "warnings": [
+      "Avoid fashion-luxury signaling that conflicts with climate-tech innovation",
+      "Ensure no recognizable features from reference person appear in target",
+      "Remove all political/religious symbolism completely",
+      "Avoid generic warm gold palette without climate-tech specificity"
+    ]
+  }
+}

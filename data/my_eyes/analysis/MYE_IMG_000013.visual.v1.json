@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000015",
+  "image_id": "MYE_IMG_000013",
+  "image_sha256": "77b2f72757d6f313544a6a8425ae9a58b219ca390069b36bf4ca2e717092df0f",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Square surreal promotional image of a smiling man flying toward the viewer with a jetpack and money bag above a tropical coast, surrounded by raining banknotes and cloud lettering.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Near-square frame uses a central airborne figure above a low horizon and large sky field.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Near-square frame uses a central airborne figure above a low horizon and large sky field.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The flying figure is centered with arms spread, banknotes distributed around him and landscape below.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The flying figure is centered with arms spread, banknotes distributed around him and landscape below.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The foreshortened face and body lead, followed by cloud-shaped title text and flying currency.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The foreshortened face and body lead, followed by cloud-shaped title text and flying currency.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Large near-camera figure and notes sit above receding clouds, coastline and horizon.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Large near-camera figure and notes sit above receding clouds, coastline and horizon.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Sky light, cloud edges and the downward landscape perspective place the airborne figure in the scene.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Sky light, cloud edges and the downward landscape perspective place the airborne figure in the scene.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Bright daylight from the sky creates even frontal illumination and highlighted cloud rims.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Bright daylight from the sky creates even frontal illumination and highlighted cloud rims.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Cyan-blue sky, white clouds, green coast and beige-green currency dominate.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Cyan-blue sky, white clouds, green coast and beige-green currency dominate.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "OBSERVED",
+      "summary": "A cloud-like Portuguese phrase is formed across the upper sky.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "typography",
+          "observation": "A cloud-like Portuguese phrase is formed across the upper sky.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "A tropical coast with ocean, vegetation and distant terrain appears far below.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "environment",
+          "observation": "A tropical coast with ocean, vegetation and distant terrain appears far below.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "Several banknotes and the foreshortened hands project toward the viewer.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "foreground",
+          "observation": "Several banknotes and the foreshortened hands project toward the viewer.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Jetpack propulsion, floating currency, cloud lettering and exaggerated aerial perspective create the surreal scene.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "effects",
+          "observation": "Jetpack propulsion, floating currency, cloud lettering and exaggerated aerial perspective create the surreal scene.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "A photographic celebrity-like figure is combined with physically impossible flight and raining money.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "realism_coherence",
+          "observation": "A photographic celebrity-like figure is combined with physically impossible flight and raining money.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "Moderate-to-high density surrounds the figure, while open sky remains visible between elements.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "complexity_density",
+          "observation": "Moderate-to-high density surrounds the figure, while open sky remains visible between elements.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "Extreme forward flight perspective pairs a money bag and jetpack with banknotes suspended over a tropical landscape.",
+      "facts": [
+        {
+          "fact_id": "FACT_014",
+          "attribute": "distinctive_design_decisions",
+          "observation": "Extreme forward flight perspective pairs a money bag and jetpack with banknotes suspended over a tropical landscape.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000013@sha256:77b2f72757d6f313544a6a8425ae9a58b219ca390069b36bf4ca2e717092df0f",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

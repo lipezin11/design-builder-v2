@@ -1,0 +1,340 @@
+{
+  "suite_id": "REFERENCE_TRANSLATOR_LIVE_MULTIMODAL_COGNITIVE_EVALUATION_V1",
+  "suite_run_id": "rt-live-step37-20260816-03",
+  "artifact_classification": "EVALUATION_ARTIFACTS_NOT_PRODUCTION",
+  "provider_profile": {
+    "provider": "NVIDIA_NIM",
+    "model_id": "stepfun-ai/step-3.7-flash",
+    "documented_context_limit_tokens": 262144,
+    "documented_input_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "documented_image_input_supported": true,
+    "documentation_ref": "https://build.nvidia.com/stepfun-ai/step-3.7-flash",
+    "documentation_checked_at": "2026-08-16"
+  },
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "runtime_version": "1.0.0",
+  "base_directory": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals",
+  "manifest_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\manifest.json",
+  "summary_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-step37-20260816-03.summary.json",
+  "human_review_packet_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-step37-20260816-03.human-review.md",
+  "consolidated_report_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-step37-20260816-03.consolidated.md",
+  "smoke_result": {
+    "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+    "status": "PROVIDER_BLOCKED",
+    "technical_runtime_acceptance": false,
+    "visual_analysis_proven": false,
+    "documented_image_input_supported": true,
+    "full_battery_permitted": false,
+    "provider_error_code": null,
+    "image_transmission": [
+      {
+        "asset_id": "live_ref_authority_speaker",
+        "mime_type": "image/jpeg",
+        "source_type": "INLINE_IMAGE_BYTES",
+        "byte_length": 98544,
+        "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+      }
+    ],
+    "request_measurement": {
+      "measurement_version": "1.0.0",
+      "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+      "core_prompt_characters": 11451,
+      "knowledge_characters": 472402,
+      "knowledge_wrapper_and_index_characters": 2965,
+      "assembled_system_prompt_characters": 486818,
+      "schema_characters": 11766,
+      "brief_context_characters": 4324,
+      "reference_context_characters": 817,
+      "my_eyes_advisory_characters": 1262,
+      "vkb_advisory_characters": 1230,
+      "retry_diagnostic_characters": 2,
+      "provider_user_text_characters": 32590,
+      "total_textual_characters": 519408,
+      "multimodal_image_count": 1,
+      "image_base64_transport_characters": 131392,
+      "serialized_http_body_characters": 660286,
+      "input_tokens": 96808,
+      "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+      "output_budget_tokens": 16384,
+      "context_limit_tokens": 262144,
+      "headroom_tokens": 148952,
+      "context_classification": "SAFE"
+    }
+  },
+  "case_results": [
+    {
+      "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "status": "PROVIDER_BLOCKED",
+      "quality_class": "PROVIDER_BLOCKED",
+      "creative_approval": "NOT_PERFORMED",
+      "error": {
+        "code": "REFERENCE_PLAN_RETRY_EXHAUSTED",
+        "message": "Reference Translator exhausted its correction attempts.",
+        "provider_error_code": null
+      },
+      "checks": [
+        {
+          "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+          "outcome": "FAIL",
+          "evidence": "No accepted multimodal model response was produced."
+        },
+        {
+          "category": "MECHANISM_IDENTIFICATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "FUNCTION_BEFORE_APPEARANCE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "REFERENCE_DNA_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_SEMANTICS_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_NATIVE_ADAPTATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "LITERAL_COPY_AVOIDED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SURFACE_COPY_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "UNDERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "OVERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "IDENTITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "MY_EYES_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "VKB_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SCHEMA_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "SEMANTIC_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "QUALITY_GATE_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        }
+      ],
+      "cognitive_audit": {
+        "what_the_model_thought_was_important": [],
+        "what_it_wanted_to_transfer": [],
+        "what_it_wanted_to_adapt": [],
+        "what_it_wanted_to_reinvent": [],
+        "what_it_discarded": [],
+        "what_it_protected": [],
+        "what_risks_it_identified": []
+      },
+      "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\runs\\run_live_rt_01_same_domain_authority-rt-live-step37-20260816-03.trace.json",
+      "failed_attempts": [
+        {
+          "attempt": 1,
+          "validator_error_code": "REFERENCE_PLAN_PERSISTENCE_FAILED",
+          "diagnostic_codes": [
+            "REFERENCE_PLAN_PERSISTENCE_FAILED"
+          ],
+          "raw_json": true,
+          "schema_valid": true,
+          "schema_errors": [],
+          "candidate_project_id": "project_live_rt_01_same_domain_authority",
+          "candidate_status_field": "READY_FOR_DIRECTOR",
+          "observation_count": 10,
+          "visible_observations": [
+            {
+              "category": "SUBJECT_TREATMENT",
+              "description": "Male presenter wearing dark suit, white dress shirt, and dark tie",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "SUBJECT_TREATMENT",
+              "description": "Presenter's right hand extended forward in gesturing motion; left hand holds black presentation clicker",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "COMPOSITION",
+              "description": "Subject positioned on right vertical third of frame",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DEPTH",
+              "description": "Large audience visible in background, out of focus, fading into darkness",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "LIGHTING",
+              "description": "Key light illuminates subject from front-left, creating sculptural volume and separation from background",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "COLOR",
+              "description": "Blue-toned ambient light in background with bright overhead stage lights",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "COMPOSITION",
+              "description": "Dark negative space occupies left third of frame",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "COMPOSITION",
+              "description": "Low-angle camera perspective looking upward at subject",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "LIGHTING",
+              "description": "Rim light visible on subject's left shoulder and hair edge, separating from background",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "ENVIRONMENT",
+              "description": "Stage environment with overhead rigging and lighting equipment visible in background",
+              "confidence": "HIGH"
+            }
+          ],
+          "decisions": [
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Executive strategy advisor in professional suit, gesturing with purposeful hand movement, holding presentation remote or standing with authoritative posture",
+              "rationale": "The reference demonstrates how professional attire and gestural engagement communicate executive authority. Adapt to target executive while preserving the composed, engaged stance that signals strategic leadership."
+            },
+            {
+              "action": "TRANSFER",
+              "target_in_new_composition": "Executive positioned on right third of 16:9 frame, left territory reserved for headline and key message text overlay",
+              "rationale": "Rule-of-thirds placement creates immediate hierarchy and leaves safe communication territory for LinkedIn banner text overlay requirements."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Executive in credible boardroom, conference stage, or strategic workspace with depth layers suggesting scale and professional context",
+              "rationale": "Background context provides scale and narrative credibility. Adapt to executive environment while preserving foreground-background separation that creates authority."
+            },
+            {
+              "action": "TRANSFER",
+              "target_in_new_composition": "Motivated key light from front-left creating sculptural form on executive, with rim light separating subject from background",
+              "rationale": "This lighting system creates volume, hierarchy, and environmental integration while maintaining professional credibility and material legibility."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Cool neutral or blue-accented background with warm subject lighting, or target-owned color hierarchy",
+              "rationale": "Temperature contrast separates subject from environment and creates visual hierarchy. Adapt to target brand colors while preserving the separation logic."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Slightly low angle to emphasize executive stature and authority without intimidation",
+              "rationale": "Low-angle perspective creates monumentality and authority appropriate for an executive strategy advisor, calibrated to avoid aggression."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Executive with open hand gesture, pointing, or presenting - indicating strategic direction and active leadership",
+              "rationale": "Purposeful gesture communicates active leadership and strategic thinking without theatrical spectacle."
+            }
+          ],
+          "declared_risks": [
+            "Identity leakage: Target executive may inadvertently resemble reference speaker.",
+            "Generic keynote stock aesthetic: Over-transfer of stage/audience setting may look like generic motivational imagery.",
+            "Format compression: Reference medium shot may not map cleanly to 16:9 banner with text overlay.",
+            "Lighting becoming cliché: Executive portrait lighting can fall into predictable patterns."
+          ]
+        }
+      ],
+      "raw_response_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\cases\\LIVE_RT_01_SAME_DOMAIN_AUTHORITY\\rt-live-step37-20260816-03.json"
+    }
+  ],
+  "full_request_measurement": {
+    "measurement_version": "1.0.0",
+    "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+    "core_prompt_characters": 11451,
+    "knowledge_characters": 472402,
+    "knowledge_wrapper_and_index_characters": 2965,
+    "assembled_system_prompt_characters": 486818,
+    "schema_characters": 11766,
+    "brief_context_characters": 4324,
+    "reference_context_characters": 817,
+    "my_eyes_advisory_characters": 1262,
+    "vkb_advisory_characters": 1230,
+    "retry_diagnostic_characters": 2,
+    "provider_user_text_characters": 32590,
+    "total_textual_characters": 519408,
+    "multimodal_image_count": 1,
+    "image_base64_transport_characters": 131392,
+    "serialized_http_body_characters": 660286,
+    "input_tokens": 96808,
+    "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+    "output_budget_tokens": 16384,
+    "context_limit_tokens": 262144,
+    "headroom_tokens": 148952,
+    "context_classification": "SAFE"
+  },
+  "full_brain_status": "INCONCLUSIVE",
+  "full_brain_evidence": "The complete request was measured, but no valid visual-model smoke completed. Prompt attention health cannot be inferred.",
+  "api_usage": {
+    "calls": 2,
+    "cognitive_invocations": 1,
+    "transport_retries": 1,
+    "input_tokens": 96808,
+    "output_tokens": 14598,
+    "cached_tokens": null,
+    "reasoning_tokens": null,
+    "latency_ms": 158715,
+    "cost": "UNKNOWN"
+  },
+  "full_battery_completed": false,
+  "scores_created": 0,
+  "weights_created": 0,
+  "rankings_created": 0,
+  "automatic_approvals": 0,
+  "creative_director_implemented": false,
+  "image_critic_cognitive_runtime_implemented": false,
+  "final_verdict": "NOT_READY",
+  "final_verdict_reason": "A documented image-input model did not complete the required smoke, so no honest real-image cognitive battery exists."
+}

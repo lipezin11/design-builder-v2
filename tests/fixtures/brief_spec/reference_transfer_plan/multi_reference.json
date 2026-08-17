@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_ref_004",
+  "project_id": "proj_demo_04",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "MULTI_REFERENCE_TRANSFER",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "USER_EXPLICIT",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": null,
+    "semantic_identity": "E-commerce campaign banner",
+    "protected_elements": ["product packaging"],
+    "required_copy": ["Super Sale"],
+    "subject_identity_requirements": "None",
+    "existing_composition_constraints": ["16:9 landscape"],
+    "elements_allowed_to_change": ["background scenery"],
+    "elements_forbidden_to_change": ["product packaging"]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "asset_ref_composition",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "COMPOSITION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_multi_01",
+          "category": "COMPOSITION",
+          "description": "Asymmetrical product placement on left third with ample negative space on right.",
+          "region": "left third",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "composition": "Asymmetrical mass tension with right negative space"
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "reference_asset_id": "asset_ref_lighting",
+      "role": "SECONDARY_REFERENCE",
+      "scope": "LIGHTING",
+      "authority": "SUPPORTING_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_multi_02",
+          "category": "LIGHTING",
+          "description": "Warm golden hour volumetric backlighting streaming through blinds.",
+          "region": "background",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "lighting": "Warm volumetric golden backlight"
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_multi_01",
+      "source_reference_asset_id": "asset_ref_composition",
+      "observation_ids": ["obs_multi_01"],
+      "action": "TRANSFER",
+      "target_in_new_composition": "Position product on left third, keeping right negative space for typography.",
+      "rationale": "Inherits clean asymmetrical composition from primary reference.",
+      "strength": "HIGH",
+      "flexibility": "LOW",
+      "protected_dependencies": [],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_multi_02",
+      "source_reference_asset_id": "asset_ref_lighting",
+      "observation_ids": ["obs_multi_02"],
+      "action": "TRANSFER",
+      "target_in_new_composition": "Apply warm golden hour volumetric backlighting to the scene environment.",
+      "rationale": "Inherits atmospheric lighting from secondary reference.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "conflicts": [],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anc_multi_01",
+      "description": "Asymmetrical left-third product placement",
+      "source_reference_asset_id": "asset_ref_composition",
+      "function": "Compositional balance and copy space",
+      "importance": "HIGH",
+      "flexibility": "LOW",
+      "reason": "Primary compositional directive.",
+      "provenance": "USER_EXPLICIT"
+    },
+    {
+      "anchor_id": "anc_multi_02",
+      "description": "Golden hour volumetric backlighting",
+      "source_reference_asset_id": "asset_ref_lighting",
+      "function": "Atmospheric warmth and depth",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Secondary lighting directive.",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "interior background props",
+      "freedom_level": "HIGH",
+      "rationale": "Props can support golden hour theme freely."
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_multi_01",
+      "description": "Combining composition from Ref A and lighting from Ref B might create color temperature mismatch if uncoordinated.",
+      "severity": "LOW",
+      "mitigation": "Technical room will unify color grading."
+    }
+  ],
+  "open_questions": [],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-09T12:00:00Z",
+    "notes": "Hypothetical fixture D (Multi-reference transfer)."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Clear separation of primary composition ref and secondary lighting ref."
+  },
+  "director_handoff": {
+    "what_must_survive": ["product packaging", "left-third asymmetrical placement", "golden hour backlighting"],
+    "what_should_survive": ["Super Sale headline placement on right negative space"],
+    "what_can_change": ["background interior props"],
+    "key_conflicts": [],
+    "recommended_anchors": ["anc_multi_01", "anc_multi_02"],
+    "creative_opportunities": ["Merge asymmetrical composition with volumetric golden light for premium mood."],
+    "warnings": ["Ensure product remains crisp against warm backlight."]
+  }
+}

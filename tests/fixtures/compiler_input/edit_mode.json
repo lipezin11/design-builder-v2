@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0.0",
+  "compiler_input_id": "ci-edit-mode",
+  "project_id": "project-ci-edit-mode",
+  "run_id": "run-ci-edit-mode-001",
+  "final_frame_spec_ref": {
+    "final_frame_spec_id": "ffs-product-edit",
+    "final_frame_spec_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-product-edit/1.0.0",
+    "checksum": "sha256:test-ci-edit-mode",
+    "status_expected": "READY_FOR_COMPILATION"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "EDIT",
+  "assets": [
+    {
+      "asset_id": "asset-edit-target",
+      "role": "EDIT_TARGET",
+      "source_ref": "asset://edit-target",
+      "authority": "EDIT_TARGET_AUTHORITY",
+      "required": true,
+      "usage": "Structural authority and direct edit target",
+      "preservation_level": "STRICT",
+      "binding_scope": [
+        "full_frame"
+      ]
+    }
+  ],
+  "reference_bindings": [],
+  "identity_bindings": [],
+  "text_bindings": [],
+  "hard_locks": [
+    {
+      "lock_id": "lock-composition",
+      "domain": "composition",
+      "target": "composition",
+      "rule": "Preserve focal hierarchy, subject region and negative-space geometry.",
+      "source": "final_frame_spec.protected_fields",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-edit-target",
+      "domain": "edit_target",
+      "target": "assets.asset-edit-target",
+      "rule": "Edit the supplied image; do not reconstruct it.",
+      "source": "final_frame_spec.protected_fields",
+      "failure_policy": "FAIL_COMPILATION"
+    }
+  ],
+  "strong_targets": [
+    {
+      "target_id": "target-depth",
+      "domain": "depth",
+      "statement": "Preserve clearly separated foreground, subject and background planes.",
+      "priority": "HIGH",
+      "source": "final_frame_spec.depth_system",
+      "verification_hint": "Three visually distinct planes remain legible."
+    }
+  ],
+  "controlled_variation": [
+    {
+      "domain": "composition",
+      "level": "NONE",
+      "rule": "Existing structure is authority."
+    },
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "Existing people, if present, remain unchanged."
+    },
+    {
+      "domain": "product_label",
+      "level": "LOW",
+      "rule": "Variation is limited to the declared label replacement."
+    }
+  ],
+  "generator_capabilities": {
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0",
+    "data_classification": "HYPOTHETICAL_TEST_DATA",
+    "registry_checked_at": "2026-08-09T21:00:00-03:00",
+    "capabilities": [
+      {
+        "capability_id": "supports_image_reference",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_multiple_references",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "numeric_limit": 4,
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_edit_target",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_exact_text",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_structured_prompt",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      }
+    ]
+  },
+  "requested_output": {
+    "aspect_ratio": "16:9",
+    "output_role": "FINAL_IMAGE",
+    "number_of_variants": 1,
+    "deterministic_requirements": [
+      "Preserve upstream aspect ratio"
+    ]
+  },
+  "compiler_policy": {
+    "creative_authority": "NONE",
+    "allow_semantic_rephrasing": true,
+    "allow_content_invention": false,
+    "allow_lock_relaxation": false,
+    "allow_reference_dilution": false,
+    "allow_text_rewriting": false,
+    "unsupported_feature_policy": "FAIL"
+  },
+  "incompatibilities": [],
+  "provenance": {
+    "assembler": "COMPILER_INPUT_ASSEMBLER",
+    "assembler_version": "1.0.0",
+    "created_at": "2026-08-09T21:05:00-03:00",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ],
+    "notes": "Generator capabilities are hypothetical test data, not claims about a real model."
+  },
+  "status": "READY_FOR_COMPILATION",
+  "mode_context": {
+    "edit_target_asset_id": "asset-edit-target",
+    "locked_regions": [
+      {
+        "region_id": "locked-global",
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      }
+    ],
+    "editable_regions": [
+      {
+        "region_id": "editable-label",
+        "x": 0.62,
+        "y": 0.48,
+        "width": 0.18,
+        "height": 0.2
+      }
+    ],
+    "edit_delta": "Replace only the product label artwork in the editable region.",
+    "preserve_global_structure": true,
+    "reconstruction_forbidden": true
+  }
+}

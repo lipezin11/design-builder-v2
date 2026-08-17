@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000003",
+  "image_id": "MYE_IMG_000007",
+  "image_sha256": "d797b66514e49b638f0804c9fd64b989d564a3c5c8b662b175947d4b00016bd2",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Cinematic landscape banner showing a suited man with a glowing lantern and parchment map in a dark ruined passage, with open black space on the left.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Wide frame allocates a large dark field on the left and the narrative subject cluster on the right.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Wide frame allocates a large dark field on the left and the narrative subject cluster on the right.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The man, lantern and map create a triangular cluster in the right half.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The man, lantern and map create a triangular cluster in the right half.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The warm lantern is the brightest element, followed by the face, hands and parchment.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The warm lantern is the brightest element, followed by the face, hands and parchment.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Lantern and map sit forward of the figure, with silhouettes, structures and storm atmosphere receding behind.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Lantern and map sit forward of the figure, with silhouettes, structures and storm atmosphere receding behind.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Warm light from the held lantern falls onto the subject and map, tying them to the dark passage.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Warm light from the held lantern falls onto the subject and map, tying them to the dark passage.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "A localized amber lantern source contrasts with cool teal-gray ambient and rim illumination.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "A localized amber lantern source contrasts with cool teal-gray ambient and rim illumination.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Near-black and desaturated teal-gray surround concentrated amber and parchment tones.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Near-black and desaturated teal-gray surround concentrated amber and parchment tones.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "NOT_PRESENT",
+      "summary": "No legible typography is present in the observed frame.",
+      "facts": []
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "A ruined tunnel or passage contains distant silhouettes, aerial devices and storm-like atmosphere.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "environment",
+          "observation": "A ruined tunnel or passage contains distant silhouettes, aerial devices and storm-like atmosphere.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "The parchment map and lantern occupy the forward hand-held plane.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "foreground",
+          "observation": "The parchment map and lantern occupy the forward hand-held plane.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Lantern bloom, mist, backlight and small aerial silhouettes extend the cinematic staging.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "effects",
+          "observation": "Lantern bloom, mist, backlight and small aerial silhouettes extend the cinematic staging.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "Photographic human anatomy is combined with a constructed adventure environment and luminous prop.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "realism_coherence",
+          "observation": "Photographic human anatomy is combined with a constructed adventure environment and luminous prop.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "Moderate-to-high detail clusters around the subject while the left field remains visually sparse.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "complexity_density",
+          "observation": "Moderate-to-high detail clusters around the subject while the left field remains visually sparse.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "The paired lantern and unfolded map establish an exploration motif inside the dark passage.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "distinctive_design_decisions",
+          "observation": "The paired lantern and unfolded map establish an exploration motif inside the dark passage.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000007@sha256:d797b66514e49b638f0804c9fd64b989d564a3c5c8b662b175947d4b00016bd2",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

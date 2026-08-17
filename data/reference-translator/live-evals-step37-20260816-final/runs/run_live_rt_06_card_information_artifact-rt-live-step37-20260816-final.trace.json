@@ -1,0 +1,334 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_live_rt_06_card_information_artifact-rt-live-step37-20260816-final",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "input_mode": "MULTIMODAL",
+  "status": "COMPLETE",
+  "started_at": "2026-08-16T04:03:53.244Z",
+  "completed_at": "2026-08-16T04:07:15.951Z",
+  "input_hash": "5af0fee46f140d6348daa21bb5dda7a2f5899cf2c18a9d7e4d4e9b10f7c4cddd",
+  "input_artifacts": {
+    "context_id": "ctx_live_rt_06_card_information_artifact",
+    "brief_ref": {
+      "artifact_id": "brief_live_rt_06_card_information_artifact",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "live_ref_card_carousel",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": [
+      "MYE_LIVE_LIVE_RT_06_CARD_INFORMATION_ARTIFACT",
+      "VKB_LIVE_LIVE_RT_06_CARD_INFORMATION_ARTIFACT"
+    ]
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "NVIDIA_NIM",
+    "model": "stepfun-ai/step-3.7-flash"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_SCHEMA_INVALID"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4310,
+        "reference_context_characters": 829,
+        "my_eyes_advisory_characters": 1564,
+        "vkb_advisory_characters": 427,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32005,
+        "total_textual_characters": 518823,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 2149572,
+        "serialized_http_body_characters": 2677835,
+        "input_tokens": 129706,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 116054,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-f3064c6f-80da-4763-abcd-cb6522c4167b",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 92367,
+        "final_attempt_latency_ms": 80895,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_card_carousel",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 1612177,
+            "sha256": "1547d2eab318cf630b89e7e3150f4961893853ca8de30ad793f0bcf2d895e729"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4310,
+          "reference_context_characters": 829,
+          "my_eyes_advisory_characters": 1564,
+          "vkb_advisory_characters": 427,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32005,
+          "total_textual_characters": 518823,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 2149572,
+          "serialized_http_body_characters": 2677835,
+          "input_tokens": 96846,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148914,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96846,
+          "output_tokens": 7773,
+          "total_tokens": 104619,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "PASS",
+      "error_code": null,
+      "diagnostic_codes": [],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4310,
+        "reference_context_characters": 829,
+        "my_eyes_advisory_characters": 1564,
+        "vkb_advisory_characters": 427,
+        "retry_diagnostic_characters": 109,
+        "provider_user_text_characters": 32151,
+        "total_textual_characters": 518969,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 2149572,
+        "serialized_http_body_characters": 2677994,
+        "input_tokens": 129743,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 116017,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-6cce5ac6-14cb-4a30-999d-a321703f7719",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 110228,
+        "final_attempt_latency_ms": 98667,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_card_carousel",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 1612177,
+            "sha256": "1547d2eab318cf630b89e7e3150f4961893853ca8de30ad793f0bcf2d895e729"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4310,
+          "reference_context_characters": 829,
+          "my_eyes_advisory_characters": 1564,
+          "vkb_advisory_characters": 427,
+          "retry_diagnostic_characters": 109,
+          "provider_user_text_characters": 32151,
+          "total_textual_characters": 518969,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 2149572,
+          "serialized_http_body_characters": 2677994,
+          "input_tokens": 96880,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148880,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96880,
+          "output_tokens": 12857,
+          "total_tokens": 109737,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T04:03:53.244Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T04:03:53.262Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T04:03:53.262Z",
+      "attempt": 1
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T04:05:25.669Z",
+      "attempt": 1
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T04:05:25.669Z",
+      "attempt": 1,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T04:05:25.689Z",
+      "attempt": 2
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T04:05:25.689Z",
+      "attempt": 2
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T04:07:15.949Z",
+      "attempt": 2
+    },
+    {
+      "state": "SCHEMA_VALIDATED",
+      "at": "2026-08-16T04:07:15.951Z",
+      "attempt": 2
+    },
+    {
+      "state": "SEMANTIC_VALIDATED",
+      "at": "2026-08-16T04:07:15.951Z",
+      "attempt": 2
+    },
+    {
+      "state": "QUALITY_VALIDATED",
+      "at": "2026-08-16T04:07:15.951Z",
+      "attempt": 2
+    },
+    {
+      "state": "PLAN_PERSISTED",
+      "at": "2026-08-16T04:07:15.951Z",
+      "pending_store": true
+    },
+    {
+      "state": "COMPLETE",
+      "at": "2026-08-16T04:07:15.951Z"
+    }
+  ],
+  "validation_outcomes": [
+    {
+      "attempt": 2,
+      "schema": true,
+      "semantic": true,
+      "quality": true
+    }
+  ],
+  "output_plan_id": "plan_live_rt_06_card_information_artifact-rt-live-step37-20260816-final",
+  "structured_decision_summary": [
+    {
+      "mapping_id": "map_001",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_002",
+        "obs_003"
+      ]
+    },
+    {
+      "mapping_id": "map_002",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_001"
+      ]
+    },
+    {
+      "mapping_id": "map_003",
+      "action": "DISCARD",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_004",
+        "obs_005"
+      ]
+    },
+    {
+      "mapping_id": "map_004",
+      "action": "TRANSFER",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_006"
+      ]
+    },
+    {
+      "mapping_id": "map_005",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_004"
+      ]
+    },
+    {
+      "mapping_id": "map_006",
+      "action": "DISCARD",
+      "source_reference_asset_id": "live_ref_card_carousel",
+      "observation_ids": [
+        "obs_007"
+      ]
+    }
+  ],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

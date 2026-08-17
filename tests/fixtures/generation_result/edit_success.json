@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "generation_id": "gen-fixture-edit-001",
+  "project_id": "project-generation-fixture",
+  "run_id": "run-generation-fixture-001",
+  "request_ref": {
+    "artifact_id": "cgr-fixture-001",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://compiled-generation-request/cgr-fixture-001/1.0.0"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "ffs-fixture-001",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-fixture-001/1.0.0"
+  },
+  "provider": {
+    "provider_id": "fixture-third-party",
+    "provider_type": "THIRD_PARTY",
+    "configured": true,
+    "protocol_status": "CONFIGURED"
+  },
+  "model": {
+    "family": "NANO_BANANA",
+    "name": "fixture-model-name"
+  },
+  "generation_mode": "EDIT",
+  "status": "SUCCEEDED",
+  "outputs": [
+    {
+      "output_id": "output-001",
+      "type": "IMAGE",
+      "uri": "fixture://generations/output-001.png",
+      "mime_type": "image/png",
+      "width": 1920,
+      "height": 1080,
+      "aspect_ratio": "16:9",
+      "index": 0,
+      "checksum": "sha256:fixture-output-001",
+      "provider_asset_id": "provider-asset-001",
+      "metadata": {
+        "data_classification": "FIXTURE",
+        "edit_target_preserved": true
+      }
+    }
+  ],
+  "provider_metadata": {
+    "provider_request_id": "provider-request-001",
+    "provider_generation_id": "provider-generation-001",
+    "raw_status": "fixture-success",
+    "model_name": "fixture-model-name",
+    "response_metadata": {
+      "data_classification": "FIXTURE"
+    }
+  },
+  "timing": {
+    "requested_at": "2026-08-10T16:00:00.000Z",
+    "started_at": "2026-08-10T16:00:00.000Z",
+    "completed_at": "2026-08-10T16:00:00.000Z",
+    "duration_ms": 0
+  },
+  "usage": {
+    "cost": null,
+    "credits": null,
+    "units": null,
+    "currency": null,
+    "processing_metrics": {
+      "data_classification": "FIXTURE"
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "provenance": {
+    "producer": "GENERATION_SERVICE",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-10T16:00:00.000Z",
+    "sources": [
+      "COMPILED_GENERATION_REQUEST",
+      "NANO_BANANA_SEMANTIC_ADAPTER",
+      "PROVIDER_TRANSPORT"
+    ]
+  },
+  "trace": {
+    "adapter_id": "nano-banana-semantic-adapter-v1",
+    "transport_id": "fixture-transport",
+    "semantic_request_id": "nbr-fixture-001",
+    "creative_authority": "NONE",
+    "provider_configured": true
+  }
+}

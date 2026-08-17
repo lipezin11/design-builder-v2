@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0.0",
+  "critic_report_id": "critic-human-disagreement",
+  "project_id": "project-contract-test",
+  "run_id": "run-critic-human-disagreement",
+  "generation_result_ref": {
+    "artifact_id": "generation-critic-human-disagreement",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/generation-critic-human-disagreement"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "frame-critic-human-disagreement",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/frame-critic-human-disagreement"
+  },
+  "image_evidence": {
+    "output_id": "output-critic-human-disagreement",
+    "image_uri": "mock://synthetic-image/critic-human-disagreement.png",
+    "availability": "AVAILABLE",
+    "evidence_type": "TEST_DATA_DESCRIPTOR",
+    "data_classification": "SYNTHETIC_TEST_DATA"
+  },
+  "evidence": [
+    {
+      "evidence_id": "ev-critic-failure",
+      "evidence_type": "TEST_ASSERTION",
+      "source_ref": "mock://synthetic-evidence/ev-critic-failure",
+      "description": "Synthetic critic assertion representing a high-severity compositional failure.",
+      "data_classification": "SYNTHETIC_TEST_DATA",
+      "confidence": "HIGH"
+    },
+    {
+      "evidence_id": "ev-human-override",
+      "evidence_type": "HUMAN_FEEDBACK",
+      "source_ref": "mock://synthetic-evidence/ev-human-override",
+      "description": "Synthetic contract-test representation of a human override; not real user feedback.",
+      "data_classification": "SYNTHETIC_TEST_DATA",
+      "confidence": "HIGH"
+    }
+  ],
+  "review_status": "HUMAN_REVIEW_REQUIRED",
+  "blind_visual_review": {
+    "status": "FAIL",
+    "review_context": "BLIND_TO_SPEC",
+    "scope": "GENERAL_QUALITY",
+    "dimensions": [
+      {
+        "dimension": "COMPOSITION",
+        "verdict": "FAIL",
+        "score": 35,
+        "confidence": "HIGH",
+        "evidence_ids": [
+          "ev-critic-failure"
+        ],
+        "rationale": "Synthetic critic failure retained."
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "issue-composition-critic",
+        "phase": "BLIND_VISUAL_REVIEW",
+        "category": "COMPOSITIONAL_IMBALANCE",
+        "severity": "HIGH",
+        "scope": "GENERAL_QUALITY",
+        "description": "Synthetic critic assessment flags compositional imbalance.",
+        "evidence_ids": [
+          "ev-critic-failure"
+        ],
+        "affected_regions": [
+          {
+            "region_id": "full-frame",
+            "label": "Full frame",
+            "geometry": {
+              "kind": "FULL_FRAME"
+            }
+          }
+        ],
+        "responsible_node": "LAYOUT_TYPOGRAPHY",
+        "recommended_return_depth": "TECHNICAL_DESIGN_ROOM",
+        "blocking": true
+      }
+    ],
+    "summary": "Synthetic critic failure is preserved."
+  },
+  "spec_compliance_review": {
+    "status": "PASS",
+    "review_context": "WITH_SPEC_CONTEXT",
+    "scope": "SPEC_COMPLIANCE",
+    "checks": [
+      {
+        "check_id": "check-disagreement-spec",
+        "requirement_type": "COMPOSITION",
+        "source_path": "/composition_system",
+        "verdict": "PASS",
+        "evidence_ids": [
+          "ev-critic-failure"
+        ],
+        "message": "Synthetic spec still passes."
+      }
+    ],
+    "issues": [],
+    "protected_fields_summary": {
+      "checked_paths": [
+        "/identity_system",
+        "/typography_system",
+        "/composition_system"
+      ],
+      "lost_paths": [],
+      "status": "PRESERVED"
+    },
+    "summary": "Synthetic spec review passes."
+  },
+  "my_eyes": {
+    "status": "EVIDENCE_UNAVAILABLE",
+    "scope": "DESIGNER_PREFERENCE",
+    "evidence_ids": [],
+    "preference_findings": [],
+    "unavailable_reason": "No approved direction memory, real approved/rejected images, A/B comparisons, human reasons, or recurrent preference evidence is available.",
+    "summary": "Designer preference was not inferred."
+  },
+  "overall_assessment": {
+    "general_quality_outcome": "FAIL",
+    "spec_compliance_outcome": "PASS",
+    "designer_preference_outcome": "UNKNOWN",
+    "blocking_issue_ids": [
+      "issue-composition-critic"
+    ],
+    "rationale": "Synthetic contract-test outcome for critic-human-disagreement; it is not a real visual judgment."
+  },
+  "routing": {
+    "action": "REQUEST_HUMAN_REVIEW",
+    "minimum_return_depth": "TECHNICAL_DESIGN_ROOM",
+    "responsible_nodes": [
+      "HUMAN_REVIEW"
+    ]
+  },
+  "human_judgment": {
+    "status": "OVERRIDES_CRITIC",
+    "critic_decision": "FAIL",
+    "human_decision": "PASS",
+    "operational_decision": "PASS",
+    "disagreement_preserved": true,
+    "human_evidence_ids": [
+      "ev-human-override"
+    ],
+    "rationale": "Synthetic fixture proves that human operational judgment wins without erasing the prior critic decision."
+  },
+  "warnings": [],
+  "provenance": {
+    "producer": "IMAGE_CRITIC",
+    "producer_version": "1.0.0-contract-test",
+    "created_at": "2026-08-10T12:00:00.000Z",
+    "sources": [
+      "synthetic-contract-fixture"
+    ],
+    "data_classification": "SYNTHETIC_TEST_DATA",
+    "notes": "TEST DATA ONLY. This fixture does not describe a real image, human preference, approval, rejection, or visual analysis."
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "critic_report_id": "critic-identity-failure",
+  "project_id": "project-contract-test",
+  "run_id": "run-critic-identity-failure",
+  "generation_result_ref": {
+    "artifact_id": "generation-critic-identity-failure",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/generation-critic-identity-failure"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "frame-critic-identity-failure",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/frame-critic-identity-failure"
+  },
+  "image_evidence": {
+    "output_id": "output-critic-identity-failure",
+    "image_uri": "mock://synthetic-image/critic-identity-failure.png",
+    "availability": "AVAILABLE",
+    "evidence_type": "TEST_DATA_DESCRIPTOR",
+    "data_classification": "SYNTHETIC_TEST_DATA"
+  },
+  "evidence": [
+    {
+      "evidence_id": "ev-identity-loss",
+      "evidence_type": "TEST_ASSERTION",
+      "source_ref": "mock://synthetic-evidence/ev-identity-loss",
+      "description": "Synthetic comparison representing loss of a locked identity feature.",
+      "data_classification": "SYNTHETIC_TEST_DATA",
+      "confidence": "HIGH"
+    }
+  ],
+  "review_status": "FAIL",
+  "blind_visual_review": {
+    "status": "PASS",
+    "review_context": "BLIND_TO_SPEC",
+    "scope": "GENERAL_QUALITY",
+    "dimensions": [
+      {
+        "dimension": "PERCEIVED_QUALITY",
+        "verdict": "PASS",
+        "score": 85,
+        "confidence": "HIGH",
+        "evidence_ids": [
+          "ev-identity-loss"
+        ],
+        "rationale": "Synthetic general polish can pass despite identity loss."
+      }
+    ],
+    "issues": [],
+    "summary": "Synthetic blind review does not detect a general-quality blocker."
+  },
+  "spec_compliance_review": {
+    "status": "FAIL",
+    "review_context": "WITH_SPEC_CONTEXT",
+    "scope": "SPEC_COMPLIANCE",
+    "checks": [
+      {
+        "check_id": "check-identity-lock",
+        "requirement_type": "IDENTITY",
+        "source_path": "/identity_system/locked_features",
+        "verdict": "FAIL",
+        "evidence_ids": [
+          "ev-identity-loss"
+        ],
+        "message": "Synthetic identity lock fails."
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "issue-identity-loss",
+        "phase": "SPEC_COMPLIANCE_REVIEW",
+        "category": "IDENTITY_LOSS",
+        "severity": "CRITICAL",
+        "scope": "SPEC_COMPLIANCE",
+        "description": "Synthetic output changes a locked identity feature.",
+        "evidence_ids": [
+          "ev-identity-loss"
+        ],
+        "affected_regions": [
+          {
+            "region_id": "identity-zone",
+            "label": "Locked identity region",
+            "geometry": {
+              "kind": "NORMALIZED_BOX",
+              "x": 0.1,
+              "y": 0.08,
+              "width": 0.28,
+              "height": 0.25
+            }
+          }
+        ],
+        "violated_requirement": {
+          "source_artifact": "FINAL_FRAME_SPEC",
+          "source_path": "/identity_system/locked_features",
+          "requirement_id": "identity-lock",
+          "statement": "Preserve locked identity features exactly."
+        },
+        "responsible_node": "IMAGE_GENERATOR",
+        "recommended_return_depth": "GENERATION_ONLY",
+        "blocking": true
+      }
+    ],
+    "protected_fields_summary": {
+      "checked_paths": [
+        "/identity_system",
+        "/typography_system",
+        "/composition_system"
+      ],
+      "lost_paths": [
+        "/identity_system/locked_features"
+      ],
+      "status": "PARTIALLY_LOST"
+    },
+    "summary": "Synthetic spec review fails on identity preservation."
+  },
+  "my_eyes": {
+    "status": "EVIDENCE_UNAVAILABLE",
+    "scope": "DESIGNER_PREFERENCE",
+    "evidence_ids": [],
+    "preference_findings": [],
+    "unavailable_reason": "No approved direction memory, real approved/rejected images, A/B comparisons, human reasons, or recurrent preference evidence is available.",
+    "summary": "Designer preference was not inferred."
+  },
+  "overall_assessment": {
+    "general_quality_outcome": "PASS",
+    "spec_compliance_outcome": "FAIL",
+    "designer_preference_outcome": "UNKNOWN",
+    "blocking_issue_ids": [
+      "issue-identity-loss"
+    ],
+    "rationale": "Synthetic contract-test outcome for critic-identity-failure; it is not a real visual judgment."
+  },
+  "routing": {
+    "action": "CREATE_DELTA_FIX_PLAN",
+    "minimum_return_depth": "GENERATION_ONLY",
+    "responsible_nodes": [
+      "IMAGE_GENERATOR"
+    ]
+  },
+  "human_judgment": {
+    "status": "NOT_PROVIDED",
+    "critic_decision": "FAIL",
+    "human_decision": null,
+    "operational_decision": "FAIL",
+    "disagreement_preserved": false,
+    "human_evidence_ids": []
+  },
+  "warnings": [],
+  "provenance": {
+    "producer": "IMAGE_CRITIC",
+    "producer_version": "1.0.0-contract-test",
+    "created_at": "2026-08-10T12:00:00.000Z",
+    "sources": [
+      "synthetic-contract-fixture"
+    ],
+    "data_classification": "SYNTHETIC_TEST_DATA",
+    "notes": "TEST DATA ONLY. This fixture does not describe a real image, human preference, approval, rejection, or visual analysis."
+  }
+}

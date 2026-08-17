@@ -1,0 +1,151 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_user_subject_reference_20260816_06_kie_gemini_2_5_flash",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "input_mode": "MULTIMODAL",
+  "status": "FAILED",
+  "started_at": "2026-08-16T20:43:57.860Z",
+  "completed_at": "2026-08-16T20:44:04.495Z",
+  "input_hash": "2bbd0ef8cbd04a0719b1ee02aab774f139b46e671a677b3947684d4fd495e679",
+  "input_artifacts": {
+    "context_id": "ctx_user_subject_reference_20260816_06_kie_gemini_2_5_flash",
+    "brief_ref": {
+      "artifact_id": "brief_user_subject_reference_20260816_06_kie_gemini_2_5_flash",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "primary_tech_reference",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": []
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "KIE_AI",
+    "model": "gemini-2.5-flash"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "MODEL_MALFORMED_RESPONSE",
+      "diagnostic_codes": [
+        "MODEL_MALFORMED_RESPONSE"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 12075,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32402,
+        "total_textual_characters": 524415,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1579919,
+        "input_tokens": 131104,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 1048576,
+        "headroom_tokens": 901088,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "KIE_AI",
+        "model": "gemini-2.5-flash",
+        "transport_attempt_count": 1,
+        "latency_ms": 6600,
+        "final_attempt_latency_ms": 6600,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 12075,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32402,
+          "total_textual_characters": 524415,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1579919,
+          "input_tokens": 131104,
+          "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 1048576,
+          "headroom_tokens": 901088,
+          "context_classification": "SAFE"
+        },
+        "usage": null,
+        "provider_reported_credits": null,
+        "structured_output_mode": "JSON_SCHEMA",
+        "error": {
+          "code": "MODEL_MALFORMED_RESPONSE",
+          "retryable": false,
+          "details": {
+            "provider_response_id": null
+          }
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T20:43:57.860Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T20:43:57.880Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T20:43:57.880Z",
+      "attempt": 1
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T20:44:04.495Z",
+      "attempt": 1,
+      "code": "MODEL_MALFORMED_RESPONSE"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T20:44:04.495Z",
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED"
+    }
+  ],
+  "validation_outcomes": [],
+  "output_plan_id": null,
+  "structured_decision_summary": [],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

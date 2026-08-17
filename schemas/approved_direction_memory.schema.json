@@ -1,0 +1,2357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.local/schemas/approved_direction_memory.schema.json",
+  "title": "Approved Direction Memory",
+  "description": "Evidence-layered memory for My Eyes. Human truth, model analysis, and inferred preference remain structurally distinct.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "memory_id",
+    "memory_version",
+    "created_at",
+    "updated_at",
+    "data_classification",
+    "visual_content_analyzed",
+    "semantic_boundaries",
+    "images",
+    "human_decisions",
+    "human_reasons",
+    "structured_human_reasons",
+    "visual_analyses",
+    "pairwise_preferences",
+    "inferred_preferences",
+    "summary",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.1.0"
+    },
+    "memory_id": {
+      "$ref": "#/$defs/id"
+    },
+    "memory_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "data_classification": {
+      "$ref": "#/$defs/data_classification"
+    },
+    "visual_content_analyzed": {
+      "type": "boolean"
+    },
+    "semantic_boundaries": {
+      "$ref": "#/$defs/semantic_boundaries"
+    },
+    "images": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/image_record"
+      }
+    },
+    "human_decisions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/human_decision"
+      }
+    },
+    "human_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/human_reason"
+      }
+    },
+    "structured_human_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/structured_human_reason"
+      }
+    },
+    "visual_analyses": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/visual_analysis"
+      }
+    },
+    "pairwise_preferences": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/pairwise_preference"
+      }
+    },
+    "inferred_preferences": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/inferred_preference"
+      }
+    },
+    "summary": {
+      "$ref": "#/$defs/summary"
+    },
+    "provenance": {
+      "$ref": "#/$defs/manifest_provenance"
+    },
+    "candidate_signal_reviews": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/candidate_signal_review"
+      }
+    },
+    "system_hypotheses": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/system_hypothesis"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9._-]+$"
+    },
+    "image_id": {
+      "type": "string",
+      "pattern": "^MYE_IMG_[0-9]{6}$"
+    },
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^MYE_(DEC|RSN|SRSN|ANA|PAIR|PREF|CREV|HYP)_[0-9]{6}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "data_classification": {
+      "enum": [
+        "REAL_HUMAN_EVIDENCE",
+        "SYNTHETIC_TEST_DATA"
+      ]
+    },
+    "category": {
+      "enum": [
+        "DEPTH",
+        "LIGHTING",
+        "COMPOSITION",
+        "SUBJECT_INTEGRATION",
+        "HIERARCHY",
+        "COLOR",
+        "TYPOGRAPHY",
+        "NEGATIVE_SPACE",
+        "ENVIRONMENTAL_STORYTELLING",
+        "PREMIUM_PERCEPTION",
+        "INTENTIONAL_DESIGN",
+        "REFERENCE_TRANSFER",
+        "IDENTITY",
+        "OTHER",
+        "PERCEPTUAL_COHESION",
+        "VISUAL_EFFECTS",
+        "DETAIL",
+        "AI_VISUAL_SIGNATURE"
+      ]
+    },
+    "semantic_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approval_is_not_general_quality",
+        "rejection_is_not_failure_reason",
+        "visual_analysis_is_not_human_preference",
+        "inference_is_not_human_truth",
+        "pairwise_requires_explicit_comparison"
+      ],
+      "properties": {
+        "approval_is_not_general_quality": {
+          "const": true
+        },
+        "rejection_is_not_failure_reason": {
+          "const": true
+        },
+        "visual_analysis_is_not_human_preference": {
+          "const": true
+        },
+        "inference_is_not_human_truth": {
+          "const": true
+        },
+        "pairwise_requires_explicit_comparison": {
+          "const": true
+        }
+      }
+    },
+    "image_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "image_id",
+        "original_filename",
+        "source_path",
+        "source_bucket",
+        "sha256",
+        "byte_size",
+        "mime_type",
+        "availability",
+        "byte_accessible",
+        "indexed_at",
+        "current_decision_evidence_id",
+        "visual_content_analyzed",
+        "data_classification"
+      ],
+      "properties": {
+        "image_id": {
+          "$ref": "#/$defs/image_id"
+        },
+        "original_filename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_bucket": {
+          "enum": [
+            "APPROVED",
+            "REJECTED"
+          ]
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "byte_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "mime_type": {
+          "enum": [
+            "image/png",
+            "image/jpeg",
+            "image/webp"
+          ]
+        },
+        "availability": {
+          "enum": [
+            "AVAILABLE",
+            "MISSING"
+          ]
+        },
+        "byte_accessible": {
+          "type": "boolean"
+        },
+        "indexed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "current_decision_evidence_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "visual_content_analyzed": {
+          "type": "boolean"
+        },
+        "data_classification": {
+          "$ref": "#/$defs/data_classification"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "availability": {
+                "const": "AVAILABLE"
+              }
+            },
+            "required": [
+              "availability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "byte_accessible": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "availability": {
+                "const": "MISSING"
+              }
+            },
+            "required": [
+              "availability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "byte_accessible": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "evidence_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "asserted_by",
+        "recorded_by",
+        "source_type",
+        "source_ref",
+        "recorded_at",
+        "data_classification"
+      ],
+      "properties": {
+        "asserted_by": {
+          "enum": [
+            "HUMAN",
+            "AI",
+            "CRITIC",
+            "MULTIMODAL_ANALYZER",
+            "SYSTEM_INFERENCE",
+            "SYSTEM"
+          ]
+        },
+        "recorded_by": {
+          "enum": [
+            "HUMAN",
+            "SYSTEM_INDEXER",
+            "CRITIC",
+            "MULTIMODAL_ANALYZER",
+            "SYSTEM_INFERENCE",
+            "APPROVED_DIRECTION_MEMORY_SERVICE",
+            "SYSTEM"
+          ]
+        },
+        "source_type": {
+          "enum": [
+            "APPROVED_IMAGE",
+            "REJECTED_IMAGE",
+            "PAIRWISE_COMPARISON",
+            "HUMAN_FEEDBACK",
+            "CRITIC_REPORT",
+            "IMAGE_BYTES",
+            "DERIVED_INFERENCE",
+            "SYSTEM_STRUCTURED_INTERPRETATION",
+            "CANDIDATE_SIGNAL_REVIEW",
+            "SYSTEM_HYPOTHESIS"
+          ]
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "data_classification": {
+          "enum": [
+            "REAL_HUMAN_EVIDENCE",
+            "REAL_AI_ANALYSIS",
+            "INFERRED_PREFERENCE",
+            "SYNTHETIC_TEST_DATA"
+          ]
+        }
+      }
+    },
+    "human_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "evidence_level",
+        "image_id",
+        "decision",
+        "status",
+        "assertion_scope",
+        "reason_provided",
+        "provenance"
+      ],
+      "properties": {
+        "evidence_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "evidence_level": {
+          "const": "LEVEL_0_HUMAN_DECISION"
+        },
+        "image_id": {
+          "$ref": "#/$defs/image_id"
+        },
+        "decision": {
+          "enum": [
+            "APPROVED",
+            "REJECTED"
+          ]
+        },
+        "status": {
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDED"
+          ]
+        },
+        "assertion_scope": {
+          "const": "HUMAN_DECISION_ONLY"
+        },
+        "reason_provided": {
+          "type": "boolean"
+        },
+        "supersedes_evidence_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "provenance": {
+          "$ref": "#/$defs/evidence_provenance"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "APPROVED"
+              }
+            },
+            "required": [
+              "decision"
+            ]
+          },
+          "then": {
+            "properties": {
+              "provenance": {
+                "properties": {
+                  "asserted_by": {
+                    "const": "HUMAN"
+                  },
+                  "source_type": {
+                    "const": "APPROVED_IMAGE"
+                  },
+                  "data_classification": {
+                    "enum": [
+                      "REAL_HUMAN_EVIDENCE",
+                      "SYNTHETIC_TEST_DATA"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "REJECTED"
+              }
+            },
+            "required": [
+              "decision"
+            ]
+          },
+          "then": {
+            "properties": {
+              "provenance": {
+                "properties": {
+                  "asserted_by": {
+                    "const": "HUMAN"
+                  },
+                  "source_type": {
+                    "const": "REJECTED_IMAGE"
+                  },
+                  "data_classification": {
+                    "enum": [
+                      "REAL_HUMAN_EVIDENCE",
+                      "SYNTHETIC_TEST_DATA"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "reason_target": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "image_id"
+          ],
+          "properties": {
+            "image_id": {
+              "$ref": "#/$defs/image_id"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pair_id"
+          ],
+          "properties": {
+            "pair_id": {
+              "$ref": "#/$defs/evidence_id"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "context_scope",
+            "context_ref"
+          ],
+          "properties": {
+            "context_scope": {
+              "enum": [
+                "EXTERNAL_CANDIDATE_SIGNAL_REVIEW",
+                "HUMAN_REPORTED_DESIGN_CONCERN",
+                "SYSTEM_HYPOTHESIS_REVIEW",
+                "PREFERENCE_CANDIDATE_REVIEW"
+              ]
+            },
+            "context_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    },
+    "human_reason": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason_id",
+        "evidence_level",
+        "target",
+        "raw_text",
+        "status",
+        "version",
+        "provenance"
+      ],
+      "properties": {
+        "reason_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "evidence_level": {
+          "const": "LEVEL_1_HUMAN_REASON"
+        },
+        "target": {
+          "$ref": "#/$defs/reason_target"
+        },
+        "raw_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDED"
+          ]
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supersedes_reason_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "provenance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/evidence_provenance"
+            },
+            {
+              "properties": {
+                "asserted_by": {
+                  "const": "HUMAN"
+                },
+                "source_type": {
+                  "const": "HUMAN_FEEDBACK"
+                },
+                "data_classification": {
+                  "enum": [
+                    "REAL_HUMAN_EVIDENCE",
+                    "SYNTHETIC_TEST_DATA"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "raw_text_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "related_candidate_signal_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^MYE_EXT_SIG_[0-9]{6}$"
+          }
+        },
+        "related_image_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/image_id"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "const": 1
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "supersedes_reason_id"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "minimum": 2
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "required": [
+              "supersedes_reason_id"
+            ]
+          }
+        }
+      ]
+    },
+    "structured_human_reason": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "structured_reason_id",
+        "evidence_level",
+        "human_reason_id",
+        "categories",
+        "polarity",
+        "normalized_statement",
+        "structured_by",
+        "translation_method",
+        "confirmed_by_human",
+        "status",
+        "version",
+        "provenance"
+      ],
+      "properties": {
+        "structured_reason_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "evidence_level": {
+          "const": "LEVEL_2_STRUCTURED_HUMAN_REASON"
+        },
+        "human_reason_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "categories": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/category"
+          }
+        },
+        "polarity": {
+          "enum": [
+            "POSITIVE",
+            "NEGATIVE",
+            "MIXED",
+            "NEUTRAL"
+          ]
+        },
+        "normalized_statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "structured_by": {
+          "enum": [
+            "HUMAN",
+            "AI",
+            "SYSTEM"
+          ]
+        },
+        "translation_method": {
+          "enum": [
+            "HUMAN_STRUCTURED",
+            "AI_STRUCTURED",
+            "AI_STRUCTURED_HUMAN_CONFIRMED",
+            "SYSTEM_STRUCTURED"
+          ]
+        },
+        "confirmed_by_human": {
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDED"
+          ]
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supersedes_structured_reason_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "provenance": {
+          "$ref": "#/$defs/evidence_provenance"
+        },
+        "source_raw_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "structured_concept": {
+          "enum": [
+            "AI_LOOKING_DESIGN",
+            "FLOATING_ELEMENT_MISDIRECTION",
+            "TYPOGRAPHY_DESIGN_RULE_VIOLATION",
+            "VISUAL_NON_CONVERGENCE",
+            "FUNCTIONLESS_MICRODETAIL_ACCUMULATION",
+            "CONTROLLED_VS_ARTIFICIAL_COMPLEXITY"
+          ]
+        },
+        "structured_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conditions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "what_is_bad",
+            "when_it_becomes_bad",
+            "what_is_not_necessarily_bad"
+          ],
+          "properties": {
+            "what_is_bad": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "when_it_becomes_bad": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "what_is_not_necessarily_bad": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "explicitly_not_claimed": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "related_visual_dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "interpretation_confidence": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+          ]
+        },
+        "human_confirmation_status": {
+          "enum": [
+            "AWAITING_STRUCTURED_CONFIRMATION",
+            "HUMAN_CONFIRMED",
+            "DERIVED_FROM_CONFIRMED_HUMAN_CLARIFICATION"
+          ]
+        },
+        "claim_status": {
+          "const": "SYSTEM_STRUCTURING_OF_HUMAN_EVIDENCE"
+        },
+        "functional_justification_dimensions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "DEPTH",
+              "HIERARCHY",
+              "NARRATIVE",
+              "FRAMING",
+              "DIRECTIONALITY",
+              "ATMOSPHERE",
+              "SUBJECT_INTEGRATION",
+              "BRAND_MEANING"
+            ]
+          }
+        },
+        "human_evidence_status": {
+          "enum": [
+            "HUMAN_REPORTED_CONCERN",
+            "HUMAN_REPORTED_SIGNAL",
+            "HUMAN_REPORTED_EXPERIENCE",
+            "HUMAN_CONFIRMED_CLARIFICATION"
+          ]
+        },
+        "evaluation_axis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "positive_pole",
+            "negative_pole",
+            "fixed_quantitative_limit",
+            "quantity_is_decisive"
+          ],
+          "properties": {
+            "positive_pole": {
+              "const": "CONTROLLED_INTENTIONAL_COMPLEXITY"
+            },
+            "negative_pole": {
+              "const": "ARTIFICIAL_UNCONTROLLED_COMPLEXITY"
+            },
+            "fixed_quantitative_limit": {
+              "const": false
+            },
+            "quantity_is_decisive": {
+              "const": false
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "const": 1
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "supersedes_structured_reason_id"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "minimum": 2
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "required": [
+              "supersedes_structured_reason_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "structured_by": {
+                "const": "HUMAN"
+              }
+            },
+            "required": [
+              "structured_by"
+            ]
+          },
+          "then": {
+            "properties": {
+              "confirmed_by_human": {
+                "const": true
+              },
+              "translation_method": {
+                "const": "HUMAN_STRUCTURED"
+              },
+              "provenance": {
+                "properties": {
+                  "asserted_by": {
+                    "const": "HUMAN"
+                  },
+                  "source_type": {
+                    "const": "HUMAN_FEEDBACK"
+                  },
+                  "data_classification": {
+                    "enum": [
+                      "REAL_HUMAN_EVIDENCE",
+                      "SYNTHETIC_TEST_DATA"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "structured_by": {
+                "const": "AI"
+              },
+              "confirmed_by_human": {
+                "const": false
+              }
+            },
+            "required": [
+              "structured_by",
+              "confirmed_by_human"
+            ]
+          },
+          "then": {
+            "properties": {
+              "translation_method": {
+                "const": "AI_STRUCTURED"
+              },
+              "provenance": {
+                "properties": {
+                  "asserted_by": {
+                    "const": "AI"
+                  },
+                  "source_type": {
+                    "const": "DERIVED_INFERENCE"
+                  },
+                  "data_classification": {
+                    "enum": [
+                      "REAL_AI_ANALYSIS",
+                      "SYNTHETIC_TEST_DATA"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "structured_by": {
+                "const": "AI"
+              },
+              "confirmed_by_human": {
+                "const": true
+              }
+            },
+            "required": [
+              "structured_by",
+              "confirmed_by_human"
+            ]
+          },
+          "then": {
+            "properties": {
+              "translation_method": {
+                "const": "AI_STRUCTURED_HUMAN_CONFIRMED"
+              },
+              "provenance": {
+                "properties": {
+                  "asserted_by": {
+                    "const": "AI"
+                  },
+                  "source_type": {
+                    "const": "DERIVED_INFERENCE"
+                  },
+                  "data_classification": {
+                    "enum": [
+                      "REAL_AI_ANALYSIS",
+                      "SYNTHETIC_TEST_DATA"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "structured_by": {
+                "const": "SYSTEM"
+              }
+            },
+            "required": [
+              "structured_by"
+            ]
+          },
+          "then": {
+            "properties": {
+              "confirmed_by_human": {
+                "const": false
+              },
+              "translation_method": {
+                "const": "SYSTEM_STRUCTURED"
+              },
+              "human_confirmation_status": {
+                "enum": [
+                  "AWAITING_STRUCTURED_CONFIRMATION",
+                  "DERIVED_FROM_CONFIRMED_HUMAN_CLARIFICATION"
+                ]
+              },
+              "provenance": {
+                "properties": {
+                  "asserted_by": {
+                    "const": "SYSTEM"
+                  },
+                  "source_type": {
+                    "const": "SYSTEM_STRUCTURED_INTERPRETATION"
+                  },
+                  "data_classification": {
+                    "enum": [
+                      "REAL_AI_ANALYSIS",
+                      "SYNTHETIC_TEST_DATA"
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "source_raw_text",
+              "structured_concept",
+              "structured_summary",
+              "conditions",
+              "explicitly_not_claimed",
+              "related_visual_dimensions",
+              "interpretation_confidence",
+              "human_confirmation_status",
+              "claim_status",
+              "human_evidence_status"
+            ]
+          }
+        }
+      ]
+    },
+    "visual_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observation_id",
+        "category",
+        "statement",
+        "confidence"
+      ],
+      "properties": {
+        "observation_id": {
+          "$ref": "#/$defs/id"
+        },
+        "category": {
+          "$ref": "#/$defs/category"
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "visual_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analysis_id",
+        "evidence_level",
+        "image_id",
+        "image_sha256",
+        "analysis_version",
+        "record_path",
+        "analyzed_at",
+        "blind_analysis",
+        "label_visible_during_analysis",
+        "human_preference_claim",
+        "analyzer",
+        "provenance"
+      ],
+      "properties": {
+        "analysis_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "evidence_level": {
+          "const": "LEVEL_3_VISUAL_ANALYSIS"
+        },
+        "image_id": {
+          "$ref": "#/$defs/image_id"
+        },
+        "image_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "analysis_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "record_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "analyzed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "blind_analysis": {
+          "const": true
+        },
+        "label_visible_during_analysis": {
+          "const": false
+        },
+        "human_preference_claim": {
+          "const": false
+        },
+        "analyzer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "provider",
+            "model",
+            "analyzer_version",
+            "analysis_prompt_version"
+          ],
+          "properties": {
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "analyzer_version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "analysis_prompt_version": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "provenance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/evidence_provenance"
+            },
+            {
+              "properties": {
+                "asserted_by": {
+                  "const": "MULTIMODAL_ANALYZER"
+                },
+                "source_type": {
+                  "const": "IMAGE_BYTES"
+                },
+                "data_classification": {
+                  "enum": [
+                    "REAL_AI_ANALYSIS",
+                    "SYNTHETIC_TEST_DATA"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "pairwise_preference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pair_id",
+        "evidence_level",
+        "left_image_id",
+        "right_image_id",
+        "result",
+        "preferred_image_id",
+        "pair_type",
+        "explicitly_compared_by_human",
+        "comparison_context",
+        "human_reason_ids",
+        "status",
+        "version",
+        "provenance"
+      ],
+      "properties": {
+        "pair_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "evidence_level": {
+          "const": "LEVEL_0_HUMAN_DECISION"
+        },
+        "left_image_id": {
+          "$ref": "#/$defs/image_id"
+        },
+        "right_image_id": {
+          "$ref": "#/$defs/image_id"
+        },
+        "result": {
+          "enum": [
+            "LEFT_PREFERRED",
+            "RIGHT_PREFERRED",
+            "TIE"
+          ]
+        },
+        "preferred_image_id": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/image_id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pair_type": {
+          "enum": [
+            "STANDARD_PAIR",
+            "HARD_PAIR",
+            "DIAGNOSTIC_PAIR"
+          ]
+        },
+        "explicitly_compared_by_human": {
+          "const": true
+        },
+        "comparison_context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_reason_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          }
+        },
+        "status": {
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDED"
+          ]
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supersedes_pair_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "provenance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/evidence_provenance"
+            },
+            {
+              "properties": {
+                "asserted_by": {
+                  "const": "HUMAN"
+                },
+                "source_type": {
+                  "const": "PAIRWISE_COMPARISON"
+                },
+                "data_classification": {
+                  "enum": [
+                    "REAL_HUMAN_EVIDENCE",
+                    "SYNTHETIC_TEST_DATA"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "result": {
+                "const": "TIE"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          },
+          "then": {
+            "properties": {
+              "preferred_image_id": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "result": {
+                "enum": [
+                  "LEFT_PREFERRED",
+                  "RIGHT_PREFERRED"
+                ]
+              }
+            },
+            "required": [
+              "result"
+            ]
+          },
+          "then": {
+            "properties": {
+              "preferred_image_id": {
+                "$ref": "#/$defs/image_id"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "const": 1
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "supersedes_pair_id"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "minimum": 2
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "required": [
+              "supersedes_pair_id"
+            ]
+          }
+        }
+      ]
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "score",
+        "band"
+      ],
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "band": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+          ]
+        }
+      }
+    },
+    "inferred_preference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preference_id",
+        "evidence_level",
+        "type",
+        "statement",
+        "status",
+        "categories",
+        "related_concepts",
+        "scope",
+        "conditions",
+        "exceptions",
+        "explicitly_not_claimed",
+        "supporting_evidence_refs",
+        "contradicting_evidence_refs",
+        "human_evidence_refs",
+        "visual_evidence_refs",
+        "pairwise_refs",
+        "candidate_signal_refs",
+        "hypothesis_refs",
+        "independent_evidence_groups",
+        "contradiction_search",
+        "sample_context",
+        "confidence",
+        "confidence_basis",
+        "known_uncertainties",
+        "created_by",
+        "human_confirmed",
+        "preference_strength_status",
+        "inference_method",
+        "version",
+        "created_at",
+        "supersedes",
+        "revision_reason",
+        "human_confirmation_question",
+        "provenance"
+      ],
+      "properties": {
+        "preference_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "evidence_level": {
+          "const": "LEVEL_4_INFERRED_PREFERENCE_CANDIDATE"
+        },
+        "type": {
+          "enum": [
+            "POSITIVE_PREFERENCE",
+            "NEGATIVE_SENSITIVITY",
+            "TRADEOFF_PRINCIPLE",
+            "CONDITIONAL_ACCEPTANCE",
+            "FAILURE_SIGNATURE"
+          ]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "CANDIDATE",
+            "SUPPORTED",
+            "CONTEXTUAL",
+            "CONTRADICTED",
+            "INSUFFICIENT_EVIDENCE",
+            "SUPERSEDED"
+          ]
+        },
+        "categories": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/category"
+          }
+        },
+        "related_concepts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conditions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "exceptions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explicitly_not_claimed": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "supporting_evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          },
+          "minItems": 2
+        },
+        "contradicting_evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          }
+        },
+        "human_evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          },
+          "minItems": 1
+        },
+        "visual_evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          }
+        },
+        "pairwise_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          }
+        },
+        "candidate_signal_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^MYE_EXT_SIG_[0-9]{6}$"
+          }
+        },
+        "hypothesis_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          }
+        },
+        "independent_evidence_groups": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "group_id",
+              "evidence_refs",
+              "independence_basis"
+            ],
+            "properties": {
+              "group_id": {
+                "$ref": "#/$defs/id"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/evidence_id"
+                },
+                "minItems": 1
+              },
+              "independence_basis": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "contradiction_search": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "performed",
+            "query_scope",
+            "outcome",
+            "summary"
+          ],
+          "properties": {
+            "performed": {
+              "const": true
+            },
+            "query_scope": {
+              "type": "string",
+              "minLength": 1
+            },
+            "outcome": {
+              "enum": [
+                "COUNTEREVIDENCE_FOUND",
+                "NO_COUNTEREVIDENCE_FOUND"
+              ]
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "sample_context": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "description",
+            "image_ids",
+            "pair_ids"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "image_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/image_id"
+              }
+            },
+            "pair_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/evidence_id"
+              }
+            }
+          }
+        },
+        "confidence": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+          ]
+        },
+        "confidence_basis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "qualitative_evidence_priority",
+            "convergence_summary",
+            "confidence_is_not_score"
+          ],
+          "properties": {
+            "qualitative_evidence_priority": {
+              "const": [
+                "DIRECT_HUMAN_EVIDENCE",
+                "SYSTEM_INTERPRETATION",
+                "CORRELATIONAL_EVIDENCE"
+              ]
+            },
+            "convergence_summary": {
+              "type": "string",
+              "minLength": 1
+            },
+            "confidence_is_not_score": {
+              "const": true
+            }
+          }
+        },
+        "known_uncertainties": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "created_by": {
+          "const": "SYSTEM_INFERENCE"
+        },
+        "human_confirmed": {
+          "type": "boolean"
+        },
+        "human_confirmation_event": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "event_id",
+            "confirmed_by",
+            "recorded_at",
+            "raw_human_evidence_ref"
+          ],
+          "properties": {
+            "event_id": {
+              "$ref": "#/$defs/id"
+            },
+            "confirmed_by": {
+              "const": "HUMAN"
+            },
+            "recorded_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "raw_human_evidence_ref": {
+              "$ref": "#/$defs/evidence_id"
+            }
+          }
+        },
+        "preference_strength_status": {
+          "enum": [
+            "NON_AUTHORITATIVE_CANDIDATE",
+            "HUMAN_CONFIRMED_GENERALIZED_PREFERENCE"
+          ]
+        },
+        "inference_method": {
+          "const": "EVIDENCE_CONVERGENCE_WITH_COUNTEREXAMPLE_SEARCH"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "supersedes": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/evidence_id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revision_reason": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "human_confirmation_question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/evidence_provenance"
+            },
+            {
+              "properties": {
+                "asserted_by": {
+                  "const": "SYSTEM_INFERENCE"
+                },
+                "source_type": {
+                  "const": "DERIVED_INFERENCE"
+                },
+                "data_classification": {
+                  "enum": [
+                    "INFERRED_PREFERENCE",
+                    "SYNTHETIC_TEST_DATA"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "human_confirmed": {
+                "const": true
+              }
+            },
+            "required": [
+              "human_confirmed"
+            ]
+          },
+          "then": {
+            "required": [
+              "human_confirmation_event"
+            ],
+            "properties": {
+              "preference_strength_status": {
+                "const": "HUMAN_CONFIRMED_GENERALIZED_PREFERENCE"
+              }
+            }
+          },
+          "else": {
+            "allOf": [
+              {
+                "not": {
+                  "required": [
+                    "human_confirmation_event"
+                  ]
+                }
+              },
+              {
+                "properties": {
+                  "preference_strength_status": {
+                    "const": "NON_AUTHORITATIVE_CANDIDATE"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "const": 1
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "properties": {
+              "supersedes": {
+                "type": "null"
+              },
+              "revision_reason": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "supersedes": {
+                "$ref": "#/$defs/evidence_id"
+              },
+              "revision_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "contradiction_search": {
+                "properties": {
+                  "outcome": {
+                    "const": "COUNTEREVIDENCE_FOUND"
+                  }
+                },
+                "required": [
+                  "outcome"
+                ]
+              }
+            },
+            "required": [
+              "contradiction_search"
+            ]
+          },
+          "then": {
+            "properties": {
+              "contradicting_evidence_refs": {
+                "minItems": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "contradicting_evidence_refs": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "image_count",
+        "available_image_count",
+        "approved_count",
+        "rejected_count",
+        "human_reason_count",
+        "structured_reason_count",
+        "visual_analysis_count",
+        "pairwise_count",
+        "hard_pair_count",
+        "inferred_preference_count",
+        "human_confirmed_generalized_preference_count"
+      ],
+      "properties": {
+        "image_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "available_image_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "approved_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rejected_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "human_reason_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "structured_reason_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "visual_analysis_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pairwise_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hard_pair_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "inferred_preference_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "candidate_signal_review_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "system_hypothesis_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "human_confirmed_generalized_preference_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "manifest_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "producer",
+        "producer_version",
+        "source_directories",
+        "indexing_method",
+        "visual_analysis_performed"
+      ],
+      "properties": {
+        "producer": {
+          "const": "APPROVED_DIRECTION_MEMORY_INDEXER"
+        },
+        "producer_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_directories": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "indexing_method": {
+          "const": "DIRECTORY_CLASSIFICATION_AND_BYTE_METADATA_ONLY"
+        },
+        "visual_analysis_performed": {
+          "const": false
+        }
+      }
+    },
+    "candidate_signal_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "review_id",
+        "candidate_signal_id",
+        "source_batch_id",
+        "source_artifact_path",
+        "candidate_signal_version",
+        "supersedes_candidate_signal_version",
+        "review_outcome",
+        "correlation_retained",
+        "human_causal_confirmation",
+        "human_supported_conditions",
+        "explicitly_not_claimed",
+        "related_human_reason_ids",
+        "preference_status",
+        "universal_rule_created",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "review_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "candidate_signal_id": {
+          "type": "string",
+          "pattern": "^MYE_EXT_SIG_[0-9]{6}$"
+        },
+        "source_batch_id": {
+          "type": "string",
+          "pattern": "^MYE_EXT_BATCH_[0-9]{6}$"
+        },
+        "source_artifact_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidate_signal_version": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "supersedes_candidate_signal_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "review_outcome": {
+          "enum": [
+            "CORRELATION_RETAINED_CAUSE_NOT_CONFIRMED",
+            "OBSERVATION_RETAINED_PRIMARY_CAUSE_NOT_CONFIRMED",
+            "LITERAL_FEATURE_NOT_CONFIRMED_CONDITIONAL_PROBLEM_SUPPORTED",
+            "CORRELATION_RETAINED_QUANTITATIVE_LIMIT_REJECTED_FUNCTIONAL_AXIS_CONFIRMED"
+          ]
+        },
+        "correlation_retained": {
+          "const": true
+        },
+        "human_causal_confirmation": {
+          "enum": [
+            "NOT_CONFIRMED",
+            "CONDITIONALLY_SUPPORTED",
+            "HUMAN_CLARIFIED"
+          ]
+        },
+        "human_supported_conditions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explicitly_not_claimed": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "related_human_reason_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          }
+        },
+        "preference_status": {
+          "const": "NOT_INFERRED"
+        },
+        "universal_rule_created": {
+          "const": false
+        },
+        "status": {
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDED"
+          ]
+        },
+        "provenance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/evidence_provenance"
+            },
+            {
+              "properties": {
+                "asserted_by": {
+                  "const": "SYSTEM"
+                },
+                "source_type": {
+                  "const": "CANDIDATE_SIGNAL_REVIEW"
+                },
+                "data_classification": {
+                  "enum": [
+                    "REAL_AI_ANALYSIS",
+                    "SYNTHETIC_TEST_DATA"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "supersedes_review_id": {
+          "$ref": "#/$defs/evidence_id"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "candidate_signal_version": {
+                "minimum": 3
+              }
+            },
+            "required": [
+              "candidate_signal_version"
+            ]
+          },
+          "then": {
+            "required": [
+              "supersedes_review_id"
+            ]
+          }
+        }
+      ]
+    },
+    "system_hypothesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hypothesis_id",
+        "statement",
+        "status",
+        "human_confirmed",
+        "related_human_reason_ids",
+        "explicitly_not_claimed",
+        "preference_status",
+        "provenance"
+      ],
+      "properties": {
+        "hypothesis_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "HYPOTHESIS_REQUIRING_HUMAN_CONFIRMATION",
+            "PARTIALLY_CONFIRMED_WITH_CORRECTION"
+          ]
+        },
+        "human_confirmed": {
+          "const": false
+        },
+        "related_human_reason_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/evidence_id"
+          }
+        },
+        "explicitly_not_claimed": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "preference_status": {
+          "const": "NOT_INFERRED"
+        },
+        "provenance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/evidence_provenance"
+            },
+            {
+              "properties": {
+                "asserted_by": {
+                  "const": "SYSTEM"
+                },
+                "source_type": {
+                  "const": "SYSTEM_HYPOTHESIS"
+                },
+                "data_classification": {
+                  "enum": [
+                    "REAL_AI_ANALYSIS",
+                    "SYNTHETIC_TEST_DATA"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supersedes_hypothesis_id": {
+          "$ref": "#/$defs/evidence_id"
+        },
+        "record_status": {
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDED"
+          ]
+        },
+        "human_confirmation_status": {
+          "enum": [
+            "AWAITING_HUMAN_CONFIRMATION",
+            "PARTIALLY_CONFIRMED_WITH_CORRECTION"
+          ]
+        },
+        "correction_reason_id": {
+          "$ref": "#/$defs/evidence_id"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "version": {
+                "minimum": 2
+              }
+            },
+            "required": [
+              "version"
+            ]
+          },
+          "then": {
+            "required": [
+              "supersedes_hypothesis_id",
+              "correction_reason_id"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "visual_content_analyzed": {
+            "const": false
+          }
+        },
+        "required": [
+          "visual_content_analyzed"
+        ]
+      },
+      "then": {
+        "properties": {
+          "visual_analyses": {
+            "maxItems": 0
+          },
+          "images": {
+            "items": {
+              "properties": {
+                "visual_content_analyzed": {
+                  "const": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "visual_content_analyzed": {
+            "const": true
+          }
+        },
+        "required": [
+          "visual_content_analyzed"
+        ]
+      },
+      "then": {
+        "properties": {
+          "visual_analyses": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

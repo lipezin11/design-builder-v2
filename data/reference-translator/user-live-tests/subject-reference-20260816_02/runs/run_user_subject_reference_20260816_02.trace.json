@@ -1,0 +1,370 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_user_subject_reference_20260816_02",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "input_mode": "MULTIMODAL",
+  "status": "FAILED",
+  "started_at": "2026-08-16T04:55:55.372Z",
+  "completed_at": "2026-08-16T05:02:23.527Z",
+  "input_hash": "d21708e2d977f59f7b85e5404e6b0ac6774cbc3f72fd5970721f2221abe82539",
+  "input_artifacts": {
+    "context_id": "ctx_user_subject_reference_20260816_02",
+    "brief_ref": {
+      "artifact_id": "brief_user_subject_reference_20260816_02",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "primary_tech_reference",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": []
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "NVIDIA_NIM",
+    "model": "stepfun-ai/step-3.7-flash"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_SCHEMA_INVALID"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 11920,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32176,
+        "total_textual_characters": 524189,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1567505,
+        "input_tokens": 131048,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 114712,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-2e95ff95-a242-4233-b244-9ae467c78d71",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 109462,
+        "final_attempt_latency_ms": 97766,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 11920,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32176,
+          "total_textual_characters": 524189,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1567505,
+          "input_tokens": 98333,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 147427,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 98333,
+          "output_tokens": 10213,
+          "total_tokens": 108546,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SEMANTIC_INVALID",
+      "diagnostic_codes": [
+        "SOURCE_HUE_TREATED_AS_INVARIANT",
+        "SOURCE_HUE_TREATED_AS_INVARIANT"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 11920,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 109,
+        "provider_user_text_characters": 32322,
+        "total_textual_characters": 524335,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1567664,
+        "input_tokens": 131084,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 114676,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-87cd3503-fe5d-4517-8159-2332dd41fe47",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 127455,
+        "final_attempt_latency_ms": 115915,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 11920,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 109,
+          "provider_user_text_characters": 32322,
+          "total_textual_characters": 524335,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1567664,
+          "input_tokens": 98367,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 147393,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 98367,
+          "output_tokens": 12339,
+          "total_tokens": 110706,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 3,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_SCHEMA_INVALID"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 11920,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 481,
+        "provider_user_text_characters": 32748,
+        "total_textual_characters": 524761,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1568112,
+        "input_tokens": 131191,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 114569,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-03d4f35d-65f1-4e91-9309-38a6cb279e3f",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 151105,
+        "final_attempt_latency_ms": 139548,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 11920,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 481,
+          "provider_user_text_characters": 32748,
+          "total_textual_characters": 524761,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1568112,
+          "input_tokens": 98479,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 147281,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 98479,
+          "output_tokens": 15419,
+          "total_tokens": 113898,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T04:55:55.372Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T04:55:55.388Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T04:55:55.388Z",
+      "attempt": 1
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T04:57:44.871Z",
+      "attempt": 1
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T04:57:44.876Z",
+      "attempt": 1,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T04:57:44.895Z",
+      "attempt": 2
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T04:57:44.895Z",
+      "attempt": 2
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T04:59:52.374Z",
+      "attempt": 2
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T04:59:52.383Z",
+      "attempt": 2,
+      "code": "REFERENCE_PLAN_SEMANTIC_INVALID"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T04:59:52.400Z",
+      "attempt": 3
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T04:59:52.400Z",
+      "attempt": 3
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T05:02:23.527Z",
+      "attempt": 3
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T05:02:23.527Z",
+      "attempt": 3,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T05:02:23.527Z",
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED"
+    }
+  ],
+  "validation_outcomes": [],
+  "output_plan_id": null,
+  "structured_decision_summary": [],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

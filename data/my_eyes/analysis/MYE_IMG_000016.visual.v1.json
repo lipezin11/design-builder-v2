@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000021",
+  "image_id": "MYE_IMG_000016",
+  "image_sha256": "c0ce97d4834f690d9b1cfd6172df4eb99c5e706419f22bc22cfee1f011f58cdb",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Landscape hero with a suited man on the right, a wide empty dark-purple region on the left and purple halo and ribbon elements behind him.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Wide format reserves most of the left side as a dark open field.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Wide format reserves most of the left side as a dark open field.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The man is positioned on the right with curved ribbon elements extending behind his shoulder.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The man is positioned on the right with curved ribbon elements extending behind his shoulder.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The face, glasses and suit edge lead against the subdued purple environment.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The face, glasses and suit edge lead against the subdued purple environment.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Subject, ribbon forms, halo and faint blurred panels create limited layered depth.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Subject, ribbon forms, halo and faint blurred panels create limited layered depth.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Purple rim light and adjacent ribbon shapes visually connect the subject to the backdrop.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Purple rim light and adjacent ribbon shapes visually connect the subject to the backdrop.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Soft frontal light is paired with a concentrated purple halo and edge illumination.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Soft frontal light is paired with a concentrated purple halo and edge illumination.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Black, deep violet and muted skin tones dominate.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Black, deep violet and muted skin tones dominate.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "NOT_PRESENT",
+      "summary": "No legible typography is present in the observed frame.",
+      "facts": []
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "A faint abstract studio or display environment appears behind the purple gradient.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "environment",
+          "observation": "A faint abstract studio or display environment appears behind the purple gradient.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "No distinct near-camera object is present beyond the cropped subject at the lower-right edge.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "foreground",
+          "observation": "No distinct near-camera object is present beyond the cropped subject at the lower-right edge.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Purple glow, halo, blur and tape-like ribbon elements are the main effects.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "effects",
+          "observation": "Purple glow, halo, blur and tape-like ribbon elements are the main effects.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "A photographic portrait is paired with abstract purple branding graphics.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "realism_coherence",
+          "observation": "A photographic portrait is paired with abstract purple branding graphics.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "Low-to-moderate density is confined to the right, leaving the left visually sparse.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "complexity_density",
+          "observation": "Low-to-moderate density is confined to the right, leaving the left visually sparse.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "Curved purple tape-like bands frame the suited portrait while the opposite side remains open.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "distinctive_design_decisions",
+          "observation": "Curved purple tape-like bands frame the suited portrait while the opposite side remains open.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000016@sha256:c0ce97d4834f690d9b1cfd6172df4eb99c5e706419f22bc22cfee1f011f58cdb",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

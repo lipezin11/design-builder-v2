@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000013",
+  "image_id": "MYE_IMG_000003",
+  "image_sha256": "b98a9a201627b5ea995e855b52dcd9a7b47303512d4e48c8f890b44163105d31",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Portrait environmental-awareness poster with hands holding soil and a seedling, a light background, green leaf framing and a Portuguese commemorative headline.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Portrait layout places headline above, explanatory copy to the left and the seedling-hands image in the center-lower area.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Portrait layout places headline above, explanatory copy to the left and the seedling-hands image in the center-lower area.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "Hands and plant form the central axis while leaves enter from corners and text balances the left.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "Hands and plant form the central axis while leaves enter from corners and text balances the left.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The seedling and hands lead, followed by the upper headline and left-side paragraph.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The seedling and hands lead, followed by the upper headline and left-side paragraph.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Blurred leaves occupy the near corners, hands and plant sit mid-frame and pale foliage recedes behind.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Blurred leaves occupy the near corners, hands and plant sit mid-frame and pale foliage recedes behind.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Natural green reflections and surrounding foliage visually connect the hands, soil and plant to the setting.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Natural green reflections and surrounding foliage visually connect the hands, soil and plant to the setting.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Soft high-key daylight illuminates the hands, leaves and cream background with minimal hard shadow.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Soft high-key daylight illuminates the hands, leaves and cream background with minimal hard shadow.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Cream, pale green, leaf green and earth brown dominate.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Cream, pale green, leaf green and earth brown dominate.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "OBSERVED",
+      "summary": "Portuguese commemorative headline appears at the top, with a smaller paragraph on the left and branding below.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "typography",
+          "observation": "Portuguese commemorative headline appears at the top, with a smaller paragraph on the left and branding below.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "The setting is a bright stylized botanical space with soft foliage rather than a specific landscape.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "environment",
+          "observation": "The setting is a bright stylized botanical space with soft foliage rather than a specific landscape.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "Blurred leaves intrude at the lower and side edges, framing the hands.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "foreground",
+          "observation": "Blurred leaves intrude at the lower and side edges, framing the hands.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Soft focus, light haze and gentle botanical overlays are the visible effects.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "effects",
+          "observation": "Soft focus, light haze and gentle botanical overlays are the visible effects.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "Photographic hands, soil and plant are placed within a lightly stylized botanical composition.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "realism_coherence",
+          "observation": "Photographic hands, soil and plant are placed within a lightly stylized botanical composition.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "Moderate density is distributed around the central plant with substantial light background remaining.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "complexity_density",
+          "observation": "Moderate density is distributed around the central plant with substantial light background remaining.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "A seedling emerging from soil held in two hands becomes the central emblem beneath the environmental headline.",
+      "facts": [
+        {
+          "fact_id": "FACT_014",
+          "attribute": "distinctive_design_decisions",
+          "observation": "A seedling emerging from soil held in two hands becomes the central emblem beneath the environmental headline.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000003@sha256:b98a9a201627b5ea995e855b52dcd9a7b47303512d4e48c8f890b44163105d31",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

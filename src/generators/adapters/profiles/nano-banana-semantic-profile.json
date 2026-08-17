@@ -1,0 +1,26 @@
+{
+  "profile_id": "nano-banana-semantic-v1",
+  "profile_version": "1.0.0",
+  "profile_type": "MODEL_SEMANTIC_PROFILE",
+  "model_family": "NANO_BANANA",
+  "model_name_source": "NANO_BANANA_MODEL",
+  "provider_binding": "PROVIDER_DEPENDENT",
+  "creative_authority": "NONE",
+  "adapter_id": "nano-banana-semantic-adapter-v1",
+  "capabilities": {
+    "reference_images": "UNKNOWN",
+    "max_reference_count": "PROVIDER_DEPENDENT",
+    "edit_support": "UNKNOWN",
+    "exact_text_support": "UNKNOWN",
+    "aspect_ratios": "PROVIDER_DEPENDENT",
+    "multiple_outputs": "UNKNOWN",
+    "image_size": "PROVIDER_DEPENDENT",
+    "async_mode": "UNKNOWN",
+    "input_formats": "PROVIDER_DEPENDENT",
+    "output_formats": "PROVIDER_DEPENDENT"
+  },
+  "metadata": {
+    "status": "AWAITING_PROVIDER_DOCUMENTATION",
+    "description": "Semantic model profile only; no provider protocol or capability claim."
+  }
+}

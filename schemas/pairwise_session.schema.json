@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.local/schemas/pairwise_session.schema.json",
+  "title": "My Eyes Human Pairwise Session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "session_id", "session_version", "status", "created_at", "updated_at", "memory_snapshot", "selection_policy", "pairs", "summary", "provenance"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "session_id": { "type": "string", "pattern": "^MYE_PAIR_SESSION_[0-9]{6}$" },
+    "session_version": { "type": "integer", "minimum": 1 },
+    "status": { "enum": ["WAITING_FOR_HUMAN", "IN_PROGRESS", "COMPLETED"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "memory_snapshot": { "$ref": "#/$defs/memory_snapshot" },
+    "selection_policy": { "$ref": "#/$defs/selection_policy" },
+    "pairs": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
+      "items": { "$ref": "#/$defs/pair" }
+    },
+    "summary": { "$ref": "#/$defs/summary" },
+    "provenance": { "$ref": "#/$defs/system_provenance" }
+  },
+  "$defs": {
+    "nullable_text": { "type": ["string", "null"] },
+    "image_id": { "type": "string", "pattern": "^MYE_IMG_[0-9]{6}$" },
+    "memory_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["memory_id", "memory_version", "image_count", "pairwise_evidence_count", "inferred_preference_count", "scores_count", "weights_count"],
+      "properties": {
+        "memory_id": { "type": "string", "minLength": 1 },
+        "memory_version": { "type": "integer", "minimum": 1 },
+        "image_count": { "type": "integer", "minimum": 2 },
+        "pairwise_evidence_count": { "type": "integer", "minimum": 0 },
+        "inferred_preference_count": { "type": "integer", "minimum": 0 },
+        "scores_count": { "const": 0 },
+        "weights_count": { "const": 0 }
+      }
+    },
+    "selection_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selected_by", "pair_selection_is_preference", "labels_may_not_decide_winner", "decision_authority", "target_pair_count", "presentation_ordering_rule"],
+      "properties": {
+        "selected_by": { "const": "SYSTEM" },
+        "pair_selection_is_preference": { "const": false },
+        "labels_may_not_decide_winner": { "const": true },
+        "decision_authority": { "const": "HUMAN" },
+        "target_pair_count": { "type": "integer", "minimum": 4, "maximum": 6 },
+        "presentation_ordering_rule": { "type": "string", "minLength": 1 }
+      }
+    },
+    "label_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "evidence_id", "attached_as_context_only", "does_not_imply_pairwise_winner"],
+      "properties": {
+        "decision": { "enum": ["APPROVED", "REJECTED"] },
+        "evidence_id": { "type": "string", "pattern": "^MYE_DEC_[0-9]{6}$" },
+        "attached_as_context_only": { "const": true },
+        "does_not_imply_pairwise_winner": { "const": true }
+      }
+    },
+    "image_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["image_id", "original_filename", "source_path", "sha256", "mime_type", "label_snapshot"],
+      "properties": {
+        "image_id": { "$ref": "#/$defs/image_id" },
+        "original_filename": { "type": "string", "minLength": 1 },
+        "source_path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "mime_type": { "enum": ["image/png", "image/jpeg", "image/webp"] },
+        "label_snapshot": { "$ref": "#/$defs/label_snapshot" }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selected_by", "selection_reason", "hypothesis_refs", "candidate_signal_refs", "comparable_dimensions", "refutation_capable", "label_based_winner_inference", "bias_warning"],
+      "properties": {
+        "selected_by": { "const": "SYSTEM" },
+        "selection_reason": { "type": "string", "minLength": 1 },
+        "hypothesis_refs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "candidate_signal_refs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "comparable_dimensions": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "refutation_capable": { "type": "boolean" },
+        "label_based_winner_inference": { "const": false },
+        "bias_warning": { "type": "string", "minLength": 1 }
+      }
+    },
+    "analysis_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["analysis_id", "analysis_version", "record_path"],
+      "properties": {
+        "analysis_id": { "type": "string", "pattern": "^MYE_ANA_[0-9]{6}$" },
+        "analysis_version": { "type": "integer", "minimum": 1 },
+        "record_path": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["memory_version", "image_a_analysis_refs", "image_b_analysis_refs", "human_label_evidence_refs", "external_batch_refs"],
+      "properties": {
+        "memory_version": { "type": "integer", "minimum": 1 },
+        "image_a_analysis_refs": { "type": "array", "maxItems": 1, "items": { "$ref": "#/$defs/analysis_ref" } },
+        "image_b_analysis_refs": { "type": "array", "maxItems": 1, "items": { "$ref": "#/$defs/analysis_ref" } },
+        "human_label_evidence_refs": { "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true, "items": { "type": "string", "pattern": "^MYE_DEC_[0-9]{6}$" } },
+        "external_batch_refs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "human_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["asserted_by", "recorded_by", "source_type", "source_ref", "recorded_at", "data_classification", "pair_id"],
+      "properties": {
+        "asserted_by": { "const": "HUMAN" },
+        "recorded_by": { "const": "PAIRWISE_SESSION_SERVICE" },
+        "source_type": { "enum": ["HUMAN_PAIRWISE_DECISION", "HUMAN_PAIRWISE_CORRECTION", "HUMAN_PAIRWISE_SKIP"] },
+        "source_ref": { "type": "string", "minLength": 1 },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "data_classification": { "enum": ["REAL_HUMAN_EVIDENCE", "SYNTHETIC_TEST_DATA"] },
+        "pair_id": { "type": "string", "pattern": "^MYE_PAIRSEL_[0-9]{6}$" }
+      }
+    },
+    "pending_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "decision_version", "winner", "raw_reason", "winner_reason", "loser_reason", "keep_from_loser", "decision_difficulty", "decisive_visual_dimension", "explicit_human_response", "provenance"],
+      "properties": {
+        "status": { "const": "PENDING" },
+        "decision_version": { "const": 0 },
+        "winner": { "type": "null" },
+        "raw_reason": { "type": "null" },
+        "winner_reason": { "type": "null" },
+        "loser_reason": { "type": "null" },
+        "keep_from_loser": { "type": "null" },
+        "decision_difficulty": { "type": "null" },
+        "decisive_visual_dimension": { "type": "null" },
+        "explicit_human_response": { "const": false },
+        "provenance": { "type": "null" }
+      }
+    },
+    "completed_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "decision_version", "winner", "raw_reason", "winner_reason", "loser_reason", "keep_from_loser", "decision_difficulty", "decisive_visual_dimension", "explicit_human_response", "provenance"],
+      "properties": {
+        "status": { "const": "COMPLETED" },
+        "decision_version": { "type": "integer", "minimum": 1 },
+        "winner": { "enum": ["IMAGE_A", "IMAGE_B", "TIE"] },
+        "raw_reason": { "$ref": "#/$defs/nullable_text" },
+        "winner_reason": { "$ref": "#/$defs/nullable_text" },
+        "loser_reason": { "$ref": "#/$defs/nullable_text" },
+        "keep_from_loser": { "$ref": "#/$defs/nullable_text" },
+        "decision_difficulty": { "type": ["string", "null"], "enum": ["EASY", "MEDIUM", "HARD", null] },
+        "decisive_visual_dimension": { "$ref": "#/$defs/nullable_text" },
+        "explicit_human_response": { "const": true },
+        "provenance": { "$ref": "#/$defs/human_provenance" }
+      }
+    },
+    "skipped_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "decision_version", "winner", "raw_reason", "winner_reason", "loser_reason", "keep_from_loser", "decision_difficulty", "decisive_visual_dimension", "explicit_human_response", "provenance"],
+      "properties": {
+        "status": { "const": "SKIPPED" },
+        "decision_version": { "type": "integer", "minimum": 1 },
+        "winner": { "type": "null" },
+        "raw_reason": { "type": "null" },
+        "winner_reason": { "type": "null" },
+        "loser_reason": { "type": "null" },
+        "keep_from_loser": { "type": "null" },
+        "decision_difficulty": { "type": "null" },
+        "decisive_visual_dimension": { "type": "null" },
+        "explicit_human_response": { "const": false },
+        "provenance": { "$ref": "#/$defs/human_provenance" }
+      }
+    },
+    "human_decision": { "oneOf": [{ "$ref": "#/$defs/pending_decision" }, { "$ref": "#/$defs/completed_decision" }, { "$ref": "#/$defs/skipped_decision" }] },
+    "structured_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["asserted_by", "recorded_by", "source_type", "source_ref", "recorded_at", "data_classification"],
+      "properties": {
+        "asserted_by": { "const": "SYSTEM" },
+        "recorded_by": { "const": "PAIRWISE_SESSION_SERVICE" },
+        "source_type": { "const": "STRUCTURED_PAIR_REASON" },
+        "source_ref": { "type": "string", "minLength": 1 },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "data_classification": { "enum": ["REAL_HUMAN_EVIDENCE", "SYNTHETIC_TEST_DATA"] }
+      }
+    },
+    "structured_reason": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["structured_reason_id", "structured_reason_version", "source_decision_version", "source_raw_text", "concepts", "normalized_statement", "structured_by", "confirmed_by_human", "provenance"],
+      "properties": {
+        "structured_reason_id": { "type": "string", "pattern": "^MYE_PAIR_SRSN_[0-9]{6}$" },
+        "structured_reason_version": { "type": "integer", "minimum": 1 },
+        "source_decision_version": { "type": "integer", "minimum": 1 },
+        "source_raw_text": { "type": "string" },
+        "concepts": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "normalized_statement": { "type": "string", "minLength": 1 },
+        "structured_by": { "const": "SYSTEM" },
+        "confirmed_by_human": { "const": false },
+        "provenance": { "$ref": "#/$defs/structured_provenance" }
+      }
+    },
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pair_id", "pair_type", "image_a", "image_b", "selection", "evidence_snapshot", "decision_authority", "human_decision", "decision_history", "structured_pair_reason", "structured_reason_history"],
+      "properties": {
+        "pair_id": { "type": "string", "pattern": "^MYE_PAIRSEL_[0-9]{6}$" },
+        "pair_type": { "enum": ["STANDARD_PAIR", "HARD_PAIR", "DIAGNOSTIC_PAIR"] },
+        "image_a": { "$ref": "#/$defs/image_snapshot" },
+        "image_b": { "$ref": "#/$defs/image_snapshot" },
+        "selection": { "$ref": "#/$defs/selection" },
+        "evidence_snapshot": { "$ref": "#/$defs/evidence_snapshot" },
+        "decision_authority": { "const": "HUMAN" },
+        "human_decision": { "$ref": "#/$defs/human_decision" },
+        "decision_history": { "type": "array", "items": { "oneOf": [{ "$ref": "#/$defs/completed_decision" }, { "$ref": "#/$defs/skipped_decision" }] } },
+        "structured_pair_reason": { "oneOf": [{ "$ref": "#/$defs/structured_reason" }, { "type": "null" }] },
+        "structured_reason_history": { "type": "array", "items": { "$ref": "#/$defs/structured_reason" } }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposed_pair_count", "pending_pair_count", "completed_pair_count", "skipped_pair_count", "human_pairwise_evidence_count", "scores_created", "weights_created", "inferred_preferences_created"],
+      "properties": {
+        "proposed_pair_count": { "type": "integer", "minimum": 4, "maximum": 6 },
+        "pending_pair_count": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "completed_pair_count": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "skipped_pair_count": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "human_pairwise_evidence_count": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "scores_created": { "const": 0 },
+        "weights_created": { "const": 0 },
+        "inferred_preferences_created": { "const": 0 }
+      }
+    },
+    "system_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["asserted_by", "recorded_by", "source_type", "source_ref", "recorded_at", "data_classification"],
+      "properties": {
+        "asserted_by": { "const": "SYSTEM" },
+        "recorded_by": { "const": "PAIRWISE_SESSION_SERVICE" },
+        "source_type": { "const": "PAIR_SELECTION_SESSION" },
+        "source_ref": { "type": "string", "minLength": 1 },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "data_classification": { "enum": ["REAL_HUMAN_EVIDENCE", "SYNTHETIC_TEST_DATA"] }
+      }
+    }
+  }
+}

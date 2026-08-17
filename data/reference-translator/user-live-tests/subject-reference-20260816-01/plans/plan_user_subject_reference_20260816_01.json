@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_user_subject_reference_20260816_01",
+  "project_id": "project_user_subject_reference_20260816_01",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "REFERENCE_REINTERPRETATION",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "USER_EXPLICIT",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": "target_subject_identity",
+    "semantic_identity": "Young male technology creator, approachable technical authority",
+    "protected_elements": [
+      "facial geometry",
+      "dark rectangular glasses",
+      "hairstyle",
+      "age cues",
+      "recognizability"
+    ],
+    "required_copy": [],
+    "subject_identity_requirements": "Face, dark rectangular glasses, hairstyle, and age cues must remain clearly recognizable. Pose, crop, wardrobe, and environment may change.",
+    "existing_composition_constraints": [
+      "Source uses circular crop; target requires square 1:1 format",
+      "Source has dark warm background"
+    ],
+    "elements_allowed_to_change": [
+      "pose",
+      "crop",
+      "wardrobe",
+      "environment",
+      "lighting",
+      "background",
+      "hand position",
+      "props",
+      "background objects"
+    ],
+    "elements_forbidden_to_change": [
+      "facial geometry",
+      "glasses shape and darkness",
+      "hairstyle",
+      "age cues",
+      "recognizability"
+    ]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "primary_tech_reference",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_comp_01",
+          "category": "COMPOSITION",
+          "description": "Centered subject occupies primary vertical axis with upper text zone and lower mechanical object zone",
+          "region": "full frame",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_light_01",
+          "category": "LIGHTING",
+          "description": "Purple/violet key light illuminates subject from below-center, creating dramatic facial modeling and rim separation",
+          "region": "lower center to subject",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_light_02",
+          "category": "LIGHTING",
+          "description": "Acid-green fill and accents from upper text region",
+          "region": "upper third",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_depth_01",
+          "category": "DEPTH",
+          "description": "Layered depth with foreground cables, midground subject, background machinery, and atmospheric haze",
+          "region": "full frame",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_color_01",
+          "category": "COLOR",
+          "description": "Dominant violet-purple palette with acid-green chromatic accent and deep neutral shadows",
+          "region": "full frame",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_obj_01",
+          "category": "NARRATIVE_OBJECT",
+          "description": "Central mechanical infinity-shaped object with electrical energy and cables",
+          "region": "lower center",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_type_01",
+          "category": "TYPOGRAPHY",
+          "description": "Overscale acid-green graffiti text 'SEM PROMPTS' in upper third",
+          "region": "upper third",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_subject_01",
+          "category": "SUBJECT_TREATMENT",
+          "description": "Subject with raised hands, palms facing inward toward central object",
+          "region": "center",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_material_01",
+          "category": "MATERIAL",
+          "description": "Mixed materials: metal machinery, rubber cables, fabric blazer, glass/energy",
+          "region": "full frame",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_energy_01",
+          "category": "ENERGY",
+          "description": "Purple electrical lightning and glow emanating from central object",
+          "region": "lower center",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "hierarchy": "centered dominance with upper and lower supporting zones",
+        "lighting": "purple key with green accent, dramatic contrast",
+        "depth": "layered mechanical atmosphere with foreground occlusion",
+        "color": "violet dominant with acid-green counterpoint",
+        "material": "metal, cable, fabric, energy contrast",
+        "energy": "electrical glow and dynamic tension",
+        "typography": "overscale graffiti style (prohibited from transfer)"
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_comp_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_comp_01"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Subject remains centered in square thumbnail; upper zone reserved for calm negative space or clean technical graphics, lower zone features target-native technical focal element",
+      "rationale": "Centered dominance creates ceremonial stability and immediate hierarchy essential for personal brand recognition in a square thumbnail format",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "subject recognizability",
+        "face protection"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_light_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_light_01",
+        "obs_light_02"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Purple/violet key light from below or screen source models subject face and glasses; green accent used sparingly on technical elements or rim",
+      "rationale": "Purple lighting communicates technical authority and invention; must be balanced with fill to preserve facial recognizability and glasses clarity",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "facial geometry",
+        "glasses readability"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_depth_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_depth_01"
+      ],
+      "action": "REINVENT",
+      "target_in_new_composition": "Layered technical environment using server racks, code screens, circuit patterns, or data visualization planes instead of mechanical machinery",
+      "rationale": "Layered depth creates immersion and technical context; must be native to technology personal brand rather than generic industrial aesthetic",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "subject integration",
+        "coherent light world"
+      ],
+      "cross_category_adaptation": {
+        "reference_product_category": "cyberpunk technology key art",
+        "target_product_category": "personal brand technology thumbnail",
+        "literal_object": "mechanical machinery, cables, industrial equipment",
+        "visual_function": "create layered depth, technical context, and environmental immersion",
+        "material_language": "metal, plastic, rubber, industrial texture",
+        "emotional_effect": "technical authority, complex capability, energetic environment",
+        "equivalent_adaptation": "server infrastructure, code displays, circuit patterns, data visualization layers, or abstract geometric tech architecture",
+        "literal_transfer_allowed": false,
+        "target_category_coherence": "A technology personal brand belongs in a digital/technical environment, not generic industrial machinery; server racks and code screens communicate the same technical authority while remaining truthful to the creator's domain"
+      },
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_color_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_color_01"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Maintain violet-purple dominant value structure with controlled chromatic accent; accent may be green or target-owned technical hue",
+      "rationale": "Violet-purple creates technical energy and premium darkness; accent provides vitality and focal contrast",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "subject skin tone truth",
+        "glasses darkness"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_obj_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_obj_01",
+        "obs_energy_01"
+      ],
+      "action": "REINVENT",
+      "target_in_new_composition": "Replace literal infinity mechanical assembly with target-native technical focal point: holographic interface, code stream, circuit diagram, or abstract data visualization with motivated glow",
+      "rationale": "The function is a central technical focal point demonstrating mastery; the literal infinity symbol and mechanical assembly are source-specific and prohibited by brief",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "subject as primary hero",
+        "no literal symbol copying"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_type_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_type_01"
+      ],
+      "action": "DISCARD",
+      "target_in_new_composition": "No text overlay per brief constraints; typography function replaced by subject and technical environment hierarchy",
+      "rationale": "Source text 'SEM PROMPTS' is prohibited; graffiti style conflicts with technical authority tone; brief specifies text_overlay_expected false",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "brief text constraint",
+        "no source wording"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_subject_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_subject_01"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Subject pose adapts to interacting with target-native technical elements (gesturing toward screen, touching device, or open hands showing engagement) while keeping face and glasses front-facing and recognizable",
+      "rationale": "Active hand position communicates engagement and control; exact reference hand pose and mechanical object interaction are not required",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "facial recognizability",
+        "glasses visibility"
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_material_01",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_material_01"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Material contrast between subject wardrobe (fabric) and technical environment (metal, glass, screen) preserved; specific industrial materials replaced with clean tech materials",
+      "rationale": "Material contrast enriches hierarchy and tactile interest; must remain native to technology domain",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "subject wardrobe truth",
+        "environment coherence"
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "conf_text_01",
+      "type": "REFERENCE_VS_USER_CONSTRAINT",
+      "description": "Reference contains prominent text 'SEM PROMPTS' which is explicitly prohibited from transfer and brief specifies no text overlay",
+      "severity": "HIGH",
+      "blocking": false,
+      "involved_assets": [
+        "primary_tech_reference"
+      ],
+      "involved_constraints": [
+        "hc_no_surface_copy",
+        "format.text_overlay_expected=false"
+      ],
+      "translator_position": "Discard text entirely; use subject and environment for hierarchy",
+      "resolution_status": "RESOLVED_BY_DISCARD",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    },
+    {
+      "conflict_id": "conf_obj_01",
+      "type": "REFERENCE_VS_USER_CONSTRAINT",
+      "description": "Reference features literal mechanical infinity symbol assembly which is prohibited from exact transfer",
+      "severity": "HIGH",
+      "blocking": false,
+      "involved_assets": [
+        "primary_tech_reference"
+      ],
+      "involved_constraints": [
+        "hc_no_surface_copy"
+      ],
+      "translator_position": "Replace with target-native technical focal element preserving the function of central technical demonstration",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    },
+    {
+      "conflict_id": "conf_identity_01",
+      "type": "REFERENCE_VS_SUBJECT_IDENTITY",
+      "description": "Reference subject appears similar to target subject but reference styling (dark blazer, specific hand pose, mechanical interaction) must not override target identity constraints",
+      "severity": "MEDIUM",
+      "blocking": false,
+      "involved_assets": [
+        "target_subject_identity",
+        "primary_tech_reference"
+      ],
+      "involved_constraints": [
+        "hc_subject_identity",
+        "subject.identity_preservation=STRICT"
+      ],
+      "translator_position": "Preserve target identity strictly; adapt wardrobe and pose while keeping face, glasses, hair, and age cues intact",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    }
+  ],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anchor_identity",
+      "description": "Subject face, facial geometry, dark rectangular glasses, hairstyle, and age cues must remain clearly recognizable",
+      "source_reference_asset_id": "target_subject_identity",
+      "function": "identity preservation",
+      "importance": "CRITICAL",
+      "flexibility": "LOCKED",
+      "reason": "User-supplied identity asset with STRICT preservation level; outranks all reference attraction",
+      "provenance": "USER_EXPLICIT"
+    },
+    {
+      "anchor_id": "anchor_centered",
+      "description": "Centered subject dominance for immediate recognition in square thumbnail",
+      "source_reference_asset_id": "primary_tech_reference",
+      "function": "hierarchy and clarity",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Reference demonstrates effective centered authority; supports thumbnail legibility at small sizes",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_purple_light",
+      "description": "Purple/violet technical lighting creating dramatic modeling and technical atmosphere",
+      "source_reference_asset_id": "primary_tech_reference",
+      "function": "lighting hierarchy and technical authority",
+      "importance": "HIGH",
+      "flexibility": "HIGH",
+      "reason": "Core lighting DNA of reference; communicates invention and technical mastery",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_layered_depth",
+      "description": "Layered depth with foreground, subject, and background planes creating environmental immersion",
+      "source_reference_asset_id": "primary_tech_reference",
+      "function": "depth and context",
+      "importance": "HIGH",
+      "flexibility": "HIGH",
+      "reason": "Creates scale and technical world around subject; essential for authority",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "wardrobe",
+      "freedom_level": "HIGH",
+      "rationale": "Reference blazer is not identity-critical; can adapt to target-native technical attire while maintaining authority"
+    },
+    {
+      "area": "environment_objects",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "Mechanical machinery is reference-specific; can be replaced with any target-native technical environment (servers, code, circuits, data viz)"
+    },
+    {
+      "area": "hand_pose_and_gesture",
+      "freedom_level": "HIGH",
+      "rationale": "Reference hand pose is tied to prohibited mechanical object; can adapt to any gesture that communicates engagement with technical elements"
+    },
+    {
+      "area": "accent_color",
+      "freedom_level": "HIGH",
+      "rationale": "Acid-green is reference-specific; can shift to target-owned technical accent or remain as green if it serves the hierarchy"
+    },
+    {
+      "area": "technical_focal_element",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "Central infinity assembly is prohibited; any target-native technical focal point (hologram, code, device) can serve the function"
+    },
+    {
+      "area": "background_detail",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "Specific cables and machinery are incidental; any coherent technical background with similar depth and light behavior works"
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_face_lighting",
+      "description": "Purple key light could wash out facial recognition or create unreadable glasses reflections",
+      "severity": "HIGH",
+      "mitigation": "Balance purple key with controlled fill on face; ensure glasses have subtle, readable reflections; test recognizability at thumbnail size"
+    },
+    {
+      "risk_id": "risk_generic_tech",
+      "description": "Technical environment could become generic cyberpunk cliché (random cables, neon without source)",
+      "severity": "MEDIUM",
+      "mitigation": "Use specific target-native elements (actual code, real hardware, verified technical artifacts) with motivated lighting and plausible geometry"
+    },
+    {
+      "risk_id": "risk_unmotivated_glow",
+      "description": "Energy effects could become unmotivated 'AI glow' without physical or graphic source",
+      "severity": "MEDIUM",
+      "mitigation": "Attach all glow to specific emitters: screens, LEDs, data streams, or circuit traces with coherent light direction"
+    },
+    {
+      "risk_id": "risk_identity_loss",
+      "description": "Dramatic lighting or environment could obscure subject identity",
+      "severity": "HIGH",
+      "mitigation": "Keep face in shadow-controlled zone with sufficient fill; preserve hairline and glasses edge definition; maintain age cues"
+    },
+    {
+      "risk_id": "risk_text_leakage",
+      "description": "Temptation to add text overlay or graffiti style to fill upper zone",
+      "severity": "MEDIUM",
+      "mitigation": "Respect brief constraint text_overlay_expected=false; use environmental depth or clean technical graphics instead of text"
+    }
+  ],
+  "open_questions": [],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-16T04:24:17.460Z",
+    "notes": "Image A is identity-only asset; Image B is primary visual reference. Subject identity protected throughout. Reference text and literal infinity assembly excluded per user constraints."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Reference provides strong, actionable visual DNA in lighting, hierarchy, depth, and energy. Subject identity constraints are clear, non-conflicting with reference mechanisms, and strictly enforceable. Transfer plan offers specific target-native alternatives without over-specifying final composition."
+  },
+  "director_handoff": {
+    "what_must_survive": [
+      "Subject face and facial geometry from Image A",
+      "Dark rectangular glasses",
+      "Hairstyle and age cues",
+      "Centered subject dominance for thumbnail clarity",
+      "Purple/violet technical lighting hierarchy"
+    ],
+    "what_should_survive": [
+      "Layered technical depth with foreground/midground/background separation",
+      "Acid-green or equivalent chromatic accent",
+      "Energy and invention atmosphere through motivated glow",
+      "Dark neutral value structure with selective vitality",
+      "Subject-environment integration with coherent light"
+    ],
+    "what_can_change": [
+      "Wardrobe (blazer to target-native technical attire)",
+      "Specific environment objects (mechanical machinery to servers/code/circuits)",
+      "Hand pose and gesture (exact reference pose not required)",
+      "Exact accent color (green may shift to target-owned hue)",
+      "Background details and atmospheric elements",
+      "Camera distance and crop within square format"
+    ],
+    "key_conflicts": [
+      "Source text 'SEM PROMPTS' prohibited by user constraint",
+      "Literal infinity mechanical assembly prohibited by user constraint",
+      "Reference styling must not override target subject identity preservation"
+    ],
+    "recommended_anchors": [
+      "Centered authority composition with subject as clear hero",
+      "Purple key light with dark shadows and controlled fill on face",
+      "Layered technical environment with atmospheric depth",
+      "Central technical focal element demonstrating mastery",
+      "Acid-green or equivalent accent for chromatic energy"
+    ],
+    "creative_opportunities": [
+      "Replace mechanical infinity with holographic code stream or data visualization",
+      "Use actual computer screens or server arrays as light sources and depth planes",
+      "Incorporate subtle circuit board patterns or digital grid in background",
+      "Hands could interact with touchscreen, device, or gestural interface",
+      "Wardrobe could shift to tech-casual or creative professional while maintaining authority"
+    ],
+    "warnings": [
+      "Avoid generic cyberpunk clichés (random cables, neon without source, unmotivated particles)",
+      "Protect facial recognizability under purple lighting at thumbnail size",
+      "Do not add text overlay unless explicitly required by future brief revision",
+      "Ensure glasses remain readable and not lost in shadow or reflection",
+      "Maintain approachable confidence; avoid hostility or excessive darkness"
+    ]
+  }
+}

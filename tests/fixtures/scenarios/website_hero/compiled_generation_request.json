@@ -1,0 +1,415 @@
+{
+  "schema_version": "1.0.0",
+  "request_id": "cgr-ci-canonical-website-hero",
+  "project_id": "project-stylist-001",
+  "run_id": "run-canonical-website-hero-001",
+  "compiler_input_ref": {
+    "artifact_id": "ci-canonical-website-hero",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://compiler-input/ci-canonical-website-hero/1.0.0"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "ffs-stylist-001",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-stylist-001/1.0.0",
+    "checksum": "sha256:test-ffs-stylist-001"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "GENERATE",
+  "compiled_instruction": {
+    "instruction_format": "STRUCTURED",
+    "final_visual_description": "[final_frame_spec.composition] Composition strategy: Functional asymmetrical hero with protected left copy field and integrated right-side subject. Focal order: 1:primary-subject, 2:reserved-copy-region, 3:environment-story.\n[final_frame_spec.subjects] Subjects: [{\"subject_id\":\"primary-subject\",\"role\":\"Editorial stylist authority\",\"frame_region\":\"RIGHT\",\"relative_scale\":\"Large dominant mass occupying roughly one third of frame height-to-width influence\",\"framing\":\"Waist-up environmental portrait\",\"orientation\":\"Turned slightly into visual flow\",\"gaze\":\"Direct viewer connection\",\"expression\":\"Quiet discerning confidence\",\"pose_intent\":\"Composed editorial posture directed slightly toward copy field\",\"integration_with_environment\":\"Material and editorial layers pass around outer silhouette; purple environment light responds naturally on wardrobe\"}].\n[final_frame_spec.environment] Environment: Sophisticated purple editorial world whose richness concentrates near the stylist. Spatial character: Layered studio/editorial hybrid with deliberate material planes. Regional density: [{\"region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.41,\"height\":0.84},\"density\":\"LOW\",\"contrast_level\":\"LOW\",\"detail_level\":\"LOW\",\"purpose\":\"Protected copy field\",\"protected_for_text\":true,\"allowed_elements\":[\"subtle atmospheric continuity\"],\"forbidden_elements\":[\"high-contrast clutter\",\"unrelated floating objects\"]},{\"region\":\"CENTER\",\"normalized_bounds\":{\"x\":0.4,\"y\":0.05,\"width\":0.2,\"height\":0.9},\"density\":\"MEDIUM\",\"contrast_level\":\"MEDIUM\",\"detail_level\":\"MEDIUM\",\"purpose\":\"Transition between message and subject\",\"protected_for_text\":false,\"allowed_elements\":[\"depth transitions\",\"directional structure\"],\"forbidden_elements\":[\"isolated decorative props\"]},{\"region\":\"RIGHT\",\"normalized_bounds\":{\"x\":0.53,\"y\":0.05,\"width\":0.43,\"height\":0.9},\"density\":\"HIGH\",\"contrast_level\":\"HIGH\",\"detail_level\":\"HIGH\",\"purpose\":\"Concentrate subject and environmental storytelling\",\"protected_for_text\":false,\"allowed_elements\":[\"stylist\",\"subtle textile structures\",\"functional dimensional accents\"],\"forbidden_elements\":[\"copy competition\",\"random icons\"]}].\n[final_frame_spec.depth_system] Depth strategy: Editorial layers interlock around subject and progressively release toward left negative space. Layers: [{\"layer_id\":\"extreme-fg\",\"depth_role\":\"EXTREME_FOREGROUND\",\"elements\":[\"one subtle cropped textile or editorial plane at lower-right\"],\"occlusion_behavior\":\"Outer wardrobe edge only\",\"atmospheric_behavior\":\"Near-camera atmospheric continuity\",\"relationship_to_subject\":\"Connects viewer to editorial space without covering identity\"},{\"layer_id\":\"subject-plane\",\"depth_role\":\"SUBJECT_PLANE\",\"elements\":[\"primary-subject\"],\"occlusion_behavior\":\"Only non-critical silhouette edges may be crossed\",\"atmospheric_behavior\":\"Receives environment color and motivated light\",\"relationship_to_subject\":\"Primary perceptual anchor embedded in the scene\"},{\"layer_id\":\"background\",\"depth_role\":\"BACKGROUND\",\"elements\":[\"layered violet material planes\",\"subtle fashion architecture\"],\"occlusion_behavior\":\"Frames rather than cuts through identity\",\"atmospheric_behavior\":\"Purple depth separates by luminance and material\",\"relationship_to_subject\":\"Frames stylist and thins left\"},{\"layer_id\":\"far-background\",\"depth_role\":\"FAR_BACKGROUND\",\"elements\":[\"quiet violet spatial field continuing behind copy\"],\"occlusion_behavior\":\"No direct identity occlusion\",\"atmospheric_behavior\":\"Strongest atmospheric perspective\",\"relationship_to_subject\":\"Provides scale and separation\"}]. Separation: [\"clean edge light\",\"material contrast\",\"sharpness hierarchy\"].\n[final_frame_spec.lighting_system] Lighting: Premium editorial shaping with strong but natural subject separation. Subject separation: Strong enough for commercial clarity, soft enough to remain integrated. Regional luminance: [{\"region\":\"LEFT\",\"behavior\":\"Stable low-detail luminance with no hotspots\",\"purpose\":\"Preserve HTML copy legibility\"},{\"region\":\"RIGHT\",\"behavior\":\"Highest shaped contrast around subject\",\"purpose\":\"Maintain identity dominance and environmental depth\"}].\n[final_frame_spec.color_system] Color strategy: Material/luminance contrast, not neon saturation. Regional behavior: [{\"region\":\"LEFT\",\"behavior\":\"Quiet desaturated violet continuity\",\"purpose\":\"Keep copy field coherent and quiet\"},{\"region\":\"RIGHT\",\"behavior\":\"Richer plum/violet material differentiation\",\"purpose\":\"Concentrate narrative color around subject\"}].\n[final_frame_spec.typography_system] Typography mode: EXTERNAL_OVERLAY. Text: [].\n[final_frame_spec.composition.negative_space_regions] Protected negative-space regions: [{\"region_id\":\"left-copy-field\",\"semantic_region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.41,\"height\":0.84},\"purpose\":\"Reserve clean HTML headline, supporting copy and CTA placement\",\"lock_level\":\"HARD_LOCK\"},{\"region_id\":\"html-copy-zone\",\"semantic_region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.41,\"height\":0.84},\"purpose\":\"Reserve clean HTML headline, supporting copy and CTA placement\",\"lock_level\":\"HARD_LOCK\"}].",
+    "structured_blocks": [
+      {
+        "block_id": "composition",
+        "role": "FINAL_STATE",
+        "content": "Composition strategy: Functional asymmetrical hero with protected left copy field and integrated right-side subject. Focal order: 1:primary-subject, 2:reserved-copy-region, 3:environment-story.",
+        "source_refs": [
+          "final_frame_spec.composition"
+        ]
+      },
+      {
+        "block_id": "subjects",
+        "role": "FINAL_STATE",
+        "content": "Subjects: [{\"subject_id\":\"primary-subject\",\"role\":\"Editorial stylist authority\",\"frame_region\":\"RIGHT\",\"relative_scale\":\"Large dominant mass occupying roughly one third of frame height-to-width influence\",\"framing\":\"Waist-up environmental portrait\",\"orientation\":\"Turned slightly into visual flow\",\"gaze\":\"Direct viewer connection\",\"expression\":\"Quiet discerning confidence\",\"pose_intent\":\"Composed editorial posture directed slightly toward copy field\",\"integration_with_environment\":\"Material and editorial layers pass around outer silhouette; purple environment light responds naturally on wardrobe\"}].",
+        "source_refs": [
+          "final_frame_spec.subjects"
+        ]
+      },
+      {
+        "block_id": "environment",
+        "role": "FINAL_STATE",
+        "content": "Environment: Sophisticated purple editorial world whose richness concentrates near the stylist. Spatial character: Layered studio/editorial hybrid with deliberate material planes. Regional density: [{\"region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.41,\"height\":0.84},\"density\":\"LOW\",\"contrast_level\":\"LOW\",\"detail_level\":\"LOW\",\"purpose\":\"Protected copy field\",\"protected_for_text\":true,\"allowed_elements\":[\"subtle atmospheric continuity\"],\"forbidden_elements\":[\"high-contrast clutter\",\"unrelated floating objects\"]},{\"region\":\"CENTER\",\"normalized_bounds\":{\"x\":0.4,\"y\":0.05,\"width\":0.2,\"height\":0.9},\"density\":\"MEDIUM\",\"contrast_level\":\"MEDIUM\",\"detail_level\":\"MEDIUM\",\"purpose\":\"Transition between message and subject\",\"protected_for_text\":false,\"allowed_elements\":[\"depth transitions\",\"directional structure\"],\"forbidden_elements\":[\"isolated decorative props\"]},{\"region\":\"RIGHT\",\"normalized_bounds\":{\"x\":0.53,\"y\":0.05,\"width\":0.43,\"height\":0.9},\"density\":\"HIGH\",\"contrast_level\":\"HIGH\",\"detail_level\":\"HIGH\",\"purpose\":\"Concentrate subject and environmental storytelling\",\"protected_for_text\":false,\"allowed_elements\":[\"stylist\",\"subtle textile structures\",\"functional dimensional accents\"],\"forbidden_elements\":[\"copy competition\",\"random icons\"]}].",
+        "source_refs": [
+          "final_frame_spec.environment"
+        ]
+      },
+      {
+        "block_id": "depth",
+        "role": "FINAL_STATE",
+        "content": "Depth strategy: Editorial layers interlock around subject and progressively release toward left negative space. Layers: [{\"layer_id\":\"extreme-fg\",\"depth_role\":\"EXTREME_FOREGROUND\",\"elements\":[\"one subtle cropped textile or editorial plane at lower-right\"],\"occlusion_behavior\":\"Outer wardrobe edge only\",\"atmospheric_behavior\":\"Near-camera atmospheric continuity\",\"relationship_to_subject\":\"Connects viewer to editorial space without covering identity\"},{\"layer_id\":\"subject-plane\",\"depth_role\":\"SUBJECT_PLANE\",\"elements\":[\"primary-subject\"],\"occlusion_behavior\":\"Only non-critical silhouette edges may be crossed\",\"atmospheric_behavior\":\"Receives environment color and motivated light\",\"relationship_to_subject\":\"Primary perceptual anchor embedded in the scene\"},{\"layer_id\":\"background\",\"depth_role\":\"BACKGROUND\",\"elements\":[\"layered violet material planes\",\"subtle fashion architecture\"],\"occlusion_behavior\":\"Frames rather than cuts through identity\",\"atmospheric_behavior\":\"Purple depth separates by luminance and material\",\"relationship_to_subject\":\"Frames stylist and thins left\"},{\"layer_id\":\"far-background\",\"depth_role\":\"FAR_BACKGROUND\",\"elements\":[\"quiet violet spatial field continuing behind copy\"],\"occlusion_behavior\":\"No direct identity occlusion\",\"atmospheric_behavior\":\"Strongest atmospheric perspective\",\"relationship_to_subject\":\"Provides scale and separation\"}]. Separation: [\"clean edge light\",\"material contrast\",\"sharpness hierarchy\"].",
+        "source_refs": [
+          "final_frame_spec.depth_system"
+        ]
+      },
+      {
+        "block_id": "lighting",
+        "role": "FINAL_STATE",
+        "content": "Lighting: Premium editorial shaping with strong but natural subject separation. Subject separation: Strong enough for commercial clarity, soft enough to remain integrated. Regional luminance: [{\"region\":\"LEFT\",\"behavior\":\"Stable low-detail luminance with no hotspots\",\"purpose\":\"Preserve HTML copy legibility\"},{\"region\":\"RIGHT\",\"behavior\":\"Highest shaped contrast around subject\",\"purpose\":\"Maintain identity dominance and environmental depth\"}].",
+        "source_refs": [
+          "final_frame_spec.lighting_system"
+        ]
+      },
+      {
+        "block_id": "color",
+        "role": "FINAL_STATE",
+        "content": "Color strategy: Material/luminance contrast, not neon saturation. Regional behavior: [{\"region\":\"LEFT\",\"behavior\":\"Quiet desaturated violet continuity\",\"purpose\":\"Keep copy field coherent and quiet\"},{\"region\":\"RIGHT\",\"behavior\":\"Richer plum/violet material differentiation\",\"purpose\":\"Concentrate narrative color around subject\"}].",
+        "source_refs": [
+          "final_frame_spec.color_system"
+        ]
+      },
+      {
+        "block_id": "typography",
+        "role": "FINAL_STATE",
+        "content": "Typography mode: EXTERNAL_OVERLAY. Text: [].",
+        "source_refs": [
+          "final_frame_spec.typography_system"
+        ]
+      },
+      {
+        "block_id": "negative-space",
+        "role": "FINAL_STATE",
+        "content": "Protected negative-space regions: [{\"region_id\":\"left-copy-field\",\"semantic_region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.41,\"height\":0.84},\"purpose\":\"Reserve clean HTML headline, supporting copy and CTA placement\",\"lock_level\":\"HARD_LOCK\"},{\"region_id\":\"html-copy-zone\",\"semantic_region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.41,\"height\":0.84},\"purpose\":\"Reserve clean HTML headline, supporting copy and CTA placement\",\"lock_level\":\"HARD_LOCK\"}].",
+        "source_refs": [
+          "final_frame_spec.composition.negative_space_regions"
+        ]
+      }
+    ]
+  },
+  "control_layer": {
+    "creative_authority": "NONE",
+    "preserve_identity": true,
+    "preserve_reference_authority": false,
+    "preserve_text_locks": false,
+    "preserve_edit_target": false,
+    "preserve_composition": true,
+    "semantic_change_forbidden": true
+  },
+  "asset_bindings": [
+    {
+      "asset_id": "asset-stylist-001",
+      "adapter_slot": "subject_identity",
+      "authority": "SUBJECT_IDENTITY_AUTHORITY",
+      "required": true,
+      "source_ref": "compiler_input.assets.asset-stylist-001"
+    }
+  ],
+  "reference_instructions": [],
+  "identity_instructions": [
+    {
+      "subject_id": "primary-subject",
+      "identity_asset_id": "asset-stylist-001",
+      "preservation_level": "STRICT",
+      "recognizability_required": true,
+      "source_ref": "compiler_input.identity_bindings.primary-subject"
+    }
+  ],
+  "text_instructions": [
+    {
+      "text_id": "external-overlay",
+      "content": "",
+      "exact_text_lock": false,
+      "render_mode": "EXTERNAL_OVERLAY",
+      "required": false,
+      "source_ref": "compiler_input.text_bindings.external-overlay"
+    }
+  ],
+  "negative_constraints": [
+    {
+      "constraint_id": "forbidden-visual-0",
+      "statement": "rendered text",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.0"
+    },
+    {
+      "constraint_id": "forbidden-visual-1",
+      "statement": "portrait pasted on gradient",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.1"
+    },
+    {
+      "constraint_id": "forbidden-visual-2",
+      "statement": "random fashion objects",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.2"
+    },
+    {
+      "constraint_id": "forbidden-visual-3",
+      "statement": "template luxury styling",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.3"
+    },
+    {
+      "constraint_id": "subject-primary-subject-0",
+      "statement": "Alter recognizable facial structure",
+      "source_ref": "final_frame_spec.subjects.primary-subject.forbidden_transformations.0"
+    },
+    {
+      "constraint_id": "subject-primary-subject-1",
+      "statement": "Replace subject identity",
+      "source_ref": "final_frame_spec.subjects.primary-subject.forbidden_transformations.1"
+    },
+    {
+      "constraint_id": "subject-primary-subject-2",
+      "statement": "Introduce anatomy distortion",
+      "source_ref": "final_frame_spec.subjects.primary-subject.forbidden_transformations.2"
+    }
+  ],
+  "output_parameters": {
+    "aspect_ratio": "16:9",
+    "output_role": "BACKGROUND_FOR_HTML_OVERLAY",
+    "number_of_variants": 1,
+    "deterministic_requirements": [
+      "16:9",
+      "No model-specific styling or syntax embedded in this specification"
+    ]
+  },
+  "protected_fields": [
+    {
+      "field_id": "protect-identity",
+      "target": "subjects.primary-subject.identity",
+      "rule": "Preserve fundamental recognizable identity",
+      "source_ref": "final_frame_spec.protected_fields.protect-identity",
+      "loss_category": "IDENTITY_LOCK_LOSS"
+    },
+    {
+      "field_id": "protect-copy-zone",
+      "target": "composition.negative_space_regions.left-copy-field",
+      "rule": "Keep the reserved left region free of competing detail and hotspots",
+      "source_ref": "final_frame_spec.protected_fields.protect-copy-zone",
+      "loss_category": "NEGATIVE_SPACE_LOSS"
+    },
+    {
+      "field_id": "system-composition",
+      "target": "composition",
+      "rule": "Preserve composition strategy, hierarchy and spatial relationships.",
+      "source_ref": "final_frame_spec.composition",
+      "loss_category": "COMPOSITION_LOSS"
+    },
+    {
+      "field_id": "system-depth",
+      "target": "depth_system",
+      "rule": "Preserve layers, overlaps, integration and separation mechanisms.",
+      "source_ref": "final_frame_spec.depth_system",
+      "loss_category": "DEPTH_LOSS"
+    },
+    {
+      "field_id": "system-lighting",
+      "target": "lighting_system",
+      "rule": "Preserve lighting intent and regional behavior.",
+      "source_ref": "final_frame_spec.lighting_system",
+      "loss_category": "LIGHTING_INTENT_LOSS"
+    },
+    {
+      "field_id": "system-color",
+      "target": "color_system",
+      "rule": "Preserve color families and regional behavior.",
+      "source_ref": "final_frame_spec.color_system",
+      "loss_category": "COLOR_INTENT_LOSS"
+    },
+    {
+      "field_id": "system-typography",
+      "target": "typography_system",
+      "rule": "Preserve typography render mode and behavior.",
+      "source_ref": "final_frame_spec.typography_system",
+      "loss_category": "TYPOGRAPHY_BEHAVIOR_LOSS"
+    },
+    {
+      "field_id": "negative-space-left-copy-field",
+      "target": "region:left-copy-field",
+      "rule": "Preserve LEFT region left-copy-field: Reserve clean HTML headline, supporting copy and CTA placement",
+      "source_ref": "final_frame_spec.composition.negative_space_regions.left-copy-field",
+      "loss_category": "NEGATIVE_SPACE_LOSS"
+    },
+    {
+      "field_id": "negative-space-html-copy-zone",
+      "target": "region:html-copy-zone",
+      "rule": "Preserve LEFT region html-copy-zone: Reserve clean HTML headline, supporting copy and CTA placement",
+      "source_ref": "final_frame_spec.composition.negative_space_regions.html-copy-zone",
+      "loss_category": "NEGATIVE_SPACE_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-0",
+      "target": "compiler_handoff.hard_locks.0",
+      "rule": "Subject identity",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.0",
+      "loss_category": "HARD_LOCK_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-1",
+      "target": "compiler_handoff.hard_locks.1",
+      "rule": "Right-side subject",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.1",
+      "loss_category": "HARD_LOCK_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-2",
+      "target": "compiler_handoff.hard_locks.2",
+      "rule": "Left HTML copy region",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.2",
+      "loss_category": "HARD_LOCK_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-3",
+      "target": "compiler_handoff.hard_locks.3",
+      "rule": "No rendered text",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.3",
+      "loss_category": "HARD_LOCK_LOSS"
+    }
+  ],
+  "variation_policy": [
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "Fundamental recognizable traits are locked This domain is additionally frozen by an upstream lock.",
+      "source_ref": "final_frame_spec.controlled_variation.identity"
+    },
+    {
+      "domain": "pose",
+      "level": "MEDIUM",
+      "rule": "May adapt only within declared pose intent",
+      "source_ref": "final_frame_spec.controlled_variation.pose"
+    },
+    {
+      "domain": "wardrobe",
+      "level": "MEDIUM",
+      "rule": "May vary details without changing professional meaning",
+      "source_ref": "final_frame_spec.controlled_variation.wardrobe"
+    },
+    {
+      "domain": "environment_details",
+      "level": "MEDIUM",
+      "rule": "May invent supporting detail consistent with required environmental language",
+      "source_ref": "final_frame_spec.controlled_variation.environment_details"
+    },
+    {
+      "domain": "lighting_microvariation",
+      "level": "LOW",
+      "rule": "May tune falloff but not lighting behavior",
+      "source_ref": "final_frame_spec.controlled_variation.lighting_microvariation"
+    },
+    {
+      "domain": "color_microvariation",
+      "level": "LOW",
+      "rule": "May vary shade inside named color families",
+      "source_ref": "final_frame_spec.controlled_variation.color_microvariation"
+    },
+    {
+      "domain": "foreground_details",
+      "level": "MEDIUM",
+      "rule": "May vary material detail but not entry, function or weight",
+      "source_ref": "final_frame_spec.controlled_variation.foreground_details"
+    },
+    {
+      "domain": "effects",
+      "level": "LOW",
+      "rule": "Distribution may vary; purpose and intensity may not",
+      "source_ref": "final_frame_spec.controlled_variation.effects"
+    },
+    {
+      "domain": "typography",
+      "level": "LOW",
+      "rule": "No text rendered; preserve reserved region",
+      "source_ref": "final_frame_spec.controlled_variation.typography"
+    },
+    {
+      "domain": "camera",
+      "level": "LOW",
+      "rule": "Micro-adjustment allowed without changing framing, scale or perspective intent",
+      "source_ref": "final_frame_spec.controlled_variation.camera"
+    }
+  ],
+  "capability_report": {
+    "profile_data_classification": "HYPOTHETICAL_TEST_DATA",
+    "supported_requirements": [
+      {
+        "requirement_ref": "compiler_input.generation_mode",
+        "capability_ref": "mode:GENERATE",
+        "status": "SUPPORTED",
+        "impact": "Mode is supported.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "compiler_input.identity_bindings",
+        "capability_ref": "supports_identity_reference",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "compiler_input.text_bindings.render_mode",
+        "capability_ref": "supports_external_text_overlay",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements",
+        "capability_ref": "supports_negative_constraints",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      }
+    ],
+    "partially_supported_requirements": [],
+    "unsupported_requirements": [],
+    "unknown_capabilities": []
+  },
+  "compatibility_status": "FULLY_COMPATIBLE",
+  "warnings": [],
+  "errors": [],
+  "compiler_trace": {
+    "compiler_profile": "profile-hypothetical-v1",
+    "compiler_version": "1.0.0",
+    "input_artifact": "ci-canonical-website-hero",
+    "transformations_applied": [
+      {
+        "transformation": "Projected frozen visual systems into final-state instruction blocks.",
+        "source_ref": "final_frame_spec",
+        "semantic_change": false
+      },
+      {
+        "transformation": "Mapped operational asset bindings to adapter slots.",
+        "source_ref": "compiler_input.assets",
+        "semantic_change": false
+      },
+      {
+        "transformation": "Propagated protected fields and controlled variation without relaxation.",
+        "source_ref": "final_frame_spec.protected_fields",
+        "semantic_change": false
+      }
+    ],
+    "warnings": [],
+    "capability_decisions": [
+      "compiler_input.generation_mode:SUPPORTED",
+      "compiler_input.identity_bindings:SUPPORTED",
+      "compiler_input.text_bindings.render_mode:SUPPORTED",
+      "final_frame_spec.generation_requirements.forbidden_visual_elements:SUPPORTED"
+    ],
+    "output_format_used": "STRUCTURED"
+  },
+  "provenance": {
+    "producer": "GENERATOR_COMPILER",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-10T03:42:10.588Z",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ]
+  },
+  "status": "REQUEST_READY"
+}

@@ -1,0 +1,85 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_user_subject_reference_20260816_11_mini_repair_01",
+  "runtime_version": "MINI_REPAIR_1.0.0",
+  "prompt_version": "MINI_CONTRACT_REPAIR_ONLY",
+  "input_mode": "TEXT_ONLY",
+  "status": "FAILED",
+  "started_at": "2026-08-16T23:39:33.131Z",
+  "completed_at": "2026-08-16T23:39:40.792Z",
+  "source_candidate": {
+    "path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\attempt_01.raw.json",
+    "sha256": "1d8ea00bbf9d084092696b60056f342588e9935d72d6384d83aa5c9339b0ee6d"
+  },
+  "provider": {
+    "provider_id": "KIE_AI",
+    "model": "gemini-2.5-flash",
+    "response_id": "chatcmpl-202608170741591901276980Q0lUmyr"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "raw_candidate": {
+        "artifact_type": "REFERENCE_TRANSLATOR_RAW_CANDIDATE",
+        "status": "REJECTED_CANDIDATE",
+        "run_id": "run_user_subject_reference_20260816_11_mini_repair_01",
+        "attempt": 1,
+        "raw_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_01\\attempt_01.raw.json",
+        "sha256": "bb0fccd6f4eaa0bfaad7d55680d921b376afa0fbcb32f89e6c8ba89f2a29810f",
+        "byte_length": 6615,
+        "representation": "RAW_TEXT",
+        "created_at": "2026-08-16T23:39:40.696Z",
+        "metadata_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_01\\attempt_01.meta.json"
+      }
+    }
+  ],
+  "validation_outcomes": [
+    {
+      "attempt": 1,
+      "json_parse": "PASS",
+      "schema": "PASS",
+      "semantic": "FAIL",
+      "quality": "NOT_RUN"
+    }
+  ],
+  "output_plan_id": null,
+  "events": [
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T23:39:33.131Z"
+    },
+    {
+      "state": "RAW_CANDIDATE_PERSISTED",
+      "at": "2026-08-16T23:39:40.706Z",
+      "path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_01\\attempt_01.raw.json"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T23:39:40.792Z",
+      "diagnostics": [
+        {
+          "code": "SOURCE_HUE_OVERANCHOR",
+          "severity": "BLOCK",
+          "message": "A source hue cannot become a target requirement unless the target brief or brand explicitly owns it; preserve value, saturation, temperature, accent, separation, and material-response relationships instead.",
+          "path": "design_decision_map[1].target_in_new_composition",
+          "details": {
+            "source_hue": "purple",
+            "reference_asset_id": "primary_tech_reference"
+          }
+        },
+        {
+          "code": "SOURCE_HUE_OVERANCHOR",
+          "severity": "BLOCK",
+          "message": "A source hue cannot become a target requirement unless the target brief or brand explicitly owns it; preserve value, saturation, temperature, accent, separation, and material-response relationships instead.",
+          "path": "design_decision_map[2].target_in_new_composition",
+          "details": {
+            "source_hue": "green",
+            "reference_asset_id": "primary_tech_reference"
+          }
+        }
+      ]
+    }
+  ],
+  "hidden_reasoning_persisted": false
+}

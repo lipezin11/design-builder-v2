@@ -1,0 +1,284 @@
+{
+  "artifact_classification": "EVALUATION_ARTIFACT",
+  "suite_run_id": "rt-live-step37-20260816-final",
+  "case_id": "LIVE_RT_04_MINIMAL_RESTRAINT",
+  "reference_path": "data/my_eyes/approved/8.png",
+  "target_type": "boutique financial advisory landing-page hero",
+  "candidates": [
+    {
+      "candidate_status": "ACCEPTED_CANDIDATE",
+      "visible_candidate": "\n{\n  \"schema_version\": \"1.0.0\",\n  \"plan_id\": \"plan_live_rt_04_minimal_restraint_001\",\n  \"project_id\": \"project_live_rt_04_minimal_restraint\",\n  \"brief_spec_version\": \"1.0.0\",\n  \"status\": \"READY_FOR_DIRECTOR\",\n  \"transfer_mode\": \"REFERENCE_REINTERPRETATION\",\n  \"transfer_intensity\": {\n    \"value\": \"HIGH\",\n    \"source\": \"USER_EXPLICIT\",\n    \"confidence\": \"HIGH\"\n  },\n  \"base_analysis\": {\n    \"base_asset_id\": null,\n    \"semantic_identity\": \"boutique financial advisory landing-page hero\",\n    \"protected_elements\": [\n      \"target professional context\",\n      \"target communication goal\"\n    ],\n    \"required_copy\": [],\n    \"subject_identity_requirements\": \"Do not reuse reference person identity; target subject should reflect financial advisory professional with approachable authority\",\n    \"existing_composition_constraints\": [\n      \"16:9 landscape format\",\n      \"web hero with text overlay expected\",\n      \"clear copy territory required\"\n    ],\n    \"elements_allowed_to_change\": [\n      \"composition details\",\n      \"environment\",\n      \"lighting color temperature\",\n      \"subject attire\",\n      \"background architecture\",\n      \"typography\",\n      \"subject identity and pose\"\n    ],\n    \"elements_forbidden_to_change\": [\n      \"professional context\",\n      \"communication goal of trust and calm confidence\"\n    ]\n  },\n  \"reference_analyses\": [\n    {\n      \"reference_asset_id\": \"live_ref_minimal_hero\",\n      \"role\": \"PRIMARY_REFERENCE\",\n      \"scope\": \"GLOBAL_VISUAL_DIRECTION\",\n      \"authority\": \"USER_PRIMARY_REFERENCE\",\n      \"observations\": [\n        {\n          \"observation_id\": \"OBS_001\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Subject positioned in right third of frame, leaving left two-thirds as open field for copy territory\",\n          \"region\": \"right third\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_002\",\n          \"category\": \"LIGHTING\",\n          \"description\": \"Controlled backlight creates bright rim/glow halo behind subject's head and shoulders, separating subject from background\",\n          \"region\": \"background behind subject\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_003\",\n          \"category\": \"COLOR\",\n          \"description\": \"Dominant purple/magenta gradient field with darker edges and lighter center behind subject\",\n          \"region\": \"full background\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_004\",\n          \"category\": \"SUBJECT_TREATMENT\",\n          \"description\": \"Subject wears white structured coat with gold buttons, hands in pockets, relaxed confident stance, smiling\",\n          \"region\": \"right third\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_005\",\n          \"category\": \"ENVIRONMENT\",\n          \"description\": \"Silhouetted NYC skyline visible in background including Empire State Building and Brooklyn Bridge\",\n          \"region\": \"right background\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_006\",\n          \"category\": \"MATERIAL\",\n          \"description\": \"White coat fabric appears smooth and structured; inner blouse has subtle pattern/texture; watch with metal band on left wrist\",\n          \"region\": \"subject and accessories\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_007\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Embroidered text on left chest of coat appears to be in non-Latin script\",\n          \"region\": \"subject chest\",\n          \"salience\": \"LOW\",\n          \"confidence\": \"MEDIUM\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_008\",\n          \"category\": \"ENVIRONMENT\",\n          \"description\": \"Dotted world map pattern visible in left background behind subject\",\n          \"region\": \"left background\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_009\",\n          \"category\": \"ENVIRONMENT\",\n          \"description\": \"American flag stars visible in upper right background\",\n          \"region\": \"upper right\",\n          \"salience\": \"LOW\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_010\",\n          \"category\": \"DEPTH\",\n          \"description\": \"Layered depth with subject foreground, cityscape mid-ground, dotted map and gradient background\",\n          \"region\": \"full frame\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        }\n      ],\n      \"reference_dna\": {\n        \"composition\": \"asymmetric_right_third_placement, copy_territory_reservation, single_focal_hierarchy\",\n        \"lighting\": \"controlled_rim_light, glow_separation, dark_field_contrast\",\n        \"depth\": \"layered_planes, atmospheric_perspective\",\n        \"material\": \"professional_fabric, structured_silhouette, textile_contrast\",\n        \"narrative\": \"professional_authority, urban_sophistication\",\n        \"hierarchy\": \"dominant_subject, quiet_background\"\n      },\n      \"transfer_relevance\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"design_decision_map\": [\n    {\n      \"mapping_id\": \"MAP_001\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_001\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Right-third subject placement with left-side copy territory reserved for headline, value proposition, and CTA\",\n      \"rationale\": \"Preserves subject-copy territorial separation (VKB_COMPACT_2) while recomposing for 16:9 landscape format and financial advisory communication needs. Maintains negative-space confidence and single-focal hierarchy.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"protected_dependencies\": [\n        \"copy_territory_legibility\",\n        \"subject_scale_appropriate_for_web\"\n      ],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_002\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_002\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Motivated rim light from behind subject creating edge separation and focal glow, using target-native light source (window, studio kicker, or environmental reflection)\",\n      \"rationale\": \"Preserves silhouette separation and focal emphasis while changing light temperature and emitter to match financial advisory tone (warmer or neutral rather than purple). Maintains controlled lighting and subject-background separation.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\n        \"subject_edge_definition\",\n        \"background_separation\"\n      ],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_003\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_003\", \"OBS_004\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Dark neutral field (charcoal, navy, or deep burgundy) with single professional subject as focal point\",\n      \"rationale\": \"Preserves negative-space confidence and single-focal hierarchy while changing color from source purple to target-appropriate professional palette. Maintains value contrast for legibility and focus.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"protected_dependencies\": [\n        \"value_contrast_legibility\",\n        \"subject_prominence\"\n      ],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_004\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_004\", \"OBS_006\"],\n      \"action\": \"REINVENT\",\n      \"target_in_new_composition\": \"Business blazer, tailored shirt, or professional attire appropriate to financial advisory context\",\n      \"rationale\": \"Preserves the authority and trust function of professional dress while adapting from medical category to financial category. Lab coat signals clinical expertise; business attire signals financial expertise. Cross-category translation required.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\n        \"professional_credibility\",\n        \"approachable_but_authoritative\"\n      ],\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"medical/healthcare\",\n        \"target_product_category\": \"financial services\",\n        \"literal_object\": \"white lab coat with gold buttons\",\n        \"visual_function\": \"signal professional authority, expertise, and trustworthiness\",\n        \"material_language\": \"clean white fabric, structured silhouette, institutional hardware\",\n        \"emotional_effect\": \"calm confidence, precision, care, institutional trust\",\n        \"equivalent_adaptation\": \"tailored business blazer or suit in navy, charcoal, or burgundy with structured silhouette\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"Business attire is the native authority signal for financial advisory; it communicates competence, trust, and professionalism without implying medical practice\"\n      },\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"INFERRED\"\n    },\n    {\n      \"mapping_id\": \"MAP_005\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_005\", \"OBS_008\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Abstract architectural geometry, financial district structure, or clean spatial environment suggesting institutional presence without literal cityscape copying\",\n      \"rationale\": \"Preserves the sophisticated urban context while avoiding generic NYC skyline cliché and ensuring target-native environment. Maintains atmospheric depth and institutional scale.\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\n        \"environmental_specificity\",\n        \"no_tourism_cliche\"\n      ],\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"INFERRED\"\n    },\n    {\n      \"mapping_id\": \"MAP_006\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_006\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Subtle textile contrast between outer professional layer and inner garment, or between subject and environment materials\",\n      \"rationale\": \"Preserves tactile depth and material interest while adapting to business wardrobe codes. Maintains material contrast pairing for visual richness.\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\n        \"material_contrast_legibility\"\n      ],\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_007\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_007\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"No source text; target copy will be placed in reserved left territory\",\n      \"rationale\": \"Source text is untrusted, likely brand-specific, and must not leak into target. Copy territory is already reserved by composition. Protects against copy leakage.\",\n      \"strength\": \"NONE\",\n      \"flexibility\": \"LOCKED\",\n      \"protected_dependencies\": [\n        \"copy_territory_purity\"\n      ],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_008\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_009\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"No national symbols unless target brief explicitly requires them\",\n      \"rationale\": \"Source-specific national symbol has no target relevance and could imply unintended geographic or political positioning. Maintains target neutrality.\",\n      \"strength\": \"NONE\",\n      \"flexibility\": \"LOCKED\",\n      \"protected_dependencies\": [\n        \"target_neutrality\"\n      ],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_009\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"observation_ids\": [\"OBS_009\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"No specific watch; any accessory must be target-appropriate and not copy source\",\n      \"rationale\": \"Specific watch is source manifestation; timepiece could imply precision but is not necessary and risks copying source. Avoids surface copy.\",\n      \"strength\": \"LOW\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [],\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"conflicts\": [\n    {\n      \"conflict_id\": \"CONFLICT_001\",\n      \"type\": \"REFERENCE_VS_BRIEF\",\n      \"description\": \"Source uses dominant purple/magenta field which conflicts with typical financial advisory trust palettes (navy, charcoal, burgundy, gold). Purple may read as tech or wellness rather than financial trust.\",\n      \"severity\": \"MEDIUM\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_minimal_hero\"],\n      \"involved_constraints\": [\"target professional context\", \"target communication goal\"],\n      \"translator_position\": \"Change palette to target-native professional tones while preserving dark-field contrast mechanism\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONFLICT_002\",\n      \"type\": \"REFERENCE_VS_BRIEF\",\n      \"description\": \"Lab coat and clinical context signal medical expertise, not financial advisory. Direct transfer would create category confusion.\",\n      \"severity\": \"HIGH\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_minimal_hero\"],\n      \"involved_constraints\": [\"target professional context\"],\n      \"translator_position\": \"Replace medical attire with business professional attire while preserving authority function\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONFLICT_003\",\n      \"type\": \"REFERENCE_VS_ORIGINALITY\",\n      \"description\": \"Specific NYC skyline (Empire State Building, Brooklyn Bridge) is a recognizable location that may not align with target advisory's actual location or could become generic financial district cliché.\",\n      \"severity\": \"LOW\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_minimal_hero\"],\n      \"involved_constraints\": [],\n      \"translator_position\": \"Replace with abstract architectural geometry or generic professional environment that avoids geographic specificity\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"non_negotiable_anchors\": [\n    {\n      \"anchor_id\": \"ANCHOR_001\",\n      \"description\": \"Asymmetric right-third subject placement with left-side copy territory reserved for headline and CTA\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"function\": \"subject-copy territorial separation ensuring legibility and hierarchy\",\n      \"importance\": \"CRITICAL\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"Core to reference's negative-space confidence and single-focal hierarchy; directly addresses brief requirement for clear copy territory\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCHOR_002\",\n      \"description\": \"Single focal hierarchy with dark field contrast\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"function\": \"create immediate visual hierarchy and focus on subject\",\n      \"importance\": \"CRITICAL\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"Essential for web hero comprehension and trust communication; preserves reference's dominant-subordinate mass system\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCHOR_003\",\n      \"description\": \"Controlled rim/backlight creating edge separation and glow\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"function\": \"separate subject from background and create focal emphasis\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Key lighting mechanism that adds depth and premium feel; can be adapted to target-native light sources\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCHOR_004\",\n      \"description\": \"Professional authority cue through adapted business attire\",\n      \"source_reference_asset_id\": \"live_ref_minimal_hero\",\n      \"function\": \"signal expertise, trustworthiness, and institutional credibility\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Core to target communication goal; requires cross-category adaptation from medical to financial context\",\n      \"provenance\": \"INFERRED\"\n    }\n  ],\n  \"flexible_areas\": [\n    {\n      \"area\": \"color_palette\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Source purple is category-specific and must change to target-native professional tones (navy, charcoal, burgundy, warm neutrals) while preserving dark-field contrast\"\n    },\n    {\n      \"area\": \"background_environment\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"NYC skyline is source-specific; can be replaced with abstract architecture, financial district structure, or clean institutional space\"\n    },\n    {\n      \"area\": \"subject_pose_and_identity\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Reference person identity must not transfer; pose can adapt to target subject while maintaining approachable authority\"\n    },\n    {\n      \"area\": \"typography\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Target-owned typography with clear hierarchy in reserved left territory; no source text or font copying\"\n    },\n    {\n      \"area\": \"material_specifics\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Specific fabrics and accessories can change to business-appropriate options while maintaining material contrast\"\n    }\n  ],\n  \"risks\": [\n    {\n      \"risk_id\": \"RISK_001\",\n      \"description\": \"Material mismatch: Lab coat to business suit translation risks looking like costume if not handled with proper business context and fit\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Use tailored business blazer with proper fit and financial context; ensure subject appears native to business environment\"\n    },\n    {\n      \"risk_id\": \"RISK_002\",\n      \"description\": \"Color vitality: Source purple is highly chromatic; changing to navy/charcoal risks looking washed out if contrast isn't maintained\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Preserve local chroma through accent lighting or subject warmth against dark field; maintain clean highlights and dark anchors per My Eyes guidance\"\n    },\n    {\n      \"risk_id\": \"RISK_003\",\n      \"description\": \"Generic background: Abstract architecture could become generic corporate stock\",\n      \"severity\": \"LOW\",\n      \"mitigation\": \"Use specific architectural geometry or spatial structure that reads as institutional rather than decorative; avoid cliché financial district imagery\"\n    },\n    {\n      \"risk_id\": \"RISK_004\",\n      \"description\": \"Identity leakage: Source person's likeness must not influence target subject\",\n      \"severity\": \"HIGH\",\n      \"mitigation\": \"Use entirely different person with different features, pose, and styling; enforce identity protection constraints\"\n    },\n    {\n      \"risk_id\": \"RISK_005\",\n      \"description\": \"Over-abstraction: Removing too many reference mechanisms could result in generic corporate hero\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Retain at least one strong material contrast and the rim light separation mechanism to preserve reference DNA\"\n    }\n  ],\n  \"open_questions\": [],\n  \"provenance\": {\n    \"translator_version\": \"1.0.0\",\n    \"created_at\": \"2026-08-16T00:00:00Z\",\n    \"notes\": \"Reference reinterpretation for boutique financial advisory. Cross-category translation from medical to financial professional context. My Eyes and VKB advisories integrated.\"\n  },\n  \"confidence\": {\n    \"overall\": \"HIGH\",\n    \"rationale\": \"Composition and lighting mechanisms are clearly observed and highly transferable. Cross-category adaptations are well-defined with clear functional equivalents. Minor uncertainty in exact material translation for business context.\"\n  },\n  \"director_handoff\": {\n    \"what_must_survive\": [\n      \"Asymmetric right-third subject placement with left-side copy territory\",\n      \"Single focal hierarchy with dark field contrast\",\n      \"Controlled rim/backlight separation creating glow\",\n      \"Professional authority cue (adapted to business category)\"\n    ],\n    \"what_should_survive\": [\n      \"Material contrast between subject and environment\",\n      \"Urban sophistication context (adapted to abstract architecture)\",\n      \"Calm confident subject expression\",\n      \"Negative-space confidence\"\n    ],\n    \"what_can_change\": [\n      \"Color palette (from purple to target-native professional tones)\",\n      \"Subject attire (from lab coat to business professional)\",\n      \"Background architecture (from NYC skyline to abstract or institutional)\",\n      \"Subject identity and pose\",\n      \"Typography and copy placement details\",\n      \"Specific accessory details\"\n    ],\n    \"key_conflicts\": [\n      \"Source medical/professional context vs target financial advisory context\",\n      \"Source purple palette vs target professional financial palette\",\n      \"Source specific NYC location vs target geographic neutrality\"\n    ],\n    \"recommended_anchors\": [\n      \"Asymmetric composition with reserved copy territory\",\n      \"Rim light glow separation\",\n      \"Dark field with single focal subject\",\n      \"Professional authority through adapted business attire\"\n    ],\n    \"creative_opportunities\": [\n      \"Use warm neutral palette (charcoal, navy, burgundy, cream) with gold or brass accent lighting\",\n      \"Incorporate subtle architectural geometry or financial district abstraction\",\n      \"Add verified financial context artifacts (document, chart, architectural plan) if needed\",\n      \"Use target-native typography with clear hierarchy in left copy territory\"\n    ],\n    \"warnings\": [\n      \"Avoid copying source person identity or likeness\",\n      \"Avoid purple palette and medical symbolism\",\n      \"Avoid generic NYC skyline or financial district clichés\",\n      \"Ensure copy territory remains legible and not crowded by environmental detail\"\n    ]\n  }\n}",
+      "provider_metadata": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-92947bfb-2445-404b-9d28-9a2b42410772",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 136411,
+        "final_attempt_latency_ms": 124860,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_minimal_hero",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 1968122,
+            "sha256": "8786d28b33f97c438b2067a48e973798678fc4e952685cb7f0b9b436434f6497"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4248,
+          "reference_context_characters": 832,
+          "my_eyes_advisory_characters": 650,
+          "vkb_advisory_characters": 815,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 31309,
+          "total_textual_characters": 518127,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 2624164,
+          "serialized_http_body_characters": 3151708,
+          "input_tokens": 97220,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148540,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 97220,
+          "output_tokens": 12064,
+          "total_tokens": 109284,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "evaluation": {
+    "case_id": "LIVE_RT_04_MINIMAL_RESTRAINT",
+    "status": "TECHNICALLY_ACCEPTED",
+    "quality_class": "STRONG_TRANSLATION",
+    "creative_approval": "NOT_PERFORMED",
+    "checks": [
+      {
+        "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+        "outcome": "PASS",
+        "evidence": "Requires traceable observations and a transport record containing actual image bytes or an HTTPS image."
+      },
+      {
+        "category": "MECHANISM_IDENTIFICATION",
+        "outcome": "PASS",
+        "evidence": "Reference DNA and reference-specific rationales must both be present."
+      },
+      {
+        "category": "FUNCTION_BEFORE_APPEARANCE",
+        "outcome": "PASS",
+        "evidence": "At least one source manifestation must be evaluated rather than all being transferred directly."
+      },
+      {
+        "category": "REFERENCE_DNA_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "Reference DNA must connect to at least one meaningful target decision."
+      },
+      {
+        "category": "TARGET_SEMANTICS_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "Structured protection exists; final semantic adequacy remains a human judgment."
+      },
+      {
+        "category": "TARGET_NATIVE_ADAPTATION",
+        "outcome": "PASS",
+        "evidence": "Target-native adaptation is represented by ADAPT or REINVENT decisions."
+      },
+      {
+        "category": "LITERAL_COPY_AVOIDED",
+        "outcome": "PASS",
+        "evidence": "No case-specific prohibited manifestation was found in target-directed instructions."
+      },
+      {
+        "category": "SURFACE_COPY_RISK",
+        "outcome": "PASS",
+        "evidence": "Direct transfer ratio and prohibited manifestation leakage are checked without a numeric art score."
+      },
+      {
+        "category": "UNDERTRANSFER_RISK",
+        "outcome": "PASS",
+        "evidence": "Highly relevant analysis must produce a meaningful surviving mechanism."
+      },
+      {
+        "category": "OVERTRANSFER_RISK",
+        "outcome": "PASS",
+        "evidence": "Nearly universal direct transfer indicates overtransfer."
+      },
+      {
+        "category": "IDENTITY_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "The plan contains no instruction to reuse the reference person."
+      },
+      {
+        "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "PASS",
+        "evidence": "The brief explicitly protects target copy from source copy."
+      },
+      {
+        "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "PASS",
+        "evidence": "The brief explicitly excludes source brand transfer."
+      },
+      {
+        "category": "MY_EYES_AUTHORITY_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "No absolute My Eyes command language is present."
+      },
+      {
+        "category": "VKB_AUTHORITY_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "No absolute VKB command language is present."
+      },
+      {
+        "category": "SCHEMA_VALID",
+        "outcome": "PASS",
+        "evidence": "Existing schema validator outcome."
+      },
+      {
+        "category": "SEMANTIC_VALID",
+        "outcome": "PASS",
+        "evidence": "Existing semantic validator outcome."
+      },
+      {
+        "category": "QUALITY_GATE_VALID",
+        "outcome": "PASS",
+        "evidence": "Existing quality validator outcome."
+      }
+    ],
+    "cognitive_audit": {
+      "what_the_model_thought_was_important": [
+        "Subject positioned in right third of frame, leaving left two-thirds as open field for copy territory",
+        "Controlled backlight creates bright rim/glow halo behind subject's head and shoulders, separating subject from background",
+        "Dominant purple/magenta gradient field with darker edges and lighter center behind subject",
+        "Subject wears white structured coat with gold buttons, hands in pockets, relaxed confident stance, smiling",
+        "Silhouetted NYC skyline visible in background including Empire State Building and Brooklyn Bridge",
+        "White coat fabric appears smooth and structured; inner blouse has subtle pattern/texture; watch with metal band on left wrist",
+        "Embroidered text on left chest of coat appears to be in non-Latin script",
+        "Dotted world map pattern visible in left background behind subject",
+        "American flag stars visible in upper right background",
+        "Layered depth with subject foreground, cityscape mid-ground, dotted map and gradient background",
+        "asymmetric_right_third_placement, copy_territory_reservation, single_focal_hierarchy",
+        "controlled_rim_light, glow_separation, dark_field_contrast",
+        "layered_planes, atmospheric_perspective",
+        "professional_fabric, structured_silhouette, textile_contrast",
+        "professional_authority, urban_sophistication",
+        "dominant_subject, quiet_background"
+      ],
+      "what_it_wanted_to_transfer": [],
+      "what_it_wanted_to_adapt": [
+        {
+          "mapping_id": "MAP_001",
+          "source_observations": [
+            "OBS_001"
+          ],
+          "target_expression": "Right-third subject placement with left-side copy territory reserved for headline, value proposition, and CTA",
+          "rationale": "Preserves subject-copy territorial separation (VKB_COMPACT_2) while recomposing for 16:9 landscape format and financial advisory communication needs. Maintains negative-space confidence and single-focal hierarchy."
+        },
+        {
+          "mapping_id": "MAP_002",
+          "source_observations": [
+            "OBS_002"
+          ],
+          "target_expression": "Motivated rim light from behind subject creating edge separation and focal glow, using target-native light source (window, studio kicker, or environmental reflection)",
+          "rationale": "Preserves silhouette separation and focal emphasis while changing light temperature and emitter to match financial advisory tone (warmer or neutral rather than purple). Maintains controlled lighting and subject-background separation."
+        },
+        {
+          "mapping_id": "MAP_003",
+          "source_observations": [
+            "OBS_003",
+            "OBS_004"
+          ],
+          "target_expression": "Dark neutral field (charcoal, navy, or deep burgundy) with single professional subject as focal point",
+          "rationale": "Preserves negative-space confidence and single-focal hierarchy while changing color from source purple to target-appropriate professional palette. Maintains value contrast for legibility and focus."
+        },
+        {
+          "mapping_id": "MAP_005",
+          "source_observations": [
+            "OBS_005",
+            "OBS_008"
+          ],
+          "target_expression": "Abstract architectural geometry, financial district structure, or clean spatial environment suggesting institutional presence without literal cityscape copying",
+          "rationale": "Preserves the sophisticated urban context while avoiding generic NYC skyline cliché and ensuring target-native environment. Maintains atmospheric depth and institutional scale."
+        },
+        {
+          "mapping_id": "MAP_006",
+          "source_observations": [
+            "OBS_006"
+          ],
+          "target_expression": "Subtle textile contrast between outer professional layer and inner garment, or between subject and environment materials",
+          "rationale": "Preserves tactile depth and material interest while adapting to business wardrobe codes. Maintains material contrast pairing for visual richness."
+        }
+      ],
+      "what_it_wanted_to_reinvent": [
+        {
+          "mapping_id": "MAP_004",
+          "source_observations": [
+            "OBS_004",
+            "OBS_006"
+          ],
+          "target_expression": "Business blazer, tailored shirt, or professional attire appropriate to financial advisory context",
+          "rationale": "Preserves the authority and trust function of professional dress while adapting from medical category to financial category. Lab coat signals clinical expertise; business attire signals financial expertise. Cross-category translation required."
+        }
+      ],
+      "what_it_discarded": [
+        {
+          "mapping_id": "MAP_007",
+          "source_observations": [
+            "OBS_007"
+          ],
+          "target_expression": "No source text; target copy will be placed in reserved left territory",
+          "rationale": "Source text is untrusted, likely brand-specific, and must not leak into target. Copy territory is already reserved by composition. Protects against copy leakage."
+        },
+        {
+          "mapping_id": "MAP_008",
+          "source_observations": [
+            "OBS_009"
+          ],
+          "target_expression": "No national symbols unless target brief explicitly requires them",
+          "rationale": "Source-specific national symbol has no target relevance and could imply unintended geographic or political positioning. Maintains target neutrality."
+        },
+        {
+          "mapping_id": "MAP_009",
+          "source_observations": [
+            "OBS_009"
+          ],
+          "target_expression": "No specific watch; any accessory must be target-appropriate and not copy source",
+          "rationale": "Specific watch is source manifestation; timepiece could imply precision but is not necessary and risks copying source. Avoids surface copy."
+        }
+      ],
+      "what_it_protected": [
+        "Asymmetric right-third subject placement with left-side copy territory",
+        "Single focal hierarchy with dark field contrast",
+        "Controlled rim/backlight separation creating glow",
+        "Professional authority cue (adapted to business category)"
+      ],
+      "what_risks_it_identified": [
+        "Material mismatch: Lab coat to business suit translation risks looking like costume if not handled with proper business context and fit",
+        "Color vitality: Source purple is highly chromatic; changing to navy/charcoal risks looking washed out if contrast isn't maintained",
+        "Generic background: Abstract architecture could become generic corporate stock",
+        "Identity leakage: Source person's likeness must not influence target subject",
+        "Over-abstraction: Removing too many reference mechanisms could result in generic corporate hero"
+      ]
+    },
+    "plan_id": "plan_live_rt_04_minimal_restraint_001",
+    "run_id": "run_live_rt_04_minimal_restraint-rt-live-step37-20260816-final",
+    "plan_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals-step37-20260816-final\\plans\\plan_live_rt_04_minimal_restraint_001.json",
+    "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals-step37-20260816-final\\runs\\run_live_rt_04_minimal_restraint-rt-live-step37-20260816-final.trace.json",
+    "failed_attempts": []
+  }
+}

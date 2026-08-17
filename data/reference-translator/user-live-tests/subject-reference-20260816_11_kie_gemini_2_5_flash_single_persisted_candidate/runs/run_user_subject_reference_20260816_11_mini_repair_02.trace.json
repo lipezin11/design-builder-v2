@@ -1,0 +1,60 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_user_subject_reference_20260816_11_mini_repair_02",
+  "runtime_version": "MINI_REPAIR_2.0.0",
+  "prompt_version": "MINI_SEMANTIC_REPAIR_ONLY",
+  "input_mode": "TEXT_ONLY",
+  "status": "COMPLETED",
+  "started_at": "2026-08-17T00:28:00.178Z",
+  "completed_at": "2026-08-17T00:28:00.241Z",
+  "source_candidate": {
+    "path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_01\\attempt_01.raw.json",
+    "sha256": "bb0fccd6f4eaa0bfaad7d55680d921b376afa0fbcb32f89e6c8ba89f2a29810f"
+  },
+  "provider": {
+    "provider_id": "KIE_AI",
+    "model": "gemini-2.5-flash",
+    "response_id": "chatcmpl-mini-repair-02"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "PASS",
+      "raw_candidate": {
+        "artifact_type": "REFERENCE_TRANSLATOR_RAW_CANDIDATE",
+        "status": "ACCEPTED_CANDIDATE",
+        "run_id": "run_user_subject_reference_20260816_11_mini_repair_02",
+        "attempt": 1,
+        "raw_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_02\\attempt_01.raw.json",
+        "metadata_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_02\\attempt_01.meta.json"
+      }
+    }
+  ],
+  "validation_outcomes": [
+    {
+      "attempt": 1,
+      "json_parse": "PASS",
+      "schema": "PASS",
+      "semantic": "PASS",
+      "quality": "PASS"
+    }
+  ],
+  "output_plan_id": "plan_tech_thumbnail_001",
+  "events": [
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-17T00:28:00.178Z"
+    },
+    {
+      "state": "RAW_CANDIDATE_PERSISTED",
+      "at": "2026-08-17T00:28:00.241Z",
+      "path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_02\\attempt_01.raw.json"
+    },
+    {
+      "state": "COMPLETED",
+      "at": "2026-08-17T00:28:00.241Z",
+      "diagnostics": []
+    }
+  ],
+  "hidden_reasoning_persisted": false
+}

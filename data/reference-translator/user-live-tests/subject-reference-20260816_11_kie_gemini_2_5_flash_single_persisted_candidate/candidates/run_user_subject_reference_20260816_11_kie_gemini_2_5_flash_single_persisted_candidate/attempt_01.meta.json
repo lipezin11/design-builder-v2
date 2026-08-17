@@ -1,0 +1,11 @@
+{
+  "artifact_type": "REFERENCE_TRANSLATOR_RAW_CANDIDATE",
+  "status": "REJECTED_CANDIDATE",
+  "run_id": "run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate",
+  "attempt": 1,
+  "raw_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\attempt_01.raw.json",
+  "sha256": "1d8ea00bbf9d084092696b60056f342588e9935d72d6384d83aa5c9339b0ee6d",
+  "byte_length": 6610,
+  "representation": "RAW_TEXT",
+  "created_at": "2026-08-16T23:15:53.666Z"
+}

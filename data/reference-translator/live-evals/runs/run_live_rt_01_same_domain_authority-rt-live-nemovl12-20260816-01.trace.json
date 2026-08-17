@@ -1,0 +1,372 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_live_rt_01_same_domain_authority-rt-live-nemovl12-20260816-01",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "input_mode": "MULTIMODAL",
+  "status": "FAILED",
+  "started_at": "2026-08-16T03:33:16.051Z",
+  "completed_at": "2026-08-16T03:43:11.198Z",
+  "input_hash": "fd33cf71cdc4a522c8e83382a655d34e701448dc4d878c1672730126ea22cf9b",
+  "input_artifacts": {
+    "context_id": "ctx_live_rt_01_same_domain_authority",
+    "brief_ref": {
+      "artifact_id": "brief_live_rt_01_same_domain_authority",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "live_ref_authority_speaker",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": [
+      "MYE_LIVE_LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "VKB_LIVE_LIVE_RT_01_SAME_DOMAIN_AUTHORITY"
+    ]
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "NVIDIA_NIM",
+    "model": "nvidia/nemotron-nano-12b-v2-vl"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_SCHEMA_INVALID"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4324,
+        "reference_context_characters": 817,
+        "my_eyes_advisory_characters": 1262,
+        "vkb_advisory_characters": 1230,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32592,
+        "total_textual_characters": 519410,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 131392,
+        "serialized_http_body_characters": 660292,
+        "input_tokens": 129853,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 8192,
+        "context_limit_tokens": 131072,
+        "headroom_tokens": -6973,
+        "context_classification": "EXCEEDS_LIMIT"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "nvidia/nemotron-nano-12b-v2-vl",
+        "provider_response_id": "chatcmpl-de291a63cd18408b84d3d5316a1c05a7",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 172649,
+        "final_attempt_latency_ms": 160953,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_authority_speaker",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 98544,
+            "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4324,
+          "reference_context_characters": 817,
+          "my_eyes_advisory_characters": 1262,
+          "vkb_advisory_characters": 1230,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32592,
+          "total_textual_characters": 519410,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 131392,
+          "serialized_http_body_characters": 660292,
+          "input_tokens": 95905,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 8192,
+          "context_limit_tokens": 131072,
+          "headroom_tokens": 26975,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 95905,
+          "output_tokens": 1824,
+          "total_tokens": 97729,
+          "cached_tokens": null,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_SCHEMA_INVALID"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4324,
+        "reference_context_characters": 817,
+        "my_eyes_advisory_characters": 1262,
+        "vkb_advisory_characters": 1230,
+        "retry_diagnostic_characters": 109,
+        "provider_user_text_characters": 32738,
+        "total_textual_characters": 519556,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 131392,
+        "serialized_http_body_characters": 660451,
+        "input_tokens": 129889,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 8192,
+        "context_limit_tokens": 131072,
+        "headroom_tokens": -7009,
+        "context_classification": "EXCEEDS_LIMIT"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "nvidia/nemotron-nano-12b-v2-vl",
+        "provider_response_id": "chatcmpl-df9178191ada4d0ab984a0d7f2b2fdf0",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 246974,
+        "final_attempt_latency_ms": 235431,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_authority_speaker",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 98544,
+            "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4324,
+          "reference_context_characters": 817,
+          "my_eyes_advisory_characters": 1262,
+          "vkb_advisory_characters": 1230,
+          "retry_diagnostic_characters": 109,
+          "provider_user_text_characters": 32738,
+          "total_textual_characters": 519556,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 131392,
+          "serialized_http_body_characters": 660451,
+          "input_tokens": 95933,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 8192,
+          "context_limit_tokens": 131072,
+          "headroom_tokens": 26947,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 95933,
+          "output_tokens": 1932,
+          "total_tokens": 97865,
+          "cached_tokens": null,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 3,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_SCHEMA_INVALID"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4324,
+        "reference_context_characters": 817,
+        "my_eyes_advisory_characters": 1262,
+        "vkb_advisory_characters": 1230,
+        "retry_diagnostic_characters": 109,
+        "provider_user_text_characters": 32738,
+        "total_textual_characters": 519556,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 131392,
+        "serialized_http_body_characters": 660451,
+        "input_tokens": 129889,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 8192,
+        "context_limit_tokens": 131072,
+        "headroom_tokens": -7009,
+        "context_classification": "EXCEEDS_LIMIT"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "nvidia/nemotron-nano-12b-v2-vl",
+        "provider_response_id": "chatcmpl-b1736357b3cb48e9b29299acf2b723fd",
+        "finish_reason": "stop",
+        "transport_attempt_count": 1,
+        "latency_ms": 175442,
+        "final_attempt_latency_ms": 175442,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_authority_speaker",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 98544,
+            "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4324,
+          "reference_context_characters": 817,
+          "my_eyes_advisory_characters": 1262,
+          "vkb_advisory_characters": 1230,
+          "retry_diagnostic_characters": 109,
+          "provider_user_text_characters": 32738,
+          "total_textual_characters": 519556,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 131392,
+          "serialized_http_body_characters": 660451,
+          "input_tokens": 95933,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 8192,
+          "context_limit_tokens": 131072,
+          "headroom_tokens": 26947,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 95933,
+          "output_tokens": 1857,
+          "total_tokens": 97790,
+          "cached_tokens": null,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T03:33:16.053Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T03:33:16.064Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T03:33:16.064Z",
+      "attempt": 1
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T03:36:08.726Z",
+      "attempt": 1
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T03:36:08.731Z",
+      "attempt": 1,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T03:36:08.740Z",
+      "attempt": 2
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T03:36:08.740Z",
+      "attempt": 2
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T03:40:15.727Z",
+      "attempt": 2
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T03:40:15.727Z",
+      "attempt": 2,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T03:40:15.739Z",
+      "attempt": 3
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T03:40:15.739Z",
+      "attempt": 3
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T03:43:11.196Z",
+      "attempt": 3
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T03:43:11.198Z",
+      "attempt": 3,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T03:43:11.198Z",
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED"
+    }
+  ],
+  "validation_outcomes": [],
+  "output_plan_id": null,
+  "structured_decision_summary": [],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

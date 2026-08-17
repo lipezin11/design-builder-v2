@@ -1,0 +1,232 @@
+{
+  "suite_id": "REFERENCE_TRANSLATOR_LIVE_MULTIMODAL_COGNITIVE_EVALUATION_V1",
+  "suite_run_id": "rt-live-kimi-k26-20260816-01",
+  "artifact_classification": "EVALUATION_ARTIFACTS_NOT_PRODUCTION",
+  "provider_profile": {
+    "provider": "NVIDIA_NIM",
+    "model_id": "moonshotai/kimi-k2.6",
+    "documented_context_limit_tokens": 262144,
+    "documented_input_modalities": [
+      "TEXT",
+      "IMAGE",
+      "VIDEO"
+    ],
+    "documented_image_input_supported": true,
+    "documentation_ref": "https://build.nvidia.com/moonshotai/kimi-k2.6",
+    "documentation_checked_at": "2026-08-16"
+  },
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "runtime_version": "1.0.0",
+  "base_directory": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals",
+  "manifest_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\manifest.json",
+  "summary_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-kimi-k26-20260816-01.summary.json",
+  "human_review_packet_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-kimi-k26-20260816-01.human-review.md",
+  "consolidated_report_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-kimi-k26-20260816-01.consolidated.md",
+  "smoke_result": {
+    "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+    "status": "PROVIDER_BLOCKED",
+    "technical_runtime_acceptance": false,
+    "visual_analysis_proven": false,
+    "documented_image_input_supported": true,
+    "full_battery_permitted": false,
+    "provider_error_code": "MODEL_INVOCATION_FAILED",
+    "image_transmission": [
+      {
+        "asset_id": "live_ref_authority_speaker",
+        "mime_type": "image/jpeg",
+        "source_type": "INLINE_IMAGE_BYTES",
+        "byte_length": 98544,
+        "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+      }
+    ],
+    "request_measurement": {
+      "measurement_version": "1.0.0",
+      "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+      "core_prompt_characters": 11451,
+      "knowledge_characters": 472402,
+      "knowledge_wrapper_and_index_characters": 2965,
+      "assembled_system_prompt_characters": 486818,
+      "schema_characters": 11766,
+      "brief_context_characters": 4324,
+      "reference_context_characters": 817,
+      "my_eyes_advisory_characters": 1262,
+      "vkb_advisory_characters": 1230,
+      "retry_diagnostic_characters": 2,
+      "provider_user_text_characters": 32592,
+      "total_textual_characters": 519410,
+      "multimodal_image_count": 1,
+      "image_base64_transport_characters": 131392,
+      "serialized_http_body_characters": 660282,
+      "input_tokens": 129853,
+      "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+      "output_budget_tokens": 8192,
+      "context_limit_tokens": 262144,
+      "headroom_tokens": 124099,
+      "context_classification": "SAFE"
+    }
+  },
+  "case_results": [
+    {
+      "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "status": "PROVIDER_BLOCKED",
+      "quality_class": "PROVIDER_BLOCKED",
+      "creative_approval": "NOT_PERFORMED",
+      "error": {
+        "code": "REFERENCE_PLAN_RETRY_EXHAUSTED",
+        "message": "Reference Translator exhausted its correction attempts.",
+        "provider_error_code": "MODEL_INVOCATION_FAILED"
+      },
+      "checks": [
+        {
+          "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+          "outcome": "FAIL",
+          "evidence": "No accepted multimodal model response was produced."
+        },
+        {
+          "category": "MECHANISM_IDENTIFICATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "FUNCTION_BEFORE_APPEARANCE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "REFERENCE_DNA_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_SEMANTICS_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_NATIVE_ADAPTATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "LITERAL_COPY_AVOIDED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SURFACE_COPY_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "UNDERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "OVERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "IDENTITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "MY_EYES_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "VKB_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SCHEMA_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "SEMANTIC_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "QUALITY_GATE_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        }
+      ],
+      "cognitive_audit": {
+        "what_the_model_thought_was_important": [],
+        "what_it_wanted_to_transfer": [],
+        "what_it_wanted_to_adapt": [],
+        "what_it_wanted_to_reinvent": [],
+        "what_it_discarded": [],
+        "what_it_protected": [],
+        "what_risks_it_identified": []
+      },
+      "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\runs\\run_live_rt_01_same_domain_authority-rt-live-kimi-k26-20260816-01.trace.json",
+      "failed_attempts": [],
+      "raw_response_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\cases\\LIVE_RT_01_SAME_DOMAIN_AUTHORITY\\rt-live-kimi-k26-20260816-01.json"
+    }
+  ],
+  "full_request_measurement": {
+    "measurement_version": "1.0.0",
+    "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+    "core_prompt_characters": 11451,
+    "knowledge_characters": 472402,
+    "knowledge_wrapper_and_index_characters": 2965,
+    "assembled_system_prompt_characters": 486818,
+    "schema_characters": 11766,
+    "brief_context_characters": 4324,
+    "reference_context_characters": 817,
+    "my_eyes_advisory_characters": 1262,
+    "vkb_advisory_characters": 1230,
+    "retry_diagnostic_characters": 2,
+    "provider_user_text_characters": 32592,
+    "total_textual_characters": 519410,
+    "multimodal_image_count": 1,
+    "image_base64_transport_characters": 131392,
+    "serialized_http_body_characters": 660282,
+    "input_tokens": 129853,
+    "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+    "output_budget_tokens": 8192,
+    "context_limit_tokens": 262144,
+    "headroom_tokens": 124099,
+    "context_classification": "SAFE"
+  },
+  "full_brain_status": "INCONCLUSIVE",
+  "full_brain_evidence": "The complete request was measured, but no valid visual-model smoke completed. Prompt attention health cannot be inferred.",
+  "api_usage": {
+    "calls": 2,
+    "cognitive_invocations": 1,
+    "transport_retries": 1,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cached_tokens": null,
+    "reasoning_tokens": null,
+    "latency_ms": 12722,
+    "cost": "UNKNOWN"
+  },
+  "full_battery_completed": false,
+  "scores_created": 0,
+  "weights_created": 0,
+  "rankings_created": 0,
+  "automatic_approvals": 0,
+  "creative_director_implemented": false,
+  "image_critic_cognitive_runtime_implemented": false,
+  "final_verdict": "NOT_READY",
+  "final_verdict_reason": "A documented image-input model did not complete the required smoke, so no honest real-image cognitive battery exists."
+}

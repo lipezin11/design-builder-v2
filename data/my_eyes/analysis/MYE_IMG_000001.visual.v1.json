@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000006",
+  "image_id": "MYE_IMG_000001",
+  "image_sha256": "40975d27a24c6bbf75da03d4fb97dfafd0844f6305503f89a476ee0bb946a5eb",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Portrait promotional poster with an arms-crossed man, oversized slanted lime-white title, studio monitors and a small interface card in the foreground.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Portrait format stacks the title behind the subject and a supporting card near the lower edge.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Portrait format stacks the title behind the subject and a supporting card near the lower edge.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The centered lower subject overlaps the oversized diagonal title while background monitors frame him.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The centered lower subject overlaps the oversized diagonal title while background monitors frame him.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The lime-white title leads, followed by the face and foreground application card.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The lime-white title leads, followed by the face and foreground application card.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Typography, subject, monitors and lower interface card occupy distinct overlapping layers.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Typography, subject, monitors and lower interface card occupy distinct overlapping layers.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Warm edge light on the subject echoes the illuminated studio and title accents.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Warm edge light on the subject echoes the illuminated studio and title accents.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Golden rim light outlines the subject against a darker monitor-filled background.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Golden rim light outlines the subject against a darker monitor-filled background.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Black and warm amber are punctuated by high-saturation lime and white lettering.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Black and warm amber are punctuated by high-saturation lime and white lettering.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "OBSERVED",
+      "summary": "Huge condensed slanted title reads across the upper and middle frame, with smaller supporting marks below.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "typography",
+          "observation": "Huge condensed slanted title reads across the upper and middle frame, with smaller supporting marks below.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "A dark design or editing studio with illuminated displays fills the background.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "environment",
+          "observation": "A dark design or editing studio with illuminated displays fills the background.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "A small application or lesson card overlaps the lower-right subject area.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "foreground",
+          "observation": "A small application or lesson card overlaps the lower-right subject area.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Bloom, sparks, angled text treatment and screen glow add graphic motion.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "effects",
+          "observation": "Bloom, sparks, angled text treatment and screen glow add graphic motion.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "A photographic person is composited with oversized typography and readable interface imagery.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "realism_coherence",
+          "observation": "A photographic person is composited with oversized typography and readable interface imagery.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "High density is centered vertically, with title, portrait, screens and card in close proximity.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "complexity_density",
+          "observation": "High density is centered vertically, with title, portrait, screens and card in close proximity.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "The subject physically occludes part of the oversized diagonal title while the title remains the largest element.",
+      "facts": [
+        {
+          "fact_id": "FACT_014",
+          "attribute": "distinctive_design_decisions",
+          "observation": "The subject physically occludes part of the oversized diagonal title while the title remains the largest element.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000001@sha256:40975d27a24c6bbf75da03d4fb97dfafd0844f6305503f89a476ee0bb946a5eb",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

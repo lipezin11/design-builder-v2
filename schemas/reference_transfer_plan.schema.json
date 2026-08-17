@@ -1,0 +1,546 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.io/schemas/reference_transfer_plan.schema.json",
+  "title": "Design Builder Reference Transfer Plan",
+  "description": "Operational contract produced by the Reference Translator connecting reference observations, functional interpretations, and design transfer decisions without dictating final implementation or prompt engineering.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "plan_id",
+    "project_id",
+    "brief_spec_version",
+    "status",
+    "transfer_mode",
+    "transfer_intensity",
+    "base_analysis",
+    "reference_analyses",
+    "design_decision_map",
+    "conflicts",
+    "non_negotiable_anchors",
+    "flexible_areas",
+    "risks",
+    "provenance",
+    "confidence",
+    "director_handoff"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Semantic version of the reference transfer plan schema.",
+      "example": "1.0.0"
+    },
+    "plan_id": {
+      "type": "string",
+      "description": "Unique identifier for this transfer plan instance."
+    },
+    "project_id": {
+      "type": "string",
+      "description": "Associated project identifier."
+    },
+    "brief_spec_version": {
+      "type": "string",
+      "description": "Version of the Brief Spec used as input."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "READY_FOR_DIRECTOR",
+        "BLOCKED",
+        "DIRECTOR_REVISION_REQUIRED",
+        "HUMAN_REVIEW_REQUIRED",
+        "APPROVED"
+      ],
+      "description": "Execution status of the transfer plan."
+    },
+    "transfer_mode": {
+      "type": "string",
+      "enum": [
+        "STANDARD_REFERENCE_TRANSFER",
+        "HIGH_FIDELITY_TRANSFER",
+        "MULTI_REFERENCE_TRANSFER",
+        "REFERENCE_REINTERPRETATION"
+      ],
+      "description": "Operational mode governing reference handling."
+    },
+    "transfer_intensity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "source", "confidence"],
+      "properties": {
+        "value": {
+          "type": "string",
+          "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH", "TO_BE_RESOLVED"]
+        },
+        "source": {
+          "type": "string",
+          "enum": ["USER_EXPLICIT", "USER_ASSET", "MODEL_INFERENCE", "DEFAULT", "HUMAN_CONFIRMED"]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"]
+        }
+      }
+    },
+    "base_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base_asset_id", "semantic_identity", "protected_elements"],
+      "properties": {
+        "base_asset_id": {
+          "type": ["string", "null"]
+        },
+        "semantic_identity": {
+          "type": "string",
+          "description": "Core semantic identity of the base asset or subject."
+        },
+        "protected_elements": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Elements from the base that must survive untouched."
+        },
+        "required_copy": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "subject_identity_requirements": {
+          "type": "string"
+        },
+        "existing_composition_constraints": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "elements_allowed_to_change": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "elements_forbidden_to_change": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "reference_analyses": {
+      "type": "array",
+      "description": "Structured breakdown of each reference provided.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "reference_asset_id",
+          "role",
+          "scope",
+          "authority",
+          "observations",
+          "reference_dna",
+          "transfer_relevance",
+          "confidence",
+          "provenance"
+        ],
+        "properties": {
+          "reference_asset_id": { "type": "string" },
+          "role": {
+            "type": "string",
+            "enum": ["PRIMARY_REFERENCE", "SECONDARY_REFERENCE", "STYLE_REFERENCE", "SUPPORTING_REFERENCE"]
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "GLOBAL_VISUAL_DIRECTION",
+              "COMPOSITION",
+              "LIGHTING",
+              "COLOR",
+              "TYPOGRAPHY",
+              "ENVIRONMENT",
+              "SUBJECT_TREATMENT",
+              "DEPTH",
+              "MOOD",
+              "MOTION",
+              "ENERGY",
+              "NARRATIVE_OBJECT",
+              "MATERIAL",
+              "OTHER"
+            ]
+          },
+          "authority": {
+            "type": "string",
+            "enum": ["USER_PRIMARY_REFERENCE", "USER_SECONDARY_REFERENCE", "SUPPORTING_REFERENCE"]
+          },
+          "observations": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/observation" }
+          },
+          "reference_dna": {
+            "type": "object",
+            "additionalProperties": { "type": "string" },
+            "description": "Categorized DNA traits derived from verified observations."
+          },
+          "transfer_relevance": {
+            "type": "string",
+            "enum": ["VERY_HIGH", "HIGH", "MEDIUM", "LOW", "IRRELEVANT"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"]
+          },
+          "provenance": {
+            "type": "string",
+            "enum": ["OBSERVED", "INFERRED", "USER_EXPLICIT", "USER_ASSET", "MODEL_INFERENCE"]
+          }
+        }
+      }
+    },
+    "design_decision_map": {
+      "type": "array",
+      "description": "Core mapping connecting reference observations to functional interpretations and transfer actions.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "mapping_id",
+          "source_reference_asset_id",
+          "observation_ids",
+          "action",
+          "target_in_new_composition",
+          "rationale",
+          "strength",
+          "flexibility",
+          "confidence",
+          "provenance"
+        ],
+        "properties": {
+          "mapping_id": { "type": "string" },
+          "source_reference_asset_id": { "type": "string" },
+          "observation_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "action": {
+            "type": "string",
+            "enum": ["PRESERVE", "TRANSFER", "ADAPT", "REINVENT", "DISCARD", "CONFLICT"],
+            "description": "PRESERVE: keep base element; TRANSFER: copy reference design decision; ADAPT: keep principle, change manifestation; REINVENT: keep function, change object; DISCARD: reject reference trait; CONFLICT: irreconcilable clash."
+          },
+          "target_in_new_composition": {
+            "type": "string",
+            "description": "Where and how this decision applies in the new piece."
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Functional and design rationale."
+          },
+          "strength": {
+            "type": "string",
+            "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+          },
+          "flexibility": {
+            "type": "string",
+            "enum": ["LOCKED", "LOW", "MEDIUM", "HIGH"]
+          },
+          "protected_dependencies": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "cross_category_adaptation": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Required only when the runtime declares different source and target product categories and the mapping cites a declared product-support observation. It separates the source manifestation from the design function that survives. It must not be used for ordinary domain, profession, medium, campaign, or visual-context adaptation.",
+            "required": [
+              "reference_product_category",
+              "target_product_category",
+              "literal_object",
+              "visual_function",
+              "material_language",
+              "emotional_effect",
+              "equivalent_adaptation",
+              "literal_transfer_allowed",
+              "target_category_coherence"
+            ],
+            "properties": {
+              "reference_product_category": { "type": "string", "minLength": 1 },
+              "target_product_category": { "type": "string", "minLength": 1 },
+              "literal_object": { "type": "string", "minLength": 1 },
+              "visual_function": { "type": "string", "minLength": 1 },
+              "material_language": { "type": "string", "minLength": 1 },
+              "emotional_effect": { "type": "string", "minLength": 1 },
+              "equivalent_adaptation": { "type": "string", "minLength": 1 },
+              "literal_transfer_allowed": {
+                "const": false,
+                "description": "Cross-category support props are mechanisms to reinterpret, not literal objects to copy."
+              },
+              "target_category_coherence": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Why the equivalent belongs naturally to the target product category."
+              }
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"]
+          },
+          "provenance": {
+            "type": "string",
+            "enum": ["OBSERVED", "INFERRED", "USER_EXPLICIT", "MODEL_INFERENCE", "DIRECTOR_CONFIRMED", "HUMAN_CONFIRMED"]
+          }
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "conflict_id",
+          "type",
+          "description",
+          "severity",
+          "blocking",
+          "translator_position",
+          "resolution_status",
+          "provenance"
+        ],
+        "properties": {
+          "conflict_id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": [
+              "REFERENCE_VS_BRIEF",
+              "REFERENCE_VS_BASE",
+              "REFERENCE_VS_SUBJECT_IDENTITY",
+              "REFERENCE_VS_COPY",
+              "REFERENCE_VS_FORMAT",
+              "REFERENCE_VS_BRAND",
+              "REFERENCE_VS_USER_CONSTRAINT",
+              "REFERENCE_VS_REFERENCE",
+              "REFERENCE_VS_ORIGINALITY",
+              "OTHER"
+            ]
+          },
+          "description": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+          },
+          "blocking": { "type": "boolean" },
+          "involved_assets": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "involved_constraints": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "translator_position": { "type": "string" },
+          "resolution_status": {
+            "type": "string",
+            "enum": ["UNRESOLVED", "RESOLVED_BY_ADAPTATION", "RESOLVED_BY_DISCARD", "ESCALATED_TO_DIRECTOR", "ESCALATED_TO_USER"]
+          },
+          "requires_director_decision": { "type": "boolean" },
+          "requires_user_decision": { "type": "boolean" },
+          "provenance": {
+            "type": "string",
+            "description": "Origin of the conflict claim. USER_EXPLICIT is valid when an explicit user constraint creates or establishes the conflict.",
+            "enum": ["OBSERVED", "INFERRED", "USER_EXPLICIT", "MODEL_INFERENCE", "HUMAN_CONFIRMED"]
+          }
+        }
+      }
+    },
+    "non_negotiable_anchors": {
+      "type": "array",
+      "description": "Essential reference mechanisms recommended by the Translator to preserve visual DNA.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["anchor_id", "description", "source_reference_asset_id", "function", "importance", "flexibility", "provenance"],
+        "properties": {
+          "anchor_id": { "type": "string" },
+          "description": { "type": "string" },
+          "source_reference_asset_id": { "type": "string" },
+          "function": { "type": "string" },
+          "importance": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] },
+          "flexibility": { "type": "string", "enum": ["LOCKED", "LOW", "MEDIUM", "HIGH"] },
+          "reason": { "type": "string" },
+          "provenance": { "type": "string", "enum": ["OBSERVED", "INFERRED", "USER_EXPLICIT", "MODEL_INFERENCE"] }
+        }
+      }
+    },
+    "flexible_areas": {
+      "type": "array",
+      "description": "Areas where the Creative Director has high creative freedom.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["area", "freedom_level", "rationale"],
+        "properties": {
+          "area": { "type": "string" },
+          "freedom_level": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["risk_id", "description", "severity", "mitigation"],
+        "properties": {
+          "risk_id": { "type": "string" },
+          "description": { "type": "string" },
+          "severity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] },
+          "mitigation": { "type": "string" }
+        }
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question_id", "question", "target_audience"],
+        "properties": {
+          "question_id": { "type": "string" },
+          "question": { "type": "string" },
+          "target_audience": { "type": "string", "enum": ["CREATIVE_DIRECTOR", "USER"] }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["translator_version", "created_at"],
+      "properties": {
+        "translator_version": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overall"],
+      "properties": {
+        "overall": { "type": "string", "enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"] },
+        "rationale": { "type": "string" }
+      }
+    },
+    "director_handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "what_must_survive",
+        "what_should_survive",
+        "what_can_change",
+        "key_conflicts",
+        "recommended_anchors"
+      ],
+      "properties": {
+        "what_must_survive": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "what_should_survive": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "what_can_change": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "key_conflicts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "recommended_anchors": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "creative_opportunities": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "warnings": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observation_id", "category", "description", "salience", "confidence", "provenance"],
+      "properties": {
+        "observation_id": { "type": "string" },
+        "category": {
+          "type": "string",
+          "enum": [
+            "COMPOSITION",
+            "DEPTH",
+            "SUBJECT_TREATMENT",
+            "ENVIRONMENT",
+            "LIGHTING",
+            "COLOR",
+            "TYPOGRAPHY",
+            "MOTION",
+            "ENERGY",
+            "NARRATIVE_OBJECT",
+            "MATERIAL",
+            "OTHER"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "Descriptive, non-interpretative observation of verified visual elements."
+        },
+        "region": {
+          "type": "string",
+          "description": "Image region (e.g. 'upper third', 'foreground right')."
+        },
+        "salience": {
+          "type": "string",
+          "enum": ["LOW", "MEDIUM", "HIGH", "DOMINANT"]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"]
+        },
+        "provenance": {
+          "type": "string",
+          "enum": ["OBSERVED", "INFERRED", "USER_EXPLICIT", "MODEL_INFERENCE"]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "status": { "const": "BLOCKED" } },
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {
+          "conflicts": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "transfer_mode": { "const": "MULTI_REFERENCE_TRANSFER" } },
+        "required": ["transfer_mode"]
+      },
+      "then": {
+        "properties": {
+          "reference_analyses": {
+            "minItems": 2
+          }
+        }
+      }
+    }
+  ]
+}

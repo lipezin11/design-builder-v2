@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_live_rt_01_same_domain_authority",
+  "project_id": "project_live_rt_01_same_domain_authority",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "STANDARD_REFERENCE_TRANSFER",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "USER_EXPLICIT",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": null,
+    "semantic_identity": "executive strategy keynote banner",
+    "protected_elements": [
+      "target professional context",
+      "target communication goal"
+    ],
+    "required_copy": [],
+    "subject_identity_requirements": "Do not reuse the reference person's identity; no recognizability required",
+    "existing_composition_constraints": [
+      "16:9 landscape aspect ratio",
+      "LinkedIn platform",
+      "text overlay expected",
+      "1920x1080 dimensions"
+    ],
+    "elements_allowed_to_change": [
+      "composition details",
+      "environment",
+      "lighting specifics",
+      "wardrobe",
+      "props",
+      "typography",
+      "color palette within professional range",
+      "subject identity"
+    ],
+    "elements_forbidden_to_change": [
+      "professional context",
+      "communication goal",
+      "authority and clarity emotional intent"
+    ]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "live_ref_authority_speaker",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_001",
+          "category": "SUBJECT_TREATMENT",
+          "description": "Executive figure positioned in right third, gesturing with right hand, holding presentation device in left hand",
+          "region": "right third",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_002",
+          "category": "DEPTH",
+          "description": "Audience visible in background, out of focus, creating scale and narrative depth",
+          "region": "background",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_003",
+          "category": "ENVIRONMENT",
+          "description": "Stage architecture with geometric screen structures above, blue-lit conference environment",
+          "region": "upper and background",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_004",
+          "category": "LIGHTING",
+          "description": "Cool blue stage lighting with directional key light on subject and rim separation",
+          "region": "full frame",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_005",
+          "category": "MATERIAL",
+          "description": "Dark tailored suit, white shirt, dark tie; professional executive wardrobe",
+          "region": "subject",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_006",
+          "category": "COMPOSITION",
+          "description": "Asymmetric composition with subject on right, large negative space on left for copy",
+          "region": "full frame",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_007",
+          "category": "COMPOSITION",
+          "description": "Low-angle camera looking upward slightly, creating monumentality and authority",
+          "region": "full frame",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "authority": "composed executive authority through stance, gesture, and low-angle perspective",
+        "depth": "layered stage depth with receding audience and architectural elements",
+        "composition": "asymmetric balance with protected copy territory",
+        "lighting": "cool blue stage lighting with directional key and rim separation",
+        "material": "tailored professional wardrobe conveying precision"
+      },
+      "transfer_relevance": "VERY_HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_001",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_001",
+        "obs_007"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Executive advisor figure positioned in right third, low-angle authority stance, gesturing to emphasize strategic point",
+      "rationale": "The reference's low-angle camera and gesturing subject create composed executive authority and confidence. Adapt the pose and treatment to a target-native executive figure while strictly protecting the reference person's identity.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "subject identity must not match reference",
+        "gesture must serve communication goal"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_002",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_002",
+        "obs_003"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Layered background with abstracted audience or architectural depth receding behind subject",
+      "rationale": "The reference uses audience and stage architecture to establish scale and narrative depth. Adapt to target environment while maintaining foreground subject dominance and atmospheric separation.",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "subject must remain dominant",
+        "depth must support hierarchy"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_003",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_004"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Cool professional lighting with directional key light and rim separation, blue-neutral palette with controlled chroma",
+      "rationale": "The reference's cool blue stage lighting creates strategic, forward-looking atmosphere and clear subject separation. Adapt to target brand lighting while preserving hierarchy through motivated light.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "lighting must remain coherent",
+        "subject must be clearly separated"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_004",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_006"
+      ],
+      "action": "TRANSFER",
+      "target_in_new_composition": "Asymmetric 16:9 composition with subject in right third, left territory reserved for headline and CTA",
+      "rationale": "The reference's asymmetric balance creates natural copy territory while maintaining subject dominance. Transfer this territorial logic to the banner format.",
+      "strength": "HIGH",
+      "flexibility": "LOW",
+      "protected_dependencies": [
+        "text overlay territory must be protected",
+        "subject must remain dominant"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_005",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_005"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Professional executive wardrobe in target-appropriate attire",
+      "rationale": "The reference's tailored suit communicates authority and professionalism. Adapt to target executive's professional context without copying specific source clothing.",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "wardrobe must match professional context"
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_006",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_001"
+      ],
+      "action": "DISCARD",
+      "target_in_new_composition": "Gesture-only hand positioning or target-native document if needed",
+      "rationale": "The specific presentation clicker is source-event specific and not target-native. The gesturing function can be preserved without the literal object.",
+      "strength": "LOW",
+      "flexibility": "HIGH",
+      "protected_dependencies": [],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "conf_001",
+      "type": "REFERENCE_VS_SUBJECT_IDENTITY",
+      "description": "Reference contains a specific person's identity which must not transfer to target",
+      "severity": "CRITICAL",
+      "blocking": true,
+      "involved_assets": [
+        "live_ref_authority_speaker"
+      ],
+      "involved_constraints": [
+        "hc_target_semantics_live_rt_01_same_domain_authority"
+      ],
+      "translator_position": "Subject treatment and authority mechanisms transfer; specific person identity is strictly excluded",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    }
+  ],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anchor_001",
+      "description": "Asymmetric composition with protected left copy territory",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "function": "Create natural text overlay space while maintaining subject dominance",
+      "importance": "HIGH",
+      "flexibility": "LOW",
+      "reason": "Format requires 16:9 landscape with text overlay; reference provides proven territorial logic",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_002",
+      "description": "Authority-building subject treatment through stance and gesture",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "function": "Communicate composed executive authority and confidence",
+      "importance": "CRITICAL",
+      "flexibility": "MEDIUM",
+      "reason": "Core to communication goal; must survive in target-native form",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_003",
+      "description": "Cool directional lighting with subject separation",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "function": "Create strategic atmosphere and clear hierarchy",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Lighting logic is central to the reference's authority feeling",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "environment specifics",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "Stage and audience can be reinterpreted as conference hall, boardroom, or abstract architectural space"
+    },
+    {
+      "area": "subject wardrobe",
+      "freedom_level": "HIGH",
+      "rationale": "Professional attire can vary while maintaining authority"
+    },
+    {
+      "area": "background depth elements",
+      "freedom_level": "HIGH",
+      "rationale": "Audience can be abstracted, replaced with architectural elements, or simplified for banner clarity"
+    },
+    {
+      "area": "color palette specifics",
+      "freedom_level": "HIGH",
+      "rationale": "Blue tones can shift to target brand colors while maintaining cool professional hierarchy"
+    },
+    {
+      "area": "typography",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "No source typography to transfer; target copy and type system are fully target-owned"
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_001",
+      "description": "Subject identity leakage if reference person's likeness is inadvertently used",
+      "severity": "CRITICAL",
+      "mitigation": "Use target-native executive figure; strictly exclude reference person's face, likeness, and distinctive features"
+    },
+    {
+      "risk_id": "risk_002",
+      "description": "Over-transfer of source event branding or stage specifics",
+      "severity": "HIGH",
+      "mitigation": "Abstract or replace stage architecture and audience with target-native environment"
+    },
+    {
+      "risk_id": "risk_003",
+      "description": "Format compression losing asymmetric balance",
+      "severity": "MEDIUM",
+      "mitigation": "Protect left copy territory in 16:9 recomposition; ensure subject remains in right third"
+    },
+    {
+      "risk_id": "risk_004",
+      "description": "Lighting becoming too cinematic or unfocused",
+      "severity": "MEDIUM",
+      "mitigation": "Maintain motivated stage or environmental light sources; avoid generic haze or glow"
+    }
+  ],
+  "open_questions": [],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-16T00:00:00Z",
+    "notes": "Reference analyzed directly from supplied image. Subject identity protection enforced per brief. Same-domain authority transfer with high creative freedom."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Reference provides clear authority-building mechanisms through subject treatment, lighting, and composition. Transfer path is well-defined with strong target-native alternatives. Identity protection is unambiguous."
+  },
+  "director_handoff": {
+    "what_must_survive": [
+      "Asymmetric composition with protected left copy territory",
+      "Authority-building subject stance and gesture",
+      "Cool directional lighting with subject separation",
+      "Layered depth with receding background"
+    ],
+    "what_should_survive": [
+      "Professional executive wardrobe",
+      "Stage/audience scale context",
+      "Blue-neutral color temperature"
+    ],
+    "what_can_change": [
+      "Specific environment (stage vs boardroom vs abstract)",
+      "Exact wardrobe details",
+      "Background depth elements",
+      "Color palette within professional range",
+      "Typography system",
+      "Specific gesture details"
+    ],
+    "key_conflicts": [
+      "Reference person identity must not transfer (resolved by adaptation)"
+    ],
+    "recommended_anchors": [
+      "anchor_001",
+      "anchor_002",
+      "anchor_003"
+    ],
+    "creative_opportunities": [
+      "Abstract the audience into architectural or light elements for cleaner banner readability",
+      "Use target brand color in the cool palette",
+      "Incorporate strategic visualization elements in copy territory",
+      "Simplify background for LinkedIn banner clarity while retaining depth"
+    ],
+    "warnings": [
+      "Do not use reference person's likeness under any circumstances",
+      "Avoid copying source event stage design or specific screen patterns",
+      "Ensure text overlay territory remains clean and readable at 1920x1080",
+      "Maintain professional tone; avoid spectacle or aggression per brief"
+    ]
+  }
+}

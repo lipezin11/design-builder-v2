@@ -1,0 +1,47 @@
+{
+  "name": "design-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test tests/runtime/*.test.mjs",
+    "test:runtime": "node --test tests/runtime/*.test.mjs",
+    "test:scenarios": "node --test tests/runtime/scenario-*.test.mjs tests/runtime/canonical-scenarios.test.mjs tests/runtime/cross-artifact-mutations.test.mjs",
+    "validate:scenarios": "node scripts/validate_all_scenarios.mjs",
+    "test:generation": "node --test tests/runtime/nano-banana-*.test.mjs tests/runtime/provider-transport.test.mjs tests/runtime/generation-*.test.mjs tests/runtime/mock-generation-e2e.test.mjs",
+    "smoke:nano-banana": "node scripts/smoke_nano_banana.mjs",
+    "index:my-eyes": "node scripts/index_my_eyes_memory.mjs",
+    "my-eyes:add-reason": "node scripts/add_my_eyes_reason.mjs",
+    "my-eyes:add-pair": "node scripts/add_my_eyes_pair.mjs",
+    "my-eyes:build-pair-session": "node scripts/build_my_eyes_pair_session.mjs",
+    "my-eyes:pair-status": "node scripts/my_eyes_pair_status.mjs",
+    "my-eyes:answer-pair": "node scripts/record_my_eyes_pair_decision.mjs",
+    "my-eyes:infer-preferences-v1": "node scripts/infer_my_eyes_preferences_v1.mjs",
+    "my-eyes:apply-preference-review-v1": "node scripts/apply_my_eyes_preference_review_v1.mjs",
+    "my-eyes:apply-card-diagnostic-000001": "node scripts/apply_card_diagnostic_pair_000001.mjs",
+    "my-eyes:apply-card-positive-reference-000001": "node scripts/apply_card_positive_reference_000001.mjs",
+    "test:advisory": "node --test tests/runtime/*advisory*.test.mjs tests/runtime/authority-firewall.test.mjs tests/runtime/reference-translator-context.test.mjs",
+    "scenarios:advisory": "node scripts/run_advisory_scenarios.mjs",
+    "test:reference-translator": "node --test tests/runtime/reference-translator-*.test.mjs",
+    "scenarios:reference-translator": "node scripts/run_reference_translator_scenarios.mjs",
+    "smoke:reference-translator": "node scripts/smoke_reference_translator.mjs",
+    "build:reference-translator-knowledge": "node scripts/generate_reference_translator_knowledge_v1_1.mjs",
+    "check:reference-translator-knowledge": "node scripts/generate_reference_translator_knowledge_v1_1.mjs --check",
+    "report:reference-translator-prompt": "node scripts/report_reference_translator_prompt_v1_1.mjs",
+    "eval:reference-translator:cognitive": "node scripts/run_reference_translator_cognitive_evals_v1_1.mjs",
+    "test:reference-translator:cognitive": "node --test tests/runtime/reference-translator-cognitive-v1.1.test.mjs tests/runtime/reference-translator-knowledge-v1.1.test.mjs",
+    "eval:reference-translator:live": "node scripts/run_reference_translator_live_multimodal_eval.mjs",
+    "test:reference-translator:live": "node --test tests/runtime/reference-translator-live-*.test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

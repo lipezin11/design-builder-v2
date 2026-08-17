@@ -1,0 +1,199 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "schema_contract": {
+    "schema_name": "reference_transfer_plan",
+    "schema_id": "https://design-builder.io/schemas/reference_transfer_plan.schema.json",
+    "sha256": "0a9c1cde9a1f9511a4359cab77d101b1c948391269bed5ccd1e95f148dde05b2"
+  },
+  "schema_correction_protocol_version": "1.0.0",
+  "input_mode": "MULTIMODAL",
+  "status": "FAILED",
+  "started_at": "2026-08-16T23:15:37.827Z",
+  "completed_at": "2026-08-16T23:15:53.675Z",
+  "input_hash": "ecc767f0df3eeab67dddd9bf7451be110c666ac7ee4787012898e1628804ba41",
+  "input_artifacts": {
+    "context_id": "ctx_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate",
+    "brief_ref": {
+      "artifact_id": "brief_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "primary_tech_reference",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": []
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "KIE_AI",
+    "model": "gemini-2.5-flash"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "SCHEMA_ENUM_MISMATCH"
+      ],
+      "diagnostic_summaries": [
+        {
+          "stage": "SCHEMA",
+          "path": "/reference_analyses/0/authority",
+          "keyword": "enum",
+          "diagnostic_code": "SCHEMA_ENUM_MISMATCH",
+          "schema_path": "#/properties/reference_analyses/items/properties/authority/enum",
+          "allowed_values": [
+            "USER_PRIMARY_REFERENCE",
+            "USER_SECONDARY_REFERENCE",
+            "SUPPORTING_REFERENCE"
+          ],
+          "allowed_values_count": 3,
+          "received_value": "PRIMARY_REFERENCE",
+          "received_type": "string"
+        }
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 12447,
+        "knowledge_characters": 476601,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 492013,
+        "schema_characters": 12075,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32456,
+        "total_textual_characters": 524469,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1567784,
+        "input_tokens": 131118,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 1048576,
+        "headroom_tokens": 901074,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "KIE_AI",
+        "model": "gemini-2.5-flash",
+        "provider_response_id": "chatcmpl-20260817071809187126433hXyAhNVF",
+        "finish_reason": "stop",
+        "transport_attempt_count": 1,
+        "latency_ms": 15787,
+        "final_attempt_latency_ms": 15787,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 12447,
+          "knowledge_characters": 476601,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 492013,
+          "schema_characters": 12075,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32456,
+          "total_textual_characters": 524469,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1567784,
+          "input_tokens": 101493,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 1048576,
+          "headroom_tokens": 930699,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 101493,
+          "output_tokens": 1875,
+          "total_tokens": 103368,
+          "cached_tokens": null,
+          "reasoning_tokens": 0
+        },
+        "provider_reported_credits": 2.11,
+        "structured_output_mode": "NONE",
+        "hidden_reasoning_persisted": false
+      },
+      "raw_candidate": {
+        "artifact_type": "REFERENCE_TRANSLATOR_RAW_CANDIDATE",
+        "status": "REJECTED_CANDIDATE",
+        "run_id": "run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate",
+        "attempt": 1,
+        "raw_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\attempt_01.raw.json",
+        "sha256": "1d8ea00bbf9d084092696b60056f342588e9935d72d6384d83aa5c9339b0ee6d",
+        "byte_length": 6610,
+        "representation": "RAW_TEXT",
+        "created_at": "2026-08-16T23:15:53.666Z",
+        "metadata_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\attempt_01.meta.json"
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T23:15:37.827Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T23:15:37.855Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T23:15:37.855Z",
+      "attempt": 1
+    },
+    {
+      "state": "RAW_CANDIDATE_PERSISTED",
+      "at": "2026-08-16T23:15:53.669Z",
+      "attempt": 1,
+      "path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\attempt_01.raw.json",
+      "status": "REJECTED_CANDIDATE"
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T23:15:53.669Z",
+      "attempt": 1
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T23:15:53.675Z",
+      "attempt": 1,
+      "code": "REFERENCE_PLAN_SCHEMA_INVALID"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T23:15:53.675Z",
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED"
+    }
+  ],
+  "validation_outcomes": [],
+  "output_plan_id": null,
+  "structured_decision_summary": [],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

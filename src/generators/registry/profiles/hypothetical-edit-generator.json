@@ -1,0 +1,30 @@
+{
+  "profile_id": "profile-hypothetical-edit-v1",
+  "profile_version": "1.0.0",
+  "provider": "TEST_PROVIDER",
+  "model_family": "HYPOTHETICAL_EDIT_MODEL",
+  "model_name": "hypothetical-edit-v1",
+  "profile_type": "HYPOTHETICAL_TEST_PROFILE",
+  "instruction_format": "MULTIPART",
+  "supported_generation_modes": ["EDIT", "REGENERATE"],
+  "capabilities": [
+    { "capability_id": "supports_image_reference", "supported": true, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_identity_reference", "supported": true, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_edit_target", "supported": true, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_masking", "supported": true, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_text_rendering", "supported": true, "confidence": "MEDIUM", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_exact_text", "supported": true, "confidence": "MEDIUM", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_external_text_overlay", "supported": true, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_negative_constraints", "supported": true, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_structured_instruction", "supported": true, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" },
+    { "capability_id": "supports_multiple_outputs", "supported": false, "confidence": "HIGH", "source": "HYPOTHETICAL_TEST_PROFILE" }
+  ],
+  "limits": { "max_reference_assets": 2, "max_outputs": 1 },
+  "asset_rules": { "requires_explicit_slots": true },
+  "reference_rules": { "preserves_declared_intensity": true },
+  "text_rules": { "exact_text_requires_capability": "supports_exact_text" },
+  "edit_rules": { "edit_target_is_structural_authority": true, "requires_editable_region": true },
+  "output_rules": { "supports_explicit_dimensions": true },
+  "adapter_id": "hypothetical-edit-test-adapter",
+  "metadata": { "classification": "HYPOTHETICAL_TEST_PROFILE", "description": "Edit-specialized test profile; not associated with any real product." }
+}

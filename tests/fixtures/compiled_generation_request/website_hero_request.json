@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "request_id": "cgr-website-hero-request",
+  "project_id": "project-cgr-website-hero-request",
+  "run_id": "run-cgr-website-hero-request-001",
+  "compiler_input_ref": {
+    "artifact_id": "ci-website-hero-request",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://compiler-input/ci-website-hero-request/1.0.0",
+    "checksum": "sha256:ci-website-hero-request"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "ffs-website-hero-stylist",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-website-hero-stylist/1.0.0",
+    "checksum": "sha256:ffs-website-hero-stylist"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "GENERATE",
+  "compiled_instruction": {
+    "instruction_format": "PLAIN_TEXT",
+    "final_visual_description": "Final frame contains a dominant right-side subject integrated across foreground, subject and atmospheric background planes, with the left-side functional space and approved lighting hierarchy preserved.",
+    "plain_text": "Final frame contains a dominant right-side subject integrated across foreground, subject and atmospheric background planes, with the left-side functional space and approved lighting hierarchy preserved."
+  },
+  "control_layer": {
+    "creative_authority": "NONE",
+    "preserve_identity": true,
+    "preserve_reference_authority": true,
+    "preserve_text_locks": true,
+    "preserve_edit_target": false,
+    "preserve_composition": true,
+    "semantic_change_forbidden": true
+  },
+  "asset_bindings": [],
+  "reference_instructions": [],
+  "identity_instructions": [],
+  "text_instructions": [
+    {
+      "text_id": "hero-copy",
+      "content": "",
+      "exact_text_lock": false,
+      "render_mode": "EXTERNAL_OVERLAY",
+      "required": false,
+      "source_ref": "compiler_input.text_bindings.hero-copy"
+    }
+  ],
+  "negative_constraints": [
+    {
+      "constraint_id": "neg-random-objects",
+      "statement": "Do not add unapproved narrative objects.",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements"
+    },
+    {
+      "constraint_id": "neg-composition",
+      "statement": "Do not alter focal hierarchy or occupy protected negative space.",
+      "source_ref": "final_frame_spec.protected_fields.composition"
+    },
+    {
+      "constraint_id": "neg-generated-copy",
+      "statement": "Do not render text in the image.",
+      "source_ref": "final_frame_spec.typography_system.text_rendering_mode"
+    }
+  ],
+  "output_parameters": {
+    "aspect_ratio": "16:9",
+    "output_role": "BACKGROUND_FOR_HTML_OVERLAY",
+    "number_of_variants": 1
+  },
+  "protected_fields": [
+    {
+      "field_id": "pf-composition",
+      "target": "composition",
+      "rule": "Preserve hierarchy and subject region.",
+      "source_ref": "final_frame_spec.protected_fields.composition",
+      "loss_category": "COMPOSITION_LOSS"
+    },
+    {
+      "field_id": "pf-depth",
+      "target": "depth_system",
+      "rule": "Preserve layered depth architecture.",
+      "source_ref": "final_frame_spec.protected_fields.depth",
+      "loss_category": "DEPTH_LOSS"
+    },
+    {
+      "field_id": "pf-copy-region",
+      "target": "composition.negative_space_regions.left-copy",
+      "rule": "Keep left 42 percent quiet and clear for external HTML copy.",
+      "source_ref": "final_frame_spec.protected_fields.left-copy",
+      "loss_category": "NEGATIVE_SPACE_LOSS"
+    }
+  ],
+  "variation_policy": [
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "No identity variation.",
+      "source_ref": "compiler_input.controlled_variation.identity"
+    },
+    {
+      "domain": "composition",
+      "level": "NONE",
+      "rule": "No composition variation.",
+      "source_ref": "compiler_input.controlled_variation.composition"
+    },
+    {
+      "domain": "microdetails",
+      "level": "MEDIUM",
+      "rule": "Incidental texture may vary.",
+      "source_ref": "compiler_input.controlled_variation.microdetails"
+    }
+  ],
+  "capability_report": {
+    "profile_data_classification": "HYPOTHETICAL_TEST_DATA",
+    "supported_requirements": [
+      {
+        "requirement_ref": "final_frame_spec.depth_system",
+        "capability_ref": "profile.supports_structured_prompt",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      }
+    ],
+    "partially_supported_requirements": [],
+    "unsupported_requirements": [],
+    "unknown_capabilities": []
+  },
+  "compatibility_status": "FULLY_COMPATIBLE",
+  "warnings": [],
+  "errors": [],
+  "compiler_trace": {
+    "compiler_profile": "test-compiler-profile",
+    "compiler_version": "1.0.0",
+    "input_artifact": "ci-website-hero-request",
+    "transformations_applied": [
+      {
+        "transformation": "Converted semantic regions and visual systems into target-generator phrasing.",
+        "source_ref": "final_frame_spec",
+        "semantic_change": false
+      }
+    ],
+    "warnings": [],
+    "capability_decisions": [
+      "All hard requirements mapped to supported hypothetical capabilities."
+    ],
+    "output_format_used": "PLAIN_TEXT"
+  },
+  "provenance": {
+    "producer": "GENERATOR_COMPILER",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-09T21:15:00-03:00",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ]
+  },
+  "status": "REQUEST_READY"
+}

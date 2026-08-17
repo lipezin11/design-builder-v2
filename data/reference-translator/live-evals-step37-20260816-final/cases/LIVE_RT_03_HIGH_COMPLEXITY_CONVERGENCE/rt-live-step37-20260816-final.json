@@ -1,0 +1,298 @@
+{
+  "artifact_classification": "EVALUATION_ARTIFACT",
+  "suite_run_id": "rt-live-step37-20260816-final",
+  "case_id": "LIVE_RT_03_HIGH_COMPLEXITY_CONVERGENCE",
+  "reference_path": "data/my_eyes/rejected/3.png",
+  "target_type": "science museum exhibition poster",
+  "candidates": [
+    {
+      "candidate_status": "ACCEPTED_CANDIDATE",
+      "visible_candidate": "\n{\n  \"schema_version\": \"1.0.0\",\n  \"plan_id\": \"plan_live_rt_03_high_complexity_convergence\",\n  \"project_id\": \"project_live_rt_03_high_complexity_convergence\",\n  \"brief_spec_version\": \"1.0.0\",\n  \"status\": \"READY_FOR_DIRECTOR\",\n  \"transfer_mode\": \"REFERENCE_REINTERPRETATION\",\n  \"transfer_intensity\": {\n    \"value\": \"HIGH\",\n    \"source\": \"USER_ASSET\",\n    \"confidence\": \"HIGH\"\n  },\n  \"base_analysis\": {\n    \"base_asset_id\": null,\n    \"semantic_identity\": \"science museum exhibition poster about time, matter, and human curiosity\",\n    \"protected_elements\": [\n      \"target professional context\",\n      \"target communication goal\",\n      \"exhibition thesis coherence\"\n    ],\n    \"required_copy\": [],\n    \"subject_identity_requirements\": \"NONE\",\n    \"existing_composition_constraints\": [\n      \"4:5 portrait aspect ratio\",\n      \"Instagram platform\",\n      \"text overlay expected\"\n    ],\n    \"elements_allowed_to_change\": [\n      \"composition\",\n      \"environment\",\n      \"lighting\",\n      \"color relationships\",\n      \"material language\",\n      \"typography\",\n      \"narrative objects\",\n      \"subject representation\"\n    ],\n    \"elements_forbidden_to_change\": [\n      \"target professional context\",\n      \"target communication goal\"\n    ]\n  },\n  \"reference_analyses\": [\n    {\n      \"reference_asset_id\": \"live_ref_dense_surreal\",\n      \"role\": \"PRIMARY_REFERENCE\",\n      \"scope\": \"GLOBAL_VISUAL_DIRECTION\",\n      \"authority\": \"USER_PRIMARY_REFERENCE\",\n      \"observations\": [\n        {\n          \"observation_id\": \"OBS-01\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Centered figure with massive display typography 'PROMPTS' occupying upper field as environmental mass, creating asymmetric balance with lower text block\",\n          \"region\": \"full frame\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-02\",\n          \"category\": \"DEPTH\",\n          \"description\": \"Foreground occlusion with classical columns and objects entering frame from upper left and right edges, creating layered depth and immersion\",\n          \"region\": \"foreground edges\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-03\",\n          \"category\": \"LIGHTING\",\n          \"description\": \"Cinematic rim lighting separating subject from teal background, warm key light on face and hands, atmospheric haze\",\n          \"region\": \"subject and background\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-04\",\n          \"category\": \"COLOR\",\n          \"description\": \"Teal-green dominant environment with amber/gold accents, high contrast between cool background and warm foreground objects\",\n          \"region\": \"full frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-05\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Overscale display type 'PROMPTS' and 'Creative DB' integrated into scene as environmental mass, with tight stacked microcopy at top\",\n          \"region\": \"upper and lower fields\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-06\",\n          \"category\": \"NARRATIVE_OBJECT\",\n          \"description\": \"Levitating thematic object cluster: classical columns, pocket watch, old book, fountain pen, lightbulb sketch, and mushroom mug arranged around subject\",\n          \"region\": \"surrounding subject\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-07\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Diagonal flow from upper left to lower right created by column angle, gaze direction, and typography\",\n          \"region\": \"full frame\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-08\",\n          \"category\": \"MATERIAL\",\n          \"description\": \"Material contrast between warm stone/wood/gold and cool teal tile/metal/glass\",\n          \"region\": \"throughout\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-09\",\n          \"category\": \"SUBJECT_TREATMENT\",\n          \"description\": \"Centered figure with direct camera gaze, holding focal prop (mug), wearing embroidered denim jacket\",\n          \"region\": \"center\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-10\",\n          \"category\": \"ENVIRONMENT\",\n          \"description\": \"Tiled bathroom interior with vintage fixtures, creating surreal domestic-scientific hybrid space\",\n          \"region\": \"background\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        }\n      ],\n      \"reference_dna\": {\n        \"dense_semantic_cluster\": \"levitating thematic objects create wonder and curiosity\",\n        \"typography_as_environment\": \"overscale type integrated into scene as mass\",\n        \"diagonal_flow\": \"dynamic energy from upper left to lower right\",\n        \"warm_cool_contrast\": \"amber/gold against teal/green\",\n        \"cinematic_lighting\": \"rim light and atmospheric haze\",\n        \"foreground_occlusion\": \"objects entering frame create depth and immersion\"\n      },\n      \"transfer_relevance\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"design_decision_map\": [\n    {\n      \"mapping_id\": \"MAP-01\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-01\", \"OBS-05\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Exhibition title as environmental typography with diagonal flow, integrated into scene as mass\",\n      \"rationale\": \"Source uses massive display type as environmental counter-mass and hierarchy driver. For science museum, adapt this to exhibition name and museum branding while preserving the typography-as-environment function.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"protected_dependencies\": [\"diagonal flow\", \"asymmetric balance\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-02\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-02\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Foreground scientific artifacts (instruments, specimens, temporal devices) entering frame to create layered depth and immersion\",\n      \"rationale\": \"Source foreground occlusion creates spatial complexity and viewer proximity. Adapt to target-native scientific objects that belong to museum context while preserving the depth layering function.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"atmospheric perspective\", \"subject separation\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-03\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-03\", \"OBS-04\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Atmospheric perspective with target-owned color hierarchy, preserving warm-cool separation\",\n      \"rationale\": \"Source uses teal-green background with warm amber accents to separate planes and create mood. Adapt to museum-appropriate palette while preserving the functional temperature contrast and atmospheric depth.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"rim lighting\", \"subject readability\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-04\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-03\"],\n      \"action\": \"TRANSFER\",\n      \"target_in_new_composition\": \"Cinematic rim light and warm key light on hero, maintaining separation from background\",\n      \"rationale\": \"Lighting logic is category-agnostic and effectively creates hierarchy, volume, and drama. Transfer the motivated rim and key light behavior to target subject or artifact.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"subject form\", \"background value\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-05\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-08\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Material contrast between warm organic/analog surfaces and cool analytical/structural surfaces\",\n      \"rationale\": \"Source contrasts warm stone/wood/gold against cool tile/metal. Adapt to museum materials (brass, glass, paper, stone) that communicate time, matter, and curiosity through tactile opposition.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"lighting direction\", \"color temperature\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-06\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-06\", \"OBS-09\"],\n      \"action\": \"REINVENT\",\n      \"target_in_new_composition\": \"Levitation of science-appropriate artifacts (precision instruments, temporal devices, specimen representations, equations) clustered around hero\",\n      \"rationale\": \"Source object cluster creates wonder and thematic density through surreal levitation. For science museum, replace creative-design props with verified scientific artifacts that represent time, matter, and curiosity while preserving the clustered composition.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"atmospheric depth\", \"foreground occlusion\", \"material contrast\"],\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"creative services personal brand poster\",\n        \"target_product_category\": \"science museum exhibition poster\",\n        \"literal_object\": \"classical columns, pocket watch, old book, fountain pen, lightbulb sketch, mushroom mug\",\n        \"visual_function\": \"levitating semantic cluster expressing theme through related artifacts\",\n        \"material_language\": \"warm stone/wood/gold against cool teal/amber\",\n        \"emotional_effect\": \"wonder, curiosity, intellectual playfulness\",\n        \"equivalent_adaptation\": \"levitating scientific artifacts (precision instruments, temporal devices, specimen jars, equations, optical equipment) in warm brass/glass against cool museum architecture\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"scientific instruments and museum architecture naturally belong to a science exhibition context, preserving the wonder and curiosity while replacing creative-design specificity\"\n      },\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-07\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-01\", \"OBS-05\", \"OBS-07\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Exhibition name, dates, and museum name as integrated display typography following diagonal flow\",\n      \"rationale\": \"Source integrates typography into scene geometry and flow. Adapt to target copy needs while preserving the typography-as-environment and directional reading functions.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"diagonal flow\", \"hierarchy\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-08\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-05\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"Source microcopy 'DESIGN QUE IMPACTA. IDEIAS QUE VENDEM.' and brand taglines\",\n      \"rationale\": \"Source text is brand-specific Portuguese copy for creative services. It cannot transfer to science museum context and must be replaced with target exhibition copy.\",\n      \"strength\": \"NONE\",\n      \"flexibility\": \"LOCKED\",\n      \"protected_dependencies\": [],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-09\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-06\", \"OBS-09\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"Source focal prop (mushroom mug) and specific object identities\",\n      \"rationale\": \"Mushroom mug is category-specific to creative/psychedelic context and has no place in science museum exhibition. All source objects must be replaced with target-native artifacts.\",\n      \"strength\": \"NONE\",\n      \"flexibility\": \"LOCKED\",\n      \"protected_dependencies\": [],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-10\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"observation_ids\": [\"OBS-09\", \"OBS-10\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"Source person identity, wardrobe, and bathroom environment\",\n      \"rationale\": \"Source person (Neymar Jr.), denim jacket, and tiled bathroom are identity-specific and category-inappropriate. Target requires no reference person identity and a professional museum context.\",\n      \"strength\": \"NONE\",\n      \"flexibility\": \"LOCKED\",\n      \"protected_dependencies\": [],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"conflicts\": [\n    {\n      \"conflict_id\": \"CONF-01\",\n      \"type\": \"REFERENCE_VS_SUBJECT_IDENTITY\",\n      \"description\": \"Source features identifiable person (Neymar Jr.) while target forbids reusing reference person identity\",\n      \"severity\": \"HIGH\",\n      \"blocking\": true,\n      \"involved_assets\": [\"live_ref_dense_surreal\"],\n      \"involved_constraints\": [\"hc_target_semantics_live_rt_03_high_complexity_convergence\"],\n      \"translator_position\": \"Discard source person entirely; use target-native figure or abstract hero\",\n      \"resolution_status\": \"RESOLVED_BY_DISCARD\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONF-02\",\n      \"type\": \"REFERENCE_VS_BRAND\",\n      \"description\": \"Source contains 'Creative DB' and 'GAB MAZZEI' branding which cannot transfer to science museum target\",\n      \"severity\": \"HIGH\",\n      \"blocking\": true,\n      \"involved_assets\": [\"live_ref_dense_surreal\"],\n      \"involved_constraints\": [\"hc_target_semantics_live_rt_03_high_complexity_convergence\"],\n      \"translator_position\": \"Discard all source branding; replace with target museum and exhibition identity\",\n      \"resolution_status\": \"RESOLVED_BY_DISCARD\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONF-03\",\n      \"type\": \"REFERENCE_VS_COPY\",\n      \"description\": \"Source Portuguese copy 'SURPREENDA SEUS CLIENTES COM ESSES' and taglines are not transferable to target\",\n      \"severity\": \"HIGH\",\n      \"blocking\": true,\n      \"involved_assets\": [\"live_ref_dense_surreal\"],\n      \"involved_constraints\": [\"hc_target_semantics_live_rt_03_high_complexity_convergence\"],\n      \"translator_position\": \"Discard all source text; generate target exhibition copy\",\n      \"resolution_status\": \"RESOLVED_BY_DISCARD\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONF-04\",\n      \"type\": \"REFERENCE_VS_FORMAT\",\n      \"description\": \"Source aspect ratio and composition layout differ from target 4:5 portrait Instagram format\",\n      \"severity\": \"MEDIUM\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_dense_surreal\"],\n      \"involved_constraints\": [\"format aspect ratio 4:5\"],\n      \"translator_position\": \"Recompose hierarchy and territorial logic for portrait orientation while preserving flow and density\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"non_negotiable_anchors\": [\n    {\n      \"anchor_id\": \"ANCH-01\",\n      \"description\": \"Dense semantic object cluster with thematic convergence\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"function\": \"Create wonder and intellectual curiosity through related artifacts\",\n      \"importance\": \"CRITICAL\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"Core reference DNA; defines the dense surreal poster genre and supports the brief's demand for meaningful complexity\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCH-02\",\n      \"description\": \"Typography as environmental mass and counter-weight\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"function\": \"Establish hierarchy and integrate communication into scene\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"Distinctive visual mechanism that makes complexity legible and creates graphic scale\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCH-03\",\n      \"description\": \"Diagonal flow creating dynamic energy\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"function\": \"Guide eye through layered narrative stops\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Compositional energy that works across categories and supports the 'inviting' communication goal\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCH-04\",\n      \"description\": \"Cinematic rim light and warm-cool material contrast\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"function\": \"Separate hero from environment and create material richness\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Lighting logic is category-agnostic and emotionally effective for wonder and intelligence tone\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCH-05\",\n      \"description\": \"Foreground occlusion and layered depth\",\n      \"source_reference_asset_id\": \"live_ref_dense_surreal\",\n      \"function\": \"Create immersion and spatial complexity\",\n      \"importance\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Depth mechanism supports the dense narrative requirement and Instagram portrait format\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"flexible_areas\": [\n    {\n      \"area\": \"Object inventory and semantic content\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"All source objects are category-specific to creative design and must be replaced with science-appropriate artifacts representing time, matter, and curiosity\"\n    },\n    {\n      \"area\": \"Typography content and language\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"Source text is brand-specific and in Portuguese; target requires exhibition title, dates, and museum name in target language\"\n    },\n    {\n      \"area\": \"Subject representation\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Source person identity is protected; target may use scientist, explorer, abstract form, or artifact as hero\"\n    },\n    {\n      \"area\": \"Color palette values\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Source teal-amber grade can adapt to museum brand colors while preserving warm-cool contrast logic\"\n    },\n    {\n      \"area\": \"Environment setting\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Source bathroom interior is specific and surreal; target can use museum interior, laboratory, or abstract scientific space\"\n    }\n  ],\n  \"risks\": [\n    {\n      \"risk_id\": \"RISK-01\",\n      \"description\": \"Identity leakage: Source celebrity (Neymar Jr.) may unconsciously influence target subject styling or pose\",\n      \"severity\": \"HIGH\",\n      \"mitigation\": \"Explicitly discard source person, wardrobe, and pose; use target-native figure or abstract hero with identity-safe crop\"\n    },\n    {\n      \"risk_id\": \"RISK-02\",\n      \"description\": \"Category mismatch: Creative-design props (mushrooms, fountain pen, denim) may leak into science context if not actively replaced\",\n      \"severity\": \"HIGH\",\n      \"mitigation\": \"Replace all props with verified scientific instruments, specimens, or temporal devices related to time, matter, and curiosity\"\n    },\n    {\n      \"risk_id\": \"RISK-03\",\n      \"description\": \"Surface copy: Floating object logic may be copied without semantic fit to science theme\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Ensure every levitating object directly supports exhibition thesis of time, matter, or human curiosity\"\n    },\n    {\n      \"risk_id\": \"RISK-04\",\n      \"description\": \"Undertransfer: Complexity may be reduced due to perceived risk of dense composition\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Preserve controlled convergence and layered depth; complexity is required by brief and supported by My Eyes advisory\"\n    },\n    {\n      \"risk_id\": \"RISK-05\",\n      \"description\": \"Overtransfer: Exact composition coordinates or object arrangement may be traced\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Rebuild composition for 4:5 portrait with new territorial logic, flow route, and object placement\"\n    }\n  ],\n  \"open_questions\": [\n    {\n      \"question_id\": \"Q-01\",\n      \"question\": \"Should the poster feature a specific scientist/explorer figure, an abstract representation of curiosity, or focus on artifacts without a person?\",\n      \"target_audience\": \"CREATIVE_DIRECTOR\"\n    },\n    {\n      \"question_id\": \"Q-02\",\n      \"question\": \"Which specific scientific instruments or artifacts best represent the intersection of time, matter, and curiosity for the target audience?\",\n      \"target_audience\": \"CREATIVE_DIRECTOR\"\n    }\n  ],\n  \"provenance\": {\n    \"translator_version\": \"1.0.0\",\n    \"created_at\": \"2026-08-16T00:00:00Z\",\n    \"notes\": \"Reference analysis completed for live multimodal evaluation. Source is a dense surreal personal brand poster. Translation focuses on convergence, density, and typographic mass mechanisms while discarding identity, brand, and category-specific props.\"\n  },\n  \"confidence\": {\n    \"overall\": \"HIGH\",\n    \"rationale\": \"Reference provides clear visual evidence for multiple transferable mechanisms. Target constraints are explicit. Cross-category translation path is well-defined with available target-native alternatives.\"\n  },\n  \"director_handoff\": {\n    \"what_must_survive\": [\n      \"convergent density of semantically related objects\",\n      \"typography as environmental mass and counter-weight\",\n      \"diagonal momentum and dynamic asymmetry\",\n      \"warm-cool material temperature contrast\",\n      \"cinematic rim light separation\"\n    ],\n    \"what_should_survive\": [\n      \"foreground occlusion for immersion\",\n      \"atmospheric depth and haze\",\n      \"object clustering with levitation\",\n      \"surreal wonder tone\",\n      \"layered reading from foreground to background\"\n    ],\n    \"what_can_change\": [\n      \"all object inventory and semantic content\",\n      \"all text content and language\",\n      \"subject identity and representation\",\n      \"specific color values and palette\",\n      \"environment setting and architecture\",\n      \"exact composition coordinates for 4:5 portrait\"\n    ],\n    \"key_conflicts\": [\n      \"source celebrity identity vs target no-identity rule\",\n      \"source creative-design category vs target science museum\",\n      \"source brand copy vs target exhibition copy\",\n      \"source aspect ratio vs target 4:5 portrait\"\n    ],\n    \"recommended_anchors\": [\n      \"dense semantic cluster with thematic convergence\",\n      \"typographic counter-mass integrated into scene\",\n      \"diagonal flow creating directional energy\",\n      \"rim-lit hero with warm-cool contrast\",\n      \"foreground occlusion for spatial immersion\"\n    ],\n    \"creative_opportunities\": [\n      \"Replace creative props with scientific instruments, temporal devices, specimens, and equations\",\n      \"Use actual exhibition content as levitating text and objects\",\n      \"Leverage 4:5 portrait for stacked narrative from foreground occlusion to background depth\",\n      \"Incorporate museum architecture or laboratory environment as framing device\",\n      \"Use target museum brand colors within the warm-cool contrast logic\"\n    ],\n    \"warnings\": [\n      \"Do not reuse Neymar Jr. likeness, styling, or pose\",\n      \"Avoid creative-design clichés (mushrooms, denim, fountain pens, design studio props)\",\n      \"Ensure scientific accuracy in any specimens, instruments, or equations shown\",\n      \"Maintain readability at Instagram scale with strong luminance hierarchy\",\n      \"Preserve controlled complexity; do not reduce density simply because the image is busy\"\n    ]\n  }\n}",
+      "provider_metadata": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-2b16f1a6-fc7c-4303-8d22-458ce6be2432",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 89744,
+        "final_attempt_latency_ms": 78233,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_dense_surreal",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 2816247,
+            "sha256": "fd78a948ac123108bad39cf90136eb6c016434dafc09af834560da38cddadb57"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4287,
+          "reference_context_characters": 862,
+          "my_eyes_advisory_characters": 880,
+          "vkb_advisory_characters": 799,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 31647,
+          "total_textual_characters": 518465,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 3754996,
+          "serialized_http_body_characters": 4282887,
+          "input_tokens": 96827,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148933,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96827,
+          "output_tokens": 15106,
+          "total_tokens": 111933,
+          "cached_tokens": 88608,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "evaluation": {
+    "case_id": "LIVE_RT_03_HIGH_COMPLEXITY_CONVERGENCE",
+    "status": "TECHNICALLY_ACCEPTED",
+    "quality_class": "SURFACE_COPY_WARNING",
+    "creative_approval": "NOT_PERFORMED",
+    "checks": [
+      {
+        "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+        "outcome": "PASS",
+        "evidence": "Requires traceable observations and a transport record containing actual image bytes or an HTTPS image."
+      },
+      {
+        "category": "MECHANISM_IDENTIFICATION",
+        "outcome": "PASS",
+        "evidence": "Reference DNA and reference-specific rationales must both be present."
+      },
+      {
+        "category": "FUNCTION_BEFORE_APPEARANCE",
+        "outcome": "PASS",
+        "evidence": "At least one source manifestation must be evaluated rather than all being transferred directly."
+      },
+      {
+        "category": "REFERENCE_DNA_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "Reference DNA must connect to at least one meaningful target decision."
+      },
+      {
+        "category": "TARGET_SEMANTICS_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "Structured protection exists; final semantic adequacy remains a human judgment."
+      },
+      {
+        "category": "TARGET_NATIVE_ADAPTATION",
+        "outcome": "PASS",
+        "evidence": "Target-native adaptation is represented by ADAPT or REINVENT decisions."
+      },
+      {
+        "category": "LITERAL_COPY_AVOIDED",
+        "outcome": "FAIL",
+        "evidence": "Target-directed text repeats prohibited manifestations: source title, source object inventory"
+      },
+      {
+        "category": "SURFACE_COPY_RISK",
+        "outcome": "WARNING",
+        "evidence": "Direct transfer ratio and prohibited manifestation leakage are checked without a numeric art score."
+      },
+      {
+        "category": "UNDERTRANSFER_RISK",
+        "outcome": "PASS",
+        "evidence": "Highly relevant analysis must produce a meaningful surviving mechanism."
+      },
+      {
+        "category": "OVERTRANSFER_RISK",
+        "outcome": "PASS",
+        "evidence": "Nearly universal direct transfer indicates overtransfer."
+      },
+      {
+        "category": "IDENTITY_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "The plan contains no instruction to reuse the reference person."
+      },
+      {
+        "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "PASS",
+        "evidence": "The brief explicitly protects target copy from source copy."
+      },
+      {
+        "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "PASS",
+        "evidence": "The brief explicitly excludes source brand transfer."
+      },
+      {
+        "category": "MY_EYES_AUTHORITY_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "No absolute My Eyes command language is present."
+      },
+      {
+        "category": "VKB_AUTHORITY_PRESERVED",
+        "outcome": "PASS",
+        "evidence": "No absolute VKB command language is present."
+      },
+      {
+        "category": "SCHEMA_VALID",
+        "outcome": "PASS",
+        "evidence": "Existing schema validator outcome."
+      },
+      {
+        "category": "SEMANTIC_VALID",
+        "outcome": "PASS",
+        "evidence": "Existing semantic validator outcome."
+      },
+      {
+        "category": "QUALITY_GATE_VALID",
+        "outcome": "PASS",
+        "evidence": "Existing quality validator outcome."
+      }
+    ],
+    "cognitive_audit": {
+      "what_the_model_thought_was_important": [
+        "Centered figure with massive display typography 'PROMPTS' occupying upper field as environmental mass, creating asymmetric balance with lower text block",
+        "Foreground occlusion with classical columns and objects entering frame from upper left and right edges, creating layered depth and immersion",
+        "Cinematic rim lighting separating subject from teal background, warm key light on face and hands, atmospheric haze",
+        "Teal-green dominant environment with amber/gold accents, high contrast between cool background and warm foreground objects",
+        "Overscale display type 'PROMPTS' and 'Creative DB' integrated into scene as environmental mass, with tight stacked microcopy at top",
+        "Levitating thematic object cluster: classical columns, pocket watch, old book, fountain pen, lightbulb sketch, and mushroom mug arranged around subject",
+        "Diagonal flow from upper left to lower right created by column angle, gaze direction, and typography",
+        "Material contrast between warm stone/wood/gold and cool teal tile/metal/glass",
+        "Centered figure with direct camera gaze, holding focal prop (mug), wearing embroidered denim jacket",
+        "Tiled bathroom interior with vintage fixtures, creating surreal domestic-scientific hybrid space",
+        "levitating thematic objects create wonder and curiosity",
+        "overscale type integrated into scene as mass",
+        "dynamic energy from upper left to lower right",
+        "amber/gold against teal/green",
+        "rim light and atmospheric haze",
+        "objects entering frame create depth and immersion"
+      ],
+      "what_it_wanted_to_transfer": [
+        {
+          "mapping_id": "MAP-04",
+          "source_observations": [
+            "OBS-03"
+          ],
+          "target_expression": "Cinematic rim light and warm key light on hero, maintaining separation from background",
+          "rationale": "Lighting logic is category-agnostic and effectively creates hierarchy, volume, and drama. Transfer the motivated rim and key light behavior to target subject or artifact."
+        }
+      ],
+      "what_it_wanted_to_adapt": [
+        {
+          "mapping_id": "MAP-01",
+          "source_observations": [
+            "OBS-01",
+            "OBS-05"
+          ],
+          "target_expression": "Exhibition title as environmental typography with diagonal flow, integrated into scene as mass",
+          "rationale": "Source uses massive display type as environmental counter-mass and hierarchy driver. For science museum, adapt this to exhibition name and museum branding while preserving the typography-as-environment function."
+        },
+        {
+          "mapping_id": "MAP-02",
+          "source_observations": [
+            "OBS-02"
+          ],
+          "target_expression": "Foreground scientific artifacts (instruments, specimens, temporal devices) entering frame to create layered depth and immersion",
+          "rationale": "Source foreground occlusion creates spatial complexity and viewer proximity. Adapt to target-native scientific objects that belong to museum context while preserving the depth layering function."
+        },
+        {
+          "mapping_id": "MAP-03",
+          "source_observations": [
+            "OBS-03",
+            "OBS-04"
+          ],
+          "target_expression": "Atmospheric perspective with target-owned color hierarchy, preserving warm-cool separation",
+          "rationale": "Source uses teal-green background with warm amber accents to separate planes and create mood. Adapt to museum-appropriate palette while preserving the functional temperature contrast and atmospheric depth."
+        },
+        {
+          "mapping_id": "MAP-05",
+          "source_observations": [
+            "OBS-08"
+          ],
+          "target_expression": "Material contrast between warm organic/analog surfaces and cool analytical/structural surfaces",
+          "rationale": "Source contrasts warm stone/wood/gold against cool tile/metal. Adapt to museum materials (brass, glass, paper, stone) that communicate time, matter, and curiosity through tactile opposition."
+        },
+        {
+          "mapping_id": "MAP-07",
+          "source_observations": [
+            "OBS-01",
+            "OBS-05",
+            "OBS-07"
+          ],
+          "target_expression": "Exhibition name, dates, and museum name as integrated display typography following diagonal flow",
+          "rationale": "Source integrates typography into scene geometry and flow. Adapt to target copy needs while preserving the typography-as-environment and directional reading functions."
+        }
+      ],
+      "what_it_wanted_to_reinvent": [
+        {
+          "mapping_id": "MAP-06",
+          "source_observations": [
+            "OBS-06",
+            "OBS-09"
+          ],
+          "target_expression": "Levitation of science-appropriate artifacts (precision instruments, temporal devices, specimen representations, equations) clustered around hero",
+          "rationale": "Source object cluster creates wonder and thematic density through surreal levitation. For science museum, replace creative-design props with verified scientific artifacts that represent time, matter, and curiosity while preserving the clustered composition."
+        }
+      ],
+      "what_it_discarded": [
+        {
+          "mapping_id": "MAP-08",
+          "source_observations": [
+            "OBS-05"
+          ],
+          "target_expression": "Source microcopy 'DESIGN QUE IMPACTA. IDEIAS QUE VENDEM.' and brand taglines",
+          "rationale": "Source text is brand-specific Portuguese copy for creative services. It cannot transfer to science museum context and must be replaced with target exhibition copy."
+        },
+        {
+          "mapping_id": "MAP-09",
+          "source_observations": [
+            "OBS-06",
+            "OBS-09"
+          ],
+          "target_expression": "Source focal prop (mushroom mug) and specific object identities",
+          "rationale": "Mushroom mug is category-specific to creative/psychedelic context and has no place in science museum exhibition. All source objects must be replaced with target-native artifacts."
+        },
+        {
+          "mapping_id": "MAP-10",
+          "source_observations": [
+            "OBS-09",
+            "OBS-10"
+          ],
+          "target_expression": "Source person identity, wardrobe, and bathroom environment",
+          "rationale": "Source person (Neymar Jr.), denim jacket, and tiled bathroom are identity-specific and category-inappropriate. Target requires no reference person identity and a professional museum context."
+        }
+      ],
+      "what_it_protected": [
+        "convergent density of semantically related objects",
+        "typography as environmental mass and counter-weight",
+        "diagonal momentum and dynamic asymmetry",
+        "warm-cool material temperature contrast",
+        "cinematic rim light separation"
+      ],
+      "what_risks_it_identified": [
+        "Identity leakage: Source celebrity (Neymar Jr.) may unconsciously influence target subject styling or pose",
+        "Category mismatch: Creative-design props (mushrooms, fountain pen, denim) may leak into science context if not actively replaced",
+        "Surface copy: Floating object logic may be copied without semantic fit to science theme",
+        "Undertransfer: Complexity may be reduced due to perceived risk of dense composition",
+        "Overtransfer: Exact composition coordinates or object arrangement may be traced"
+      ]
+    },
+    "plan_id": "plan_live_rt_03_high_complexity_convergence",
+    "run_id": "run_live_rt_03_high_complexity_convergence-rt-live-step37-20260816-final",
+    "plan_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals-step37-20260816-final\\plans\\plan_live_rt_03_high_complexity_convergence.json",
+    "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals-step37-20260816-final\\runs\\run_live_rt_03_high_complexity_convergence-rt-live-step37-20260816-final.trace.json",
+    "failed_attempts": []
+  }
+}

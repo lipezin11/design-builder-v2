@@ -1,0 +1,122 @@
+{
+  "artifact_classification": "EVALUATION_ARTIFACT",
+  "suite_run_id": "rt-live-kimi-k26-20260816-01",
+  "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+  "reference_path": "data/my_eyes/approved/14.jpeg",
+  "target_type": "executive strategy keynote banner",
+  "candidates": [],
+  "evaluation": {
+    "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+    "status": "PROVIDER_BLOCKED",
+    "quality_class": "PROVIDER_BLOCKED",
+    "creative_approval": "NOT_PERFORMED",
+    "error": {
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED",
+      "message": "Reference Translator exhausted its correction attempts.",
+      "provider_error_code": "MODEL_INVOCATION_FAILED"
+    },
+    "checks": [
+      {
+        "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+        "outcome": "FAIL",
+        "evidence": "No accepted multimodal model response was produced."
+      },
+      {
+        "category": "MECHANISM_IDENTIFICATION",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "FUNCTION_BEFORE_APPEARANCE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "REFERENCE_DNA_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "TARGET_SEMANTICS_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "TARGET_NATIVE_ADAPTATION",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "LITERAL_COPY_AVOIDED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SURFACE_COPY_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "UNDERTRANSFER_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "OVERTRANSFER_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "IDENTITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "MY_EYES_AUTHORITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "VKB_AUTHORITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SCHEMA_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      },
+      {
+        "category": "SEMANTIC_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      },
+      {
+        "category": "QUALITY_GATE_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      }
+    ],
+    "cognitive_audit": {
+      "what_the_model_thought_was_important": [],
+      "what_it_wanted_to_transfer": [],
+      "what_it_wanted_to_adapt": [],
+      "what_it_wanted_to_reinvent": [],
+      "what_it_discarded": [],
+      "what_it_protected": [],
+      "what_risks_it_identified": []
+    },
+    "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\runs\\run_live_rt_01_same_domain_authority-rt-live-kimi-k26-20260816-01.trace.json",
+    "failed_attempts": []
+  }
+}

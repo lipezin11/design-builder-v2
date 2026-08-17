@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_ref_005",
+  "project_id": "proj_demo_05",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "HIGH_FIDELITY_TRANSFER",
+  "transfer_intensity": {
+    "value": "VERY_HIGH",
+    "source": "USER_EXPLICIT",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": "asset_portrait_exec",
+    "semantic_identity": "Executive portrait photo",
+    "protected_elements": ["subject facial identity", "executive suit"],
+    "required_copy": ["The Future of Leadership"],
+    "subject_identity_requirements": "Strict facial recognition preservation",
+    "existing_composition_constraints": ["1200x627 LinkedIn ad format"],
+    "elements_allowed_to_change": ["background environment"],
+    "elements_forbidden_to_change": ["subject face", "headline text"]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "asset_cyber_campaign",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_hf_01",
+          "category": "COLOR",
+          "description": "Dark monochromatic steel blue environment with neon cyan highlights.",
+          "region": "background",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "color": "Dark steel blue with neon cyan highlights",
+        "mood": "High-tech executive cyberpunk"
+      },
+      "transfer_relevance": "VERY_HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_hf_01",
+      "source_reference_asset_id": "asset_cyber_campaign",
+      "observation_ids": ["obs_hf_01"],
+      "action": "TRANSFER",
+      "target_in_new_composition": "Transfer dark steel blue background and neon cyan lighting treatment around the preserved subject portrait.",
+      "rationale": "High fidelity transfer requested by user to embed executive portrait into cyberpunk campaign aesthetic.",
+      "strength": "VERY_HIGH",
+      "flexibility": "LOCKED",
+      "protected_dependencies": ["subject facial identity", "The Future of Leadership headline"],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "conflicts": [],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anc_hf_01",
+      "description": "Cyberpunk steel blue and neon cyan environmental color grading",
+      "source_reference_asset_id": "asset_cyber_campaign",
+      "function": "Global visual direction and mood",
+      "importance": "CRITICAL",
+      "flexibility": "LOCKED",
+      "reason": "User requested very high fidelity transfer of reference style.",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "background architectural detailing",
+      "freedom_level": "LOW",
+      "rationale": "High fidelity requires adhering closely to reference style."
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_hf_01",
+      "description": "Neon cyan lighting might clash with natural skin tones of executive portrait.",
+      "severity": "HIGH",
+      "mitigation": "Technical design room must apply color grading balance on subject skin tones while keeping background cyberpunk."
+    }
+  ],
+  "open_questions": [],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-09T12:00:00Z",
+    "notes": "Hypothetical fixture E (High fidelity reference transfer)."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Explicit user instruction for very high fidelity transfer."
+  },
+  "director_handoff": {
+    "what_must_survive": ["subject facial identity", "The Future of Leadership headline", "steel blue / neon cyan color scheme"],
+    "what_should_survive": ["executive suit integrity"],
+    "what_can_change": ["original background photo replaced by cyberpunk environment"],
+    "key_conflicts": [],
+    "recommended_anchors": ["anc_hf_01"],
+    "creative_opportunities": ["Seamlessly composite executive portrait into dark cyberpunk corporate backdrop."],
+    "warnings": ["Balance neon lighting on subject face to maintain professional dignity."]
+  }
+}

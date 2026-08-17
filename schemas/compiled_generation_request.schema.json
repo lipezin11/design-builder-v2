@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.io/schemas/compiled_generation_request.schema.json",
+  "title": "Design Builder Compiled Generation Request",
+  "description": "Model-specific projection of a frozen Final Frame Spec. It describes the final visual state and carries a separate control layer; it must contain no new creative decisions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "request_id", "project_id", "run_id", "compiler_input_ref", "final_frame_spec_ref",
+    "target_generator", "generation_mode", "compiled_instruction", "control_layer", "asset_bindings",
+    "reference_instructions", "identity_instructions", "text_instructions", "negative_constraints",
+    "output_parameters", "protected_fields", "variation_policy", "capability_report",
+    "compatibility_status", "warnings", "errors", "compiler_trace", "provenance", "status"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" }, "request_id": { "type": "string" },
+    "project_id": { "type": "string" }, "run_id": { "type": "string" },
+    "compiler_input_ref": { "$ref": "#/$defs/artifact_ref" },
+    "final_frame_spec_ref": { "$ref": "#/$defs/artifact_ref" },
+    "target_generator": { "$ref": "#/$defs/target_generator" },
+    "generation_mode": { "type": "string", "enum": ["GENERATE", "EDIT", "REGENERATE", "VARIANT"] },
+    "mode_context": { "$ref": "#/$defs/mode_context" },
+    "compiled_instruction": { "$ref": "#/$defs/compiled_instruction" },
+    "control_layer": {
+      "type": "object", "additionalProperties": false,
+      "required": ["creative_authority", "preserve_identity", "preserve_reference_authority", "preserve_text_locks", "preserve_edit_target", "preserve_composition", "semantic_change_forbidden"],
+      "properties": {
+        "creative_authority": { "const": "NONE" }, "preserve_identity": { "type": "boolean" },
+        "preserve_reference_authority": { "type": "boolean" }, "preserve_text_locks": { "type": "boolean" },
+        "preserve_edit_target": { "type": "boolean" }, "preserve_composition": { "type": "boolean" },
+        "semantic_change_forbidden": { "const": true }
+      }
+    },
+    "asset_bindings": { "type": "array", "items": { "$ref": "#/$defs/compiled_asset_binding" } },
+    "reference_instructions": { "type": "array", "items": { "$ref": "#/$defs/reference_instruction" } },
+    "identity_instructions": { "type": "array", "items": { "$ref": "#/$defs/identity_instruction" } },
+    "text_instructions": { "type": "array", "items": { "$ref": "#/$defs/text_instruction" } },
+    "negative_constraints": { "type": "array", "items": { "$ref": "#/$defs/negative_constraint" } },
+    "output_parameters": { "$ref": "#/$defs/output_parameters" },
+    "protected_fields": { "type": "array", "items": { "$ref": "#/$defs/protected_field" } },
+    "variation_policy": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/variation_rule" } },
+    "capability_report": { "$ref": "#/$defs/capability_report" },
+    "compatibility_status": { "type": "string", "enum": ["FULLY_COMPATIBLE", "COMPATIBLE_WITH_WARNINGS", "BLOCKED_BY_CAPABILITY", "HUMAN_DECISION_REQUIRED"] },
+    "warnings": { "type": "array", "items": { "$ref": "#/$defs/diagnostic" } },
+    "errors": { "type": "array", "items": { "$ref": "#/$defs/diagnostic" } },
+    "compiler_trace": {
+      "type": "object", "additionalProperties": false,
+      "required": ["compiler_profile", "compiler_version", "input_artifact", "transformations_applied", "warnings", "capability_decisions", "output_format_used"],
+      "properties": {
+        "compiler_profile": { "type": "string" }, "compiler_version": { "type": "string" },
+        "input_artifact": { "type": "string" }, "transformations_applied": { "type": "array", "items": { "$ref": "#/$defs/transformation" } },
+        "warnings": { "type": "array", "items": { "type": "string" } },
+        "capability_decisions": { "type": "array", "items": { "type": "string" } },
+        "output_format_used": { "type": "string", "enum": ["PLAIN_TEXT", "STRUCTURED", "MULTIPART", "OTHER"] }
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["producer", "producer_version", "created_at", "sources"],
+      "properties": {
+        "producer": { "const": "GENERATOR_COMPILER" }, "producer_version": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenance_source" } }
+      }
+    },
+    "status": { "type": "string", "enum": ["DRAFT", "REQUEST_READY", "BLOCKED", "HUMAN_DECISION_REQUIRED", "INVALID"] }
+  },
+  "$defs": {
+    "provenance_source": { "type": "string", "enum": ["FINAL_FRAME_SPEC", "COMPILER_PROFILE", "GENERATOR_CAPABILITY_REGISTRY", "USER", "HUMAN_OVERRIDE", "SYSTEM_DERIVED"] },
+    "variation_level": { "type": "string", "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"] },
+    "artifact_ref": {
+      "type": "object", "additionalProperties": false, "required": ["artifact_id", "artifact_version", "artifact_uri"],
+      "properties": { "artifact_id": { "type": "string" }, "artifact_version": { "type": "string" }, "artifact_uri": { "type": "string" }, "checksum": { "type": "string" } }
+    },
+    "target_generator": {
+      "type": "object", "additionalProperties": false, "required": ["provider", "model_family", "model_name", "profile_id", "profile_version"],
+      "properties": { "provider": { "type": "string" }, "model_family": { "type": "string" }, "model_name": { "type": "string" }, "profile_id": { "type": "string" }, "profile_version": { "type": "string" } }
+    },
+    "normalized_region": {
+      "type": "object", "additionalProperties": false, "required": ["region_id", "x", "y", "width", "height"],
+      "properties": { "region_id": { "type": "string" }, "x": { "type": "number", "minimum": 0, "maximum": 1 }, "y": { "type": "number", "minimum": 0, "maximum": 1 }, "width": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }, "height": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 } }
+    },
+    "mode_context": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "edit_target_asset_id": { "type": "string" }, "locked_regions": { "type": "array", "items": { "$ref": "#/$defs/normalized_region" } },
+        "editable_regions": { "type": "array", "items": { "$ref": "#/$defs/normalized_region" } }, "edit_delta": { "type": "string" },
+        "preserve_global_structure": { "type": "boolean" }, "reconstruction_forbidden": { "type": "boolean" },
+        "parent_generation_id": { "type": "string" }, "variation_domains": { "type": "array", "items": { "type": "string" } },
+        "previous_failure_context": { "type": "string" }
+      }
+    },
+    "compiled_instruction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["instruction_format", "final_visual_description"],
+      "properties": {
+        "instruction_format": { "type": "string", "enum": ["PLAIN_TEXT", "STRUCTURED", "MULTIPART", "OTHER"] },
+        "final_visual_description": { "type": "string", "minLength": 1, "description": "Declarative description of the required final visual state, not a history of transformations." },
+        "plain_text": { "type": "string" }, "system_instruction": { "type": "string" }, "user_instruction": { "type": "string" },
+        "negative_instruction": { "type": "string" },
+        "structured_blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/instruction_block" } },
+        "other_payload": { "type": ["object", "array", "string"] }
+      },
+      "allOf": [
+        { "if": { "properties": { "instruction_format": { "const": "PLAIN_TEXT" } }, "required": ["instruction_format"] }, "then": { "required": ["plain_text"] } },
+        { "if": { "properties": { "instruction_format": { "const": "STRUCTURED" } }, "required": ["instruction_format"] }, "then": { "required": ["structured_blocks"] } },
+        { "if": { "properties": { "instruction_format": { "const": "MULTIPART" } }, "required": ["instruction_format"] }, "then": { "anyOf": [{ "required": ["system_instruction", "user_instruction"] }, { "required": ["structured_blocks"] }] } },
+        { "if": { "properties": { "instruction_format": { "const": "OTHER" } }, "required": ["instruction_format"] }, "then": { "required": ["other_payload"] } }
+      ]
+    },
+    "instruction_block": {
+      "type": "object", "additionalProperties": false, "required": ["block_id", "role", "content", "source_refs"],
+      "properties": { "block_id": { "type": "string" }, "role": { "type": "string" }, "content": { "type": "string" }, "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } } }
+    },
+    "compiled_asset_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["asset_id", "adapter_slot", "authority", "required", "source_ref"],
+      "properties": { "asset_id": { "type": "string" }, "adapter_slot": { "type": "string" }, "authority": { "type": "string" }, "required": { "type": "boolean" }, "source_ref": { "type": "string" } }
+    },
+    "reference_instruction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reference_asset_id", "transfer_intensity", "required_anchors", "do_not_copy", "source_ref"],
+      "properties": { "reference_asset_id": { "type": "string" }, "transfer_intensity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] }, "required_anchors": { "type": "array", "minItems": 1, "items": { "type": "string" } }, "do_not_copy": { "type": "array", "items": { "type": "string" } }, "source_ref": { "type": "string" } }
+    },
+    "identity_instruction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["subject_id", "identity_asset_id", "preservation_level", "recognizability_required", "source_ref"],
+      "properties": { "subject_id": { "type": "string" }, "identity_asset_id": { "type": "string" }, "preservation_level": { "type": "string", "enum": ["STRICT", "HIGH", "MEDIUM"] }, "recognizability_required": { "type": "boolean" }, "source_ref": { "type": "string" } }
+    },
+    "text_instruction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["text_id", "content", "exact_text_lock", "render_mode", "required", "source_ref"],
+      "properties": { "text_id": { "type": "string" }, "content": { "type": "string" }, "exact_text_lock": { "type": "boolean" }, "render_mode": { "type": "string", "enum": ["IN_IMAGE", "EXTERNAL_OVERLAY", "NOT_RENDERED"] }, "required": { "type": "boolean" }, "source_ref": { "type": "string" } },
+      "allOf": [{ "if": { "properties": { "exact_text_lock": { "const": true } }, "required": ["exact_text_lock"] }, "then": { "properties": { "content": { "minLength": 1 } } } }]
+    },
+    "negative_constraint": {
+      "type": "object", "additionalProperties": false, "required": ["constraint_id", "statement", "source_ref"],
+      "properties": { "constraint_id": { "type": "string" }, "statement": { "type": "string" }, "source_ref": { "type": "string" } }
+    },
+    "output_parameters": {
+      "type": "object", "additionalProperties": true, "required": ["aspect_ratio", "output_role", "number_of_variants"],
+      "properties": { "aspect_ratio": { "type": "string", "pattern": "^[^:]+:[^:]+$" }, "width": { "type": "integer", "minimum": 1 }, "height": { "type": "integer", "minimum": 1 }, "output_role": { "type": "string" }, "number_of_variants": { "type": "integer", "minimum": 1 }, "transparency": { "type": "boolean" } }
+    },
+    "protected_field": {
+      "type": "object", "additionalProperties": false, "required": ["field_id", "target", "rule", "source_ref", "loss_category"],
+      "properties": { "field_id": { "type": "string" }, "target": { "type": "string" }, "rule": { "type": "string" }, "source_ref": { "type": "string" }, "loss_category": { "type": "string", "enum": ["COMPOSITION_LOSS", "REFERENCE_DILUTION", "TEXT_LOCK_LOSS", "IDENTITY_LOCK_LOSS", "DEPTH_LOSS", "LIGHTING_INTENT_LOSS", "COLOR_INTENT_LOSS", "NEGATIVE_SPACE_LOSS", "OBJECT_LOSS", "TYPOGRAPHY_BEHAVIOR_LOSS", "PROTECTED_FIELD_LOSS", "CONTROLLED_VARIATION_VIOLATION", "HARD_LOCK_LOSS", "OTHER"] } }
+    },
+    "variation_rule": {
+      "type": "object", "additionalProperties": false, "required": ["domain", "level", "rule", "source_ref"],
+      "properties": { "domain": { "type": "string" }, "level": { "$ref": "#/$defs/variation_level" }, "rule": { "type": "string" }, "source_ref": { "type": "string" } }
+    },
+    "capability_report": {
+      "type": "object", "additionalProperties": false,
+      "required": ["profile_data_classification", "supported_requirements", "partially_supported_requirements", "unsupported_requirements", "unknown_capabilities"],
+      "properties": {
+        "profile_data_classification": { "type": "string", "enum": ["REGISTRY_DATA", "HYPOTHETICAL_TEST_DATA"] },
+        "supported_requirements": { "type": "array", "items": { "$ref": "#/$defs/capability_assessment" } },
+        "partially_supported_requirements": { "type": "array", "items": { "$ref": "#/$defs/capability_assessment" } },
+        "unsupported_requirements": { "type": "array", "items": { "$ref": "#/$defs/capability_assessment" } },
+        "unknown_capabilities": { "type": "array", "items": { "$ref": "#/$defs/capability_assessment" } }
+      }
+    },
+    "capability_assessment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["requirement_ref", "capability_ref", "status", "impact", "recommended_action"],
+      "properties": {
+        "requirement_ref": { "type": "string" }, "capability_ref": { "type": "string" },
+        "status": { "type": "string", "enum": ["SUPPORTED", "PARTIAL", "UNSUPPORTED", "UNKNOWN"] },
+        "impact": { "type": "string" }, "recommended_action": { "type": "string", "enum": ["PROCEED", "WARN", "SWITCH_GENERATOR", "EXTERNALIZE_TEXT", "REQUEST_HUMAN_DECISION", "FAIL_COMPILATION", "EXPLICIT_DEGRADATION"] }
+      }
+    },
+    "diagnostic": {
+      "type": "object", "additionalProperties": false, "required": ["code", "message", "severity", "source_ref"],
+      "properties": { "code": { "type": "string" }, "message": { "type": "string" }, "severity": { "type": "string", "enum": ["INFO", "WARNING", "ERROR", "CRITICAL"] }, "source_ref": { "type": "string" } }
+    },
+    "transformation": {
+      "type": "object", "additionalProperties": false, "required": ["transformation", "source_ref", "semantic_change"],
+      "properties": { "transformation": { "type": "string" }, "source_ref": { "type": "string" }, "semantic_change": { "const": false } }
+    }
+  },
+  "allOf": [
+    { "if": { "properties": { "generation_mode": { "const": "EDIT" } }, "required": ["generation_mode"] }, "then": { "required": ["mode_context"], "properties": { "mode_context": { "required": ["edit_target_asset_id", "locked_regions", "editable_regions", "edit_delta", "preserve_global_structure", "reconstruction_forbidden"], "properties": { "preserve_global_structure": { "const": true }, "reconstruction_forbidden": { "const": true }, "editable_regions": { "minItems": 1 } } }, "asset_bindings": { "contains": { "type": "object", "properties": { "authority": { "const": "EDIT_TARGET_AUTHORITY" } }, "required": ["authority"] } }, "control_layer": { "properties": { "preserve_edit_target": { "const": true } } } } } },
+    { "if": { "properties": { "generation_mode": { "const": "REGENERATE" } }, "required": ["generation_mode"] }, "then": { "required": ["mode_context"], "properties": { "mode_context": { "required": ["parent_generation_id", "variation_domains"] } } } },
+    { "if": { "properties": { "generation_mode": { "const": "VARIANT" } }, "required": ["generation_mode"] }, "then": { "required": ["mode_context"], "properties": { "mode_context": { "required": ["variation_domains"], "properties": { "variation_domains": { "minItems": 1 } } } } } },
+    { "if": { "properties": { "status": { "const": "REQUEST_READY" } }, "required": ["status"] }, "then": { "required": ["compiled_instruction", "target_generator"], "properties": { "compatibility_status": { "enum": ["FULLY_COMPATIBLE", "COMPATIBLE_WITH_WARNINGS"] }, "errors": { "maxItems": 0 } } } },
+    { "if": { "properties": { "compatibility_status": { "const": "BLOCKED_BY_CAPABILITY" } }, "required": ["compatibility_status"] }, "then": { "properties": { "status": { "not": { "const": "REQUEST_READY" } }, "errors": { "minItems": 1 } } } }
+  ]
+}

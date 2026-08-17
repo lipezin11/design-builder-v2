@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_ref_002",
+  "project_id": "proj_demo_02",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "STANDARD_REFERENCE_TRANSFER",
+  "transfer_intensity": {
+    "value": "MEDIUM",
+    "source": "MODEL_INFERENCE",
+    "confidence": "MEDIUM"
+  },
+  "base_analysis": {
+    "base_asset_id": "asset_tech_product",
+    "semantic_identity": "Enterprise SaaS dashboard interface",
+    "protected_elements": ["dashboard layout hierarchy"],
+    "required_copy": ["Enterprise AI Platform"],
+    "subject_identity_requirements": "None",
+    "existing_composition_constraints": ["16:9 widescreen"],
+    "elements_allowed_to_change": ["decorative foreground elements"],
+    "elements_forbidden_to_change": ["UI core text"]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "asset_editorial_ref",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "COMPOSITION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_ref_01",
+          "category": "COMPOSITION",
+          "description": "Large blurred red glowing orb entering from bottom right foreground.",
+          "region": "foreground right",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "composition": "Aggressive foreground camera intrusion for depth layering"
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_adapt_01",
+      "source_reference_asset_id": "asset_editorial_ref",
+      "observation_ids": ["obs_ref_01"],
+      "action": "ADAPT",
+      "target_in_new_composition": "Replace red glowing orb with an abstract translucent corporate data node floating near the camera lens in foreground right.",
+      "rationale": "Maintains the depth function and camera proximity intrusion without copying a non-corporate sci-fi glowing orb.",
+      "strength": "MEDIUM",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": ["dashboard layout hierarchy"],
+      "confidence": "HIGH",
+      "provenance": "INFERRED"
+    }
+  ],
+  "conflicts": [],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anc_adapt_01",
+      "description": "Foreground camera intrusion object for depth layering",
+      "source_reference_asset_id": "asset_editorial_ref",
+      "function": "Depth layering and framing",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Reference composition depends on foreground framing.",
+      "provenance": "MODEL_INFERENCE"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "foreground object identity and color",
+      "freedom_level": "HIGH",
+      "rationale": "Object must fit enterprise SaaS context rather than raw sci-fi reference."
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_adapt_01",
+      "description": "Foreground intrusion might obstruct UI readability.",
+      "severity": "MEDIUM",
+      "mitigation": "Position data node outside core UI text area."
+    }
+  ],
+  "open_questions": [],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-09T12:00:00Z",
+    "notes": "Hypothetical fixture B (Adapt not copy)."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Clear functional adaptation of composition."
+  },
+  "director_handoff": {
+    "what_must_survive": ["dashboard layout hierarchy", "Enterprise AI Platform headline"],
+    "what_should_survive": ["foreground depth framing function"],
+    "what_can_change": ["foreground object appearance"],
+    "key_conflicts": [],
+    "recommended_anchors": ["anc_adapt_01"],
+    "creative_opportunities": ["Use a glowing corporate abstract shape as foreground intrusion."],
+    "warnings": ["Ensure foreground object is blurred to maintain depth of field."]
+  }
+}

@@ -1,0 +1,616 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.io/schemas/brief_spec.schema.json",
+  "title": "Design Builder Brief Spec",
+  "description": "Normalized contract produced by the Brief Interpreter representing user intent, input assets, constraints, and requirements without engaging in creative direction.",
+  "type": "object",
+  
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project_mode",
+    "project_type",
+    "user_request",
+    "format",
+    "assets",
+    "hard_constraints",
+    "soft_preferences",
+    "emotional_intent",
+    "creative_freedom",
+    "preservation_requirements",
+    "allowed_transformations",
+    "forbidden_transformations",
+    "ambiguities",
+    "pipeline_hints",
+    "provenance",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Semantic version of the brief spec schema.",
+      "example": "1.0.0"
+    },
+    "project_mode": {
+      "type": "string",
+      "enum": ["NO_REFERENCE", "REFERENCE", "EDIT", "REGENERATION"],
+      "description": "Operational mode of the pipeline."
+    },
+    "project_type": {
+      "type": "string",
+      "enum": [
+        "THUMBNAIL",
+        "WEBSITE_HERO",
+        "LANDING_PAGE_HERO",
+        "BANNER",
+        "SOCIAL_POST",
+        "AD_CREATIVE",
+        "CAROUSEL",
+        "EDITORIAL_VISUAL",
+        "OTHER"
+      ],
+      "description": "Category or type of visual deliverable."
+    },
+    "custom_project_type": {
+      "type": "string",
+      "description": "Custom descriptor if project_type is set to OTHER."
+    },
+    "user_request": {
+      "type": "string",
+      "description": "Raw or cleaned textual prompt and request submitted by the user."
+    },
+    "commercial_objective": {
+      "type": "string",
+      "description": "Business or marketing objective behind the visual piece."
+    },
+    "communication_goal": {
+      "type": "string",
+      "description": "Core message or communication goal to be conveyed."
+    },
+    "target_context": {
+      "type": "string",
+      "description": "Target audience or platform placement context."
+    },
+    "format": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["aspect_ratio", "text_overlay_expected"],
+      "properties": {
+        "aspect_ratio": {
+          "type": "string",
+          "description": "Target aspect ratio (e.g. '16:9', '1:1', '9:16').",
+          "example": "16:9"
+        },
+        "orientation": {
+          "type": "string",
+          "enum": ["LANDSCAPE", "PORTRAIT", "SQUARE", "PANORAMIC"],
+          "description": "Visual orientation of the canvas."
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Target width in pixels if explicitly requested."
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Target height in pixels if explicitly requested."
+        },
+        "platform": {
+          "type": "string",
+          "description": "Target platform (e.g. 'LinkedIn', 'Instagram', 'Web')."
+        },
+        "usage": {
+          "type": "string",
+          "description": "Specific usage context."
+        },
+        "safe_areas": {
+          "type": "object",
+          "description": "Safe areas or padding constraints if provided."
+        },
+        "text_overlay_expected": {
+          "type": "boolean",
+          "description": "Indicates whether text overlay (headline/CTA) is expected on the image."
+        }
+      }
+    },
+    "copy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "headline": {
+          "$ref": "#/$defs/copy_element"
+        },
+        "subheadline": {
+          "$ref": "#/$defs/copy_element"
+        },
+        "cta": {
+          "$ref": "#/$defs/copy_element"
+        },
+        "supporting_text": {
+          "$ref": "#/$defs/copy_element"
+        },
+        "other_text": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/copy_element"
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "description": "List of assets provided by the user or system.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "asset_id",
+          "asset_type",
+          "role",
+          "origin",
+          "authority",
+          "required",
+          "preservation_level"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "description": "Unique identifier of the asset."
+          },
+          "asset_type": {
+            "type": "string",
+            "enum": ["IMAGE", "LOGO", "PRODUCT", "TEXTURE", "FONT", "OTHER"],
+            "description": "Physical data type of the asset."
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "SUBJECT_IDENTITY",
+              "BASE_IMAGE",
+              "PRIMARY_REFERENCE",
+              "SECONDARY_REFERENCE",
+              "LOGO",
+              "PRODUCT",
+              "TEXTURE",
+              "EDIT_TARGET",
+              "OTHER"
+            ],
+            "description": "Functional role of the asset within the pipeline."
+          },
+          "origin": {
+            "type": "string",
+            "enum": ["USER_UPLOAD", "SYSTEM_ASSET", "GENERATED"],
+            "description": "Origin source of the asset."
+          },
+          "authority": {
+            "type": "string",
+            "enum": [
+              "SUBJECT_IDENTITY",
+              "PRIMARY_REFERENCE",
+              "BRAND_ASSET",
+              "TARGET_IMAGE_STRUCTURE",
+              "SUPPORTING_REFERENCE"
+            ],
+            "description": "Authority weight assigned to this asset."
+          },
+          "required": {
+            "type": "boolean",
+            "description": "Whether the asset is mandatory for the execution."
+          },
+          "description": {
+            "type": "string",
+            "description": "Brief description of what the asset contains."
+          },
+          "user_instruction": {
+            "type": "string",
+            "description": "Specific user instruction regarding this asset."
+          },
+          "preservation_level": {
+            "type": "string",
+            "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "STRICT"],
+            "description": "Degree of preservation required for this asset."
+          }
+        }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["present"],
+      "properties": {
+        "present": {
+          "type": "boolean",
+          "description": "Indicates whether a specific subject is present."
+        },
+        "identity_asset_id": {
+          "type": ["string", "null"],
+          "description": "Asset ID corresponding to the subject's identity source."
+        },
+        "identity_preservation": {
+          "type": "string",
+          "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "STRICT"],
+          "description": "Level of facial/identity preservation required."
+        },
+        "pose_preservation": {
+          "type": "string",
+          "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "STRICT"]
+        },
+        "expression_preservation": {
+          "type": "string",
+          "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "STRICT"]
+        },
+        "wardrobe_preservation": {
+          "type": "string",
+          "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "STRICT"]
+        },
+        "body_orientation_preservation": {
+          "type": "string",
+          "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "STRICT"]
+        },
+        "age_preservation": {
+          "type": "string",
+          "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "STRICT"]
+        },
+        "recognizability_required": {
+          "type": "boolean"
+        },
+        "user_subject_instructions": {
+          "type": "string"
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "description": "Detailed rules and scopes for visual references provided.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "reference_asset_id",
+          "role",
+          "scope",
+          "authority",
+          "transfer_intent",
+          "transfer_intensity"
+        ],
+        "properties": {
+          "reference_asset_id": {
+            "type": "string",
+            "description": "Asset ID of the reference."
+          },
+          "role": {
+            "type": "string",
+            "enum": ["PRIMARY_REFERENCE", "SECONDARY_REFERENCE", "STYLE_REFERENCE"]
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "GLOBAL_VISUAL_DIRECTION",
+              "COMPOSITION",
+              "LIGHTING",
+              "COLOR",
+              "TYPOGRAPHY",
+              "ENVIRONMENT",
+              "SUBJECT_TREATMENT",
+              "DEPTH",
+              "MOOD",
+              "OTHER"
+            ]
+          },
+          "authority": {
+            "type": "string",
+            "enum": ["PRIMARY_REFERENCE", "SUPPORTING_REFERENCE"]
+          },
+          "transfer_intent": {
+            "type": "string",
+            "description": "Description of what to transfer from this reference."
+          },
+          "transfer_intensity": {
+            "type": "string",
+            "enum": ["UNKNOWN", "TO_BE_RESOLVED", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+          },
+          "user_instruction": {
+            "type": "string"
+          },
+          "protected_from_reference": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "do_not_transfer": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "hard_constraints": {
+      "type": "array",
+      "description": "Non-negotiable constraints that must be preserved.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["constraint_id", "description", "provenance"],
+        "properties": {
+          "constraint_id": { "type": "string" },
+          "description": { "type": "string" },
+          "provenance": {
+            "type": "string",
+            "enum": ["USER_EXPLICIT", "USER_ASSET", "SYSTEM_DERIVED", "MODEL_INFERENCE", "DEFAULT", "HUMAN_CONFIRMED"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["LOW", "MEDIUM", "HIGH"]
+          }
+        }
+      }
+    },
+    "soft_preferences": {
+      "type": "array",
+      "description": "Negotiable preferences that guide creative direction.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["preference_id", "description", "provenance"],
+        "properties": {
+          "preference_id": { "type": "string" },
+          "description": { "type": "string" },
+          "provenance": {
+            "type": "string",
+            "enum": ["USER_EXPLICIT", "USER_ASSET", "SYSTEM_DERIVED", "MODEL_INFERENCE", "DEFAULT", "HUMAN_CONFIRMED"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["LOW", "MEDIUM", "HIGH"]
+          }
+        }
+      }
+    },
+    "emotional_intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Primary emotional intent (e.g. 'authority', 'urgency', 'trust', 'premium')."
+        },
+        "secondary": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Secondary emotional undertones."
+        },
+        "avoid": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Emotions or tones to actively avoid."
+        }
+      }
+    },
+    "creative_freedom": {
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["overall"],
+  "properties": {
+    "overall": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    },
+    "composition": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    },
+    "subject_pose": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    },
+    "wardrobe": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    },
+    "typography": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    },
+    "color": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    },
+    "narrative_objects": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"]
+    }
+  }
+},
+    "preservation_requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["element", "provenance"],
+        "properties": {
+          "element": { "type": "string" },
+          "provenance": {
+            "type": "string",
+            "enum": ["USER_EXPLICIT", "USER_ASSET", "SYSTEM_DERIVED", "MODEL_INFERENCE", "DEFAULT", "HUMAN_CONFIRMED"]
+          }
+        }
+      }
+    },
+    "allowed_transformations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["transformation", "provenance"],
+        "properties": {
+          "transformation": { "type": "string" },
+          "provenance": {
+            "type": "string",
+            "enum": ["USER_EXPLICIT", "USER_ASSET", "SYSTEM_DERIVED", "MODEL_INFERENCE", "DEFAULT", "HUMAN_CONFIRMED"]
+          }
+        }
+      }
+    },
+    "forbidden_transformations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["transformation", "provenance"],
+        "properties": {
+          "transformation": { "type": "string" },
+          "provenance": {
+            "type": "string",
+            "enum": ["USER_EXPLICIT", "USER_ASSET", "SYSTEM_DERIVED", "MODEL_INFERENCE", "DEFAULT", "HUMAN_CONFIRMED"]
+          }
+        }
+      }
+    },
+    "ambiguities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "ambiguity_id",
+          "description",
+          "severity",
+          "blocking",
+          "resolution_status",
+          "possible_interpretations",
+          "source"
+        ],
+        "properties": {
+          "ambiguity_id": { "type": "string" },
+          "description": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+          },
+          "blocking": { "type": "boolean" },
+          "resolution_status": {
+            "type": "string",
+            "enum": ["UNRESOLVED", "RESOLVED_AUTONOMOUSLY", "USER_CLARIFIED"]
+          },
+          "possible_interpretations": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "source": { "type": "string" }
+        }
+      }
+    },
+    "blocking_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question_id", "question", "action_required"],
+        "properties": {
+          "question_id": { "type": "string" },
+          "question": { "type": "string" },
+          "action_required": {
+            "type": "string",
+            "enum": ["CAN_RESOLVE_AUTONOMOUSLY", "SHOULD_ASK_USER", "MUST_ASK_USER"]
+          }
+        }
+      }
+    },
+    "pipeline_hints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "has_reference",
+        "requires_reference_translator",
+        "requires_subject_identity_preservation",
+        "edit_mode",
+        "text_generation_required",
+        "human_clarification_required"
+      ],
+      "properties": {
+        "has_reference": { "type": "boolean" },
+        "requires_reference_translator": { "type": "boolean" },
+        "requires_subject_identity_preservation": { "type": "boolean" },
+        "edit_mode": { "type": "boolean" },
+        "text_generation_required": { "type": "boolean" },
+        "human_clarification_required": { "type": "boolean" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["interpreter_version", "created_at"],
+      "properties": {
+        "interpreter_version": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "READY", "BLOCKED", "HUMAN_REVIEW_REQUIRED"],
+      "description": "Execution status of the brief spec."
+    }
+  },
+  "$defs": {
+    "copy_element": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["content", "exact_text_lock", "priority", "required", "language"],
+      "properties": {
+        "content": {
+          "type": "string",
+          "description": "Exact text string."
+        },
+        "exact_text_lock": {
+          "type": "boolean",
+          "description": "If true, downstream nodes cannot alter or paraphrase this text."
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "language": {
+          "type": "string",
+          "description": "Language code (e.g., 'pt-BR', 'en-US')."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "project_mode": { "const": "REFERENCE" } },
+        "required": ["project_mode"]
+      },
+      "then": {
+        "properties": {
+          "pipeline_hints": {
+            "properties": { "has_reference": { "const": true } }
+          }
+        },
+        "required": ["references"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "project_mode": { "const": "EDIT" } },
+        "required": ["project_mode"]
+      },
+      "then": {
+        "properties": {
+          "pipeline_hints": {
+            "properties": { "edit_mode": { "const": true } }
+          }
+        }
+      }
+    }
+  ]
+}

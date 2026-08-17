@@ -1,0 +1,425 @@
+{
+  "suite_id": "REFERENCE_TRANSLATOR_LIVE_MULTIMODAL_COGNITIVE_EVALUATION_V1",
+  "suite_run_id": "rt-live-20260816023744",
+  "artifact_classification": "EVALUATION_ARTIFACTS_NOT_PRODUCTION",
+  "provider_profile": {
+    "provider": "NVIDIA_NIM",
+    "model_id": "z-ai/glm-5.2",
+    "documented_context_limit_tokens": 1000000,
+    "documented_input_modalities": [
+      "TEXT"
+    ],
+    "documented_image_input_supported": false,
+    "documentation_ref": "https://build.nvidia.com/z-ai/glm-5.2",
+    "documentation_checked_at": "2026-08-15"
+  },
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "runtime_version": "1.0.0",
+  "base_directory": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals",
+  "manifest_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\manifest.json",
+  "summary_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-20260816023744.summary.json",
+  "human_review_packet_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-20260816023744.human-review.md",
+  "consolidated_report_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-20260816023744.consolidated.md",
+  "smoke_result": {
+    "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+    "status": "PROVIDER_BLOCKED",
+    "technical_runtime_acceptance": false,
+    "visual_analysis_proven": false,
+    "documented_image_input_supported": false,
+    "full_battery_permitted": false,
+    "provider_error_code": "MODEL_TIMEOUT",
+    "image_transmission": [
+      {
+        "asset_id": "live_ref_authority_speaker",
+        "mime_type": "image/jpeg",
+        "source_type": "INLINE_IMAGE_BYTES",
+        "byte_length": 98544,
+        "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+      }
+    ],
+    "request_measurement": {
+      "measurement_version": "1.0.0",
+      "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+      "core_prompt_characters": 11451,
+      "knowledge_characters": 472402,
+      "knowledge_wrapper_and_index_characters": 2965,
+      "assembled_system_prompt_characters": 486818,
+      "schema_characters": 11766,
+      "brief_context_characters": 4324,
+      "reference_context_characters": 817,
+      "my_eyes_advisory_characters": 1262,
+      "vkb_advisory_characters": 1230,
+      "retry_diagnostic_characters": 2,
+      "provider_user_text_characters": 32447,
+      "total_textual_characters": 519265,
+      "multimodal_image_count": 1,
+      "image_base64_transport_characters": 131392,
+      "serialized_http_body_characters": 660119,
+      "input_tokens": 94261,
+      "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+      "output_budget_tokens": 8192,
+      "context_limit_tokens": 1000000,
+      "headroom_tokens": 897547,
+      "context_classification": "SAFE"
+    },
+    "provider_responses_received": 2,
+    "candidate_outcomes": [
+      {
+        "attempt": 1,
+        "validator_error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+        "schema_valid": false,
+        "candidate_status_field": "READY_FOR_DIRECTOR",
+        "observation_count": 6
+      },
+      {
+        "attempt": 2,
+        "validator_error_code": "REFERENCE_PLAN_SEMANTIC_INVALID",
+        "schema_valid": true,
+        "candidate_status_field": "BLOCKED",
+        "observation_count": 0
+      }
+    ]
+  },
+  "case_results": [
+    {
+      "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "status": "PROVIDER_BLOCKED",
+      "quality_class": "PROVIDER_BLOCKED",
+      "creative_approval": "NOT_PERFORMED",
+      "error": {
+        "code": "REFERENCE_PLAN_RETRY_EXHAUSTED",
+        "message": "Reference Translator exhausted its correction attempts.",
+        "provider_error_code": "MODEL_TIMEOUT"
+      },
+      "checks": [
+        {
+          "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+          "outcome": "FAIL",
+          "evidence": "No accepted multimodal model response was produced."
+        },
+        {
+          "category": "MECHANISM_IDENTIFICATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "FUNCTION_BEFORE_APPEARANCE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "REFERENCE_DNA_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_SEMANTICS_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_NATIVE_ADAPTATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "LITERAL_COPY_AVOIDED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SURFACE_COPY_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "UNDERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "OVERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "IDENTITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "MY_EYES_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "VKB_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SCHEMA_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "SEMANTIC_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "QUALITY_GATE_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        }
+      ],
+      "cognitive_audit": {
+        "what_the_model_thought_was_important": [],
+        "what_it_wanted_to_transfer": [],
+        "what_it_wanted_to_adapt": [],
+        "what_it_wanted_to_reinvent": [],
+        "what_it_discarded": [],
+        "what_it_protected": [],
+        "what_risks_it_identified": []
+      },
+      "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\runs\\run_live_rt_01_same_domain_authority-rt-live-20260816023744.trace.json",
+      "failed_attempts": [
+        {
+          "attempt": 1,
+          "validator_error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+          "diagnostic_codes": [
+            "REFERENCE_PLAN_SCHEMA_INVALID"
+          ],
+          "raw_json": true,
+          "schema_valid": false,
+          "schema_errors": [
+            {
+              "instancePath": "/conflicts/0/provenance",
+              "schemaPath": "#/properties/conflicts/items/properties/provenance/enum",
+              "keyword": "enum",
+              "params": {
+                "allowedValues": [
+                  "OBSERVED",
+                  "INFERRED",
+                  "MODEL_INFERENCE",
+                  "HUMAN_CONFIRMED"
+                ]
+              },
+              "message": "must be equal to one of the allowed values"
+            }
+          ],
+          "candidate_project_id": "live_rt_01_same_domain_authority",
+          "candidate_status_field": "READY_FOR_DIRECTOR",
+          "observation_count": 6,
+          "visible_observations": [
+            {
+              "category": "COMPOSITION",
+              "description": "A standing or seated speaker is positioned slightly off-center, occupying a dominant vertical mass within the frame, balanced by negative space or environmental context on the opposing side.",
+              "confidence": "MEDIUM"
+            },
+            {
+              "category": "SUBJECT_TREATMENT",
+              "description": "The subject exhibits a composed, authoritative posture with a direct or slightly off-camera gaze, conveying executive presence and confidence.",
+              "confidence": "MEDIUM"
+            },
+            {
+              "category": "DEPTH",
+              "description": "The image displays layered depth with a foreground element (potentially architectural or stage-related), the subject in the midground, and a background environment that provides context without competing for attention.",
+              "confidence": "MEDIUM"
+            },
+            {
+              "category": "LIGHTING",
+              "description": "Directional lighting models the subject with controlled contrast, separating them from the background while maintaining a professional, non-spectacle tone.",
+              "confidence": "MEDIUM"
+            },
+            {
+              "category": "ENVIRONMENT",
+              "description": "The surrounding environment suggests a professional, architectural, or stage setting that supports the authority of the subject without being generic or interchangeable.",
+              "confidence": "MEDIUM"
+            },
+            {
+              "category": "COLOR",
+              "description": "The color palette appears restrained and controlled, using tonal contrast and localized chromatic presence rather than uniform saturation to establish hierarchy and mood.",
+              "confidence": "MEDIUM"
+            }
+          ],
+          "decisions": [
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Position the target executive subject as a dominant mass within the 16:9 frame, using asymmetric dominance to balance the subject against copy territory and environmental negative space.",
+              "rationale": "The asymmetric dominance relationship creates energy while retaining a clear hierarchy, which is essential for communicating composed executive authority in a banner format."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Translate the composed posture and authoritative gaze into the target executive subject, ensuring the pose communicates strategic clarity and confidence without copying the reference person's identity or specific clothing.",
+              "rationale": "Subject treatment through posture and gaze is a transferable mechanism for building authority; the specific identity and wardrobe must remain target-native."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Rebuild layered depth using target-native foreground elements (architectural planes, furniture edges, or environmental structures), the subject in the midground, and a background that provides executive context without competing for focal attention.",
+              "rationale": "Structural depth from layered planes creates immersive authority and separates the subject from the environment; the specific foreground objects must be target-native to avoid category mismatch."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Apply directional lighting that models the target executive subject with controlled contrast, separating them from the background while maintaining a professional, non-spectacle tone appropriate for a LinkedIn keynote announcement.",
+              "rationale": "Directional lighting with controlled contrast establishes hierarchy and subject separation without resorting to dramatic or aggressive effects that would conflict with the brief's emotional intent."
+            },
+            {
+              "action": "REINVENT",
+              "target_in_new_composition": "Create a target-native executive environment using architectural or strategic-context elements (e.g., boardroom, office, abstract structural planes) that support authority without copying the reference's specific stage or event setting.",
+              "rationale": "The environment must belong to the target's professional context; the reference's specific setting is a source manifestation that must be reinvented to avoid identity leakage and ensure target-native coherence."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Use a restrained color palette with localized chromatic presence and controlled tonal contrast to establish hierarchy and mood, ensuring color supports focus and separation without maximizing saturation or becoming uniform.",
+              "rationale": "The restrained palette with localized chromatic presence aligns with My Eyes advisory for intentional color use and supports the composed authority emotional intent without spectacle."
+            },
+            {
+              "action": "ADAPT",
+              "target_in_new_composition": "Reserve distinct visual territory for the subject and text overlay, ensuring the subject occupies a dominant mass while copy has a readable hierarchy zone that is not treated as leftover space.",
+              "rationale": "Subject-copy territorial separation protects legibility and hierarchy in a banner format where text overlay is expected; VKB advisory supports this separation mechanism."
+            }
+          ],
+          "declared_risks": [
+            "Undertransfer: reducing the reference to a vague mood without specific actionable mechanisms for authority and hierarchy.",
+            "Identity leakage: inadvertently transferring the reference person's likeness, clothing, or distinctive styling into the target subject.",
+            "Format blindness: squeezing a non-16:9 reference composition into the target landscape banner without recomposing relationships.",
+            "Surface copy: replicating the reference's visible environment or stage setting without target-native reinvention.",
+            "Overtransfer: copying too many source manifestations together including arrangement, palette, and environment."
+          ]
+        },
+        {
+          "attempt": 2,
+          "validator_error_code": "REFERENCE_PLAN_SEMANTIC_INVALID",
+          "diagnostic_codes": [
+            "PROJECT_ID_MISMATCH"
+          ],
+          "raw_json": true,
+          "schema_valid": true,
+          "schema_errors": [],
+          "candidate_project_id": "live_rt_01_same_domain_authority",
+          "candidate_status_field": "BLOCKED",
+          "observation_count": 0,
+          "visible_observations": [],
+          "decisions": [],
+          "declared_risks": [
+            "Generating reference observations without pixel access would produce fabricated evidence, violating the source-observation-integrity diagnostic and the core directive to analyze every supplied image directly.",
+            "Without verified observations, any transfer mappings would rely on synthetic teaching cases rather than the supplied reference, violating the synthetic-evidence-separation diagnostic.",
+            "If the pipeline attempts to force a READY_FOR_DIRECTOR plan without pixels, the output would contain no actionable reference DNA, producing an undertransfer failure."
+          ]
+        }
+      ]
+    }
+  ],
+  "full_request_measurement": {
+    "measurement_version": "1.0.0",
+    "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+    "core_prompt_characters": 11451,
+    "knowledge_characters": 472402,
+    "knowledge_wrapper_and_index_characters": 2965,
+    "assembled_system_prompt_characters": 486818,
+    "schema_characters": 11766,
+    "brief_context_characters": 4324,
+    "reference_context_characters": 817,
+    "my_eyes_advisory_characters": 1262,
+    "vkb_advisory_characters": 1230,
+    "retry_diagnostic_characters": 2,
+    "provider_user_text_characters": 32447,
+    "total_textual_characters": 519265,
+    "multimodal_image_count": 1,
+    "image_base64_transport_characters": 131392,
+    "serialized_http_body_characters": 660119,
+    "input_tokens": 94261,
+    "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+    "output_budget_tokens": 8192,
+    "context_limit_tokens": 1000000,
+    "headroom_tokens": 897547,
+    "context_classification": "SAFE"
+  },
+  "full_brain_status": "INCONCLUSIVE",
+  "full_brain_evidence": "The complete request fit and returned two candidates, but official metadata is text-only. Candidate 1 produced generic brief-recoverable observations and failed schema; candidate 2 explicitly reported no pixel access and refused to fabricate observations. Visual understanding and prompt attention therefore remain inconclusive.",
+  "api_usage": {
+    "calls": 5,
+    "cognitive_invocations": 3,
+    "transport_retries": 2,
+    "input_tokens": 188551,
+    "output_tokens": 4222,
+    "cached_tokens": null,
+    "reasoning_tokens": null,
+    "latency_ms": 423584,
+    "cost": "UNKNOWN"
+  },
+  "full_battery_completed": false,
+  "scores_created": 0,
+  "weights_created": 0,
+  "rankings_created": 0,
+  "automatic_approvals": 0,
+  "creative_director_implemented": false,
+  "image_critic_cognitive_runtime_implemented": false,
+  "final_verdict": "NOT_READY",
+  "final_verdict_reason": "The configured model is officially text-only, explicitly reported no pixel access in its second visible candidate, produced no validated visual plan, and ended on a bounded timeout. The live battery was correctly gated off.",
+  "validator_performance": {
+    "false_positives_observed": 0,
+    "true_blocks": 2,
+    "cognitive_attempts": 3,
+    "cognitive_retries": 2,
+    "findings": [
+      {
+        "attempt": 1,
+        "outcome": "REFERENCE_PLAN_SCHEMA_INVALID",
+        "reason": "conflicts[0].provenance used a value outside the unchanged schema enum."
+      },
+      {
+        "attempt": 2,
+        "outcome": "REFERENCE_PLAN_SEMANTIC_INVALID",
+        "reason": "PROJECT_ID_MISMATCH exposed that project_id was absent from the prompt contract; the omission is fixed with a regression test."
+      },
+      {
+        "attempt": 3,
+        "outcome": "MODEL_TIMEOUT",
+        "reason": "Both bounded transport attempts exceeded 180000 ms."
+      }
+    ]
+  },
+  "implementation_findings": [
+    {
+      "code": "PROMPT_PROJECT_ID_OMITTED",
+      "status": "FIXED_AFTER_LIVE_RUN",
+      "change": "Runtime now supplies authoritative project_id and run_id in structured_context.authority_and_task.",
+      "regression": "reference-translator-runtime.test.mjs"
+    },
+    {
+      "code": "CONFIGURED_MODEL_TEXT_ONLY",
+      "status": "EXTERNAL_BLOCKER",
+      "evidence": "Official NVIDIA metadata plus candidate 2 statement that pixel access was unavailable."
+    }
+  ],
+  "post_integration_test_results": {
+    "reference_translator": "71/71",
+    "live_integration": "15/15",
+    "cognitive_fixtures": "38/38",
+    "cognitive_category_checks": "375/375",
+    "knowledge_drift": 0
+  },
+  "full_regression": {
+    "runtime_tests_total": 370,
+    "runtime_tests_passed": 370,
+    "schema_families": 14,
+    "schema_fixtures_total": 57,
+    "schema_fixtures_passed": 57,
+    "scenarios_total": 3,
+    "scenarios_passed": 3,
+    "scenario_checks_total": 345,
+    "scenario_checks_passed": 345
+  }
+}

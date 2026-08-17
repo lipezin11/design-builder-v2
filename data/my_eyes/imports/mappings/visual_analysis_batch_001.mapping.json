@@ -1,0 +1,38 @@
+{
+  "batch_id": "MYE_EXT_BATCH_000001",
+  "mapping_method": "UNIQUE_VISUAL_CONTENT_MATCH_CROSS_CHECKED_AGAINST_HUMAN_LABEL_BUCKET",
+  "mappings": {
+    "IMG_1_agroforte": {
+      "image_id": "MYE_IMG_000003",
+      "evidence_basis": "Unique approved composition: hands holding a seedling in an environmental poster; matches the internal image content and active APPROVED label."
+    },
+    "IMG_2_red_party_hat": {
+      "image_id": "MYE_IMG_000006",
+      "evidence_basis": "Unique approved composition: red banner, green party hat, outstretched arms and card fan; matches the internal image content and active APPROVED label."
+    },
+    "IMG_3_lantern_businessman": {
+      "image_id": "MYE_IMG_000007",
+      "evidence_basis": "Unique approved composition: suited man with lantern and map treatment; matches the internal image content and active APPROVED label."
+    },
+    "IMG_4_jungle_biologist": {
+      "image_id": "MYE_IMG_000011",
+      "evidence_basis": "Unique approved composition: arms-crossed jungle portrait with bird and terrarium spheres; matches the internal image content and active APPROVED label."
+    },
+    "IMG_5_ideas_that_float": {
+      "image_id": "MYE_IMG_000017",
+      "evidence_basis": "Unique rejected composition: upward-looking man with floating analytics cards and Ideas that float typography; matches the internal image content and active REJECTED label."
+    },
+    "IMG_6_green_neon_carousel": {
+      "image_id": "MYE_IMG_000018",
+      "evidence_basis": "Unique rejected composition: green tunnel, raised hand and five-card carousel; matches the internal image content and active REJECTED label."
+    },
+    "IMG_7_creative_db": {
+      "image_id": "MYE_IMG_000019",
+      "evidence_basis": "Unique rejected composition: Creative DB/PROMPTS typography with mug and ornate props; matches the internal image content and active REJECTED label."
+    },
+    "IMG_8_web_designer": {
+      "image_id": "MYE_IMG_000020",
+      "evidence_basis": "Unique rejected composition: giant DESIGN typography, crossed arms and glowing cubes; matches the internal image content and active REJECTED label."
+    }
+  }
+}

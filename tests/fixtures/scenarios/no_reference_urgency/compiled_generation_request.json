@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0.0",
+  "request_id": "cgr-ci-canonical-no-reference-urgency",
+  "project_id": "project-cart-close-001",
+  "run_id": "run-canonical-no-reference-urgency-001",
+  "compiler_input_ref": {
+    "artifact_id": "ci-canonical-no-reference-urgency",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://compiler-input/ci-canonical-no-reference-urgency/1.0.0"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "ffs-urgency-001",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-urgency-001/1.0.0",
+    "checksum": "sha256:test-ffs-urgency-001"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "GENERATE",
+  "compiled_instruction": {
+    "instruction_format": "STRUCTURED",
+    "final_visual_description": "[final_frame_spec.composition] Composition strategy: Stable dominant subject opposed by converging environmental pressure and a locked headline mass. Focal order: 1:primary-subject, 2:headline, 3:environment-story.\n[final_frame_spec.subjects] Subjects: [{\"subject_id\":\"primary-subject\",\"role\":\"Authoritative gatekeeper\",\"frame_region\":\"RIGHT\",\"relative_scale\":\"Large dominant mass occupying roughly one third of frame height-to-width influence\",\"framing\":\"Waist-up environmental portrait\",\"orientation\":\"Turned slightly into visual flow\",\"gaze\":\"Direct viewer connection\",\"expression\":\"Calm finality\",\"pose_intent\":\"Stable torso with decisive forward energy\",\"integration_with_environment\":\"Closing layers pass in front of and behind the subject while motivated light reaches the silhouette\"}].\n[final_frame_spec.environment] Environment: A last access corridor visibly compressing around the presenter. Spatial character: Converging, layered and directional. Regional density: [{\"region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.4,\"height\":0.84},\"density\":\"MEDIUM\",\"contrast_level\":\"MEDIUM\",\"detail_level\":\"MEDIUM\",\"purpose\":\"Support headline and directional movement\",\"protected_for_text\":false,\"allowed_elements\":[\"headline support\",\"directional environment\"],\"forbidden_elements\":[\"high-contrast clutter\",\"unrelated floating objects\"]},{\"region\":\"CENTER\",\"normalized_bounds\":{\"x\":0.4,\"y\":0.05,\"width\":0.2,\"height\":0.9},\"density\":\"MEDIUM\",\"contrast_level\":\"MEDIUM\",\"detail_level\":\"MEDIUM\",\"purpose\":\"Transition between message and subject\",\"protected_for_text\":false,\"allowed_elements\":[\"depth transitions\",\"directional structure\"],\"forbidden_elements\":[\"isolated decorative props\"]},{\"region\":\"RIGHT\",\"normalized_bounds\":{\"x\":0.53,\"y\":0.05,\"width\":0.43,\"height\":0.9},\"density\":\"HIGH\",\"contrast_level\":\"HIGH\",\"detail_level\":\"HIGH\",\"purpose\":\"Concentrate subject and environmental storytelling\",\"protected_for_text\":false,\"allowed_elements\":[\"subject\",\"closing structures\",\"motivated edge light\"],\"forbidden_elements\":[\"copy competition\",\"random icons\"]}].\n[final_frame_spec.depth_system] Depth strategy: Aggressive near-camera occlusion against stable subject and compressed atmospheric background. Layers: [{\"layer_id\":\"extreme-fg\",\"depth_role\":\"EXTREME_FOREGROUND\",\"elements\":[\"one large partially cropped environmental plane entering lower-right\"],\"occlusion_behavior\":\"May cross lower torso edge only; never face or headline\",\"atmospheric_behavior\":\"Subtle motion softness aligned to closing direction\",\"relationship_to_subject\":\"Creates immediate proximity and directs motion toward subject\"},{\"layer_id\":\"subject-plane\",\"depth_role\":\"SUBJECT_PLANE\",\"elements\":[\"primary-subject\"],\"occlusion_behavior\":\"Only non-critical silhouette edges may be crossed\",\"atmospheric_behavior\":\"Receives environment color and motivated light\",\"relationship_to_subject\":\"Primary perceptual anchor embedded in the scene\"},{\"layer_id\":\"background\",\"depth_role\":\"BACKGROUND\",\"elements\":[\"converging threshold planes\",\"directional environment\"],\"occlusion_behavior\":\"Frames rather than cuts through identity\",\"atmospheric_behavior\":\"Compressed haze separates successive layers\",\"relationship_to_subject\":\"Appears to close behind subject\"},{\"layer_id\":\"far-background\",\"depth_role\":\"FAR_BACKGROUND\",\"elements\":[\"final narrowing access seam\"],\"occlusion_behavior\":\"No direct identity occlusion\",\"atmospheric_behavior\":\"Strongest atmospheric perspective\",\"relationship_to_subject\":\"Provides scale and separation\"}]. Separation: [\"motivated edge separation\",\"sharpness hierarchy\",\"luminance contrast\"].\n[final_frame_spec.lighting_system] Lighting: Authority remains controlled while the environment carries urgent motion. Subject separation: Subject remains cleanly separated from every converging plane. Regional luminance: [{\"region\":\"LEFT\",\"behavior\":\"Controlled contrast under headline\",\"purpose\":\"Sustain rendered text legibility\"},{\"region\":\"RIGHT\",\"behavior\":\"Highest shaped contrast around subject\",\"purpose\":\"Maintain identity dominance and environmental depth\"}].\n[final_frame_spec.color_system] Color strategy: Warm seam and white copy guide attention without alarm-red flooding. Regional behavior: [{\"region\":\"LEFT\",\"behavior\":\"Dark stable field supporting locked off-white headline\",\"purpose\":\"Support headline contrast\"},{\"region\":\"RIGHT\",\"behavior\":\"Cool dimensional environment with warm closure seam\",\"purpose\":\"Concentrate narrative color around subject\"}].\n[final_frame_spec.typography_system] Typography mode: RENDER_IN_IMAGE. Text: [{\"text_id\":\"headline\",\"exact_copy\":\"ENCERRAMENTO DO CARRINHO\",\"copy_is_locked\":true,\"region\":\"LEFT\",\"hierarchy_rank\":2,\"occlusion_behavior\":\"No glyph may be occluded\"}].\n[final_frame_spec.composition.negative_space_regions] Protected negative-space regions: [{\"region_id\":\"headline-field\",\"semantic_region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.05,\"y\":0.2,\"width\":0.4,\"height\":0.6},\"purpose\":\"Quiet field for locked headline\",\"lock_level\":\"HARD_LOCK\"}].",
+    "structured_blocks": [
+      {
+        "block_id": "composition",
+        "role": "FINAL_STATE",
+        "content": "Composition strategy: Stable dominant subject opposed by converging environmental pressure and a locked headline mass. Focal order: 1:primary-subject, 2:headline, 3:environment-story.",
+        "source_refs": [
+          "final_frame_spec.composition"
+        ]
+      },
+      {
+        "block_id": "subjects",
+        "role": "FINAL_STATE",
+        "content": "Subjects: [{\"subject_id\":\"primary-subject\",\"role\":\"Authoritative gatekeeper\",\"frame_region\":\"RIGHT\",\"relative_scale\":\"Large dominant mass occupying roughly one third of frame height-to-width influence\",\"framing\":\"Waist-up environmental portrait\",\"orientation\":\"Turned slightly into visual flow\",\"gaze\":\"Direct viewer connection\",\"expression\":\"Calm finality\",\"pose_intent\":\"Stable torso with decisive forward energy\",\"integration_with_environment\":\"Closing layers pass in front of and behind the subject while motivated light reaches the silhouette\"}].",
+        "source_refs": [
+          "final_frame_spec.subjects"
+        ]
+      },
+      {
+        "block_id": "environment",
+        "role": "FINAL_STATE",
+        "content": "Environment: A last access corridor visibly compressing around the presenter. Spatial character: Converging, layered and directional. Regional density: [{\"region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.04,\"y\":0.08,\"width\":0.4,\"height\":0.84},\"density\":\"MEDIUM\",\"contrast_level\":\"MEDIUM\",\"detail_level\":\"MEDIUM\",\"purpose\":\"Support headline and directional movement\",\"protected_for_text\":false,\"allowed_elements\":[\"headline support\",\"directional environment\"],\"forbidden_elements\":[\"high-contrast clutter\",\"unrelated floating objects\"]},{\"region\":\"CENTER\",\"normalized_bounds\":{\"x\":0.4,\"y\":0.05,\"width\":0.2,\"height\":0.9},\"density\":\"MEDIUM\",\"contrast_level\":\"MEDIUM\",\"detail_level\":\"MEDIUM\",\"purpose\":\"Transition between message and subject\",\"protected_for_text\":false,\"allowed_elements\":[\"depth transitions\",\"directional structure\"],\"forbidden_elements\":[\"isolated decorative props\"]},{\"region\":\"RIGHT\",\"normalized_bounds\":{\"x\":0.53,\"y\":0.05,\"width\":0.43,\"height\":0.9},\"density\":\"HIGH\",\"contrast_level\":\"HIGH\",\"detail_level\":\"HIGH\",\"purpose\":\"Concentrate subject and environmental storytelling\",\"protected_for_text\":false,\"allowed_elements\":[\"subject\",\"closing structures\",\"motivated edge light\"],\"forbidden_elements\":[\"copy competition\",\"random icons\"]}].",
+        "source_refs": [
+          "final_frame_spec.environment"
+        ]
+      },
+      {
+        "block_id": "depth",
+        "role": "FINAL_STATE",
+        "content": "Depth strategy: Aggressive near-camera occlusion against stable subject and compressed atmospheric background. Layers: [{\"layer_id\":\"extreme-fg\",\"depth_role\":\"EXTREME_FOREGROUND\",\"elements\":[\"one large partially cropped environmental plane entering lower-right\"],\"occlusion_behavior\":\"May cross lower torso edge only; never face or headline\",\"atmospheric_behavior\":\"Subtle motion softness aligned to closing direction\",\"relationship_to_subject\":\"Creates immediate proximity and directs motion toward subject\"},{\"layer_id\":\"subject-plane\",\"depth_role\":\"SUBJECT_PLANE\",\"elements\":[\"primary-subject\"],\"occlusion_behavior\":\"Only non-critical silhouette edges may be crossed\",\"atmospheric_behavior\":\"Receives environment color and motivated light\",\"relationship_to_subject\":\"Primary perceptual anchor embedded in the scene\"},{\"layer_id\":\"background\",\"depth_role\":\"BACKGROUND\",\"elements\":[\"converging threshold planes\",\"directional environment\"],\"occlusion_behavior\":\"Frames rather than cuts through identity\",\"atmospheric_behavior\":\"Compressed haze separates successive layers\",\"relationship_to_subject\":\"Appears to close behind subject\"},{\"layer_id\":\"far-background\",\"depth_role\":\"FAR_BACKGROUND\",\"elements\":[\"final narrowing access seam\"],\"occlusion_behavior\":\"No direct identity occlusion\",\"atmospheric_behavior\":\"Strongest atmospheric perspective\",\"relationship_to_subject\":\"Provides scale and separation\"}]. Separation: [\"motivated edge separation\",\"sharpness hierarchy\",\"luminance contrast\"].",
+        "source_refs": [
+          "final_frame_spec.depth_system"
+        ]
+      },
+      {
+        "block_id": "lighting",
+        "role": "FINAL_STATE",
+        "content": "Lighting: Authority remains controlled while the environment carries urgent motion. Subject separation: Subject remains cleanly separated from every converging plane. Regional luminance: [{\"region\":\"LEFT\",\"behavior\":\"Controlled contrast under headline\",\"purpose\":\"Sustain rendered text legibility\"},{\"region\":\"RIGHT\",\"behavior\":\"Highest shaped contrast around subject\",\"purpose\":\"Maintain identity dominance and environmental depth\"}].",
+        "source_refs": [
+          "final_frame_spec.lighting_system"
+        ]
+      },
+      {
+        "block_id": "color",
+        "role": "FINAL_STATE",
+        "content": "Color strategy: Warm seam and white copy guide attention without alarm-red flooding. Regional behavior: [{\"region\":\"LEFT\",\"behavior\":\"Dark stable field supporting locked off-white headline\",\"purpose\":\"Support headline contrast\"},{\"region\":\"RIGHT\",\"behavior\":\"Cool dimensional environment with warm closure seam\",\"purpose\":\"Concentrate narrative color around subject\"}].",
+        "source_refs": [
+          "final_frame_spec.color_system"
+        ]
+      },
+      {
+        "block_id": "typography",
+        "role": "FINAL_STATE",
+        "content": "Typography mode: RENDER_IN_IMAGE. Text: [{\"text_id\":\"headline\",\"exact_copy\":\"ENCERRAMENTO DO CARRINHO\",\"copy_is_locked\":true,\"region\":\"LEFT\",\"hierarchy_rank\":2,\"occlusion_behavior\":\"No glyph may be occluded\"}].",
+        "source_refs": [
+          "final_frame_spec.typography_system"
+        ]
+      },
+      {
+        "block_id": "negative-space",
+        "role": "FINAL_STATE",
+        "content": "Protected negative-space regions: [{\"region_id\":\"headline-field\",\"semantic_region\":\"LEFT\",\"normalized_bounds\":{\"x\":0.05,\"y\":0.2,\"width\":0.4,\"height\":0.6},\"purpose\":\"Quiet field for locked headline\",\"lock_level\":\"HARD_LOCK\"}].",
+        "source_refs": [
+          "final_frame_spec.composition.negative_space_regions"
+        ]
+      }
+    ]
+  },
+  "control_layer": {
+    "creative_authority": "NONE",
+    "preserve_identity": true,
+    "preserve_reference_authority": false,
+    "preserve_text_locks": true,
+    "preserve_edit_target": false,
+    "preserve_composition": true,
+    "semantic_change_forbidden": true
+  },
+  "asset_bindings": [
+    {
+      "asset_id": "asset-presenter-001",
+      "adapter_slot": "subject_identity",
+      "authority": "SUBJECT_IDENTITY_AUTHORITY",
+      "required": true,
+      "source_ref": "compiler_input.assets.asset-presenter-001"
+    }
+  ],
+  "reference_instructions": [],
+  "identity_instructions": [
+    {
+      "subject_id": "primary-subject",
+      "identity_asset_id": "asset-presenter-001",
+      "preservation_level": "STRICT",
+      "recognizability_required": true,
+      "source_ref": "compiler_input.identity_bindings.primary-subject"
+    }
+  ],
+  "text_instructions": [
+    {
+      "text_id": "headline",
+      "content": "ENCERRAMENTO DO CARRINHO",
+      "exact_text_lock": true,
+      "render_mode": "IN_IMAGE",
+      "required": true,
+      "source_ref": "compiler_input.text_bindings.headline"
+    }
+  ],
+  "negative_constraints": [
+    {
+      "constraint_id": "forbidden-visual-0",
+      "statement": "countdown timer",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.0"
+    },
+    {
+      "constraint_id": "forbidden-visual-1",
+      "statement": "sale badges",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.1"
+    },
+    {
+      "constraint_id": "forbidden-visual-2",
+      "statement": "random floating objects",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.2"
+    },
+    {
+      "constraint_id": "forbidden-visual-3",
+      "statement": "flat portrait backdrop",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements.3"
+    },
+    {
+      "constraint_id": "subject-primary-subject-0",
+      "statement": "Alter recognizable facial structure",
+      "source_ref": "final_frame_spec.subjects.primary-subject.forbidden_transformations.0"
+    },
+    {
+      "constraint_id": "subject-primary-subject-1",
+      "statement": "Replace subject identity",
+      "source_ref": "final_frame_spec.subjects.primary-subject.forbidden_transformations.1"
+    },
+    {
+      "constraint_id": "subject-primary-subject-2",
+      "statement": "Introduce anatomy distortion",
+      "source_ref": "final_frame_spec.subjects.primary-subject.forbidden_transformations.2"
+    }
+  ],
+  "output_parameters": {
+    "aspect_ratio": "16:9",
+    "output_role": "FINAL_COMPOSITE",
+    "number_of_variants": 1,
+    "deterministic_requirements": [
+      "16:9",
+      "No model-specific styling or syntax embedded in this specification"
+    ]
+  },
+  "protected_fields": [
+    {
+      "field_id": "protect-identity",
+      "target": "subjects.primary-subject.identity",
+      "rule": "Preserve fundamental recognizable identity",
+      "source_ref": "final_frame_spec.protected_fields.protect-identity",
+      "loss_category": "IDENTITY_LOCK_LOSS"
+    },
+    {
+      "field_id": "protect-copy",
+      "target": "typography_system.text_elements.headline.exact_copy",
+      "rule": "Render exactly: ENCERRAMENTO DO CARRINHO",
+      "source_ref": "final_frame_spec.protected_fields.protect-copy",
+      "loss_category": "TEXT_LOCK_LOSS"
+    },
+    {
+      "field_id": "protect-composition",
+      "target": "composition",
+      "rule": "Subject dominance, closing depth and headline order are locked",
+      "source_ref": "final_frame_spec.protected_fields.protect-composition",
+      "loss_category": "COMPOSITION_LOSS"
+    },
+    {
+      "field_id": "system-composition",
+      "target": "composition",
+      "rule": "Preserve composition strategy, hierarchy and spatial relationships.",
+      "source_ref": "final_frame_spec.composition",
+      "loss_category": "COMPOSITION_LOSS"
+    },
+    {
+      "field_id": "system-depth",
+      "target": "depth_system",
+      "rule": "Preserve layers, overlaps, integration and separation mechanisms.",
+      "source_ref": "final_frame_spec.depth_system",
+      "loss_category": "DEPTH_LOSS"
+    },
+    {
+      "field_id": "system-lighting",
+      "target": "lighting_system",
+      "rule": "Preserve lighting intent and regional behavior.",
+      "source_ref": "final_frame_spec.lighting_system",
+      "loss_category": "LIGHTING_INTENT_LOSS"
+    },
+    {
+      "field_id": "system-color",
+      "target": "color_system",
+      "rule": "Preserve color families and regional behavior.",
+      "source_ref": "final_frame_spec.color_system",
+      "loss_category": "COLOR_INTENT_LOSS"
+    },
+    {
+      "field_id": "system-typography",
+      "target": "typography_system",
+      "rule": "Preserve typography render mode and behavior.",
+      "source_ref": "final_frame_spec.typography_system",
+      "loss_category": "TYPOGRAPHY_BEHAVIOR_LOSS"
+    },
+    {
+      "field_id": "negative-space-headline-field",
+      "target": "region:headline-field",
+      "rule": "Preserve LEFT region headline-field: Quiet field for locked headline",
+      "source_ref": "final_frame_spec.composition.negative_space_regions.headline-field",
+      "loss_category": "NEGATIVE_SPACE_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-0",
+      "target": "compiler_handoff.hard_locks.0",
+      "rule": "Subject identity",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.0",
+      "loss_category": "HARD_LOCK_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-1",
+      "target": "compiler_handoff.hard_locks.1",
+      "rule": "Exact headline",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.1",
+      "loss_category": "HARD_LOCK_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-2",
+      "target": "compiler_handoff.hard_locks.2",
+      "rule": "Focal order",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.2",
+      "loss_category": "HARD_LOCK_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-3",
+      "target": "compiler_handoff.hard_locks.3",
+      "rule": "Near-camera foreground",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.3",
+      "loss_category": "HARD_LOCK_LOSS"
+    },
+    {
+      "field_id": "handoff-lock-4",
+      "target": "compiler_handoff.hard_locks.4",
+      "rule": "No timer cliché",
+      "source_ref": "final_frame_spec.compiler_handoff.hard_locks.4",
+      "loss_category": "HARD_LOCK_LOSS"
+    }
+  ],
+  "variation_policy": [
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "Fundamental recognizable traits are locked This domain is additionally frozen by an upstream lock.",
+      "source_ref": "final_frame_spec.controlled_variation.identity"
+    },
+    {
+      "domain": "pose",
+      "level": "MEDIUM",
+      "rule": "May adapt only within declared pose intent",
+      "source_ref": "final_frame_spec.controlled_variation.pose"
+    },
+    {
+      "domain": "wardrobe",
+      "level": "MEDIUM",
+      "rule": "May vary details without changing professional meaning",
+      "source_ref": "final_frame_spec.controlled_variation.wardrobe"
+    },
+    {
+      "domain": "environment_details",
+      "level": "MEDIUM",
+      "rule": "May invent supporting detail consistent with required environmental language",
+      "source_ref": "final_frame_spec.controlled_variation.environment_details"
+    },
+    {
+      "domain": "lighting_microvariation",
+      "level": "LOW",
+      "rule": "May tune falloff but not lighting behavior",
+      "source_ref": "final_frame_spec.controlled_variation.lighting_microvariation"
+    },
+    {
+      "domain": "color_microvariation",
+      "level": "LOW",
+      "rule": "May vary shade inside named color families",
+      "source_ref": "final_frame_spec.controlled_variation.color_microvariation"
+    },
+    {
+      "domain": "foreground_details",
+      "level": "MEDIUM",
+      "rule": "May vary material detail but not entry, function or weight",
+      "source_ref": "final_frame_spec.controlled_variation.foreground_details"
+    },
+    {
+      "domain": "effects",
+      "level": "LOW",
+      "rule": "Distribution may vary; purpose and intensity may not",
+      "source_ref": "final_frame_spec.controlled_variation.effects"
+    },
+    {
+      "domain": "typography",
+      "level": "NONE",
+      "rule": "Exact text and hierarchy locked",
+      "source_ref": "final_frame_spec.controlled_variation.typography"
+    },
+    {
+      "domain": "camera",
+      "level": "LOW",
+      "rule": "Micro-adjustment allowed without changing framing, scale or perspective intent",
+      "source_ref": "final_frame_spec.controlled_variation.camera"
+    },
+    {
+      "domain": "composition",
+      "level": "NONE",
+      "rule": "composition is frozen by upstream protection.",
+      "source_ref": "final_frame_spec.protected_fields"
+    }
+  ],
+  "capability_report": {
+    "profile_data_classification": "HYPOTHETICAL_TEST_DATA",
+    "supported_requirements": [
+      {
+        "requirement_ref": "compiler_input.generation_mode",
+        "capability_ref": "mode:GENERATE",
+        "status": "SUPPORTED",
+        "impact": "Mode is supported.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "compiler_input.identity_bindings",
+        "capability_ref": "supports_identity_reference",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "compiler_input.text_bindings",
+        "capability_ref": "supports_text_rendering",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "compiler_input.text_bindings.exact_text_lock",
+        "capability_ref": "supports_exact_text",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements",
+        "capability_ref": "supports_negative_constraints",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      }
+    ],
+    "partially_supported_requirements": [],
+    "unsupported_requirements": [],
+    "unknown_capabilities": []
+  },
+  "compatibility_status": "FULLY_COMPATIBLE",
+  "warnings": [],
+  "errors": [],
+  "compiler_trace": {
+    "compiler_profile": "profile-hypothetical-v1",
+    "compiler_version": "1.0.0",
+    "input_artifact": "ci-canonical-no-reference-urgency",
+    "transformations_applied": [
+      {
+        "transformation": "Projected frozen visual systems into final-state instruction blocks.",
+        "source_ref": "final_frame_spec",
+        "semantic_change": false
+      },
+      {
+        "transformation": "Mapped operational asset bindings to adapter slots.",
+        "source_ref": "compiler_input.assets",
+        "semantic_change": false
+      },
+      {
+        "transformation": "Propagated protected fields and controlled variation without relaxation.",
+        "source_ref": "final_frame_spec.protected_fields",
+        "semantic_change": false
+      }
+    ],
+    "warnings": [],
+    "capability_decisions": [
+      "compiler_input.generation_mode:SUPPORTED",
+      "compiler_input.identity_bindings:SUPPORTED",
+      "compiler_input.text_bindings:SUPPORTED",
+      "compiler_input.text_bindings.exact_text_lock:SUPPORTED",
+      "final_frame_spec.generation_requirements.forbidden_visual_elements:SUPPORTED"
+    ],
+    "output_format_used": "STRUCTURED"
+  },
+  "provenance": {
+    "producer": "GENERATOR_COMPILER",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-10T03:42:10.562Z",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ]
+  },
+  "status": "REQUEST_READY"
+}

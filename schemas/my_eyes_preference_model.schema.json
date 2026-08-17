@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.local/schemas/my_eyes_preference_model.schema.json",
+  "title": "My Eyes Preference Model v1",
+  "description": "Auditable qualitative projection of active human-confirmed preference generalizations. This artifact contains no scores, weights, rankings, or runtime authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "model_id",
+    "model_version",
+    "status",
+    "source_memory_id",
+    "source_memory_version",
+    "generated_at",
+    "design_scope",
+    "principles",
+    "card_execution_profile",
+    "global_boundaries",
+    "runtime_integration",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "model_id": { "const": "MYE_MODEL_000001" },
+    "model_version": { "const": 1 },
+    "status": { "const": "HUMAN_CONFIRMED_CONTEXTUAL_MODEL" },
+    "source_memory_id": { "type": "string", "minLength": 1 },
+    "source_memory_version": { "type": "integer", "minimum": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "design_scope": { "type": "string", "minLength": 1 },
+    "principles": {
+      "type": "array",
+      "minItems": 7,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/principle" }
+    },
+    "card_execution_profile": { "$ref": "#/$defs/card_profile" },
+    "global_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context_relative_to_brief",
+        "quantity_alone_is_not_failure",
+        "features_are_not_universal_verdicts",
+        "not_a_style_guide",
+        "human_evidence_has_highest_authority"
+      ],
+      "properties": {
+        "context_relative_to_brief": { "const": true },
+        "quantity_alone_is_not_failure": { "const": true },
+        "features_are_not_universal_verdicts": { "const": true },
+        "not_a_style_guide": { "const": true },
+        "human_evidence_has_highest_authority": { "const": true }
+      }
+    },
+    "runtime_integration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "creative_director", "critic", "compiler", "generation"],
+      "properties": {
+        "mode": { "const": "EVIDENCE_ARTIFACT_ONLY" },
+        "creative_director": { "const": false },
+        "critic": { "const": false },
+        "compiler": { "const": false },
+        "generation": { "const": false }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["producer", "producer_version", "asserted_by", "source_preference_ids"],
+      "properties": {
+        "producer": { "const": "MY_EYES_PREFERENCE_MODEL_BUILDER" },
+        "producer_version": { "const": "1.0.0" },
+        "asserted_by": { "const": "SYSTEM_PROJECTION_OF_HUMAN_CONFIRMED_PREFERENCES" },
+        "source_preference_ids": {
+          "type": "array",
+          "minItems": 7,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^MYE_PREF_[0-9]{6}$" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nonempty_strings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "principle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preference_id",
+        "title",
+        "statement",
+        "status",
+        "confidence",
+        "human_confirmed",
+        "scope",
+        "conditions",
+        "exceptions",
+        "explicitly_not_claimed",
+        "evidence_refs",
+        "positive_reference_image_ids"
+      ],
+      "properties": {
+        "preference_id": { "type": "string", "pattern": "^MYE_PREF_[0-9]{6}$" },
+        "title": { "type": "string", "minLength": 1 },
+        "statement": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["SUPPORTED", "CONTEXTUAL"] },
+        "confidence": { "enum": ["HIGH", "MEDIUM", "LOW"] },
+        "human_confirmed": { "const": true },
+        "scope": { "type": "string", "minLength": 1 },
+        "conditions": { "$ref": "#/$defs/nonempty_strings" },
+        "exceptions": { "$ref": "#/$defs/nonempty_strings" },
+        "explicitly_not_claimed": { "$ref": "#/$defs/nonempty_strings" },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^MYE_(DEC|RSN|SRSN|ANA|PAIR|PREF|CREV|HYP)_[0-9]{6}$" }
+        },
+        "positive_reference_image_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^MYE_IMG_[0-9]{6}$" }
+        }
+      }
+    },
+    "card_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "positive_reference_image_id",
+        "positive_reference_human_reason_id",
+        "positive_definition",
+        "supported_positive_properties",
+        "generic_failure_definition",
+        "generic_failure_signals",
+        "unresolved_boundaries"
+      ],
+      "properties": {
+        "status": { "const": "HUMAN_CONFIRMED_CONTEXTUAL" },
+        "positive_reference_image_id": { "const": "MYE_IMG_000006" },
+        "positive_reference_human_reason_id": { "type": "string", "pattern": "^MYE_RSN_[0-9]{6}$" },
+        "positive_definition": { "type": "string", "minLength": 1 },
+        "supported_positive_properties": { "$ref": "#/$defs/nonempty_strings" },
+        "generic_failure_definition": { "type": "string", "minLength": 1 },
+        "generic_failure_signals": { "$ref": "#/$defs/nonempty_strings" },
+        "unresolved_boundaries": { "$ref": "#/$defs/nonempty_strings" }
+      }
+    }
+  }
+}

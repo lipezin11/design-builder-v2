@@ -1,0 +1,264 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_live_rt_03_high_complexity_convergence-rt-live-step37-20260816-final",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "input_mode": "MULTIMODAL",
+  "status": "COMPLETE",
+  "started_at": "2026-08-16T03:53:01.320Z",
+  "completed_at": "2026-08-16T03:54:31.155Z",
+  "input_hash": "da3f46333e0da813074cf3d8017aa625c37c29e881120f81bd6880b6d9bb7ca2",
+  "input_artifacts": {
+    "context_id": "ctx_live_rt_03_high_complexity_convergence",
+    "brief_ref": {
+      "artifact_id": "brief_live_rt_03_high_complexity_convergence",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "live_ref_dense_surreal",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": [
+      "MYE_LIVE_LIVE_RT_03_HIGH_COMPLEXITY_CONVERGENCE",
+      "VKB_LIVE_LIVE_RT_03_HIGH_COMPLEXITY_CONVERGENCE"
+    ]
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "NVIDIA_NIM",
+    "model": "stepfun-ai/step-3.7-flash"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "PASS",
+      "error_code": null,
+      "diagnostic_codes": [],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4287,
+        "reference_context_characters": 862,
+        "my_eyes_advisory_characters": 880,
+        "vkb_advisory_characters": 799,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 31647,
+        "total_textual_characters": 518465,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 3754996,
+        "serialized_http_body_characters": 4282887,
+        "input_tokens": 129617,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 116143,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-2b16f1a6-fc7c-4303-8d22-458ce6be2432",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 89744,
+        "final_attempt_latency_ms": 78233,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_dense_surreal",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 2816247,
+            "sha256": "fd78a948ac123108bad39cf90136eb6c016434dafc09af834560da38cddadb57"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4287,
+          "reference_context_characters": 862,
+          "my_eyes_advisory_characters": 880,
+          "vkb_advisory_characters": 799,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 31647,
+          "total_textual_characters": 518465,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 3754996,
+          "serialized_http_body_characters": 4282887,
+          "input_tokens": 96827,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148933,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96827,
+          "output_tokens": 15106,
+          "total_tokens": 111933,
+          "cached_tokens": 88608,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T03:53:01.320Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T03:53:01.348Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T03:53:01.348Z",
+      "attempt": 1
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T03:54:31.152Z",
+      "attempt": 1
+    },
+    {
+      "state": "SCHEMA_VALIDATED",
+      "at": "2026-08-16T03:54:31.155Z",
+      "attempt": 1
+    },
+    {
+      "state": "SEMANTIC_VALIDATED",
+      "at": "2026-08-16T03:54:31.155Z",
+      "attempt": 1
+    },
+    {
+      "state": "QUALITY_VALIDATED",
+      "at": "2026-08-16T03:54:31.155Z",
+      "attempt": 1
+    },
+    {
+      "state": "PLAN_PERSISTED",
+      "at": "2026-08-16T03:54:31.155Z",
+      "pending_store": true
+    },
+    {
+      "state": "COMPLETE",
+      "at": "2026-08-16T03:54:31.155Z"
+    }
+  ],
+  "validation_outcomes": [
+    {
+      "attempt": 1,
+      "schema": true,
+      "semantic": true,
+      "quality": true
+    }
+  ],
+  "output_plan_id": "plan_live_rt_03_high_complexity_convergence",
+  "structured_decision_summary": [
+    {
+      "mapping_id": "MAP-01",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-01",
+        "OBS-05"
+      ]
+    },
+    {
+      "mapping_id": "MAP-02",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-02"
+      ]
+    },
+    {
+      "mapping_id": "MAP-03",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-03",
+        "OBS-04"
+      ]
+    },
+    {
+      "mapping_id": "MAP-04",
+      "action": "TRANSFER",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-03"
+      ]
+    },
+    {
+      "mapping_id": "MAP-05",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-08"
+      ]
+    },
+    {
+      "mapping_id": "MAP-06",
+      "action": "REINVENT",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-06",
+        "OBS-09"
+      ]
+    },
+    {
+      "mapping_id": "MAP-07",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-01",
+        "OBS-05",
+        "OBS-07"
+      ]
+    },
+    {
+      "mapping_id": "MAP-08",
+      "action": "DISCARD",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-05"
+      ]
+    },
+    {
+      "mapping_id": "MAP-09",
+      "action": "DISCARD",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-06",
+        "OBS-09"
+      ]
+    },
+    {
+      "mapping_id": "MAP-10",
+      "action": "DISCARD",
+      "source_reference_asset_id": "live_ref_dense_surreal",
+      "observation_ids": [
+        "OBS-09",
+        "OBS-10"
+      ]
+    }
+  ],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

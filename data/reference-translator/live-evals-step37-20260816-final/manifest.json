@@ -1,0 +1,91 @@
+{
+  "manifest_version": "1.0.0",
+  "suite_id": "REFERENCE_TRANSLATOR_LIVE_MULTIMODAL_COGNITIVE_EVALUATION_V1",
+  "artifact_classification": "EVALUATION_ARTIFACTS_NOT_PRODUCTION",
+  "input_mode": "MULTIMODAL",
+  "cases": [
+    {
+      "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "family": "STRONG_SAME_DOMAIN_REFERENCE",
+      "smoke": true,
+      "image_id": "MYE_IMG_000014",
+      "reference_path": "data/my_eyes/approved/14.jpeg",
+      "target_type": "executive strategy keynote banner",
+      "test_purpose": "Test same-domain mechanism transfer, subject treatment, depth, hierarchy, and source-identity protection."
+    },
+    {
+      "case_id": "LIVE_RT_02_PERSONAL_BRAND_CONTEXT_SHIFT",
+      "family": "PERSONAL_BRAND_HUMAN_SUBJECT",
+      "smoke": false,
+      "image_id": "MYE_IMG_000005",
+      "reference_path": "data/my_eyes/approved/5.png",
+      "target_type": "climate-tech founder editorial portrait",
+      "test_purpose": "Test personal-brand translation across professional contexts without identity, wardrobe, symbol, or source-brand copying."
+    },
+    {
+      "case_id": "LIVE_RT_03_HIGH_COMPLEXITY_CONVERGENCE",
+      "family": "HIGH_COMPLEXITY_REFERENCE",
+      "smoke": false,
+      "image_id": "MYE_IMG_000019",
+      "reference_path": "data/my_eyes/rejected/3.png",
+      "target_type": "science museum exhibition poster",
+      "test_purpose": "Test whether dense reference logic is understood as convergence, clusters, hierarchy, depth, and narrative rather than reduced by element count."
+    },
+    {
+      "case_id": "LIVE_RT_04_MINIMAL_RESTRAINT",
+      "family": "MINIMAL_RESTRAINED_REFERENCE",
+      "smoke": false,
+      "image_id": "MYE_IMG_000008",
+      "reference_path": "data/my_eyes/approved/8.png",
+      "target_type": "boutique financial advisory landing-page hero",
+      "test_purpose": "Test restraint versus lack of information, negative-space confidence, focal hierarchy, and necessary target communication."
+    },
+    {
+      "case_id": "LIVE_RT_05_GENERIC_DEVICE_SELECTIVITY",
+      "family": "GENERIC_VISUAL_DEVICE_REFERENCE",
+      "smoke": false,
+      "image_id": "MYE_IMG_000020",
+      "reference_path": "data/my_eyes/rejected/4.png",
+      "target_type": "pediatric telehealth campaign",
+      "test_purpose": "Test selective transfer and concrete diagnosis of neon glow, floating icons, fragments, panels, and filler without vague AI-look language."
+    },
+    {
+      "case_id": "LIVE_RT_06_CARD_INFORMATION_ARTIFACT",
+      "family": "CARD_INFORMATION_ARTIFACT_REFERENCE",
+      "smoke": false,
+      "image_id": "MYE_IMG_000018",
+      "reference_path": "data/my_eyes/rejected/2.png",
+      "target_type": "online language curriculum hero",
+      "test_purpose": "Test card content specificity, grouping, hierarchy, narrative function, spatial integration, and interchangeability."
+    },
+    {
+      "case_id": "LIVE_RT_07_SURFACE_COPY_TRAP",
+      "family": "SURFACE_COPY_TRAP",
+      "smoke": false,
+      "image_id": "MYE_IMG_000002",
+      "reference_path": "data/my_eyes/approved/2.png",
+      "target_type": "workplace mental-health support campaign",
+      "test_purpose": "Test whether memorable literal objects and palette are left behind while isolation, pressure, refuge, contrast, and narrative tension are interpreted."
+    },
+    {
+      "case_id": "LIVE_RT_08_FORMAT_AND_LIGHT_TRANSLATION",
+      "family": "FORMAT_MISMATCH_AND_MATERIAL_LIGHTING",
+      "smoke": false,
+      "image_id": "MYE_IMG_000007",
+      "reference_path": "data/my_eyes/approved/7.png",
+      "target_type": "vertical historical-fiction book launch poster",
+      "test_purpose": "Test format mismatch through mass, territories, hierarchy, density gradient, flow, motivated light, and material atmosphere rather than coordinate or prop copying."
+    }
+  ],
+  "unavailable_required_case": {
+    "family": "CROSS_CATEGORY_PRODUCT_REFERENCE",
+    "status": "REAL_ASSET_UNAVAILABLE",
+    "exact_missing_image_type": "A real product campaign reference containing a category-native support prop, preferably skincare with a handbag or comparable tactile fashion prop.",
+    "suggested_filename": "cross-category-skincare-support-prop-reference.jpg",
+    "target_folder": "data/reference-translator/live-evals/source-assets/",
+    "verifies": "Literal object versus visual function, material language, emotional effect, compositional role, and target-native product adaptation."
+  },
+  "synthetic_image_observations_used": false,
+  "my_eyes_memory_mutated": false,
+  "vkb_mutated": false
+}

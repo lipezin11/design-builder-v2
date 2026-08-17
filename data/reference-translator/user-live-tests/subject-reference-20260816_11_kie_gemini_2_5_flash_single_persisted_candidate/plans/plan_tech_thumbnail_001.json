@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_tech_thumbnail_001",
+  "project_id": "project_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "STANDARD_REFERENCE_TRANSFER",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "MODEL_INFERENCE",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": "target_subject_identity",
+    "semantic_identity": "Creator/Technologist",
+    "protected_elements": [
+      "facial geometry",
+      "dark rectangular glasses",
+      "hairstyle",
+      "age cues"
+    ],
+    "elements_allowed_to_change": [
+      "pose",
+      "wardrobe",
+      "environment",
+      "lighting",
+      "composition"
+    ],
+    "elements_forbidden_to_change": [
+      "subject identity",
+      "facial features"
+    ]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "primary_tech_reference",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_001",
+          "category": "COMPOSITION",
+          "description": "Central subject dominance with dense, mechanical environmental framing.",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_002",
+          "category": "LIGHTING",
+          "description": "High-contrast violet/purple ambient light with sharp, energized electrical arcs.",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_003",
+          "category": "TYPOGRAPHY",
+          "description": "Acid-green, spray-painted style graffiti typography providing a high-contrast counter-accent.",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_004",
+          "category": "DEPTH",
+          "description": "Layered, complex machine-world environment creating deep, immersive space.",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "hierarchy": "Centralized subject with dense, technical environmental support.",
+        "lighting": "Violet-dominant atmosphere with high-energy electrical accents.",
+        "color": "Deep purple/violet base with high-contrast acid-green accents.",
+        "complexity": "High-density technical environment providing narrative context."
+      },
+      "transfer_relevance": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_001",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_001"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Maintain central subject placement for authority, but replace mechanical framing with target-native technical environment.",
+      "rationale": "Central dominance is essential for a personal-brand thumbnail; the environment should reflect the subject's specific technical domain.",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "confidence": "HIGH",
+      "provenance": "INFERRED"
+    },
+    {
+      "mapping_id": "map_002",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_002"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Use a high-contrast, saturated ambient light base to establish an energetic atmosphere, ensuring it integrates naturally with the subject's skin and glasses.",
+      "rationale": "The violet lighting provides a strong, energetic technical mood that is highly transferable.",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "INFERRED"
+    },
+    {
+      "mapping_id": "map_003",
+      "source_reference_asset_id": "primary_tech_reference",
+      "observation_ids": [
+        "obs_003"
+      ],
+      "action": "REINVENT",
+      "target_in_new_composition": "Reinvent the typographic element as a high-contrast graphic counterweight or structural framing element, maintaining its role as a high-chroma secondary accent to establish visual tension and balance against the dominant subject mass.",
+      "rationale": "A high-chroma secondary accent acting as a structural counterweight is necessary to provide visual tension and contrast against the saturated ambient base.",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "confidence": "HIGH",
+      "provenance": "INFERRED"
+    }
+  ],
+  "conflicts": [],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anchor_001",
+      "description": "Strict preservation of subject identity (face, glasses, hair, age).",
+      "source_reference_asset_id": "target_subject_identity",
+      "function": "Identity anchor",
+      "importance": "CRITICAL",
+      "flexibility": "LOCKED",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "Environment",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "The environment should be a target-native technical space, not a copy of the reference machine-world."
+    },
+    {
+      "area": "Wardrobe",
+      "freedom_level": "HIGH",
+      "rationale": "Wardrobe should support the 'technical authority' brief."
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_001",
+      "description": "Reference lighting may conflict with subject skin tones if not carefully integrated.",
+      "severity": "MEDIUM",
+      "mitigation": "Ensure subject-environment integration through shared light bounce and color contamination."
+    }
+  ],
+  "provenance": {
+    "translator_version": "1.1.0",
+    "created_at": "2026-08-16T23:15:37.809Z",
+    "notes": "Identity preserved from Image A; design intelligence adapted from Image B."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "The subject identity is clearly defined and the reference provides a strong, transferable visual thesis."
+  },
+  "director_handoff": {
+    "what_must_survive": [
+      "Subject identity (face, glasses, hair, age)",
+      "Technical authority mood"
+    ],
+    "what_should_survive": [
+      "Saturated ambient base lighting establishing the overall atmosphere",
+      "High-chroma secondary accent providing chromatic tension and structural counterweight",
+      "Centralized subject hierarchy"
+    ],
+    "what_can_change": [
+      "Environment manifestation",
+      "Subject pose and wardrobe",
+      "Graphic elements"
+    ],
+    "key_conflicts": [],
+    "recommended_anchors": [
+      "Subject identity",
+      "Saturated ambient base lighting atmosphere"
+    ]
+  }
+}

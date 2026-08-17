@@ -1,0 +1,209 @@
+{
+    "schema_version":  "1.0.0",
+    "analysis_id":  "MYE_ANA_000001",
+    "image_id":  "MYE_IMG_000001",
+    "image_sha256":  "0000000000000000000000000000000000000000000000000000000000000000",
+    "analysis_version":  1,
+    "analyzed_at":  "2026-08-10T12:03:00.000Z",
+    "blind_analysis":  true,
+    "label_visible_during_analysis":  false,
+    "human_decision_context_used":  false,
+    "data_classification":  "SYNTHETIC_TEST_DATA",
+    "analyzer":  {
+                     "provider":  "synthetic-provider",
+                     "model":  "synthetic-model",
+                     "analyzer_version":  "test-only",
+                     "analysis_prompt_version":  "synthetic-blind-v1"
+                 },
+    "overall_observation_summary":  "Synthetic visual observation used only for contract validation.",
+    "dimensions":  {
+                       "format_usage":  {
+                                            "status":  "OBSERVED",
+                                            "summary":  "Synthetic format_usage observation for contract validation only.",
+                                            "facts":  [
+                                                          {
+                                                              "fact_id":  "FACT_001",
+                                                              "attribute":  "format_usage",
+                                                              "observation":  "Synthetic observable fact for format_usage; it contains no preference or quality claim.",
+                                                              "confidence":  "HIGH"
+                                                          }
+                                                      ]
+                                        },
+                       "composition":  {
+                                           "status":  "OBSERVED",
+                                           "summary":  "Synthetic composition observation for contract validation only.",
+                                           "facts":  [
+                                                         {
+                                                             "fact_id":  "FACT_002",
+                                                             "attribute":  "composition",
+                                                             "observation":  "Synthetic observable fact for composition; it contains no preference or quality claim.",
+                                                             "confidence":  "HIGH"
+                                                         }
+                                                     ]
+                                       },
+                       "visual_hierarchy":  {
+                                                "status":  "OBSERVED",
+                                                "summary":  "Synthetic visual_hierarchy observation for contract validation only.",
+                                                "facts":  [
+                                                              {
+                                                                  "fact_id":  "FACT_003",
+                                                                  "attribute":  "visual_hierarchy",
+                                                                  "observation":  "Synthetic observable fact for visual_hierarchy; it contains no preference or quality claim.",
+                                                                  "confidence":  "HIGH"
+                                                              }
+                                                          ]
+                                            },
+                       "depth":  {
+                                     "status":  "OBSERVED",
+                                     "summary":  "Synthetic depth observation for contract validation only.",
+                                     "facts":  [
+                                                   {
+                                                       "fact_id":  "FACT_004",
+                                                       "attribute":  "depth",
+                                                       "observation":  "Synthetic observable fact for depth; it contains no preference or quality claim.",
+                                                       "confidence":  "HIGH"
+                                                   }
+                                               ]
+                                 },
+                       "subject_environment_integration":  {
+                                                               "status":  "OBSERVED",
+                                                               "summary":  "Synthetic subject_environment_integration observation for contract validation only.",
+                                                               "facts":  [
+                                                                             {
+                                                                                 "fact_id":  "FACT_005",
+                                                                                 "attribute":  "subject_environment_integration",
+                                                                                 "observation":  "Synthetic observable fact for subject_environment_integration; it contains no preference or quality claim.",
+                                                                                 "confidence":  "HIGH"
+                                                                             }
+                                                                         ]
+                                                           },
+                       "lighting":  {
+                                        "status":  "OBSERVED",
+                                        "summary":  "Synthetic lighting observation for contract validation only.",
+                                        "facts":  [
+                                                      {
+                                                          "fact_id":  "FACT_006",
+                                                          "attribute":  "lighting",
+                                                          "observation":  "Synthetic observable fact for lighting; it contains no preference or quality claim.",
+                                                          "confidence":  "HIGH"
+                                                      }
+                                                  ]
+                                    },
+                       "color":  {
+                                     "status":  "OBSERVED",
+                                     "summary":  "Synthetic color observation for contract validation only.",
+                                     "facts":  [
+                                                   {
+                                                       "fact_id":  "FACT_007",
+                                                       "attribute":  "color",
+                                                       "observation":  "Synthetic observable fact for color; it contains no preference or quality claim.",
+                                                       "confidence":  "HIGH"
+                                                   }
+                                               ]
+                                 },
+                       "typography":  {
+                                          "status":  "OBSERVED",
+                                          "summary":  "Synthetic typography observation for contract validation only.",
+                                          "facts":  [
+                                                        {
+                                                            "fact_id":  "FACT_008",
+                                                            "attribute":  "typography",
+                                                            "observation":  "Synthetic observable fact for typography; it contains no preference or quality claim.",
+                                                            "confidence":  "HIGH"
+                                                        }
+                                                    ]
+                                      },
+                       "environment":  {
+                                           "status":  "OBSERVED",
+                                           "summary":  "Synthetic environment observation for contract validation only.",
+                                           "facts":  [
+                                                         {
+                                                             "fact_id":  "FACT_009",
+                                                             "attribute":  "environment",
+                                                             "observation":  "Synthetic observable fact for environment; it contains no preference or quality claim.",
+                                                             "confidence":  "HIGH"
+                                                         }
+                                                     ]
+                                       },
+                       "foreground":  {
+                                          "status":  "OBSERVED",
+                                          "summary":  "Synthetic foreground observation for contract validation only.",
+                                          "facts":  [
+                                                        {
+                                                            "fact_id":  "FACT_010",
+                                                            "attribute":  "foreground",
+                                                            "observation":  "Synthetic observable fact for foreground; it contains no preference or quality claim.",
+                                                            "confidence":  "HIGH"
+                                                        }
+                                                    ]
+                                      },
+                       "effects":  {
+                                       "status":  "OBSERVED",
+                                       "summary":  "Synthetic effects observation for contract validation only.",
+                                       "facts":  [
+                                                     {
+                                                         "fact_id":  "FACT_011",
+                                                         "attribute":  "effects",
+                                                         "observation":  "Synthetic observable fact for effects; it contains no preference or quality claim.",
+                                                         "confidence":  "HIGH"
+                                                     }
+                                                 ]
+                                   },
+                       "realism_coherence":  {
+                                                 "status":  "OBSERVED",
+                                                 "summary":  "Synthetic realism_coherence observation for contract validation only.",
+                                                 "facts":  [
+                                                               {
+                                                                   "fact_id":  "FACT_012",
+                                                                   "attribute":  "realism_coherence",
+                                                                   "observation":  "Synthetic observable fact for realism_coherence; it contains no preference or quality claim.",
+                                                                   "confidence":  "HIGH"
+                                                               }
+                                                           ]
+                                             },
+                       "complexity_density":  {
+                                                  "status":  "OBSERVED",
+                                                  "summary":  "Synthetic complexity_density observation for contract validation only.",
+                                                  "facts":  [
+                                                                {
+                                                                    "fact_id":  "FACT_013",
+                                                                    "attribute":  "complexity_density",
+                                                                    "observation":  "Synthetic observable fact for complexity_density; it contains no preference or quality claim.",
+                                                                    "confidence":  "HIGH"
+                                                                }
+                                                            ]
+                                              },
+                       "distinctive_design_decisions":  {
+                                                            "status":  "OBSERVED",
+                                                            "summary":  "Synthetic distinctive_design_decisions observation for contract validation only.",
+                                                            "facts":  [
+                                                                          {
+                                                                              "fact_id":  "FACT_014",
+                                                                              "attribute":  "distinctive_design_decisions",
+                                                                              "observation":  "Synthetic observable fact for distinctive_design_decisions; it contains no preference or quality claim.",
+                                                                              "confidence":  "HIGH"
+                                                                          }
+                                                                      ]
+                                                        }
+                   },
+    "interpretations":  [
+
+                        ],
+    "uncertainty_notes":  [
+                              "Synthetic bytes are intentionally unavailable outside this fixture."
+                          ],
+    "semantic_boundaries":  {
+                                "human_reason_written":  false,
+                                "general_quality_judgment_performed":  false,
+                                "designer_preference_inferred":  false,
+                                "pairwise_inference_performed":  false
+                            },
+    "provenance":  {
+                       "asserted_by":  "MULTIMODAL_ANALYZER",
+                       "recorded_by":  "APPROVED_DIRECTION_MEMORY_SERVICE",
+                       "source_type":  "IMAGE_BYTES",
+                       "source_ref":  "my-eyes-image://MYE_IMG_000001@sha256:0000000000000000000000000000000000000000000000000000000000000000",
+                       "recorded_at":  "2026-08-10T12:03:00.000Z",
+                       "data_classification":  "SYNTHETIC_TEST_DATA"
+                   }
+}

@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.local/schemas/visual_analysis_record.schema.json",
+  "title": "Visual Analysis Record",
+  "description": "Blind, per-image Level 3 visual observation. It cannot contain human reasons, quality verdicts, pairwise conclusions, or designer-preference inference.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "analysis_id", "image_id", "image_sha256", "analysis_version", "analyzed_at", "blind_analysis", "label_visible_during_analysis", "human_decision_context_used", "data_classification", "analyzer", "overall_observation_summary", "dimensions", "interpretations", "uncertainty_notes", "semantic_boundaries", "provenance"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "analysis_id": { "type": "string", "pattern": "^MYE_ANA_[0-9]{6}$" },
+    "image_id": { "type": "string", "pattern": "^MYE_IMG_[0-9]{6}$" },
+    "image_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "analysis_version": { "type": "integer", "minimum": 1 },
+    "analyzed_at": { "type": "string", "format": "date-time" },
+    "blind_analysis": { "const": true },
+    "label_visible_during_analysis": { "const": false },
+    "human_decision_context_used": { "const": false },
+    "data_classification": { "enum": ["REAL_AI_ANALYSIS", "SYNTHETIC_TEST_DATA"] },
+    "analyzer": { "$ref": "#/$defs/analyzer" },
+    "overall_observation_summary": { "type": "string", "minLength": 1 },
+    "dimensions": { "$ref": "#/$defs/dimensions" },
+    "interpretations": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/interpretation" }
+    },
+    "uncertainty_notes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "semantic_boundaries": { "$ref": "#/$defs/semantic_boundaries" },
+    "provenance": { "$ref": "#/$defs/provenance" }
+  },
+  "$defs": {
+    "confidence": { "enum": ["LOW", "MEDIUM", "HIGH", "UNKNOWN"] },
+    "analyzer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "model", "analyzer_version", "analysis_prompt_version"],
+      "properties": {
+        "provider": { "type": "string", "minLength": 1 },
+        "model": { "type": "string", "minLength": 1 },
+        "analyzer_version": { "type": "string", "minLength": 1 },
+        "analysis_prompt_version": { "type": "string", "minLength": 1 }
+      }
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "attribute", "observation", "confidence"],
+      "properties": {
+        "fact_id": { "type": "string", "pattern": "^FACT_[0-9]{3}$" },
+        "attribute": { "type": "string", "minLength": 1 },
+        "observation": { "type": "string", "minLength": 1 },
+        "confidence": { "$ref": "#/$defs/confidence" }
+      }
+    },
+    "dimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "summary", "facts"],
+      "properties": {
+        "status": { "enum": ["OBSERVED", "NOT_PRESENT", "UNKNOWN", "NOT_APPLICABLE"] },
+        "summary": { "type": "string", "minLength": 1 },
+        "facts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/fact" }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "OBSERVED" } }, "required": ["status"] },
+          "then": { "properties": { "facts": { "minItems": 1 } } }
+        }
+      ]
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format_usage", "composition", "visual_hierarchy", "depth", "subject_environment_integration", "lighting", "color", "typography", "environment", "foreground", "effects", "realism_coherence", "complexity_density", "distinctive_design_decisions"],
+      "properties": {
+        "format_usage": { "$ref": "#/$defs/dimension" },
+        "composition": { "$ref": "#/$defs/dimension" },
+        "visual_hierarchy": { "$ref": "#/$defs/dimension" },
+        "depth": { "$ref": "#/$defs/dimension" },
+        "subject_environment_integration": { "$ref": "#/$defs/dimension" },
+        "lighting": { "$ref": "#/$defs/dimension" },
+        "color": { "$ref": "#/$defs/dimension" },
+        "typography": { "$ref": "#/$defs/dimension" },
+        "environment": { "$ref": "#/$defs/dimension" },
+        "foreground": { "$ref": "#/$defs/dimension" },
+        "effects": { "$ref": "#/$defs/dimension" },
+        "realism_coherence": { "$ref": "#/$defs/dimension" },
+        "complexity_density": { "$ref": "#/$defs/dimension" },
+        "distinctive_design_decisions": { "$ref": "#/$defs/dimension" }
+      }
+    },
+    "interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["interpretation_id", "interpretation_type", "statement", "based_on_fact_ids", "confidence"],
+      "properties": {
+        "interpretation_id": { "type": "string", "pattern": "^INT_[0-9]{3}$" },
+        "interpretation_type": { "const": "AI_VISUAL_INTERPRETATION" },
+        "statement": { "type": "string", "minLength": 1 },
+        "based_on_fact_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^FACT_[0-9]{3}$" }
+        },
+        "confidence": { "$ref": "#/$defs/confidence" }
+      }
+    },
+    "semantic_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["human_reason_written", "general_quality_judgment_performed", "designer_preference_inferred", "pairwise_inference_performed"],
+      "properties": {
+        "human_reason_written": { "const": false },
+        "general_quality_judgment_performed": { "const": false },
+        "designer_preference_inferred": { "const": false },
+        "pairwise_inference_performed": { "const": false }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["asserted_by", "recorded_by", "source_type", "source_ref", "recorded_at", "data_classification"],
+      "properties": {
+        "asserted_by": { "const": "MULTIMODAL_ANALYZER" },
+        "recorded_by": { "const": "APPROVED_DIRECTION_MEMORY_SERVICE" },
+        "source_type": { "const": "IMAGE_BYTES" },
+        "source_ref": { "type": "string", "minLength": 1 },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "data_classification": { "enum": ["REAL_AI_ANALYSIS", "SYNTHETIC_TEST_DATA"] }
+      }
+    }
+  }
+}

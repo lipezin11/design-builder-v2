@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-builder.io/schemas/final_frame_spec.schema.json",
+  "title": "Design Builder Final Frame Spec",
+  "description": "Generator-agnostic frozen technical source of truth produced by the Technical Design Room. It defines what the final frame must visually and spatially contain; compilers may translate representation but may not redesign it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "frame_spec_id", "project_id", "status", "input_refs",
+    "canvas", "composition", "camera", "subjects", "environment", "depth_system",
+    "lighting_system", "color_system", "typography_system", "foreground", "objects",
+    "effects", "reference_constraints", "protected_fields", "controlled_variation",
+    "technical_decisions", "resolved_conflicts", "generation_requirements",
+    "quality_requirements", "unresolved_issues", "compiler_handoff", "provenance", "approval"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "frame_spec_id": { "type": "string", "minLength": 1 },
+    "project_id": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["DRAFT", "UNDER_TECHNICAL_REVIEW", "BLOCKED", "HUMAN_REVIEW_REQUIRED", "READY_FOR_COMPILATION", "APPROVED"] },
+    "input_refs": {
+      "type": "object", "additionalProperties": false,
+      "required": ["creative_direction_spec_id", "creative_direction_spec_version", "brief_spec_id", "brief_spec_version", "reference_mode_active", "assets"],
+      "properties": {
+        "creative_direction_spec_id": { "type": "string" },
+        "creative_direction_spec_version": { "type": "string" },
+        "brief_spec_id": { "type": "string" },
+        "brief_spec_version": { "type": "string" },
+        "reference_mode_active": { "type": "boolean" },
+        "reference_transfer_plan_id": { "type": "string" },
+        "reference_transfer_plan_version": { "type": "string" },
+        "assets": { "type": "array", "items": { "$ref": "#/$defs/asset_ref" } }
+      }
+    },
+    "canvas": {
+      "type": "object", "additionalProperties": false,
+      "required": ["aspect_ratio", "orientation", "intended_usage", "output_role"],
+      "properties": {
+        "aspect_ratio": { "type": "string", "pattern": "^[^:]+:[^:]+$" },
+        "orientation": { "type": "string", "enum": ["LANDSCAPE", "PORTRAIT", "SQUARE", "PANORAMIC", "CUSTOM"] },
+        "intended_usage": { "type": "string", "description": "Extensible usage name such as WEBSITE_HERO or THUMBNAIL." },
+        "output_role": { "type": "string" },
+        "safe_areas": { "type": "array", "items": { "$ref": "#/$defs/spatial_region" } }
+      }
+    },
+    "composition": {
+      "type": "object", "additionalProperties": false,
+      "required": ["composition_strategy", "mass_distribution", "balance", "dominant_axis", "reading_flow", "focal_points", "negative_space_regions", "subject_environment_relationship", "edge_behavior", "cropping_strategy", "depth_composition_relationship"],
+      "properties": {
+        "composition_strategy": { "type": "string" },
+        "mass_distribution": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/visual_mass" } },
+        "balance": { "type": "string" },
+        "dominant_axis": { "type": "string" },
+        "reading_flow": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "focal_points": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/focal_point" } },
+        "negative_space_regions": { "type": "array", "items": { "$ref": "#/$defs/spatial_region" } },
+        "subject_environment_relationship": { "type": "string" },
+        "edge_behavior": { "type": "string" },
+        "cropping_strategy": { "type": "string" },
+        "depth_composition_relationship": { "type": "string" }
+      }
+    },
+    "camera": {
+      "type": "object", "additionalProperties": false,
+      "required": ["shot_type", "camera_height", "camera_angle", "view_direction", "perspective_intent", "lens_behavior", "depth_of_field_intent", "focus_target", "camera_energy"],
+      "properties": {
+        "shot_type": { "type": "string" }, "camera_height": { "type": "string" }, "camera_angle": { "type": "string" },
+        "view_direction": { "type": "string" }, "perspective_intent": { "type": "string" }, "lens_behavior": { "type": "string" },
+        "focal_length_mm": { "type": "number", "exclusiveMinimum": 0 }, "depth_of_field_intent": { "type": "string" },
+        "focus_target": { "type": "string" }, "camera_energy": { "type": "string" }
+      }
+    },
+    "subjects": { "type": "array", "items": { "$ref": "#/$defs/subject_spec" } },
+    "environment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["environment_type", "concept", "spatial_character", "visual_density", "regional_density", "materials", "architectural_or_natural_language", "atmosphere", "environmental_storytelling", "subject_integration", "required_elements", "optional_elements", "forbidden_elements"],
+      "properties": {
+        "environment_type": { "type": "string" }, "concept": { "type": "string" }, "spatial_character": { "type": "string" },
+        "visual_density": { "$ref": "#/$defs/density_level" },
+        "regional_density": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/regional_density" } },
+        "materials": { "type": "array", "items": { "type": "string" } },
+        "architectural_or_natural_language": { "type": "string" }, "atmosphere": { "type": "string" },
+        "environmental_storytelling": { "type": "string" }, "subject_integration": { "type": "string" },
+        "required_elements": { "type": "array", "items": { "type": "string" } },
+        "optional_elements": { "type": "array", "items": { "type": "string" } },
+        "forbidden_elements": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "depth_system": {
+      "type": "object", "additionalProperties": false,
+      "required": ["depth_strategy", "layers", "subject_environment_integration", "separation_mechanisms", "overlap_strategy", "atmospheric_perspective", "required_depth_strength"],
+      "properties": {
+        "depth_strategy": { "type": "string" },
+        "layers": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/depth_layer" } },
+        "subject_environment_integration": { "type": "string" },
+        "separation_mechanisms": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "overlap_strategy": { "type": "string" }, "atmospheric_perspective": { "type": "string" },
+        "required_depth_strength": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] }
+      }
+    },
+    "lighting_system": {
+      "type": "object", "additionalProperties": false,
+      "required": ["lighting_intent", "subject_key_behavior", "fill_behavior", "rim_or_edge_behavior", "background_light_behavior", "motivated_sources", "directionality", "contrast_strategy", "volumetric_behavior", "subject_separation", "regional_luminance_strategy", "integration_notes"],
+      "properties": {
+        "lighting_intent": { "type": "string" }, "subject_key_behavior": { "type": "string" }, "fill_behavior": { "type": "string" },
+        "rim_or_edge_behavior": { "type": "string" }, "background_light_behavior": { "type": "string" },
+        "motivated_sources": { "type": "array", "items": { "type": "string" } }, "directionality": { "type": "string" },
+        "contrast_strategy": { "type": "string" }, "volumetric_behavior": { "type": "string" },
+        "subject_separation": { "type": "string" }, "regional_luminance_strategy": { "type": "array", "items": { "$ref": "#/$defs/regional_behavior" } },
+        "integration_notes": { "type": "string" }
+      }
+    },
+    "color_system": {
+      "type": "object", "additionalProperties": false,
+      "required": ["dominant_family", "secondary_family", "accent_family", "neutral_family", "temperature_relationship", "saturation_strategy", "contrast_strategy", "regional_color_behavior", "subject_skin_treatment", "reference_color_anchors", "forbidden_color_behaviors"],
+      "properties": {
+        "dominant_family": { "type": "array", "items": { "$ref": "#/$defs/color_family" } },
+        "secondary_family": { "type": "array", "items": { "$ref": "#/$defs/color_family" } },
+        "accent_family": { "type": "array", "items": { "$ref": "#/$defs/color_family" } },
+        "neutral_family": { "type": "array", "items": { "$ref": "#/$defs/color_family" } },
+        "temperature_relationship": { "type": "string" }, "saturation_strategy": { "type": "string" }, "contrast_strategy": { "type": "string" },
+        "regional_color_behavior": { "type": "array", "items": { "$ref": "#/$defs/regional_behavior" } },
+        "subject_skin_treatment": { "type": "string" }, "reference_color_anchors": { "type": "array", "items": { "type": "string" } },
+        "forbidden_color_behaviors": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "typography_system": {
+      "type": "object", "additionalProperties": false,
+      "required": ["enabled", "rendered_in_image", "text_rendering_mode", "text_elements", "reserved_text_regions"],
+      "properties": {
+        "enabled": { "type": "boolean" }, "rendered_in_image": { "type": "boolean" },
+        "text_rendering_mode": { "type": "string", "enum": ["RENDER_IN_IMAGE", "EXTERNAL_OVERLAY", "NONE"] },
+        "text_elements": { "type": "array", "items": { "$ref": "#/$defs/text_element" } },
+        "reserved_text_regions": { "type": "array", "items": { "$ref": "#/$defs/spatial_region" } },
+        "system_notes": { "type": "string" }
+      }
+    },
+    "foreground": {
+      "type": "object", "additionalProperties": false,
+      "required": ["enabled", "purpose", "elements", "edge_entry", "occlusion_target", "blur_behavior", "motion_behavior", "visual_weight"],
+      "properties": {
+        "enabled": { "type": "boolean" }, "purpose": { "type": "array", "items": { "type": "string" } },
+        "elements": { "type": "array", "items": { "type": "string" } }, "edge_entry": { "type": "string" },
+        "occlusion_target": { "type": "string" }, "blur_behavior": { "type": "string" }, "motion_behavior": { "type": "string" },
+        "visual_weight": { "type": "string", "enum": ["NONE", "LOW", "MEDIUM", "HIGH"] }
+      }
+    },
+    "objects": { "type": "array", "items": { "$ref": "#/$defs/frame_object" } },
+    "effects": { "type": "array", "items": { "$ref": "#/$defs/effect" } },
+    "reference_constraints": {
+      "type": "object", "additionalProperties": false,
+      "required": ["active", "transfer_intensity", "required_reference_anchors", "adapted_reference_anchors", "reference_behaviors_to_preserve", "reference_elements_explicitly_not_to_copy"],
+      "properties": {
+        "active": { "type": "boolean" }, "transfer_plan_id": { "type": "string" },
+        "transfer_intensity": { "type": "string", "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"] },
+        "required_reference_anchors": { "type": "array", "items": { "$ref": "#/$defs/reference_anchor" } },
+        "adapted_reference_anchors": { "type": "array", "items": { "$ref": "#/$defs/reference_anchor" } },
+        "reference_behaviors_to_preserve": { "type": "array", "items": { "type": "string" } },
+        "reference_elements_explicitly_not_to_copy": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "protected_fields": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/protected_field" } },
+    "controlled_variation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["domains", "must_not_change", "may_vary", "generator_may_invent"],
+      "properties": {
+        "domains": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/variation_domain" } },
+        "must_not_change": { "type": "array", "items": { "type": "string" } },
+        "may_vary": { "type": "array", "items": { "type": "string" } },
+        "generator_may_invent": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "technical_decisions": { "type": "array", "items": { "$ref": "#/$defs/technical_decision" } },
+    "resolved_conflicts": { "type": "array", "items": { "$ref": "#/$defs/resolved_conflict" } },
+    "generation_requirements": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_assets", "required_text", "required_visual_elements", "forbidden_visual_elements", "identity_requirements", "reference_requirements", "output_constraints"],
+      "properties": {
+        "required_assets": { "type": "array", "items": { "type": "string" } }, "required_text": { "type": "array", "items": { "type": "string" } },
+        "required_visual_elements": { "type": "array", "items": { "type": "string" } }, "forbidden_visual_elements": { "type": "array", "items": { "type": "string" } },
+        "identity_requirements": { "type": "array", "items": { "type": "string" } }, "reference_requirements": { "type": "array", "items": { "type": "string" } },
+        "output_constraints": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "quality_requirements": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/quality_requirement" } },
+    "unresolved_issues": { "type": "array", "items": { "$ref": "#/$defs/unresolved_issue" } },
+    "compiler_handoff": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target_generator", "creative_authority", "required_assets", "hard_locks", "strong_targets", "open_variations", "reference_assets", "text_rendering_mode", "unsupported_feature_policy"],
+      "properties": {
+        "target_generator": { "type": ["string", "null"] }, "creative_authority": { "const": "NONE" },
+        "required_assets": { "type": "array", "items": { "type": "string" } }, "hard_locks": { "type": "array", "items": { "type": "string" } },
+        "strong_targets": { "type": "array", "items": { "type": "string" } }, "open_variations": { "type": "array", "items": { "type": "string" } },
+        "reference_assets": { "type": "array", "items": { "type": "string" } },
+        "text_rendering_mode": { "type": "string", "enum": ["RENDER_IN_IMAGE", "EXTERNAL_OVERLAY", "NONE"] },
+        "unsupported_feature_policy": { "const": "REPORT_INCOMPATIBILITY_TO_ORCHESTRATOR" }
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["producer", "producer_version", "created_at", "decision_sources"],
+      "properties": {
+        "producer": { "const": "TECHNICAL_DESIGN_ROOM" }, "producer_version": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "decision_sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenance_source" } }, "notes": { "type": "string" }
+      }
+    },
+    "approval": {
+      "type": "object", "additionalProperties": false,
+      "required": ["approval_status", "human_override"],
+      "properties": {
+        "approval_status": { "type": "string", "enum": ["NOT_REVIEWED", "SYSTEM_APPROVED", "HUMAN_APPROVED", "REJECTED", "REVISION_REQUESTED"] },
+        "approved_by": { "type": "string", "enum": ["SYSTEM", "HUMAN"] }, "timestamp": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" }, "human_override": { "type": "boolean" }, "override_reason": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "provenance_source": { "type": "string", "enum": ["BRIEF_SPEC", "REFERENCE_TRANSFER_PLAN", "CREATIVE_DIRECTION_SPEC", "VISUAL_SYSTEMS_AGENT", "LAYOUT_TYPOGRAPHY_AGENT", "VKB", "APPROVED_DIRECTION_MEMORY", "HUMAN_FEEDBACK", "UPSTREAM_LOCK", "SYSTEM_DERIVED"] },
+    "confidence_level": { "type": "string", "enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"] },
+    "lock_level": { "type": "string", "enum": ["HARD_LOCK", "STRONG_TARGET", "SOFT_TARGET", "OPEN"] },
+    "variation_level": { "type": "string", "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"] },
+    "density_level": { "type": "string", "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "VERY_HIGH"] },
+    "semantic_region": { "type": "string", "enum": ["LEFT", "CENTER", "RIGHT", "UPPER_LEFT", "UPPER_CENTER", "UPPER_RIGHT", "LOWER_LEFT", "LOWER_CENTER", "LOWER_RIGHT", "FULL_FRAME", "CUSTOM"] },
+    "normalized_point": { "type": "object", "additionalProperties": false, "required": ["x", "y"], "properties": { "x": { "type": "number", "minimum": 0, "maximum": 1 }, "y": { "type": "number", "minimum": 0, "maximum": 1 } } },
+    "normalized_bounds": { "type": "object", "additionalProperties": false, "required": ["x", "y", "width", "height"], "properties": { "x": { "type": "number", "minimum": 0, "maximum": 1 }, "y": { "type": "number", "minimum": 0, "maximum": 1 }, "width": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }, "height": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 } } },
+    "asset_ref": { "type": "object", "additionalProperties": false, "required": ["asset_id", "role", "required"], "properties": { "asset_id": { "type": "string" }, "role": { "type": "string" }, "required": { "type": "boolean" } } },
+    "spatial_region": { "type": "object", "additionalProperties": false, "required": ["region_id", "semantic_region", "purpose"], "properties": { "region_id": { "type": "string" }, "semantic_region": { "$ref": "#/$defs/semantic_region" }, "normalized_bounds": { "$ref": "#/$defs/normalized_bounds" }, "purpose": { "type": "string" }, "lock_level": { "$ref": "#/$defs/lock_level" } } },
+    "visual_mass": { "type": "object", "additionalProperties": false, "required": ["mass_id", "element_ref", "region", "relative_weight", "purpose"], "properties": { "mass_id": { "type": "string" }, "element_ref": { "type": "string" }, "region": { "$ref": "#/$defs/semantic_region" }, "normalized_center": { "$ref": "#/$defs/normalized_point" }, "relative_weight": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "DOMINANT"] }, "purpose": { "type": "string" } } },
+    "focal_point": { "type": "object", "additionalProperties": false, "required": ["rank", "element_ref", "strength", "reason"], "properties": { "rank": { "type": "integer", "minimum": 1 }, "element_ref": { "type": "string" }, "strength": { "type": "string", "enum": ["SUPPORTING", "STRONG", "DOMINANT"] }, "reason": { "type": "string" } } },
+    "subject_spec": {
+      "type": "object", "additionalProperties": false,
+      "required": ["subject_id", "role", "identity_preservation", "frame_region", "relative_scale", "framing", "body_visibility", "orientation", "gaze", "expression", "pose_intent", "wardrobe", "integration_with_environment", "lighting_priority", "occlusion_rules", "variation_freedom", "allowed_transformations", "forbidden_transformations"],
+      "properties": {
+        "subject_id": { "type": "string" }, "asset_ref": { "type": "string" }, "role": { "type": "string" },
+        "identity_preservation": { "type": "string", "enum": ["STRICT", "HIGH", "MEDIUM", "NOT_APPLICABLE"] },
+        "frame_region": { "$ref": "#/$defs/semantic_region" }, "normalized_position": { "$ref": "#/$defs/normalized_point" },
+        "relative_scale": { "type": "string" }, "framing": { "type": "string" }, "body_visibility": { "type": "string" },
+        "orientation": { "type": "string" }, "gaze": { "type": "string" }, "expression": { "type": "string" }, "pose_intent": { "type": "string" },
+        "wardrobe": { "type": "string" }, "integration_with_environment": { "type": "string" }, "lighting_priority": { "type": "string" },
+        "occlusion_rules": { "type": "array", "items": { "type": "string" } },
+        "variation_freedom": { "type": "object", "additionalProperties": false, "required": ["identity", "pose", "wardrobe", "expression", "body_orientation"], "properties": { "identity": { "$ref": "#/$defs/variation_level" }, "pose": { "$ref": "#/$defs/variation_level" }, "wardrobe": { "$ref": "#/$defs/variation_level" }, "expression": { "$ref": "#/$defs/variation_level" }, "body_orientation": { "$ref": "#/$defs/variation_level" } } },
+        "allowed_transformations": { "type": "array", "items": { "type": "string" } }, "forbidden_transformations": { "type": "array", "items": { "type": "string" } }
+      },
+      "allOf": [{ "if": { "properties": { "identity_preservation": { "const": "STRICT" } }, "required": ["identity_preservation"] }, "then": { "required": ["asset_ref"], "properties": { "variation_freedom": { "properties": { "identity": { "const": "NONE" } } } } } }]
+    },
+    "regional_density": { "type": "object", "additionalProperties": false, "required": ["region", "density", "contrast_level", "detail_level", "purpose", "protected_for_text", "allowed_elements", "forbidden_elements"], "properties": { "region": { "$ref": "#/$defs/semantic_region" }, "normalized_bounds": { "$ref": "#/$defs/normalized_bounds" }, "density": { "$ref": "#/$defs/density_level" }, "contrast_level": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH"] }, "detail_level": { "$ref": "#/$defs/density_level" }, "purpose": { "type": "string" }, "protected_for_text": { "type": "boolean" }, "allowed_elements": { "type": "array", "items": { "type": "string" } }, "forbidden_elements": { "type": "array", "items": { "type": "string" } } } },
+    "depth_layer": { "type": "object", "additionalProperties": false, "required": ["layer_id", "depth_role", "elements", "focus_behavior", "relative_sharpness", "occlusion_behavior", "atmospheric_behavior", "relationship_to_subject"], "properties": { "layer_id": { "type": "string" }, "depth_role": { "type": "string", "enum": ["EXTREME_FOREGROUND", "FOREGROUND", "MIDGROUND", "SUBJECT_PLANE", "BACKGROUND", "FAR_BACKGROUND"] }, "elements": { "type": "array", "items": { "type": "string" } }, "focus_behavior": { "type": "string" }, "relative_sharpness": { "type": "string" }, "occlusion_behavior": { "type": "string" }, "atmospheric_behavior": { "type": "string" }, "relationship_to_subject": { "type": "string" } } },
+    "regional_behavior": { "type": "object", "additionalProperties": false, "required": ["region", "behavior", "purpose"], "properties": { "region": { "$ref": "#/$defs/semantic_region" }, "behavior": { "type": "string" }, "purpose": { "type": "string" } } },
+    "color_family": { "type": "object", "additionalProperties": false, "required": ["name", "function"], "properties": { "name": { "type": "string" }, "optional_hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }, "function": { "type": "string" } } },
+    "text_element": { "type": "object", "additionalProperties": false, "required": ["text_id", "exact_copy", "copy_is_locked", "hierarchy_rank", "role", "region", "scale_intent", "weight_intent", "case", "alignment", "line_behavior", "contrast_requirements", "background_relationship", "subject_relationship", "occlusion_behavior", "safe_area", "legibility_priority"], "properties": { "text_id": { "type": "string" }, "exact_copy": { "type": "string" }, "copy_is_locked": { "type": "boolean" }, "hierarchy_rank": { "type": "integer", "minimum": 1 }, "role": { "type": "string" }, "region": { "$ref": "#/$defs/semantic_region" }, "position": { "$ref": "#/$defs/normalized_point" }, "scale_intent": { "type": "string" }, "weight_intent": { "type": "string" }, "case": { "type": "string" }, "alignment": { "type": "string" }, "line_behavior": { "type": "string" }, "contrast_requirements": { "type": "string" }, "background_relationship": { "type": "string" }, "subject_relationship": { "type": "string" }, "occlusion_behavior": { "type": "string" }, "safe_area": { "type": "string" }, "legibility_priority": { "type": "string", "enum": ["STANDARD", "HIGH", "CRITICAL"] } } },
+    "frame_object": { "type": "object", "additionalProperties": false, "required": ["object_id", "type", "description", "purpose", "depth_layer", "region", "relative_scale", "visual_priority", "interaction_with_subject", "interaction_with_environment", "required", "variation_level"], "properties": { "object_id": { "type": "string" }, "type": { "type": "string" }, "description": { "type": "string" }, "purpose": { "type": "string", "minLength": 1 }, "depth_layer": { "type": "string" }, "region": { "$ref": "#/$defs/semantic_region" }, "relative_scale": { "type": "string" }, "visual_priority": { "type": "string", "enum": ["SUPPORTING", "IMPORTANT", "CRITICAL"] }, "interaction_with_subject": { "type": "string" }, "interaction_with_environment": { "type": "string" }, "reference_origin": { "type": "string" }, "required": { "type": "boolean" }, "variation_level": { "$ref": "#/$defs/variation_level" } } },
+    "effect": { "type": "object", "additionalProperties": false, "required": ["effect_id", "type", "purpose", "region", "depth_layer", "intensity", "interaction", "constraints"], "properties": { "effect_id": { "type": "string" }, "type": { "type": "string" }, "purpose": { "type": "string", "minLength": 1 }, "region": { "$ref": "#/$defs/semantic_region" }, "depth_layer": { "type": "string" }, "intensity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH"] }, "interaction": { "type": "string" }, "constraints": { "type": "array", "items": { "type": "string" } } } },
+    "reference_anchor": { "type": "object", "additionalProperties": false, "required": ["anchor_id", "behavior", "implementation", "lock_level", "source"], "properties": { "anchor_id": { "type": "string" }, "behavior": { "type": "string" }, "implementation": { "type": "string" }, "lock_level": { "$ref": "#/$defs/lock_level" }, "source": { "const": "REFERENCE_TRANSFER_PLAN" } } },
+    "protected_field": { "type": "object", "additionalProperties": false, "required": ["field_id", "target", "protection_type", "source", "rule", "allowed_variation", "failure_condition"], "properties": { "field_id": { "type": "string" }, "target": { "type": "string" }, "protection_type": { "type": "string" }, "source": { "$ref": "#/$defs/provenance_source" }, "rule": { "type": "string" }, "allowed_variation": { "type": "string" }, "failure_condition": { "type": "string" } } },
+    "variation_domain": { "type": "object", "additionalProperties": false, "required": ["domain", "level", "may_invent", "rule"], "properties": { "domain": { "type": "string" }, "level": { "$ref": "#/$defs/variation_level" }, "may_invent": { "type": "boolean" }, "rule": { "type": "string" } } },
+    "technical_decision": { "type": "object", "additionalProperties": false, "required": ["decision_id", "domain", "decision", "rationale", "source_agent", "upstream_requirement", "confidence"], "properties": { "decision_id": { "type": "string" }, "domain": { "type": "string" }, "decision": { "type": "string" }, "rationale": { "type": "string" }, "source_agent": { "type": "string", "enum": ["VISUAL_SYSTEMS", "LAYOUT_TYPOGRAPHY", "HUMAN", "UPSTREAM_LOCK"] }, "upstream_requirement": { "type": "string" }, "confidence": { "$ref": "#/$defs/confidence_level" } } },
+    "resolved_conflict": { "type": "object", "additionalProperties": false, "required": ["conflict_id", "topic", "visual_systems_position", "layout_typography_position", "resolution", "rationale", "authority_source", "affected_fields"], "properties": { "conflict_id": { "type": "string" }, "topic": { "type": "string" }, "visual_systems_position": { "type": "string" }, "layout_typography_position": { "type": "string" }, "resolution": { "type": "string" }, "rationale": { "type": "string" }, "authority_source": { "$ref": "#/$defs/provenance_source" }, "affected_fields": { "type": "array", "minItems": 1, "items": { "type": "string" } } } },
+    "quality_requirement": { "type": "object", "additionalProperties": false, "required": ["requirement_id", "domain", "statement", "verification_method", "severity", "failure_condition", "source"], "properties": { "requirement_id": { "type": "string" }, "domain": { "type": "string" }, "statement": { "type": "string" }, "verification_method": { "type": "string" }, "severity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] }, "failure_condition": { "type": "string" }, "source": { "$ref": "#/$defs/provenance_source" } } },
+    "unresolved_issue": { "type": "object", "additionalProperties": false, "required": ["issue_id", "domain", "description", "severity", "blocking", "owner", "required_resolution"], "properties": { "issue_id": { "type": "string" }, "domain": { "type": "string" }, "description": { "type": "string" }, "severity": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] }, "blocking": { "type": "boolean" }, "owner": { "type": "string", "enum": ["VISUAL_SYSTEMS_AGENT", "LAYOUT_TYPOGRAPHY_AGENT", "HUMAN", "ORCHESTRATOR"] }, "required_resolution": { "type": "string" } } }
+  },
+  "allOf": [
+    { "if": { "properties": { "typography_system": { "properties": { "enabled": { "const": true }, "rendered_in_image": { "const": true } }, "required": ["enabled", "rendered_in_image"] } }, "required": ["typography_system"] }, "then": { "properties": { "typography_system": { "properties": { "text_rendering_mode": { "const": "RENDER_IN_IMAGE" }, "text_elements": { "minItems": 1 } } } } } },
+    { "if": { "properties": { "typography_system": { "properties": { "rendered_in_image": { "const": false }, "enabled": { "const": true } }, "required": ["rendered_in_image", "enabled"] } }, "required": ["typography_system"] }, "then": { "properties": { "typography_system": { "properties": { "text_rendering_mode": { "const": "EXTERNAL_OVERLAY" }, "text_elements": { "maxItems": 0 }, "reserved_text_regions": { "minItems": 1 } } } } } },
+    { "if": { "properties": { "typography_system": { "properties": { "enabled": { "const": false } }, "required": ["enabled"] } }, "required": ["typography_system"] }, "then": { "properties": { "typography_system": { "properties": { "rendered_in_image": { "const": false }, "text_rendering_mode": { "const": "NONE" }, "text_elements": { "maxItems": 0 }, "reserved_text_regions": { "maxItems": 0 } } } } } },
+    { "if": { "properties": { "input_refs": { "properties": { "reference_mode_active": { "const": true } }, "required": ["reference_mode_active"] } }, "required": ["input_refs"] }, "then": { "properties": { "input_refs": { "required": ["reference_transfer_plan_id", "reference_transfer_plan_version"] }, "reference_constraints": { "properties": { "active": { "const": true }, "transfer_intensity": { "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] } }, "required": ["transfer_plan_id"] } } } },
+    { "if": { "properties": { "reference_constraints": { "properties": { "active": { "const": true } }, "required": ["active"] } }, "required": ["reference_constraints"] }, "then": { "properties": { "reference_constraints": { "required": ["transfer_plan_id"], "properties": { "transfer_intensity": { "enum": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"] } } }, "input_refs": { "required": ["reference_transfer_plan_id", "reference_transfer_plan_version"], "properties": { "reference_mode_active": { "const": true } } } } } },
+    { "if": { "properties": { "reference_constraints": { "properties": { "active": { "const": false } }, "required": ["active"] } }, "required": ["reference_constraints"] }, "then": { "properties": { "reference_constraints": { "properties": { "transfer_intensity": { "const": "NONE" }, "required_reference_anchors": { "maxItems": 0 }, "adapted_reference_anchors": { "maxItems": 0 }, "reference_behaviors_to_preserve": { "maxItems": 0 }, "reference_elements_explicitly_not_to_copy": { "maxItems": 0 } } } } } },
+    { "if": { "properties": { "status": { "enum": ["READY_FOR_COMPILATION", "APPROVED"] } }, "required": ["status"] }, "then": { "properties": { "subjects": { "minItems": 1 }, "quality_requirements": { "minItems": 1 }, "unresolved_issues": { "not": { "contains": { "type": "object", "properties": { "blocking": { "const": true } }, "required": ["blocking"] } } } }, "required": ["canvas", "composition", "depth_system", "compiler_handoff"] } },
+    { "if": { "properties": { "approval": { "properties": { "approval_status": { "const": "HUMAN_APPROVED" } }, "required": ["approval_status"] } }, "required": ["approval"] }, "then": { "properties": { "approval": { "required": ["approved_by", "timestamp"], "properties": { "approved_by": { "const": "HUMAN" } } } } } },
+    { "if": { "properties": { "approval": { "properties": { "human_override": { "const": true } }, "required": ["human_override"] } }, "required": ["approval"] }, "then": { "properties": { "approval": { "required": ["override_reason"] } } } }
+  ]
+}

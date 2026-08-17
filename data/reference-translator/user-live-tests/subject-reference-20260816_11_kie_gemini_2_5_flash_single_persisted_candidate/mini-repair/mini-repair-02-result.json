@@ -1,0 +1,40 @@
+{
+  "status": "ACCEPTED",
+  "source_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_01\\attempt_01.raw.json",
+  "source_sha256": "bb0fccd6f4eaa0bfaad7d55680d921b376afa0fbcb32f89e6c8ba89f2a29810f",
+  "repaired_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_02\\attempt_01.raw.json",
+  "repaired_candidate_metadata_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_02\\attempt_01.meta.json",
+  "changed_paths": [
+    "/design_decision_map/1/target_in_new_composition",
+    "/design_decision_map/2/target_in_new_composition"
+  ],
+  "before_after": {
+    "/design_decision_map/1/target_in_new_composition": {
+      "before": "Use violet/purple lighting as a base atmosphere, but ensure it integrates naturally with the subject's skin and glasses.",
+      "after": "Use a high-contrast, saturated ambient light base to establish an energetic atmosphere, ensuring it integrates naturally with the subject's skin and glasses."
+    },
+    "/design_decision_map/2/target_in_new_composition": {
+      "before": "Use acid-green as a secondary accent color for technical highlights or graphic elements, avoiding the literal graffiti style.",
+      "after": "Use a high-chroma secondary accent color for technical highlights or graphic elements to provide necessary visual tension and contrast against the ambient base."
+    }
+  },
+  "json_parse": "PASS",
+  "diff_guard": "PASS",
+  "schema": "PASS",
+  "semantic": "PASS",
+  "quality": "PASS",
+  "persisted": "YES",
+  "plan_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\plans\\plan_tech_thumbnail_001.json",
+  "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\runs\\run_user_subject_reference_20260816_11_mini_repair_02.trace.json",
+  "diagnostics": [],
+  "provider": {
+    "model": "gemini-2.5-flash",
+    "input_tokens": 2038,
+    "output_tokens": 1880,
+    "total_tokens": 3918,
+    "credits": 0.32,
+    "latency_ms": 7000,
+    "finish_reason": "stop"
+  },
+  "result_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\mini-repair\\mini-repair-02-result.json"
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "delta_fix_plan_id": "delta-reference-level-undertransfer",
+  "project_id": "project-contract-test",
+  "run_id": "run-delta-reference-level-undertransfer",
+  "critic_report_ref": {
+    "artifact_id": "critic-reference-undertransfer",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/critic-reference-undertransfer"
+  },
+  "generation_result_ref": {
+    "artifact_id": "generation-critic-reference-undertransfer",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/generation-critic-reference-undertransfer"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "frame-critic-reference-undertransfer",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/frame-critic-reference-undertransfer"
+  },
+  "status": "READY",
+  "strategy": "SURGICAL_DELTA",
+  "return_depth": "REFERENCE_TRANSLATOR",
+  "responsible_nodes": [
+    "REFERENCE_TRANSLATOR"
+  ],
+  "fixes": [
+    {
+      "fix_id": "fix-reference-transfer-strength",
+      "issue_ref": "issue-reference-undertransfer",
+      "issue_category": "REFERENCE_UNDERTRANSFER",
+      "evidence_refs": [
+        "ev-reference-undertransfer"
+      ],
+      "severity": "HIGH",
+      "affected_region": {
+        "region_id": "reference-transfer-scope",
+        "label": "Reference-derived spatial and material system",
+        "geometry": {
+          "kind": "FULL_FRAME"
+        }
+      },
+      "violated_requirement": {
+        "source_artifact": "REFERENCE_TRANSFER_PLAN",
+        "source_path": "/transfer_directives/0",
+        "requirement_id": "reference-transfer",
+        "statement": "Transfer the declared spatial rhythm and material contrast."
+      },
+      "responsible_node": "REFERENCE_TRANSLATOR",
+      "return_depth": "REFERENCE_TRANSLATOR",
+      "protected_fields": [
+        {
+          "source_artifact": "FINAL_FRAME_SPEC",
+          "field_path": "/identity_system",
+          "reason": "Identity is approved and unrelated to the integration defect."
+        },
+        {
+          "source_artifact": "FINAL_FRAME_SPEC",
+          "field_path": "/composition_system",
+          "reason": "Composition is already compliant."
+        },
+        {
+          "source_artifact": "FINAL_FRAME_SPEC",
+          "field_path": "/typography_system",
+          "reason": "Copy and typography locks must remain unchanged."
+        }
+      ],
+      "fields_that_must_not_change": [
+        "/identity_system",
+        "/typography_system/text_elements",
+        "/composition_system/subject_anchor",
+        "/hard_locks"
+      ],
+      "requested_change": "Revise only the reference-transfer directive so its spatial rhythm and material-contrast attributes are explicit and strong enough for compilation.",
+      "success_condition": {
+        "observable_condition": "The regenerated output demonstrates the declared reference attributes while all identity, text, composition anchors, and hard locks remain preserved.",
+        "verification_method": "REFERENCE_TRANSFER_RECHECK",
+        "required_outcome": "PASS"
+      },
+      "change_scope": "REFERENCE_TRANSFER",
+      "forbidden_changes": [
+        "Do not copy literal reference content.",
+        "Do not weaken hard locks.",
+        "Do not change identity.",
+        "Do not change copy or subject anchor."
+      ]
+    }
+  ],
+  "global_protections": [
+    {
+      "source_artifact": "FINAL_FRAME_SPEC",
+      "field_path": "/identity_system",
+      "reason": "Identity is approved and unrelated to the integration defect."
+    },
+    {
+      "source_artifact": "FINAL_FRAME_SPEC",
+      "field_path": "/composition_system",
+      "reason": "Composition is already compliant."
+    },
+    {
+      "source_artifact": "FINAL_FRAME_SPEC",
+      "field_path": "/typography_system",
+      "reason": "Copy and typography locks must remain unchanged."
+    }
+  ],
+  "execution_constraints": {
+    "regenerate_entire_pipeline": false,
+    "preserve_unaffected_regions": true,
+    "allow_new_objects": false,
+    "allow_copy_change": false,
+    "allow_identity_change": false,
+    "notes": [
+      "Apply only the requested delta.",
+      "Reject changes outside the affected region and declared fields."
+    ]
+  },
+  "validation_plan": {
+    "checks": [
+      {
+        "check_id": "validate-reference-transfer-delta",
+        "target_fix_ids": [
+          "fix-reference-transfer-strength"
+        ],
+        "method": "REFERENCE_TRANSFER_RECHECK",
+        "pass_condition": "Reference undertransfer is resolved without literal copying or protected-field regression."
+      }
+    ],
+    "require_no_regression_on_protected_fields": true,
+    "failure_action": "CREATE_NARROWER_DELTA"
+  },
+  "human_approval": {
+    "status": "NOT_REQUIRED",
+    "evidence_refs": []
+  },
+  "provenance": {
+    "producer": "DELTA_FIX_PLANNER",
+    "producer_version": "1.0.0-contract-test",
+    "created_at": "2026-08-10T12:05:00.000Z",
+    "sources": [
+      "mock://synthetic/critic-reference-undertransfer"
+    ],
+    "data_classification": "SYNTHETIC_TEST_DATA",
+    "notes": "TEST DATA ONLY. This fixture is not a real correction request or human decision."
+  }
+}

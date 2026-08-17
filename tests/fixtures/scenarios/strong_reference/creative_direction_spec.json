@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0.0",
+  "direction_id": "cds-strong-ref-001",
+  "project_id": "project-strong-ref-001",
+  "status": "READY_FOR_TECHNICAL_DESIGN",
+  "input_refs": {
+    "brief_spec_id": "brief-strong-ref-001",
+    "brief_spec_version": "1.0.0",
+    "reference_mode_active": true,
+    "reference_transfer_plan_id": "rtp-strong-ref-001",
+    "reference_transfer_plan_version": "1.0.0",
+    "human_instructions_incorporated": [
+      {
+        "instruction_id": "hi-ref",
+        "summary": "Absorb the reference strongly while adapting it to the new product and copy.",
+        "provenance": "USER_EXPLICIT"
+      }
+    ]
+  },
+  "creative_thesis": {
+    "thesis_statement": "The product should feel like the controlling intelligence inside a charged system, inheriting the reference's force and depth while redirecting them toward a new commercial claim.",
+    "communication_problem": "Transfer a strong visual reference without merely reproducing its object arrangement.",
+    "creative_answer": "Preserve the reference's asymmetrical mass, layered depth, energetic separation and environmental density, then reorganize their manifestations around the new product and copy hierarchy.",
+    "desired_viewer_perception": "The new piece belongs to the same high-energy visual system but is a purpose-built campaign composition.",
+    "rationale": "High transfer should preserve functional DNA; originality comes from adapting the system to the new problem.",
+    "confidence": "HIGH"
+  },
+  "commercial_psychology": {
+    "primary_objective": "PREMIUM_PRODUCT_AUTHORITY",
+    "desired_responses": [
+      "DESIRE",
+      "AUTHORITY",
+      "CURIOSITY"
+    ],
+    "responses_to_avoid": [
+      "IMITATION",
+      "GENERIC_TECH_GLOW"
+    ],
+    "basis": [
+      "BRIEF_SPEC",
+      "REFERENCE_TRANSFER_PLAN",
+      "CREATIVE_DIRECTOR"
+    ],
+    "rationale": "The reference supplies intensity; the direction converts it into product authority."
+  },
+  "narrative_tension": {
+    "central_tension": "Controlled intelligence versus volatile surrounding energy.",
+    "subject_role": "The stable source of control.",
+    "environment_role": "A responsive system activated by the product.",
+    "relationship": "Environmental energy bends around and reveals the product rather than decorating it.",
+    "narrative_progression": [
+      "Encounter charged depth",
+      "Find the controlling product",
+      "Read the commercial promise"
+    ],
+    "rationale": "The product gains authority by controlling, not merely occupying, the visual world."
+  },
+  "subject_strategy": {
+    "role": "System controller",
+    "perceived_character": "Precise, powerful, premium",
+    "expression_intent": "Not applicable to a non-human product",
+    "presence": "Dominant through stability and separation",
+    "relationship_to_environment": "Energy and layers react to its presence",
+    "relationship_to_viewer": "Presented as an object of command and desire",
+    "authority_level": "VERY_HIGH",
+    "energy_level": "HIGH",
+    "identity_requirements": [
+      "Preserve exact product identity",
+      "Keep brand-defining silhouette legible"
+    ]
+  },
+  "emotional_strategy": {
+    "primary_emotion": "DESIRE",
+    "secondary_emotions": [
+      "AWE",
+      "CONTROL",
+      "CURIOSITY"
+    ],
+    "emotions_to_avoid": [
+      "CHAOS",
+      "AGGRESSION",
+      "GENERIC_FUTURISM"
+    ],
+    "emotional_progression": [
+      "Energy",
+      "Control",
+      "Recognition",
+      "Desire"
+    ],
+    "intensity": "HIGH",
+    "rationale": "Energy attracts; control makes it premium."
+  },
+  "visual_hierarchy": [
+    {
+      "rank": 1,
+      "element": "PRODUCT",
+      "reason": "The new commercial subject must own the reference system.",
+      "required_strength": "DOMINANT",
+      "relationship_to_previous": null
+    },
+    {
+      "rank": 2,
+      "element": "ENERGY_AND_DEPTH_SYSTEM",
+      "reason": "Transfers the reference DNA and demonstrates control.",
+      "required_strength": "STRONG",
+      "relationship_to_previous": "Wraps around and points back to the product."
+    },
+    {
+      "rank": 3,
+      "element": "HEADLINE",
+      "reason": "Translates the perception into a claim.",
+      "required_strength": "STRONG",
+      "relationship_to_previous": "Occupies newly created negative space."
+    }
+  ],
+  "creative_concept": {
+    "concept_statement": "Command the Current",
+    "visual_world": "A dense charged ecosystem reorganized by the product.",
+    "narrative_function": "Show the product as the intelligence governing energy.",
+    "composition_logic": "Retain asymmetrical mass tension but move the primary mass to create new copy space.",
+    "depth_logic": "Preserve aggressive foreground-to-background layering.",
+    "environment_logic": "Density is functional evidence of a system responding to the product.",
+    "typography_role": "Copy occupies controlled quiet space and counterbalances the dense product field."
+  },
+  "ideation": {
+    "candidates": [
+      {
+        "candidate_id": "cand-command",
+        "concept_name": "Command the Current",
+        "concept_summary": "Reference energy becomes a system controlled by the new product.",
+        "core_mechanism": "Dense energy redirected around a stable product",
+        "strengths": [
+          "High DNA retention",
+          "New narrative",
+          "Product authority"
+        ],
+        "risks": [
+          "Density can overwhelm copy"
+        ],
+        "decision": "SELECTED",
+        "decision_reason": "Transfers the reference aggressively while solving the new hierarchy."
+      },
+      {
+        "candidate_id": "cand-replica",
+        "concept_name": "Object Swap",
+        "concept_summary": "Keep the exact arrangement and replace the original subject.",
+        "core_mechanism": "One-to-one compositional substitution",
+        "strengths": [
+          "Maximum resemblance"
+        ],
+        "risks": [
+          "Derivative",
+          "Copy conflict",
+          "Weak adaptation"
+        ],
+        "decision": "REJECTED",
+        "decision_reason": "Copies manifestation rather than transferring design logic."
+      },
+      {
+        "candidate_id": "cand-minimal",
+        "concept_name": "Quiet Premium",
+        "concept_summary": "Remove most reference energy for a minimal product portrait.",
+        "core_mechanism": "Sparse negative space",
+        "strengths": [
+          "Copy clarity"
+        ],
+        "risks": [
+          "Destroys requested DNA",
+          "Generic premium look"
+        ],
+        "decision": "REJECTED",
+        "decision_reason": "Unjustifiably weakens a user-requested HIGH transfer."
+      }
+    ],
+    "convergence_summary": "The winner preserves composition logic, depth behavior and energy while changing object arrangement to serve the new message."
+  },
+  "selected_direction": {
+    "candidate_id": "cand-command",
+    "name": "Command the Current",
+    "concept": "The product reorganizes a charged layered environment inherited from the reference.",
+    "why_it_won": "It keeps strong reference DNA without sacrificing new copy and product priorities.",
+    "core_visual_idea": "Stable product control inside volatile layered energy.",
+    "required_perception": [
+      "High continuity with the reference",
+      "Original campaign composition",
+      "Premium product control"
+    ],
+    "creative_risk": "Technical execution may preserve surface effects but lose the control narrative.",
+    "originality_strategy": "Retain functional design behaviors and rebuild their manifestations around the new product.",
+    "confidence": "HIGH"
+  },
+  "visual_mechanisms": [
+    {
+      "mechanism_id": "mech-ref-mass",
+      "name": "ASYMMETRICAL_MASS_TENSION",
+      "category": "COMPOSITION",
+      "function": "Create force between dense product mass and copy space.",
+      "target_effect": "Energy with readable hierarchy",
+      "priority": "CRITICAL",
+      "source": "REFERENCE_TRANSFER_PLAN",
+      "source_reference": "anchor-mass-001",
+      "flexibility": "LOW",
+      "rationale": "Core reference DNA, reorganized rather than weakened."
+    },
+    {
+      "mechanism_id": "mech-ref-depth",
+      "name": "LAYERED_DEPTH",
+      "category": "DEPTH",
+      "function": "Carry energy across foreground, subject plane and environment.",
+      "target_effect": "Convincing integration and intensity",
+      "priority": "CRITICAL",
+      "source": "REFERENCE_TRANSFER_PLAN",
+      "source_reference": "anchor-depth-001",
+      "flexibility": "LOW",
+      "rationale": "Reference depth behavior is essential at HIGH transfer."
+    },
+    {
+      "mechanism_id": "mech-ref-separation",
+      "name": "EXPLOSIVE_BACKLIGHT_SEPARATION",
+      "category": "LIGHTING_BEHAVIOR",
+      "function": "Separate the product as the stable controller of surrounding energy.",
+      "target_effect": "Immediate product authority",
+      "priority": "IMPORTANT",
+      "source": "REFERENCE_TRANSFER_PLAN",
+      "source_reference": "anchor-light-001",
+      "flexibility": "MEDIUM",
+      "rationale": "Preserves energetic separation without locking technical lighting values."
+    }
+  ],
+  "reference_integration": {
+    "active": true,
+    "transfer_plan_id": "rtp-strong-ref-001",
+    "transfer_intensity": "VERY_HIGH",
+    "accepted_anchors": [
+      {
+        "anchor_id": "anchor-depth-001",
+        "translator_recommendation": "Preserve aggressive layered depth.",
+        "director_decision": "Accepted without weakening; layers will be rebuilt for the new product.",
+        "rationale": "Depth is a primary carrier of the reference DNA.",
+        "mechanism_ids": [
+          "mech-ref-depth"
+        ]
+      },
+      {
+        "anchor_id": "anchor-light-001",
+        "translator_recommendation": "Transfer energetic rim separation.",
+        "director_decision": "Accepted as behavior, with implementation open.",
+        "rationale": "It separates the controlling subject from volatile energy.",
+        "mechanism_ids": [
+          "mech-ref-separation"
+        ]
+      }
+    ],
+    "modified_anchors": [
+      {
+        "anchor_id": "anchor-mass-001",
+        "translator_recommendation": "Preserve the reference's dominant left-side mass.",
+        "director_decision": "Move the dominant product mass to the opposite field while preserving asymmetrical tension.",
+        "rationale": "The new copy requirement needs quiet space on the left; the mechanism survives through a new arrangement.",
+        "mechanism_ids": [
+          "mech-ref-mass"
+        ]
+      }
+    ],
+    "rejected_anchors": [],
+    "director_overrides": [
+      {
+        "override_id": "override-mass-001",
+        "anchor_id": "anchor-mass-001",
+        "translator_recommendation": "Preserve dominant left-side mass.",
+        "director_decision": "Mirror and rebuild the mass relationship around right-side product dominance.",
+        "rationale": "Exact placement conflicts with copy; functional asymmetry remains intact.",
+        "final_mechanism_ids": [
+          "mech-ref-mass"
+        ],
+        "provenance": "CREATIVE_DIRECTOR"
+      }
+    ],
+    "remaining_reference_constraints": [
+      "Maintain high environmental density",
+      "Maintain strong foreground behavior",
+      "Maintain energetic subject separation"
+    ],
+    "confidence": "HIGH"
+  },
+  "vkb_usage": {
+    "consulted": false,
+    "queries": [],
+    "retrieved_mechanisms": [],
+    "selected_mechanisms": [],
+    "rejected_mechanisms": [],
+    "adaptation_notes": [
+      "Reference Transfer Plan already supplied sufficient mechanisms; no VKB authority was needed."
+    ]
+  },
+  "approved_direction_memory": {
+    "consulted": false,
+    "relevant_evidence_found": false,
+    "evidence": []
+  },
+  "protected_elements": [
+    {
+      "element_id": "protect-product",
+      "type": "PRODUCT_IDENTITY",
+      "description": "Exact supplied product identity and silhouette",
+      "source": "brief-strong-ref-001",
+      "protection_level": "HARD",
+      "reason": "Commercial recognition cannot be traded for reference similarity.",
+      "provenance": "BRIEF_SPEC"
+    }
+  ],
+  "creative_constraints": [
+    {
+      "constraint_id": "cc-high-transfer",
+      "level": "STRONG",
+      "statement": "Composition logic, depth logic, energy and environmental density must transfer aggressively where compatible.",
+      "source": "rtp-strong-ref-001",
+      "rationale": "The requested transfer intensity is HIGH.",
+      "provenance": "REFERENCE_TRANSFER_PLAN"
+    },
+    {
+      "constraint_id": "cc-copy-space",
+      "level": "HARD",
+      "statement": "The left field must support readable campaign copy.",
+      "source": "brief-strong-ref-001",
+      "rationale": "Required copy cannot compete with dense visual mass.",
+      "provenance": "BRIEF_SPEC"
+    }
+  ],
+  "banned_tropes": [
+    {
+      "name": "SURFACE_STYLE_COPY",
+      "description": "Copy reference colors and glow while discarding its composition and depth logic.",
+      "reason": "Creates shallow resemblance rather than transfer.",
+      "severity": "CRITICAL",
+      "source": "CREATIVE_DIRECTOR"
+    },
+    {
+      "name": "GENERIC_TECH_GLOW",
+      "description": "Glow used as the sole signifier of premium technology.",
+      "reason": "Effects without narrative function dilute the reference DNA.",
+      "severity": "HIGH",
+      "source": "CREATIVE_DIRECTOR"
+    }
+  ],
+  "technical_room_freedom": {
+    "frozen_decisions": [
+      {
+        "decision": "Preserve high-intensity asymmetry, layered depth and energetic separation.",
+        "rationale": "These are the accepted DNA anchors."
+      },
+      {
+        "decision": "Product dominates the right field and copy occupies controlled left space.",
+        "rationale": "This is the director's resolved adaptation."
+      }
+    ],
+    "strong_guidelines": [
+      {
+        "decision": "Environmental density must respond to the product.",
+        "rationale": "Density has narrative function."
+      }
+    ],
+    "open_decisions": [
+      {
+        "decision": "Exact lens, lighting setup, layer geometry and material treatment.",
+        "rationale": "Technical Room chooses implementations that realize the frozen behaviors."
+      }
+    ],
+    "technical_freedom_level": "MEDIUM"
+  },
+  "unresolved_questions": [],
+  "provenance": {
+    "producer": "PRINCIPAL_CREATIVE_DIRECTOR_AGENT",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-09T12:20:00-03:00",
+    "decision_sources": [
+      "USER_EXPLICIT",
+      "BRIEF_SPEC",
+      "REFERENCE_TRANSFER_PLAN",
+      "CREATIVE_DIRECTOR"
+    ]
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Reference anchors and new constraints have explicit resolutions."
+  },
+  "approval": {
+    "approval_status": "SYSTEM_APPROVED",
+    "approved_by": "SYSTEM",
+    "timestamp": "2026-08-09T12:25:00-03:00",
+    "notes": "No human approval claimed.",
+    "human_override": false
+  },
+  "technical_handoff": {
+    "target_agents": [
+      "VISUAL_SYSTEMS_AGENT",
+      "LAYOUT_TYPOGRAPHY_AGENT"
+    ],
+    "creative_goal": "Transfer the reference's visual force into a new product-controlled campaign system.",
+    "selected_direction_summary": "Right-dominant product controls dense layered energy while left negative space carries copy.",
+    "must_preserve": [
+      "Product identity",
+      "High transfer intensity",
+      "Reference depth and energy logic"
+    ],
+    "must_achieve": [
+      "Strong DNA continuity",
+      "New composition",
+      "Readable copy",
+      "Product authority"
+    ],
+    "must_avoid": [
+      "Object swap replica",
+      "Minimal dilution",
+      "Surface-only glow copying"
+    ],
+    "required_mechanism_ids": [
+      "mech-ref-mass",
+      "mech-ref-depth",
+      "mech-ref-separation"
+    ],
+    "hierarchy": [
+      {
+        "rank": 1,
+        "element": "PRODUCT",
+        "reason": "Commercial focal point.",
+        "required_strength": "DOMINANT",
+        "relationship_to_previous": null
+      },
+      {
+        "rank": 2,
+        "element": "ENERGY_AND_DEPTH_SYSTEM",
+        "reason": "Carries reference DNA.",
+        "required_strength": "STRONG",
+        "relationship_to_previous": "Responds to product."
+      },
+      {
+        "rank": 3,
+        "element": "HEADLINE",
+        "reason": "States the claim.",
+        "required_strength": "STRONG",
+        "relationship_to_previous": "Uses controlled negative space."
+      }
+    ],
+    "reference_anchors": [
+      "anchor-depth-001",
+      "anchor-light-001",
+      "anchor-mass-001-modified"
+    ],
+    "technical_freedoms": [
+      "Exact lens",
+      "Exact light placement",
+      "Exact foreground objects",
+      "Typography execution"
+    ],
+    "known_risks": [
+      "Density may overwhelm copy",
+      "Surface resemblance may replace functional transfer"
+    ]
+  }
+}

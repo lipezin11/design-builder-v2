@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "critic_report_id": "critic-my-eyes-evidence-available",
+  "project_id": "project-contract-test",
+  "run_id": "run-critic-my-eyes-evidence-available",
+  "generation_result_ref": {
+    "artifact_id": "generation-critic-my-eyes-evidence-available",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/generation-critic-my-eyes-evidence-available"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "frame-critic-my-eyes-evidence-available",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/frame-critic-my-eyes-evidence-available"
+  },
+  "image_evidence": {
+    "output_id": "output-critic-my-eyes-evidence-available",
+    "image_uri": "mock://synthetic-image/critic-my-eyes-evidence-available.png",
+    "availability": "AVAILABLE",
+    "evidence_type": "TEST_DATA_DESCRIPTOR",
+    "data_classification": "SYNTHETIC_TEST_DATA"
+  },
+  "evidence": [
+    {
+      "evidence_id": "ev-approved-direction-memory",
+      "evidence_type": "APPROVED_DIRECTION_MEMORY",
+      "source_ref": "mock://synthetic-evidence/ev-approved-direction-memory",
+      "description": "Synthetic contract-test representation of approved direction memory; not real human preference evidence.",
+      "data_classification": "SYNTHETIC_TEST_DATA",
+      "confidence": "HIGH"
+    }
+  ],
+  "review_status": "PASS_WITH_WARNINGS",
+  "blind_visual_review": {
+    "status": "PASS",
+    "review_context": "BLIND_TO_SPEC",
+    "scope": "GENERAL_QUALITY",
+    "dimensions": [
+      {
+        "dimension": "INTENTIONAL_DESIGN",
+        "verdict": "PASS",
+        "score": 88,
+        "confidence": "HIGH",
+        "evidence_ids": [
+          "ev-approved-direction-memory"
+        ],
+        "rationale": "Synthetic general-quality pass."
+      }
+    ],
+    "issues": [],
+    "summary": "Synthetic blind review passes."
+  },
+  "spec_compliance_review": {
+    "status": "PASS",
+    "review_context": "WITH_SPEC_CONTEXT",
+    "scope": "SPEC_COMPLIANCE",
+    "checks": [
+      {
+        "check_id": "check-my-eyes-spec",
+        "requirement_type": "COMPOSITION",
+        "source_path": "/composition_system",
+        "verdict": "PASS",
+        "evidence_ids": [
+          "ev-approved-direction-memory"
+        ],
+        "message": "Synthetic spec check passes."
+      }
+    ],
+    "issues": [],
+    "protected_fields_summary": {
+      "checked_paths": [
+        "/identity_system",
+        "/typography_system",
+        "/composition_system"
+      ],
+      "lost_paths": [],
+      "status": "PRESERVED"
+    },
+    "summary": "Synthetic spec review passes."
+  },
+  "my_eyes": {
+    "status": "EVIDENCE_AVAILABLE",
+    "scope": "DESIGNER_PREFERENCE",
+    "evidence_ids": [
+      "ev-approved-direction-memory"
+    ],
+    "preference_findings": [
+      {
+        "preference_id": "pref-contract-test-density",
+        "statement": "Synthetic contract-only preference assertion for restrained visual density.",
+        "verdict": "PARTIAL",
+        "confidence": "MEDIUM",
+        "evidence_ids": [
+          "ev-approved-direction-memory"
+        ],
+        "assertion_scope": "CONTRACT_TEST_ONLY"
+      }
+    ],
+    "summary": "My Eyes is structurally enabled only because an allowed evidence type is referenced; this remains synthetic test data."
+  },
+  "overall_assessment": {
+    "general_quality_outcome": "PASS",
+    "spec_compliance_outcome": "PASS",
+    "designer_preference_outcome": "PARTIAL",
+    "blocking_issue_ids": [],
+    "rationale": "Synthetic contract-test outcome for critic-my-eyes-evidence-available; it is not a real visual judgment."
+  },
+  "routing": {
+    "action": "ACCEPT_WITH_WARNINGS",
+    "minimum_return_depth": null,
+    "responsible_nodes": []
+  },
+  "human_judgment": {
+    "status": "NOT_PROVIDED",
+    "critic_decision": "PASS_WITH_WARNINGS",
+    "human_decision": null,
+    "operational_decision": "PASS_WITH_WARNINGS",
+    "disagreement_preserved": false,
+    "human_evidence_ids": []
+  },
+  "warnings": [
+    {
+      "code": "SYNTHETIC_PREFERENCE_EVIDENCE",
+      "message": "Preference evidence is contract-test data and must never be promoted to real human learning.",
+      "severity": "WARNING",
+      "source": "MY_EYES"
+    }
+  ],
+  "provenance": {
+    "producer": "IMAGE_CRITIC",
+    "producer_version": "1.0.0-contract-test",
+    "created_at": "2026-08-10T12:00:00.000Z",
+    "sources": [
+      "synthetic-contract-fixture"
+    ],
+    "data_classification": "SYNTHETIC_TEST_DATA",
+    "notes": "TEST DATA ONLY. This fixture does not describe a real image, human preference, approval, rejection, or visual analysis."
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0.0",
+  "compiler_input_id": "ci-canonical-strong-reference",
+  "project_id": "project-strong-ref-001",
+  "run_id": "run-canonical-strong-reference-001",
+  "final_frame_spec_ref": {
+    "final_frame_spec_id": "ffs-strong-ref-001",
+    "final_frame_spec_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-strong-ref-001/1.0.0",
+    "checksum": "sha256:test-ffs-strong-ref-001",
+    "status_expected": "READY_FOR_COMPILATION"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "GENERATE",
+  "assets": [
+    {
+      "asset_id": "asset-product-subject-001",
+      "role": "SUBJECT_IDENTITY",
+      "source_ref": "asset://asset-product-subject-001",
+      "authority": "SUBJECT_IDENTITY_AUTHORITY",
+      "required": true,
+      "usage": "Bind subject_identity from frozen frame",
+      "preservation_level": "STRICT",
+      "binding_scope": [
+        "subjects.identity"
+      ]
+    },
+    {
+      "asset_id": "asset-reference-001",
+      "role": "PRIMARY_REFERENCE",
+      "source_ref": "asset://asset-reference-001",
+      "authority": "PRIMARY_REFERENCE_AUTHORITY",
+      "required": true,
+      "usage": "Bind primary_reference from frozen frame",
+      "preservation_level": "HIGH",
+      "binding_scope": [
+        "primary_reference"
+      ]
+    },
+    {
+      "asset_id": "asset-product-001",
+      "role": "PRODUCT",
+      "source_ref": "asset://asset-product-001",
+      "authority": "PRODUCT_AUTHORITY",
+      "required": true,
+      "usage": "Bind product from frozen frame",
+      "preservation_level": "HIGH",
+      "binding_scope": [
+        "product"
+      ]
+    }
+  ],
+  "reference_bindings": [
+    {
+      "reference_asset_id": "asset-reference-001",
+      "role": "PRIMARY_REFERENCE",
+      "authority": "PRIMARY_REFERENCE_AUTHORITY",
+      "transfer_intensity": "VERY_HIGH",
+      "required_anchors": [
+        "anchor-depth-001",
+        "anchor-light-001",
+        "anchor-mass-001"
+      ],
+      "do_not_copy": [
+        "Original subject identity",
+        "Exact object arrangement",
+        "Incidental surface damage"
+      ],
+      "scope": [
+        "composition",
+        "lighting",
+        "color",
+        "depth"
+      ]
+    }
+  ],
+  "identity_bindings": [
+    {
+      "subject_id": "primary-subject",
+      "identity_asset_id": "asset-product-subject-001",
+      "preservation_level": "STRICT",
+      "recognizability_required": true,
+      "immutable_characteristics": [
+        "recognizable identity defined by the bound asset"
+      ],
+      "editable_characteristics": [
+        "Adapt pose within stated intent",
+        "Integrate environmental light and atmosphere"
+      ]
+    }
+  ],
+  "text_bindings": [
+    {
+      "text_id": "headline",
+      "content": "CONTROL THE CURRENT",
+      "exact_text_lock": true,
+      "render_mode": "IN_IMAGE",
+      "language": "und",
+      "required": true
+    }
+  ],
+  "hard_locks": [
+    {
+      "lock_id": "lock-protect-identity",
+      "domain": "identity",
+      "target": "subjects.primary-subject.identity",
+      "rule": "Preserve fundamental recognizable identity",
+      "source": "final_frame_spec.protected_fields.protect-identity",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-protect-copy",
+      "domain": "typography",
+      "target": "typography_system.text_elements.headline.exact_copy",
+      "rule": "Render exactly: CONTROL THE CURRENT",
+      "source": "final_frame_spec.protected_fields.protect-copy",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-protect-product",
+      "domain": "objects",
+      "target": "subjects.primary-subject",
+      "rule": "Defining product silhouette and branding remain exact",
+      "source": "final_frame_spec.protected_fields.protect-product",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-protect-ref-light",
+      "domain": "reference",
+      "target": "lighting_system.rim_or_edge_behavior",
+      "rule": "Preserve dual-color energetic separation behavior",
+      "source": "final_frame_spec.protected_fields.protect-ref-light",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-handoff-0",
+      "domain": "handoff",
+      "target": "compiler_handoff.hard_locks.0",
+      "rule": "Product identity and shape",
+      "source": "final_frame_spec.compiler_handoff.hard_locks.0",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-handoff-1",
+      "domain": "handoff",
+      "target": "compiler_handoff.hard_locks.1",
+      "rule": "Exact headline",
+      "source": "final_frame_spec.compiler_handoff.hard_locks.1",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-handoff-2",
+      "domain": "handoff",
+      "target": "compiler_handoff.hard_locks.2",
+      "rule": "HIGH transfer intensity",
+      "source": "final_frame_spec.compiler_handoff.hard_locks.2",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-handoff-3",
+      "domain": "handoff",
+      "target": "compiler_handoff.hard_locks.3",
+      "rule": "Required reference anchors",
+      "source": "final_frame_spec.compiler_handoff.hard_locks.3",
+      "failure_policy": "FAIL_COMPILATION"
+    }
+  ],
+  "strong_targets": [
+    {
+      "target_id": "strong-0",
+      "domain": "visual_system",
+      "statement": "Reference energy",
+      "priority": "HIGH",
+      "source": "final_frame_spec.compiler_handoff.strong_targets.0",
+      "verification_hint": "Compare against frozen frame requirement."
+    },
+    {
+      "target_id": "strong-1",
+      "domain": "visual_system",
+      "statement": "Four depth planes",
+      "priority": "HIGH",
+      "source": "final_frame_spec.compiler_handoff.strong_targets.1",
+      "verification_hint": "Compare against frozen frame requirement."
+    },
+    {
+      "target_id": "strong-2",
+      "domain": "visual_system",
+      "statement": "Asymmetrical mass tension",
+      "priority": "HIGH",
+      "source": "final_frame_spec.compiler_handoff.strong_targets.2",
+      "verification_hint": "Compare against frozen frame requirement."
+    }
+  ],
+  "controlled_variation": [
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "Fundamental recognizable traits are locked"
+    },
+    {
+      "domain": "pose",
+      "level": "LOW",
+      "rule": "May adapt only within declared pose intent"
+    },
+    {
+      "domain": "wardrobe",
+      "level": "NONE",
+      "rule": "May vary details without changing professional meaning"
+    },
+    {
+      "domain": "environment_details",
+      "level": "MEDIUM",
+      "rule": "May invent supporting detail consistent with required environmental language"
+    },
+    {
+      "domain": "lighting_microvariation",
+      "level": "LOW",
+      "rule": "May tune falloff but not lighting behavior"
+    },
+    {
+      "domain": "color_microvariation",
+      "level": "LOW",
+      "rule": "May vary shade inside named color families"
+    },
+    {
+      "domain": "foreground_details",
+      "level": "MEDIUM",
+      "rule": "May vary material detail but not entry, function or weight"
+    },
+    {
+      "domain": "effects",
+      "level": "LOW",
+      "rule": "Distribution may vary; purpose and intensity may not"
+    },
+    {
+      "domain": "typography",
+      "level": "NONE",
+      "rule": "Exact text and hierarchy locked"
+    },
+    {
+      "domain": "camera",
+      "level": "LOW",
+      "rule": "Micro-adjustment allowed without changing framing, scale or perspective intent"
+    }
+  ],
+  "generator_capabilities": {
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0",
+    "data_classification": "HYPOTHETICAL_TEST_DATA",
+    "registry_checked_at": "2026-08-10T00:00:00-03:00",
+    "capabilities": [
+      {
+        "capability_id": "supports_image_reference",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_multiple_references",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_identity_reference",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_edit_target",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_masking",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_text_rendering",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_exact_text",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_external_text_overlay",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_negative_constraints",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_structured_instruction",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_seed",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_transparency",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      },
+      {
+        "capability_id": "supports_multiple_outputs",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "HYPOTHETICAL_TEST_PROFILE"
+      }
+    ]
+  },
+  "requested_output": {
+    "aspect_ratio": "16:9",
+    "output_role": "FINAL_COMPOSITE",
+    "number_of_variants": 1,
+    "deterministic_requirements": [
+      "16:9",
+      "No model-specific styling or syntax embedded in this specification"
+    ]
+  },
+  "compiler_policy": {
+    "creative_authority": "NONE",
+    "allow_semantic_rephrasing": true,
+    "allow_content_invention": false,
+    "allow_lock_relaxation": false,
+    "allow_reference_dilution": false,
+    "allow_text_rewriting": false,
+    "unsupported_feature_policy": "FAIL"
+  },
+  "incompatibilities": [],
+  "provenance": {
+    "assembler": "COMPILER_INPUT_ASSEMBLER",
+    "assembler_version": "1.0.0",
+    "created_at": "2026-08-10T12:00:00-03:00",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ],
+    "notes": "Generator capabilities are hypothetical test data, not claims about a real model."
+  },
+  "status": "READY_FOR_COMPILATION"
+}

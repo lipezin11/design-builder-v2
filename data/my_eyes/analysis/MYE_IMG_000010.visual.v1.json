@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000011",
+  "image_id": "MYE_IMG_000010",
+  "image_sha256": "8bb6edc39854320e1e7cef8140d0d9f5fa856d34ac237c7ea9e6521684b73812",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Portrait urgency poster with a smiling man bound by rope, oversized lime deadline text, flames, explosives and a digital clock; editor controls are visible at the bottom.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Portrait artwork is shown within a captured editing interface, with the poster filling most of the view.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Portrait artwork is shown within a captured editing interface, with the poster filling most of the view.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The tied subject is centered below the large title, flanked by flames, explosive props and a clock.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The tied subject is centered below the large title, flanked by flames, explosive props and a clock.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "Oversized lime-white deadline text leads, followed by the face, clock and fire.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "Oversized lime-white deadline text leads, followed by the face, clock and fire.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Foreground bomb and rope, subject, title, fire and red interface background create stacked planes.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Foreground bomb and rope, subject, title, fire and red interface background create stacked planes.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Red-green rim light and surrounding fire connect the subject to the theatrical warning scene.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Red-green rim light and surrounding fire connect the subject to the theatrical warning scene.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Hot orange flames and red ambient light contrast with green edge light on the subject.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Hot orange flames and red ambient light contrast with green edge light on the subject.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Red, black and fluorescent lime dominate with orange fire and white highlights.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Red, black and fluorescent lime dominate with orange fire and white highlights.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "OBSERVED",
+      "summary": "Large uppercase Portuguese deadline text spans the top and middle; a digital time display appears on the right.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "typography",
+          "observation": "Large uppercase Portuguese deadline text spans the top and middle; a digital time display appears on the right.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "The background resembles a red warning or control interface rather than a literal room.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "environment",
+          "observation": "The background resembles a red warning or control interface rather than a literal room.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "A bomb or dynamite prop occupies the lower left; rope crosses the subject in the near plane.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "foreground",
+          "observation": "A bomb or dynamite prop occupies the lower left; rope crosses the subject in the near plane.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Flames, smoke, sparks, glow and warning-interface graphics amplify the staged urgency.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "effects",
+          "observation": "Flames, smoke, sparks, glow and warning-interface graphics amplify the staged urgency.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "A photographic person is combined with exaggerated danger props and a visible editor screenshot boundary.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "realism_coherence",
+          "observation": "A photographic person is combined with exaggerated danger props and a visible editor screenshot boundary.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "Very high density fills the frame with title, person, rope, clock, fire, explosives and interface elements.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "complexity_density",
+          "observation": "Very high density fills the frame with title, person, rope, clock, fire, explosives and interface elements.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "A smiling bound figure is juxtaposed with a 23:59 clock, flames and oversized deadline typography.",
+      "facts": [
+        {
+          "fact_id": "FACT_014",
+          "attribute": "distinctive_design_decisions",
+          "observation": "A smiling bound figure is juxtaposed with a 23:59 clock, flames and oversized deadline typography.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000010@sha256:8bb6edc39854320e1e7cef8140d0d9f5fa856d34ac237c7ea9e6521684b73812",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

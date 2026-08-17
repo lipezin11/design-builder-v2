@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "MYE_EXT_BATCH_999999",
+  "batch_version": 1,
+  "source": { "source_id": "MYE_EXT_SRC_999999", "original_filename": "synthetic.md", "raw_path": "tests/fixtures/external_visual_analysis_batch/synthetic.md", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "imported_at": "2026-08-12T15:00:00.000Z", "analyzer_type": "EXTERNAL_MULTIMODAL_ANALYZER", "analysis_protocol": "BLIND_ANALYSIS_THEN_HUMAN_LABEL_ATTACHMENT", "data_classification": "SYNTHETIC_TEST_DATA" },
+  "semantic_boundaries": { "external_evidence_is_not_internal_analysis": true, "candidate_signal_is_not_human_reason": true, "candidate_signal_is_not_preference": true, "correlation_is_not_causation": true, "pairwise_created": false, "preference_inference_performed": false, "consensus_computed": false },
+  "mappings": [
+    { "external_token": "IMG_1_synthetic", "image_id": "MYE_IMG_999999", "image_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "possible_filename": "synthetic.png", "mapping_status": "CONFIRMED_DETERMINISTIC", "evidence_basis": "Synthetic deterministic mapping fixture.", "human_decision_evidence_id": "MYE_DEC_999999" }
+  ],
+  "records": [
+    {
+      "external_analysis_id": "MYE_EXT_ANA_999999", "external_token": "IMG_1_synthetic", "image_id": "MYE_IMG_999999", "image_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "analysis_version": 1,
+      "blind_analysis": true, "label_visible_during_analysis": false, "human_decision_context_used": false,
+      "observation_dimensions": { "visual_hierarchy": { "hierarchy_strength": "STRONG" } },
+      "general_quality_assessment": { "separate_from_visual_observation": true },
+      "normalized_values": [], "internal_analysis_refs": [], "agreement_status": "NOT_COMPUTED",
+      "provenance": { "asserted_by": "MULTIMODAL_ANALYZER", "recorded_by": "EXTERNAL_VISUAL_ANALYSIS_IMPORTER", "source_type": "EXTERNAL_BLIND_VISUAL_ANALYSIS", "source_ref": "MYE_EXT_SRC_999999#IMG_1_synthetic", "recorded_at": "2026-08-12T15:00:00.000Z", "data_classification": "SYNTHETIC_TEST_DATA" }
+    }
+  ],
+  "human_label_attachments": [
+    { "external_token": "IMG_1_synthetic", "image_id": "MYE_IMG_999999", "human_decision": "APPROVED", "source": "HUMAN_EXPLICIT_DATASET_LABEL", "linked_decision_evidence_id": "MYE_DEC_999999", "attached_after_blind_analysis": true, "provenance": { "asserted_by": "HUMAN", "recorded_by": "EXTERNAL_VISUAL_ANALYSIS_IMPORTER", "source_type": "HUMAN_EXPLICIT_DATASET_LABEL", "source_ref": "MYE_EXT_SRC_999999#label:IMG_1_synthetic", "recorded_at": "2026-08-12T15:00:00.000Z", "data_classification": "SYNTHETIC_TEST_DATA" } }
+  ],
+  "raw_aggregate_output": { "blind_statistics_section": "Synthetic blind statistics.", "descriptive_contrast_section": "Synthetic descriptive contrast.", "limitations_section": "Synthetic limitations.", "source_of_truth": false, "provenance": { "asserted_by": "MULTIMODAL_ANALYZER", "recorded_by": "EXTERNAL_VISUAL_ANALYSIS_IMPORTER", "source_type": "EXTERNAL_DESCRIPTIVE_CONTRAST", "source_ref": "MYE_EXT_SRC_999999#descriptive-contrast", "recorded_at": "2026-08-12T15:00:00.000Z", "data_classification": "SYNTHETIC_TEST_DATA" } },
+  "recalculated_aggregates": [],
+  "candidate_signals": [],
+  "normalization_report": { "strategy": "EXPLICIT_RANGE_PRESERVING", "raw_values_preserved": true, "normalized_value_count": 0, "range_preserved_count": 0, "reversible": true },
+  "warnings": [],
+  "import_report": { "status": "PASS", "source_id": "MYE_EXT_SRC_999999", "images_found": 1, "images_mapped": 1, "observations_imported": 1, "human_labels_imported": 1, "candidate_signals_imported": 0, "human_reasons_created": 0, "pairs_created": 0, "preferences_created": 0, "warnings": [] }
+}

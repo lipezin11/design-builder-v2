@@ -1,0 +1,77 @@
+{
+  "version": "REFERENCE_TRANSLATOR_COGNITIVE_KNOWLEDGE_V1_1",
+  "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE_NOT_HUMAN_PREFERENCE_EVIDENCE",
+  "assembly": "DETERMINISTIC_EXPLICIT_ORDER",
+  "modules": [
+    {
+      "id": "core_art_direction_doctrine",
+      "file": "01_core_art_direction_doctrine.md",
+      "title": "Core Art-Direction Doctrine"
+    },
+    {
+      "id": "composition_and_spatial_logic",
+      "file": "02_composition_and_spatial_logic.md",
+      "title": "Composition and Spatial Logic"
+    },
+    {
+      "id": "depth_environment_and_integration",
+      "file": "03_depth_environment_and_integration.md",
+      "title": "Depth, Environment, and Subject Integration"
+    },
+    {
+      "id": "light_color_material_atmosphere",
+      "file": "04_light_color_material_atmosphere.md",
+      "title": "Light, Color, Material, and Atmosphere"
+    },
+    {
+      "id": "typography_information_and_graphic_mass",
+      "file": "05_typography_information_and_graphic_mass.md",
+      "title": "Typography, Information Systems, and Graphic Mass"
+    },
+    {
+      "id": "objects_props_and_semantic_roles",
+      "file": "06_objects_props_and_semantic_roles.md",
+      "title": "Objects, Props, Semantic Roles, and Effects"
+    },
+    {
+      "id": "product_styling_and_cross_category_translation",
+      "file": "07_product_styling_and_cross_category_translation.md",
+      "title": "Product Styling and Cross-Category Translation"
+    },
+    {
+      "id": "people_services_and_editorial_translation",
+      "file": "08_people_services_and_editorial_translation.md",
+      "title": "People, Services, Personal Brands, and Editorial Translation"
+    },
+    {
+      "id": "visual_complexity_density_and_convergence",
+      "file": "09_visual_complexity_density_and_convergence.md",
+      "title": "Visual Complexity, Density, Effects, and Convergence"
+    },
+    {
+      "id": "reference_failure_modes",
+      "file": "10_reference_failure_modes.md",
+      "title": "Reference Failure Modes and Corrections"
+    },
+    {
+      "id": "cross_domain_translation_patterns",
+      "file": "11_cross_domain_translation_patterns.md",
+      "title": "Cross-Domain Translation Patterns"
+    },
+    {
+      "id": "applied_case_library",
+      "file": "12_applied_case_library.md",
+      "title": "Applied Synthetic Teaching Case Library"
+    },
+    {
+      "id": "adversarial_cases",
+      "file": "13_adversarial_cases.md",
+      "title": "Adversarial Translation Cases"
+    },
+    {
+      "id": "self_checks_and_transfer_diagnostics",
+      "file": "14_self_checks_and_transfer_diagnostics.md",
+      "title": "Self-Checks and Transfer Diagnostics"
+    }
+  ]
+}

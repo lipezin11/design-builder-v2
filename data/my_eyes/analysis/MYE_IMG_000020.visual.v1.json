@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000014",
+  "image_id": "MYE_IMG_000020",
+  "image_sha256": "78d6339aebbd1fca19d8e2dc9ee36ac8110c7a3ed1e7ad08686d9750d41c3144",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Dense portrait design-services poster with an arms-crossed man, huge magenta title, neon icon cubes, service panels and blue lower headline.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Portrait frame stacks oversized title, central person, side information panels and a large bottom service label.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Portrait frame stacks oversized title, central person, side information panels and a large bottom service label.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The centered figure overlaps the giant title while icon cubes and text panels fill both sides.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The centered figure overlaps the giant title while icon cubes and text panels fill both sides.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The magenta title and face lead, followed by the blue lower headline and side content blocks.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The magenta title and face lead, followed by the blue lower headline and side content blocks.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Foreground cubes and shards, subject, typography and dark digital background form multiple overlapping layers.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Foreground cubes and shards, subject, typography and dark digital background form multiple overlapping layers.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Magenta-blue rim light and nearby floating icons connect the subject with the technology-themed layout.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Magenta-blue rim light and nearby floating icons connect the subject with the technology-themed layout.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Saturated magenta and blue light model the subject against a dark base.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Saturated magenta and blue light model the subject against a dark base.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Magenta, electric blue, black and white dominate.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Magenta, electric blue, black and white dominate.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "OBSERVED",
+      "summary": "Huge uppercase title sits behind the head; large blue service text spans the bottom with smaller side copy and call-to-action.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "typography",
+          "observation": "Huge uppercase title sits behind the head; large blue service text spans the bottom with smaller side copy and call-to-action.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "The environment is an abstract neon design workspace with icons, panels and digital structures.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "environment",
+          "observation": "The environment is an abstract neon design workspace with icons, panels and digital structures.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "Glowing cubes, shards and interface pieces overlap the subject and frame edges.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "foreground",
+          "observation": "Glowing cubes, shards and interface pieces overlap the subject and frame edges.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Neon glow, lens flare, particles, translucent fragments and floating icons are visibly composited.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "effects",
+          "observation": "Neon glow, lens flare, particles, translucent fragments and floating icons are visibly composited.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "A photographic person is combined with nonphysical icon objects, interface panels and oversized type.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "realism_coherence",
+          "observation": "A photographic person is combined with nonphysical icon objects, interface panels and oversized type.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "Very high information density extends across the entire portrait frame.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "complexity_density",
+          "observation": "Very high information density extends across the entire portrait frame.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "A human portrait is nested between two oversized typographic bands and surrounded by floating design-service symbols.",
+      "facts": [
+        {
+          "fact_id": "FACT_014",
+          "attribute": "distinctive_design_decisions",
+          "observation": "A human portrait is nested between two oversized typographic bands and surrounded by floating design-service symbols.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000020@sha256:78d6339aebbd1fca19d8e2dc9ee36ac8110c7a3ed1e7ad08686d9750d41c3144",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

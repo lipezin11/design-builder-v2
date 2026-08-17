@@ -1,0 +1,723 @@
+{
+  "schema_version": "1.0.0",
+  "frame_spec_id": "ffs-aviation-001",
+  "project_id": "project-aviation-001",
+  "status": "READY_FOR_COMPILATION",
+  "input_refs": {
+    "creative_direction_spec_id": "cds-aviation-001",
+    "creative_direction_spec_version": "1.0.0",
+    "brief_spec_id": "brief-aviation-001",
+    "brief_spec_version": "1.0.0",
+    "reference_mode_active": false,
+    "assets": [
+      {
+        "asset_id": "asset-mentor-001",
+        "role": "SUBJECT_IDENTITY",
+        "required": true
+      }
+    ]
+  },
+  "canvas": {
+    "aspect_ratio": "16:9",
+    "orientation": "LANDSCAPE",
+    "intended_usage": "WEBSITE_HERO",
+    "output_role": "BACKGROUND_FOR_HTML_OVERLAY",
+    "safe_areas": [
+      {
+        "region_id": "copy-safe",
+        "semantic_region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.03,
+          "y": 0.06,
+          "width": 0.44,
+          "height": 0.88
+        },
+        "purpose": "Reserved HTML copy area",
+        "lock_level": "HARD_LOCK"
+      }
+    ]
+  },
+  "composition": {
+    "composition_strategy": "Functional asymmetrical hero with protected left copy field and integrated right-side subject",
+    "mass_distribution": [
+      {
+        "mass_id": "subject-mass",
+        "element_ref": "primary-subject",
+        "region": "RIGHT",
+        "normalized_center": {
+          "x": 0.74,
+          "y": 0.51
+        },
+        "relative_weight": "DOMINANT",
+        "purpose": "Establish credible mentor authority"
+      },
+      {
+        "mass_id": "environment-mass",
+        "element_ref": "environment-story",
+        "region": "RIGHT",
+        "relative_weight": "HIGH",
+        "purpose": "Turn aviation into a navigable professional opportunity system"
+      },
+      {
+        "mass_id": "text-mass",
+        "element_ref": "reserved-copy-region",
+        "region": "LEFT",
+        "relative_weight": "HIGH",
+        "purpose": "Complete the commercial hierarchy without competing with identity"
+      }
+    ],
+    "balance": "Functional asymmetry: quiet left copy field counterweighted by subject and richer storytelling on right",
+    "dominant_axis": "Left-to-right density and attention gradient",
+    "reading_flow": [
+      "primary-subject",
+      "reserved-copy-region",
+      "environment-story"
+    ],
+    "focal_points": [
+      {
+        "rank": 1,
+        "element_ref": "primary-subject",
+        "strength": "DOMINANT",
+        "reason": "Personal authority anchors the offer"
+      },
+      {
+        "rank": 2,
+        "element_ref": "reserved-copy-region",
+        "strength": "STRONG",
+        "reason": "Commercial message follows subject recognition"
+      },
+      {
+        "rank": 3,
+        "element_ref": "environment-story",
+        "strength": "SUPPORTING",
+        "reason": "Environment explains the narrative without becoming the protagonist"
+      }
+    ],
+    "negative_space_regions": [
+      {
+        "region_id": "left-copy-field",
+        "semantic_region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.03,
+          "y": 0.06,
+          "width": 0.44,
+          "height": 0.88
+        },
+        "purpose": "Reserve clean HTML headline, supporting copy and CTA placement",
+        "lock_level": "HARD_LOCK"
+      }
+    ],
+    "subject_environment_relationship": "Navigation paths, atmospheric edge light and layered aviation structures align through the mentor's plane",
+    "edge_behavior": "Environmental entries frame the right subject; left and text-safe edges remain quiet",
+    "cropping_strategy": "Right-side environmental portrait with deliberate edge breathing",
+    "depth_composition_relationship": "Layer richness increases toward subject while atmospheric continuity spans the full frame"
+  },
+  "camera": {
+    "shot_type": "Website environmental portrait",
+    "camera_height": "Near eye level",
+    "camera_angle": "Subtle low-angle authority",
+    "view_direction": "Front three-quarter",
+    "perspective_intent": "Natural editorial depth with foreground exaggeration kept away from face",
+    "lens_behavior": "Moderately wide spatial behavior without facial distortion",
+    "depth_of_field_intent": "Identity plane crisp; depth layers progressively softer",
+    "focus_target": "Primary subject identity features",
+    "camera_energy": "Premium controlled presence"
+  },
+  "subjects": [
+    {
+      "subject_id": "primary-subject",
+      "asset_ref": "asset-mentor-001",
+      "role": "Aviation career navigator",
+      "identity_preservation": "STRICT",
+      "frame_region": "RIGHT",
+      "normalized_position": {
+        "x": 0.74,
+        "y": 0.51
+      },
+      "relative_scale": "Large dominant mass occupying roughly one third of frame height-to-width influence",
+      "framing": "Waist-up environmental portrait",
+      "body_visibility": "Upper body and gesture context",
+      "orientation": "Turned slightly into visual flow",
+      "gaze": "Direct viewer connection",
+      "expression": "Measured confidence and accessibility",
+      "pose_intent": "Forward-oriented professional stance connected to route flow",
+      "wardrobe": "Premium professional aviation-adjacent wardrobe without costume stereotype",
+      "integration_with_environment": "Navigation paths, atmospheric edge light and layered aviation structures align through the mentor's plane",
+      "lighting_priority": "Face/identity remains the best-resolved and most legible element",
+      "occlusion_rules": [
+        "Do not cover eyes, nose, mouth or identity-defining contours",
+        "Non-critical outer silhouette may overlap with environmental layers"
+      ],
+      "variation_freedom": {
+        "identity": "NONE",
+        "pose": "MEDIUM",
+        "wardrobe": "MEDIUM",
+        "expression": "LOW",
+        "body_orientation": "LOW"
+      },
+      "allowed_transformations": [
+        "Adapt pose within stated intent",
+        "Integrate environmental light and atmosphere"
+      ],
+      "forbidden_transformations": [
+        "Alter recognizable facial structure",
+        "Replace subject identity",
+        "Introduce anatomy distortion"
+      ]
+    }
+  ],
+  "environment": {
+    "environment_type": "ABSTRACT_PREMIUM_AVIATION_SYSTEM",
+    "concept": "Navy/cyan layered route environment expressing career access and transformation",
+    "spatial_character": "Operational, expansive and directional",
+    "visual_density": "HIGH",
+    "regional_density": [
+      {
+        "region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.03,
+          "y": 0.06,
+          "width": 0.44,
+          "height": 0.88
+        },
+        "density": "LOW",
+        "contrast_level": "LOW",
+        "detail_level": "LOW",
+        "purpose": "Protected copy field",
+        "protected_for_text": true,
+        "allowed_elements": [
+          "subtle atmospheric continuity"
+        ],
+        "forbidden_elements": [
+          "high-contrast clutter",
+          "unrelated floating objects"
+        ]
+      },
+      {
+        "region": "CENTER",
+        "normalized_bounds": {
+          "x": 0.4,
+          "y": 0.05,
+          "width": 0.2,
+          "height": 0.9
+        },
+        "density": "MEDIUM",
+        "contrast_level": "MEDIUM",
+        "detail_level": "MEDIUM",
+        "purpose": "Transition between message and subject",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "depth transitions",
+          "directional structure"
+        ],
+        "forbidden_elements": [
+          "isolated decorative props"
+        ]
+      },
+      {
+        "region": "RIGHT",
+        "normalized_bounds": {
+          "x": 0.53,
+          "y": 0.05,
+          "width": 0.43,
+          "height": 0.9
+        },
+        "density": "HIGH",
+        "contrast_level": "HIGH",
+        "detail_level": "HIGH",
+        "purpose": "Concentrate subject and environmental storytelling",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "mentor",
+          "abstract runway/navigation cues",
+          "integrated opportunity symbol"
+        ],
+        "forbidden_elements": [
+          "copy competition",
+          "random icons"
+        ]
+      }
+    ],
+    "materials": [
+      "deep navy technical planes",
+      "controlled cyan atmospheric channels",
+      "subtle metallic structure"
+    ],
+    "architectural_or_natural_language": "Abstract aviation navigation and runway behavior, not tourism",
+    "atmosphere": "Cyan/navy atmospheric depth with integrated halo",
+    "environmental_storytelling": "Routes and thresholds show a professional path navigated by the mentor",
+    "subject_integration": "Navigation paths, atmospheric edge light and layered aviation structures align through the mentor's plane",
+    "required_elements": [
+      "abstract aviation route system",
+      "integrated cyan halo/backlight",
+      "42-45 percent left copy field"
+    ],
+    "optional_elements": [
+      "one restrained financial trajectory embedded in route flow"
+    ],
+    "forbidden_elements": [
+      "giant aircraft behind subject",
+      "airport tourism scene",
+      "floating money icons",
+      "airline advertisement composition"
+    ]
+  },
+  "depth_system": {
+    "depth_strategy": "Multiple operational layers extend from near-camera route fragments through mentor to distant aviation horizon",
+    "layers": [
+      {
+        "layer_id": "extreme-fg",
+        "depth_role": "EXTREME_FOREGROUND",
+        "elements": [
+          "cropped abstract navigation or runway-edge structure on right"
+        ],
+        "focus_behavior": "Deliberately out of primary focus",
+        "relative_sharpness": "Soft or motion-softened",
+        "occlusion_behavior": "Outer torso or lower-right environment only",
+        "atmospheric_behavior": "Near-camera atmospheric continuity",
+        "relationship_to_subject": "Begins professional route and supplies scale"
+      },
+      {
+        "layer_id": "subject-plane",
+        "depth_role": "SUBJECT_PLANE",
+        "elements": [
+          "primary-subject"
+        ],
+        "focus_behavior": "Critical focus on identity",
+        "relative_sharpness": "Highest identity sharpness",
+        "occlusion_behavior": "Only non-critical silhouette edges may be crossed",
+        "atmospheric_behavior": "Receives environment color and motivated light",
+        "relationship_to_subject": "Primary perceptual anchor embedded in the scene"
+      },
+      {
+        "layer_id": "background",
+        "depth_role": "BACKGROUND",
+        "elements": [
+          "abstract runway/navigation structures",
+          "integrated cyan halo"
+        ],
+        "focus_behavior": "Readable structure without portrait-level sharpness",
+        "relative_sharpness": "Moderate detail",
+        "occlusion_behavior": "Frames rather than cuts through identity",
+        "atmospheric_behavior": "Navy haze separates operational layers",
+        "relationship_to_subject": "Halo and routes frame mentor as navigator"
+      },
+      {
+        "layer_id": "far-background",
+        "depth_role": "FAR_BACKGROUND",
+        "elements": [
+          "distant directional horizon and route convergence"
+        ],
+        "focus_behavior": "Atmospheric support",
+        "relative_sharpness": "Lowest detail",
+        "occlusion_behavior": "No direct identity occlusion",
+        "atmospheric_behavior": "Strongest atmospheric perspective",
+        "relationship_to_subject": "Provides scale and separation"
+      }
+    ],
+    "subject_environment_integration": "Navigation paths, atmospheric edge light and layered aviation structures align through the mentor's plane",
+    "separation_mechanisms": [
+      "integrated cyan backlight",
+      "navy luminance contrast",
+      "atmospheric layer spacing"
+    ],
+    "overlap_strategy": "Route structures cross depth planes and connect visually to mentor without becoming UI overlays",
+    "atmospheric_perspective": "Cyan accents reduce and soften into navy distance",
+    "required_depth_strength": "VERY_HIGH"
+  },
+  "lighting_system": {
+    "lighting_intent": "Premium mentor authority inside a motivated aviation atmosphere",
+    "subject_key_behavior": "Natural authoritative key preserves face",
+    "fill_behavior": "Navy ambient fill retains form",
+    "rim_or_edge_behavior": "Integrated cyan halo/backlight traces silhouette without clipping",
+    "background_light_behavior": "Route-aligned cyan sources create depth",
+    "motivated_sources": [
+      "abstract runway/navigation channels",
+      "distant aviation horizon"
+    ],
+    "directionality": "Flows from distant left-to-right pathway into mentor",
+    "contrast_strategy": "Right subject highest contrast; left 44 percent stable and subdued",
+    "volumetric_behavior": "Restrained route-aligned haze",
+    "subject_separation": "Cyan halo belongs to environment and remains physically integrated",
+    "regional_luminance_strategy": [
+      {
+        "region": "LEFT",
+        "behavior": "Stable low-detail luminance with no hotspots",
+        "purpose": "Preserve HTML copy legibility"
+      },
+      {
+        "region": "RIGHT",
+        "behavior": "Highest shaped contrast around subject",
+        "purpose": "Maintain identity dominance and environmental depth"
+      }
+    ],
+    "integration_notes": "Cyan response appears on wardrobe edges and nearby structures"
+  },
+  "color_system": {
+    "dominant_family": [
+      {
+        "name": "deep navy",
+        "function": "Establish the environmental base"
+      }
+    ],
+    "secondary_family": [
+      {
+        "name": "steel blue",
+        "function": "Build depth and material distinction"
+      }
+    ],
+    "accent_family": [
+      {
+        "name": "controlled cyan",
+        "function": "Direct attention and support separation"
+      }
+    ],
+    "neutral_family": [
+      {
+        "name": "cool graphite",
+        "function": "Control contrast and preserve readable structure"
+      },
+      {
+        "name": "natural skin neutrals",
+        "function": "Control contrast and preserve readable structure"
+      }
+    ],
+    "temperature_relationship": "Cool operational environment balanced by natural skin",
+    "saturation_strategy": "Cyan localized to navigation, halo and attention flow",
+    "contrast_strategy": "Navy/cyan separation with restrained premium range",
+    "regional_color_behavior": [
+      {
+        "region": "LEFT",
+        "behavior": "Deep quiet navy for HTML copy",
+        "purpose": "Keep copy field coherent and quiet"
+      },
+      {
+        "region": "RIGHT",
+        "behavior": "Layered navy/cyan around mentor and routes",
+        "purpose": "Concentrate narrative color around subject"
+      }
+    ],
+    "subject_skin_treatment": "Natural and warmer than environment without orange exaggeration",
+    "reference_color_anchors": [],
+    "forbidden_color_behaviors": [
+      "airline corporate blue-white cliché",
+      "neon cyan flooding",
+      "random gold money accents"
+    ]
+  },
+  "typography_system": {
+    "enabled": true,
+    "rendered_in_image": false,
+    "text_rendering_mode": "EXTERNAL_OVERLAY",
+    "text_elements": [],
+    "reserved_text_regions": [
+      {
+        "region_id": "html-copy-zone",
+        "semantic_region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.03,
+          "y": 0.06,
+          "width": 0.44,
+          "height": 0.88
+        },
+        "purpose": "Reserve clean HTML headline, supporting copy and CTA placement",
+        "lock_level": "HARD_LOCK"
+      }
+    ],
+    "system_notes": "Image generator must not render any copy; site typography is applied in HTML."
+  },
+  "foreground": {
+    "enabled": true,
+    "purpose": [
+      "DEPTH",
+      "FRAMING",
+      "NARRATIVE"
+    ],
+    "elements": [
+      "cropped abstract navigation or runway-edge structure on right"
+    ],
+    "edge_entry": "Subtle entries from right/lower edge only",
+    "occlusion_target": "Outer torso or lower-right environment only",
+    "blur_behavior": "Soft near-camera defocus",
+    "motion_behavior": "Static or subtle directional softness",
+    "visual_weight": "LOW"
+  },
+  "objects": [
+    {
+      "object_id": "opportunity-trajectory",
+      "type": "ABSTRACT_FINANCIAL_TRAJECTORY",
+      "description": "One restrained rising value cue embedded into the aviation route system",
+      "purpose": "Suggest professional opportunity without get-rich-quick symbolism",
+      "depth_layer": "BACKGROUND",
+      "region": "RIGHT",
+      "relative_scale": "Small supporting trace",
+      "visual_priority": "SUPPORTING",
+      "interaction_with_subject": "Continues the route direction guided by mentor",
+      "interaction_with_environment": "Shares cyan route material and perspective",
+      "required": false,
+      "variation_level": "MEDIUM"
+    }
+  ],
+  "effects": [],
+  "reference_constraints": {
+    "active": false,
+    "transfer_intensity": "NONE",
+    "required_reference_anchors": [],
+    "adapted_reference_anchors": [],
+    "reference_behaviors_to_preserve": [],
+    "reference_elements_explicitly_not_to_copy": []
+  },
+  "protected_fields": [
+    {
+      "field_id": "protect-identity",
+      "target": "subjects.primary-subject.identity",
+      "protection_type": "SUBJECT_IDENTITY",
+      "source": "UPSTREAM_LOCK",
+      "rule": "Preserve fundamental recognizable identity",
+      "allowed_variation": "No identity variation",
+      "failure_condition": "Face is not recognizably the supplied subject"
+    },
+    {
+      "field_id": "protect-copy-zone",
+      "target": "composition.negative_space_regions.left-copy-field",
+      "protection_type": "NEGATIVE_SPACE_REGION",
+      "source": "BRIEF_SPEC",
+      "rule": "Keep the reserved left region free of competing detail and hotspots",
+      "allowed_variation": "Only subtle atmosphere may vary",
+      "failure_condition": "HTML copy loses clean placement or contrast"
+    }
+  ],
+  "controlled_variation": {
+    "domains": [
+      {
+        "domain": "identity",
+        "level": "NONE",
+        "may_invent": false,
+        "rule": "Fundamental recognizable traits are locked"
+      },
+      {
+        "domain": "pose",
+        "level": "MEDIUM",
+        "may_invent": false,
+        "rule": "May adapt only within declared pose intent"
+      },
+      {
+        "domain": "wardrobe",
+        "level": "MEDIUM",
+        "may_invent": false,
+        "rule": "May vary details without changing professional meaning"
+      },
+      {
+        "domain": "environment_details",
+        "level": "MEDIUM",
+        "may_invent": true,
+        "rule": "May invent supporting detail consistent with required environmental language"
+      },
+      {
+        "domain": "lighting_microvariation",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "May tune falloff but not lighting behavior"
+      },
+      {
+        "domain": "color_microvariation",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "May vary shade inside named color families"
+      },
+      {
+        "domain": "foreground_details",
+        "level": "MEDIUM",
+        "may_invent": true,
+        "rule": "May vary material detail but not entry, function or weight"
+      },
+      {
+        "domain": "effects",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "Distribution may vary; purpose and intensity may not"
+      },
+      {
+        "domain": "typography",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "No text rendered; preserve reserved region"
+      },
+      {
+        "domain": "camera",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "Micro-adjustment allowed without changing framing, scale or perspective intent"
+      }
+    ],
+    "must_not_change": [
+      "Subject identity",
+      "Right-side subject",
+      "Protected left copy region",
+      "Left-to-right density gradient"
+    ],
+    "may_vary": [
+      "Route geometry",
+      "Subtle opportunity trace",
+      "Atmospheric distribution"
+    ],
+    "generator_may_invent": [
+      "Small operational details consistent with aviation navigation"
+    ]
+  },
+  "technical_decisions": [
+    {
+      "decision_id": "td-aviation-copy",
+      "domain": "COMPOSITION",
+      "decision": "Reserve normalized left bounds x .03-.47 for external copy.",
+      "rationale": "Approved hero requires approximately 42-45 percent clean copy region.",
+      "source_agent": "LAYOUT_TYPOGRAPHY",
+      "upstream_requirement": "Website hero copy architecture",
+      "confidence": "HIGH"
+    },
+    {
+      "decision_id": "td-aviation-halo",
+      "domain": "LIGHTING",
+      "decision": "Integrate cyan halo into distant navigation sources and wardrobe edge response.",
+      "rationale": "Avoids artificial sticker separation.",
+      "source_agent": "VISUAL_SYSTEMS",
+      "upstream_requirement": "Premium abstract aviation environment",
+      "confidence": "HIGH"
+    }
+  ],
+  "resolved_conflicts": [],
+  "generation_requirements": {
+    "required_assets": [
+      "asset-mentor-001"
+    ],
+    "required_text": [],
+    "required_visual_elements": [
+      "right-side mentor",
+      "44 percent left copy field",
+      "navy/cyan aviation system",
+      "integrated halo",
+      "multiple depth planes"
+    ],
+    "forbidden_visual_elements": [
+      "rendered text",
+      "giant aircraft",
+      "tourism imagery",
+      "floating currency",
+      "stock business portrait"
+    ],
+    "identity_requirements": [
+      "Use supplied subject asset",
+      "Preserve recognizable facial structure and distinguishing traits"
+    ],
+    "reference_requirements": [],
+    "output_constraints": [
+      "16:9",
+      "No model-specific styling or syntax embedded in this specification"
+    ]
+  },
+  "quality_requirements": [
+    {
+      "requirement_id": "qr-depth",
+      "domain": "DEPTH",
+      "statement": "Frame must read as multiple interacting perceptual planes, not subject plus backdrop.",
+      "verification_method": "Confirm visible overlap, scale separation and atmospheric progression across at least three planes.",
+      "severity": "CRITICAL",
+      "failure_condition": "Subject appears pasted onto an independent background.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-identity",
+      "domain": "IDENTITY_FIDELITY",
+      "statement": "Primary subject must remain recognizably identical to the supplied asset.",
+      "verification_method": "Compare facial structure and distinguishing traits against the identity asset.",
+      "severity": "CRITICAL",
+      "failure_condition": "Identity changes, drifts or becomes generic.",
+      "source": "UPSTREAM_LOCK"
+    },
+    {
+      "requirement_id": "qr-hierarchy",
+      "domain": "HIERARCHY",
+      "statement": "Mentor remains first; future HTML message has a stable left field; aviation pathways read as supporting opportunity.",
+      "verification_method": "Inspect at full size and reduced-size view; focal order must remain unchanged.",
+      "severity": "CRITICAL",
+      "failure_condition": "Aircraft cue, halo or financial symbol becomes more salient than mentor or copy field.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-integration",
+      "domain": "INTEGRATION",
+      "statement": "Halo, routes and environmental light must interact physically with mentor and share perspective.",
+      "verification_method": "Inspect edge light, overlap, perspective and atmosphere around subject/environment boundaries.",
+      "severity": "HIGH",
+      "failure_condition": "Subject reads as separately composited or environmental perspective disagrees.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-environment",
+      "domain": "ENVIRONMENTAL_STORYTELLING",
+      "statement": "Every aviation cue must express navigation, progress, mastery or access.",
+      "verification_method": "Every prominent environment element must map to a declared narrative, depth or attention function.",
+      "severity": "HIGH",
+      "failure_condition": "Prominent detail is decorative, generic or unrelated to the narrative.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-copy-zone",
+      "domain": "LEGIBILITY",
+      "statement": "Reserved copy region must stay quiet enough for external typography.",
+      "verification_method": "Overlay representative HTML copy and verify contrast and unobstructed bounds.",
+      "severity": "CRITICAL",
+      "failure_condition": "Hotspots, detail or objects compete with external copy.",
+      "source": "BRIEF_SPEC"
+    }
+  ],
+  "unresolved_issues": [],
+  "compiler_handoff": {
+    "target_generator": null,
+    "creative_authority": "NONE",
+    "required_assets": [
+      "asset-mentor-001"
+    ],
+    "hard_locks": [
+      "Subject identity",
+      "Right-side subject",
+      "Left HTML copy region",
+      "No rendered text",
+      "Approximately 44 percent left copy field"
+    ],
+    "strong_targets": [
+      "Multiple depth planes",
+      "Integrated subject/environment",
+      "Navy/cyan visual system",
+      "Integrated halo/backlight"
+    ],
+    "open_variations": [
+      "Exact supporting environmental details",
+      "Microtexture",
+      "Atmospheric distribution",
+      "Abstract aircraft/runway cue manifestations"
+    ],
+    "reference_assets": [],
+    "text_rendering_mode": "EXTERNAL_OVERLAY",
+    "unsupported_feature_policy": "REPORT_INCOMPATIBILITY_TO_ORCHESTRATOR"
+  },
+  "provenance": {
+    "producer": "TECHNICAL_DESIGN_ROOM",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-09T16:00:00-03:00",
+    "decision_sources": [
+      "CREATIVE_DIRECTION_SPEC",
+      "VISUAL_SYSTEMS_AGENT",
+      "LAYOUT_TYPOGRAPHY_AGENT",
+      "APPROVED_DIRECTION_MEMORY"
+    ],
+    "notes": "Contains consolidated observable decisions and rationales only; no private deliberation."
+  },
+  "approval": {
+    "approval_status": "SYSTEM_APPROVED",
+    "approved_by": "SYSTEM",
+    "timestamp": "2026-08-09T16:05:00-03:00",
+    "notes": "Technically complete for compilation; no human approval claimed.",
+    "human_override": false
+  }
+}

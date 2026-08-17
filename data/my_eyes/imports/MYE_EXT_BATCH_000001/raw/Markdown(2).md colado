@@ -1,0 +1,553 @@
+**A. ANALYSIS PROTOCOL CONFIRMATION**
+
+BLIND ANALYSIS: TRUE LABELS HIDDEN DURING OBSERVATION: TRUE DESIGNER PREFERENCE INFERENCE: FALSE
+
+---
+
+**B. INDIVIDUAL VISUAL ANALYSIS**
+
+```
+{
+  "image_token": "IMG_1_agroforte",
+  "analysis_mode": "BLIND_VISUAL_ANALYSIS",
+  "format_usage": {
+    "orientation": "PORTRAIT",
+    "probable_visual_role": "SOCIAL_POST",
+    "text_safe_area_exists": true
+  },
+  "composition": {
+    "subject_position": "LOWER_CENTER to LOWER_RIGHT (hands+plant)",
+    "negative_space": "large, upper region, deliberately structured",
+    "edge_interactions": "blurred leaf shapes enter from UPPER_LEFT, RIGHT, LOWER_LEFT corners"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "plant/soil held in hands (high local contrast against blurred bright background)",
+    "secondary_focal_point": "headline typography upper area",
+    "tertiary_focal_point": "stacked quote text blocks left-middle",
+    "hierarchy_strength": "STRONG",
+    "competing_focal_points": false
+  },
+  "depth": {
+    "number_of_perceptual_planes": "4 (extreme foreground blurred leaves, subject hands/plant, atmospheric bokeh background, distant blur)",
+    "depth_strength": "STRONG",
+    "subject_pasted_on_background": "NOT_OBSERVED",
+    "evidence": "Consistent soft diffused light across hands and soil; no hard edge mismatch"
+  },
+  "subject_environment_integration": {
+    "integration_strength": "STRONG",
+    "evidence": "Hand/soil lighting plausible, shadow relationship visible under soil mound"
+  },
+  "lighting": {
+    "key_light_behavior": "soft diffused, high-key, backlit overall",
+    "motivated_vs_unmotivated_light": "motivated (single soft ambient source)"
+  },
+  "color": {
+    "dominant_color_families": ["green", "warm white/cream"],
+    "accent_colors": ["dark olive text blocks"],
+    "color_cohesion": "high"
+  },
+  "typography": {
+    "text_present": true,
+    "main_text": "Dia Mundial do meio Ambiente",
+    "secondary_text": "Preservar o meio ambiente é agir no presente para proteger o futuro.",
+    "legibility": "HIGH",
+    "occlusion": "none observed over subject",
+    "typography_integration": "OVERLAID"
+  },
+  "environment": {
+    "environment_type": "abstract blurred bokeh, non-specific",
+    "specificity": "LOW"
+  },
+  "foreground": {
+    "foreground_present": true,
+    "foreground_elements": "blurred leaf shapes, multiple corners",
+    "narrative_function": "framing/depth"
+  },
+  "realism_coherence": {
+    "hands": "NOT_OBSERVED artifacts",
+    "AI_artifacts": "NOT_OBSERVED"
+  },
+  "complexity_density": {
+    "overall_density": "LOW_MEDIUM",
+    "empty_regions": "upper two-thirds, structured"
+  },
+  "distinctive_design_decisions": [
+    "layered blurred leaf foreground at multiple frame corners",
+    "script+serif mixed headline typography",
+    "stacked highlighted quote blocks as secondary copy",
+    "brand logo in colored capsule at base"
+  ]
+}
+
+```
+
+```
+{
+  "image_token": "IMG_2_red_party_hat",
+  "format_usage": { "orientation": "LANDSCAPE", "probable_visual_role": "SOCIAL_POST/ADVERTISEMENT" },
+  "composition": {
+    "subject_position": "CENTER_RIGHT",
+    "mass_distribution": "dense cluster of overlapping card elements RIGHT and UPPER region; LEFT third comparatively empty (dark red gradient)",
+    "edge_interactions": "extended arm/hand breaks toward LOWER_LEFT edge"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "subject's lit face",
+    "secondary_focal_point": "cluster of overlapping card/screenshot thumbnails",
+    "tertiary_focal_point": "red alert UI bar top ('100% USADO')",
+    "hierarchy_strength": "MODERATE",
+    "competing_focal_points": "possible, cluster has high internal density but does not exceed subject's weight"
+  },
+  "depth": {
+    "number_of_perceptual_planes": "3 (subject, fanned card stack behind/around, flat red backdrop)",
+    "depth_strength": "MODERATE",
+    "subject_pasted_on_background": "POSSIBLE",
+    "evidence": "Subject lit with fairly neutral frontal light while background is strongly red-tinted; limited color contamination from red environment onto subject skin/clothing"
+  },
+  "subject_environment_integration": {
+    "integration_strength": "WEAK_MODERATE",
+    "evidence": "no clear red rim-light wrap on subject edges despite saturated red backdrop"
+  },
+  "lighting": {
+    "key_light_behavior": "soft frontal on face",
+    "motivated_vs_unmotivated_light": "background red glow not clearly sourced/wrapping subject"
+  },
+  "color": {
+    "dominant_color_families": ["dark red", "gray/white card content"],
+    "accent_colors": ["green party hat - sole saturated hue break"]
+  },
+  "typography": {
+    "text_present": true,
+    "main_text": "capacidade / 100% USADO (alert style)",
+    "secondary_text": "multiple small card titles (BRIEFINGS, AGÊNCIA ENXUTA 6D, EASY SALES, easy.builder PRO)",
+    "legibility": "LOW_MEDIUM for small card text",
+    "typography_integration": "SEMI_INTEGRATED (text embedded within card graphics)"
+  },
+  "environment": { "environment_type": "abstract dark-red gradient", "specificity": "LOW" },
+  "foreground": {
+    "foreground_present": true,
+    "foreground_elements": "green party hat cone, extended hand/arm",
+    "narrative_function": "gesture, breaks frame toward viewer"
+  },
+  "effects": [
+    { "effect": "red warning glow", "region": "upper bar", "apparent_function": "alert signaling" },
+    { "effect": "drop shadows on cards", "apparent_function": "slight layering cue" }
+  ],
+  "realism_coherence": { "face_hands": "plausible", "compositing_artifacts": "MINOR softness at some card edges" },
+  "complexity_density": { "overall_density": "HIGH_VERY_HIGH", "regional_density": "very high right/center, low left third" },
+  "distinctive_design_decisions": [
+    "dense fan/stack of many small product/document thumbnails surrounding subject",
+    "green party hat as sole saturated-hue accent against red scheme",
+    "alert-style UI bar treated as environmental backdrop element",
+    "subject's open-hand gesture breaking frame toward viewer"
+  ]
+}
+
+```
+
+```
+{
+  "image_token": "IMG_3_lantern_businessman",
+  "format_usage": { "orientation": "LANDSCAPE_WIDE", "probable_visual_role": "ADVERTISEMENT/WEBSITE_HERO" },
+  "composition": {
+    "subject_position": "RIGHT_OF_CENTER, vertical middle band",
+    "negative_space": "large solid black area LEFT half, deliberately structured",
+    "edge_interactions": "lantern extends toward LOWER_LEFT, map toward LOWER_RIGHT"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "subject's face",
+    "secondary_focal_point": "glowing lantern (brightest local element, contains logo)",
+    "tertiary_focal_point": "drones and candlestick chart graphic upper-right background",
+    "hierarchy_strength": "STRONG",
+    "competing_focal_points": false
+  },
+  "depth": {
+    "number_of_perceptual_planes": "4+ (lantern extreme foreground, subject plane, blurred bridge/tunnel structure, atmospheric haze background)",
+    "depth_strength": "STRONG",
+    "subject_pasted_on_background": "NOT_OBSERVED",
+    "evidence": "cool blue-gray ambient light consistent across subject and background; plausible hand-contact with lantern handle and map"
+  },
+  "subject_environment_integration": {
+    "integration_strength": "STRONG",
+    "evidence": "warm lantern glow visibly casts onto subject's hand and lower face/jacket area; direction consistent"
+  },
+  "lighting": {
+    "key_light_behavior": "cool blue-gray ambient key",
+    "backlight": "warm point-source (lantern), motivated",
+    "volumetric_light": "visible mist/smoke in background"
+  },
+  "color": { "dominant_color_families": ["cool blue/gray/black"], "accent_colors": ["warm amber lantern flame", "red/green candlestick chart accent"] },
+  "typography": { "text_present": false },
+  "environment": {
+    "environment_type": "stylized dark tunnel/bridge structure with storm clouds, drones, distant chart graphic",
+    "specificity": "MODERATE",
+    "storytelling_elements": "drones, financial chart, treasure map, aged wood bridge structure"
+  },
+  "foreground": {
+    "foreground_present": true,
+    "foreground_elements": ["lantern (closest, sharp, bright, brand mark inside glass)", "treasure map (textured paper, sharp)"],
+    "narrative_function": "both structurally held/interacted with by subject, not decorative"
+  },
+  "effects": [
+    { "effect": "volumetric glow from lantern", "region": "lower-left", "apparent_function": "light source" },
+    { "effect": "atmospheric haze", "region": "background", "apparent_function": "depth cue" }
+  ],
+  "realism_coherence": { "hands": "plausible holding lantern/map", "artifacts": "MINOR softness at some distant architectural edges" },
+  "complexity_density": { "overall_density": "MEDIUM", "regional_density": "high right/background, very low (empty) left third" },
+  "distinctive_design_decisions": [
+    "large asymmetric negative space on left third",
+    "two distinct held foreground props with different functions (light source vs information/map)",
+    "brand mark placed inside lantern glass rather than as separate logo lockup",
+    "blended genre background (nautical/industrial + finance + drones)"
+  ]
+}
+
+```
+
+```
+{
+  "image_token": "IMG_4_jungle_biologist",
+  "format_usage": { "orientation": "LANDSCAPE", "probable_visual_role": "WEBSITE_HERO/EDITORIAL" },
+  "composition": {
+    "subject_position": "RIGHT_THIRD, arms crossed",
+    "negative_space": "large blurred jungle foliage occupies LEFT two-thirds, text-safe",
+    "edge_interactions": "blurred fern leaves enter LOWER_LEFT and LOWER_RIGHT corners"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "subject's face/glasses (sharpest focus)",
+    "secondary_focal_point": "floating illuminated glass spheres with plants inside",
+    "tertiary_focal_point": "small low-opacity text labels scattered center-left",
+    "hierarchy_strength": "STRONG",
+    "competing_focal_points": false
+  },
+  "depth": {
+    "number_of_perceptual_planes": "5 (foreground ferns, subject, midground floating spheres at varying scale, background jungle canopy, light shafts)",
+    "depth_strength": "VERY_STRONG",
+    "subject_pasted_on_background": "NOT_OBSERVED",
+    "evidence": "rim/backlight on subject hair direction matches implied light-shaft direction from background canopy"
+  },
+  "subject_environment_integration": {
+    "integration_strength": "STRONG",
+    "evidence": "warm backlight consistency; subtle green ambient reflection visible on subject's shirt"
+  },
+  "lighting": {
+    "backlight": "motivated by visible light shafts through canopy",
+    "fill_behavior": "soft frontal fill on face",
+    "directionality": "warm-to-cool falloff into left-side shadow"
+  },
+  "color": { "dominant_color_families": ["deep green", "near-black shadow"], "accent_colors": ["warm gold light shafts"] },
+  "typography": {
+    "text_present": true,
+    "text_content": "Biodiversidade / Ciência / Preservação / Natureza / Vida (partial legibility on smallest instances)",
+    "small_size_legibility_estimate": "LOW",
+    "typography_integration": "SEMI_INTEGRATED"
+  },
+  "environment": {
+    "environment_type": "dense jungle/rainforest",
+    "specificity": "MODERATE_HIGH",
+    "thematic_elements": "DNA helix graphic upper-left, hummingbird upper-right"
+  },
+  "foreground": { "foreground_present": true, "foreground_elements": "blurred fern fronds lower corners", "narrative_function": "framing" },
+  "effects": [
+    { "effect": "floating glass-orb terrariums", "region": "center-left, varying depth", "apparent_function": "thematic/storytelling" },
+    { "effect": "volumetric light shafts", "region": "background" },
+    { "effect": "hummingbird with motion-blurred wings", "region": "upper-right near subject head" }
+  ],
+  "realism_coherence": { "pose": "plausible", "artifacts": "NOT_OBSERVED" },
+  "complexity_density": { "overall_density": "MEDIUM", "regional_density": "higher center-left and right, cleaner directly around subject" },
+  "distinctive_design_decisions": [
+    "floating terrarium-glass-orb motif repeated at varying scale/depth",
+    "DNA helix graphic as background storytelling element",
+    "hummingbird placed near subject's head as living-detail accent",
+    "large asymmetric negative space opposite subject reserved for text"
+  ]
+}
+
+```
+
+```
+{
+  "image_token": "IMG_5_ideas_that_float",
+  "format_usage": { "orientation": "PORTRAIT", "probable_visual_role": "WEBSITE_HERO/SOCIAL_POST" },
+  "composition": {
+    "subject_position": "CENTER, head tilted back looking up",
+    "mass_distribution": "UI cards scattered upper and mid-frame roughly circular around subject's head"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "ambiguous between subject's face and card cluster",
+    "hierarchy_strength": "WEAK_MODERATE",
+    "competing_focal_points": true,
+    "evidence": "at least 6 similarly-weighted UI cards plus subject face plus headline text compete for attention"
+  },
+  "depth": {
+    "number_of_perceptual_planes": "2-3 (cards roughly one shallow plane around subject, one card overlapping subject's chest at subject-plane depth)",
+    "depth_strength": "LOW_MODERATE",
+    "subject_pasted_on_background": "POSSIBLE",
+    "evidence": "subject has warm/neutral top light while each card is independently self-illuminated (internal UI glow) without a clearly shared scene light"
+  },
+  "subject_environment_integration": { "integration_strength": "WEAK", "evidence": "cards show individual drop-shadows/glows but no shared shadow-casting linking them to subject" },
+  "lighting": { "key_light_behavior": "soft warm top/rim light on subject (motivated by upward gaze)", "unmotivated_light": "each card self-illuminated independent of scene light" },
+  "color": { "dominant_color_families": ["near-black background"], "accent_colors": ["green (brand/growth numbers/star icon)"] },
+  "typography": {
+    "text_present": true,
+    "main_text": "Ideas that float. / Results that stay.",
+    "secondary_text": "Creative strategies that connect, engage and convert.",
+    "legibility": "HIGH headline, MEDIUM small card text",
+    "typography_integration": "OVERLAID"
+  },
+  "environment": { "environment_type": "abstract dark space with scattered particle dots", "specificity": "LOW" },
+  "foreground": { "foreground_present": "borderline (small green star icon mid-left)" },
+  "effects": [
+    { "effect": "7-8 floating UI mockup cards", "apparent_function": "represent metrics/notifications" },
+    { "effect": "small particle dots", "region": "background" }
+  ],
+  "realism_coherence": { "subject_face_neck": "plausible", "artifacts": "NOT_OBSERVED on subject" },
+  "complexity_density": { "overall_density": "HIGH", "regional_density": "high upper two-thirds, lower density lower third" },
+  "distinctive_design_decisions": [
+    "7-8 UI-mockup cards arranged in loose ring around subject's head/torso",
+    "one card directly overlapping subject's chest at subject-plane depth",
+    "two-tone stacked headline (serif white + bold green sans)",
+    "scattered isolated icon accents (magnet, star, lightning) without unifying connective element"
+  ]
+}
+
+```
+
+```
+{
+  "image_token": "IMG_6_green_neon_carousel",
+  "format_usage": { "orientation": "PORTRAIT_NEAR_SQUARE", "probable_visual_role": "ADVERTISEMENT/SOCIAL_POST" },
+  "composition": {
+    "subject_position": "CENTER, upper two-thirds",
+    "mass_distribution": "raised hand chest-height toward curved product-thumbnail arc lower-third; small icons scattered at margins"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "subject's face",
+    "secondary_focal_point": "raised hand (closer to camera, bright)",
+    "tertiary_focal_point": "curved 5-thumbnail carousel lower third",
+    "hierarchy_strength": "MODERATE_STRONG",
+    "competing_focal_points": false
+  },
+  "depth": {
+    "number_of_perceptual_planes": "4-5 (hand nearest, subject plane, carousel panel, floating small polyhedra at varying depth, deep converging background tunnel)",
+    "depth_strength": "STRONG",
+    "subject_pasted_on_background": "NOT_OBSERVED",
+    "evidence": "green rim light on subject's jaw/shoulders matches ambient glow direction from background tunnel"
+  },
+  "subject_environment_integration": {
+    "integration_strength": "STRONG for subject/background; MODERATE for hand-to-carousel",
+    "evidence": "hand hovers above carousel panel without a clearly visible contact shadow linking the two"
+  },
+  "lighting": {
+    "backlight": "strong green backlight/rim, motivated by visible converging light lines in tunnel",
+    "fill_behavior": "soft frontal fill on face"
+  },
+  "color": { "dominant_color_families": ["black", "green"], "note": "thumbnail carousel introduces varied colors (brown food, clear bottle, dark bottle) in a contained region" },
+  "typography": {
+    "text_present": true,
+    "text_content": "small glyph/icon marks upper-left ('XXX', geometric icons) and upper-right (arrow, barcode-style lines, '010001')",
+    "legibility": "LOW_MEDIUM",
+    "typography_integration": "OVERLAID"
+  },
+  "environment": {
+    "environment_type": "abstract green-lit geometric tunnel/corridor, strong converging lines",
+    "specificity": "MODERATE",
+    "elements": "floating crystal/polyhedron shapes, small satellite-like objects"
+  },
+  "foreground": { "foreground_present": "borderline (small floating polyhedra at margins)" },
+  "effects": [
+    { "effect": "strong volumetric green backlight", "region": "background/subject edges" },
+    { "effect": "floating crystal/polyhedron shapes", "region": "left/right margins, multiple depths" },
+    { "effect": "curved product-carousel panel with its own edge-glow border", "region": "lower third" }
+  ],
+  "realism_coherence": { "hand_fingers": "plausible", "artifacts": "MINOR - no clear contact shadow linking hand to carousel" },
+  "complexity_density": { "overall_density": "MEDIUM_HIGH", "regional_density": "higher at extreme margins and lower third, cleaner at subject's chest/head" },
+  "distinctive_design_decisions": [
+    "raised open hand as central gesture 'presenting' carousel below it",
+    "five-thumbnail curved carousel functioning as a distinct flat UI-like panel within photographic scene",
+    "strong single-color (green) backlight motivated by implied tunnel light source",
+    "isolated icon/glyph marks at all four corners without unified graphic system"
+  ]
+}
+
+```
+
+```
+{
+  "image_token": "IMG_7_creative_db",
+  "format_usage": { "orientation": "PORTRAIT", "probable_visual_role": "ADVERTISEMENT/SOCIAL_POST" },
+  "composition": {
+    "subject_position": "CENTER, extending mug toward camera lower-center",
+    "mass_distribution": "numerous ornate floating objects scattered at all four corners and margins"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "subject's face",
+    "secondary_focal_point": "extended mug with colorful contents (close to camera, bright)",
+    "tertiary_focal_point": "'PROMPTS' headline (large scale, upper area)",
+    "quaternary": "'Creative DB' gold script overlapping torso; many small ornate props at low individual but high cumulative weight",
+    "hierarchy_strength": "MODERATE",
+    "competing_focal_points": "borderline - multiple large elements (headline, mug, gold script) compete with face"
+  },
+  "depth": {
+    "number_of_perceptual_planes": "5 (mug extreme foreground, subject plane, scattered ornate objects at varying scale/depth, blurred green-tiled background, window light)",
+    "depth_strength": "STRONG",
+    "subject_pasted_on_background": "NOT_OBSERVED",
+    "evidence": "teal-green ambient light consistent on subject's jacket and skin; plausible shadow beneath extended arm"
+  },
+  "subject_environment_integration": {
+    "integration_strength": "MODERATE_STRONG",
+    "evidence": "denim jacket picks up ambient teal-green cast; some floating ornate objects (column fragments, watch) lack matching contact shadows, appearing independently lit"
+  },
+  "lighting": { "key_light_behavior": "soft diffused teal-green ambient", "highlight_behavior": "warm highlight on gold text and pocket watch" },
+  "color": { "dominant_color_families": ["teal/green"], "accent_colors": ["warm gold typography/watch", "tan/cream headline", "multicolored mug contents"] },
+  "typography": {
+    "text_present": true,
+    "main_text": "PROMPTS (large, tan/cream, textured, overlaps subject's hair)",
+    "secondary_text": "Creative DB (gold script + bold serif, overlaps subject's torso/hand)",
+    "occlusion": "text overlaps subject at subject-plane depth in two locations",
+    "typography_integration": "SEMI_INTEGRATED"
+  },
+  "environment": { "environment_type": "stylized green-tiled interior resembling vintage bathroom/room", "specificity": "MODERATE_HIGH", "elements": "window light source, doorway" },
+  "foreground": {
+    "foreground_present": true,
+    "foreground_elements": "extended arm/mug with colorful mushroom-shaped objects inside",
+    "narrative_function": "object offered toward viewer, strong"
+  },
+  "effects": [
+    { "effect": "floating ornate props (columns, pocket watch, fountain pen, framed cards, lightbulb sketch)", "region": "all corners/margins" },
+    { "effect": "ground-level smoke/dust", "region": "lower corners" }
+  ],
+  "realism_coherence": { "hand_fingers": "plausible around mug", "artifacts": "MINOR - some floating props show ambiguous scale relationships to one another" },
+  "complexity_density": { "overall_density": "HIGH_VERY_HIGH", "regional_density": "dense across nearly all regions, less populated directly around face" },
+  "distinctive_design_decisions": [
+    "very high count (7+) of ornate vintage-styled floating props at varying scale/depth",
+    "two-tier headline system (large distressed display type + gold script logotype) both overlapping subject",
+    "mug held toward camera containing unconventional colorful contents as central narrative object",
+    "small creator-credit avatar+handle at base"
+  ]
+}
+
+```
+
+```
+{
+  "image_token": "IMG_8_web_designer",
+  "format_usage": { "orientation": "PORTRAIT", "probable_visual_role": "ADVERTISEMENT/SOCIAL_POST" },
+  "composition": {
+    "subject_position": "CENTER_LOWER, arms crossed",
+    "mass_distribution": "subject overlaps very large background wordmark 'DESIGN' spanning nearly full frame height; floating glass-cube icons at all four corners; multiple text blocks at different scales throughout"
+  },
+  "visual_hierarchy": {
+    "primary_focal_point": "ambiguous between subject's face and giant 'DESIGN' wordmark (comparable/greater visual weight due to scale and saturated magenta)",
+    "hierarchy_strength": "WEAK",
+    "competing_focal_points": true,
+    "evidence": "6+ distinct typographic blocks, 4 independently-glowing icon cubes, and a full-bleed wordmark all compete simultaneously"
+  },
+  "depth": {
+    "number_of_perceptual_planes": "3 (floating cubes nearest, subject plane in front of/overlapping wordmark, flat dark backdrop)",
+    "depth_strength": "MODERATE",
+    "subject_pasted_on_background": "NOT_OBSERVED for subject vs. dark backdrop",
+    "evidence": "subject occludes lower portion of 'DESIGN' letters, giving one clear overlap/depth cue; however each floating cube shows self-contained lighting not clearly unified with a single scene light source"
+  },
+  "subject_environment_integration": {
+    "integration_strength": "WEAK for floating cube icons; MODERATE for subject-to-backdrop",
+    "evidence": "cubes independently lit/glowing with no shared shadows connecting them to subject or each other"
+  },
+  "lighting": { "key_light_behavior": "cool blue/magenta rim and fill on subject", "unmotivated_light": "each floating cube self-illuminated independent of a shared source" },
+  "color": { "dominant_color_families": ["magenta/purple", "blue"], "note": "high saturation, strong two-hue scheme throughout" },
+  "typography": {
+    "text_present": true,
+    "text_density": "VERY_HIGH",
+    "main_text": "DESIGN (giant background wordmark) / SOCIAL MEDIA & WEB DESIGNER (bottom headline)",
+    "secondary_text": "com Propósito (script), body paragraph, SERVIÇOS icon-list, tagline, CTA, corner captions",
+    "legibility": "HIGH per individual block, but instant_readability LOW due to simultaneous competing elements",
+    "typography_integration": "mixture of OVERLAID (wordmark) and SEMI_INTEGRATED (script accent)"
+  },
+  "environment": { "environment_type": "abstract dark space with faint grid lines", "specificity": "LOW" },
+  "foreground": {
+    "foreground_present": true,
+    "foreground_elements": "4 glass-cube icon objects (heart, code bracket, 'Aa', chess piece) at corners",
+    "narrative_function": "decorative/iconographic, each represents a service category"
+  },
+  "effects": [
+    { "effect": "internal neon glow within each glass cube", "region": "four corners" },
+    { "effect": "particle/dust specks", "region": "right-of-center" },
+    { "effect": "small line-chart graphic", "region": "left-middle" }
+  ],
+  "realism_coherence": { "pose": "plausible", "artifacts": "NOT_OBSERVED on subject; cube icons are stylized graphic elements, not photoreal" },
+  "complexity_density": { "overall_density": "VERY_HIGH", "regional_density": "high in all four quadrants, very few rest regions" },
+  "distinctive_design_decisions": [
+    "subject physically overlapping/occluding a full-bleed giant background wordmark",
+    "four independently-glowing floating glass-cube icons at all four corners",
+    "6+ distinct typographic blocks at different scales/styles/colors simultaneously present",
+    "consistent two-tone (magenta+blue) color scheme across wordmark, headline and icons",
+    "services rendered as icon+label list panel embedded within photographic composition"
+  ]
+}
+
+```
+
+---
+
+**C. BLIND DATASET STATISTICS (n=8, no labels)**
+
+- Foreground element clearly present: 5/8 (img1, 3, 4, 7, 8); borderline in 2/8 (img2, 6); absent/borderline in 1/8 (img5)
+- Depth\_strength STRONG or higher: 5/8 (img1, 3, 4, 6, 7); MODERATE: 2/8 (img2, 8); LOW-MODERATE: 1/8 (img5)
+- SUBJECT\_PASTED\_ON\_BACKGROUND = POSSIBLE: 2/8 (img2, img5); NOT\_OBSERVED: 6/8
+- Competing focal points (hierarchy\_strength WEAK or "competing" flagged TRUE): 3/8 (img5, img7-borderline, img8)
+- Typography overlapping/occluding subject at subject-plane: 2/8 clearly (img7, img8)
+- 4+ independently-lit floating decorative objects with weak shared integration: 4/8 (img2, img5, img7, img8)
+- Overall density HIGH or VERY\_HIGH: 5/8 (img2, img5, img6, img7, img8)
+
+---
+
+**D. LABEL ATTACHMENT**
+
+```
+[
+  { "image_token": "IMG_1_agroforte", "human_decision": "APPROVED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" },
+  { "image_token": "IMG_2_red_party_hat", "human_decision": "APPROVED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" },
+  { "image_token": "IMG_3_lantern_businessman", "human_decision": "APPROVED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" },
+  { "image_token": "IMG_4_jungle_biologist", "human_decision": "APPROVED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" },
+  { "image_token": "IMG_5_ideas_that_float", "human_decision": "REJECTED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" },
+  { "image_token": "IMG_6_green_neon_carousel", "human_decision": "REJECTED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" },
+  { "image_token": "IMG_7_creative_db", "human_decision": "REJECTED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" },
+  { "image_token": "IMG_8_web_designer", "human_decision": "REJECTED", "source": "HUMAN_EXPLICIT_DATASET_LABEL" }
+]
+
+```
+
+---
+
+**E. APPROVED VS REJECTED — DESCRIPTIVE CONTRAST** *(n=4 vs n=4 — SMALL\_SAMPLE\_WARNING applies to every row)*
+
+| Characteristic Approved (4) Rejected (4) Observed difference   |            |                                   |                                                                                                                                                       |
+| -------------------------------------------------------------- | ---------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Foreground clearly present                                     | 3/4 (75%)  | 2/4 (50%, borderline in both)     | Foreground appears somewhat more often in the approved subset, but the difference is not clean-cut given borderline classifications in img2 and img6. |
+| Depth\_strength STRONG+                                        | 3/4 (75%)  | 2/4 (50%)                         | Approved subset trends toward stronger depth ratings, though img6 (rejected) also scored STRONG.                                                      |
+| SUBJECT\_PASTED = POSSIBLE                                     | 0/4        | 1/4 (img5)                        | Appears only in the rejected subset in this sample.                                                                                                   |
+| Competing focal points / weak hierarchy                        | 0/4        | 3/4 (img5, img7-borderline, img8) | This characteristic appears substantially more frequently in the rejected subset.                                                                     |
+| Typography overlapping subject at subject-plane                | 0/4        | 2/4 (img7, img8)                  | Appears exclusively in the rejected subset in this sample.                                                                                            |
+| 4+ independently-lit floating objects, weak shared integration | 1/4 (img2) | 3/4 (img5, img7, img8)            | Appears more frequently in the rejected subset.                                                                                                       |
+| Overall density HIGH/VERY\_HIGH                                | 1/4 (img2) | 4/4                               | Appears in every rejected image but only one approved image.                                                                                          |
+
+SMALL\_SAMPLE\_WARNING: all counts above are based on 4 approved and 4 rejected images. Any single image reclassification would materially change every percentage in this table.
+
+---
+
+**F. CANDIDATE SIGNALS FOR FUTURE INVESTIGATION**
+
+- Overall density (HIGH/VERY\_HIGH) shows the largest observed gap between subsets (1/4 approved vs 4/4 rejected) and merits closer investigation with a larger sample.
+- Weak hierarchy / competing focal points appears exclusively in the rejected subset in this sample and is a candidate signal worth tracking across future batches.
+- Typography physically overlapping the subject at subject-plane depth (as opposed to overlaid on background) appears only in the rejected subset here; this is a narrow, specific, and easily-trackable signal.
+- Presence of 4+ independently-lit decorative objects with weak shared shadow/light integration is more frequent in rejected images; this pattern could be distinguished from cases like img4 (approved), where floating elements exist but show stronger shared lighting.
+- These are correlational observations from a very small sample and should not yet be converted into scoring weights or rules.
+
+---
+
+**G. LIMITATIONS**
+
+- Small sample size: n=4 per subset. No statistical inference should be drawn.
+- No human-provided reasons were attached to any label — all contrast statements are purely descriptive co-occurrence, not causal explanation.
+- No pairwise comparisons were provided (e.g., "A beats B for reason X"); therefore no preference ranking can be constructed from this batch.
+- Correlation observed in section E/F does not imply causation and should not be treated as a rule until validated against a larger, pairwise-annotated dataset.
+- Some dimensions (e.g., "foreground\_present," "competing\_focal\_points") required borderline judgment calls flagged explicitly in the individual analyses; these borderline cases reduce the reliability of any binary count derived from them.

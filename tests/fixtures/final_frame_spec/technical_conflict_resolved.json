@@ -1,0 +1,755 @@
+{
+  "schema_version": "1.0.0",
+  "frame_spec_id": "ffs-conflict-001",
+  "project_id": "project-conflict-001",
+  "status": "READY_FOR_COMPILATION",
+  "input_refs": {
+    "creative_direction_spec_id": "cds-conflict-001",
+    "creative_direction_spec_version": "1.0.0",
+    "brief_spec_id": "brief-conflict-001",
+    "brief_spec_version": "1.0.0",
+    "reference_mode_active": false,
+    "assets": [
+      {
+        "asset_id": "asset-speaker-001",
+        "role": "SUBJECT_IDENTITY",
+        "required": true
+      }
+    ]
+  },
+  "canvas": {
+    "aspect_ratio": "16:9",
+    "orientation": "LANDSCAPE",
+    "intended_usage": "THUMBNAIL",
+    "output_role": "FINAL_COMPOSITE",
+    "safe_areas": [
+      {
+        "region_id": "frame-safe",
+        "semantic_region": "FULL_FRAME",
+        "normalized_bounds": {
+          "x": 0.03,
+          "y": 0.04,
+          "width": 0.94,
+          "height": 0.92
+        },
+        "purpose": "Protect critical content from edge loss",
+        "lock_level": "STRONG_TARGET"
+      }
+    ]
+  },
+  "composition": {
+    "composition_strategy": "Integrated typographic mass and subject form a single compressed thumbnail composition",
+    "mass_distribution": [
+      {
+        "mass_id": "subject-mass",
+        "element_ref": "primary-subject",
+        "region": "RIGHT",
+        "normalized_center": {
+          "x": 0.73,
+          "y": 0.51
+        },
+        "relative_weight": "DOMINANT",
+        "purpose": "Authority must register before urgency"
+      },
+      {
+        "mass_id": "environment-mass",
+        "element_ref": "environment-story",
+        "region": "RIGHT",
+        "relative_weight": "HIGH",
+        "purpose": "Make closure physically felt through converging layers"
+      },
+      {
+        "mass_id": "text-mass",
+        "element_ref": "headline",
+        "region": "LEFT",
+        "relative_weight": "HIGH",
+        "purpose": "Complete the commercial hierarchy without competing with identity"
+      }
+    ],
+    "balance": "Asymmetrical but stable through counterweighted copy/environment masses",
+    "dominant_axis": "Directional diagonal connecting subject, mechanism and message",
+    "reading_flow": [
+      "primary-subject",
+      "headline",
+      "directional-environment"
+    ],
+    "focal_points": [
+      {
+        "rank": 1,
+        "element_ref": "primary-subject",
+        "strength": "DOMINANT",
+        "reason": "Trust must precede deadline pressure"
+      },
+      {
+        "rank": 2,
+        "element_ref": "headline",
+        "strength": "STRONG",
+        "reason": "Commercial message follows subject recognition"
+      },
+      {
+        "rank": 3,
+        "element_ref": "environment-story",
+        "strength": "SUPPORTING",
+        "reason": "Environment explains the narrative without becoming the protagonist"
+      }
+    ],
+    "negative_space_regions": [
+      {
+        "region_id": "headline-field",
+        "semantic_region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.05,
+          "y": 0.2,
+          "width": 0.4,
+          "height": 0.6
+        },
+        "purpose": "Quiet field for locked headline",
+        "lock_level": "HARD_LOCK"
+      }
+    ],
+    "subject_environment_relationship": "Closing layers pass in front of and behind the subject while motivated light reaches the silhouette",
+    "edge_behavior": "One large near-camera object enters lower-right; converging edges avoid face and headline",
+    "cropping_strategy": "Large waist-up crop; subject may approach right edge without anatomy tangencies",
+    "depth_composition_relationship": "Near-camera occlusion, crisp subject plane and compressing background create urgent spatial closure"
+  },
+  "camera": {
+    "shot_type": "Dynamic medium close portrait",
+    "camera_height": "Near eye level",
+    "camera_angle": "Subtle low-angle authority",
+    "view_direction": "Front three-quarter",
+    "perspective_intent": "Slight wide behavior exaggerates near-camera closure without distorting face",
+    "lens_behavior": "Moderately wide spatial behavior without facial distortion",
+    "depth_of_field_intent": "Identity plane crisp; depth layers progressively softer",
+    "focus_target": "Primary subject identity features",
+    "camera_energy": "High directional pressure with stable identity plane"
+  },
+  "subjects": [
+    {
+      "subject_id": "primary-subject",
+      "asset_ref": "asset-speaker-001",
+      "role": "Authoritative gatekeeper",
+      "identity_preservation": "STRICT",
+      "frame_region": "RIGHT",
+      "normalized_position": {
+        "x": 0.73,
+        "y": 0.51
+      },
+      "relative_scale": "Large dominant mass occupying roughly one third of frame height-to-width influence",
+      "framing": "Waist-up environmental portrait",
+      "body_visibility": "Upper body and gesture context",
+      "orientation": "Turned slightly into visual flow",
+      "gaze": "Direct viewer connection",
+      "expression": "Calm finality",
+      "pose_intent": "Stable torso with decisive forward energy",
+      "wardrobe": "Dark authoritative wardrobe separated from environment",
+      "integration_with_environment": "Closing layers pass in front of and behind the subject while motivated light reaches the silhouette",
+      "lighting_priority": "Face/identity remains the best-resolved and most legible element",
+      "occlusion_rules": [
+        "Do not cover eyes, nose, mouth or identity-defining contours",
+        "Non-critical outer silhouette may overlap with environmental layers"
+      ],
+      "variation_freedom": {
+        "identity": "NONE",
+        "pose": "MEDIUM",
+        "wardrobe": "MEDIUM",
+        "expression": "LOW",
+        "body_orientation": "LOW"
+      },
+      "allowed_transformations": [
+        "Adapt pose within stated intent",
+        "Integrate environmental light and atmosphere"
+      ],
+      "forbidden_transformations": [
+        "Alter recognizable facial structure",
+        "Replace subject identity",
+        "Introduce anatomy distortion"
+      ]
+    }
+  ],
+  "environment": {
+    "environment_type": "ABSTRACT_CLOSING_THRESHOLD",
+    "concept": "A last access corridor visibly compressing around the presenter",
+    "spatial_character": "Converging, layered and directional",
+    "visual_density": "HIGH",
+    "regional_density": [
+      {
+        "region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.04,
+          "y": 0.08,
+          "width": 0.4,
+          "height": 0.84
+        },
+        "density": "MEDIUM",
+        "contrast_level": "MEDIUM",
+        "detail_level": "MEDIUM",
+        "purpose": "Support headline and directional movement",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "headline support",
+          "directional environment"
+        ],
+        "forbidden_elements": [
+          "high-contrast clutter",
+          "unrelated floating objects"
+        ]
+      },
+      {
+        "region": "CENTER",
+        "normalized_bounds": {
+          "x": 0.4,
+          "y": 0.05,
+          "width": 0.2,
+          "height": 0.9
+        },
+        "density": "MEDIUM",
+        "contrast_level": "MEDIUM",
+        "detail_level": "MEDIUM",
+        "purpose": "Transition between message and subject",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "depth transitions",
+          "directional structure"
+        ],
+        "forbidden_elements": [
+          "isolated decorative props"
+        ]
+      },
+      {
+        "region": "RIGHT",
+        "normalized_bounds": {
+          "x": 0.53,
+          "y": 0.05,
+          "width": 0.43,
+          "height": 0.9
+        },
+        "density": "HIGH",
+        "contrast_level": "HIGH",
+        "detail_level": "HIGH",
+        "purpose": "Concentrate subject and environmental storytelling",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "subject",
+          "closing structures",
+          "motivated edge light"
+        ],
+        "forbidden_elements": [
+          "copy competition",
+          "random icons"
+        ]
+      }
+    ],
+    "materials": [
+      "dark architectural planes",
+      "controlled reflective edges"
+    ],
+    "architectural_or_natural_language": "Abstract spatial threshold, not literal storefront or clock",
+    "atmosphere": "Directional haze compressed into depth",
+    "environmental_storytelling": "Every layer narrows access or directs reading toward finality",
+    "subject_integration": "Closing layers pass in front of and behind the subject while motivated light reaches the silhouette",
+    "required_elements": [
+      "converging spatial layers",
+      "clear headline field"
+    ],
+    "optional_elements": [
+      "subtle motion streaks"
+    ],
+    "forbidden_elements": [
+      "countdown clock",
+      "sale badge",
+      "random floating icons"
+    ]
+  },
+  "depth_system": {
+    "depth_strategy": "Aggressive near-camera occlusion against stable subject and compressed atmospheric background",
+    "layers": [
+      {
+        "layer_id": "extreme-fg",
+        "depth_role": "EXTREME_FOREGROUND",
+        "elements": [
+          "one large partially cropped environmental plane entering lower-right"
+        ],
+        "focus_behavior": "Deliberately out of primary focus",
+        "relative_sharpness": "Strong near-camera defocus with recognizable environmental material",
+        "occlusion_behavior": "May cross lower torso edge only; never face or headline",
+        "atmospheric_behavior": "Subtle motion softness aligned to closing direction",
+        "relationship_to_subject": "Creates immediate proximity and directs motion toward subject"
+      },
+      {
+        "layer_id": "subject-plane",
+        "depth_role": "SUBJECT_PLANE",
+        "elements": [
+          "primary-subject"
+        ],
+        "focus_behavior": "Critical focus on identity",
+        "relative_sharpness": "Highest identity sharpness",
+        "occlusion_behavior": "Only non-critical silhouette edges may be crossed",
+        "atmospheric_behavior": "Receives environment color and motivated light",
+        "relationship_to_subject": "Primary perceptual anchor embedded in the scene"
+      },
+      {
+        "layer_id": "background",
+        "depth_role": "BACKGROUND",
+        "elements": [
+          "converging threshold planes",
+          "directional environment"
+        ],
+        "focus_behavior": "Readable structure without portrait-level sharpness",
+        "relative_sharpness": "Moderate detail",
+        "occlusion_behavior": "Frames rather than cuts through identity",
+        "atmospheric_behavior": "Compressed haze separates successive layers",
+        "relationship_to_subject": "Appears to close behind subject"
+      },
+      {
+        "layer_id": "far-background",
+        "depth_role": "FAR_BACKGROUND",
+        "elements": [
+          "final narrowing access seam"
+        ],
+        "focus_behavior": "Atmospheric support",
+        "relative_sharpness": "Lowest detail",
+        "occlusion_behavior": "No direct identity occlusion",
+        "atmospheric_behavior": "Strongest atmospheric perspective",
+        "relationship_to_subject": "Provides scale and separation"
+      }
+    ],
+    "subject_environment_integration": "Closing layers pass in front of and behind the subject while motivated light reaches the silhouette",
+    "separation_mechanisms": [
+      "motivated edge separation",
+      "sharpness hierarchy",
+      "luminance contrast"
+    ],
+    "overlap_strategy": "Foreground crosses torso edge; background frames full head silhouette",
+    "atmospheric_perspective": "Layer spacing compresses progressively toward the closing seam",
+    "required_depth_strength": "VERY_HIGH"
+  },
+  "lighting_system": {
+    "lighting_intent": "Authority remains controlled while the environment carries urgent motion",
+    "subject_key_behavior": "Directional key preserves facial clarity and natural structure",
+    "fill_behavior": "Restrained fill retains authority without crushed identity details",
+    "rim_or_edge_behavior": "Strong clean edge behavior on closure-facing silhouette without clipping",
+    "background_light_behavior": "Strong backlight remains behind right-side subject and is feathered before reaching headline region",
+    "motivated_sources": [
+      "closing threshold seam",
+      "motivated lateral environment source"
+    ],
+    "directionality": "Flows from narrowing background through subject toward headline",
+    "contrast_strategy": "Highest facial and silhouette clarity; headline field stable",
+    "volumetric_behavior": "Directional only, supporting closure",
+    "subject_separation": "Subject remains cleanly separated from every converging plane",
+    "regional_luminance_strategy": [
+      {
+        "region": "LEFT",
+        "behavior": "Reduced luminance variance and no volumetric hotspot behind headline",
+        "purpose": "Guarantee locked headline legibility"
+      },
+      {
+        "region": "RIGHT",
+        "behavior": "Strongest backlight and volumetric separation behind subject",
+        "purpose": "Preserve dramatic depth and subject separation"
+      }
+    ],
+    "integration_notes": "Environment light must visibly affect wardrobe edges and nearby atmosphere"
+  },
+  "color_system": {
+    "dominant_family": [
+      {
+        "name": "deep graphite",
+        "function": "Establish the environmental base"
+      },
+      {
+        "name": "controlled midnight blue",
+        "function": "Establish the environmental base"
+      }
+    ],
+    "secondary_family": [
+      {
+        "name": "cool steel",
+        "function": "Build depth and material distinction"
+      }
+    ],
+    "accent_family": [
+      {
+        "name": "urgent amber-red seam",
+        "function": "Direct attention and support separation"
+      }
+    ],
+    "neutral_family": [
+      {
+        "name": "clean off-white typography",
+        "function": "Control contrast and preserve readable structure"
+      }
+    ],
+    "temperature_relationship": "Cool authority opposed by one controlled warm closure accent",
+    "saturation_strategy": "Accent concentrated; environment restrained",
+    "contrast_strategy": "Warm seam and white copy guide attention without alarm-red flooding",
+    "regional_color_behavior": [
+      {
+        "region": "LEFT",
+        "behavior": "Dark stable field supporting locked off-white headline",
+        "purpose": "Support headline contrast"
+      },
+      {
+        "region": "RIGHT",
+        "behavior": "Cool dimensional environment with warm closure seam",
+        "purpose": "Concentrate narrative color around subject"
+      }
+    ],
+    "subject_skin_treatment": "Natural and authoritative; no colored cast across identity features",
+    "reference_color_anchors": [],
+    "forbidden_color_behaviors": [
+      "full-frame alarm red",
+      "cheap discount gradients"
+    ]
+  },
+  "typography_system": {
+    "enabled": true,
+    "rendered_in_image": true,
+    "text_rendering_mode": "RENDER_IN_IMAGE",
+    "text_elements": [
+      {
+        "text_id": "headline",
+        "exact_copy": "A DECISÃO É AGORA",
+        "copy_is_locked": true,
+        "hierarchy_rank": 2,
+        "role": "PRIMARY_HEADLINE",
+        "region": "LEFT",
+        "position": {
+          "x": 0.28,
+          "y": 0.43
+        },
+        "scale_intent": "Large enough to survive thumbnail reduction",
+        "weight_intent": "Heavy, compact mass",
+        "case": "AS_PROVIDED",
+        "alignment": "LEFT",
+        "line_behavior": "Exactly two stacked lines: DOMINE / O JOGO",
+        "contrast_requirements": "Sustained high contrast across every glyph",
+        "background_relationship": "Headline sits in a deliberately lowered-luminance left field outside the brightest volumetric source",
+        "subject_relationship": "Text mass presses toward subject but retains a protected gap around face and gesture",
+        "occlusion_behavior": "One environmental stroke may pass behind text; nothing may cross glyph faces",
+        "safe_area": "Remain inside protected canvas margins",
+        "legibility_priority": "CRITICAL"
+      }
+    ],
+    "reserved_text_regions": [],
+    "system_notes": "Exact copy is a protected visual mass in the frame."
+  },
+  "foreground": {
+    "enabled": true,
+    "purpose": [
+      "DEPTH",
+      "FRAMING"
+    ],
+    "elements": [
+      "one large partially cropped environmental plane entering lower-right"
+    ],
+    "edge_entry": "Partial edge entry",
+    "occlusion_target": "May cross lower torso edge only; never face or headline",
+    "blur_behavior": "Strong near-camera defocus with recognizable environmental material",
+    "motion_behavior": "Static or subtle directional softness",
+    "visual_weight": "MEDIUM"
+  },
+  "objects": [],
+  "effects": [],
+  "reference_constraints": {
+    "active": false,
+    "transfer_intensity": "NONE",
+    "required_reference_anchors": [],
+    "adapted_reference_anchors": [],
+    "reference_behaviors_to_preserve": [],
+    "reference_elements_explicitly_not_to_copy": []
+  },
+  "protected_fields": [
+    {
+      "field_id": "protect-identity",
+      "target": "subjects.primary-subject.identity",
+      "protection_type": "SUBJECT_IDENTITY",
+      "source": "UPSTREAM_LOCK",
+      "rule": "Preserve fundamental recognizable identity",
+      "allowed_variation": "No identity variation",
+      "failure_condition": "Face is not recognizably the supplied subject"
+    },
+    {
+      "field_id": "protect-copy",
+      "target": "typography_system.text_elements.headline.exact_copy",
+      "protection_type": "EXACT_TEXT",
+      "source": "UPSTREAM_LOCK",
+      "rule": "Render exactly: A DECISÃO É AGORA",
+      "allowed_variation": "No rewriting, spelling or punctuation variation",
+      "failure_condition": "Any character differs or text is illegible"
+    },
+    {
+      "field_id": "protect-composition",
+      "target": "composition",
+      "protection_type": "COMPOSITION_ANCHOR",
+      "source": "CREATIVE_DIRECTION_SPEC",
+      "rule": "Subject dominance, closing depth and headline order are locked",
+      "allowed_variation": "Micro-spacing only",
+      "failure_condition": "Compiler rearranges focal order or removes foreground"
+    }
+  ],
+  "controlled_variation": {
+    "domains": [
+      {
+        "domain": "identity",
+        "level": "NONE",
+        "may_invent": false,
+        "rule": "Fundamental recognizable traits are locked"
+      },
+      {
+        "domain": "pose",
+        "level": "MEDIUM",
+        "may_invent": false,
+        "rule": "May adapt only within declared pose intent"
+      },
+      {
+        "domain": "wardrobe",
+        "level": "MEDIUM",
+        "may_invent": false,
+        "rule": "May vary details without changing professional meaning"
+      },
+      {
+        "domain": "environment_details",
+        "level": "MEDIUM",
+        "may_invent": true,
+        "rule": "May invent supporting detail consistent with required environmental language"
+      },
+      {
+        "domain": "lighting_microvariation",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "May tune falloff but not lighting behavior"
+      },
+      {
+        "domain": "color_microvariation",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "May vary shade inside named color families"
+      },
+      {
+        "domain": "foreground_details",
+        "level": "MEDIUM",
+        "may_invent": true,
+        "rule": "May vary material detail but not entry, function or weight"
+      },
+      {
+        "domain": "effects",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "Distribution may vary; purpose and intensity may not"
+      },
+      {
+        "domain": "typography",
+        "level": "NONE",
+        "may_invent": false,
+        "rule": "Exact text and hierarchy locked"
+      },
+      {
+        "domain": "camera",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "Micro-adjustment allowed without changing framing, scale or perspective intent"
+      }
+    ],
+    "must_not_change": [
+      "Subject identity",
+      "Exact headline",
+      "Subject-first hierarchy",
+      "Functional lower-right foreground",
+      "Closing depth architecture"
+    ],
+    "may_vary": [
+      "Microtexture",
+      "Minor atmospheric distribution",
+      "Non-critical supporting detail"
+    ],
+    "generator_may_invent": [
+      "Small environmental details consistent with declared materials and story"
+    ]
+  },
+  "technical_decisions": [
+    {
+      "decision_id": "td-urgency-depth",
+      "domain": "DEPTH",
+      "decision": "Use one functional lower-right near-camera occluder plus compressed background layers.",
+      "rationale": "Creates urgency spatially without a clock cliché.",
+      "source_agent": "VISUAL_SYSTEMS",
+      "upstream_requirement": "Aggressive depth through foreground occlusion",
+      "confidence": "HIGH"
+    },
+    {
+      "decision_id": "td-urgency-type",
+      "domain": "TYPOGRAPHY",
+      "decision": "Lock headline in the left field with no occlusion.",
+      "rationale": "Small-size reading must survive environmental movement.",
+      "source_agent": "LAYOUT_TYPOGRAPHY",
+      "upstream_requirement": "Headline is secondary focal point",
+      "confidence": "HIGH"
+    },
+    {
+      "decision_id": "td-type-lock",
+      "domain": "TYPOGRAPHY",
+      "decision": "Headline is a locked two-line compositional mass with protected glyph faces.",
+      "rationale": "Text must remain exact and legible at small size while interacting with subject energy.",
+      "source_agent": "LAYOUT_TYPOGRAPHY",
+      "upstream_requirement": "Typography integrated into image",
+      "confidence": "HIGH"
+    },
+    {
+      "decision_id": "td-conflict-resolution",
+      "domain": "LIGHTING_TYPOGRAPHY",
+      "decision": "Localize strong backlight to right subject field and protect left headline luminance.",
+      "rationale": "Consolidated technical resolution keeps both separation and exact-copy legibility.",
+      "source_agent": "UPSTREAM_LOCK",
+      "upstream_requirement": "Strong subject separation plus locked headline",
+      "confidence": "HIGH"
+    }
+  ],
+  "resolved_conflicts": [
+    {
+      "conflict_id": "conflict-light-vs-type-001",
+      "topic": "Backlight separation versus headline legibility",
+      "visual_systems_position": "A broad strong backlight across the center-left would maximize atmosphere and silhouette depth.",
+      "layout_typography_position": "The same luminance field would reduce contrast behind the locked left headline.",
+      "resolution": "Concentrate the strongest backlight behind the right-side subject, feather it before the left text field and move volumetric rays away from glyph bounds.",
+      "rationale": "Preserves the upstream strong separation mechanism while satisfying the hard exact-text legibility lock.",
+      "authority_source": "UPSTREAM_LOCK",
+      "affected_fields": [
+        "lighting_system.background_light_behavior",
+        "lighting_system.regional_luminance_strategy",
+        "typography_system.text_elements.headline.background_relationship"
+      ]
+    }
+  ],
+  "generation_requirements": {
+    "required_assets": [
+      "asset-speaker-001"
+    ],
+    "required_text": [
+      "A DECISÃO É AGORA"
+    ],
+    "required_visual_elements": [
+      "dominant recognizable presenter",
+      "functional lower-right foreground plane",
+      "converging closure environment",
+      "locked headline"
+    ],
+    "forbidden_visual_elements": [
+      "countdown timer",
+      "sale badges",
+      "random floating objects",
+      "flat portrait backdrop"
+    ],
+    "identity_requirements": [
+      "Use supplied subject asset",
+      "Preserve recognizable facial structure and distinguishing traits"
+    ],
+    "reference_requirements": [],
+    "output_constraints": [
+      "16:9",
+      "No model-specific styling or syntax embedded in this specification"
+    ]
+  },
+  "quality_requirements": [
+    {
+      "requirement_id": "qr-depth",
+      "domain": "DEPTH",
+      "statement": "Frame must read as multiple interacting perceptual planes, not subject plus backdrop.",
+      "verification_method": "Confirm visible overlap, scale separation and atmospheric progression across at least three planes.",
+      "severity": "CRITICAL",
+      "failure_condition": "Subject appears pasted onto an independent background.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-identity",
+      "domain": "IDENTITY_FIDELITY",
+      "statement": "Primary subject must remain recognizably identical to the supplied asset.",
+      "verification_method": "Compare facial structure and distinguishing traits against the identity asset.",
+      "severity": "CRITICAL",
+      "failure_condition": "Identity changes, drifts or becomes generic.",
+      "source": "UPSTREAM_LOCK"
+    },
+    {
+      "requirement_id": "qr-hierarchy",
+      "domain": "HIERARCHY",
+      "statement": "Presenter reads first, closing motion second, exact headline third at thumbnail size.",
+      "verification_method": "Inspect at full size and reduced-size view; focal order must remain unchanged.",
+      "severity": "CRITICAL",
+      "failure_condition": "Headline or effects dominate before the presenter, or the closure mechanism disappears at small size.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-integration",
+      "domain": "INTEGRATION",
+      "statement": "Foreground, environment and motivated light must visibly share one space with the presenter.",
+      "verification_method": "Inspect edge light, overlap, perspective and atmosphere around subject/environment boundaries.",
+      "severity": "HIGH",
+      "failure_condition": "Subject reads as separately composited or environmental perspective disagrees.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-environment",
+      "domain": "ENVIRONMENTAL_STORYTELLING",
+      "statement": "All environmental masses must communicate narrowing access, direction or depth.",
+      "verification_method": "Every prominent environment element must map to a declared narrative, depth or attention function.",
+      "severity": "HIGH",
+      "failure_condition": "Prominent detail is decorative, generic or unrelated to the narrative.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-text",
+      "domain": "SMALL_SIZE_IMPACT",
+      "statement": "Locked headline must remain exact and readable at target small size.",
+      "verification_method": "Reduce to representative thumbnail size and verify every character plus hierarchy.",
+      "severity": "CRITICAL",
+      "failure_condition": "Text changes, breaks poorly or becomes unreadable.",
+      "source": "UPSTREAM_LOCK"
+    }
+  ],
+  "unresolved_issues": [],
+  "compiler_handoff": {
+    "target_generator": null,
+    "creative_authority": "NONE",
+    "required_assets": [
+      "asset-speaker-001"
+    ],
+    "hard_locks": [
+      "Subject identity",
+      "Exact headline",
+      "Focal order",
+      "Near-camera foreground",
+      "No timer cliché"
+    ],
+    "strong_targets": [
+      "Very strong depth",
+      "Controlled urgent motion",
+      "Clean facial separation"
+    ],
+    "open_variations": [
+      "Exact environmental plane shapes",
+      "Microtexture",
+      "Haze distribution"
+    ],
+    "reference_assets": [],
+    "text_rendering_mode": "RENDER_IN_IMAGE",
+    "unsupported_feature_policy": "REPORT_INCOMPATIBILITY_TO_ORCHESTRATOR"
+  },
+  "provenance": {
+    "producer": "TECHNICAL_DESIGN_ROOM",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-09T17:00:00-03:00",
+    "decision_sources": [
+      "CREATIVE_DIRECTION_SPEC",
+      "VISUAL_SYSTEMS_AGENT",
+      "LAYOUT_TYPOGRAPHY_AGENT"
+    ],
+    "notes": "Contains consolidated observable decisions and rationales only; no private deliberation."
+  },
+  "approval": {
+    "approval_status": "SYSTEM_APPROVED",
+    "approved_by": "SYSTEM",
+    "timestamp": "2026-08-09T17:05:00-03:00",
+    "notes": "Technically complete for compilation; no human approval claimed.",
+    "human_override": false
+  }
+}

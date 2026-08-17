@@ -1,0 +1,15 @@
+{
+  "model_id": "minimaxai/minimax-m3",
+  "http_status": null,
+  "result": "TRANSPORT_ERROR",
+  "model_endpoint_accessible": false,
+  "multimodal_supported_in_practice": false,
+  "latency_ms": 10792,
+  "selected_or_rejected": "REJECTED",
+  "rejection_reason": "fetch failed",
+  "response_excerpt": null,
+  "image": {
+    "path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\my_eyes\\approved\\16.jpeg",
+    "byte_length": 56480
+  }
+}

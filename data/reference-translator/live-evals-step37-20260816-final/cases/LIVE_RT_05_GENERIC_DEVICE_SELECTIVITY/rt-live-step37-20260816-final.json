@@ -1,0 +1,622 @@
+{
+  "artifact_classification": "EVALUATION_ARTIFACT",
+  "suite_run_id": "rt-live-step37-20260816-final",
+  "case_id": "LIVE_RT_05_GENERIC_DEVICE_SELECTIVITY",
+  "reference_path": "data/my_eyes/rejected/4.png",
+  "target_type": "pediatric telehealth campaign",
+  "candidates": [
+    {
+      "candidate_status": "REJECTED_CANDIDATE",
+      "visible_candidate": "\n{\n  \"schema_version\": \"1.0.0\",\n  \"plan_id\": \"plan_live_rt_05_generic_device_selectivity\",\n  \"project_id\": \"project_live_rt_05_generic_device_selectivity\",\n  \"brief_spec_version\": \"1.0.0\",\n  \"status\": \"READY_FOR_DIRECTOR\",\n  \"transfer_mode\": \"REFERENCE_REINTERPRETATION\",\n  \"transfer_intensity\": {\n    \"value\": \"MEDIUM\",\n    \"source\": \"USER_ASSET\",\n    \"confidence\": \"MEDIUM\"\n  },\n  \"base_analysis\": {\n    \"base_asset_id\": null,\n    \"semantic_identity\": \"pediatric telehealth campaign visual\",\n    \"protected_elements\": [\n      \"professional context\",\n      \"communication goal\",\n      \"reassuring tone\",\n      \"clinical credibility\"\n    ],\n    \"required_copy\": [],\n    \"subject_identity_requirements\": \"Do not reuse reference person; use appropriate medical professional or caregiver-child interaction\",\n    \"existing_composition_constraints\": [\n      \"4:5 portrait\",\n      \"text overlay expected\"\n    ],\n    \"elements_allowed_to_change\": [\n      \"composition\",\n      \"environment\",\n      \"lighting\",\n      \"color\",\n      \"subject\",\n      \"props\",\n      \"typography\",\n      \"narrative objects\"\n    ],\n    \"elements_forbidden_to_change\": [\n      \"professional context\",\n      \"communication goal\"\n    ]\n  },\n  \"reference_analyses\": [\n    {\n      \"reference_asset_id\": \"live_ref_neon_devices\",\n      \"role\": \"PRIMARY_REFERENCE\",\n      \"scope\": \"GLOBAL_VISUAL_DIRECTION\",\n      \"authority\": \"USER_PRIMARY_REFERENCE\",\n      \"observations\": [\n        {\n          \"observation_id\": \"OBS-01\",\n          \"category\": \"ENVIRONMENT\",\n          \"description\": \"Near-black background with subtle atmospheric glow and particle-like highlights\",\n          \"region\": \"full background\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-02\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Oversized magenta 'DESIGN' typography extending behind subject\",\n          \"region\": \"upper and middle frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-03\",\n          \"category\": \"SUBJECT_TREATMENT\",\n          \"description\": \"Male subject with dark hair, glasses, dark t-shirt, arms crossed, looking off-camera\",\n          \"region\": \"center-left\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-04\",\n          \"category\": \"LIGHTING\",\n          \"description\": \"Neon magenta and cyan accent lighting on subject edges and background elements\",\n          \"region\": \"subject edges and scattered highlights\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-05\",\n          \"category\": \"NARRATIVE_OBJECT\",\n          \"description\": \"Floating transparent 3D cubes containing icons (heart, code brackets, chart, 'Aa')\",\n          \"region\": \"scattered foreground and midground\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-06\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Semi-transparent service menu panel at right with five icon-text rows\",\n          \"region\": \"right middle\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-07\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Diagonal composition with subject positioned left-of-center, copy mass distributed right and bottom\",\n          \"region\": \"full frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-08\",\n          \"category\": \"LIGHTING\",\n          \"description\": \"High contrast between illuminated subject/accents and dark background\",\n          \"region\": \"full frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-09\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Stacked Portuguese text blocks with varying scale\",\n          \"region\": \"left and bottom\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS-10\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Social media icons and handle at bottom edge\",\n          \"region\": \"bottom\",\n          \"salience\": \"LOW\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        }\n      ],\n      \"reference_dna\": {\n        \"hierarchy\": \"strong focal subject with supporting information mass\",\n        \"depth\": \"atmospheric background with floating foreground elements\",\n        \"lighting\": \"dramatic directional with neon accent separation\",\n        \"composition\": \"diagonal offset with edge-weighted subject\",\n        \"information_support\": \"structured card panel with icon hierarchy\",\n        \"material\": \"glossy tech surfaces, glass, neon\",\n        \"typography\": \"overscale display type, stacked service list\"\n      },\n      \"transfer_relevance\": \"MEDIUM\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"design_decision_map\": [\n    {\n      \"mapping_id\": \"MAP-01\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-01\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Soft, warm gradient or calm clinical environment background that focuses attention on caregiver and child\",\n      \"rationale\": \"Dark field creates focus but neon/tech associations must be replaced with warm, reassuring clinical atmosphere appropriate for pediatric care\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-02\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-02\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Large, soft typography or generous negative space that creates scale without overwhelming pediatric context\",\n      \"rationale\": \"Graphic scale and depth are useful but must be gentle and not dominate a clinical care scene\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-03\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-03\"],\n      \"action\": \"REINVENT\",\n      \"target_in_new_composition\": \"Warm, approachable medical professional or parent-child interaction, eye-level or gentle angle\",\n      \"rationale\": \"Authority and confidence transfer, but identity, pose, and expression must match pediatric care context and avoid reference person\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-04\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-04\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"Warm clinical lighting, soft window light, or gentle practicals with soft shadows\",\n      \"rationale\": \"Neon pink/cyan creates cyberpunk/alarm associations incompatible with pediatric reassurance and clinical credibility\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"LOW\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-05\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-05\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Motivated telehealth interface elements such as a tablet screen showing a pediatrician video call, a simplified appointment card, or a child-friendly health chart, grounded in the scene with plausible contact and lighting\",\n      \"rationale\": \"Floating elements can suggest digital care but must be integrated, motivated, and not generic; tech UI category must adapt to healthcare service context\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\",\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"technology/digital devices\",\n        \"target_product_category\": \"pediatric telehealth service\",\n        \"literal_object\": \"floating 3D cubes with icons (heart, code brackets, chart, text)\",\n        \"visual_function\": \"suggest digital context, technical capability, and service categories\",\n        \"material_language\": \"glossy transparent glass, neon edge light, floating suspension\",\n        \"emotional_effect\": \"tech-savvy, modern, energetic, slightly futuristic\",\n        \"equivalent_adaptation\": \"motivated telehealth interface elements such as a tablet screen showing a pediatrician video call, a simplified appointment card, or a child-friendly health chart; grounded in the scene with plausible contact and lighting\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"Telehealth is a digital health service, so interface evidence is native; floating generic cubes are not, but a grounded screen or card showing a pediatric appointment is truthful and reassuring\"\n      }\n    },\n    {\n      \"mapping_id\": \"MAP-06\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-06\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Clean information panel listing telehealth services (well-child visits, sick visits, prescriptions, insurance) with pediatric-appropriate icons and warm color accents\",\n      \"rationale\": \"Structured information grouping is useful but must be clinically specific and integrated, not a generic freelance service menu\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\",\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"freelance design services\",\n        \"target_product_category\": \"pediatric telehealth\",\n        \"literal_object\": \"semi-transparent panel with five icon-text service rows\",\n        \"visual_function\": \"organize service categories and create information hierarchy\",\n        \"material_language\": \"semi-transparent dark panel, white text, pink icon accents\",\n        \"emotional_effect\": \"organized, professional, comprehensive\",\n        \"equivalent_adaptation\": \"clean information panel listing telehealth services (well-child visits, sick visits, prescriptions, insurance) with pediatric-appropriate icons and warm color accents\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"Healthcare services require clear information architecture; a structured panel belongs when content is specific and clinically appropriate\"\n      }\n    },\n    {\n      \"mapping_id\": \"MAP-07\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-07\"],\n      \"action\": \"TRANSFER\",\n      \"target_in_new_composition\": \"Diagonal flow guiding eye from subject to message to CTA in 4:5 portrait\",\n      \"rationale\": \"Creates energy and ordered reading without implying urgency or alarm; recompose for portrait while preserving directional stops\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-08\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-08\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Controlled contrast with soft shadows, clear subject separation, and warm tones\",\n      \"rationale\": \"Hierarchy through contrast is useful but must feel clinical and warm, not dramatic or tech-oriented\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-09\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-09\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Clean, readable stacked copy with clear hierarchy (headline, support, CTA) in target language\",\n      \"rationale\": \"Typographic rhythm and density are useful but content must be target-specific and avoid Portuguese source copy\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP-10\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS-10\"],\n      \"action\": \"TRANSFER\",\n      \"target_in_new_composition\": \"Website, phone, or appointment booking info in protected bottom zone\",\n      \"rationale\": \"Contact territory is standard but must be integrated calmly and not mimic social media handle style\",\n      \"strength\": \"LOW\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"conflicts\": [\n    {\n      \"conflict_id\": \"CONF-01\",\n      \"type\": \"REFERENCE_VS_BRIEF\",\n      \"description\": \"Reference uses neon cyberpunk aesthetic (magenta/cyan, floating tech cubes, dramatic darkness) which conflicts with pediatric telehealth brief requiring reassurance, clinical credibility, and avoidance of alarm/cyberpunk tone.\",\n      \"severity\": \"HIGH\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\n        \"emotional_intent.avoid: cyberpunk, alarm\",\n        \"soft_preferences: reassurance with care, clarity\"\n      ],\n      \"translator_position\": \"Discard neon palette and floating generic UI; adapt only structural hierarchy and information organization mechanisms\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONF-02\",\n      \"type\": \"REFERENCE_VS_USER_CONSTRAINT\",\n      \"description\": \"Source neon palette, service icons, and copy are explicitly forbidden by user do_not_transfer list.\",\n      \"severity\": \"HIGH\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\n        \"do_not_transfer: reference neon palette, service icons, copy\"\n      ],\n      \"translator_position\": \"Strictly exclude source neon colors, icon inventory, and Portuguese copy; replace with target-native telehealth content and warm clinical palette\",\n      \"resolution_status\": \"RESOLVED_BY_DISCARD\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"USER_EXPLICIT\"\n    },\n    {\n      \"conflict_id\": \"CONF-03\",\n      \"type\": \"REFERENCE_VS_SUBJECT_IDENTITY\",\n      \"description\": \"Reference features a specific male freelancer identity which must not transfer to pediatric telehealth target.\",\n      \"severity\": \"MEDIUM\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\n        \"identity_constraints: reference person identity must not become target identity\",\n        \"subject.identity_preservation: NONE\"\n      ],\n      \"translator_position\": \"Reinvent subject as appropriate medical professional or caregiver-child scenario; preserve only pose energy of confident approachability\",\n      \"resolution_status\": \"RESOLVED_BY_REINVENT\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"USER_EXPLICIT\"\n    }\n  ],\n  \"non_negotiable_anchors\": [\n    {\n      \"anchor_id\": \"ANCHOR-01\",\n      \"description\": \"Strong focal hierarchy with subject as primary mass and supporting information as secondary mass\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"Create immediate readability and guide eye from hero to message to action\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"The reference's dominant-subordinate mass system is effective and transferable to healthcare communication\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCHOR-02\",\n      \"description\": \"Structured information panel with icon-text hierarchy\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"Organize service categories into scannable groups\",\n      \"importance\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Information architecture is useful but content must be telehealth-specific\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCHOR-03\",\n      \"description\": \"Diagonal compositional flow\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"Create ordered visual reading and energy without chaos\",\n      \"importance\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Diagonal flow can guide eye through telehealth message calmly\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"flexible_areas\": [\n    {\n      \"area\": \"Color palette\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Must abandon neon magenta/cyan for warm clinical palette, but exact hues are director's choice\"\n    },\n    {\n      \"area\": \"Subject identity and specific pose\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Must be pediatric-appropriate medical professional or family, not reference person\"\n    },\n    {\n      \"area\": \"Environment and props\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"Complete replacement needed; telehealth clinic, home care setting, or abstract clinical space\"\n    },\n    {\n      \"area\": \"Typography selection\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Must be target-brand typography, not reference style\"\n    },\n    {\n      \"area\": \"Narrative objects\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"Must be telehealth-native (screens, appointment cards, toys) not generic tech cubes\"\n    }\n  ],\n  \"risks\": [\n    {\n      \"risk_id\": \"RISK-01\",\n      \"description\": \"Neon aesthetic leakage: residual cyberpunk energy or high-contrast tech lighting could undermine pediatric reassurance\",\n      \"severity\": \"HIGH\",\n      \"mitigation\": \"Explicitly replace all neon with warm clinical lighting (soft window light, warm practicals, gentle shadows); avoid magenta/cyan accents\"\n    },\n    {\n      \"risk_id\": \"RISK-02\",\n      \"description\": \"Generic card system: information panels could become interchangeable dashboard decoration rather than specific telehealth evidence\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Ensure panels contain verified telehealth content (appointment types, insurance, preparation steps) with pediatric-appropriate icons and hierarchy\"\n    },\n    {\n      \"risk_id\": \"RISK-03\",\n      \"description\": \"Subject identity mismatch: adult tech-freelancer energy could persist in medical professional portrayal\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Cast for warmth and approachability; use eye-level or gentle high angle; avoid arms-crossed authority pose in favor of open guidance\"\n    },\n    {\n      \"risk_id\": \"RISK-04\",\n      \"description\": \"Format translation failure: diagonal composition and edge-weighted subject may not translate safely to 4:5 portrait with text overlay\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Recompose diagonal flow for portrait orientation; ensure text territory is protected and subject edges are safe for responsive crop\"\n    }\n  ],\n  \"open_questions\": [],\n  \"provenance\": {\n    \"translator_version\": \"1.0.0\",\n    \"created_at\": \"2026-08-16T00:00:00Z\",\n    \"notes\": \"Reference reinterpretation for pediatric telehealth; strong category mismatch requires extensive adaptation\"\n  },\n  \"confidence\": {\n    \"overall\": \"MEDIUM\",\n    \"rationale\": \"Reference provides useful compositional and hierarchical DNA but conflicts significantly with target tone and category; transfer is selective and requires substantial reinvention\"\n  },\n  \"director_handoff\": {\n    \"what_must_survive\": [\n      \"Strong focal hierarchy with clear subject-message relationship\",\n      \"Structured information support with icon-text hierarchy\",\n      \"Diagonal compositional flow guiding eye through frame\",\n      \"Clear separation between hero and communication territories\"\n    ],\n    \"what_should_survive\": [\n      \"Atmospheric depth and environmental context\",\n      \"Graphic scale contrast between large display type and support copy\",\n      \"Calm confidence in subject treatment\",\n      \"Edge-weighted composition with protected text zones\"\n    ],\n    \"what_can_change\": [\n      \"All color (to warm clinical palette)\",\n      \"All narrative objects (to telehealth-native artifacts)\",\n      \"Subject identity and specific pose\",\n      \"Exact typography and copy content\",\n      \"Lighting direction and quality\",\n      \"Environment and setting\"\n    ],\n    \"key_conflicts\": [\n      \"Neon cyberpunk aesthetic vs pediatric clinical reassurance\",\n      \"Tech freelance service menu vs healthcare information\",\n      \"Adult subject identity vs pediatric care context\"\n    ],\n    \"recommended_anchors\": [\n      \"Isolated hero with environmental support\",\n      \"Specific telehealth information panel\",\n      \"Diagonal reading flow from subject to message to CTA\",\n      \"Warm motivated lighting with soft shadows\"\n    ],\n    \"creative_opportunities\": [\n      \"Soft window light creating gentle atmosphere\",\n      \"Pediatric-friendly accent colors (soft blue, warm yellow, sage green)\",\n      \"Real telehealth interface on tablet screen showing video call\",\n      \"Child-safe environment details (books, toy, soft textile)\",\n      \"Approachable medical professional in casual professional attire\"\n    ],\n    \"warnings\": [\n      \"Avoid neon magenta/cyan palette\",\n      \"Avoid generic floating UI cubes\",\n      \"Avoid adult-focused freelance marketing tone\",\n      \"Avoid high-contrast dramatic lighting that feels alarming\",\n      \"Ensure all medical claims are verified and compliant\"\n    ]\n  }\n}",
+      "provider_metadata": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-d7c75a1d-3569-4730-b6b1-f15c1a051885",
+        "finish_reason": "stop",
+        "transport_attempt_count": 1,
+        "latency_ms": 142371,
+        "final_attempt_latency_ms": 142371,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_neon_devices",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 2674776,
+            "sha256": "78d6339aebbd1fca19d8e2dc9ee36ac8110c7a3ed1e7ad08686d9750d41c3144"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4295,
+          "reference_context_characters": 850,
+          "my_eyes_advisory_characters": 2233,
+          "vkb_advisory_characters": 428,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32807,
+          "total_textual_characters": 519625,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 3566368,
+          "serialized_http_body_characters": 4095474,
+          "input_tokens": 96791,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148969,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96791,
+          "output_tokens": 12053,
+          "total_tokens": 108844,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "candidate_status": "REJECTED_CANDIDATE",
+      "visible_candidate": "\n{\n  \"schema_version\": \"1.0.0\",\n  \"plan_id\": \"plan_live_rt_05_generic_device_selectivity_37\",\n  \"project_id\": \"project_live_rt_05_generic_device_selectivity\",\n  \"brief_spec_version\": \"1.0.0\",\n  \"status\": \"READY_FOR_DIRECTOR\",\n  \"transfer_mode\": \"REFERENCE_REINTERPRETATION\",\n  \"transfer_intensity\": {\n    \"value\": \"HIGH\",\n    \"source\": \"USER_EXPLICIT\",\n    \"confidence\": \"HIGH\"\n  },\n  \"base_analysis\": {\n    \"base_asset_id\": null,\n    \"semantic_identity\": \"pediatric telehealth campaign visual\",\n    \"protected_elements\": [\n      \"professional context\",\n      \"communication goal: accessible and trustworthy\",\n      \"reassuring tone\",\n      \"clinical credibility\"\n    ],\n    \"required_copy\": [],\n    \"subject_identity_requirements\": \"NONE\",\n    \"existing_composition_constraints\": [\n      \"4:5 portrait aspect ratio\",\n      \"Instagram platform\",\n      \"text overlay expected\",\n      \"no reference person identity reuse\"\n    ],\n    \"elements_allowed_to_change\": [\n      \"composition layout\",\n      \"environment\",\n      \"lighting\",\n      \"color palette\",\n      \"material language\",\n      \"typography\",\n      \"narrative objects\",\n      \"subject pose and identity\"\n    ],\n    \"elements_forbidden_to_change\": [\n      \"target professional context\",\n      \"target communication goal\",\n      \"reassuring emotional intent\"\n    ]\n  },\n  \"reference_analyses\": [\n    {\n      \"reference_asset_id\": \"live_ref_neon_devices\",\n      \"role\": \"PRIMARY_REFERENCE\",\n      \"scope\": \"GLOBAL_VISUAL_DIRECTION\",\n      \"authority\": \"USER_PRIMARY_REFERENCE\",\n      \"observations\": [\n        {\n          \"observation_id\": \"OBS_001\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Asymmetric layout with subject positioned left-of-center, large background typography occupying upper and lower zones, service panel aligned right creating counter-mass\",\n          \"region\": \"full frame\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_002\",\n          \"category\": \"SUBJECT_TREATMENT\",\n          \"description\": \"Male subject wearing dark shirt and glasses, arms crossed, looking off-camera, rim-lit from behind with sharp edge separation\",\n          \"region\": \"center-left\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_003\",\n          \"category\": \"LIGHTING\",\n          \"description\": \"Dramatic rim light creating edge separation, neon pink and cyan accent lights, dark background with high contrast and localized glow\",\n          \"region\": \"full frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_004\",\n          \"category\": \"COLOR\",\n          \"description\": \"Neon magenta, cyan, and blue accents against deep charcoal/black background with selective saturation\",\n          \"region\": \"full frame\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_005\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Oversized 'DESIGN' text as background graphic element, stacked service list with icons on right, mixed weight hierarchy with display and body contrast\",\n          \"region\": \"upper and lower zones\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_006\",\n          \"category\": \"NARRATIVE_OBJECT\",\n          \"description\": \"Floating glass UI elements in foreground: heart icon, code brackets, chart, and 'Aa' text block, all with neon edge glow and reflective surfaces\",\n          \"region\": \"foreground left and right\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_007\",\n          \"category\": \"DEPTH\",\n          \"description\": \"Three-plane structure: foreground floating elements, midground subject, background typography and atmospheric haze\",\n          \"region\": \"full frame\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_008\",\n          \"category\": \"MATERIAL\",\n          \"description\": \"Glass/reflective surfaces on floating elements, matte dark fabric on subject, neon glow effects, subtle particle atmosphere\",\n          \"region\": \"distributed\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_009\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Diagonal energy created by subject gaze direction and gesture, leading eye from subject toward right-side information panel\",\n          \"region\": \"center to right\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_010\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Service panel with icon list creates clear secondary information territory, bounded by thin neon lines\",\n          \"region\": \"right side\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        }\n      ],\n      \"reference_dna\": {\n        \"hierarchy\": \"dominant-subordinate with offset subject and right-side counter-mass\",\n        \"composition\": \"asymmetric with diagonal flow and territorial separation\",\n        \"depth\": \"layered foreground-midground-background with atmospheric separation\",\n        \"lighting\": \"dramatic rim light with colored accent separation\",\n        \"material\": \"glass and matte contrast with reflective surfaces\",\n        \"typography\": \"overscale display type as environmental graphic element\",\n        \"narrative\": \"floating digital service artifacts suggesting technical capability\",\n        \"energy\": \"dynamic tension through diagonal gaze and gesture\"\n      },\n      \"transfer_relevance\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"design_decision_map\": [\n    {\n      \"mapping_id\": \"MAP_001\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_001\", \"OBS_009\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Preserve asymmetric dominant-subordinate composition with subject offset and counter-mass, but recompose for 4:5 portrait with subject in upper-left or center-left and communication territory in lower or right zones\",\n      \"rationale\": \"Asymmetric balance creates energy while maintaining clear hierarchy; the offset subject with opposing mass stabilizes the frame without centering monotony. For pediatric telehealth, this can place a clinician or parent figure in confident position while leaving room for reassuring copy and service information.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"protected_dependencies\": [\"subject must remain clearly dominant\", \"communication territory must be format-safe\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_002\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_005\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Use target-owned typography with graphic scale—large, friendly display type for campaign headline, smaller supportive copy—creating environmental mass without neon styling or source wording\",\n      \"rationale\": \"Overscale type creates graphic scale and depth while establishing hierarchy. For pediatric telehealth, this can use warm, rounded, or clean geometric type that feels approachable and authoritative without the aggressive neon aesthetic.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"typography must remain readable at Instagram size\", \"hierarchy must support message clarity\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_003\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_006\", \"OBS_008\"],\n      \"action\": \"REINVENT\",\n      \"target_in_new_composition\": \"Replace floating neon UI elements with warm, translucent telehealth artifacts: soft video-call icon, gentle heart or care symbol, calendar or appointment cue, or storybook-style graphic in clean glass, frosted material, or paper-like surfaces with warm clinical light\",\n      \"rationale\": \"Floating elements create foreground interest, depth, and narrative context. In telehealth, these must suggest care, connection, and accessibility rather than tech complexity. Neon glass panels feel alienating; warm translucent materials feel safe and clinical.\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"elements must not obscure subject or required copy\", \"materials must feel clinically appropriate\"],\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"digital design/tech services\",\n        \"target_product_category\": \"pediatric telehealth\",\n        \"literal_object\": \"floating glass UI panels with neon edge glow containing heart icon, code brackets, chart, and text block\",\n        \"visual_function\": \"suggest digital service capabilities and technical competence through foreground depth and narrative context\",\n        \"material_language\": \"transparent glass with neon edge glow and reflective surfaces\",\n        \"emotional_effect\": \"modern, technical, energetic, slightly intimidating\",\n        \"equivalent_adaptation\": \"warm translucent care artifacts (soft video-call icon, gentle heart, calendar, or storybook-style graphics) in clean frosted glass, paper, or soft plastic materials with warm clinical light\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"pediatric telehealth requires approachable, non-threatening digital imagery; neon tech icons and harsh glass feel alienating in a care context and would undermine reassuring tone\"\n      },\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_004\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_010\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Adapt the service panel into a clean, scannable telehealth service menu—video visits, scheduling, care coordination, specialist access—using warm iconography and clear hierarchy in a bounded panel or card system\",\n      \"rationale\": \"The service list organizes information clearly and creates a secondary information territory. For telehealth, this must communicate specific services with clinical clarity, not design offerings. The panel structure transfers; the content and styling must become target-native.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"panel must not compete with hero subject\", \"icons must be recognizable and appropriate\"],\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"freelance design services\",\n        \"target_product_category\": \"pediatric telehealth\",\n        \"literal_object\": \"right-side service list with neon icons for design gráfico, social media, websites, paid traffic, and visual identity\",\n        \"visual_function\": \"organize service offerings in a clear scannable list with icon reinforcement\",\n        \"material_language\": \"dark panel with neon text and thin neon border\",\n        \"emotional_effect\": \"professional, comprehensive, tech-savvy, slightly cold\",\n        \"equivalent_adaptation\": \"clean clinical panel or soft card system listing telehealth services (video visits, scheduling, care coordination, specialist access) with warm, simple icons and clear typography\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"medical service information requires clarity, trust, and warmth; neon tech panel styling undermines clinical credibility and would feel inappropriate for pediatric care\"\n      },\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_005\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_003\", \"OBS_004\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Replace neon accent lighting with motivated clinical or domestic light: soft window light, warm practical lamps, or clean clinical LEDs that create gentle separation and hierarchy without cyberpunk coloration\",\n      \"rationale\": \"Accent lighting creates focus and separation. The source uses neon for energy and tech identity; the target needs light that feels safe, clean, and reassuring. Warm or cool clinical light can maintain hierarchy while supporting the care narrative.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"light must feel motivated by environment\", \"must not create alarm or coldness\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_006\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_004\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Replace dark neon background with clean, bright clinical environment or warm domestic setting that suggests safety, accessibility, and professional care\",\n      \"rationale\": \"Dark field creates drama and focus but conflicts with reassuring, accessible telehealth. A bright, clean, or warmly lit environment supports clinical credibility and approachability while maintaining subject focus through value contrast rather than darkness.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"background must not distract from subject\", \"must support trustworthy atmosphere\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_007\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_002\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Adapt subject pose from crossed-arm authority to open, approachable clinician or parent figure: open hands, gentle gesture, eye contact or soft gaze toward viewer or child, conveying care and accessibility\",\n      \"rationale\": \"Crossed arms create stability and self-possession but can read as closed or defensive. For pediatric telehealth, an open posture communicates approachability, empathy, and trust—critical for making remote care feel safe for parents and children.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"subject must remain authoritative enough to trust\", \"pose must feel natural, not staged\"],\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_008\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_008\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Replace neon glass with clean medical materials: clear screen interfaces, soft frosted surfaces, paper documents, or gentle translucent gels that suggest clarity, precision, and care\",\n      \"rationale\": \"Glass and reflective surfaces create depth and material interest. In telehealth, these can become clean screens showing video calls, soft paper materials suggesting documentation, or gentle translucent elements suggesting gentle care—avoiding harsh neon edges.\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"materials must feel clinically appropriate\", \"must not create harsh reflections or coldness\"],\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_009\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_007\", \"OBS_009\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"Preserve layered depth structure (foreground interest, midground subject, background environment) but populate with telehealth-appropriate elements: device screen in foreground, clinician/parent in midground, home or clinic environment in background\",\n      \"rationale\": \"Layered planes create spatial richness and narrative distance. For telehealth, this can show the technology (tablet/phone), the human connection (subject), and the care environment (home or clinic), making the service tangible and credible.\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"protected_dependencies\": [\"subject must remain dominant\", \"foreground must not obscure required information\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"MAP_010\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_001\", \"OBS_005\", \"OBS_010\"],\n      \"action\": \"TRANSFER\",\n      \"target_in_new_composition\": \"Transfer the dominant-subordinate mass system and information hierarchy: one clear hero (clinician, parent, or child), supportive secondary elements, and tertiary service information in a bounded territory\",\n      \"rationale\": \"The hierarchical mass system is category-independent. A clear focal point with supporting evidence and organized service information creates immediate comprehension and trust, which is essential for healthcare communication.\",\n      \"strength\": \"VERY_HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"protected_dependencies\": [\"hero must remain clearly dominant\", \"information must be scannable\"],\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"conflicts\": [\n    {\n      \"conflict_id\": \"CONFLICT_001\",\n      \"type\": \"REFERENCE_VS_BRIEF\",\n      \"description\": \"Reference uses neon magenta/cyan palette and dark moody aesthetic that signals cyberpunk/tech energy; target requires reassuring, clinically credible, accessible pediatric telehealth tone. Neon and darkness risk feeling alarming, cold, or alienating to parents seeking care.\",\n      \"severity\": \"HIGH\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\"hc_target_semantics_live_rt_05_generic_device_selectivity\", \"sp_target_tone_live_rt_05_generic_device_selectivity\"],\n      \"translator_position\": \"Discard neon palette and dark field; adapt lighting structure to warm clinical or clean bright environments. Preserve only the separation and hierarchy functions of the lighting.\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONFLICT_002\",\n      \"type\": \"REFERENCE_VS_BRAND\",\n      \"description\": \"Reference contains Portuguese copy and freelance designer brand identity that must not transfer to pediatric telehealth target.\",\n      \"severity\": \"CRITICAL\",\n      \"blocking\": true,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\"hc_target_semantics_live_rt_05_generic_device_selectivity\"],\n      \"translator_position\": \"Complete discard of all source text, brand markers, and identity. Transfer only typographic behavior (scale, hierarchy, rhythm) through target-owned copy and typeface.\",\n      \"resolution_status\": \"RESOLVED_BY_DISCARD\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONFLICT_003\",\n      \"type\": \"REFERENCE_VS_SUBJECT_IDENTITY\",\n      \"description\": \"Reference features a specific male identity with glasses and crossed-arm pose that must not become the target subject.\",\n      \"severity\": \"CRITICAL\",\n      \"blocking\": true,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\"identity_constraints\"],\n      \"translator_position\": \"Discard source person entirely. Adapt only the pose function (authority/confidence) into an open, approachable clinician or parent gesture appropriate for pediatric care.\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONFLICT_004\",\n      \"type\": \"REFERENCE_VS_ORIGINALITY\",\n      \"description\": \"Floating neon UI panels and tech icons risk generic AI-look assembly if transferred literally without narrative integration.\",\n      \"severity\": \"MEDIUM\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [],\n      \"translator_position\": \"Reinvent floating elements as telehealth-specific artifacts with coherent material and light. Ensure each element has a narrative job (video call, scheduling, care connection) rather than decorative placement.\",\n      \"resolution_status\": \"RESOLVED_BY_REINVENTION\",\n      \"requires_director_decision\": false,\n      \"requires_user_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"non_negotiable_anchors\": [\n    {\n      \"anchor_id\": \"ANC_001\",\n      \"description\": \"Asymmetric dominant-subordinate composition with offset subject and opposing information territory\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"create energy and clear hierarchy without centering monotony\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"This relational structure is category-independent and critical for Instagram scannability; it guides the eye from subject to message to service evidence.\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANC_002\",\n      \"description\": \"Layered depth structure: foreground interest, midground subject, background environment\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"create spatial richness, narrative context, and environmental credibility\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Three-plane structure makes the service feel tangible and real; for telehealth, this can show device, person, and care environment.\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANC_003\",\n      \"description\": \"Clear information hierarchy with bounded secondary territory for services\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"organize complex information into one readable proposition\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"Healthcare communication requires immediate comprehension of what is offered; the panel/bounded territory concept transfers directly.\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANC_004\",\n      \"description\": \"Graphic scale through typographic mass\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"create visual impact and brand presence in a crowded feed\",\n      \"importance\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"Large type creates stopping power; for pediatric telehealth, this can communicate confidence and clarity without neon styling.\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"flexible_areas\": [\n    {\n      \"area\": \"color palette\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"Reference neon palette is incompatible with target tone; Director has full freedom to choose warm clinical, soft pastel, or clean bright palette that feels reassuring and credible.\"\n    },\n    {\n      \"area\": \"narrative objects and props\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"Floating tech icons must be reinvented; Director can choose any telehealth-appropriate artifacts (screens, documents, gentle graphics, care symbols) that serve the depth and narrative functions.\"\n    },\n    {\n      \"area\": \"environment and setting\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Dark tech background must change; Director can select clinical office, home setting, or abstract clean environment that supports accessibility and trust.\"\n    },\n    {\n      \"area\": \"subject identity and specific pose\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Source person is excluded; Director can cast clinician, parent, or child in any approachable, trustworthy pose that fits the campaign narrative.\"\n    },\n    {\n      \"area\": \"typography selection\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"Source font and copy are excluded; Director may choose any target-owned typeface that achieves the graphic scale and hierarchy functions.\"\n    }\n  ],\n  \"risks\": [\n    {\n      \"risk_id\": \"RISK_001\",\n      \"description\": \"Neon aesthetic leakage: if adapted accents remain too vivid or cyberpunk, they will undermine reassuring tone and feel inappropriate for pediatric care.\",\n      \"severity\": \"HIGH\",\n      \"mitigation\": \"Use warm, desaturated, or clinically precise accent colors. Test against 'alarm' and 'cyberpunk' avoidance list. Prioritize soft blues, greens, warm whites, or gentle earth tones.\"\n    },\n    {\n      \"risk_id\": \"RISK_002\",\n      \"description\": \"Floating elements becoming generic dashboard filler: reinvented telehealth icons may feel like interchangeable UI decoration rather than narrative evidence.\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Ensure each floating element has a specific semantic job (video connection, appointment scheduling, care record) and coherent material behavior. Avoid generic particles or unconnected shapes.\"\n    },\n    {\n      \"risk_id\": \"RISK_003\",\n      \"description\": \"Dark aesthetic persistence: retaining too much darkness from reference may create cold or institutional feeling rather than warm accessibility.\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Favor bright, clean, or warmly lit environments. If darker mood is desired for premium feel, ensure it reads as 'calm confidence' not 'cold tech' through material choice (warm woods, soft fabrics) and human presence.\"\n    },\n    {\n      \"risk_id\": \"RISK_004\",\n      \"description\": \"Tech iconography mismatch: code brackets or abstract tech symbols may persist in telehealth adaptation and feel out of place.\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"Audit all narrative objects for medical/telehealth relevance. Replace any tech-specific symbols with care-appropriate equivalents (stethoscope, video camera, calendar, heart) only if they serve the narrative honestly.\"\n    },\n    {\n      \"risk_id\": \"RISK_005\",\n      \"description\": \"Subject pose misread: crossed-arm authority adapted incorrectly may still feel closed or defensive in pediatric context.\",\n      \"severity\": \"LOW\",\n      \"mitigation\": \"Prioritize open gestures, visible hands, and gentle gaze. Test pose against 'approachable mentor' and 'clinical trust' mechanisms from knowledge base.\"\n    }\n  ],\n  \"open_questions\": [],\n  \"provenance\": {\n    \"translator_version\": \"1.0.0\",\n    \"created_at\": \"2026-08-16T12:00:00Z\",\n    \"notes\": \"Reference reinterpretation for pediatric telehealth. Source is a neon freelance designer advertisement; target requires reassuring, clinically credible tone. All source identity, brand, and copy excluded. Cross-category adaptations applied to floating UI elements and service panel.\"\n  },\n  \"confidence\": {\n    \"overall\": \"HIGH\",\n    \"rationale\": \"Structural mechanisms (asymmetric hierarchy, layered depth, information organization) are clearly observed and highly transferable. Specific manifestations require significant adaptation due to category distance (tech/design services to pediatric telehealth), but functional logic is sound. Confidence is high for composition and hierarchy; medium for specific material and color translations due to tonal mismatch requiring careful calibration.\"\n  },\n  \"director_handoff\": {\n    \"what_must_survive\": [\n      \"asymmetric dominant-subordinate composition with clear focal hierarchy\",\n      \"layered depth structure (foreground-midground-background)\",\n      \"bounded secondary information territory for services\",\n      \"directional flow connecting subject to message to evidence\"\n    ],\n    \"what_should_survive\": [\n      \"graphic scale through typographic mass\",\n      \"material contrast between soft/hard or transparent/opaque surfaces\",\n      \"secondary mass logic that balances the hero\",\n      \"clean information hierarchy with icon reinforcement\"\n    ],\n    \"what_can_change\": [\n      \"all colors (neon palette discarded)\",\n      \"all narrative objects (tech icons replaced with telehealth artifacts)\",\n      \"environment and setting (dark tech background replaced)\",\n      \"subject identity and specific pose (source person excluded)\",\n      \"typography selection and wording (source copy excluded)\",\n      \"lighting temperature and motivation (neon replaced with clinical/domestic light)\"\n    ],\n    \"key_conflicts\": [\n      \"Neon/cyberpunk aesthetic vs reassuring clinical tone\",\n      \"Dark moody background vs bright/clean telehealth accessibility\",\n      \"Tech/design service icons vs medical/telehealth context\",\n      \"Source person identity vs target subject requirements\"\n    ],\n    \"recommended_anchors\": [\n      \"ANC_001: offset subject with right-side counter-mass\",\n      \"ANC_002: three-plane depth with foreground interest\",\n      \"ANC_003: bounded service information panel\",\n      \"ANC_004: overscale display typography for graphic presence\"\n    ],\n    \"creative_opportunities\": [\n      \"Use warm, approachable materials (frosted glass, paper, soft plastics) instead of harsh neon glass\",\n      \"Incorporate genuine telehealth evidence: tablet/phone screens showing video calls, appointment calendars, gentle care graphics\",\n      \"Choose a clinician or parent subject with open, empathetic body language\",\n      \"Select a clean, bright, or warmly lit environment that feels like a real care setting\",\n      \"Use target-owned color palette that signals safety (soft blues, greens, warm neutrals) while preserving the reference's contrast and separation logic\"\n    ],\n    \"warnings\": [\n      \"Avoid neon accents, dark fields, and tech-bro aesthetic that would make pediatric care feel alarming or alienating\",\n      \"Do not reuse source Portuguese copy, brand marks, or designer identity\",\n      \"Ensure floating elements have specific narrative purpose; avoid generic dashboard decoration\",\n      \"Test final composition for 'clinical credibility' and 'reassurance' before finalizing; reference energy must be tempered for care context\"\n    ]\n  }\n}",
+      "provider_metadata": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-aa3d2c3d-a586-46d5-a54d-3c07016aea8c",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 138805,
+        "final_attempt_latency_ms": 127272,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_neon_devices",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 2674776,
+            "sha256": "78d6339aebbd1fca19d8e2dc9ee36ac8110c7a3ed1e7ad08686d9750d41c3144"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4295,
+          "reference_context_characters": 850,
+          "my_eyes_advisory_characters": 2233,
+          "vkb_advisory_characters": 428,
+          "retry_diagnostic_characters": 109,
+          "provider_user_text_characters": 32953,
+          "total_textual_characters": 519771,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 3566368,
+          "serialized_http_body_characters": 4095633,
+          "input_tokens": 96825,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148935,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96825,
+          "output_tokens": 10507,
+          "total_tokens": 107332,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "candidate_status": "REJECTED_CANDIDATE",
+      "visible_candidate": "\n{\n  \"schema_version\": \"1.0.0\",\n  \"plan_id\": \"plan_live_rt_05_generic_device_selectivity\",\n  \"project_id\": \"project_live_rt_05_generic_device_selectivity\",\n  \"brief_spec_version\": \"1.0.0\",\n  \"status\": \"READY_FOR_DIRECTOR\",\n  \"transfer_mode\": \"REFERENCE_REINTERPRETATION\",\n  \"transfer_intensity\": {\n    \"value\": \"MEDIUM\",\n    \"source\": \"USER_ASSET\",\n    \"confidence\": \"MEDIUM\"\n  },\n  \"base_analysis\": {\n    \"base_asset_id\": null,\n    \"semantic_identity\": \"pediatric telehealth campaign visual\",\n    \"protected_elements\": [\"professional context\", \"communication goal\", \"reassuring tone\", \"clinical credibility\"],\n    \"required_copy\": [],\n    \"subject_identity_requirements\": \"No person identity from reference; target subject should be pediatric-appropriate (doctor, caregiver, or child) with no recognizability requirement from reference\",\n    \"existing_composition_constraints\": [\"4:5 portrait format\", \"text overlay expected\", \"Instagram platform\"],\n    \"elements_allowed_to_change\": [\"composition\", \"environment\", \"lighting\", \"color\", \"material\", \"typography\", \"narrative objects\"],\n    \"elements_forbidden_to_change\": [\"professional context\", \"communication goal\", \"reassuring tone\"]\n  },\n  \"reference_analyses\": [\n    {\n      \"reference_asset_id\": \"live_ref_neon_devices\",\n      \"role\": \"PRIMARY_REFERENCE\",\n      \"scope\": \"GLOBAL_VISUAL_DIRECTION\",\n      \"authority\": \"USER_PRIMARY_REFERENCE\",\n      \"observations\": [\n        {\n          \"observation_id\": \"OBS_01\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Centered portrait subject with arms crossed, confident stance, occupying central vertical axis\",\n          \"region\": \"center\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_02\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Overscale display typography behind subject creating graphic mass and depth\",\n          \"region\": \"background\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_03\",\n          \"category\": \"LIGHTING\",\n          \"description\": \"Neon magenta and cyan rim lighting separating subject from background\",\n          \"region\": \"subject edges\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_04\",\n          \"category\": \"NARRATIVE_OBJECT\",\n          \"description\": \"Floating transparent glass cubes with icons in foreground and background\",\n          \"region\": \"scattered\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_05\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Structured information panel on right side with icon-supported list\",\n          \"region\": \"right third\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_06\",\n          \"category\": \"ENVIRONMENT\",\n          \"description\": \"Dark atmospheric background with haze and subtle gradient\",\n          \"region\": \"background\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_07\",\n          \"category\": \"TYPOGRAPHY\",\n          \"description\": \"Bottom CTA button with arrow and social contact icons\",\n          \"region\": \"bottom\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_08\",\n          \"category\": \"COLOR\",\n          \"description\": \"High saturation neon palette with magenta, cyan, and deep purple accents\",\n          \"region\": \"global\",\n          \"salience\": \"DOMINANT\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_09\",\n          \"category\": \"COMPOSITION\",\n          \"description\": \"Diagonal compositional flow from bottom left to top right\",\n          \"region\": \"global\",\n          \"salience\": \"MEDIUM\",\n          \"confidence\": \"MEDIUM\",\n          \"provenance\": \"OBSERVED\"\n        },\n        {\n          \"observation_id\": \"OBS_10\",\n          \"category\": \"DEPTH\",\n          \"description\": \"Layered depth with foreground floating elements, midground subject, and background typography\",\n          \"region\": \"global\",\n          \"salience\": \"HIGH\",\n          \"confidence\": \"HIGH\",\n          \"provenance\": \"OBSERVED\"\n        }\n      ],\n      \"reference_dna\": {\n        \"primary\": \"hierarchical subject dominance with supporting information territories\",\n        \"secondary\": \"layered depth with floating narrative elements, structured service panel, clear CTA\",\n        \"incidental\": \"neon cyberpunk palette, glass cube UI, specific icon inventory, Portuguese copy\"\n      },\n      \"transfer_relevance\": \"MEDIUM\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"design_decision_map\": [\n    {\n      \"mapping_id\": \"DD_01\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_01\", \"OBS_10\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"centered pediatric subject (doctor or caregiver) with layered depth planes (foreground interest, midground subject, background environment)\",\n      \"rationale\": \"Preserve hierarchical dominance and spatial layering while replacing subject and environment with target-native pediatric telehealth elements\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"DD_02\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_02\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"overscale warm typography behind subject creating graphic mass\",\n      \"rationale\": \"Transfer typographic counter-mass function but replace aggressive neon display type with softer, approachable typeface and pediatric-appropriate messaging\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"DD_03\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_03\", \"OBS_08\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"replaced with warm clinical key light and clean palette\",\n      \"rationale\": \"Neon rim lighting and saturated cyberpunk palette conflict with reassuring pediatric tone; discard entirely and rebuild with motivated natural or clinical light\",\n      \"strength\": \"NONE\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"DD_04\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_04\"],\n      \"action\": \"REINVENT\",\n      \"target_in_new_composition\": \"soft floating pediatric objects (stuffed toy, medical device, soap bubble) in foreground\",\n      \"rationale\": \"Preserve layered depth and foreground interest but replace tech cubes with target-native pediatric objects that communicate care and safety\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"OBSERVED\",\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"design/technology service promotion\",\n        \"target_product_category\": \"pediatric telehealth\",\n        \"literal_object\": \"transparent glass cubes with neon edge lighting and digital icons\",\n        \"visual_function\": \"foreground depth layers and narrative interest through floating objects\",\n        \"material_language\": \"glossy transparent tech aesthetic with neon emission\",\n        \"emotional_effect\": \"futuristic, digital, energetic, gaming-adjacent\",\n        \"equivalent_adaptation\": \"soft organic shapes or verified pediatric medical artifacts (stuffed animal, pediatric thermometer, soap bubble, gentle geometric forms) with warm material language\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"pediatric telehealth requires warmth, safety, and approachability; soft organic or verified medical objects communicate care and trust rather than digital complexity or gaming energy\"\n      }\n    },\n    {\n      \"mapping_id\": \"DD_05\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_05\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"right-side telehealth feature panel with clinical iconography\",\n      \"rationale\": \"Transfer structured information territory but replace service list with verified telehealth benefits (HIPAA compliant, board-certified, etc.) using clinical iconography\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\",\n      \"cross_category_adaptation\": {\n        \"reference_product_category\": \"design services promotion\",\n        \"target_product_category\": \"pediatric telehealth\",\n        \"literal_object\": \"glass service list panel with neon icons and tech styling\",\n        \"visual_function\": \"structured information territory with icon-supported list\",\n        \"material_language\": \"transparent tech panel with neon edge glow\",\n        \"emotional_effect\": \"professional, digital, efficient, tech-forward\",\n        \"equivalent_adaptation\": \"clean clinical card or soft panel with verified telehealth features (insurance acceptance, board-certified doctors, secure video, pediatric-specific services) using warm clinical iconography\",\n        \"literal_transfer_allowed\": false,\n        \"target_category_coherence\": \"telehealth requires evidence-based credibility and regulatory trust; clinical card with real features and warm materials builds parental confidence better than generic tech panel styling\"\n      }\n    },\n    {\n      \"mapping_id\": \"DD_06\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_07\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"bottom CTA with arrow and contact icons (phone, video, app store)\",\n      \"rationale\": \"Preserve clear action territory and contact information placement at bottom\",\n      \"strength\": \"HIGH\",\n      \"flexibility\": \"LOW\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"DD_07\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_06\"],\n      \"action\": \"DISCARD\",\n      \"target_in_new_composition\": \"light, airy clinical environment or home setting\",\n      \"rationale\": \"Dark atmospheric background conflicts with reassuring pediatric tone; discard and replace with bright, clean environment\",\n      \"strength\": \"NONE\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"HIGH\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"mapping_id\": \"DD_08\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"observation_ids\": [\"OBS_09\"],\n      \"action\": \"ADAPT\",\n      \"target_in_new_composition\": \"gentle diagonal flow from subject to CTA or information panel\",\n      \"rationale\": \"Preserve directional reading but soften angle for calmer pediatric tone\",\n      \"strength\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"confidence\": \"MEDIUM\",\n      \"provenance\": \"INFERRED\"\n    }\n  ],\n  \"conflicts\": [\n    {\n      \"conflict_id\": \"CONF_01\",\n      \"type\": \"REFERENCE_VS_BRIEF\",\n      \"description\": \"Reference neon cyberpunk palette and tech aesthetic conflict with target reassuring pediatric tone\",\n      \"severity\": \"CRITICAL\",\n      \"blocking\": true,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\"emotional_intent.reassurance\", \"emotional_intent.avoid.cyberpunk\"],\n      \"translator_position\": \"Discard neon palette and tech aesthetic entirely; rebuild with warm clinical materials\",\n      \"resolution_status\": \"RESOLVED_BY_DISCARD\",\n      \"requires_director_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONF_02\",\n      \"type\": \"REFERENCE_VS_FORMAT\",\n      \"description\": \"Reference uses aggressive diagonal energy and dark background that may not translate to 4:5 Instagram portrait for pediatric trust\",\n      \"severity\": \"HIGH\",\n      \"blocking\": false,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\"format.aspect_ratio\", \"emotional_intent.reassurance\"],\n      \"translator_position\": \"Recompose for portrait with calmer flow and lighter environment\",\n      \"resolution_status\": \"RESOLVED_BY_ADAPTATION\",\n      \"requires_director_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"conflict_id\": \"CONF_03\",\n      \"type\": \"REFERENCE_VS_SUBJECT_IDENTITY\",\n      \"description\": \"Reference features adult male designer identity which must not transfer to pediatric telehealth subject\",\n      \"severity\": \"HIGH\",\n      \"blocking\": true,\n      \"involved_assets\": [\"live_ref_neon_devices\"],\n      \"involved_constraints\": [\"subject.identity_preservation.NONE\", \"identity_constraints\"],\n      \"translator_position\": \"Replace subject entirely with target-appropriate identity (pediatrician, caregiver, or child)\",\n      \"resolution_status\": \"RESOLVED_BY_DISCARD\",\n      \"requires_director_decision\": false,\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"non_negotiable_anchors\": [\n    {\n      \"anchor_id\": \"ANCH_01\",\n      \"description\": \"Hierarchical subject dominance with supporting information territories\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"create clear focal hierarchy and readable message structure\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"MEDIUM\",\n      \"reason\": \"core compositional logic that makes the image scannable\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCH_02\",\n      \"description\": \"Layered depth with foreground interest\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"create spatial richness and immersion\",\n      \"importance\": \"MEDIUM\",\n      \"flexibility\": \"HIGH\",\n      \"reason\": \"depth mechanism is useful but manifestation must change completely\",\n      \"provenance\": \"OBSERVED\"\n    },\n    {\n      \"anchor_id\": \"ANCH_03\",\n      \"description\": \"Clear bottom CTA with directional arrow\",\n      \"source_reference_asset_id\": \"live_ref_neon_devices\",\n      \"function\": \"drive action and conversion\",\n      \"importance\": \"HIGH\",\n      \"flexibility\": \"LOW\",\n      \"reason\": \"advertising requirement for clear next step\",\n      \"provenance\": \"OBSERVED\"\n    }\n  ],\n  \"flexible_areas\": [\n    {\n      \"area\": \"color palette\",\n      \"freedom_level\": \"VERY_HIGH\",\n      \"rationale\": \"source neon palette is incompatible with target; Director has full freedom to select warm, clean, pediatric-appropriate colors\"\n    },\n    {\n      \"area\": \"floating foreground elements\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"must be target-native but many options exist (toys, medical devices, organic shapes)\"\n    },\n    {\n      \"area\": \"subject identity and pose\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"no reference person preservation; Director can select appropriate pediatric telehealth representative\"\n    },\n    {\n      \"area\": \"environment and background\",\n      \"freedom_level\": \"HIGH\",\n      \"rationale\": \"must support clinical credibility but many settings work (clinic, home, abstract clean space)\"\n    }\n  ],\n  \"risks\": [\n    {\n      \"risk_id\": \"RISK_01\",\n      \"description\": \"Neon aesthetic leakage if not fully replaced\",\n      \"severity\": \"HIGH\",\n      \"mitigation\": \"explicitly discard all neon glow, saturated magenta/cyan, and dark background; rebuild with warm clinical light and clean palette\"\n    },\n    {\n      \"risk_id\": \"RISK_02\",\n      \"description\": \"Floating elements becoming generic decoration without narrative purpose\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"ensure each foreground element is target-native and semantically motivated (verified medical object, toy, or organic shape with pediatric relevance)\"\n    },\n    {\n      \"risk_id\": \"RISK_03\",\n      \"description\": \"Subject identity confusion if reference person traits are preserved\",\n      \"severity\": \"HIGH\",\n      \"mitigation\": \"replace subject entirely with target-appropriate identity; do not reuse hairstyle, glasses, pose, or wardrobe from reference\"\n    },\n    {\n      \"risk_id\": \"RISK_04\",\n      \"description\": \"Information panel becoming generic dashboard filler\",\n      \"severity\": \"MEDIUM\",\n      \"mitigation\": \"populate with verified telehealth features and clinical iconography, not generic UI panels\"\n    }\n  ],\n  \"open_questions\": [\n    {\n      \"question_id\": \"Q_01\",\n      \"question\": \"Should the pediatric subject be a doctor, caregiver, or child representation?\",\n      \"target_audience\": \"CREATIVE_DIRECTOR\"\n    },\n    {\n      \"question_id\": \"Q_02\",\n      \"question\": \"What specific telehealth features should populate the information panel?\",\n      \"target_audience\": \"CREATIVE_DIRECTOR\"\n    },\n    {\n      \"question_id\": \"Q_03\",\n      \"question\": \"Should the environment be a clinical setting, home setting, or abstract clean space?\",\n      \"target_audience\": \"CREATIVE_DIRECTOR\"\n    }\n  ],\n  \"provenance\": {\n    \"translator_version\": \"1.0.0\",\n    \"created_at\": \"2026-08-16T00:00:00Z\",\n    \"notes\": \"Reference reinterpretation for pediatric telehealth; neon cyberpunk source requires substantial adaptation\"\n  },\n  \"confidence\": {\n    \"overall\": \"MEDIUM\",\n    \"rationale\": \"Observations are high confidence but transfer",
+      "provider_metadata": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-ac83573e-a73a-4e65-9bb1-d1eaa81dc07c",
+        "finish_reason": "length",
+        "transport_attempt_count": 2,
+        "latency_ms": 144131,
+        "final_attempt_latency_ms": 132663,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_neon_devices",
+            "mime_type": "image/png",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 2674776,
+            "sha256": "78d6339aebbd1fca19d8e2dc9ee36ac8110c7a3ed1e7ad08686d9750d41c3144"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4295,
+          "reference_context_characters": 850,
+          "my_eyes_advisory_characters": 2233,
+          "vkb_advisory_characters": 428,
+          "retry_diagnostic_characters": 109,
+          "provider_user_text_characters": 32953,
+          "total_textual_characters": 519771,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 3566368,
+          "serialized_http_body_characters": 4095633,
+          "input_tokens": 96825,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148935,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96825,
+          "output_tokens": 16384,
+          "total_tokens": 113209,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "evaluation": {
+    "case_id": "LIVE_RT_05_GENERIC_DEVICE_SELECTIVITY",
+    "status": "PROVIDER_BLOCKED",
+    "quality_class": "PROVIDER_BLOCKED",
+    "creative_approval": "NOT_PERFORMED",
+    "error": {
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED",
+      "message": "Reference Translator exhausted its correction attempts.",
+      "provider_error_code": null
+    },
+    "checks": [
+      {
+        "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+        "outcome": "FAIL",
+        "evidence": "No accepted multimodal model response was produced."
+      },
+      {
+        "category": "MECHANISM_IDENTIFICATION",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "FUNCTION_BEFORE_APPEARANCE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "REFERENCE_DNA_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "TARGET_SEMANTICS_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "TARGET_NATIVE_ADAPTATION",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "LITERAL_COPY_AVOIDED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SURFACE_COPY_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "UNDERTRANSFER_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "OVERTRANSFER_RISK",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "IDENTITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "MY_EYES_AUTHORITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "VKB_AUTHORITY_PRESERVED",
+        "outcome": "UNCERTAIN",
+        "evidence": "No accepted plan exists."
+      },
+      {
+        "category": "SCHEMA_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      },
+      {
+        "category": "SEMANTIC_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      },
+      {
+        "category": "QUALITY_GATE_VALID",
+        "outcome": "NOT_APPLICABLE",
+        "evidence": "No candidate plan reached validation."
+      }
+    ],
+    "cognitive_audit": {
+      "what_the_model_thought_was_important": [],
+      "what_it_wanted_to_transfer": [],
+      "what_it_wanted_to_adapt": [],
+      "what_it_wanted_to_reinvent": [],
+      "what_it_discarded": [],
+      "what_it_protected": [],
+      "what_risks_it_identified": []
+    },
+    "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals-step37-20260816-final\\runs\\run_live_rt_05_generic_device_selectivity-rt-live-step37-20260816-final.trace.json",
+    "failed_attempts": [
+      {
+        "attempt": 1,
+        "validator_error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+        "diagnostic_codes": [
+          "REFERENCE_PLAN_SCHEMA_INVALID"
+        ],
+        "raw_json": true,
+        "schema_valid": false,
+        "schema_errors": [
+          {
+            "instancePath": "/conflicts/1/provenance",
+            "schemaPath": "#/properties/conflicts/items/properties/provenance/enum",
+            "keyword": "enum",
+            "params": {
+              "allowedValues": [
+                "OBSERVED",
+                "INFERRED",
+                "MODEL_INFERENCE",
+                "HUMAN_CONFIRMED"
+              ]
+            },
+            "message": "must be equal to one of the allowed values"
+          },
+          {
+            "instancePath": "/conflicts/2/resolution_status",
+            "schemaPath": "#/properties/conflicts/items/properties/resolution_status/enum",
+            "keyword": "enum",
+            "params": {
+              "allowedValues": [
+                "UNRESOLVED",
+                "RESOLVED_BY_ADAPTATION",
+                "RESOLVED_BY_DISCARD",
+                "ESCALATED_TO_DIRECTOR",
+                "ESCALATED_TO_USER"
+              ]
+            },
+            "message": "must be equal to one of the allowed values"
+          },
+          {
+            "instancePath": "/conflicts/2/provenance",
+            "schemaPath": "#/properties/conflicts/items/properties/provenance/enum",
+            "keyword": "enum",
+            "params": {
+              "allowedValues": [
+                "OBSERVED",
+                "INFERRED",
+                "MODEL_INFERENCE",
+                "HUMAN_CONFIRMED"
+              ]
+            },
+            "message": "must be equal to one of the allowed values"
+          }
+        ],
+        "candidate_project_id": "project_live_rt_05_generic_device_selectivity",
+        "candidate_status_field": "READY_FOR_DIRECTOR",
+        "observation_count": 10,
+        "visible_observations": [
+          {
+            "category": "ENVIRONMENT",
+            "description": "Near-black background with subtle atmospheric glow and particle-like highlights",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "TYPOGRAPHY",
+            "description": "Oversized magenta 'DESIGN' typography extending behind subject",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "SUBJECT_TREATMENT",
+            "description": "Male subject with dark hair, glasses, dark t-shirt, arms crossed, looking off-camera",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "LIGHTING",
+            "description": "Neon magenta and cyan accent lighting on subject edges and background elements",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "NARRATIVE_OBJECT",
+            "description": "Floating transparent 3D cubes containing icons (heart, code brackets, chart, 'Aa')",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "TYPOGRAPHY",
+            "description": "Semi-transparent service menu panel at right with five icon-text rows",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "COMPOSITION",
+            "description": "Diagonal composition with subject positioned left-of-center, copy mass distributed right and bottom",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "LIGHTING",
+            "description": "High contrast between illuminated subject/accents and dark background",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "TYPOGRAPHY",
+            "description": "Stacked Portuguese text blocks with varying scale",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "TYPOGRAPHY",
+            "description": "Social media icons and handle at bottom edge",
+            "confidence": "HIGH"
+          }
+        ],
+        "decisions": [
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Soft, warm gradient or calm clinical environment background that focuses attention on caregiver and child",
+            "rationale": "Dark field creates focus but neon/tech associations must be replaced with warm, reassuring clinical atmosphere appropriate for pediatric care"
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Large, soft typography or generous negative space that creates scale without overwhelming pediatric context",
+            "rationale": "Graphic scale and depth are useful but must be gentle and not dominate a clinical care scene"
+          },
+          {
+            "action": "REINVENT",
+            "target_in_new_composition": "Warm, approachable medical professional or parent-child interaction, eye-level or gentle angle",
+            "rationale": "Authority and confidence transfer, but identity, pose, and expression must match pediatric care context and avoid reference person"
+          },
+          {
+            "action": "DISCARD",
+            "target_in_new_composition": "Warm clinical lighting, soft window light, or gentle practicals with soft shadows",
+            "rationale": "Neon pink/cyan creates cyberpunk/alarm associations incompatible with pediatric reassurance and clinical credibility"
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Motivated telehealth interface elements such as a tablet screen showing a pediatrician video call, a simplified appointment card, or a child-friendly health chart, grounded in the scene with plausible contact and lighting",
+            "rationale": "Floating elements can suggest digital care but must be integrated, motivated, and not generic; tech UI category must adapt to healthcare service context"
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Clean information panel listing telehealth services (well-child visits, sick visits, prescriptions, insurance) with pediatric-appropriate icons and warm color accents",
+            "rationale": "Structured information grouping is useful but must be clinically specific and integrated, not a generic freelance service menu"
+          },
+          {
+            "action": "TRANSFER",
+            "target_in_new_composition": "Diagonal flow guiding eye from subject to message to CTA in 4:5 portrait",
+            "rationale": "Creates energy and ordered reading without implying urgency or alarm; recompose for portrait while preserving directional stops"
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Controlled contrast with soft shadows, clear subject separation, and warm tones",
+            "rationale": "Hierarchy through contrast is useful but must feel clinical and warm, not dramatic or tech-oriented"
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Clean, readable stacked copy with clear hierarchy (headline, support, CTA) in target language",
+            "rationale": "Typographic rhythm and density are useful but content must be target-specific and avoid Portuguese source copy"
+          },
+          {
+            "action": "TRANSFER",
+            "target_in_new_composition": "Website, phone, or appointment booking info in protected bottom zone",
+            "rationale": "Contact territory is standard but must be integrated calmly and not mimic social media handle style"
+          }
+        ],
+        "declared_risks": [
+          "Neon aesthetic leakage: residual cyberpunk energy or high-contrast tech lighting could undermine pediatric reassurance",
+          "Generic card system: information panels could become interchangeable dashboard decoration rather than specific telehealth evidence",
+          "Subject identity mismatch: adult tech-freelancer energy could persist in medical professional portrayal",
+          "Format translation failure: diagonal composition and edge-weighted subject may not translate safely to 4:5 portrait with text overlay"
+        ]
+      },
+      {
+        "attempt": 2,
+        "validator_error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+        "diagnostic_codes": [
+          "REFERENCE_PLAN_SCHEMA_INVALID"
+        ],
+        "raw_json": true,
+        "schema_valid": false,
+        "schema_errors": [
+          {
+            "instancePath": "/conflicts/3/resolution_status",
+            "schemaPath": "#/properties/conflicts/items/properties/resolution_status/enum",
+            "keyword": "enum",
+            "params": {
+              "allowedValues": [
+                "UNRESOLVED",
+                "RESOLVED_BY_ADAPTATION",
+                "RESOLVED_BY_DISCARD",
+                "ESCALATED_TO_DIRECTOR",
+                "ESCALATED_TO_USER"
+              ]
+            },
+            "message": "must be equal to one of the allowed values"
+          }
+        ],
+        "candidate_project_id": "project_live_rt_05_generic_device_selectivity",
+        "candidate_status_field": "READY_FOR_DIRECTOR",
+        "observation_count": 10,
+        "visible_observations": [
+          {
+            "category": "COMPOSITION",
+            "description": "Asymmetric layout with subject positioned left-of-center, large background typography occupying upper and lower zones, service panel aligned right creating counter-mass",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "SUBJECT_TREATMENT",
+            "description": "Male subject wearing dark shirt and glasses, arms crossed, looking off-camera, rim-lit from behind with sharp edge separation",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "LIGHTING",
+            "description": "Dramatic rim light creating edge separation, neon pink and cyan accent lights, dark background with high contrast and localized glow",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "COLOR",
+            "description": "Neon magenta, cyan, and blue accents against deep charcoal/black background with selective saturation",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "TYPOGRAPHY",
+            "description": "Oversized 'DESIGN' text as background graphic element, stacked service list with icons on right, mixed weight hierarchy with display and body contrast",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "NARRATIVE_OBJECT",
+            "description": "Floating glass UI elements in foreground: heart icon, code brackets, chart, and 'Aa' text block, all with neon edge glow and reflective surfaces",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "DEPTH",
+            "description": "Three-plane structure: foreground floating elements, midground subject, background typography and atmospheric haze",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "MATERIAL",
+            "description": "Glass/reflective surfaces on floating elements, matte dark fabric on subject, neon glow effects, subtle particle atmosphere",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "COMPOSITION",
+            "description": "Diagonal energy created by subject gaze direction and gesture, leading eye from subject toward right-side information panel",
+            "confidence": "HIGH"
+          },
+          {
+            "category": "TYPOGRAPHY",
+            "description": "Service panel with icon list creates clear secondary information territory, bounded by thin neon lines",
+            "confidence": "HIGH"
+          }
+        ],
+        "decisions": [
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Preserve asymmetric dominant-subordinate composition with subject offset and counter-mass, but recompose for 4:5 portrait with subject in upper-left or center-left and communication territory in lower or right zones",
+            "rationale": "Asymmetric balance creates energy while maintaining clear hierarchy; the offset subject with opposing mass stabilizes the frame without centering monotony. For pediatric telehealth, this can place a clinician or parent figure in confident position while leaving room for reassuring copy and service information."
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Use target-owned typography with graphic scale—large, friendly display type for campaign headline, smaller supportive copy—creating environmental mass without neon styling or source wording",
+            "rationale": "Overscale type creates graphic scale and depth while establishing hierarchy. For pediatric telehealth, this can use warm, rounded, or clean geometric type that feels approachable and authoritative without the aggressive neon aesthetic."
+          },
+          {
+            "action": "REINVENT",
+            "target_in_new_composition": "Replace floating neon UI elements with warm, translucent telehealth artifacts: soft video-call icon, gentle heart or care symbol, calendar or appointment cue, or storybook-style graphic in clean glass, frosted material, or paper-like surfaces with warm clinical light",
+            "rationale": "Floating elements create foreground interest, depth, and narrative context. In telehealth, these must suggest care, connection, and accessibility rather than tech complexity. Neon glass panels feel alienating; warm translucent materials feel safe and clinical."
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Adapt the service panel into a clean, scannable telehealth service menu—video visits, scheduling, care coordination, specialist access—using warm iconography and clear hierarchy in a bounded panel or card system",
+            "rationale": "The service list organizes information clearly and creates a secondary information territory. For telehealth, this must communicate specific services with clinical clarity, not design offerings. The panel structure transfers; the content and styling must become target-native."
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Replace neon accent lighting with motivated clinical or domestic light: soft window light, warm practical lamps, or clean clinical LEDs that create gentle separation and hierarchy without cyberpunk coloration",
+            "rationale": "Accent lighting creates focus and separation. The source uses neon for energy and tech identity; the target needs light that feels safe, clean, and reassuring. Warm or cool clinical light can maintain hierarchy while supporting the care narrative."
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Replace dark neon background with clean, bright clinical environment or warm domestic setting that suggests safety, accessibility, and professional care",
+            "rationale": "Dark field creates drama and focus but conflicts with reassuring, accessible telehealth. A bright, clean, or warmly lit environment supports clinical credibility and approachability while maintaining subject focus through value contrast rather than darkness."
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Adapt subject pose from crossed-arm authority to open, approachable clinician or parent figure: open hands, gentle gesture, eye contact or soft gaze toward viewer or child, conveying care and accessibility",
+            "rationale": "Crossed arms create stability and self-possession but can read as closed or defensive. For pediatric telehealth, an open posture communicates approachability, empathy, and trust—critical for making remote care feel safe for parents and children."
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Replace neon glass with clean medical materials: clear screen interfaces, soft frosted surfaces, paper documents, or gentle translucent gels that suggest clarity, precision, and care",
+            "rationale": "Glass and reflective surfaces create depth and material interest. In telehealth, these can become clean screens showing video calls, soft paper materials suggesting documentation, or gentle translucent elements suggesting gentle care—avoiding harsh neon edges."
+          },
+          {
+            "action": "ADAPT",
+            "target_in_new_composition": "Preserve layered depth structure (foreground interest, midground subject, background environment) but populate with telehealth-appropriate elements: device screen in foreground, clinician/parent in midground, home or clinic environment in background",
+            "rationale": "Layered planes create spatial richness and narrative distance. For telehealth, this can show the technology (tablet/phone), the human connection (subject), and the care environment (home or clinic), making the service tangible and credible."
+          },
+          {
+            "action": "TRANSFER",
+            "target_in_new_composition": "Transfer the dominant-subordinate mass system and information hierarchy: one clear hero (clinician, parent, or child), supportive secondary elements, and tertiary service information in a bounded territory",
+            "rationale": "The hierarchical mass system is category-independent. A clear focal point with supporting evidence and organized service information creates immediate comprehension and trust, which is essential for healthcare communication."
+          }
+        ],
+        "declared_risks": [
+          "Neon aesthetic leakage: if adapted accents remain too vivid or cyberpunk, they will undermine reassuring tone and feel inappropriate for pediatric care.",
+          "Floating elements becoming generic dashboard filler: reinvented telehealth icons may feel like interchangeable UI decoration rather than narrative evidence.",
+          "Dark aesthetic persistence: retaining too much darkness from reference may create cold or institutional feeling rather than warm accessibility.",
+          "Tech iconography mismatch: code brackets or abstract tech symbols may persist in telehealth adaptation and feel out of place.",
+          "Subject pose misread: crossed-arm authority adapted incorrectly may still feel closed or defensive in pediatric context."
+        ]
+      },
+      {
+        "attempt": 3,
+        "validator_error_code": "MODEL_OUTPUT_INVALID_JSON",
+        "diagnostic_codes": [
+          "MODEL_OUTPUT_INVALID_JSON"
+        ],
+        "raw_json": false,
+        "schema_valid": false,
+        "schema_errors": [
+          {
+            "message": "Candidate was not raw JSON."
+          }
+        ],
+        "candidate_project_id": null,
+        "candidate_status_field": null,
+        "observation_count": 0,
+        "visible_observations": [],
+        "decisions": [],
+        "declared_risks": []
+      }
+    ]
+  }
+}

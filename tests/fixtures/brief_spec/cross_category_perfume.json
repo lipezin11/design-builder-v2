@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "project_mode": "REFERENCE",
+  "project_type": "AD_CREATIVE",
+  "user_request": "Create a premium campaign image for the supplied warm woody perfume while translating the art-direction logic of the skincare reference.",
+  "commercial_objective": "Position the fragrance as warm, tactile, and refined.",
+  "communication_goal": "Express amber warmth and quiet luxury without changing the perfume bottle.",
+  "target_context": "Premium fragrance campaign",
+  "format": {
+    "aspect_ratio": "4:5",
+    "orientation": "PORTRAIT",
+    "width": 1080,
+    "height": 1350,
+    "platform": "Instagram",
+    "usage": "Feed Ad",
+    "text_overlay_expected": false
+  },
+  "assets": [
+    {
+      "asset_id": "asset_perfume",
+      "asset_type": "PRODUCT",
+      "role": "PRODUCT",
+      "origin": "USER_UPLOAD",
+      "authority": "SUBJECT_IDENTITY",
+      "required": true,
+      "description": "Warm woody amber perfume bottle.",
+      "user_instruction": "Preserve bottle shape, label, cap, and liquid color.",
+      "preservation_level": "STRICT"
+    },
+    {
+      "asset_id": "asset_skincare_reference",
+      "asset_type": "IMAGE",
+      "role": "PRIMARY_REFERENCE",
+      "origin": "USER_UPLOAD",
+      "authority": "PRIMARY_REFERENCE",
+      "required": true,
+      "description": "Skincare campaign reference with a handbag as a product-support prop.",
+      "user_instruction": "Translate its soft luxury and material sophistication.",
+      "preservation_level": "HIGH"
+    }
+  ],
+  "subject": {
+    "present": false,
+    "identity_asset_id": null,
+    "identity_preservation": "NONE",
+    "pose_preservation": "NONE",
+    "expression_preservation": "NONE",
+    "wardrobe_preservation": "NONE",
+    "body_orientation_preservation": "NONE",
+    "age_preservation": "NONE",
+    "recognizability_required": false,
+    "user_subject_instructions": ""
+  },
+  "references": [
+    {
+      "reference_asset_id": "asset_skincare_reference",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "PRIMARY_REFERENCE",
+      "transfer_intent": "Preserve the tactile soft-luxury function and tonal harmony, but adapt category-specific props.",
+      "transfer_intensity": "HIGH",
+      "user_instruction": "Do not copy unrelated skincare props literally.",
+      "protected_from_reference": ["perfume bottle identity", "perfume label"],
+      "do_not_transfer": ["skincare packaging", "handbag as literal object"]
+    }
+  ],
+  "hard_constraints": [
+    {
+      "constraint_id": "hc_perfume_identity",
+      "description": "Preserve perfume bottle geometry, label, cap, and liquid color.",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    }
+  ],
+  "soft_preferences": [
+    {
+      "preference_id": "sp_warm_luxury",
+      "description": "Warm woody tactile luxury with restrained styling.",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    }
+  ],
+  "emotional_intent": {
+    "primary": "luxury",
+    "secondary": ["warmth", "sensuality", "authority"],
+    "avoid": ["clinical", "playful"]
+  },
+  "creative_freedom": {
+    "overall": "MEDIUM",
+    "composition": "MEDIUM",
+    "environment": "HIGH",
+    "subject_pose": "NONE",
+    "wardrobe": "NONE",
+    "typography": "MEDIUM",
+    "color": "MEDIUM",
+    "narrative_objects": "HIGH"
+  },
+  "preservation_requirements": [
+    {
+      "element": "perfume bottle identity",
+      "provenance": "USER_EXPLICIT"
+    },
+    {
+      "element": "perfume label",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "allowed_transformations": [
+    {
+      "transformation": "support surface, environment, and motivated lighting",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "forbidden_transformations": [
+    {
+      "transformation": "alter perfume bottle shape, cap, label, or liquid color",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "ambiguities": [],
+  "blocking_questions": [],
+  "pipeline_hints": {
+    "has_reference": true,
+    "requires_reference_translator": true,
+    "requires_subject_identity_preservation": false,
+    "edit_mode": false,
+    "text_generation_required": false,
+    "human_clarification_required": false
+  },
+  "provenance": {
+    "interpreter_version": "1.0.0",
+    "created_at": "2026-08-15T12:00:00Z",
+    "notes": "Synthetic cross-category runtime fixture."
+  },
+  "status": "READY"
+}

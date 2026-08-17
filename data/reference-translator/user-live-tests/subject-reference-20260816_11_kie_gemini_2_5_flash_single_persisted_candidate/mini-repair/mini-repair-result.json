@@ -1,0 +1,49 @@
+{
+  "status": "REJECTED",
+  "source_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\attempt_01.raw.json",
+  "source_sha256": "1d8ea00bbf9d084092696b60056f342588e9935d72d6384d83aa5c9339b0ee6d",
+  "repaired_candidate_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_01\\attempt_01.raw.json",
+  "repaired_candidate_metadata_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\candidates\\run_user_subject_reference_20260816_11_mini_repair_01\\attempt_01.meta.json",
+  "changed_paths": [
+    "/reference_analyses/0/authority"
+  ],
+  "json_parse": "PASS",
+  "schema": "PASS",
+  "semantic": "FAIL",
+  "quality": "NOT_RUN",
+  "persisted": "NO",
+  "plan_path": null,
+  "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\runs\\run_user_subject_reference_20260816_11_mini_repair_01.trace.json",
+  "diagnostics": [
+    {
+      "code": "SOURCE_HUE_OVERANCHOR",
+      "severity": "BLOCK",
+      "message": "A source hue cannot become a target requirement unless the target brief or brand explicitly owns it; preserve value, saturation, temperature, accent, separation, and material-response relationships instead.",
+      "path": "design_decision_map[1].target_in_new_composition",
+      "details": {
+        "source_hue": "purple",
+        "reference_asset_id": "primary_tech_reference"
+      }
+    },
+    {
+      "code": "SOURCE_HUE_OVERANCHOR",
+      "severity": "BLOCK",
+      "message": "A source hue cannot become a target requirement unless the target brief or brand explicitly owns it; preserve value, saturation, temperature, accent, separation, and material-response relationships instead.",
+      "path": "design_decision_map[2].target_in_new_composition",
+      "details": {
+        "source_hue": "green",
+        "reference_asset_id": "primary_tech_reference"
+      }
+    }
+  ],
+  "provider": {
+    "model": "gemini-2.5-flash",
+    "input_tokens": 2038,
+    "output_tokens": 1877,
+    "total_tokens": 3915,
+    "credits": 0.32,
+    "latency_ms": 7565,
+    "finish_reason": "stop"
+  },
+  "result_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816_11_kie_gemini_2_5_flash_single_persisted_candidate\\mini-repair\\mini-repair-result.json"
+}

@@ -1,0 +1,1892 @@
+{
+  "schema_version": "1.0.0",
+  "suite_id": "REFERENCE_TRANSLATOR_COGNITIVE_EVAL_V1_1",
+  "scoring": "CATEGORICAL_ONLY",
+  "live_model_invoked": false,
+  "fixtures": [
+    {
+      "fixture_id": "perfume_skincare_bag",
+      "family": "product_adaptation",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A warm handbag forms a soft secondary mass beside skincare packaging",
+      "target_context": "warm woody fragrance",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "soft fashion luxury, tactile warmth, tonal unity, and secondary-mass balance",
+        "transferable_mechanism": "separate the support object's material, emotional, and compositional roles from its literal identity",
+        "target_native_expression": "Use cognac leather, dark suede, burnished wood, or amber resin as a warm tactile fragrance support.",
+        "reference_dna_survives": [
+          "soft fashion luxury, tactile warmth, tonal unity, and secondary-mass balance",
+          "separate the support object's material, emotional, and compositional roles from its literal identity"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "handbag"
+        ],
+        "required_target_term_groups": [
+          [
+            "cognac leather",
+            "dark suede",
+            "burnished wood",
+            "amber resin"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "leaves_to_aviation",
+      "family": "cross_domain_substitution",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Blurred leaves frame the subject and occlude the foreground",
+      "target_context": "aviation mentor hero",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "organic framing, immersion, and near-plane depth",
+        "transferable_mechanism": "replace source-category foliage with a domain-native foreground that preserves occlusion and entry direction",
+        "target_native_expression": "Use a cropped hangar beam, cockpit edge, or flight document as the near-plane frame.",
+        "reference_dna_survives": [
+          "organic framing, immersion, and near-plane depth",
+          "replace source-category foliage with a domain-native foreground that preserves occlusion and entry direction"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "leaves",
+          "foliage"
+        ],
+        "required_target_term_groups": [
+          [
+            "hangar",
+            "cockpit",
+            "flight document"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "purple_to_finance",
+      "family": "color",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Localized purple and blue accents separate a subject from darkness",
+      "target_context": "financial advisory campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "concentrated chromatic separation inside a restrained dark field",
+        "transferable_mechanism": "preserve saturation hierarchy and edge contrast while moving to target-owned color",
+        "target_native_expression": "Use restrained brand-owned accents, deep neutral anchors, and controlled warm-cool edge separation.",
+        "reference_dna_survives": [
+          "concentrated chromatic separation inside a restrained dark field",
+          "preserve saturation hierarchy and edge contrast while moving to target-owned color"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "purple",
+          "blue"
+        ],
+        "required_target_term_groups": [
+          [
+            "brand-owned accents",
+            "deep neutral"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "huge_serif_to_technology",
+      "family": "typography",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "An overscale high-contrast serif word counterbalances a small device",
+      "target_context": "technology launch",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "typographic counter-mass, scale contrast, and shared image depth",
+        "transferable_mechanism": "rebuild mass and overlap with target-owned typography and target copy",
+        "target_native_expression": "Use an overscale target headline with device-safe occlusion and a compact technical support tier.",
+        "reference_dna_survives": [
+          "typographic counter-mass, scale contrast, and shared image depth",
+          "rebuild mass and overlap with target-owned typography and target copy"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "serif",
+          "source headline"
+        ],
+        "required_target_term_groups": [
+          [
+            "target headline",
+            "device-safe"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "halo_separation",
+      "family": "lighting",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A circular bright region behind a portrait separates the silhouette",
+      "target_context": "medical expert portrait",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "silhouette separation, containment, and localized emphasis",
+        "transferable_mechanism": "preserve edge readability through a motivated source or controlled value field",
+        "target_native_expression": "Use a window-motivated backlight or localized background-value lift with natural spill on the environment.",
+        "reference_dna_survives": [
+          "silhouette separation, containment, and localized emphasis",
+          "preserve edge readability through a motivated source or controlled value field"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "halo"
+        ],
+        "required_target_term_groups": [
+          [
+            "window-motivated",
+            "value lift"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "generic_cards",
+      "family": "cards_generic_assembly",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Interchangeable glass panels with fake charts orbit a service subject",
+      "target_context": "legal service hero",
+      "candidate": {
+        "action": "DISCARD",
+        "visual_function": "the source attempts to provide evidence and secondary depth",
+        "transferable_mechanism": "replace filler panels with specific target artifacts only when real information exists",
+        "target_native_expression": "Use one verified legal document grouping or environmental signage subordinate to the lawyer.",
+        "reference_dna_survives": [
+          "the source attempts to provide evidence and secondary depth",
+          "replace filler panels with specific target artifacts only when real information exists"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "DISCARD"
+        ],
+        "forbidden_target_terms": [
+          "glass panels",
+          "fake charts"
+        ],
+        "required_target_term_groups": [
+          [
+            "legal document",
+            "signage"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "good_cards",
+      "family": "cards_positive",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Project-specific cards form one coherent subordinate portfolio cluster",
+      "target_context": "designer personal brand",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "specific evidence grouping, narrative sequence, and subordinate hierarchy",
+        "transferable_mechanism": "preserve integrated information artifacts while changing their content and geometry",
+        "target_native_expression": "Use target project cards with real title, role, outcome, and a shared grid subordinate to the designer.",
+        "reference_dna_survives": [
+          "specific evidence grouping, narrative sequence, and subordinate hierarchy",
+          "preserve integrated information artifacts while changing their content and geometry"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source project",
+          "source card geometry"
+        ],
+        "required_target_term_groups": [
+          [
+            "project cards",
+            "shared grid"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "high_complexity",
+      "family": "complexity",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Many related artifacts cluster around a creator under one light system",
+      "target_context": "education campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "controlled intentional complexity and focal evidence density",
+        "transferable_mechanism": "retain abundance when elements share hierarchy, narrative, depth, and lighting",
+        "target_native_expression": "Use a clustered set of real lesson materials, notes, and learning artifacts around one clear teacher focal point.",
+        "reference_dna_survives": [
+          "controlled intentional complexity and focal evidence density",
+          "retain abundance when elements share hierarchy, narrative, depth, and lighting"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source artifacts"
+        ],
+        "required_target_term_groups": [
+          [
+            "lesson materials",
+            "learning artifacts"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "bad_microdetail",
+      "family": "microdetail",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Tiny icons, numbers, dots, and glows fill quiet regions",
+      "target_context": "skincare launch",
+      "candidate": {
+        "action": "DISCARD",
+        "visual_function": "no truth-bearing material, information, or environmental function survives",
+        "transferable_mechanism": "remove functionless frequency and restore clean focal hierarchy",
+        "target_native_expression": "Use only readable dosage marks, package seams, and verified product detail at output scale.",
+        "reference_dna_survives": [
+          "no truth-bearing material, information, or environmental function survives",
+          "remove functionless frequency and restore clean focal hierarchy"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "DISCARD"
+        ],
+        "forbidden_target_terms": [
+          "tiny icons",
+          "random numbers",
+          "dots",
+          "glows"
+        ],
+        "required_target_term_groups": [
+          [
+            "dosage marks",
+            "package seams"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "good_microdetail",
+      "family": "microdetail",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Engraving, seams, and material imperfections reveal manufacture",
+      "target_context": "watch campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "craft credibility and scale-specific material truth",
+        "transferable_mechanism": "preserve only details that remain functional and visible at final size",
+        "target_native_expression": "Use target dial engraving, case brushing, crown machining, and controlled dust-free surface detail.",
+        "reference_dna_survives": [
+          "craft credibility and scale-specific material truth",
+          "preserve only details that remain functional and visible at final size"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source engraving"
+        ],
+        "required_target_term_groups": [
+          [
+            "dial engraving",
+            "case brushing",
+            "crown"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "velvet_to_finance",
+      "family": "material",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Velvet supplies soft darkness beneath precision-lit jewelry",
+      "target_context": "enterprise finance service",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "low-frequency softness, luxury restraint, and exact highlight contrast",
+        "transferable_mechanism": "translate tactile darkness into a professional target material system",
+        "target_native_expression": "Use matte tailoring, dark paper, and restrained architectural surfaces around the executive.",
+        "reference_dna_survives": [
+          "low-frequency softness, luxury restraint, and exact highlight contrast",
+          "translate tactile darkness into a professional target material system"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "velvet",
+          "jewelry"
+        ],
+        "required_target_term_groups": [
+          [
+            "tailoring",
+            "dark paper",
+            "architectural"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "product_to_service",
+      "family": "service_translation",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A camera is isolated on a precise pedestal with sculpted studio light",
+      "target_context": "photography consultant hero",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "singular hierarchy, material precision, and focused reveal",
+        "transferable_mechanism": "move product-style discipline to the expert, process evidence, and environment",
+        "target_native_expression": "Use the consultant operating a camera beside a controlled contact sheet and one precisely lit work surface.",
+        "reference_dna_survives": [
+          "singular hierarchy, material precision, and focused reveal",
+          "move product-style discipline to the expert, process evidence, and environment"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "pedestal",
+          "boxed product"
+        ],
+        "required_target_term_groups": [
+          [
+            "consultant",
+            "contact sheet",
+            "work surface"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "editorial_to_ad",
+      "family": "editorial_adaptation",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Daring portrait crop and type overlap create magazine tension",
+      "target_context": "course enrollment ad",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "editorial crop, rhythm, texture, and type-image energy",
+        "transferable_mechanism": "preserve art direction while adding target information clarity and safe communication territory",
+        "target_native_expression": "Use the target instructor, owned headline, course proof, date, and CTA in a clear hierarchy around an identity-safe crop.",
+        "reference_dna_survives": [
+          "editorial crop, rhythm, texture, and type-image energy",
+          "preserve art direction while adding target information clarity and safe communication territory"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED",
+        "information_clarity_adapted": true
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source headline",
+          "publication"
+        ],
+        "required_target_term_groups": [
+          [
+            "course proof",
+            "CTA",
+            "headline"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED",
+          "INFORMATION_CLARITY_ADAPTED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "landscape_to_portrait",
+      "family": "format_translation",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A wide source separates subject, product, and copy laterally",
+      "target_context": "vertical social story",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "ordered hierarchy and territorial separation across three stops",
+        "transferable_mechanism": "recompose relationships through vertical stacking, overlap, and selective crop",
+        "target_native_expression": "Stack message, hero, and evidence vertically with one overlapping transition and a protected copy-safe upper field.",
+        "reference_dna_survives": [
+          "ordered hierarchy and territorial separation across three stops",
+          "recompose relationships through vertical stacking, overlap, and selective crop"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "format_relation_translated": true
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "lateral coordinates"
+        ],
+        "required_target_term_groups": [
+          [
+            "vertically",
+            "copy-safe"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "FORMAT_RELATION_TRANSLATED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "low_quality_selective",
+      "family": "selective_transfer",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A weak composite contains one useful warm side-light relationship",
+      "target_context": "premium service portrait",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "motivated lateral modeling and warm environmental integration",
+        "transferable_mechanism": "transfer only the verified light relationship and reject weak composition and pasted edges",
+        "target_native_expression": "Use a warm window-side key with matching bounce and contact shadow in a newly composed target environment.",
+        "reference_dna_survives": [
+          "motivated lateral modeling and warm environmental integration",
+          "transfer only the verified light relationship and reject weak composition and pasted edges"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "pasted edges",
+          "muddy grade"
+        ],
+        "required_target_term_groups": [
+          [
+            "window-side key",
+            "matching bounce"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "my_eyes_conflict",
+      "family": "advisory_conflict",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Floating panels contain specific software data but My Eyes warns about generic floating elements",
+      "target_context": "software campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "specific evidence grouping may be useful while floating manifestation carries a known risk",
+        "transferable_mechanism": "preserve the tension and offer integrated and floating target alternatives for Director selection",
+        "target_native_expression": "Use real product-state panels integrated to the interface plane, with suspension treated as an explicit Director option.",
+        "reference_dna_survives": [
+          "specific evidence grouping may be useful while floating manifestation carries a known risk",
+          "preserve the tension and offer integrated and floating target alternatives for Director selection"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "conflict_status": "ESCALATED_TO_DIRECTOR"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "generic floating panels"
+        ],
+        "required_target_term_groups": [
+          [
+            "product-state panels",
+            "interface plane"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "CONFLICT_PRESERVED_FOR_DIRECTOR"
+        ]
+      }
+    },
+    {
+      "fixture_id": "vivid_color",
+      "family": "color",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "High-chroma accents sit inside deep neutrals and clean highlights",
+      "target_context": "youth education campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "color vitality through localized saturation, value depth, and temperature separation",
+        "transferable_mechanism": "preserve energetic hierarchy without saturating every region",
+        "target_native_expression": "Use vivid target-owned lesson accents against deep neutral anchors with clean skin and paper color.",
+        "reference_dna_survives": [
+          "color vitality through localized saturation, value depth, and temperature separation",
+          "preserve energetic hierarchy without saturating every region"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source palette"
+        ],
+        "required_target_term_groups": [
+          [
+            "target-owned",
+            "deep neutral"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "minimal_design",
+      "family": "minimalism",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "One object and large emptiness create confident focus",
+      "target_context": "complex service explanation",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "disciplined hierarchy and quiet communication field",
+        "transferable_mechanism": "retain spatial confidence while adding only required target evidence",
+        "target_native_expression": "Use one expert hero, one real process document, and a calm message field with precise spacing.",
+        "reference_dna_survives": [
+          "disciplined hierarchy and quiet communication field",
+          "retain spatial confidence while adding only required target evidence"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "empty-only layout"
+        ],
+        "required_target_term_groups": [
+          [
+            "process document",
+            "message field"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "maximal_design",
+      "family": "maximalism",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Props, type fragments, and effects converge on one launch moment",
+      "target_context": "product campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "maximal coherence through shared thesis, depth, light, and directional flow",
+        "transferable_mechanism": "retain abundant target-relevant families while keeping one focal hierarchy",
+        "target_native_expression": "Use product-specific artifacts in layered clusters under one light path, with all vectors converging on the launch hero.",
+        "reference_dna_survives": [
+          "maximal coherence through shared thesis, depth, light, and directional flow",
+          "retain abundant target-relevant families while keeping one focal hierarchy"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source prop inventory"
+        ],
+        "required_target_term_groups": [
+          [
+            "layered clusters",
+            "converging"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "random_particles",
+      "family": "effects",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Uniform glowing dots occupy empty background",
+      "target_context": "financial mentor portrait",
+      "candidate": {
+        "action": "DISCARD",
+        "visual_function": "no meaningful scale, light, atmosphere, or narrative function survives",
+        "transferable_mechanism": "replace automatic filler with structural target depth only if needed",
+        "target_native_expression": "Use an architectural foreground edge, restrained depth falloff, and a clean dark communication field.",
+        "reference_dna_survives": [
+          "no meaningful scale, light, atmosphere, or narrative function survives",
+          "replace automatic filler with structural target depth only if needed"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "DISCARD"
+        ],
+        "forbidden_target_terms": [
+          "particles",
+          "glowing dots"
+        ],
+        "required_target_term_groups": [
+          [
+            "foreground edge",
+            "depth falloff"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "atmospheric_particles",
+      "family": "effects",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Backlit workshop dust decreases with distance and reveals a light beam",
+      "target_context": "craft brand hero",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "atmospheric depth, place specificity, scale, and visible light direction",
+        "transferable_mechanism": "preserve physically motivated particulate behavior at restrained density",
+        "target_native_expression": "Use target workshop dust only inside the beam, with distance falloff and the maker remaining dominant.",
+        "reference_dna_survives": [
+          "atmospheric depth, place specificity, scale, and visible light direction",
+          "preserve physically motivated particulate behavior at restrained density"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "uniform particles"
+        ],
+        "required_target_term_groups": [
+          [
+            "workshop dust",
+            "distance falloff"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "wood_prop",
+      "family": "objects_material",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A raw wood slab grounds a skincare bottle",
+      "target_context": "technology device launch",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "weight, contact, warm organic contrast, and a stable secondary mass",
+        "transferable_mechanism": "translate grounding and texture into a target engineering material",
+        "target_native_expression": "Use a warm engineered polymer or paper-composite support with credible contact shadow beneath the device.",
+        "reference_dna_survives": [
+          "weight, contact, warm organic contrast, and a stable secondary mass",
+          "translate grounding and texture into a target engineering material"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "wood slab"
+        ],
+        "required_target_term_groups": [
+          [
+            "engineered polymer",
+            "paper-composite"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "brand_logo",
+      "family": "brand_protection",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A source logo anchors the upper-left balance",
+      "target_context": "unrelated target brand",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "small high-contrast counter-mass and brand anchor",
+        "transferable_mechanism": "preserve the spatial role through target-owned mark or copy",
+        "target_native_expression": "Use the supplied target logo or target headline as the upper-left counterweight with newly composed spacing.",
+        "reference_dna_survives": [
+          "small high-contrast counter-mass and brand anchor",
+          "preserve the spatial role through target-owned mark or copy"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "source logo"
+        ],
+        "required_target_term_groups": [
+          [
+            "target logo",
+            "target headline"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "reference_text",
+      "family": "copy_protection",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A source slogan creates a tight stacked type block",
+      "target_context": "campaign with different target copy",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "stacked density, short-line rhythm, and strong typographic mass",
+        "transferable_mechanism": "rebuild behavior with authorized target wording",
+        "target_native_expression": "Use the supplied target headline in a tight stacked block with new line breaks and target typography.",
+        "reference_dna_survives": [
+          "stacked density, short-line rhythm, and strong typographic mass",
+          "rebuild behavior with authorized target wording"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source slogan"
+        ],
+        "required_target_term_groups": [
+          [
+            "target headline",
+            "stacked"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "source_person",
+      "family": "identity",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A celebrity profile crop creates elegant edge tension",
+      "target_context": "founder personal brand",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "profile contemplation, edge pressure, and controlled side light",
+        "transferable_mechanism": "apply treatment only to the supplied founder identity",
+        "target_native_expression": "Use the founder's verified image in a profile-safe crop with target-owned styling and side light.",
+        "reference_dna_survives": [
+          "profile contemplation, edge pressure, and controlled side light",
+          "apply treatment only to the supplied founder identity"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "celebrity",
+          "source person"
+        ],
+        "required_target_term_groups": [
+          [
+            "founder",
+            "profile-safe"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "distinctive_object",
+      "family": "objects",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A unique sculptural bag forms a curved foreground arch",
+      "target_context": "perfume campaign",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "curved occlusion, soft secondary mass, and fashion-luxury energy",
+        "transferable_mechanism": "replace the distinctive object with a fragrance-native material structure",
+        "target_native_expression": "Use a curved leather fold, amber glass plane, or warm shadow arch that frames the bottle.",
+        "reference_dna_survives": [
+          "curved occlusion, soft secondary mass, and fashion-luxury energy",
+          "replace the distinctive object with a fragrance-native material structure"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "sculptural bag"
+        ],
+        "required_target_term_groups": [
+          [
+            "leather fold",
+            "amber glass",
+            "shadow arch"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "no_reference",
+      "family": "no_reference",
+      "epistemic_status": "SYNTHETIC_TEST_CONTROL",
+      "source_observation": "No reference asset is supplied.",
+      "target_context": "brief explicitly declares no reference",
+      "candidate": {
+        "action": "NONE",
+        "visual_function": "",
+        "transferable_mechanism": "",
+        "target_native_expression": "",
+        "reference_dna_survives": [],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY"
+      },
+      "expectations": {
+        "action_in": [
+          "NONE"
+        ],
+        "forbidden_target_terms": [],
+        "required_target_term_groups": [],
+        "minimum_reference_dna_items": 0,
+        "categories": [
+          "NO_REFERENCE_HALLUCINATION_ABSENT",
+          "TARGET_SEMANTICS_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "irrelevant_reference",
+      "family": "irrelevant_reference",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A tropical resort image is supplied for a regulated compliance document",
+      "target_context": "compliance information design",
+      "candidate": {
+        "action": "DISCARD",
+        "visual_function": "no verified reference mechanism materially improves the target task",
+        "transferable_mechanism": "declare the reference irrelevant and preserve downstream creative freedom",
+        "target_native_expression": "Follow only the brief-defined target information hierarchy and introduce no reference-derived styling.",
+        "reference_dna_survives": [
+          "no verified reference mechanism materially improves the target task",
+          "declare the reference irrelevant and preserve downstream creative freedom"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "relevance": "IRRELEVANT"
+      },
+      "expectations": {
+        "action_in": [
+          "DISCARD"
+        ],
+        "forbidden_target_terms": [
+          "resort",
+          "tropical",
+          "foliage"
+        ],
+        "required_target_term_groups": [
+          [
+            "information hierarchy"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IRRELEVANT_REFERENCE_DISCARDED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "multiple_reference_conflict",
+      "family": "conflict",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "One reference is minimal monochrome and another is a vivid maximal collage",
+      "target_context": "brand campaign",
+      "candidate": {
+        "action": "CONFLICT",
+        "visual_function": "the references provide incompatible density, color, and hierarchy systems",
+        "transferable_mechanism": "keep alternatives separately traceable and escalate synthesis",
+        "target_native_expression": "Present a disciplined monochrome route and a convergent vivid route as separate Director options tied to their source assets.",
+        "reference_dna_survives": [
+          "the references provide incompatible density, color, and hierarchy systems",
+          "keep alternatives separately traceable and escalate synthesis"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "conflict_status": "ESCALATED_TO_DIRECTOR"
+      },
+      "expectations": {
+        "action_in": [
+          "CONFLICT"
+        ],
+        "forbidden_target_terms": [
+          "averaged gradient"
+        ],
+        "required_target_term_groups": [
+          [
+            "separate",
+            "Director options"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "CONFLICT_PRESERVED_FOR_DIRECTOR"
+        ]
+      }
+    },
+    {
+      "fixture_id": "identity_replacement_trap",
+      "family": "identity",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Reference packaging is more visually striking than the supplied target package",
+      "target_context": "skincare product campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "lighting and support hierarchy may be useful while product identity is not",
+        "transferable_mechanism": "preserve supplied packaging and adapt only compatible staging mechanisms",
+        "target_native_expression": "Use the supplied package with target-safe light, coherent material support, and full label visibility.",
+        "reference_dna_survives": [
+          "lighting and support hierarchy may be useful while product identity is not",
+          "preserve supplied packaging and adapt only compatible staging mechanisms"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source packaging"
+        ],
+        "required_target_term_groups": [
+          [
+            "supplied package",
+            "label visibility"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "hierarchy_transfer",
+      "family": "hierarchy",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Face, product, and headline form a descending contrast sequence",
+      "target_context": "personal brand with service proof",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "ordered semantic and luminance hierarchy across three focal stops",
+        "transferable_mechanism": "reassign the same priority logic to target person, proof, and message",
+        "target_native_expression": "Use expert first, verified process artifact second, and target headline third through descending contrast and detail.",
+        "reference_dna_survives": [
+          "ordered semantic and luminance hierarchy across three focal stops",
+          "reassign the same priority logic to target person, proof, and message"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source face",
+          "source product"
+        ],
+        "required_target_term_groups": [
+          [
+            "expert",
+            "process artifact",
+            "headline"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "structural_depth",
+      "family": "depth",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A relevant foreground document overlaps a person, with softer architecture behind",
+      "target_context": "finance expert campaign",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "three-plane depth through semantic occlusion, scale, and falloff",
+        "transferable_mechanism": "rebuild planes using target evidence and environment",
+        "target_native_expression": "Use a cropped planning document foreground, advisor midground, and lower-contrast office architecture background.",
+        "reference_dna_survives": [
+          "three-plane depth through semantic occlusion, scale, and falloff",
+          "rebuild planes using target evidence and environment"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source document"
+        ],
+        "required_target_term_groups": [
+          [
+            "planning document",
+            "midground",
+            "background"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "motivated_lighting",
+      "family": "lighting",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Window key, warm bounce, and cool environmental rim integrate a subject",
+      "target_context": "personal brand portrait",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "shared source world, material reveal, and silhouette separation",
+        "transferable_mechanism": "preserve light functions with target location and palette",
+        "target_native_expression": "Use a target-room window key, surface-derived warm bounce, and a restrained environment-colored edge.",
+        "reference_dna_survives": [
+          "shared source world, material reveal, and silhouette separation",
+          "preserve light functions with target location and palette"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source window"
+        ],
+        "required_target_term_groups": [
+          [
+            "window key",
+            "warm bounce",
+            "edge"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "generic_assembly",
+      "family": "generic_assembly",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A neon tunnel, glass cards, particles, and rim light form interchangeable tech scenery",
+      "target_context": "wellness service hero",
+      "candidate": {
+        "action": "DISCARD",
+        "visual_function": "no coherent target narrative survives the accumulated effect vocabulary",
+        "transferable_mechanism": "remove generic assembly and rebuild environment from target practice and place",
+        "target_native_expression": "Use a real wellness setting, purposeful practice artifact, natural depth, and motivated local light.",
+        "reference_dna_survives": [
+          "no coherent target narrative survives the accumulated effect vocabulary",
+          "remove generic assembly and rebuild environment from target practice and place"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "DISCARD"
+        ],
+        "forbidden_target_terms": [
+          "neon tunnel",
+          "glass cards",
+          "particles",
+          "rim light"
+        ],
+        "required_target_term_groups": [
+          [
+            "wellness setting",
+            "practice artifact"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "undertransfer",
+      "family": "undertransfer",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A reference has a distinctive dense focal island opposite a calm type field",
+      "target_context": "product launch",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "density gradient, territorial separation, and dominant-subordinate mass define the reference DNA",
+        "transferable_mechanism": "state the structural relation and rebuild it with target elements",
+        "target_native_expression": "Use a target product-and-evidence cluster on one side and a low-density headline field opposite, joined by one light path.",
+        "reference_dna_survives": [
+          "density gradient, territorial separation, and dominant-subordinate mass define the reference DNA",
+          "state the structural relation and rebuild it with target elements"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "similar mood"
+        ],
+        "required_target_term_groups": [
+          [
+            "cluster",
+            "low-density",
+            "light path"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "overtransfer",
+      "family": "overtransfer",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A close-category reference shares bottle, props, palette, crop, and typography",
+      "target_context": "new fragrance launch",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "ritual hierarchy and tactile contrast are useful but collective similarity is unsafe",
+        "transferable_mechanism": "change support, crop, color family, type relation, and environment while keeping one signature relationship",
+        "target_native_expression": "Use a distinct target bottle staging with new camera relation and material support, preserving only ritual focus and tactile contrast.",
+        "reference_dna_survives": [
+          "ritual hierarchy and tactile contrast are useful but collective similarity is unsafe",
+          "change support, crop, color family, type relation, and environment while keeping one signature relationship"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "source props",
+          "source palette",
+          "source crop",
+          "source typography"
+        ],
+        "required_target_term_groups": [
+          [
+            "new camera",
+            "material support",
+            "ritual focus"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "target_native_superiority",
+      "family": "target_native_adaptation",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "A laboratory reference uses glassware to signal precision",
+      "target_context": "software quality platform",
+      "candidate": {
+        "action": "REINVENT",
+        "visual_function": "structured testing, calibration, and visible process create trust",
+        "transferable_mechanism": "express precision through the target's real system rather than laboratory objects",
+        "target_native_expression": "Use versioned test results, workflow states, and a precise interface structure under restrained technical light.",
+        "reference_dna_survives": [
+          "structured testing, calibration, and visible process create trust",
+          "express precision through the target's real system rather than laboratory objects"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "REINVENT"
+        ],
+        "forbidden_target_terms": [
+          "glassware",
+          "test tubes"
+        ],
+        "required_target_term_groups": [
+          [
+            "test results",
+            "workflow states",
+            "interface"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    },
+    {
+      "fixture_id": "visual_convergence",
+      "family": "convergence",
+      "epistemic_status": "SYNTHETIC_DESIGN_KNOWLEDGE",
+      "source_observation": "Many objects share one diagonal, warm light, and transformation narrative",
+      "target_context": "campaign hero",
+      "candidate": {
+        "action": "ADAPT",
+        "visual_function": "spatial, lighting, and semantic convergence turn abundance into one idea",
+        "transferable_mechanism": "retain only target elements that reinforce the shared destination and transformation",
+        "target_native_expression": "Use target artifacts aligned to one diagonal light path, all supporting the same verified change proposition.",
+        "reference_dna_survives": [
+          "spatial, lighting, and semantic convergence turn abundance into one idea",
+          "retain only target elements that reinforce the shared destination and transformation"
+        ],
+        "protected_semantics_status": "PRESERVED",
+        "category_coherence": "PRESERVED",
+        "my_eyes_authority": "ADVISORY_ONLY",
+        "vkb_authority": "ADVISORY_ONLY",
+        "identity_status": "PRESERVED"
+      },
+      "expectations": {
+        "action_in": [
+          "ADAPT"
+        ],
+        "forbidden_target_terms": [
+          "source objects"
+        ],
+        "required_target_term_groups": [
+          [
+            "diagonal light path",
+            "change proposition"
+          ]
+        ],
+        "minimum_reference_dna_items": 1,
+        "categories": [
+          "MECHANISM_IDENTIFIED",
+          "TARGET_NATIVE_ADAPTATION_PRESENT",
+          "LITERAL_COPY_AVOIDED",
+          "REFERENCE_DNA_PRESERVED",
+          "TARGET_SEMANTICS_PRESERVED",
+          "CATEGORY_COHERENCE_PRESERVED",
+          "MY_EYES_BOUNDARY_PRESERVED",
+          "VKB_BOUNDARY_PRESERVED",
+          "REQUIRED_TARGET_TERMS_PRESENT",
+          "IDENTITY_PRESERVED"
+        ]
+      }
+    }
+  ]
+}

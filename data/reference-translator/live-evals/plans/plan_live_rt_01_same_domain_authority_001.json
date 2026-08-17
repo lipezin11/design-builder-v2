@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "plan_live_rt_01_same_domain_authority_001",
+  "project_id": "project_live_rt_01_same_domain_authority",
+  "brief_spec_version": "1.0.0",
+  "status": "READY_FOR_DIRECTOR",
+  "transfer_mode": "REFERENCE_REINTERPRETATION",
+  "transfer_intensity": {
+    "value": "HIGH",
+    "source": "USER_EXPLICIT",
+    "confidence": "HIGH"
+  },
+  "base_analysis": {
+    "base_asset_id": "target_live_rt_01_same_domain_authority",
+    "semantic_identity": "executive strategy keynote banner",
+    "protected_elements": [
+      "target professional context",
+      "target communication goal"
+    ],
+    "subject_identity_requirements": "Do not reuse reference person identity",
+    "existing_composition_constraints": [
+      "16:9 landscape format",
+      "LinkedIn platform",
+      "text overlay expected",
+      "executive authority tone"
+    ],
+    "elements_allowed_to_change": [
+      "composition details",
+      "environment specifics",
+      "wardrobe",
+      "subject identity",
+      "copy content",
+      "color palette within professional bounds"
+    ],
+    "elements_forbidden_to_change": [
+      "professional context",
+      "authority tone",
+      "strategic clarity communication goal"
+    ]
+  },
+  "reference_analyses": [
+    {
+      "reference_asset_id": "live_ref_authority_speaker",
+      "role": "PRIMARY_REFERENCE",
+      "scope": "GLOBAL_VISUAL_DIRECTION",
+      "authority": "USER_PRIMARY_REFERENCE",
+      "observations": [
+        {
+          "observation_id": "obs_001",
+          "category": "COMPOSITION",
+          "description": "Subject positioned in right third of frame, facing left with open gesturing pose",
+          "region": "right third",
+          "salience": "DOMINANT",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_002",
+          "category": "SUBJECT_TREATMENT",
+          "description": "Adult male in dark business suit, white shirt, dark tie, holding presentation clicker",
+          "region": "right third",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_003",
+          "category": "SUBJECT_TREATMENT",
+          "description": "Left hand extended in open gesture, right hand holds clicker",
+          "region": "center right",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_004",
+          "category": "ENVIRONMENT",
+          "description": "Large audience visible in background, out of focus, providing scale and context",
+          "region": "background left",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_005",
+          "category": "LIGHTING",
+          "description": "Stage key light illuminates subject from front-left, creating dimensional modeling; blue environmental light cast on background",
+          "region": "full frame",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_006",
+          "category": "ENVIRONMENT",
+          "description": "Ceiling structure with geometric panels and overhead stage lights",
+          "region": "upper background",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_007",
+          "category": "COMPOSITION",
+          "description": "Dark atmospheric left side contrasts with illuminated subject and background",
+          "region": "left side",
+          "salience": "MEDIUM",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        },
+        {
+          "observation_id": "obs_008",
+          "category": "DEPTH",
+          "description": "Layered depth: foreground subject, midground stage, background audience, far background architecture",
+          "region": "full frame",
+          "salience": "HIGH",
+          "confidence": "HIGH",
+          "provenance": "OBSERVED"
+        }
+      ],
+      "reference_dna": {
+        "authority_building": "asymmetric subject placement, gestural confidence, professional stage presence",
+        "hierarchy": "subject dominates right side, audience provides scale context, left side reserved for environmental depth",
+        "depth": "layered planes with atmospheric separation and scale falloff",
+        "environmental_context": "conference hall, professional stage setting with architectural structure",
+        "lighting": "motivated stage key with edge separation and blue environmental cast"
+      },
+      "transfer_relevance": "VERY_HIGH",
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "design_decision_map": [
+    {
+      "mapping_id": "map_001",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_001",
+        "obs_007"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Rebalance for 16:9 landscape banner: subject in right third, communication territory on left, maintaining asymmetric authority and edge-weighted tension",
+      "rationale": "Preserves the dominant-subordinate mass system and edge-weighted composition that creates executive authority while adapting to banner format requirements and protecting copy legibility",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "subject must remain dominant",
+        "communication territory must remain legible"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_002",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_002",
+        "obs_003"
+      ],
+      "action": "REINVENT",
+      "target_in_new_composition": "Executive strategy advisor in target-appropriate professional wardrobe, confident open gesture, presentation tool if contextually appropriate",
+      "rationale": "Transfers the authority-building pose and gestural confidence while replacing source person identity and specific clothing with target-native professional expression",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "professional context",
+        "authority tone"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_003",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_008"
+      ],
+      "action": "TRANSFER",
+      "target_in_new_composition": "Foreground executive, midground stage/presentation environment, background audience or architectural context with atmospheric separation",
+      "rationale": "Creates spatial hierarchy, scale, and narrative credibility through coherent depth planes that integrate subject and environment",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "subject must remain in foreground",
+        "background must support not compete"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_004",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_005"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Motivated stage or environmental key light with controlled rim separation and professional color temperature",
+      "rationale": "Models subject volume, creates hierarchy, and communicates professional stage presence without copying exact blue grade or specific emitter",
+      "strength": "HIGH",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "light must serve subject hierarchy",
+        "color must remain professional"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_005",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_004"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Audience, attendees, or architectural scale cues that establish keynote importance and professional context",
+      "rationale": "Provides narrative scale and confirms the executive speaking context without copying specific event or crowd",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "scale context must support subject authority"
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_006",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_001",
+        "obs_007"
+      ],
+      "action": "TRANSFER",
+      "target_in_new_composition": "Reserve left communication field for headline and message while subject occupies dominant right territory",
+      "rationale": "Protects typography legibility and maintains clear hierarchy between visual hero and message in the 16:9 landscape format",
+      "strength": "HIGH",
+      "flexibility": "MEDIUM",
+      "protected_dependencies": [
+        "copy must remain readable",
+        "subject must not be crowded"
+      ],
+      "confidence": "HIGH",
+      "provenance": "OBSERVED"
+    },
+    {
+      "mapping_id": "map_007",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "obs_006"
+      ],
+      "action": "ADAPT",
+      "target_in_new_composition": "Target-native architectural or structural elements that establish venue authority and professional setting",
+      "rationale": "Provides environmental specificity and vertical authority without copying source ceiling design or event branding",
+      "strength": "MEDIUM",
+      "flexibility": "HIGH",
+      "protected_dependencies": [
+        "architecture must serve professional context"
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "conf_001",
+      "type": "REFERENCE_VS_SUBJECT_IDENTITY",
+      "description": "Reference contains a specific person identity that must not transfer to target",
+      "severity": "HIGH",
+      "blocking": false,
+      "involved_assets": [
+        "live_ref_authority_speaker",
+        "target_live_rt_01_same_domain_authority"
+      ],
+      "involved_constraints": [
+        "reference person identity must not become target identity"
+      ],
+      "translator_position": "Resolved through REINVENT action: replace with target-native executive identity while preserving authority-building pose and gestural confidence",
+      "resolution_status": "RESOLVED_BY_ADAPTATION",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    },
+    {
+      "conflict_id": "conf_002",
+      "type": "REFERENCE_VS_BRAND",
+      "description": "Reference contains event-specific branding and context that must not transfer",
+      "severity": "MEDIUM",
+      "blocking": false,
+      "involved_assets": [
+        "live_ref_authority_speaker"
+      ],
+      "involved_constraints": [
+        "source event brand must not transfer"
+      ],
+      "translator_position": "Resolved through ADAPT action: extract authority mechanisms while discarding event-specific elements and branding",
+      "resolution_status": "RESOLVED_BY_DISCARD",
+      "requires_director_decision": false,
+      "requires_user_decision": false,
+      "provenance": "OBSERVED"
+    }
+  ],
+  "non_negotiable_anchors": [
+    {
+      "anchor_id": "anchor_001",
+      "description": "Asymmetric authority composition with subject offset to right and environmental/communication territory on left",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "function": "Create executive authority through dominant-subordinate mass system and edge-weighted tension",
+      "importance": "CRITICAL",
+      "flexibility": "LOW",
+      "reason": "This is the primary signature mechanism of the reference; removing it would collapse the authority-building logic",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_002",
+      "description": "Professional stage lighting with motivated key light and edge separation",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "function": "Model subject volume, create hierarchy, and communicate professional presence",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Lighting is essential to the authority tone but can adapt to target color temperature and emitter logic",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_003",
+      "description": "Layered depth with foreground subject, midground environment, and background scale context",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "function": "Establish spatial hierarchy, scale, and narrative credibility",
+      "importance": "HIGH",
+      "flexibility": "MEDIUM",
+      "reason": "Depth creates the environmental integration that makes the authority figure feel present in a real professional world",
+      "provenance": "OBSERVED"
+    },
+    {
+      "anchor_id": "anchor_004",
+      "description": "Gestural confidence with open hand and presentation tool",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "function": "Communicate strategic communication, openness, and expertise",
+      "importance": "HIGH",
+      "flexibility": "HIGH",
+      "reason": "The functional gesture transfers while exact hand position and tool can adapt to target context",
+      "provenance": "OBSERVED"
+    }
+  ],
+  "flexible_areas": [
+    {
+      "area": "Subject identity and specific wardrobe",
+      "freedom_level": "VERY_HIGH",
+      "rationale": "Brief explicitly forbids copying reference person and clothing; target-native professional attire is required"
+    },
+    {
+      "area": "Environmental architecture",
+      "freedom_level": "HIGH",
+      "rationale": "Conference hall specifics can become any professional stage, boardroom, or architectural context that serves the strategy narrative"
+    },
+    {
+      "area": "Color palette",
+      "freedom_level": "HIGH",
+      "rationale": "Blue environmental cast can adapt to target brand colors while maintaining professional lighting logic"
+    },
+    {
+      "area": "Copy placement and typography",
+      "freedom_level": "HIGH",
+      "rationale": "Banner requires specific headline and message territory that does not exist in reference"
+    },
+    {
+      "area": "Specific gesture and prop details",
+      "freedom_level": "HIGH",
+      "rationale": "Exact hand position and clicker model can change while preserving gestural confidence function"
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "risk_001",
+      "description": "Overtransfer of exact composition coordinates from reference to banner",
+      "severity": "MEDIUM",
+      "mitigation": "Rebalance asymmetric composition for 16:9 landscape while preserving the right-subject-dominant logic and left communication territory"
+    },
+    {
+      "risk_id": "risk_002",
+      "description": "Generic conference hall cliché without target-specific environmental evidence",
+      "severity": "MEDIUM",
+      "mitigation": "Use target-native architectural or stage elements that specifically communicate executive strategy context rather than generic event space"
+    },
+    {
+      "risk_id": "risk_003",
+      "description": "Identity leakage from reference person",
+      "severity": "LOW",
+      "mitigation": "Brief explicitly prohibits source identity; ensure subject is fully replaced with target-native executive or appropriate representation"
+    },
+    {
+      "risk_id": "risk_004",
+      "description": "Lighting color copied without target brand integration",
+      "severity": "LOW",
+      "mitigation": "Adapt lighting temperature and accent to target brand palette while maintaining professional stage lighting logic"
+    }
+  ],
+  "provenance": {
+    "translator_version": "1.0.0",
+    "created_at": "2026-08-15T12:00:00Z",
+    "notes": "Same-domain executive keynote reference analysis. High confidence in mechanism transfer due to domain alignment and clear visual thesis."
+  },
+  "confidence": {
+    "overall": "HIGH",
+    "rationale": "Reference and target share the same domain (executive keynote speaking). Observed mechanisms for authority building, hierarchy, depth, and lighting are clear, specific, and directly applicable. Brief constraints are explicit and protect against identity leakage."
+  },
+  "director_handoff": {
+    "what_must_survive": [
+      "Asymmetric authority composition with subject offset and environmental counterweight",
+      "Professional stage lighting with motivated key and edge separation",
+      "Layered depth establishing scale and context",
+      "Gestural confidence communicating strategic authority"
+    ],
+    "what_should_survive": [
+      "Audience or scale context confirming keynote importance",
+      "Presentation tool or gesture indicating expertise",
+      "Blue-accented or cool professional lighting atmosphere",
+      "Subject-copy territorial separation for legibility"
+    ],
+    "what_can_change": [
+      "Subject identity (must be target-native executive)",
+      "Exact wardrobe and clothing details",
+      "Specific environmental architecture and event branding",
+      "Copy content, typography, and message placement",
+      "Exact color palette within professional bounds",
+      "Specific gesture details and prop identity"
+    ],
+    "key_conflicts": [
+      "Reference person identity vs target identity protection - RESOLVED by REINVENT action",
+      "Source event context vs target professional context - RESOLVED by ADAPT action"
+    ],
+    "recommended_anchors": [
+      "anchor_001: Asymmetric right-subject-dominant composition",
+      "anchor_002: Motivated professional stage lighting",
+      "anchor_003: Foreground-midground-background depth layering",
+      "anchor_004: Confident open gestural treatment"
+    ],
+    "creative_opportunities": [
+      "Adapt the gestural energy to target-specific executive mannerisms",
+      "Use the depth layering to introduce target brand environmental elements",
+      "Leverage the left communication territory for bold headline and strategic message",
+      "Adjust lighting temperature to match target brand while preserving authority"
+    ],
+    "warnings": [
+      "Avoid copying exact composition coordinates; adapt the asymmetric logic to 16:9",
+      "Do not reuse reference person, clothing, or event-specific elements",
+      "Prevent generic conference hall cliché by making environment target-specific",
+      "Ensure copy territory remains dominant and readable in the landscape format"
+    ]
+  }
+}

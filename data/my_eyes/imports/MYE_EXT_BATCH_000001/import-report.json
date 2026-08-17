@@ -1,0 +1,18 @@
+{
+  "status": "WARNING",
+  "source_id": "MYE_EXT_SRC_000001",
+  "images_found": 8,
+  "images_mapped": 8,
+  "observations_imported": 8,
+  "human_labels_imported": 8,
+  "candidate_signals_imported": 4,
+  "human_reasons_created": 0,
+  "pairs_created": 0,
+  "preferences_created": 0,
+  "warnings": [
+    "SMALL_SAMPLE_WARNING: the batch contains four approved and four rejected images.",
+    "Correlation is observed descriptively; causality and designer preference remain unknown.",
+    "RAW_AGGREGATE_MISMATCH: foreground_clearly_present declared {\"blind_count\":5,\"approved_count\":3,\"rejected_count\":2}; recalculated from individual records {\"blind_count\":6,\"approved_count\":4,\"rejected_count\":2}.",
+    "RAW_AGGREGATE_MISMATCH: subject_pasted_possible declared {\"blind_count\":2,\"approved_count\":0,\"rejected_count\":1}; recalculated from individual records {\"blind_count\":2,\"approved_count\":1,\"rejected_count\":1}."
+  ]
+}

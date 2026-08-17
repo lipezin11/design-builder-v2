@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000010",
+  "image_id": "MYE_IMG_000018",
+  "image_sha256": "1547d2eab318cf630b89e7e3150f4961893853ca8de30ad793f0bcf2d895e729",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Portrait technology composition with a centered man extending a hand over a curved carousel of product cards, surrounded by green energy and interface graphics.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Portrait frame centers the figure and curves multiple cards across the lower foreground.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Portrait frame centers the figure and curves multiple cards across the lower foreground.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The frontal subject and circular background are nearly symmetrical, interrupted by the sweeping card arc.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The frontal subject and circular background are nearly symmetrical, interrupted by the sweeping card arc.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The face and extended hand lead into the bright cards and green halo.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The face and extended hand lead into the bright cards and green halo.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Cards occupy the near plane, the subject sits mid-frame and a circular HUD environment recedes behind.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Cards occupy the near plane, the subject sits mid-frame and a circular HUD environment recedes behind.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Green light from the interface elements reflects onto the subject and visually connects the layers.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Green light from the interface elements reflects onto the subject and visually connects the layers.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Emerald backlight and a central halo contrast with restrained frontal illumination.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Emerald backlight and a central halo contrast with restrained frontal illumination.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Black and deep green dominate, with cyan, white and multicolor card imagery as accents.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Black and deep green dominate, with cyan, white and multicolor card imagery as accents.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "NOT_PRESENT",
+      "summary": "No large legible headline is present; only small interface-scale markings appear.",
+      "facts": []
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "A dark abstract technology chamber contains circular circuitry and cable-like structures.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "environment",
+          "observation": "A dark abstract technology chamber contains circular circuitry and cable-like structures.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "A curved row of rectangular content cards overlaps the subject's lower torso and extended hand.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "foreground",
+          "observation": "A curved row of rectangular content cards overlaps the subject's lower torso and extended hand.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Energy arcs, HUD lines, particles, circuitry and luminous card edges are visibly composited.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "effects",
+          "observation": "Energy arcs, HUD lines, particles, circuitry and luminous card edges are visibly composited.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "A photographic person is combined with nonphysical interface cards and energy graphics.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "realism_coherence",
+          "observation": "A photographic person is combined with nonphysical interface cards and energy graphics.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "High density occurs in the lower card arc and circular background, with fewer elements around the face.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "complexity_density",
+          "observation": "High density occurs in the lower card arc and circular background, with fewer elements around the face.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "The extended hand appears to control a semicircular carousel of floating visual cards.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "distinctive_design_decisions",
+          "observation": "The extended hand appears to control a semicircular carousel of floating visual cards.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000018@sha256:1547d2eab318cf630b89e7e3150f4961893853ca8de30ad793f0bcf2d895e729",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

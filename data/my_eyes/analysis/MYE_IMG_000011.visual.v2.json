@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000024",
+  "image_id": "MYE_IMG_000011",
+  "image_sha256": "8176cc82384a9938adf2d64d824335a7fee703fe300007e73100ee4bfa40216a",
+  "analysis_version": 2,
+  "analyzed_at": "2026-08-10T06:03:16.295Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Landscape forest hero with an arms-crossed man on the right, broad dark copy space left, layered jungle foliage, floating glass spheres and a small bird.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Wide format assigns open dark space to the left and a dense portrait-environment cluster to the right.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Wide format assigns open dark space to the left and a dense portrait-environment cluster to the right.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The arms-crossed subject is right-aligned and framed by foliage, spheres and a bird above.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The arms-crossed subject is right-aligned and framed by foliage, spheres and a bird above.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The face and tan shirt lead, followed by illuminated leaves, spheres and bird.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The face and tan shirt lead, followed by illuminated leaves, spheres and bird.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Near foliage, transparent spheres, subject, midground plants and deep forest establish many planes.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Near foliage, transparent spheres, subject, midground plants and deep forest establish many planes.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Warm sun edge light, leaf overlap and green reflections embed the subject in the jungle.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Warm sun edge light, leaf overlap and green reflections embed the subject in the jungle.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Sunlight enters from the upper right as warm rim light over cool shaded green ambient.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Sunlight enters from the upper right as warm rim light over cool shaded green ambient.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Deep green, black and tan dominate with amber highlights.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Deep green, black and tan dominate with amber highlights.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "NOT_PRESENT",
+      "summary": "No legible typography is present in the observed frame.",
+      "facts": []
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "A dense tropical forest contains layered leaves, trunks, haze and a small bird.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "environment",
+          "observation": "A dense tropical forest contains layered leaves, trunks, haze and a small bird.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "Leaves and stems occupy the lower and side edges near the camera.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "foreground",
+          "observation": "Leaves and stems occupy the lower and side edges near the camera.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Transparent spheres, floating particles, warm haze and light shafts are visibly composited.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "effects",
+          "observation": "Transparent spheres, floating particles, warm haze and light shafts are visibly composited.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "A photographic human and forest are combined with unusual suspended glass-like spheres.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "realism_coherence",
+          "observation": "A photographic human and forest are combined with unusual suspended glass-like spheres.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "High environmental detail occupies the right, while the left has low visual density.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "complexity_density",
+          "observation": "High environmental detail occupies the right, while the left has low visual density.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "A small bird and multiple transparent spheres are distributed through the sunlit foliage around the portrait.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "distinctive_design_decisions",
+          "observation": "A small bird and multiple transparent spheres are distributed through the sunlit foliage around the portrait.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain.",
+    "Version 2 removes intent-implying wording from an otherwise unchanged blind observation."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000011@sha256:8176cc82384a9938adf2d64d824335a7fee703fe300007e73100ee4bfa40216a",
+    "recorded_at": "2026-08-10T06:03:16.295Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

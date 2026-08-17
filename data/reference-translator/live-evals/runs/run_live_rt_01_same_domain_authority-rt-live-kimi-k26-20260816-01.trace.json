@@ -1,0 +1,154 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_live_rt_01_same_domain_authority-rt-live-kimi-k26-20260816-01",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "input_mode": "MULTIMODAL",
+  "status": "FAILED",
+  "started_at": "2026-08-16T03:02:12.345Z",
+  "completed_at": "2026-08-16T03:02:25.091Z",
+  "input_hash": "fd33cf71cdc4a522c8e83382a655d34e701448dc4d878c1672730126ea22cf9b",
+  "input_artifacts": {
+    "context_id": "ctx_live_rt_01_same_domain_authority",
+    "brief_ref": {
+      "artifact_id": "brief_live_rt_01_same_domain_authority",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "live_ref_authority_speaker",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": [
+      "MYE_LIVE_LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "VKB_LIVE_LIVE_RT_01_SAME_DOMAIN_AUTHORITY"
+    ]
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "NVIDIA_NIM",
+    "model": "moonshotai/kimi-k2.6"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "MODEL_INVOCATION_FAILED",
+      "diagnostic_codes": [
+        "MODEL_INVOCATION_FAILED"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4324,
+        "reference_context_characters": 817,
+        "my_eyes_advisory_characters": 1262,
+        "vkb_advisory_characters": 1230,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32592,
+        "total_textual_characters": 519410,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 131392,
+        "serialized_http_body_characters": 660282,
+        "input_tokens": 129853,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 8192,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 124099,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "moonshotai/kimi-k2.6",
+        "transport_attempt_count": 2,
+        "latency_ms": 12722,
+        "final_attempt_latency_ms": 919,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_authority_speaker",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 98544,
+            "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4324,
+          "reference_context_characters": 817,
+          "my_eyes_advisory_characters": 1262,
+          "vkb_advisory_characters": 1230,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32592,
+          "total_textual_characters": 519410,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 131392,
+          "serialized_http_body_characters": 660282,
+          "input_tokens": 129853,
+          "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+          "output_budget_tokens": 8192,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 124099,
+          "context_classification": "SAFE"
+        },
+        "usage": null,
+        "error": {
+          "code": "MODEL_INVOCATION_FAILED",
+          "retryable": false,
+          "details": {
+            "http_status": 404,
+            "provider_code": null,
+            "provider_message": "Function '23d4f03a-b8a6-4adb-a183-7daa083a09cc': Not found for account 'LDFtrZdEQSj4t7M4CmQW1vw_WL4OwXZ0n1fvDkAKOzA'"
+          }
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T03:02:12.347Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T03:02:12.360Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T03:02:12.360Z",
+      "attempt": 1
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T03:02:25.091Z",
+      "attempt": 1,
+      "code": "MODEL_INVOCATION_FAILED"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T03:02:25.091Z",
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED"
+    }
+  ],
+  "validation_outcomes": [],
+  "output_plan_id": null,
+  "structured_decision_summary": [],
+  "warnings": [],
+  "hidden_reasoning_persisted": false
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0.0",
+  "critic_report_id": "critic-premium-pass",
+  "project_id": "project-contract-test",
+  "run_id": "run-critic-premium-pass",
+  "generation_result_ref": {
+    "artifact_id": "generation-critic-premium-pass",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/generation-critic-premium-pass"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "frame-critic-premium-pass",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/frame-critic-premium-pass"
+  },
+  "image_evidence": {
+    "output_id": "output-critic-premium-pass",
+    "image_uri": "mock://synthetic-image/critic-premium-pass.png",
+    "availability": "AVAILABLE",
+    "evidence_type": "TEST_DATA_DESCRIPTOR",
+    "data_classification": "SYNTHETIC_TEST_DATA"
+  },
+  "evidence": [
+    {
+      "evidence_id": "ev-premium-pass",
+      "evidence_type": "TEST_ASSERTION",
+      "source_ref": "mock://synthetic-evidence/ev-premium-pass",
+      "description": "Synthetic assertion representing a premium, intentional composition for contract validation.",
+      "data_classification": "SYNTHETIC_TEST_DATA",
+      "confidence": "HIGH"
+    }
+  ],
+  "review_status": "PASS",
+  "blind_visual_review": {
+    "status": "PASS",
+    "review_context": "BLIND_TO_SPEC",
+    "scope": "GENERAL_QUALITY",
+    "dimensions": [
+      {
+        "dimension": "DEPTH",
+        "verdict": "PASS",
+        "score": 92,
+        "confidence": "HIGH",
+        "evidence_ids": [
+          "ev-premium-pass"
+        ],
+        "rationale": "Synthetic expected pass for depth."
+      },
+      {
+        "dimension": "PREMIUM_PERCEPTION",
+        "verdict": "PASS",
+        "score": 94,
+        "confidence": "HIGH",
+        "evidence_ids": [
+          "ev-premium-pass"
+        ],
+        "rationale": "Synthetic expected pass for premium perception."
+      },
+      {
+        "dimension": "INTENTIONAL_DESIGN",
+        "verdict": "PASS",
+        "score": 93,
+        "confidence": "HIGH",
+        "evidence_ids": [
+          "ev-premium-pass"
+        ],
+        "rationale": "Synthetic expected pass for intentional design."
+      }
+    ],
+    "issues": [],
+    "summary": "Synthetic premium-image pass scenario."
+  },
+  "spec_compliance_review": {
+    "status": "PASS",
+    "review_context": "WITH_SPEC_CONTEXT",
+    "scope": "SPEC_COMPLIANCE",
+    "checks": [
+      {
+        "check_id": "check-premium-identity",
+        "requirement_type": "IDENTITY",
+        "source_path": "/identity_system",
+        "verdict": "PASS",
+        "evidence_ids": [
+          "ev-premium-pass"
+        ],
+        "message": "Synthetic identity check passes."
+      },
+      {
+        "check_id": "check-premium-layout",
+        "requirement_type": "COMPOSITION",
+        "source_path": "/composition_system",
+        "verdict": "PASS",
+        "evidence_ids": [
+          "ev-premium-pass"
+        ],
+        "message": "Synthetic composition check passes."
+      }
+    ],
+    "issues": [],
+    "protected_fields_summary": {
+      "checked_paths": [
+        "/identity_system",
+        "/typography_system",
+        "/composition_system"
+      ],
+      "lost_paths": [],
+      "status": "PRESERVED"
+    },
+    "summary": "Synthetic spec-compliance pass."
+  },
+  "my_eyes": {
+    "status": "EVIDENCE_UNAVAILABLE",
+    "scope": "DESIGNER_PREFERENCE",
+    "evidence_ids": [],
+    "preference_findings": [],
+    "unavailable_reason": "No approved direction memory, real approved/rejected images, A/B comparisons, human reasons, or recurrent preference evidence is available.",
+    "summary": "Designer preference was not inferred."
+  },
+  "overall_assessment": {
+    "general_quality_outcome": "PASS",
+    "spec_compliance_outcome": "PASS",
+    "designer_preference_outcome": "UNKNOWN",
+    "blocking_issue_ids": [],
+    "rationale": "Synthetic contract-test outcome for critic-premium-pass; it is not a real visual judgment."
+  },
+  "routing": {
+    "action": "ACCEPT",
+    "minimum_return_depth": null,
+    "responsible_nodes": []
+  },
+  "human_judgment": {
+    "status": "NOT_PROVIDED",
+    "critic_decision": "PASS",
+    "human_decision": null,
+    "operational_decision": "PASS",
+    "disagreement_preserved": false,
+    "human_evidence_ids": []
+  },
+  "warnings": [],
+  "provenance": {
+    "producer": "IMAGE_CRITIC",
+    "producer_version": "1.0.0-contract-test",
+    "created_at": "2026-08-10T12:00:00.000Z",
+    "sources": [
+      "synthetic-contract-fixture"
+    ],
+    "data_classification": "SYNTHETIC_TEST_DATA",
+    "notes": "TEST DATA ONLY. This fixture does not describe a real image, human preference, approval, rejection, or visual analysis."
+  }
+}

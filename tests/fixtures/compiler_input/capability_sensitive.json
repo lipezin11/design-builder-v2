@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0.0",
+  "compiler_input_id": "ci-capability-sensitive",
+  "project_id": "project-ci-capability-sensitive",
+  "run_id": "run-ci-capability-sensitive-001",
+  "final_frame_spec_ref": {
+    "final_frame_spec_id": "ffs-typography-integrated-thumbnail",
+    "final_frame_spec_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-typography-integrated-thumbnail/1.0.0",
+    "checksum": "sha256:test-ci-capability-sensitive",
+    "status_expected": "READY_FOR_COMPILATION"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "GENERATE",
+  "assets": [],
+  "reference_bindings": [],
+  "identity_bindings": [],
+  "text_bindings": [
+    {
+      "text_id": "headline",
+      "content": "DOMINE O JOGO",
+      "exact_text_lock": true,
+      "render_mode": "IN_IMAGE",
+      "language": "pt-BR",
+      "required": true
+    }
+  ],
+  "hard_locks": [
+    {
+      "lock_id": "lock-composition",
+      "domain": "composition",
+      "target": "composition",
+      "rule": "Preserve focal hierarchy, subject region and negative-space geometry.",
+      "source": "final_frame_spec.protected_fields",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-exact-text",
+      "domain": "typography",
+      "target": "text_bindings.headline",
+      "rule": "Exact text and hierarchy must survive compilation.",
+      "source": "final_frame_spec.protected_fields",
+      "failure_policy": "FAIL_COMPILATION"
+    }
+  ],
+  "strong_targets": [
+    {
+      "target_id": "target-depth",
+      "domain": "depth",
+      "statement": "Preserve clearly separated foreground, subject and background planes.",
+      "priority": "HIGH",
+      "source": "final_frame_spec.depth_system",
+      "verification_hint": "Three visually distinct planes remain legible."
+    },
+    {
+      "target_id": "target-small-legibility",
+      "domain": "typography",
+      "statement": "Headline remains legible at thumbnail size.",
+      "priority": "CRITICAL",
+      "source": "final_frame_spec.quality_requirements",
+      "verification_hint": "Downsample and verify exact reading."
+    }
+  ],
+  "controlled_variation": [
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "Recognizable identity may not vary."
+    },
+    {
+      "domain": "composition",
+      "level": "NONE",
+      "rule": "Frame hierarchy and spatial anchors are frozen."
+    },
+    {
+      "domain": "environment",
+      "level": "LOW",
+      "rule": "Only non-narrative microdetail may vary."
+    },
+    {
+      "domain": "microdetails",
+      "level": "MEDIUM",
+      "rule": "Texture grain and incidental surface detail may vary."
+    }
+  ],
+  "generator_capabilities": {
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0",
+    "data_classification": "HYPOTHETICAL_TEST_DATA",
+    "registry_checked_at": "2026-08-09T21:00:00-03:00",
+    "capabilities": [
+      {
+        "capability_id": "supports_image_reference",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_multiple_references",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "numeric_limit": 4,
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_edit_target",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_exact_text",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_structured_prompt",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_small_size_text_legibility",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical capability used only to exercise compatibility binding."
+      }
+    ]
+  },
+  "requested_output": {
+    "aspect_ratio": "16:9",
+    "output_role": "FINAL_IMAGE",
+    "number_of_variants": 1,
+    "deterministic_requirements": [
+      "Preserve upstream aspect ratio"
+    ]
+  },
+  "compiler_policy": {
+    "creative_authority": "NONE",
+    "allow_semantic_rephrasing": true,
+    "allow_content_invention": false,
+    "allow_lock_relaxation": false,
+    "allow_reference_dilution": false,
+    "allow_text_rewriting": false,
+    "unsupported_feature_policy": "FAIL"
+  },
+  "incompatibilities": [],
+  "provenance": {
+    "assembler": "COMPILER_INPUT_ASSEMBLER",
+    "assembler_version": "1.0.0",
+    "created_at": "2026-08-09T21:05:00-03:00",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ],
+    "notes": "Generator capabilities are hypothetical test data, not claims about a real model."
+  },
+  "status": "READY_FOR_COMPILATION"
+}

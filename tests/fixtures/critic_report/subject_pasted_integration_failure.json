@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0.0",
+  "critic_report_id": "critic-subject-pasted",
+  "project_id": "project-contract-test",
+  "run_id": "run-critic-subject-pasted",
+  "generation_result_ref": {
+    "artifact_id": "generation-critic-subject-pasted",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/generation-critic-subject-pasted"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "frame-critic-subject-pasted",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "mock://synthetic/frame-critic-subject-pasted"
+  },
+  "image_evidence": {
+    "output_id": "output-critic-subject-pasted",
+    "image_uri": "mock://synthetic-image/critic-subject-pasted.png",
+    "availability": "AVAILABLE",
+    "evidence_type": "TEST_DATA_DESCRIPTOR",
+    "data_classification": "SYNTHETIC_TEST_DATA"
+  },
+  "evidence": [
+    {
+      "evidence_id": "ev-subject-pasted",
+      "evidence_type": "TEST_ASSERTION",
+      "source_ref": "mock://synthetic-evidence/ev-subject-pasted",
+      "description": "Synthetic assertion representing mismatched contact shadow, light, and atmospheric integration.",
+      "data_classification": "SYNTHETIC_TEST_DATA",
+      "confidence": "HIGH"
+    }
+  ],
+  "review_status": "FAIL",
+  "blind_visual_review": {
+    "status": "FAIL",
+    "review_context": "BLIND_TO_SPEC",
+    "scope": "GENERAL_QUALITY",
+    "dimensions": [
+      {
+        "dimension": "SUBJECT_ENVIRONMENT_INTEGRATION",
+        "verdict": "FAIL",
+        "score": 25,
+        "confidence": "HIGH",
+        "evidence_ids": [
+          "ev-subject-pasted"
+        ],
+        "rationale": "Synthetic pasted-subject failure."
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "issue-subject-pasted",
+        "phase": "BLIND_VISUAL_REVIEW",
+        "category": "SUBJECT_PASTED",
+        "severity": "HIGH",
+        "scope": "GENERAL_QUALITY",
+        "description": "Synthetic subject reads as pasted over the environment.",
+        "evidence_ids": [
+          "ev-subject-pasted"
+        ],
+        "affected_regions": [
+          {
+            "region_id": "subject-zone",
+            "label": "Primary subject",
+            "geometry": {
+              "kind": "NORMALIZED_BOX",
+              "x": 0.35,
+              "y": 0.2,
+              "width": 0.35,
+              "height": 0.65
+            }
+          }
+        ],
+        "responsible_node": "VISUAL_SYSTEMS",
+        "recommended_return_depth": "TECHNICAL_DESIGN_ROOM",
+        "blocking": true
+      }
+    ],
+    "summary": "Synthetic blind review detects a pasted subject."
+  },
+  "spec_compliance_review": {
+    "status": "FAIL",
+    "review_context": "WITH_SPEC_CONTEXT",
+    "scope": "SPEC_COMPLIANCE",
+    "checks": [
+      {
+        "check_id": "check-subject-integration",
+        "requirement_type": "SUBJECT_ENVIRONMENT_INTEGRATION",
+        "source_path": "/subject_system/environment_integration",
+        "verdict": "FAIL",
+        "evidence_ids": [
+          "ev-subject-pasted"
+        ],
+        "message": "Synthetic integration check fails."
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "issue-subject-environment",
+        "phase": "SPEC_COMPLIANCE_REVIEW",
+        "category": "SUBJECT_ENVIRONMENT_INTEGRATION_FAILURE",
+        "severity": "HIGH",
+        "scope": "SPEC_COMPLIANCE",
+        "description": "Synthetic integration constraints are not satisfied.",
+        "evidence_ids": [
+          "ev-subject-pasted"
+        ],
+        "affected_regions": [
+          {
+            "region_id": "subject-contact-zone",
+            "label": "Subject and environment contact zone",
+            "geometry": {
+              "kind": "NORMALIZED_BOX",
+              "x": 0.32,
+              "y": 0.45,
+              "width": 0.42,
+              "height": 0.42
+            }
+          }
+        ],
+        "violated_requirement": {
+          "source_artifact": "FINAL_FRAME_SPEC",
+          "source_path": "/subject_system/environment_integration",
+          "requirement_id": "subject-integration",
+          "statement": "Integrate subject lighting, contact, and atmosphere."
+        },
+        "responsible_node": "VISUAL_SYSTEMS",
+        "recommended_return_depth": "TECHNICAL_DESIGN_ROOM",
+        "blocking": true
+      }
+    ],
+    "protected_fields_summary": {
+      "checked_paths": [
+        "/identity_system",
+        "/typography_system",
+        "/composition_system"
+      ],
+      "lost_paths": [],
+      "status": "PRESERVED"
+    },
+    "summary": "Synthetic spec review confirms integration failure."
+  },
+  "my_eyes": {
+    "status": "EVIDENCE_UNAVAILABLE",
+    "scope": "DESIGNER_PREFERENCE",
+    "evidence_ids": [],
+    "preference_findings": [],
+    "unavailable_reason": "No approved direction memory, real approved/rejected images, A/B comparisons, human reasons, or recurrent preference evidence is available.",
+    "summary": "Designer preference was not inferred."
+  },
+  "overall_assessment": {
+    "general_quality_outcome": "FAIL",
+    "spec_compliance_outcome": "FAIL",
+    "designer_preference_outcome": "UNKNOWN",
+    "blocking_issue_ids": [
+      "issue-subject-pasted",
+      "issue-subject-environment"
+    ],
+    "rationale": "Synthetic contract-test outcome for critic-subject-pasted; it is not a real visual judgment."
+  },
+  "routing": {
+    "action": "CREATE_DELTA_FIX_PLAN",
+    "minimum_return_depth": "TECHNICAL_DESIGN_ROOM",
+    "responsible_nodes": [
+      "VISUAL_SYSTEMS"
+    ]
+  },
+  "human_judgment": {
+    "status": "NOT_PROVIDED",
+    "critic_decision": "FAIL",
+    "human_decision": null,
+    "operational_decision": "FAIL",
+    "disagreement_preserved": false,
+    "human_evidence_ids": []
+  },
+  "warnings": [],
+  "provenance": {
+    "producer": "IMAGE_CRITIC",
+    "producer_version": "1.0.0-contract-test",
+    "created_at": "2026-08-10T12:00:00.000Z",
+    "sources": [
+      "synthetic-contract-fixture"
+    ],
+    "data_classification": "SYNTHETIC_TEST_DATA",
+    "notes": "TEST DATA ONLY. This fixture does not describe a real image, human preference, approval, rejection, or visual analysis."
+  }
+}

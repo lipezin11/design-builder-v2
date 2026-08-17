@@ -1,0 +1,793 @@
+{
+  "schema_version": "1.0.0",
+  "frame_spec_id": "ffs-strong-ref-001",
+  "project_id": "project-strong-ref-001",
+  "status": "READY_FOR_COMPILATION",
+  "input_refs": {
+    "creative_direction_spec_id": "cds-strong-ref-001",
+    "creative_direction_spec_version": "1.0.0",
+    "brief_spec_id": "brief-strong-ref-001",
+    "brief_spec_version": "1.0.0",
+    "reference_mode_active": true,
+    "reference_transfer_plan_id": "rtp-strong-ref-001",
+    "reference_transfer_plan_version": "1.0.0",
+    "assets": [
+      {
+        "asset_id": "asset-product-subject-001",
+        "role": "SUBJECT_IDENTITY",
+        "required": true
+      },
+      {
+        "asset_id": "asset-reference-001",
+        "role": "PRIMARY_REFERENCE",
+        "required": true
+      },
+      {
+        "asset_id": "asset-product-001",
+        "role": "PRODUCT",
+        "required": true
+      }
+    ]
+  },
+  "canvas": {
+    "aspect_ratio": "16:9",
+    "orientation": "LANDSCAPE",
+    "intended_usage": "SOCIAL_AD",
+    "output_role": "FINAL_COMPOSITE",
+    "safe_areas": [
+      {
+        "region_id": "frame-safe",
+        "semantic_region": "FULL_FRAME",
+        "normalized_bounds": {
+          "x": 0.03,
+          "y": 0.04,
+          "width": 0.94,
+          "height": 0.92
+        },
+        "purpose": "Protect critical content from edge loss",
+        "lock_level": "STRONG_TARGET"
+      }
+    ]
+  },
+  "composition": {
+    "composition_strategy": "Right-dominant product mass counterweighted by left headline, preserving reference asymmetry without pixel mimicry",
+    "mass_distribution": [
+      {
+        "mass_id": "subject-mass",
+        "element_ref": "primary-subject",
+        "region": "RIGHT",
+        "normalized_center": {
+          "x": 0.73,
+          "y": 0.51
+        },
+        "relative_weight": "DOMINANT",
+        "purpose": "Make protected product the controlling intelligence"
+      },
+      {
+        "mass_id": "environment-mass",
+        "element_ref": "environment-story",
+        "region": "RIGHT",
+        "relative_weight": "HIGH",
+        "purpose": "Carry reference energy and density around product"
+      },
+      {
+        "mass_id": "text-mass",
+        "element_ref": "headline",
+        "region": "LEFT",
+        "relative_weight": "HIGH",
+        "purpose": "Complete the commercial hierarchy without competing with identity"
+      }
+    ],
+    "balance": "Asymmetrical but stable through counterweighted copy/environment masses",
+    "dominant_axis": "Directional diagonal connecting subject, mechanism and message",
+    "reading_flow": [
+      "primary-subject",
+      "energy-depth-system",
+      "headline"
+    ],
+    "focal_points": [
+      {
+        "rank": 1,
+        "element_ref": "primary-subject",
+        "strength": "DOMINANT",
+        "reason": "Protected product identity is the commercial protagonist"
+      },
+      {
+        "rank": 2,
+        "element_ref": "headline",
+        "strength": "STRONG",
+        "reason": "Commercial message follows subject recognition"
+      },
+      {
+        "rank": 3,
+        "element_ref": "environment-story",
+        "strength": "SUPPORTING",
+        "reason": "Environment explains the narrative without becoming the protagonist"
+      }
+    ],
+    "negative_space_regions": [
+      {
+        "region_id": "copy-field",
+        "semantic_region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.05,
+          "y": 0.18,
+          "width": 0.36,
+          "height": 0.64
+        },
+        "purpose": "Support exact required headline",
+        "lock_level": "HARD_LOCK"
+      }
+    ],
+    "subject_environment_relationship": "Reference-derived energy, edge light and layers wrap around product geometry",
+    "edge_behavior": "Intentional partial entries only; no accidental tangencies at head, hands or text",
+    "cropping_strategy": "Crop supports scale and energy without cutting identity-defining anatomy",
+    "depth_composition_relationship": "Reference layering survives as behavior; individual forms are rebuilt"
+  },
+  "camera": {
+    "shot_type": "Environmental product hero",
+    "camera_height": "Near eye level",
+    "camera_angle": "Subtle low-angle authority",
+    "view_direction": "Front three-quarter",
+    "perspective_intent": "Dynamic wide spatial behavior focused away from protected product geometry",
+    "lens_behavior": "Moderately wide spatial behavior without facial distortion",
+    "depth_of_field_intent": "Identity plane crisp; depth layers progressively softer",
+    "focus_target": "Primary subject identity features",
+    "camera_energy": "High but controlled"
+  },
+  "subjects": [
+    {
+      "subject_id": "primary-subject",
+      "asset_ref": "asset-product-subject-001",
+      "role": "Controlling product intelligence",
+      "identity_preservation": "STRICT",
+      "frame_region": "RIGHT",
+      "normalized_position": {
+        "x": 0.73,
+        "y": 0.51
+      },
+      "relative_scale": "Large dominant mass occupying roughly one third of frame height-to-width influence",
+      "framing": "Large product hero",
+      "body_visibility": "Full defining product silhouette",
+      "orientation": "Three-quarter product presentation",
+      "gaze": "NOT_APPLICABLE",
+      "expression": "NOT_APPLICABLE",
+      "pose_intent": "Product orientation presents defining silhouette",
+      "wardrobe": "NOT_APPLICABLE",
+      "integration_with_environment": "Reference-derived energy, edge light and layers wrap around product geometry",
+      "lighting_priority": "Face/identity remains the best-resolved and most legible element",
+      "occlusion_rules": [
+        "Do not cover eyes, nose, mouth or identity-defining contours",
+        "Non-critical outer silhouette may overlap with environmental layers"
+      ],
+      "variation_freedom": {
+        "identity": "NONE",
+        "pose": "LOW",
+        "wardrobe": "NONE",
+        "expression": "LOW",
+        "body_orientation": "LOW"
+      },
+      "allowed_transformations": [
+        "Adapt pose within stated intent",
+        "Integrate environmental light and atmosphere"
+      ],
+      "forbidden_transformations": [
+        "Alter recognizable facial structure",
+        "Replace subject identity",
+        "Introduce anatomy distortion"
+      ]
+    }
+  ],
+  "environment": {
+    "environment_type": "CHARGED_TECHNICAL_ECOSYSTEM",
+    "concept": "Dense energy system reorganized by product",
+    "spatial_character": "Layered, asymmetrical, high-energy",
+    "visual_density": "HIGH",
+    "regional_density": [
+      {
+        "region": "LEFT",
+        "normalized_bounds": {
+          "x": 0.04,
+          "y": 0.08,
+          "width": 0.4,
+          "height": 0.84
+        },
+        "density": "MEDIUM",
+        "contrast_level": "MEDIUM",
+        "detail_level": "MEDIUM",
+        "purpose": "Support headline and directional movement",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "headline support",
+          "directional environment"
+        ],
+        "forbidden_elements": [
+          "high-contrast clutter",
+          "unrelated floating objects"
+        ]
+      },
+      {
+        "region": "CENTER",
+        "normalized_bounds": {
+          "x": 0.4,
+          "y": 0.05,
+          "width": 0.2,
+          "height": 0.9
+        },
+        "density": "MEDIUM",
+        "contrast_level": "MEDIUM",
+        "detail_level": "MEDIUM",
+        "purpose": "Transition between message and subject",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "depth transitions",
+          "directional structure"
+        ],
+        "forbidden_elements": [
+          "isolated decorative props"
+        ]
+      },
+      {
+        "region": "RIGHT",
+        "normalized_bounds": {
+          "x": 0.53,
+          "y": 0.05,
+          "width": 0.43,
+          "height": 0.9
+        },
+        "density": "HIGH",
+        "contrast_level": "HIGH",
+        "detail_level": "HIGH",
+        "purpose": "Concentrate subject and environmental storytelling",
+        "protected_for_text": false,
+        "allowed_elements": [
+          "product",
+          "energy layers",
+          "reference-derived separation"
+        ],
+        "forbidden_elements": [
+          "copy competition",
+          "random icons"
+        ]
+      }
+    ],
+    "materials": [
+      "dark technical surfaces",
+      "controlled luminous channels"
+    ],
+    "architectural_or_natural_language": "Reference-derived energetic technical space",
+    "atmosphere": "Dense but directionally controlled",
+    "environmental_storytelling": "Environmental energy bends around the product as evidence of control",
+    "subject_integration": "Reference-derived energy, edge light and layers wrap around product geometry",
+    "required_elements": [
+      "layered energetic system",
+      "controlled left copy field"
+    ],
+    "optional_elements": [
+      "small technical fragments"
+    ],
+    "forbidden_elements": [
+      "source subject",
+      "copied source layout",
+      "generic neon tunnel"
+    ]
+  },
+  "depth_system": {
+    "depth_strategy": "Preserve reference's aggressive layering while rebuilding objects around new product",
+    "layers": [
+      {
+        "layer_id": "extreme-fg",
+        "depth_role": "EXTREME_FOREGROUND",
+        "elements": [
+          "cropped technical mass inherited as abstract behavior"
+        ],
+        "focus_behavior": "Deliberately out of primary focus",
+        "relative_sharpness": "Soft or motion-softened",
+        "occlusion_behavior": "May overlap environment and non-defining product edge only",
+        "atmospheric_behavior": "Near-camera atmospheric continuity",
+        "relationship_to_subject": "Transfers reference foreground pressure"
+      },
+      {
+        "layer_id": "subject-plane",
+        "depth_role": "SUBJECT_PLANE",
+        "elements": [
+          "primary-subject"
+        ],
+        "focus_behavior": "Critical focus on identity",
+        "relative_sharpness": "Highest identity sharpness",
+        "occlusion_behavior": "Only non-critical silhouette edges may be crossed",
+        "atmospheric_behavior": "Receives environment color and motivated light",
+        "relationship_to_subject": "Primary perceptual anchor embedded in the scene"
+      },
+      {
+        "layer_id": "background",
+        "depth_role": "BACKGROUND",
+        "elements": [
+          "charged technical layers"
+        ],
+        "focus_behavior": "Readable structure without portrait-level sharpness",
+        "relative_sharpness": "Moderate detail",
+        "occlusion_behavior": "Frames rather than cuts through identity",
+        "atmospheric_behavior": "Energy and haze recede in separated bands",
+        "relationship_to_subject": "Frames and reacts to product"
+      },
+      {
+        "layer_id": "far-background",
+        "depth_role": "FAR_BACKGROUND",
+        "elements": [
+          "deep technical environment"
+        ],
+        "focus_behavior": "Atmospheric support",
+        "relative_sharpness": "Lowest detail",
+        "occlusion_behavior": "No direct identity occlusion",
+        "atmospheric_behavior": "Strongest atmospheric perspective",
+        "relationship_to_subject": "Provides scale and separation"
+      }
+    ],
+    "subject_environment_integration": "Reference-derived energy, edge light and layers wrap around product geometry",
+    "separation_mechanisms": [
+      "dual-color edge behavior",
+      "sharpness hierarchy",
+      "energy halo"
+    ],
+    "overlap_strategy": "Multiple layers cross without obscuring product identity",
+    "atmospheric_perspective": "Density and contrast reduce across successive reference-derived layers",
+    "required_depth_strength": "VERY_HIGH"
+  },
+  "lighting_system": {
+    "lighting_intent": "Preserve energetic reference separation while product remains structurally accurate",
+    "subject_key_behavior": "Controlled product-revealing key maintains surface identity",
+    "fill_behavior": "Enough fill to preserve product shape",
+    "rim_or_edge_behavior": "Cyan/magenta edge behavior follows silhouette without changing it",
+    "background_light_behavior": "Charged sources form depth bands",
+    "motivated_sources": [
+      "reference-derived atmospheric sources",
+      "product-adjacent energy channels"
+    ],
+    "directionality": "Asymmetrical cross-direction",
+    "contrast_strategy": "Product highest structural clarity; copy field controlled",
+    "volumetric_behavior": "Layer-specific, never full-frame wash",
+    "subject_separation": "Clean energetic boundary around product",
+    "regional_luminance_strategy": [
+      {
+        "region": "LEFT",
+        "behavior": "Controlled contrast under headline",
+        "purpose": "Sustain rendered text legibility"
+      },
+      {
+        "region": "RIGHT",
+        "behavior": "Highest shaped contrast around subject",
+        "purpose": "Maintain identity dominance and environmental depth"
+      }
+    ],
+    "integration_notes": "Light response must follow product material and environmental surfaces"
+  },
+  "color_system": {
+    "dominant_family": [
+      {
+        "name": "dark steel blue",
+        "function": "Establish the environmental base"
+      }
+    ],
+    "secondary_family": [
+      {
+        "name": "deep navy",
+        "function": "Build depth and material distinction"
+      },
+      {
+        "name": "graphite",
+        "function": "Build depth and material distinction"
+      }
+    ],
+    "accent_family": [
+      {
+        "name": "electric cyan",
+        "function": "Direct attention and support separation"
+      },
+      {
+        "name": "restrained magenta",
+        "function": "Direct attention and support separation"
+      }
+    ],
+    "neutral_family": [
+      {
+        "name": "cool off-white",
+        "function": "Control contrast and preserve readable structure"
+      }
+    ],
+    "temperature_relationship": "Cool base with opposed cyan/magenta accents",
+    "saturation_strategy": "High accents localized to energy and edges",
+    "contrast_strategy": "Reference color behavior preserved, not exact pixel colors",
+    "regional_color_behavior": [
+      {
+        "region": "LEFT",
+        "behavior": "Quiet cool dark copy field",
+        "purpose": "Support headline contrast"
+      },
+      {
+        "region": "RIGHT",
+        "behavior": "Denser dual-accent energy around product",
+        "purpose": "Concentrate narrative color around subject"
+      }
+    ],
+    "subject_skin_treatment": "NOT_APPLICABLE",
+    "reference_color_anchors": [
+      "dark steel-blue base",
+      "cyan/magenta edge behavior"
+    ],
+    "forbidden_color_behaviors": [
+      "unmotivated rainbow neon",
+      "reference pixel sampling as a goal"
+    ]
+  },
+  "typography_system": {
+    "enabled": true,
+    "rendered_in_image": true,
+    "text_rendering_mode": "RENDER_IN_IMAGE",
+    "text_elements": [
+      {
+        "text_id": "headline",
+        "exact_copy": "CONTROL THE CURRENT",
+        "copy_is_locked": true,
+        "hierarchy_rank": 2,
+        "role": "PRIMARY_HEADLINE",
+        "region": "LEFT",
+        "position": {
+          "x": 0.23,
+          "y": 0.46
+        },
+        "scale_intent": "Large enough to survive thumbnail reduction",
+        "weight_intent": "Heavy, compact mass",
+        "case": "AS_PROVIDED",
+        "alignment": "LEFT",
+        "line_behavior": "Maximum two controlled lines",
+        "contrast_requirements": "Sustained high contrast across every glyph",
+        "background_relationship": "Placed over a deliberately quiet luminance field",
+        "subject_relationship": "Secondary to the subject but compositionally interlocked",
+        "occlusion_behavior": "No glyph may be occluded",
+        "safe_area": "Remain inside protected canvas margins",
+        "legibility_priority": "CRITICAL"
+      }
+    ],
+    "reserved_text_regions": [],
+    "system_notes": "Exact copy is a protected visual mass in the frame."
+  },
+  "foreground": {
+    "enabled": true,
+    "purpose": [
+      "DEPTH",
+      "FRAMING"
+    ],
+    "elements": [
+      "cropped technical mass inherited as abstract behavior"
+    ],
+    "edge_entry": "Partial edge entry",
+    "occlusion_target": "May overlap environment and non-defining product edge only",
+    "blur_behavior": "Soft near-camera defocus",
+    "motion_behavior": "Static or subtle directional softness",
+    "visual_weight": "MEDIUM"
+  },
+  "objects": [],
+  "effects": [],
+  "reference_constraints": {
+    "active": true,
+    "transfer_plan_id": "rtp-strong-ref-001",
+    "transfer_intensity": "VERY_HIGH",
+    "required_reference_anchors": [
+      {
+        "anchor_id": "anchor-depth-001",
+        "behavior": "Aggressive foreground-to-background layering",
+        "implementation": "At least four perceptual planes with strong overlap",
+        "lock_level": "HARD_LOCK",
+        "source": "REFERENCE_TRANSFER_PLAN"
+      },
+      {
+        "anchor_id": "anchor-light-001",
+        "behavior": "Energetic dual-color silhouette separation",
+        "implementation": "Controlled cyan/magenta edge behavior around product without clipping",
+        "lock_level": "STRONG_TARGET",
+        "source": "REFERENCE_TRANSFER_PLAN"
+      }
+    ],
+    "adapted_reference_anchors": [
+      {
+        "anchor_id": "anchor-mass-001",
+        "behavior": "Asymmetrical dominant mass tension",
+        "implementation": "Rebuild with product on right and copy field left rather than matching source placement",
+        "lock_level": "HARD_LOCK",
+        "source": "REFERENCE_TRANSFER_PLAN"
+      }
+    ],
+    "reference_behaviors_to_preserve": [
+      "Preserve layered depth",
+      "Preserve energetic separation",
+      "Preserve environmental density",
+      "Preserve asymmetrical mass tension"
+    ],
+    "reference_elements_explicitly_not_to_copy": [
+      "Original subject identity",
+      "Exact object arrangement",
+      "Incidental surface damage"
+    ]
+  },
+  "protected_fields": [
+    {
+      "field_id": "protect-identity",
+      "target": "subjects.primary-subject.identity",
+      "protection_type": "SUBJECT_IDENTITY",
+      "source": "UPSTREAM_LOCK",
+      "rule": "Preserve fundamental recognizable identity",
+      "allowed_variation": "No identity variation",
+      "failure_condition": "Face is not recognizably the supplied subject"
+    },
+    {
+      "field_id": "protect-copy",
+      "target": "typography_system.text_elements.headline.exact_copy",
+      "protection_type": "EXACT_TEXT",
+      "source": "UPSTREAM_LOCK",
+      "rule": "Render exactly: CONTROL THE CURRENT",
+      "allowed_variation": "No rewriting, spelling or punctuation variation",
+      "failure_condition": "Any character differs or text is illegible"
+    },
+    {
+      "field_id": "protect-product",
+      "target": "subjects.primary-subject",
+      "protection_type": "PRODUCT_SHAPE",
+      "source": "UPSTREAM_LOCK",
+      "rule": "Defining product silhouette and branding remain exact",
+      "allowed_variation": "Lighting/material response only",
+      "failure_condition": "Product geometry or identity changes"
+    },
+    {
+      "field_id": "protect-ref-light",
+      "target": "lighting_system.rim_or_edge_behavior",
+      "protection_type": "REFERENCE_LIGHTING_BEHAVIOR",
+      "source": "REFERENCE_TRANSFER_PLAN",
+      "rule": "Preserve dual-color energetic separation behavior",
+      "allowed_variation": "Micro-intensity variation",
+      "failure_condition": "Reference separation behavior is diluted or removed"
+    }
+  ],
+  "controlled_variation": {
+    "domains": [
+      {
+        "domain": "identity",
+        "level": "NONE",
+        "may_invent": false,
+        "rule": "Fundamental recognizable traits are locked"
+      },
+      {
+        "domain": "pose",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "May adapt only within declared pose intent"
+      },
+      {
+        "domain": "wardrobe",
+        "level": "NONE",
+        "may_invent": false,
+        "rule": "May vary details without changing professional meaning"
+      },
+      {
+        "domain": "environment_details",
+        "level": "MEDIUM",
+        "may_invent": true,
+        "rule": "May invent supporting detail consistent with required environmental language"
+      },
+      {
+        "domain": "lighting_microvariation",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "May tune falloff but not lighting behavior"
+      },
+      {
+        "domain": "color_microvariation",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "May vary shade inside named color families"
+      },
+      {
+        "domain": "foreground_details",
+        "level": "MEDIUM",
+        "may_invent": true,
+        "rule": "May vary material detail but not entry, function or weight"
+      },
+      {
+        "domain": "effects",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "Distribution may vary; purpose and intensity may not"
+      },
+      {
+        "domain": "typography",
+        "level": "NONE",
+        "may_invent": false,
+        "rule": "Exact text and hierarchy locked"
+      },
+      {
+        "domain": "camera",
+        "level": "LOW",
+        "may_invent": false,
+        "rule": "Micro-adjustment allowed without changing framing, scale or perspective intent"
+      }
+    ],
+    "must_not_change": [
+      "Product identity",
+      "Exact headline",
+      "HIGH transfer intensity",
+      "Reference depth and edge-light behaviors",
+      "Right-product/left-copy arrangement"
+    ],
+    "may_vary": [
+      "Microtexture",
+      "Minor atmospheric distribution",
+      "Non-critical supporting detail"
+    ],
+    "generator_may_invent": [
+      "Small environmental details consistent with declared materials and story"
+    ]
+  },
+  "technical_decisions": [
+    {
+      "decision_id": "td-ref-adapt",
+      "domain": "COMPOSITION",
+      "decision": "Rebuild reference mass tension with right-side product and left copy field.",
+      "rationale": "Preserves mechanism while solving the new commercial frame.",
+      "source_agent": "LAYOUT_TYPOGRAPHY",
+      "upstream_requirement": "Modified reference anchor anchor-mass-001",
+      "confidence": "HIGH"
+    },
+    {
+      "decision_id": "td-ref-light",
+      "domain": "LIGHTING",
+      "decision": "Carry dual-color energetic edge behavior into product separation.",
+      "rationale": "This is a protected HIGH-transfer reference behavior.",
+      "source_agent": "VISUAL_SYSTEMS",
+      "upstream_requirement": "Accepted reference anchor anchor-light-001",
+      "confidence": "HIGH"
+    }
+  ],
+  "resolved_conflicts": [],
+  "generation_requirements": {
+    "required_assets": [
+      "asset-product-subject-001",
+      "asset-reference-001",
+      "asset-product-001"
+    ],
+    "required_text": [
+      "CONTROL THE CURRENT"
+    ],
+    "required_visual_elements": [
+      "exact product",
+      "exact headline",
+      "four-layer depth",
+      "cyan/magenta edge behavior",
+      "dense responsive environment"
+    ],
+    "forbidden_visual_elements": [
+      "source subject",
+      "pixel-matched source layout",
+      "diluted minimal backdrop"
+    ],
+    "identity_requirements": [
+      "Use supplied subject asset",
+      "Preserve recognizable facial structure and distinguishing traits"
+    ],
+    "reference_requirements": [
+      "Preserve layered depth",
+      "Preserve energetic separation",
+      "Preserve environmental density",
+      "Preserve asymmetrical mass tension"
+    ],
+    "output_constraints": [
+      "16:9",
+      "No model-specific styling or syntax embedded in this specification"
+    ]
+  },
+  "quality_requirements": [
+    {
+      "requirement_id": "qr-depth",
+      "domain": "DEPTH",
+      "statement": "Frame must read as multiple interacting perceptual planes, not subject plus backdrop.",
+      "verification_method": "Confirm visible overlap, scale separation and atmospheric progression across at least three planes.",
+      "severity": "CRITICAL",
+      "failure_condition": "Subject appears pasted onto an independent background.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-identity",
+      "domain": "IDENTITY_FIDELITY",
+      "statement": "Primary subject must remain recognizably identical to the supplied asset.",
+      "verification_method": "Compare facial structure and distinguishing traits against the identity asset.",
+      "severity": "CRITICAL",
+      "failure_condition": "Identity changes, drifts or becomes generic.",
+      "source": "UPSTREAM_LOCK"
+    },
+    {
+      "requirement_id": "qr-hierarchy",
+      "domain": "HIERARCHY",
+      "statement": "Product remains dominant; reference energy supports it; headline is immediately legible.",
+      "verification_method": "Inspect at full size and reduced-size view; focal order must remain unchanged.",
+      "severity": "CRITICAL",
+      "failure_condition": "Reference effects or headline displace product as protagonist.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-integration",
+      "domain": "INTEGRATION",
+      "statement": "Reference-derived depth and light must conform to new product geometry and environment.",
+      "verification_method": "Inspect edge light, overlap, perspective and atmosphere around subject/environment boundaries.",
+      "severity": "HIGH",
+      "failure_condition": "Subject reads as separately composited or environmental perspective disagrees.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-environment",
+      "domain": "ENVIRONMENTAL_STORYTELLING",
+      "statement": "Density must behave as a system controlled by the product, not copied surface noise.",
+      "verification_method": "Every prominent environment element must map to a declared narrative, depth or attention function.",
+      "severity": "HIGH",
+      "failure_condition": "Prominent detail is decorative, generic or unrelated to the narrative.",
+      "source": "CREATIVE_DIRECTION_SPEC"
+    },
+    {
+      "requirement_id": "qr-text",
+      "domain": "SMALL_SIZE_IMPACT",
+      "statement": "Locked headline must remain exact and readable at target small size.",
+      "verification_method": "Reduce to representative thumbnail size and verify every character plus hierarchy.",
+      "severity": "CRITICAL",
+      "failure_condition": "Text changes, breaks poorly or becomes unreadable.",
+      "source": "UPSTREAM_LOCK"
+    }
+  ],
+  "unresolved_issues": [],
+  "compiler_handoff": {
+    "target_generator": null,
+    "creative_authority": "NONE",
+    "required_assets": [
+      "asset-product-subject-001",
+      "asset-reference-001",
+      "asset-product-001"
+    ],
+    "hard_locks": [
+      "Product identity and shape",
+      "Exact headline",
+      "HIGH transfer intensity",
+      "Required reference anchors"
+    ],
+    "strong_targets": [
+      "Reference energy",
+      "Four depth planes",
+      "Asymmetrical mass tension"
+    ],
+    "open_variations": [
+      "New technical object manifestations",
+      "Surface microdetail",
+      "Atmospheric distribution"
+    ],
+    "reference_assets": [
+      "asset-reference-001"
+    ],
+    "text_rendering_mode": "RENDER_IN_IMAGE",
+    "unsupported_feature_policy": "REPORT_INCOMPATIBILITY_TO_ORCHESTRATOR"
+  },
+  "provenance": {
+    "producer": "TECHNICAL_DESIGN_ROOM",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-09T15:20:00-03:00",
+    "decision_sources": [
+      "CREATIVE_DIRECTION_SPEC",
+      "VISUAL_SYSTEMS_AGENT",
+      "LAYOUT_TYPOGRAPHY_AGENT",
+      "REFERENCE_TRANSFER_PLAN"
+    ],
+    "notes": "Contains consolidated observable decisions and rationales only; no private deliberation."
+  },
+  "approval": {
+    "approval_status": "SYSTEM_APPROVED",
+    "approved_by": "SYSTEM",
+    "timestamp": "2026-08-09T15:25:00-03:00",
+    "notes": "Technically complete for compilation; no human approval claimed.",
+    "human_override": false
+  }
+}

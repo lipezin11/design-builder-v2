@@ -1,0 +1,80 @@
+{
+  "type": "CANONICAL_INTEGRATION_SCENARIO",
+  "scenario_id": "website_hero",
+  "scenario_version": "1.0.0",
+  "project_id": "project-stylist-001",
+  "description": "Hero 16:9 premium com identidade ÃƒÂ  direita, densidade controlada e copy externa protegida ÃƒÂ  esquerda.",
+  "expected_pipeline_mode": "GENERATE_EXTERNAL_TEXT_OVERLAY",
+  "artifacts": {
+    "brief_spec": {
+      "path": "brief_spec.json",
+      "artifact_id": "brief-stylist-001",
+      "schema_name": "brief_spec",
+      "expected_version": "1.0.0"
+    },
+    "creative_direction_spec": {
+      "path": "creative_direction_spec.json",
+      "artifact_id": "cds-stylist-001",
+      "schema_name": "creative_direction_spec",
+      "expected_version": "1.0.0"
+    },
+    "final_frame_spec": {
+      "path": "final_frame_spec.json",
+      "artifact_id": "ffs-stylist-001",
+      "schema_name": "final_frame_spec",
+      "expected_version": "1.0.0"
+    },
+    "compiler_input": {
+      "path": "compiler_input.json",
+      "artifact_id": "ci-canonical-website-hero",
+      "schema_name": "compiler_input",
+      "expected_version": "1.0.0"
+    },
+    "compiled_generation_request": {
+      "path": "compiled_generation_request.json",
+      "artifact_id": "cgr-ci-canonical-website-hero",
+      "schema_name": "compiled_generation_request",
+      "expected_version": "1.0.0"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "asset-stylist-001",
+      "type": "IMAGE",
+      "role": "SUBJECT_IDENTITY",
+      "authority": "SUBJECT_IDENTITY_AUTHORITY",
+      "origin": "HYPOTHETICAL_TEST_FIXTURE",
+      "mock_uri": "mock://assets/asset-stylist-001",
+      "checksum": "sha256:fixture-asset-stylist-001",
+      "metadata": {
+        "description": "Identidade humana fictÃƒÂ­cia.",
+        "binary_required": false
+      }
+    }
+  ],
+  "expected_status": "PASS",
+  "expected_compatibility": "FULLY_COMPATIBLE",
+  "expected_loss_validation": "PASS",
+  "expected_generation_mode": "GENERATE",
+  "expected_compiled_status": "REQUEST_READY",
+  "expected_required_protected_fields": [
+    "protect-identity",
+    "protect-copy-zone"
+  ],
+  "expected_required_assets": [
+    "asset-stylist-001"
+  ],
+  "expected_required_text_locks": [],
+  "expected_negative_space_regions": [
+    "left-copy-field",
+    "html-copy-zone"
+  ],
+  "tags": [
+    "canonical",
+    "website-hero",
+    "negative-space",
+    "external-overlay",
+    "identity",
+    "premium"
+  ]
+}

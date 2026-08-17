@@ -1,0 +1,79 @@
+{
+  "type": "CANONICAL_INTEGRATION_SCENARIO",
+  "scenario_id": "no_reference_urgency",
+  "scenario_version": "1.0.0",
+  "project_id": "project-cart-close-001",
+  "description": "Thumbnail 16:9 de urgÃƒÂªncia com identidade humana, headline exata e nenhuma referÃƒÂªncia visual.",
+  "expected_pipeline_mode": "GENERATE_WITHOUT_REFERENCE",
+  "artifacts": {
+    "brief_spec": {
+      "path": "brief_spec.json",
+      "artifact_id": "brief-cart-close-001",
+      "schema_name": "brief_spec",
+      "expected_version": "1.0.0"
+    },
+    "creative_direction_spec": {
+      "path": "creative_direction_spec.json",
+      "artifact_id": "cds-cart-close-001",
+      "schema_name": "creative_direction_spec",
+      "expected_version": "1.0.0"
+    },
+    "final_frame_spec": {
+      "path": "final_frame_spec.json",
+      "artifact_id": "ffs-urgency-001",
+      "schema_name": "final_frame_spec",
+      "expected_version": "1.0.0"
+    },
+    "compiler_input": {
+      "path": "compiler_input.json",
+      "artifact_id": "ci-canonical-no-reference-urgency",
+      "schema_name": "compiler_input",
+      "expected_version": "1.0.0"
+    },
+    "compiled_generation_request": {
+      "path": "compiled_generation_request.json",
+      "artifact_id": "cgr-ci-canonical-no-reference-urgency",
+      "schema_name": "compiled_generation_request",
+      "expected_version": "1.0.0"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "asset-presenter-001",
+      "type": "IMAGE",
+      "role": "SUBJECT_IDENTITY",
+      "authority": "SUBJECT_IDENTITY_AUTHORITY",
+      "origin": "HYPOTHETICAL_TEST_FIXTURE",
+      "mock_uri": "mock://assets/asset-presenter-001",
+      "checksum": "sha256:fixture-asset-presenter-001",
+      "metadata": {
+        "description": "Identidade humana fictÃƒÂ­cia.",
+        "binary_required": false
+      }
+    }
+  ],
+  "expected_status": "PASS",
+  "expected_compatibility": "FULLY_COMPATIBLE",
+  "expected_loss_validation": "PASS",
+  "expected_generation_mode": "GENERATE",
+  "expected_compiled_status": "REQUEST_READY",
+  "expected_required_protected_fields": [
+    "protect-identity",
+    "protect-copy",
+    "protect-composition"
+  ],
+  "expected_required_assets": [
+    "asset-presenter-001"
+  ],
+  "expected_required_text_locks": [
+    "headline"
+  ],
+  "expected_negative_space_regions": [],
+  "tags": [
+    "canonical",
+    "no-reference",
+    "urgency",
+    "exact-copy",
+    "identity"
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "model": "stepfun-ai/step-3.7-flash",
+  "run_id": "run_user_subject_reference_20260816_01",
+  "plan_id": "plan_user_subject_reference_20260816_01",
+  "plan_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816-01\\plans\\plan_user_subject_reference_20260816_01.json",
+  "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\user-live-tests\\subject-reference-20260816-01\\runs\\run_user_subject_reference_20260816_01.trace.json",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_SCHEMA_INVALID"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32022,
+        "total_textual_characters": 518840,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1562103,
+        "input_tokens": 129710,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 116050,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-d8c610f0-11d5-4c9b-81eb-698d010c51ab",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 115430,
+        "final_attempt_latency_ms": 103735,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32022,
+          "total_textual_characters": 518840,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1562103,
+          "input_tokens": 97354,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148406,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 97354,
+          "output_tokens": 13880,
+          "total_tokens": 111234,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "PASS",
+      "error_code": null,
+      "diagnostic_codes": [],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 6199,
+        "reference_context_characters": 963,
+        "my_eyes_advisory_characters": 4,
+        "vkb_advisory_characters": 4,
+        "retry_diagnostic_characters": 109,
+        "provider_user_text_characters": 32168,
+        "total_textual_characters": 518986,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 898756,
+        "serialized_http_body_characters": 1562262,
+        "input_tokens": 129747,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 116013,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-4c2c25f8-b011-4555-b05e-1ff272f19277",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 156830,
+        "final_attempt_latency_ms": 145325,
+        "image_transmission": [
+          {
+            "asset_id": "primary_tech_reference",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 674065,
+            "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 6199,
+          "reference_context_characters": 963,
+          "my_eyes_advisory_characters": 4,
+          "vkb_advisory_characters": 4,
+          "retry_diagnostic_characters": 109,
+          "provider_user_text_characters": 32168,
+          "total_textual_characters": 518986,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 898756,
+          "serialized_http_body_characters": 1562262,
+          "input_tokens": 97388,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148372,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 97388,
+          "output_tokens": 15648,
+          "total_tokens": 113036,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "validation_outcomes": [
+    {
+      "attempt": 2,
+      "schema": true,
+      "semantic": true,
+      "quality": true
+    }
+  ],
+  "warnings": [],
+  "subject_proof": {
+    "byte_length": 100690,
+    "sha256": "7d681a210a50a1460e74ef71c15bac378e5163ae7ff82de1fc7f5d50730b529f"
+  },
+  "reference_proof": {
+    "byte_length": 674065,
+    "sha256": "397f07f09aef726e59b3389cc602a567a80335d72736cc778cc2fb970ba20452"
+  },
+  "literal_copy_checks": {
+    "prohibited_positive_instruction_detected": false,
+    "identity_protected": true
+  },
+  "reference_observations": [
+    {
+      "category": "COMPOSITION",
+      "description": "Centered subject occupies primary vertical axis with upper text zone and lower mechanical object zone",
+      "salience": "DOMINANT",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "LIGHTING",
+      "description": "Purple/violet key light illuminates subject from below-center, creating dramatic facial modeling and rim separation",
+      "salience": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "LIGHTING",
+      "description": "Acid-green fill and accents from upper text region",
+      "salience": "MEDIUM",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "DEPTH",
+      "description": "Layered depth with foreground cables, midground subject, background machinery, and atmospheric haze",
+      "salience": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "COLOR",
+      "description": "Dominant violet-purple palette with acid-green chromatic accent and deep neutral shadows",
+      "salience": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "NARRATIVE_OBJECT",
+      "description": "Central mechanical infinity-shaped object with electrical energy and cables",
+      "salience": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "TYPOGRAPHY",
+      "description": "Overscale acid-green graffiti text 'SEM PROMPTS' in upper third",
+      "salience": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "SUBJECT_TREATMENT",
+      "description": "Subject with raised hands, palms facing inward toward central object",
+      "salience": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "MATERIAL",
+      "description": "Mixed materials: metal machinery, rubber cables, fabric blazer, glass/energy",
+      "salience": "MEDIUM",
+      "confidence": "HIGH"
+    },
+    {
+      "category": "ENERGY",
+      "description": "Purple electrical lightning and glow emanating from central object",
+      "salience": "HIGH",
+      "confidence": "HIGH"
+    }
+  ],
+  "decisions": [
+    {
+      "action": "ADAPT",
+      "target": "Subject remains centered in square thumbnail; upper zone reserved for calm negative space or clean technical graphics, lower zone features target-native technical focal element",
+      "rationale": "Centered dominance creates ceremonial stability and immediate hierarchy essential for personal brand recognition in a square thumbnail format"
+    },
+    {
+      "action": "ADAPT",
+      "target": "Purple/violet key light from below or screen source models subject face and glasses; green accent used sparingly on technical elements or rim",
+      "rationale": "Purple lighting communicates technical authority and invention; must be balanced with fill to preserve facial recognizability and glasses clarity"
+    },
+    {
+      "action": "REINVENT",
+      "target": "Layered technical environment using server racks, code screens, circuit patterns, or data visualization planes instead of mechanical machinery",
+      "rationale": "Layered depth creates immersion and technical context; must be native to technology personal brand rather than generic industrial aesthetic"
+    },
+    {
+      "action": "ADAPT",
+      "target": "Maintain violet-purple dominant value structure with controlled chromatic accent; accent may be green or target-owned technical hue",
+      "rationale": "Violet-purple creates technical energy and premium darkness; accent provides vitality and focal contrast"
+    },
+    {
+      "action": "REINVENT",
+      "target": "Replace literal infinity mechanical assembly with target-native technical focal point: holographic interface, code stream, circuit diagram, or abstract data visualization with motivated glow",
+      "rationale": "The function is a central technical focal point demonstrating mastery; the literal infinity symbol and mechanical assembly are source-specific and prohibited by brief"
+    },
+    {
+      "action": "DISCARD",
+      "target": "No text overlay per brief constraints; typography function replaced by subject and technical environment hierarchy",
+      "rationale": "Source text 'SEM PROMPTS' is prohibited; graffiti style conflicts with technical authority tone; brief specifies text_overlay_expected false"
+    },
+    {
+      "action": "ADAPT",
+      "target": "Subject pose adapts to interacting with target-native technical elements (gesturing toward screen, touching device, or open hands showing engagement) while keeping face and glasses front-facing and recognizable",
+      "rationale": "Active hand position communicates engagement and control; exact reference hand pose and mechanical object interaction are not required"
+    },
+    {
+      "action": "ADAPT",
+      "target": "Material contrast between subject wardrobe (fabric) and technical environment (metal, glass, screen) preserved; specific industrial materials replaced with clean tech materials",
+      "rationale": "Material contrast enriches hierarchy and tactile interest; must remain native to technology domain"
+    }
+  ],
+  "director_handoff": {
+    "what_must_survive": [
+      "Subject face and facial geometry from Image A",
+      "Dark rectangular glasses",
+      "Hairstyle and age cues",
+      "Centered subject dominance for thumbnail clarity",
+      "Purple/violet technical lighting hierarchy"
+    ],
+    "what_should_survive": [
+      "Layered technical depth with foreground/midground/background separation",
+      "Acid-green or equivalent chromatic accent",
+      "Energy and invention atmosphere through motivated glow",
+      "Dark neutral value structure with selective vitality",
+      "Subject-environment integration with coherent light"
+    ],
+    "what_can_change": [
+      "Wardrobe (blazer to target-native technical attire)",
+      "Specific environment objects (mechanical machinery to servers/code/circuits)",
+      "Hand pose and gesture (exact reference pose not required)",
+      "Exact accent color (green may shift to target-owned hue)",
+      "Background details and atmospheric elements",
+      "Camera distance and crop within square format"
+    ],
+    "key_conflicts": [
+      "Source text 'SEM PROMPTS' prohibited by user constraint",
+      "Literal infinity mechanical assembly prohibited by user constraint",
+      "Reference styling must not override target subject identity preservation"
+    ],
+    "recommended_anchors": [
+      "Centered authority composition with subject as clear hero",
+      "Purple key light with dark shadows and controlled fill on face",
+      "Layered technical environment with atmospheric depth",
+      "Central technical focal element demonstrating mastery",
+      "Acid-green or equivalent accent for chromatic energy"
+    ],
+    "creative_opportunities": [
+      "Replace mechanical infinity with holographic code stream or data visualization",
+      "Use actual computer screens or server arrays as light sources and depth planes",
+      "Incorporate subtle circuit board patterns or digital grid in background",
+      "Hands could interact with touchscreen, device, or gestural interface",
+      "Wardrobe could shift to tech-casual or creative professional while maintaining authority"
+    ],
+    "warnings": [
+      "Avoid generic cyberpunk clichés (random cables, neon without source, unmotivated particles)",
+      "Protect facial recognizability under purple lighting at thumbnail size",
+      "Do not add text overlay unless explicitly required by future brief revision",
+      "Ensure glasses remain readable and not lost in shadow or reflection",
+      "Maintain approachable confidence; avoid hostility or excessive darkness"
+    ]
+  }
+}

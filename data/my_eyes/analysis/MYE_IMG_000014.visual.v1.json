@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_id": "MYE_ANA_000008",
+  "image_id": "MYE_IMG_000014",
+  "image_sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0",
+  "analysis_version": 1,
+  "analyzed_at": "2026-08-10T05:58:45.868Z",
+  "blind_analysis": true,
+  "label_visible_during_analysis": false,
+  "human_decision_context_used": false,
+  "data_classification": "REAL_AI_ANALYSIS",
+  "analyzer": {
+    "provider": "OpenAI",
+    "model": "Codex multimodal runtime",
+    "analyzer_version": "session-2026-08-10",
+    "analysis_prompt_version": "my-eyes-blind-visual-observation-v1"
+  },
+  "overall_observation_summary": "Landscape auditorium banner with a suited male speaker gesturing on the right and blue-lit screens and audience depth behind him.",
+  "dimensions": {
+    "format_usage": {
+      "status": "OBSERVED",
+      "summary": "Wide frame leaves a large dark copy field on the left and places the speaker right of center.",
+      "facts": [
+        {
+          "fact_id": "FACT_001",
+          "attribute": "format_usage",
+          "observation": "Wide frame leaves a large dark copy field on the left and places the speaker right of center.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "composition": {
+      "status": "OBSERVED",
+      "summary": "The gesturing speaker occupies the near-right while auditorium structures recede diagonally behind.",
+      "facts": [
+        {
+          "fact_id": "FACT_002",
+          "attribute": "composition",
+          "observation": "The gesturing speaker occupies the near-right while auditorium structures recede diagonally behind.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "visual_hierarchy": {
+      "status": "OBSERVED",
+      "summary": "The lit face and hand lead, followed by bright blue stage screens and the crowd.",
+      "facts": [
+        {
+          "fact_id": "FACT_003",
+          "attribute": "visual_hierarchy",
+          "observation": "The lit face and hand lead, followed by bright blue stage screens and the crowd.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "depth": {
+      "status": "OBSERVED",
+      "summary": "Foreground rail, speaker, audience and distant screens establish clear spatial layers.",
+      "facts": [
+        {
+          "fact_id": "FACT_004",
+          "attribute": "depth",
+          "observation": "Foreground rail, speaker, audience and distant screens establish clear spatial layers.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "subject_environment_integration": {
+      "status": "OBSERVED",
+      "summary": "Blue stage light and auditorium context embed the speaker in the event setting.",
+      "facts": [
+        {
+          "fact_id": "FACT_005",
+          "attribute": "subject_environment_integration",
+          "observation": "Blue stage light and auditorium context embed the speaker in the event setting.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "lighting": {
+      "status": "OBSERVED",
+      "summary": "Cool blue backlight and screen illumination contrast with softer warm facial light.",
+      "facts": [
+        {
+          "fact_id": "FACT_006",
+          "attribute": "lighting",
+          "observation": "Cool blue backlight and screen illumination contrast with softer warm facial light.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "color": {
+      "status": "OBSERVED",
+      "summary": "Navy, cyan and black dominate with restrained warm skin tones.",
+      "facts": [
+        {
+          "fact_id": "FACT_007",
+          "attribute": "color",
+          "observation": "Navy, cyan and black dominate with restrained warm skin tones.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "typography": {
+      "status": "NOT_PRESENT",
+      "summary": "No legible typography is present in the observed frame.",
+      "facts": []
+    },
+    "environment": {
+      "status": "OBSERVED",
+      "summary": "A large presentation auditorium contains seating, a crowd, stage structures and screens.",
+      "facts": [
+        {
+          "fact_id": "FACT_008",
+          "attribute": "environment",
+          "observation": "A large presentation auditorium contains seating, a crowd, stage structures and screens.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "foreground": {
+      "status": "OBSERVED",
+      "summary": "A dark rail or stage edge crosses the lower front plane.",
+      "facts": [
+        {
+          "fact_id": "FACT_009",
+          "attribute": "foreground",
+          "observation": "A dark rail or stage edge crosses the lower front plane.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "effects": {
+      "status": "OBSERVED",
+      "summary": "Screen bloom, blue atmospheric haze and edge lighting provide the main effects.",
+      "facts": [
+        {
+          "fact_id": "FACT_010",
+          "attribute": "effects",
+          "observation": "Screen bloom, blue atmospheric haze and edge lighting provide the main effects.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "realism_coherence": {
+      "status": "OBSERVED",
+      "summary": "Photographic speaker, crowd and architecture follow event-space perspective.",
+      "facts": [
+        {
+          "fact_id": "FACT_011",
+          "attribute": "realism_coherence",
+          "observation": "Photographic speaker, crowd and architecture follow event-space perspective.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "complexity_density": {
+      "status": "OBSERVED",
+      "summary": "Moderate detail fills the right and background while the left remains sparse.",
+      "facts": [
+        {
+          "fact_id": "FACT_012",
+          "attribute": "complexity_density",
+          "observation": "Moderate detail fills the right and background while the left remains sparse.",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    "distinctive_design_decisions": {
+      "status": "OBSERVED",
+      "summary": "The speaker's open hand gesture points across a panoramic blue auditorium while copy space remains empty.",
+      "facts": [
+        {
+          "fact_id": "FACT_013",
+          "attribute": "distinctive_design_decisions",
+          "observation": "The speaker's open hand gesture points across a panoramic blue auditorium while copy space remains empty.",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  },
+  "interpretations": [],
+  "uncertainty_notes": [
+    "Observation was performed from a neutral compressed visual rendition derived from the indexed image bytes; very small text and fine details may be uncertain."
+  ],
+  "semantic_boundaries": {
+    "human_reason_written": false,
+    "general_quality_judgment_performed": false,
+    "designer_preference_inferred": false,
+    "pairwise_inference_performed": false
+  },
+  "provenance": {
+    "asserted_by": "MULTIMODAL_ANALYZER",
+    "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+    "source_type": "IMAGE_BYTES",
+    "source_ref": "my-eyes-image://MYE_IMG_000014@sha256:49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0",
+    "recorded_at": "2026-08-10T05:58:45.868Z",
+    "data_classification": "REAL_AI_ANALYSIS"
+  }
+}

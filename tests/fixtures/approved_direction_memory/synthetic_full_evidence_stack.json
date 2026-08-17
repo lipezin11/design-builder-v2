@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.1.0",
+  "memory_id": "synthetic-approved-direction-memory",
+  "memory_version": 1,
+  "created_at": "2026-08-10T12:00:00.000Z",
+  "updated_at": "2026-08-10T12:00:00.000Z",
+  "data_classification": "SYNTHETIC_TEST_DATA",
+  "visual_content_analyzed": true,
+  "semantic_boundaries": {
+    "approval_is_not_general_quality": true,
+    "rejection_is_not_failure_reason": true,
+    "visual_analysis_is_not_human_preference": true,
+    "inference_is_not_human_truth": true,
+    "pairwise_requires_explicit_comparison": true
+  },
+  "images": [
+    {
+      "image_id": "MYE_IMG_000001",
+      "original_filename": "synthetic-a.png",
+      "source_path": "tests/synthetic/my_eyes/approved/synthetic-a.png",
+      "source_bucket": "APPROVED",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "byte_size": 16,
+      "mime_type": "image/png",
+      "availability": "MISSING",
+      "byte_accessible": false,
+      "indexed_at": "2026-08-10T12:00:00.000Z",
+      "current_decision_evidence_id": "MYE_DEC_000001",
+      "visual_content_analyzed": true,
+      "data_classification": "SYNTHETIC_TEST_DATA"
+    },
+    {
+      "image_id": "MYE_IMG_000002",
+      "original_filename": "synthetic-b.png",
+      "source_path": "tests/synthetic/my_eyes/rejected/synthetic-b.png",
+      "source_bucket": "REJECTED",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "byte_size": 16,
+      "mime_type": "image/png",
+      "availability": "MISSING",
+      "byte_accessible": false,
+      "indexed_at": "2026-08-10T12:00:00.000Z",
+      "current_decision_evidence_id": "MYE_DEC_000002",
+      "visual_content_analyzed": false,
+      "data_classification": "SYNTHETIC_TEST_DATA"
+    }
+  ],
+  "human_decisions": [
+    {
+      "evidence_id": "MYE_DEC_000001",
+      "evidence_level": "LEVEL_0_HUMAN_DECISION",
+      "image_id": "MYE_IMG_000001",
+      "decision": "APPROVED",
+      "status": "ACTIVE",
+      "assertion_scope": "HUMAN_DECISION_ONLY",
+      "reason_provided": true,
+      "provenance": {
+        "asserted_by": "HUMAN",
+        "recorded_by": "SYSTEM_INDEXER",
+        "source_type": "APPROVED_IMAGE",
+        "source_ref": "synthetic-test-label",
+        "recorded_at": "2026-08-10T12:00:00.000Z",
+        "data_classification": "SYNTHETIC_TEST_DATA"
+      }
+    },
+    {
+      "evidence_id": "MYE_DEC_000002",
+      "evidence_level": "LEVEL_0_HUMAN_DECISION",
+      "image_id": "MYE_IMG_000002",
+      "decision": "REJECTED",
+      "status": "ACTIVE",
+      "assertion_scope": "HUMAN_DECISION_ONLY",
+      "reason_provided": false,
+      "provenance": {
+        "asserted_by": "HUMAN",
+        "recorded_by": "SYSTEM_INDEXER",
+        "source_type": "REJECTED_IMAGE",
+        "source_ref": "synthetic-test-label",
+        "recorded_at": "2026-08-10T12:00:00.000Z",
+        "data_classification": "SYNTHETIC_TEST_DATA"
+      }
+    }
+  ],
+  "human_reasons": [
+    {
+      "reason_id": "MYE_RSN_000001",
+      "evidence_level": "LEVEL_1_HUMAN_REASON",
+      "target": {
+        "image_id": "MYE_IMG_000001"
+      },
+      "raw_text": "Synthetic reason used only to validate preservation of raw text.",
+      "provenance": {
+        "asserted_by": "HUMAN",
+        "recorded_by": "HUMAN",
+        "source_type": "HUMAN_FEEDBACK",
+        "source_ref": "synthetic-test-feedback",
+        "recorded_at": "2026-08-10T12:01:00.000Z",
+        "data_classification": "SYNTHETIC_TEST_DATA"
+      },
+      "status": "ACTIVE",
+      "version": 1
+    }
+  ],
+  "structured_human_reasons": [
+    {
+      "structured_reason_id": "MYE_SRSN_000001",
+      "evidence_level": "LEVEL_2_STRUCTURED_HUMAN_REASON",
+      "human_reason_id": "MYE_RSN_000001",
+      "categories": [
+        "DEPTH"
+      ],
+      "normalized_statement": "Synthetic structured reason for contract validation only.",
+      "translation_method": "HUMAN_STRUCTURED",
+      "provenance": {
+        "asserted_by": "HUMAN",
+        "recorded_by": "SYSTEM_INFERENCE",
+        "source_type": "HUMAN_FEEDBACK",
+        "source_ref": "MYE_RSN_000001",
+        "recorded_at": "2026-08-10T12:02:00.000Z",
+        "data_classification": "SYNTHETIC_TEST_DATA"
+      },
+      "polarity": "POSITIVE",
+      "structured_by": "HUMAN",
+      "confirmed_by_human": true,
+      "status": "ACTIVE",
+      "version": 1
+    }
+  ],
+  "visual_analyses": [
+    {
+      "analysis_id": "MYE_ANA_000001",
+      "evidence_level": "LEVEL_3_VISUAL_ANALYSIS",
+      "image_id": "MYE_IMG_000001",
+      "image_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "analysis_version": 1,
+      "record_path": "tests/fixtures/visual_analysis_record/synthetic_level_3.json",
+      "analyzed_at": "2026-08-10T12:03:00.000Z",
+      "blind_analysis": true,
+      "label_visible_during_analysis": false,
+      "human_preference_claim": false,
+      "analyzer": {
+        "provider": "synthetic-provider",
+        "model": "synthetic-model",
+        "analyzer_version": "test-only",
+        "analysis_prompt_version": "synthetic-blind-v1"
+      },
+      "provenance": {
+        "asserted_by": "MULTIMODAL_ANALYZER",
+        "recorded_by": "APPROVED_DIRECTION_MEMORY_SERVICE",
+        "source_type": "IMAGE_BYTES",
+        "source_ref": "tests/fixtures/visual_analysis_record/synthetic_level_3.json",
+        "recorded_at": "2026-08-10T12:03:00.000Z",
+        "data_classification": "SYNTHETIC_TEST_DATA"
+      }
+    }
+  ],
+  "pairwise_preferences": [
+    {
+      "pair_id": "MYE_PAIR_000001",
+      "evidence_level": "LEVEL_0_HUMAN_DECISION",
+      "left_image_id": "MYE_IMG_000001",
+      "right_image_id": "MYE_IMG_000002",
+      "result": "LEFT_PREFERRED",
+      "preferred_image_id": "MYE_IMG_000001",
+      "pair_type": "HARD_PAIR",
+      "explicitly_compared_by_human": true,
+      "comparison_context": "Synthetic explicit comparison for contract validation only.",
+      "human_reason_ids": [],
+      "provenance": {
+        "asserted_by": "HUMAN",
+        "recorded_by": "HUMAN",
+        "source_type": "PAIRWISE_COMPARISON",
+        "source_ref": "synthetic-pair-event",
+        "recorded_at": "2026-08-10T12:04:00.000Z",
+        "data_classification": "SYNTHETIC_TEST_DATA"
+      },
+      "status": "ACTIVE",
+      "version": 1
+    }
+  ],
+  "inferred_preferences": [
+    {
+      "preference_id": "MYE_PREF_000001",
+      "evidence_level": "LEVEL_4_INFERRED_PREFERENCE_CANDIDATE",
+      "type": "CONDITIONAL_ACCEPTANCE",
+      "statement": "Synthetic evidence suggests a contextual depth preference; this remains a non-authoritative test candidate.",
+      "status": "CONTEXTUAL",
+      "categories": [
+        "DEPTH"
+      ],
+      "related_concepts": [
+        "SYNTHETIC_DEPTH_PATTERN"
+      ],
+      "scope": "Synthetic contract fixture only.",
+      "conditions": [
+        "the evidence groups remain independently attributable"
+      ],
+      "exceptions": [
+        "this fixture does not represent real designer truth"
+      ],
+      "explicitly_not_claimed": [
+        "universal_depth_rule_exists"
+      ],
+      "supporting_evidence_refs": [
+        "MYE_DEC_000001",
+        "MYE_RSN_000001",
+        "MYE_PAIR_000001",
+        "MYE_ANA_000001"
+      ],
+      "contradicting_evidence_refs": [
+        "MYE_DEC_000002"
+      ],
+      "human_evidence_refs": [
+        "MYE_DEC_000001",
+        "MYE_RSN_000001",
+        "MYE_DEC_000002"
+      ],
+      "visual_evidence_refs": [
+        "MYE_ANA_000001"
+      ],
+      "pairwise_refs": [
+        "MYE_PAIR_000001"
+      ],
+      "candidate_signal_refs": [],
+      "hypothesis_refs": [],
+      "independent_evidence_groups": [
+        {
+          "group_id": "synthetic_label_reason",
+          "evidence_refs": [
+            "MYE_DEC_000001",
+            "MYE_RSN_000001"
+          ],
+          "independence_basis": "Synthetic explicit label and human reason."
+        },
+        {
+          "group_id": "synthetic_pair",
+          "evidence_refs": [
+            "MYE_PAIR_000001"
+          ],
+          "independence_basis": "Synthetic explicit human pairwise comparison."
+        }
+      ],
+      "contradiction_search": {
+        "performed": true,
+        "query_scope": "Synthetic approved and rejected labels.",
+        "outcome": "COUNTEREVIDENCE_FOUND",
+        "summary": "The rejected label is preserved as counterevidence for contract testing."
+      },
+      "sample_context": {
+        "description": "Two synthetic images and one explicit pair.",
+        "image_ids": [
+          "MYE_IMG_000001",
+          "MYE_IMG_000002"
+        ],
+        "pair_ids": [
+          "MYE_PAIR_000001"
+        ]
+      },
+      "confidence": "MEDIUM",
+      "confidence_basis": {
+        "qualitative_evidence_priority": [
+          "DIRECT_HUMAN_EVIDENCE",
+          "SYSTEM_INTERPRETATION",
+          "CORRELATIONAL_EVIDENCE"
+        ],
+        "convergence_summary": "Two synthetic direct-human groups support the contract candidate.",
+        "confidence_is_not_score": true
+      },
+      "known_uncertainties": [
+        "Synthetic data cannot establish a real preference."
+      ],
+      "created_by": "SYSTEM_INFERENCE",
+      "human_confirmed": false,
+      "preference_strength_status": "NON_AUTHORITATIVE_CANDIDATE",
+      "inference_method": "EVIDENCE_CONVERGENCE_WITH_COUNTEREXAMPLE_SEARCH",
+      "version": 1,
+      "created_at": "2026-08-10T12:05:00.000Z",
+      "supersedes": null,
+      "revision_reason": null,
+      "human_confirmation_question": "Synthetic confirmation question?",
+      "provenance": {
+        "asserted_by": "SYSTEM_INFERENCE",
+        "recorded_by": "SYSTEM_INFERENCE",
+        "source_type": "DERIVED_INFERENCE",
+        "source_ref": "synthetic-evidence-set",
+        "recorded_at": "2026-08-10T12:05:00.000Z",
+        "data_classification": "SYNTHETIC_TEST_DATA"
+      }
+    }
+  ],
+  "summary": {
+    "image_count": 2,
+    "available_image_count": 0,
+    "approved_count": 1,
+    "rejected_count": 1,
+    "human_reason_count": 1,
+    "structured_reason_count": 1,
+    "visual_analysis_count": 1,
+    "pairwise_count": 1,
+    "hard_pair_count": 1,
+    "inferred_preference_count": 1,
+    "human_confirmed_generalized_preference_count": 0
+  },
+  "provenance": {
+    "producer": "APPROVED_DIRECTION_MEMORY_INDEXER",
+    "producer_version": "1.0.0-test",
+    "source_directories": [
+      "tests/synthetic/my_eyes/approved",
+      "tests/synthetic/my_eyes/rejected"
+    ],
+    "indexing_method": "DIRECTORY_CLASSIFICATION_AND_BYTE_METADATA_ONLY",
+    "visual_analysis_performed": false
+  }
+}

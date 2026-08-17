@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "compiler_input_id": "ci-regenerate-locked",
+  "project_id": "project-regenerate-locked",
+  "run_id": "run-regenerate-locked-002",
+  "final_frame_spec_ref": {
+    "final_frame_spec_id": "ffs-strong-reference-transfer",
+    "final_frame_spec_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-strong-reference-transfer/1.0.0",
+    "checksum": "sha256:test-ci-strong-reference",
+    "status_expected": "READY_FOR_COMPILATION"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "REGENERATE",
+  "assets": [
+    {
+      "asset_id": "asset-subject",
+      "role": "SUBJECT_IDENTITY",
+      "source_ref": "asset://subject",
+      "authority": "SUBJECT_IDENTITY_AUTHORITY",
+      "required": true,
+      "usage": "Bind recognizable subject identity",
+      "preservation_level": "STRICT",
+      "binding_scope": [
+        "subjects.subject-primary.identity"
+      ]
+    },
+    {
+      "asset_id": "asset-primary-reference",
+      "role": "PRIMARY_REFERENCE",
+      "source_ref": "asset://reference",
+      "authority": "PRIMARY_REFERENCE_AUTHORITY",
+      "required": true,
+      "usage": "Transfer approved visual behaviors",
+      "preservation_level": "HIGH",
+      "binding_scope": [
+        "composition",
+        "lighting",
+        "color",
+        "depth"
+      ]
+    }
+  ],
+  "reference_bindings": [
+    {
+      "reference_asset_id": "asset-primary-reference",
+      "role": "PRIMARY_REFERENCE",
+      "authority": "PRIMARY_REFERENCE_AUTHORITY",
+      "transfer_intensity": "HIGH",
+      "required_anchors": [
+        "asymmetric mass distribution",
+        "cyan edge separation",
+        "layered foreground"
+      ],
+      "do_not_copy": [
+        "source identity",
+        "source copy",
+        "pixel geometry"
+      ],
+      "scope": [
+        "composition",
+        "lighting",
+        "color",
+        "depth"
+      ]
+    }
+  ],
+  "identity_bindings": [
+    {
+      "subject_id": "subject-primary",
+      "identity_asset_id": "asset-subject",
+      "preservation_level": "STRICT",
+      "recognizability_required": true,
+      "immutable_characteristics": [
+        "recognizable facial identity"
+      ],
+      "editable_characteristics": [
+        "pose",
+        "wardrobe"
+      ]
+    }
+  ],
+  "text_bindings": [
+    {
+      "text_id": "headline",
+      "content": "CONTROL THE CURRENT",
+      "exact_text_lock": true,
+      "render_mode": "IN_IMAGE",
+      "language": "en-US",
+      "required": true
+    }
+  ],
+  "hard_locks": [
+    {
+      "lock_id": "lock-composition",
+      "domain": "composition",
+      "target": "composition",
+      "rule": "Preserve focal hierarchy, subject region and negative-space geometry.",
+      "source": "final_frame_spec.protected_fields",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-identity",
+      "domain": "identity",
+      "target": "subjects.subject-primary.identity",
+      "rule": "Preserve recognizable identity strictly.",
+      "source": "final_frame_spec.protected_fields",
+      "failure_policy": "FAIL_COMPILATION"
+    },
+    {
+      "lock_id": "lock-reference",
+      "domain": "reference",
+      "target": "reference_constraints.transfer_intensity",
+      "rule": "Keep HIGH transfer and all required anchors.",
+      "source": "final_frame_spec.reference_constraints",
+      "failure_policy": "FAIL_COMPILATION"
+    }
+  ],
+  "strong_targets": [
+    {
+      "target_id": "target-depth",
+      "domain": "depth",
+      "statement": "Preserve clearly separated foreground, subject and background planes.",
+      "priority": "HIGH",
+      "source": "final_frame_spec.depth_system",
+      "verification_hint": "Three visually distinct planes remain legible."
+    }
+  ],
+  "controlled_variation": [
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "Identity remains frozen."
+    },
+    {
+      "domain": "composition",
+      "level": "NONE",
+      "rule": "Composition remains frozen."
+    },
+    {
+      "domain": "reference",
+      "level": "NONE",
+      "rule": "Reference anchors and HIGH transfer remain frozen."
+    },
+    {
+      "domain": "microdetails",
+      "level": "MEDIUM",
+      "rule": "Only material microdetail may vary."
+    }
+  ],
+  "generator_capabilities": {
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0",
+    "data_classification": "HYPOTHETICAL_TEST_DATA",
+    "registry_checked_at": "2026-08-09T21:00:00-03:00",
+    "capabilities": [
+      {
+        "capability_id": "supports_image_reference",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_multiple_references",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "numeric_limit": 4,
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_edit_target",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_exact_text",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      },
+      {
+        "capability_id": "supports_structured_prompt",
+        "supported": true,
+        "confidence": "HIGH",
+        "source": "TEST_FIXTURE",
+        "notes": "Hypothetical test data only."
+      }
+    ]
+  },
+  "requested_output": {
+    "aspect_ratio": "16:9",
+    "output_role": "FINAL_IMAGE",
+    "number_of_variants": 1,
+    "deterministic_requirements": [
+      "Preserve upstream aspect ratio"
+    ]
+  },
+  "compiler_policy": {
+    "creative_authority": "NONE",
+    "allow_semantic_rephrasing": true,
+    "allow_content_invention": false,
+    "allow_lock_relaxation": false,
+    "allow_reference_dilution": false,
+    "allow_text_rewriting": false,
+    "unsupported_feature_policy": "FAIL"
+  },
+  "incompatibilities": [],
+  "provenance": {
+    "assembler": "COMPILER_INPUT_ASSEMBLER",
+    "assembler_version": "1.0.0",
+    "created_at": "2026-08-09T21:05:00-03:00",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ],
+    "notes": "Generator capabilities are hypothetical test data, not claims about a real model."
+  },
+  "status": "READY_FOR_COMPILATION",
+  "mode_context": {
+    "parent_generation_id": "generation-strong-reference-001",
+    "variation_domains": [
+      "microdetails"
+    ],
+    "previous_failure_context": "Previous render lost fine material realism; creative direction remains unchanged."
+  }
+}

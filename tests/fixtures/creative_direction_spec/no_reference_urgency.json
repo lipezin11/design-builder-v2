@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "direction_id": "cds-cart-close-001",
+  "project_id": "project-cart-close-001",
+  "status": "READY_FOR_TECHNICAL_DESIGN",
+  "input_refs": {
+    "brief_spec_id": "brief-cart-close-001",
+    "brief_spec_version": "1.0.0",
+    "reference_mode_active": false,
+    "human_instructions_incorporated": [
+      { "instruction_id": "hi-001", "summary": "Use the exact headline ENCERRAMENTO DO CARRINHO.", "provenance": "USER_EXPLICIT" }
+    ]
+  },
+  "creative_thesis": {
+    "thesis_statement": "The viewer is caught at the instant access is being withdrawn, with a credible authority figure controlling the final opening rather than shouting a generic sale.",
+    "communication_problem": "Create immediate urgency for a cart-closing thumbnail without producing panic or cheap discount language.",
+    "creative_answer": "Turn closure into an active spatial event moving across the scene while the subject remains composed and authoritative.",
+    "desired_viewer_perception": "This is a real final window, and the person presenting it is in control.",
+    "rationale": "Movement supplies urgency while the subject supplies trust and finality.",
+    "confidence": "HIGH"
+  },
+  "commercial_psychology": {
+    "primary_objective": "FEAR_OF_MISSING_OPPORTUNITY",
+    "desired_responses": ["PATTERN_INTERRUPT", "URGENCY", "AUTHORITY", "DECISION_READINESS"],
+    "responses_to_avoid": ["PANIC", "CHEAP_SALE_ENERGY", "MANIPULATION"],
+    "basis": ["BRIEF_SPEC", "CREATIVE_DIRECTOR"],
+    "rationale": "The brief supports urgency; authority is the chosen quality that keeps it credible."
+  },
+  "narrative_tension": {
+    "central_tension": "Human authority versus disappearing opportunity.",
+    "subject_role": "The composed gatekeeper announcing a consequential final moment.",
+    "environment_role": "A space visibly compressing and closing around the available path.",
+    "relationship": "The subject remains stable while the environment carries acceleration.",
+    "narrative_progression": ["Recognize the authority figure", "Feel directional closure", "Read the final headline", "Register that delay has consequence"],
+    "rationale": "Contrasting human stability with environmental motion avoids frantic sales imagery."
+  },
+  "subject_strategy": {
+    "role": "Authoritative closer",
+    "perceived_character": "Decisive, credible, calm under time pressure",
+    "expression_intent": "Direct finality without alarm",
+    "presence": "Dominant and immediately recognizable",
+    "relationship_to_environment": "Integrated through overlapping depth and shared directional energy, never pasted over a backdrop",
+    "relationship_to_viewer": "Direct address that makes the deadline personally relevant",
+    "authority_level": "VERY_HIGH",
+    "energy_level": "HIGH",
+    "identity_requirements": ["Preserve recognizability", "Do not distort identity for dramatic effect"]
+  },
+  "emotional_strategy": {
+    "primary_emotion": "URGENCY",
+    "secondary_emotions": ["AUTHORITY", "FINALITY", "ANTICIPATION"],
+    "emotions_to_avoid": ["PANIC", "DESPERATION", "CHEAP_EXCITEMENT"],
+    "emotional_progression": ["Interruption", "Recognition of authority", "Awareness of closure", "Impulse to act"],
+    "intensity": "HIGH",
+    "rationale": "Urgency should feel consequential and controlled."
+  },
+  "visual_hierarchy": [
+    { "rank": 1, "element": "SUBJECT_FACE", "reason": "Trust must precede the deadline claim.", "required_strength": "DOMINANT", "relationship_to_previous": null },
+    { "rank": 2, "element": "CLOSING_MOVEMENT_MECHANISM", "reason": "Makes finality felt rather than merely stated.", "required_strength": "STRONG", "relationship_to_previous": "Frames and accelerates attention away from the stable subject." },
+    { "rank": 3, "element": "HEADLINE", "reason": "Names the event after attention is secured.", "required_strength": "STRONG", "relationship_to_previous": "Receives momentum from the closure mechanism." }
+  ],
+  "creative_concept": {
+    "concept_statement": "The Last Opening",
+    "visual_world": "A compressed threshold whose layers are actively converging around one remaining path.",
+    "narrative_function": "Make closure an event occurring now.",
+    "composition_logic": "Stable human mass opposed by directional environmental pressure.",
+    "depth_logic": "Foreground and environmental layers cross one another to create real spatial compression.",
+    "environment_logic": "Every environmental element either narrows the path or directs attention; nothing is decorative.",
+    "typography_role": "Headline acts as the formal announcement of the closing event, secondary to human authority."
+  },
+  "ideation": {
+    "candidates": [
+      { "candidate_id": "cand-last-opening", "concept_name": "The Last Opening", "concept_summary": "A remaining access corridor closes around an authoritative subject.", "core_mechanism": "Directional compression around a stable focal figure", "strengths": ["Urgency without panic", "Strong movement", "Narrative depth"], "risks": ["Closure can become visually chaotic if every layer competes"], "decision": "SELECTED", "decision_reason": "Best combines authority, movement and immediate finality." },
+      { "candidate_id": "cand-countdown", "concept_name": "Literal Countdown", "concept_summary": "A large timer dominates the frame.", "core_mechanism": "Numeric deadline symbol", "strengths": ["Immediate comprehension"], "risks": ["Predictable", "Cheap promotion language", "Weak subject integration"], "decision": "REJECTED", "decision_reason": "It explains urgency literally but does not create an ownable narrative." },
+      { "candidate_id": "cand-red-alert", "concept_name": "Red Alert", "concept_summary": "Alarm color and warning symbols create pressure.", "core_mechanism": "Visual alarm", "strengths": ["High interruption"], "risks": ["Panic", "Clickbait", "Loss of authority"], "decision": "REJECTED", "decision_reason": "Intensity comes from generic alarm codes rather than meaningful tension." }
+    ],
+    "convergence_summary": "The selected route keeps the legibility of a deadline but converts it into spatial narrative instead of a timer or alarm graphic."
+  },
+  "selected_direction": {
+    "candidate_id": "cand-last-opening",
+    "name": "The Last Opening",
+    "concept": "A credible authority figure occupies the last stable point while the opportunity visibly closes through the surrounding space.",
+    "why_it_won": "It makes urgency experiential while preserving trust and subject dominance.",
+    "core_visual_idea": "Stability at the center of controlled directional collapse.",
+    "required_perception": ["The deadline is real", "The subject is credible", "Action is still possible but not indefinitely"],
+    "creative_risk": "Overstating motion could create panic or obscure the headline.",
+    "originality_strategy": "Express the deadline through spatial behavior rather than clocks, red alerts or sale badges.",
+    "confidence": "HIGH"
+  },
+  "visual_mechanisms": [
+    { "mechanism_id": "mech-compression", "name": "CONVERGING_ACCESS_COMPRESSION", "category": "COMPOSITION", "function": "Narrow the perceived path through directional masses.", "target_effect": "Finality and forward pressure", "priority": "CRITICAL", "source": "CREATIVE_DIRECTOR", "flexibility": "LOW", "rationale": "Carries the cart-closing narrative without literal countdown imagery." },
+    { "mechanism_id": "mech-depth", "name": "FOREGROUND_OCCLUSION", "category": "DEPTH", "function": "Create layers that visibly pass in front of and behind the subject.", "target_effect": "Convincing depth and subject/environment integration", "priority": "IMPORTANT", "source": "VKB", "source_reference": "vkb-depth-014", "flexibility": "MEDIUM", "rationale": "Prevents flat portrait-on-background construction." },
+    { "mechanism_id": "mech-motion", "name": "DIRECTIONAL_MOTION", "category": "MOTION", "function": "Move attention from the subject through closure toward the headline.", "target_effect": "Fast, controlled reading", "priority": "IMPORTANT", "source": "CREATIVE_DIRECTOR", "flexibility": "MEDIUM", "rationale": "Connects narrative action to hierarchy." }
+  ],
+  "reference_integration": { "active": false, "transfer_intensity": "NONE", "accepted_anchors": [], "modified_anchors": [], "rejected_anchors": [], "director_overrides": [], "remaining_reference_constraints": [], "confidence": "HIGH" },
+  "vkb_usage": {
+    "consulted": true,
+    "queries": ["urgent composition without countdown cliché", "foreground occlusion subject integration"],
+    "retrieved_mechanisms": [{ "vkb_id": "vkb-depth-014", "mechanism_name": "FOREGROUND_OCCLUSION", "why_relevant": "Adds physical depth and movement.", "how_adapted": "Used as closing environmental layers rather than decorative foreground blur.", "authority": "ADVISORY", "confidence": "HIGH" }],
+    "selected_mechanisms": [{ "vkb_id": "vkb-depth-014", "mechanism_name": "FOREGROUND_OCCLUSION", "why_relevant": "Supports integration and urgency.", "how_adapted": "Occluding layers participate in the closure narrative.", "authority": "ADVISORY", "confidence": "HIGH" }],
+    "rejected_mechanisms": [{ "vkb_id": "vkb-attention-003", "mechanism_name": "RADIAL_ALARM_BURST", "rejection_reason": "Would introduce cheap promotional energy.", "authority": "ADVISORY" }],
+    "adaptation_notes": ["VKB supplied an abstract depth precedent; the Creative Director assigned its narrative function."]
+  },
+  "approved_direction_memory": { "consulted": false, "relevant_evidence_found": false, "evidence": [] },
+  "protected_elements": [
+    { "element_id": "protect-headline", "type": "COPY", "description": "Exact headline ENCERRAMENTO DO CARRINHO", "source": "brief-cart-close-001", "protection_level": "HARD", "reason": "Explicit required copy.", "provenance": "USER_EXPLICIT" },
+    { "element_id": "protect-identity", "type": "SUBJECT_IDENTITY", "description": "Recognizable supplied subject identity", "source": "brief-cart-close-001", "protection_level": "HARD", "reason": "Authority depends on recognition.", "provenance": "BRIEF_SPEC" }
+  ],
+  "creative_constraints": [
+    { "constraint_id": "cc-subject", "level": "STRONG", "statement": "The subject must remain the perceptual focal point.", "source": "selected-direction", "rationale": "Authority must precede urgency.", "provenance": "CREATIVE_DIRECTOR" },
+    { "constraint_id": "cc-depth", "level": "STRONG", "statement": "Depth must integrate the subject with the closing event.", "source": "selected-direction", "rationale": "A pasted portrait would break the narrative.", "provenance": "CREATIVE_DIRECTOR" }
+  ],
+  "banned_tropes": [
+    { "name": "LITERAL_TIMER_CLICHE", "description": "Countdown clock used as the main idea.", "reason": "Predictable and substitutes a symbol for direction.", "severity": "CRITICAL", "source": "CREATIVE_DIRECTOR" },
+    { "name": "CHEAP_DISCOUNT_VISUAL_LANGUAGE", "description": "Sale badges, alarm bursts or random red warning graphics.", "reason": "Undermines authority and premium perception.", "severity": "HIGH", "source": "CREATIVE_DIRECTOR" }
+  ],
+  "technical_room_freedom": {
+    "frozen_decisions": [{ "decision": "Subject dominates before the closure mechanism and headline.", "rationale": "This is the trust-first hierarchy." }, { "decision": "Urgency is expressed through converging spatial motion.", "rationale": "This is the central creative idea." }],
+    "strong_guidelines": [{ "decision": "Use foreground/background interaction for depth.", "rationale": "Prevents a composite look." }],
+    "open_decisions": [{ "decision": "Exact lens, light positions and arrangement of closing layers.", "rationale": "These are technical implementations of the frozen mechanism." }],
+    "technical_freedom_level": "MEDIUM"
+  },
+  "unresolved_questions": [],
+  "provenance": { "producer": "PRINCIPAL_CREATIVE_DIRECTOR_AGENT", "producer_version": "1.0.0", "created_at": "2026-08-09T12:00:00-03:00", "decision_sources": ["BRIEF_SPEC", "CREATIVE_DIRECTOR", "VKB"], "notes": "Stores external rationales and decisions only." },
+  "confidence": { "overall": "HIGH", "rationale": "The direction directly resolves urgency, authority and cliché avoidance." },
+  "approval": { "approval_status": "SYSTEM_APPROVED", "approved_by": "SYSTEM", "timestamp": "2026-08-09T12:05:00-03:00", "notes": "Ready for technical design; no human approval claimed.", "human_override": false },
+  "technical_handoff": {
+    "target_agents": ["VISUAL_SYSTEMS_AGENT", "LAYOUT_TYPOGRAPHY_AGENT"],
+    "creative_goal": "Make cart closure feel active, credible and consequential.",
+    "selected_direction_summary": "A stable authority figure holds the last opening while the surrounding space closes directionally.",
+    "must_preserve": ["Exact headline", "Subject identity", "Trust-first hierarchy"],
+    "must_achieve": ["Controlled urgency", "Strong subject/environment integration", "Immediate reading"],
+    "must_avoid": ["Literal timer", "Cheap sale graphics", "Panic", "Flat portrait composite"],
+    "required_mechanism_ids": ["mech-compression", "mech-depth", "mech-motion"],
+    "hierarchy": [{ "rank": 1, "element": "SUBJECT_FACE", "reason": "Establish authority.", "required_strength": "DOMINANT", "relationship_to_previous": null }, { "rank": 2, "element": "CLOSING_MOVEMENT_MECHANISM", "reason": "Create urgency.", "required_strength": "STRONG", "relationship_to_previous": "Moves away from the stable subject." }, { "rank": 3, "element": "HEADLINE", "reason": "Name the event.", "required_strength": "STRONG", "relationship_to_previous": "Receives directional flow." }],
+    "reference_anchors": [],
+    "technical_freedoms": ["Exact lens", "Exact lighting implementation", "Exact layer geometry", "Typography implementation"],
+    "known_risks": ["Too much motion can create panic", "Closing layers can compete with the headline"]
+  }
+}

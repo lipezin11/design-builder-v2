@@ -1,0 +1,425 @@
+{
+  "suite_id": "REFERENCE_TRANSLATOR_LIVE_MULTIMODAL_COGNITIVE_EVALUATION_V1",
+  "suite_run_id": "rt-live-nemovl12-20260816-01",
+  "artifact_classification": "EVALUATION_ARTIFACTS_NOT_PRODUCTION",
+  "provider_profile": {
+    "provider": "NVIDIA_NIM",
+    "model_id": "nvidia/nemotron-nano-12b-v2-vl",
+    "documented_context_limit_tokens": 131072,
+    "documented_input_modalities": [
+      "TEXT",
+      "IMAGE",
+      "VIDEO"
+    ],
+    "documented_image_input_supported": true,
+    "documentation_ref": "https://build.nvidia.com/nvidia/nemotron-nano-12b-v2-vl",
+    "documentation_checked_at": "2026-08-16"
+  },
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "runtime_version": "1.0.0",
+  "base_directory": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals",
+  "manifest_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\manifest.json",
+  "summary_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-nemovl12-20260816-01.summary.json",
+  "human_review_packet_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-nemovl12-20260816-01.human-review.md",
+  "consolidated_report_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\reports\\rt-live-nemovl12-20260816-01.consolidated.md",
+  "smoke_result": {
+    "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+    "status": "PROVIDER_BLOCKED",
+    "technical_runtime_acceptance": false,
+    "visual_analysis_proven": false,
+    "documented_image_input_supported": true,
+    "full_battery_permitted": false,
+    "provider_error_code": null,
+    "image_transmission": [
+      {
+        "asset_id": "live_ref_authority_speaker",
+        "mime_type": "image/jpeg",
+        "source_type": "INLINE_IMAGE_BYTES",
+        "byte_length": 98544,
+        "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+      }
+    ],
+    "request_measurement": {
+      "measurement_version": "1.0.0",
+      "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+      "core_prompt_characters": 11451,
+      "knowledge_characters": 472402,
+      "knowledge_wrapper_and_index_characters": 2965,
+      "assembled_system_prompt_characters": 486818,
+      "schema_characters": 11766,
+      "brief_context_characters": 4324,
+      "reference_context_characters": 817,
+      "my_eyes_advisory_characters": 1262,
+      "vkb_advisory_characters": 1230,
+      "retry_diagnostic_characters": 109,
+      "provider_user_text_characters": 32738,
+      "total_textual_characters": 519556,
+      "multimodal_image_count": 1,
+      "image_base64_transport_characters": 131392,
+      "serialized_http_body_characters": 660451,
+      "input_tokens": 95933,
+      "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+      "output_budget_tokens": 8192,
+      "context_limit_tokens": 131072,
+      "headroom_tokens": 26947,
+      "context_classification": "SAFE"
+    }
+  },
+  "case_results": [
+    {
+      "case_id": "LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "status": "PROVIDER_BLOCKED",
+      "quality_class": "PROVIDER_BLOCKED",
+      "creative_approval": "NOT_PERFORMED",
+      "error": {
+        "code": "REFERENCE_PLAN_RETRY_EXHAUSTED",
+        "message": "Reference Translator exhausted its correction attempts.",
+        "provider_error_code": null
+      },
+      "checks": [
+        {
+          "category": "VISUAL_REFERENCE_ACTUALLY_ANALYZED",
+          "outcome": "FAIL",
+          "evidence": "No accepted multimodal model response was produced."
+        },
+        {
+          "category": "MECHANISM_IDENTIFICATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "FUNCTION_BEFORE_APPEARANCE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "REFERENCE_DNA_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_SEMANTICS_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "TARGET_NATIVE_ADAPTATION",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "LITERAL_COPY_AVOIDED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SURFACE_COPY_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "UNDERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "OVERTRANSFER_RISK",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "IDENTITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_TEXT_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SOURCE_BRAND_PRESERVED_AS_NON_TRANSFERABLE",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "MY_EYES_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "VKB_AUTHORITY_PRESERVED",
+          "outcome": "UNCERTAIN",
+          "evidence": "No accepted plan exists."
+        },
+        {
+          "category": "SCHEMA_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "SEMANTIC_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        },
+        {
+          "category": "QUALITY_GATE_VALID",
+          "outcome": "NOT_APPLICABLE",
+          "evidence": "No candidate plan reached validation."
+        }
+      ],
+      "cognitive_audit": {
+        "what_the_model_thought_was_important": [],
+        "what_it_wanted_to_transfer": [],
+        "what_it_wanted_to_adapt": [],
+        "what_it_wanted_to_reinvent": [],
+        "what_it_discarded": [],
+        "what_it_protected": [],
+        "what_risks_it_identified": []
+      },
+      "trace_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\runs\\run_live_rt_01_same_domain_authority-rt-live-nemovl12-20260816-01.trace.json",
+      "failed_attempts": [
+        {
+          "attempt": 1,
+          "validator_error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+          "diagnostic_codes": [
+            "REFERENCE_PLAN_SCHEMA_INVALID"
+          ],
+          "raw_json": true,
+          "schema_valid": false,
+          "schema_errors": [
+            {
+              "instancePath": "/reference_analyses/0/authority",
+              "schemaPath": "#/properties/reference_analyses/items/properties/authority/enum",
+              "keyword": "enum",
+              "params": {
+                "allowedValues": [
+                  "USER_PRIMARY_REFERENCE",
+                  "USER_SECONDARY_REFERENCE",
+                  "SUPPORTING_REFERENCE"
+                ]
+              },
+              "message": "must be equal to one of the allowed values"
+            },
+            {
+              "instancePath": "/design_decision_map/0",
+              "schemaPath": "#/properties/design_decision_map/items/required",
+              "keyword": "required",
+              "params": {
+                "missingProperty": "confidence"
+              },
+              "message": "must have required property 'confidence'"
+            },
+            {
+              "instancePath": "/design_decision_map/0",
+              "schemaPath": "#/properties/design_decision_map/items/required",
+              "keyword": "required",
+              "params": {
+                "missingProperty": "provenance"
+              },
+              "message": "must have required property 'provenance'"
+            }
+          ],
+          "candidate_project_id": "project_live_rt_01_same_domain_authority",
+          "candidate_status_field": "READY_FOR_DIRECTOR",
+          "observation_count": 4,
+          "visible_observations": [
+            {
+              "category": "COMPOSITION",
+              "description": "Hero subject centered with symmetrical framing",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "LIGHTING",
+              "description": "Dramatic side lighting creating strong shadows",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DEPTH",
+              "description": "Background crowd blurred with atmospheric perspective",
+              "confidence": "MEDIUM"
+            },
+            {
+              "category": "TYPOGRAPHY",
+              "description": "Bold headline with clean sans-serif type",
+              "confidence": "HIGH"
+            }
+          ],
+          "decisions": [
+            {
+              "action": "TRANSFER",
+              "target_in_new_composition": "centered executive subject with directional lighting",
+              "rationale": "Preserve hierarchical composition and lighting to communicate authority while adapting to target context"
+            }
+          ],
+          "declared_risks": [
+            "Over-reliance on reference's casual pose"
+          ]
+        },
+        {
+          "attempt": 2,
+          "validator_error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+          "diagnostic_codes": [
+            "REFERENCE_PLAN_SCHEMA_INVALID"
+          ],
+          "raw_json": true,
+          "schema_valid": false,
+          "schema_errors": [
+            {
+              "instancePath": "/reference_analyses/0/authority",
+              "schemaPath": "#/properties/reference_analyses/items/properties/authority/enum",
+              "keyword": "enum",
+              "params": {
+                "allowedValues": [
+                  "USER_PRIMARY_REFERENCE",
+                  "USER_SECONDARY_REFERENCE",
+                  "SUPPORTING_REFERENCE"
+                ]
+              },
+              "message": "must be equal to one of the allowed values"
+            }
+          ],
+          "candidate_project_id": "project_live_rt_01_same_domain_authority",
+          "candidate_status_field": "READY_FOR_DIRECTOR",
+          "observation_count": 4,
+          "visible_observations": [
+            {
+              "category": "SUBJECT_TREATMENT",
+              "description": "Subject occupies primary axis with quieter support around it",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "COMPOSITION",
+              "description": "Asymmetric balance with counterweighted hero",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "LIGHTING",
+              "description": "Directional key light from left creating shadow definition",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "MATERIAL",
+              "description": "Textured suit fabric with subtle pattern",
+              "confidence": "MEDIUM"
+            }
+          ],
+          "decisions": [
+            {
+              "action": "TRANSFER",
+              "target_in_new_composition": "Apply centered dominance with target-native supports",
+              "rationale": "Preserve hierarchical structure while adapting to target format"
+            }
+          ],
+          "declared_risks": [
+            "Overemphasis on secondary elements",
+            "Color contrast mismatch"
+          ]
+        },
+        {
+          "attempt": 3,
+          "validator_error_code": "REFERENCE_PLAN_SCHEMA_INVALID",
+          "diagnostic_codes": [
+            "REFERENCE_PLAN_SCHEMA_INVALID"
+          ],
+          "raw_json": true,
+          "schema_valid": false,
+          "schema_errors": [
+            {
+              "instancePath": "/reference_analyses/0/authority",
+              "schemaPath": "#/properties/reference_analyses/items/properties/authority/enum",
+              "keyword": "enum",
+              "params": {
+                "allowedValues": [
+                  "USER_PRIMARY_REFERENCE",
+                  "USER_SECONDARY_REFERENCE",
+                  "SUPPORTING_REFERENCE"
+                ]
+              },
+              "message": "must be equal to one of the allowed values"
+            }
+          ],
+          "candidate_project_id": "project_live_rt_01_same_domain_authority",
+          "candidate_status_field": "READY_FOR_DIRECTOR",
+          "observation_count": 3,
+          "visible_observations": [
+            {
+              "category": "COMPOSITION",
+              "description": "Hero subject centered with strong negative space",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "LIGHTING",
+              "description": "Dramatic side lighting creating strong shadows",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "MATERIAL",
+              "description": "Suit texture with subtle pattern variation",
+              "confidence": "MEDIUM"
+            }
+          ],
+          "decisions": [
+            {
+              "action": "TRANSFER",
+              "target_in_new_composition": "centered executive figure with directional lighting",
+              "rationale": "Preserve authoritative composition through target-native subject treatment while maintaining lighting hierarchy"
+            }
+          ],
+          "declared_risks": [
+            "Overemphasis on source lighting style",
+            "Potential identity leakage"
+          ]
+        }
+      ],
+      "raw_response_path": "C:\\Users\\filpz\\Documents\\design-builder\\data\\reference-translator\\live-evals\\cases\\LIVE_RT_01_SAME_DOMAIN_AUTHORITY\\rt-live-nemovl12-20260816-01.json"
+    }
+  ],
+  "full_request_measurement": {
+    "measurement_version": "1.0.0",
+    "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+    "core_prompt_characters": 11451,
+    "knowledge_characters": 472402,
+    "knowledge_wrapper_and_index_characters": 2965,
+    "assembled_system_prompt_characters": 486818,
+    "schema_characters": 11766,
+    "brief_context_characters": 4324,
+    "reference_context_characters": 817,
+    "my_eyes_advisory_characters": 1262,
+    "vkb_advisory_characters": 1230,
+    "retry_diagnostic_characters": 109,
+    "provider_user_text_characters": 32738,
+    "total_textual_characters": 519556,
+    "multimodal_image_count": 1,
+    "image_base64_transport_characters": 131392,
+    "serialized_http_body_characters": 660451,
+    "input_tokens": 95933,
+    "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+    "output_budget_tokens": 8192,
+    "context_limit_tokens": 131072,
+    "headroom_tokens": 26947,
+    "context_classification": "SAFE"
+  },
+  "full_brain_status": "INCONCLUSIVE",
+  "full_brain_evidence": "The complete request was measured, but no valid visual-model smoke completed. Prompt attention health cannot be inferred.",
+  "api_usage": {
+    "calls": 5,
+    "cognitive_invocations": 3,
+    "transport_retries": 2,
+    "input_tokens": 287771,
+    "output_tokens": 5613,
+    "cached_tokens": null,
+    "reasoning_tokens": null,
+    "latency_ms": 595065,
+    "cost": "UNKNOWN"
+  },
+  "full_battery_completed": false,
+  "scores_created": 0,
+  "weights_created": 0,
+  "rankings_created": 0,
+  "automatic_approvals": 0,
+  "creative_director_implemented": false,
+  "image_critic_cognitive_runtime_implemented": false,
+  "final_verdict": "NOT_READY",
+  "final_verdict_reason": "A documented image-input model did not complete the required smoke, so no honest real-image cognitive battery exists."
+}

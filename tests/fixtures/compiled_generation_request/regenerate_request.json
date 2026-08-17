@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "request_id": "cgr-regenerate-request",
+  "project_id": "project-regenerate-request",
+  "run_id": "run-regenerate-request-002",
+  "compiler_input_ref": {
+    "artifact_id": "ci-regenerate-locked",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://compiler-input/ci-regenerate-locked/1.0.0",
+    "checksum": "sha256:ci-regenerate-locked"
+  },
+  "final_frame_spec_ref": {
+    "artifact_id": "ffs-strong-reference-transfer",
+    "artifact_version": "1.0.0",
+    "artifact_uri": "artifact://final-frame/ffs-strong-reference-transfer/1.0.0",
+    "checksum": "sha256:ffs-strong-reference-transfer"
+  },
+  "target_generator": {
+    "provider": "TEST_PROVIDER",
+    "model_family": "HYPOTHETICAL_IMAGE_MODEL",
+    "model_name": "hypothetical-v1",
+    "profile_id": "profile-hypothetical-v1",
+    "profile_version": "1.0.0"
+  },
+  "generation_mode": "REGENERATE",
+  "compiled_instruction": {
+    "instruction_format": "PLAIN_TEXT",
+    "final_visual_description": "Final frame contains a dominant right-side subject integrated across foreground, subject and atmospheric background planes, with the left-side functional space and approved lighting hierarchy preserved.",
+    "plain_text": "Final frame contains a dominant right-side subject integrated across foreground, subject and atmospheric background planes, with the left-side functional space and approved lighting hierarchy preserved."
+  },
+  "control_layer": {
+    "creative_authority": "NONE",
+    "preserve_identity": true,
+    "preserve_reference_authority": true,
+    "preserve_text_locks": true,
+    "preserve_edit_target": false,
+    "preserve_composition": true,
+    "semantic_change_forbidden": true
+  },
+  "asset_bindings": [
+    {
+      "asset_id": "asset-subject",
+      "adapter_slot": "identity_reference",
+      "authority": "SUBJECT_IDENTITY_AUTHORITY",
+      "required": true,
+      "source_ref": "compiler_input.assets.asset-subject"
+    },
+    {
+      "asset_id": "asset-primary-reference",
+      "adapter_slot": "primary_reference",
+      "authority": "PRIMARY_REFERENCE_AUTHORITY",
+      "required": true,
+      "source_ref": "compiler_input.assets.asset-primary-reference"
+    }
+  ],
+  "reference_instructions": [
+    {
+      "reference_asset_id": "asset-primary-reference",
+      "transfer_intensity": "HIGH",
+      "required_anchors": [
+        "asymmetric mass distribution",
+        "cyan edge separation",
+        "layered foreground"
+      ],
+      "do_not_copy": [
+        "source identity",
+        "source copy",
+        "pixel geometry"
+      ],
+      "source_ref": "compiler_input.reference_bindings.asset-primary-reference"
+    }
+  ],
+  "identity_instructions": [
+    {
+      "subject_id": "subject-primary",
+      "identity_asset_id": "asset-subject",
+      "preservation_level": "STRICT",
+      "recognizability_required": true,
+      "source_ref": "compiler_input.identity_bindings.subject-primary"
+    }
+  ],
+  "text_instructions": [
+    {
+      "text_id": "headline",
+      "content": "CONTROL THE CURRENT",
+      "exact_text_lock": true,
+      "render_mode": "IN_IMAGE",
+      "required": true,
+      "source_ref": "compiler_input.text_bindings.headline"
+    }
+  ],
+  "negative_constraints": [
+    {
+      "constraint_id": "neg-random-objects",
+      "statement": "Do not add unapproved narrative objects.",
+      "source_ref": "final_frame_spec.generation_requirements.forbidden_visual_elements"
+    },
+    {
+      "constraint_id": "neg-composition",
+      "statement": "Do not alter focal hierarchy or occupy protected negative space.",
+      "source_ref": "final_frame_spec.protected_fields.composition"
+    }
+  ],
+  "output_parameters": {
+    "aspect_ratio": "16:9",
+    "output_role": "FINAL_IMAGE",
+    "number_of_variants": 1
+  },
+  "protected_fields": [
+    {
+      "field_id": "pf-composition",
+      "target": "composition",
+      "rule": "Preserve hierarchy and subject region.",
+      "source_ref": "final_frame_spec.protected_fields.composition",
+      "loss_category": "COMPOSITION_LOSS"
+    },
+    {
+      "field_id": "pf-depth",
+      "target": "depth_system",
+      "rule": "Preserve layered depth architecture.",
+      "source_ref": "final_frame_spec.protected_fields.depth",
+      "loss_category": "DEPTH_LOSS"
+    },
+    {
+      "field_id": "pf-reference",
+      "target": "reference.transfer_intensity",
+      "rule": "Keep HIGH reference transfer and every required anchor.",
+      "source_ref": "final_frame_spec.reference_constraints",
+      "loss_category": "REFERENCE_DILUTION"
+    },
+    {
+      "field_id": "pf-identity",
+      "target": "subject.identity",
+      "rule": "Preserve recognizable identity strictly.",
+      "source_ref": "final_frame_spec.protected_fields.identity",
+      "loss_category": "IDENTITY_LOCK_LOSS"
+    }
+  ],
+  "variation_policy": [
+    {
+      "domain": "identity",
+      "level": "NONE",
+      "rule": "Identity remains frozen.",
+      "source_ref": "compiler_input.controlled_variation.identity"
+    },
+    {
+      "domain": "composition",
+      "level": "NONE",
+      "rule": "Composition remains frozen.",
+      "source_ref": "compiler_input.controlled_variation.composition"
+    },
+    {
+      "domain": "reference",
+      "level": "NONE",
+      "rule": "HIGH transfer and anchors remain frozen.",
+      "source_ref": "compiler_input.controlled_variation.reference"
+    },
+    {
+      "domain": "microdetails",
+      "level": "MEDIUM",
+      "rule": "Only material microdetail may vary.",
+      "source_ref": "compiler_input.controlled_variation.microdetails"
+    }
+  ],
+  "capability_report": {
+    "profile_data_classification": "HYPOTHETICAL_TEST_DATA",
+    "supported_requirements": [
+      {
+        "requirement_ref": "final_frame_spec.depth_system",
+        "capability_ref": "profile.supports_structured_prompt",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      },
+      {
+        "requirement_ref": "final_frame_spec.reference_constraints",
+        "capability_ref": "profile.supports_image_reference",
+        "status": "SUPPORTED",
+        "impact": "No loss expected.",
+        "recommended_action": "PROCEED"
+      }
+    ],
+    "partially_supported_requirements": [],
+    "unsupported_requirements": [],
+    "unknown_capabilities": []
+  },
+  "compatibility_status": "FULLY_COMPATIBLE",
+  "warnings": [],
+  "errors": [],
+  "compiler_trace": {
+    "compiler_profile": "test-compiler-profile",
+    "compiler_version": "1.0.0",
+    "input_artifact": "ci-strong-reference-request",
+    "transformations_applied": [
+      {
+        "transformation": "Converted semantic regions and visual systems into target-generator phrasing.",
+        "source_ref": "final_frame_spec",
+        "semantic_change": false
+      }
+    ],
+    "warnings": [],
+    "capability_decisions": [
+      "All hard requirements mapped to supported hypothetical capabilities."
+    ],
+    "output_format_used": "PLAIN_TEXT"
+  },
+  "provenance": {
+    "producer": "GENERATOR_COMPILER",
+    "producer_version": "1.0.0",
+    "created_at": "2026-08-09T21:15:00-03:00",
+    "sources": [
+      "FINAL_FRAME_SPEC",
+      "COMPILER_PROFILE",
+      "GENERATOR_CAPABILITY_REGISTRY",
+      "SYSTEM_DERIVED"
+    ]
+  },
+  "status": "REQUEST_READY",
+  "mode_context": {
+    "parent_generation_id": "generation-strong-reference-001",
+    "variation_domains": [
+      "microdetails"
+    ],
+    "previous_failure_context": "Previous material texture lacked realism; no creative change authorized."
+  }
+}

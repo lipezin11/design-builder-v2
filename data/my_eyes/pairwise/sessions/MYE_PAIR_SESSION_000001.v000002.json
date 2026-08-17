@@ -1,0 +1,528 @@
+{
+  "schema_version": "1.0.0",
+  "session_id": "MYE_PAIR_SESSION_000001",
+  "session_version": 2,
+  "status": "IN_PROGRESS",
+  "created_at": "2026-08-15T17:57:06.284Z",
+  "updated_at": "2026-08-15T18:22:39.787Z",
+  "memory_snapshot": {
+    "memory_id": "approved-direction-memory",
+    "memory_version": 18,
+    "image_count": 21,
+    "pairwise_evidence_count": 0,
+    "inferred_preference_count": 0,
+    "scores_count": 0,
+    "weights_count": 0
+  },
+  "selection_policy": {
+    "selected_by": "SYSTEM",
+    "pair_selection_is_preference": false,
+    "labels_may_not_decide_winner": true,
+    "decision_authority": "HUMAN",
+    "target_pair_count": 5,
+    "presentation_ordering_rule": "A/B positions are alternated where practical; no side encodes the historical label."
+  },
+  "pairs": [
+    {
+      "pair_id": "MYE_PAIRSEL_000001",
+      "pair_type": "STANDARD_PAIR",
+      "image_a": {
+        "image_id": "MYE_IMG_000001",
+        "original_filename": "1.jpeg",
+        "source_path": "data/my_eyes/approved/1.jpeg",
+        "sha256": "40975d27a24c6bbf75da03d4fb97dfafd0844f6305503f89a476ee0bb946a5eb",
+        "mime_type": "image/jpeg",
+        "label_snapshot": {
+          "decision": "APPROVED",
+          "evidence_id": "MYE_DEC_000001",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "image_b": {
+        "image_id": "MYE_IMG_000020",
+        "original_filename": "4.png",
+        "source_path": "data/my_eyes/rejected/4.png",
+        "sha256": "78d6339aebbd1fca19d8e2dc9ee36ac8110c7a3ed1e7ad08686d9750d41c3144",
+        "mime_type": "image/png",
+        "label_snapshot": {
+          "decision": "REJECTED",
+          "evidence_id": "MYE_DEC_000020",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "selection": {
+        "selected_by": "SYSTEM",
+        "selection_reason": "Both are portrait promotional compositions centered on an arms-crossed man, oversized typography and technology/design staging. The comparison isolates hierarchy, typography density and subject/type interaction without assuming which treatment is preferable.",
+        "hypothesis_refs": [
+          "MYE_HYP_000002"
+        ],
+        "candidate_signal_refs": [
+          "MYE_EXT_SIG_000002",
+          "MYE_EXT_SIG_000003"
+        ],
+        "comparable_dimensions": [
+          "FORMAT",
+          "SUBJECT_PROMINENCE",
+          "TYPOGRAPHY_DENSITY",
+          "VISUAL_HIERARCHY",
+          "DEPTH_STRATEGY"
+        ],
+        "refutation_capable": true,
+        "label_based_winner_inference": false,
+        "bias_warning": "Historical APPROVED/REJECTED labels are context only. Either image may win, and TIE is valid."
+      },
+      "evidence_snapshot": {
+        "memory_version": 18,
+        "image_a_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000006",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000001.visual.v1.json"
+          }
+        ],
+        "image_b_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000014",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000020.visual.v1.json"
+          }
+        ],
+        "human_label_evidence_refs": [
+          "MYE_DEC_000001",
+          "MYE_DEC_000020"
+        ],
+        "external_batch_refs": []
+      },
+      "decision_authority": "HUMAN",
+      "human_decision": {
+        "status": "COMPLETED",
+        "decision_version": 1,
+        "winner": "IMAGE_A",
+        "raw_reason": "**Escolha:** A\n**O que fez ganhar:** contraste melhor, rim light bem aplicado, cores mais coerentes, realismo e integração superiores; um único elemento flutuante com mais valor visual que vários elementos da B.\n**O que fez B perder:** excesso de elementos flutuantes e microdetalhes, cores/contraste com aparência mais artificial e menor integração entre personagem, fundo e objetos.\n**Manteria algo da B:** a ideia de tipografia grande atrás do personagem pode funcionar, se usada com muito mais controle.\n**Dificuldade:** EASY",
+        "winner_reason": "contraste melhor, rim light bem aplicado, cores mais coerentes, realismo e integração superiores; um único elemento flutuante com mais valor visual que vários elementos da B.",
+        "loser_reason": "excesso de elementos flutuantes e microdetalhes, cores/contraste com aparência mais artificial e menor integração entre personagem, fundo e objetos.",
+        "keep_from_loser": "a ideia de tipografia grande atrás do personagem pode funcionar, se usada com muito mais controle.",
+        "decision_difficulty": "EASY",
+        "decisive_visual_dimension": null,
+        "explicit_human_response": true,
+        "provenance": {
+          "asserted_by": "HUMAN",
+          "recorded_by": "PAIRWISE_SESSION_SERVICE",
+          "source_type": "HUMAN_PAIRWISE_DECISION",
+          "source_ref": "codex-user-message://2026-08-15#pair-01#MYE_PAIR_000001",
+          "recorded_at": "2026-08-15T18:22:39.787Z",
+          "data_classification": "REAL_HUMAN_EVIDENCE",
+          "pair_id": "MYE_PAIRSEL_000001"
+        }
+      },
+      "decision_history": [
+        {
+          "status": "COMPLETED",
+          "decision_version": 1,
+          "winner": "IMAGE_A",
+          "raw_reason": "**Escolha:** A\n**O que fez ganhar:** contraste melhor, rim light bem aplicado, cores mais coerentes, realismo e integração superiores; um único elemento flutuante com mais valor visual que vários elementos da B.\n**O que fez B perder:** excesso de elementos flutuantes e microdetalhes, cores/contraste com aparência mais artificial e menor integração entre personagem, fundo e objetos.\n**Manteria algo da B:** a ideia de tipografia grande atrás do personagem pode funcionar, se usada com muito mais controle.\n**Dificuldade:** EASY",
+          "winner_reason": "contraste melhor, rim light bem aplicado, cores mais coerentes, realismo e integração superiores; um único elemento flutuante com mais valor visual que vários elementos da B.",
+          "loser_reason": "excesso de elementos flutuantes e microdetalhes, cores/contraste com aparência mais artificial e menor integração entre personagem, fundo e objetos.",
+          "keep_from_loser": "a ideia de tipografia grande atrás do personagem pode funcionar, se usada com muito mais controle.",
+          "decision_difficulty": "EASY",
+          "decisive_visual_dimension": null,
+          "explicit_human_response": true,
+          "provenance": {
+            "asserted_by": "HUMAN",
+            "recorded_by": "PAIRWISE_SESSION_SERVICE",
+            "source_type": "HUMAN_PAIRWISE_DECISION",
+            "source_ref": "codex-user-message://2026-08-15#pair-01#MYE_PAIR_000001",
+            "recorded_at": "2026-08-15T18:22:39.787Z",
+            "data_classification": "REAL_HUMAN_EVIDENCE",
+            "pair_id": "MYE_PAIRSEL_000001"
+          }
+        }
+      ],
+      "structured_pair_reason": null,
+      "structured_reason_history": []
+    },
+    {
+      "pair_id": "MYE_PAIRSEL_000002",
+      "pair_type": "DIAGNOSTIC_PAIR",
+      "image_a": {
+        "image_id": "MYE_IMG_000019",
+        "original_filename": "3.png",
+        "source_path": "data/my_eyes/rejected/3.png",
+        "sha256": "fd78a948ac123108bad39cf90136eb6c016434dafc09af834560da38cddadb57",
+        "mime_type": "image/png",
+        "label_snapshot": {
+          "decision": "REJECTED",
+          "evidence_id": "MYE_DEC_000019",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "image_b": {
+        "image_id": "MYE_IMG_000013",
+        "original_filename": "13.jpeg",
+        "source_path": "data/my_eyes/approved/13.jpeg",
+        "sha256": "77b2f72757d6f313544a6a8425ae9a58b219ca390069b36bf4ca2e717092df0f",
+        "mime_type": "image/jpeg",
+        "label_snapshot": {
+          "decision": "APPROVED",
+          "evidence_id": "MYE_DEC_000013",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "selection": {
+        "selected_by": "SYSTEM",
+        "selection_reason": "Both use a central male subject, surreal scale, numerous floating objects and high visual ambition. This pair tests whether complexity is experienced as functional and convergent or as artificial and uncontrolled; either side may be chosen or tied.",
+        "hypothesis_refs": [
+          "MYE_HYP_000002"
+        ],
+        "candidate_signal_refs": [
+          "MYE_EXT_SIG_000001",
+          "MYE_EXT_SIG_000002",
+          "MYE_EXT_SIG_000004"
+        ],
+        "comparable_dimensions": [
+          "CONTROLLED_VS_ARTIFICIAL_COMPLEXITY",
+          "VISUAL_CONVERGENCE",
+          "OBJECT_FUNCTION",
+          "MICRODETAIL_DENSITY",
+          "SURREAL_LANGUAGE"
+        ],
+        "refutation_capable": true,
+        "label_based_winner_inference": false,
+        "bias_warning": "Historical APPROVED/REJECTED labels are context only. Either image may win, and TIE is valid."
+      },
+      "evidence_snapshot": {
+        "memory_version": 18,
+        "image_a_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000009",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000019.visual.v1.json"
+          }
+        ],
+        "image_b_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000015",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000013.visual.v1.json"
+          }
+        ],
+        "human_label_evidence_refs": [
+          "MYE_DEC_000019",
+          "MYE_DEC_000013"
+        ],
+        "external_batch_refs": [
+          "MYE_EXT_BATCH_000001"
+        ]
+      },
+      "decision_authority": "HUMAN",
+      "human_decision": {
+        "status": "PENDING",
+        "decision_version": 0,
+        "winner": null,
+        "raw_reason": null,
+        "winner_reason": null,
+        "loser_reason": null,
+        "keep_from_loser": null,
+        "decision_difficulty": null,
+        "decisive_visual_dimension": null,
+        "explicit_human_response": false,
+        "provenance": null
+      },
+      "decision_history": [],
+      "structured_pair_reason": null,
+      "structured_reason_history": []
+    },
+    {
+      "pair_id": "MYE_PAIRSEL_000003",
+      "pair_type": "DIAGNOSTIC_PAIR",
+      "image_a": {
+        "image_id": "MYE_IMG_000006",
+        "original_filename": "6.png",
+        "source_path": "data/my_eyes/approved/6.png",
+        "sha256": "77392a7043a48cae6df334bdba32ce6be4e5ad2f9bda21ce5f7d39ef8711269a",
+        "mime_type": "image/png",
+        "label_snapshot": {
+          "decision": "APPROVED",
+          "evidence_id": "MYE_DEC_000006",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "image_b": {
+        "image_id": "MYE_IMG_000017",
+        "original_filename": "1.png",
+        "source_path": "data/my_eyes/rejected/1.png",
+        "sha256": "2d68ec0d7a3415e6c895e98c6404024d764c6132d65eeb287bf8a6d1eb41e379",
+        "mime_type": "image/png",
+        "label_snapshot": {
+          "decision": "REJECTED",
+          "evidence_id": "MYE_DEC_000017",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "selection": {
+        "selected_by": "SYSTEM",
+        "selection_reason": "Both place a photographic male subject inside a technology environment built from floating interface cards and colored rim light. The pair focuses on whether suspended elements support direction, depth and subject integration or become misdirection.",
+        "hypothesis_refs": [
+          "MYE_HYP_000002"
+        ],
+        "candidate_signal_refs": [
+          "MYE_EXT_SIG_000004"
+        ],
+        "comparable_dimensions": [
+          "FLOATING_ELEMENT_USAGE",
+          "SUBJECT_ENVIRONMENT_INTEGRATION",
+          "DEPTH",
+          "HIERARCHY",
+          "TECHNOLOGY_VISUAL_LANGUAGE"
+        ],
+        "refutation_capable": true,
+        "label_based_winner_inference": false,
+        "bias_warning": "Historical APPROVED/REJECTED labels are context only. Either image may win, and TIE is valid."
+      },
+      "evidence_snapshot": {
+        "memory_version": 18,
+        "image_a_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000023",
+            "analysis_version": 2,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000006.visual.v2.json"
+          }
+        ],
+        "image_b_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000012",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000017.visual.v1.json"
+          }
+        ],
+        "human_label_evidence_refs": [
+          "MYE_DEC_000006",
+          "MYE_DEC_000017"
+        ],
+        "external_batch_refs": [
+          "MYE_EXT_BATCH_000001"
+        ]
+      },
+      "decision_authority": "HUMAN",
+      "human_decision": {
+        "status": "PENDING",
+        "decision_version": 0,
+        "winner": null,
+        "raw_reason": null,
+        "winner_reason": null,
+        "loser_reason": null,
+        "keep_from_loser": null,
+        "decision_difficulty": null,
+        "decisive_visual_dimension": null,
+        "explicit_human_response": false,
+        "provenance": null
+      },
+      "decision_history": [],
+      "structured_pair_reason": null,
+      "structured_reason_history": []
+    },
+    {
+      "pair_id": "MYE_PAIRSEL_000004",
+      "pair_type": "STANDARD_PAIR",
+      "image_a": {
+        "image_id": "MYE_IMG_000018",
+        "original_filename": "2.png",
+        "source_path": "data/my_eyes/rejected/2.png",
+        "sha256": "1547d2eab318cf630b89e7e3150f4961893853ca8de30ad793f0bcf2d895e729",
+        "mime_type": "image/png",
+        "label_snapshot": {
+          "decision": "REJECTED",
+          "evidence_id": "MYE_DEC_000018",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "image_b": {
+        "image_id": "MYE_IMG_000004",
+        "original_filename": "4.png",
+        "source_path": "data/my_eyes/approved/4.png",
+        "sha256": "62ca8e94715864da42ae76067ebbc644f34b4d39f4b510416f6062643d3f9dce",
+        "mime_type": "image/png",
+        "label_snapshot": {
+          "decision": "APPROVED",
+          "evidence_id": "MYE_DEC_000004",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "selection": {
+        "selected_by": "SYSTEM",
+        "selection_reason": "Both are portrait promotional layouts with a centered male subject, green luminous arcs or energy and layered graphic depth. Their shared format and color language make hierarchy, effect integration and focal control directly comparable.",
+        "hypothesis_refs": [
+          "MYE_HYP_000002"
+        ],
+        "candidate_signal_refs": [
+          "MYE_EXT_SIG_000002"
+        ],
+        "comparable_dimensions": [
+          "FORMAT",
+          "SUBJECT_PROMINENCE",
+          "GREEN_NEON_LANGUAGE",
+          "EFFECT_INTEGRATION",
+          "FOCAL_CONTROL"
+        ],
+        "refutation_capable": true,
+        "label_based_winner_inference": false,
+        "bias_warning": "Historical APPROVED/REJECTED labels are context only. Either image may win, and TIE is valid."
+      },
+      "evidence_snapshot": {
+        "memory_version": 18,
+        "image_a_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000010",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000018.visual.v1.json"
+          }
+        ],
+        "image_b_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000018",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000004.visual.v1.json"
+          }
+        ],
+        "human_label_evidence_refs": [
+          "MYE_DEC_000018",
+          "MYE_DEC_000004"
+        ],
+        "external_batch_refs": [
+          "MYE_EXT_BATCH_000001"
+        ]
+      },
+      "decision_authority": "HUMAN",
+      "human_decision": {
+        "status": "PENDING",
+        "decision_version": 0,
+        "winner": null,
+        "raw_reason": null,
+        "winner_reason": null,
+        "loser_reason": null,
+        "keep_from_loser": null,
+        "decision_difficulty": null,
+        "decisive_visual_dimension": null,
+        "explicit_human_response": false,
+        "provenance": null
+      },
+      "decision_history": [],
+      "structured_pair_reason": null,
+      "structured_reason_history": []
+    },
+    {
+      "pair_id": "MYE_PAIRSEL_000005",
+      "pair_type": "HARD_PAIR",
+      "image_a": {
+        "image_id": "MYE_IMG_000010",
+        "original_filename": "10.jpeg",
+        "source_path": "data/my_eyes/approved/10.jpeg",
+        "sha256": "8bb6edc39854320e1e7cef8140d0d9f5fa856d34ac237c7ea9e6521684b73812",
+        "mime_type": "image/jpeg",
+        "label_snapshot": {
+          "decision": "APPROVED",
+          "evidence_id": "MYE_DEC_000010",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "image_b": {
+        "image_id": "MYE_IMG_000021",
+        "original_filename": "image.png",
+        "source_path": "data/my_eyes/rejected/image.png",
+        "sha256": "bdfbd55058e5c8de73d958f8231f408b8b507907a7c10cd1461c698eb65e969a",
+        "mime_type": "image/png",
+        "label_snapshot": {
+          "decision": "REJECTED",
+          "evidence_id": "MYE_DEC_000021",
+          "attached_as_context_only": true,
+          "does_not_imply_pairwise_winner": true
+        }
+      },
+      "selection": {
+        "selected_by": "SYSTEM",
+        "selection_reason": "Both are intense portrait urgency posters with a centered male subject, oversized warning typography, dark staging, red accents and floating narrative artifacts. Each uses deliberate excess differently, so A, B and TIE remain plausible human outcomes.",
+        "hypothesis_refs": [
+          "MYE_HYP_000002"
+        ],
+        "candidate_signal_refs": [],
+        "comparable_dimensions": [
+          "FORMAT",
+          "URGENCY_LANGUAGE",
+          "TYPOGRAPHY",
+          "NARRATIVE_PROPS",
+          "CONTROLLED_EXCESS",
+          "AI_VISUAL_SIGNATURE"
+        ],
+        "refutation_capable": true,
+        "label_based_winner_inference": false,
+        "bias_warning": "Historical APPROVED/REJECTED labels are context only. Either image may win, and TIE is valid."
+      },
+      "evidence_snapshot": {
+        "memory_version": 18,
+        "image_a_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000011",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000010.visual.v1.json"
+          }
+        ],
+        "image_b_analysis_refs": [
+          {
+            "analysis_id": "MYE_ANA_000001",
+            "analysis_version": 1,
+            "record_path": "data/my_eyes/analysis/MYE_IMG_000021.visual.v1.json"
+          }
+        ],
+        "human_label_evidence_refs": [
+          "MYE_DEC_000010",
+          "MYE_DEC_000021"
+        ],
+        "external_batch_refs": []
+      },
+      "decision_authority": "HUMAN",
+      "human_decision": {
+        "status": "PENDING",
+        "decision_version": 0,
+        "winner": null,
+        "raw_reason": null,
+        "winner_reason": null,
+        "loser_reason": null,
+        "keep_from_loser": null,
+        "decision_difficulty": null,
+        "decisive_visual_dimension": null,
+        "explicit_human_response": false,
+        "provenance": null
+      },
+      "decision_history": [],
+      "structured_pair_reason": null,
+      "structured_reason_history": []
+    }
+  ],
+  "summary": {
+    "proposed_pair_count": 5,
+    "pending_pair_count": 4,
+    "completed_pair_count": 1,
+    "skipped_pair_count": 0,
+    "human_pairwise_evidence_count": 1,
+    "scores_created": 0,
+    "weights_created": 0,
+    "inferred_preferences_created": 0
+  },
+  "provenance": {
+    "asserted_by": "SYSTEM",
+    "recorded_by": "PAIRWISE_SESSION_SERVICE",
+    "source_type": "PAIR_SELECTION_SESSION",
+    "source_ref": "design-builder://first-human-pairwise-session",
+    "recorded_at": "2026-08-15T17:57:06.284Z",
+    "data_classification": "REAL_HUMAN_EVIDENCE"
+  }
+}

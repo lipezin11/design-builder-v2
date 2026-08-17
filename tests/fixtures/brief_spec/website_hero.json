@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "project_mode": "NO_REFERENCE",
+  "project_type": "WEBSITE_HERO",
+  "user_request": "Preciso de uma imagem hero para o topo da landing page de um software de IA corporativa. O fundo deve ser limpo com muito espaço negativo à esquerda para acomodar a headline e o CTA. Não há imagens de referência fornecidas.",
+  "commercial_objective": "Converter visitantes do site em leads qualificados para demonstração do software.",
+  "communication_goal": "Transmitir inovação, segurança empresarial e inteligência artificial avançada.",
+  "target_context": "Desktop SaaS landing page hero section.",
+  "format": {
+    "aspect_ratio": "16:9",
+    "orientation": "LANDSCAPE",
+    "width": 1920,
+    "height": 1080,
+    "platform": "Web",
+    "usage": "Website Hero Section",
+    "text_overlay_expected": true
+  },
+  "copy": {
+    "headline": {
+      "content": "Inteligência Artificial Autônoma para sua Empresa",
+      "exact_text_lock": true,
+      "priority": "CRITICAL",
+      "required": true,
+      "language": "pt-BR"
+    },
+    "cta": {
+      "content": "Agendar Demonstração",
+      "exact_text_lock": true,
+      "priority": "HIGH",
+      "required": true,
+      "language": "pt-BR"
+    }
+  },
+  "assets": [],
+  "subject": {
+    "present": false,
+    "identity_asset_id": null,
+    "identity_preservation": "NONE",
+    "pose_preservation": "NONE",
+    "expression_preservation": "NONE",
+    "wardrobe_preservation": "NONE",
+    "body_orientation_preservation": "NONE",
+    "age_preservation": "NONE",
+    "recognizability_required": false,
+    "user_subject_instructions": ""
+  },
+  "references": [],
+  "hard_constraints": [
+    {
+      "constraint_id": "hc_negative_space",
+      "description": "Espaço negativo obrigatório no terço esquerdo para texto.",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    },
+    {
+      "constraint_id": "hc_headline",
+      "description": "Headline e CTA exatos devem ser acomodados visualmente.",
+      "provenance": "USER_EXPLICIT",
+      "confidence": "HIGH"
+    }
+  ],
+  "soft_preferences": [
+    {
+      "preference_id": "sp_clean",
+      "description": "Estilo corporativo limpo com tons de azul profundo e cinza.",
+      "provenance": "MODEL_INFERENCE",
+      "confidence": "HIGH"
+    }
+  ],
+  "emotional_intent": {
+    "primary": "trust",
+    "secondary": ["authority", "speed"],
+    "avoid": ["playful", "chaos"]
+  },
+  "creative_freedom": {
+    "overall": "MEDIUM",
+    "composition": "LOW",
+    "environment": "MEDIUM",
+    "subject_pose": "NONE",
+    "wardrobe": "NONE",
+    "typography": "LOW",
+    "color": "MEDIUM",
+    "narrative_objects": "MEDIUM"
+  },
+  "preservation_requirements": [
+    {
+      "element": "headline",
+      "provenance": "USER_EXPLICIT"
+    },
+    {
+      "element": "cta",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "allowed_transformations": [
+    {
+      "transformation": "abstract tech graphics on right side",
+      "provenance": "SYSTEM_DERIVED"
+    }
+  ],
+  "forbidden_transformations": [
+    {
+      "transformation": "do not clutter left side negative space",
+      "provenance": "USER_EXPLICIT"
+    }
+  ],
+  "ambiguities": [],
+  "blocking_questions": [],
+  "pipeline_hints": {
+    "has_reference": false,
+    "requires_reference_translator": false,
+    "requires_subject_identity_preservation": false,
+    "edit_mode": false,
+    "text_generation_required": true,
+    "human_clarification_required": false
+  },
+  "provenance": {
+    "interpreter_version": "1.0.0",
+    "created_at": "2026-08-09T12:00:00Z",
+    "notes": "Website hero brief parsed."
+  },
+  "status": "READY"
+}

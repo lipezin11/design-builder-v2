@@ -1,0 +1,259 @@
+{
+  "trace_version": "1.0.0",
+  "run_id": "run_live_rt_01_same_domain_authority-rt-live-step37-20260816-03",
+  "runtime_version": "1.0.0",
+  "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+  "input_mode": "MULTIMODAL",
+  "status": "FAILED",
+  "started_at": "2026-08-16T03:46:32.548Z",
+  "completed_at": "2026-08-16T03:49:11.298Z",
+  "input_hash": "fd33cf71cdc4a522c8e83382a655d34e701448dc4d878c1672730126ea22cf9b",
+  "input_artifacts": {
+    "context_id": "ctx_live_rt_01_same_domain_authority",
+    "brief_ref": {
+      "artifact_id": "brief_live_rt_01_same_domain_authority",
+      "schema_version": "1.0.0"
+    },
+    "reference_asset_refs": [
+      {
+        "asset_id": "live_ref_authority_speaker",
+        "visual_access": "MULTIMODAL"
+      }
+    ],
+    "advisory_refs": [
+      "MYE_LIVE_LIVE_RT_01_SAME_DOMAIN_AUTHORITY",
+      "VKB_LIVE_LIVE_RT_01_SAME_DOMAIN_AUTHORITY"
+    ]
+  },
+  "model_adapter_id": "openai-compatible-multimodal-v1",
+  "provider": {
+    "provider_id": "NVIDIA_NIM",
+    "model": "stepfun-ai/step-3.7-flash"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "error_code": "REFERENCE_PLAN_PERSISTENCE_FAILED",
+      "diagnostic_codes": [
+        "REFERENCE_PLAN_PERSISTENCE_FAILED"
+      ],
+      "request_measurement": {
+        "measurement_version": "1.0.0",
+        "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+        "core_prompt_characters": 11451,
+        "knowledge_characters": 472402,
+        "knowledge_wrapper_and_index_characters": 2965,
+        "assembled_system_prompt_characters": 486818,
+        "schema_characters": 11766,
+        "brief_context_characters": 4324,
+        "reference_context_characters": 817,
+        "my_eyes_advisory_characters": 1262,
+        "vkb_advisory_characters": 1230,
+        "retry_diagnostic_characters": 2,
+        "provider_user_text_characters": 32590,
+        "total_textual_characters": 519408,
+        "multimodal_image_count": 1,
+        "image_base64_transport_characters": 131392,
+        "serialized_http_body_characters": 660286,
+        "input_tokens": 129852,
+        "input_token_measurement": "ESTIMATED_NOT_PROVIDER_EXACT",
+        "output_budget_tokens": 16384,
+        "context_limit_tokens": 262144,
+        "headroom_tokens": 115908,
+        "context_classification": "SAFE"
+      },
+      "model_invocation": {
+        "input_mode": "MULTIMODAL",
+        "provider_adapter": "openai-compatible-multimodal-v1",
+        "provider": "NVIDIA_NIM",
+        "model": "stepfun-ai/step-3.7-flash",
+        "provider_response_id": "chatcmpl-55af838e-59b8-404a-9bc8-66c5a27d46b1",
+        "finish_reason": "stop",
+        "transport_attempt_count": 2,
+        "latency_ms": 158715,
+        "final_attempt_latency_ms": 147048,
+        "image_transmission": [
+          {
+            "asset_id": "live_ref_authority_speaker",
+            "mime_type": "image/jpeg",
+            "source_type": "INLINE_IMAGE_BYTES",
+            "byte_length": 98544,
+            "sha256": "49e28326c25992a5b0013d1f9c64fcc5f458fefd3abecf6635d2a9b0e1aba4d0"
+          }
+        ],
+        "request_measurement": {
+          "measurement_version": "1.0.0",
+          "prompt_version": "REFERENCE_TRANSLATOR_AGENT_V1_1",
+          "core_prompt_characters": 11451,
+          "knowledge_characters": 472402,
+          "knowledge_wrapper_and_index_characters": 2965,
+          "assembled_system_prompt_characters": 486818,
+          "schema_characters": 11766,
+          "brief_context_characters": 4324,
+          "reference_context_characters": 817,
+          "my_eyes_advisory_characters": 1262,
+          "vkb_advisory_characters": 1230,
+          "retry_diagnostic_characters": 2,
+          "provider_user_text_characters": 32590,
+          "total_textual_characters": 519408,
+          "multimodal_image_count": 1,
+          "image_base64_transport_characters": 131392,
+          "serialized_http_body_characters": 660286,
+          "input_tokens": 96808,
+          "input_token_measurement": "PROVIDER_REPORTED_ACTUAL",
+          "output_budget_tokens": 16384,
+          "context_limit_tokens": 262144,
+          "headroom_tokens": 148952,
+          "context_classification": "SAFE"
+        },
+        "usage": {
+          "input_tokens": 96808,
+          "output_tokens": 14598,
+          "total_tokens": 111406,
+          "cached_tokens": 0,
+          "reasoning_tokens": null
+        },
+        "hidden_reasoning_persisted": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "state": "CONTEXT_VALIDATED",
+      "at": "2026-08-16T03:46:32.549Z"
+    },
+    {
+      "state": "PROMPT_ASSEMBLED",
+      "at": "2026-08-16T03:46:32.560Z",
+      "attempt": 1
+    },
+    {
+      "state": "MODEL_INVOKED",
+      "at": "2026-08-16T03:46:32.560Z",
+      "attempt": 1
+    },
+    {
+      "state": "OUTPUT_PARSED",
+      "at": "2026-08-16T03:49:11.288Z",
+      "attempt": 1
+    },
+    {
+      "state": "SCHEMA_VALIDATED",
+      "at": "2026-08-16T03:49:11.296Z",
+      "attempt": 1
+    },
+    {
+      "state": "SEMANTIC_VALIDATED",
+      "at": "2026-08-16T03:49:11.296Z",
+      "attempt": 1
+    },
+    {
+      "state": "QUALITY_VALIDATED",
+      "at": "2026-08-16T03:49:11.296Z",
+      "attempt": 1
+    },
+    {
+      "state": "PLAN_PERSISTED",
+      "at": "2026-08-16T03:49:11.296Z",
+      "pending_store": true
+    },
+    {
+      "state": "COMPLETE",
+      "at": "2026-08-16T03:49:11.296Z"
+    },
+    {
+      "state": "ATTEMPT_FAILED",
+      "at": "2026-08-16T03:49:11.298Z",
+      "attempt": 1,
+      "code": "REFERENCE_PLAN_PERSISTENCE_FAILED"
+    },
+    {
+      "state": "FAILED",
+      "at": "2026-08-16T03:49:11.298Z",
+      "code": "REFERENCE_PLAN_RETRY_EXHAUSTED"
+    }
+  ],
+  "validation_outcomes": [
+    {
+      "attempt": 1,
+      "schema": true,
+      "semantic": true,
+      "quality": true
+    }
+  ],
+  "output_plan_id": "plan_live_rt_01_same_domain_authority_001",
+  "structured_decision_summary": [
+    {
+      "mapping_id": "MAP_001",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "OBS_01",
+        "OBS_02"
+      ]
+    },
+    {
+      "mapping_id": "MAP_002",
+      "action": "TRANSFER",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "OBS_03",
+        "OBS_07"
+      ]
+    },
+    {
+      "mapping_id": "MAP_003",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "OBS_04",
+        "OBS_10"
+      ]
+    },
+    {
+      "mapping_id": "MAP_004",
+      "action": "TRANSFER",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "OBS_05",
+        "OBS_09"
+      ]
+    },
+    {
+      "mapping_id": "MAP_005",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "OBS_06"
+      ]
+    },
+    {
+      "mapping_id": "MAP_006",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "OBS_08"
+      ]
+    },
+    {
+      "mapping_id": "MAP_007",
+      "action": "ADAPT",
+      "source_reference_asset_id": "live_ref_authority_speaker",
+      "observation_ids": [
+        "OBS_02"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "DECLARED_LOW_RISK",
+      "message": "Format compression: Reference medium shot may not map cleanly to 16:9 banner with text overlay."
+    },
+    {
+      "code": "DECLARED_LOW_RISK",
+      "message": "Lighting becoming cliché: Executive portrait lighting can fall into predictable patterns."
+    }
+  ],
+  "hidden_reasoning_persisted": false
+}

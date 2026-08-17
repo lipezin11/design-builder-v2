@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "MYE_MODEL_000001",
+  "model_version": 1,
+  "status": "HUMAN_CONFIRMED_CONTEXTUAL_MODEL",
+  "source_memory_id": "approved-direction-memory",
+  "source_memory_version": 36,
+  "generated_at": "2026-08-15T22:18:56.354Z",
+  "design_scope": "Qualitative designer-preference guidance distilled from the current Approved Direction Memory. Every principle remains contextual to the brief and supplied evidence.",
+  "principles": [
+    {
+      "preference_id": "MYE_PREF_000008",
+      "title": "Controlled intentional complexity",
+      "statement": "The designer accepts and may sometimes prefer high-information or visually exaggerated compositions when the elements are functional, well integrated, mutually coherent, and converge on one idea; quantity itself is not the failure condition.",
+      "status": "SUPPORTED",
+      "confidence": "HIGH",
+      "human_confirmed": true,
+      "scope": "Dense, layered, maximalist, cinematic, promotional, and narrative compositions in the currently observed sample.",
+      "conditions": [
+        "elements contribute to a shared idea or visual logic",
+        "placement and relationships remain controlled and well fitted",
+        "the whole remains mentally readable despite density",
+        "complexity is functional, intentional, and perceptually convergent"
+      ],
+      "exceptions": [
+        "a simple composition may still fail when its few elements feel artificial or disconnected",
+        "maximalism and visual exaggeration can be desirable when subordinated to the whole"
+      ],
+      "explicitly_not_claimed": [
+        "high_complexity_is_bad",
+        "low_complexity_is_preferred",
+        "maximalism_is_bad",
+        "fewer_elements_are_better",
+        "a_fixed_maximum_element_count_exists"
+      ],
+      "evidence_refs": [
+        "MYE_RSN_000006",
+        "MYE_SRSN_000006",
+        "MYE_PAIR_000003",
+        "MYE_RSN_000009",
+        "MYE_PAIR_000005",
+        "MYE_RSN_000011",
+        "MYE_HYP_000002",
+        "MYE_CREV_000005",
+        "MYE_ANA_000011",
+        "MYE_ANA_000023",
+        "MYE_RSN_000012"
+      ],
+      "positive_reference_image_ids": []
+    },
+    {
+      "preference_id": "MYE_PREF_000009",
+      "title": "Elements with real visual function",
+      "statement": "The designer values elements that materially strengthen composition, narrative, atmosphere, depth, meaning, or readability, and devalues elements used mainly to fill space, decorate without contribution, or manufacture impact.",
+      "status": "SUPPORTED",
+      "confidence": "HIGH",
+      "human_confirmed": true,
+      "scope": "Element-rich promotional and narrative compositions where props, effects, typography, and subject treatment can share a concept.",
+      "conditions": [
+        "each prominent element has a strong visual reason to exist",
+        "the element strengthens narrative, hierarchy, framing, depth, atmosphere, integration, meaning, or readability",
+        "secondary and decorative decisions remain subordinated to the central idea"
+      ],
+      "exceptions": [
+        "decoration, effects, and secondary elements can work when they strengthen the piece",
+        "an element does not require literal story meaning if its compositional or atmospheric function is strong"
+      ],
+      "explicitly_not_claimed": [
+        "decoration_is_bad",
+        "effects_are_bad",
+        "secondary_elements_are_bad",
+        "every_element_requires_literal_story_meaning",
+        "all_visual_elements_must_be_minimal"
+      ],
+      "evidence_refs": [
+        "MYE_RSN_000006",
+        "MYE_PAIR_000003",
+        "MYE_RSN_000009",
+        "MYE_PAIR_000005",
+        "MYE_RSN_000011",
+        "MYE_ANA_000023",
+        "MYE_ANA_000011",
+        "MYE_RSN_000012"
+      ],
+      "positive_reference_image_ids": []
+    },
+    {
+      "preference_id": "MYE_PREF_000010",
+      "title": "Specific diagnosis of generic artificial assembly",
+      "statement": "The designer is strongly sensitive to combinations of generic, artificial, weakly intentional, or interchangeable visual decisions; evaluation should identify the specific decisions producing that result instead of using 'looks AI-generated' as an explanation.",
+      "status": "CONTEXTUAL",
+      "confidence": "HIGH",
+      "human_confirmed": true,
+      "scope": "Compositions where multiple impact devices, generic components, lighting choices, color treatments, depth shortcuts, or reusable visual formulas combine without a unifying concept.",
+      "conditions": [
+        "unrelated floating elements or predictable filler positions weaken conceptual convergence",
+        "generic dashboard or UI cards behave like ready-made modules around the subject",
+        "removable particles, glows, lines, icons, miniobjects, or microeffects accumulate",
+        "secondary elements glow independently or fail to share the scene lighting and depth logic",
+        "neon colors, saturated gradients, uniform contrast, glow, or rim light lack conceptual or environmental motivation",
+        "generic technological backgrounds or foreground blur simulate identity or depth without project specificity",
+        "individually acceptable cinematic devices combine without one central idea",
+        "the solution could be reused for another client, niche, or subject with little change"
+      ],
+      "exceptions": [
+        "the same individual devices can appear in approved work when motivated and integrated",
+        "AI generation does not make an image bad and generation artifacts are not required",
+        "cards, particles, floating objects, neon color, glow, and cinematic effects are not failure signals by themselves"
+      ],
+      "explicitly_not_claimed": [
+        "the_system_can_universally_detect_ai_look",
+        "any_ai_generated_image_is_bad",
+        "floating_elements_prove_ai_generation",
+        "cards_prove_ai_generation",
+        "neon_or_high_contrast_proves_ai_generation",
+        "technical_polish_is_bad"
+      ],
+      "evidence_refs": [
+        "MYE_RSN_000001",
+        "MYE_SRSN_000001",
+        "MYE_PAIR_000004",
+        "MYE_RSN_000010",
+        "MYE_PAIR_000005",
+        "MYE_RSN_000011",
+        "MYE_CREV_000002",
+        "MYE_CREV_000004",
+        "MYE_ANA_000010",
+        "MYE_ANA_000001",
+        "MYE_RSN_000012"
+      ],
+      "positive_reference_image_ids": []
+    },
+    {
+      "preference_id": "MYE_PREF_000011",
+      "title": "Functional microdetail discipline",
+      "statement": "The designer is sensitive to accumulated microdetails when they do not materially strengthen narrative, depth, composition, atmosphere, framing, direction of attention, integration, or meaning, especially when their combined effect creates mental noise or artificial richness.",
+      "status": "SUPPORTED",
+      "confidence": "HIGH",
+      "human_confirmed": true,
+      "scope": "Dense promotional compositions using particles, fragments, small clocks, papers, fine effects, interface marks, or other repeated minor details.",
+      "conditions": [
+        "many small details accumulate without a shared visual role",
+        "the details compete with one another or disturb the mental read",
+        "removing a microelement would not cost the piece anything important",
+        "each microelement should be treated as removable when no clear narrative, depth, framing, attention, atmosphere, integration, compositional, or semantic function can be identified"
+      ],
+      "exceptions": [
+        "an extremely detailed image can work when details remain subordinated to the whole",
+        "particles, textures, icons, lines, glows, and other microeffects are not prohibited"
+      ],
+      "explicitly_not_claimed": [
+        "detail_is_bad",
+        "richness_is_bad",
+        "minimalism_is_preferred",
+        "particles_are_forbidden",
+        "micro_effects_are_forbidden",
+        "clean_design_requires_few_elements"
+      ],
+      "evidence_refs": [
+        "MYE_RSN_000005",
+        "MYE_SRSN_000005",
+        "MYE_PAIR_000001",
+        "MYE_RSN_000007",
+        "MYE_PAIR_000004",
+        "MYE_RSN_000010",
+        "MYE_PAIR_000005",
+        "MYE_RSN_000011",
+        "MYE_ANA_000014",
+        "MYE_ANA_000010",
+        "MYE_ANA_000001",
+        "MYE_RSN_000012"
+      ],
+      "positive_reference_image_ids": []
+    },
+    {
+      "preference_id": "MYE_PREF_000012",
+      "title": "Floating element execution discipline",
+      "statement": "Floating elements can be highly effective for this designer, but each one must justify its presence through narrative, composition, depth, framing, direction of attention, or meaning, while quantity, scale, position, perspective, lighting, and integration follow one spatial and visual logic.",
+      "status": "CONTEXTUAL",
+      "confidence": "HIGH",
+      "human_confirmed": true,
+      "scope": "Promotional compositions using floating cards, papers, clocks, interface panels, props, particles, or symbolic objects.",
+      "conditions": [
+        "selection supports the concept or narrative",
+        "quantity is justified by function rather than frame filling",
+        "scale, position, perspective, depth, and occlusion belong to the scene",
+        "lighting responds to the general environment instead of operating independently",
+        "the element strengthens subject relationship, framing, motion, or direction of attention"
+      ],
+      "exceptions": [
+        "one or many floating elements may work",
+        "nonphysical suspension can be intentionally surreal or narrative",
+        "no fixed numerical limit is supported"
+      ],
+      "explicitly_not_claimed": [
+        "floating_elements_are_bad",
+        "floating_elements_are_forbidden",
+        "one_floating_element_is_the_limit",
+        "nonphysical_elements_are_bad",
+        "a_fixed_floating_element_count_exists"
+      ],
+      "evidence_refs": [
+        "MYE_RSN_000002",
+        "MYE_SRSN_000002",
+        "MYE_PAIR_000001",
+        "MYE_RSN_000007",
+        "MYE_PAIR_000003",
+        "MYE_RSN_000009",
+        "MYE_PAIR_000005",
+        "MYE_RSN_000011",
+        "MYE_CREV_000004",
+        "MYE_ANA_000014",
+        "MYE_ANA_000012",
+        "MYE_ANA_000001",
+        "MYE_RSN_000012"
+      ],
+      "positive_reference_image_ids": []
+    },
+    {
+      "preference_id": "MYE_PREF_000013",
+      "title": "Color vitality with controlled contrast",
+      "statement": "The designer tends to prefer color with presence and contrast strong enough to create impact when both remain coherent with the scene and are applied locally and intentionally rather than becoming artificial saturation.",
+      "status": "CONTEXTUAL",
+      "confidence": "MEDIUM",
+      "human_confirmed": true,
+      "scope": "High-impact promotional compositions where color and contrast carry atmosphere, urgency, subject integration, or hierarchy.",
+      "conditions": [
+        "avoid washed-out or weak presence when the direction calls for impact",
+        "localized saturation and contrast support subject readability, plane separation, atmosphere, focus, depth, and hierarchy",
+        "light, skin, environment, and palette remain coherent",
+        "contrast strength follows the intended scene rather than a uniform enhancement preset"
+      ],
+      "exceptions": [
+        "restrained, pale, dark, or low-saturation palettes can work when conceptually appropriate",
+        "neon and saturated gradients can work when motivated by the visual direction"
+      ],
+      "explicitly_not_claimed": [
+        "more_saturation_is_better",
+        "maximum_contrast_is_better",
+        "neon_is_better",
+        "every_piece_must_be_colorful",
+        "pale_images_are_always_bad",
+        "a_numeric_color_target_exists"
+      ],
+      "evidence_refs": [
+        "MYE_PAIR_000001",
+        "MYE_RSN_000007",
+        "MYE_PAIR_000005",
+        "MYE_RSN_000011",
+        "MYE_ANA_000006",
+        "MYE_ANA_000011",
+        "MYE_RSN_000012"
+      ],
+      "positive_reference_image_ids": []
+    },
+    {
+      "preference_id": "MYE_PREF_000016",
+      "title": "Specific narrative card systems",
+      "statement": "The designer values card systems where specific real-seeming content is transformed into a unified compositional and narrative cluster, with meaningful variation, clear hierarchy, spatial integration, and subordination to the subject and central idea rather than behaving as interchangeable dashboard widgets.",
+      "status": "CONTEXTUAL",
+      "confidence": "MEDIUM",
+      "human_confirmed": true,
+      "scope": "Promotional compositions where cards, documents, screens, projects, products, or work artifacts carry concrete narrative context around a primary subject.",
+      "conditions": [
+        "card content represents concrete projects, products, documents, screens, briefings, or other work artifacts specific to the piece",
+        "variation in content, proportion, angle, and appearance remains unified by one visual system",
+        "cards group into a coherent cluster instead of behaving as independent modules orbiting the subject",
+        "the subject remains the primary focus and cards supply context without disturbing the main read",
+        "overlap, scale, occlusion, and depth integrate the system across visual planes",
+        "the card system carries narrative meaning and materially strengthens the concept when present",
+        "positioning preserves breathing room rather than filling every available gap",
+        "the system cannot be replaced by generic SaaS metrics or graphs without changing the meaning"
+      ],
+      "exceptions": [
+        "approved/6.png is a strong positive reference but not a universal visual template",
+        "good cards do not need to copy its cluster shape, palette, density, or physical-artifact aesthetic",
+        "dashboard content may work when genuinely required and specifically transformed for the project",
+        "one positive reference supports a contextual preference, not complete coverage of every excellent card language"
+      ],
+      "explicitly_not_claimed": [
+        "all_good_cards_must_look_like_approved_6",
+        "all_good_cards_must_form_one_dense_cluster",
+        "dashboard_cards_are_always_bad",
+        "multiple_cards_are_always_good",
+        "one_positive_example_proves_all_card_styles",
+        "card_execution_can_be_judged_without_the_brief"
+      ],
+      "evidence_refs": [
+        "MYE_PAIR_000003",
+        "MYE_RSN_000009",
+        "MYE_PAIR_000004",
+        "MYE_RSN_000010",
+        "MYE_ANA_000012",
+        "MYE_ANA_000010",
+        "MYE_RSN_000012",
+        "MYE_PAIR_000006",
+        "MYE_RSN_000013",
+        "MYE_RSN_000014"
+      ],
+      "positive_reference_image_ids": [
+        "MYE_IMG_000006"
+      ]
+    }
+  ],
+  "card_execution_profile": {
+    "status": "HUMAN_CONFIRMED_CONTEXTUAL",
+    "positive_reference_image_id": "MYE_IMG_000006",
+    "positive_reference_human_reason_id": "MYE_RSN_000014",
+    "positive_definition": "A good card is specific content transformed into a compositional and narrative element, with clear function, hierarchy, coherent grouping, spatial integration, and subordination to the subject and central idea.",
+    "supported_positive_properties": [
+      "content represents concrete projects, products, documents, screens, or work artifacts rather than interchangeable metrics",
+      "visual variation in content, proportion, angle, and appearance remains unified by one system language",
+      "cards form a coherent cluster instead of independent modules orbiting the subject",
+      "the subject remains the primary focus while cards provide context",
+      "overlap, scale, occlusion, and depth distribute the system across believable visual planes",
+      "the card system carries narrative meaning and would materially weaken the idea if removed",
+      "the arrangement preserves breathing room instead of filling every empty region",
+      "the system cannot be replaced by generic SaaS graphs without changing the piece's meaning"
+    ],
+    "generic_failure_definition": "A generic card is an interchangeable ready-made dashboard or UI component with weakly specific content, repeated format and language, and placement that fills space or orbits the subject instead of participating organically in the visual direction.",
+    "generic_failure_signals": [
+      "generic metrics and miniature charts that could be swapped across unrelated SaaS or marketing ads",
+      "many independent modules using the same border, glow, metric, and mini-graph formula",
+      "cards competing individually instead of forming a hierarchy or group",
+      "content added to signal technology rather than serve the piece's actual message",
+      "placement around the subject without organic compositional or narrative participation"
+    ],
+    "unresolved_boundaries": [
+      "approved/6.png is the first strong positive reference, not a universal template",
+      "other excellent card languages and formats have not yet been sampled",
+      "future contradictory or diverse positive evidence may require append-only model revision"
+    ]
+  },
+  "global_boundaries": {
+    "context_relative_to_brief": true,
+    "quantity_alone_is_not_failure": true,
+    "features_are_not_universal_verdicts": true,
+    "not_a_style_guide": true,
+    "human_evidence_has_highest_authority": true
+  },
+  "runtime_integration": {
+    "mode": "EVIDENCE_ARTIFACT_ONLY",
+    "creative_director": false,
+    "critic": false,
+    "compiler": false,
+    "generation": false
+  },
+  "provenance": {
+    "producer": "MY_EYES_PREFERENCE_MODEL_BUILDER",
+    "producer_version": "1.0.0",
+    "asserted_by": "SYSTEM_PROJECTION_OF_HUMAN_CONFIRMED_PREFERENCES",
+    "source_preference_ids": [
+      "MYE_PREF_000008",
+      "MYE_PREF_000009",
+      "MYE_PREF_000010",
+      "MYE_PREF_000011",
+      "MYE_PREF_000012",
+      "MYE_PREF_000013",
+      "MYE_PREF_000016"
+    ]
+  }
+}
